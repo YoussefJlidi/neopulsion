@@ -718,7 +718,7 @@
     nextBtn.innerHTML = '…';
     nextBtn.disabled = true;
 
-    fetch('/', {
+    fetch('/.netlify/functions/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: data
