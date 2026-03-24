@@ -565,14 +565,17 @@
 <!-- ========== BLOG ========== -->
 <section class="section section--subtle" aria-labelledby="blog-title">
   <div class="container">
-    <div class="section-header">
-      <p class="kicker">Analyses &amp; ressources</p>
-      <h2 class="section-title" id="blog-title">Dernières analyses</h2>
-      <p class="section-subtitle">Décryptages SEO &amp; GEO, études de cas, guides pratiques — pour rester en avance sur les évolutions algorithmiques.</p>
-    </div>
+    <div style="display:flex; align-items:center; gap:4rem; flex-wrap:wrap;">
+      <!-- Texte gauche -->
+      <div style="flex:1; min-width:260px;">
+        <p class="kicker">Analyses &amp; ressources</p>
+        <h2 class="section-title" id="blog-title">Dernières analyses</h2>
+        <p class="section-subtitle" style="margin-bottom:1.5rem;">Décryptages SEO &amp; GEO, études de cas, guides pratiques — pour rester en avance sur les évolutions algorithmiques.</p>
+        <a href="blog.html" class="btn-secondary">Voir tous les articles</a>
+      </div>
 
-    <div style="display:flex; justify-content:flex-end;">
-      <div class="blog-card reveal" style="display:flex; flex-direction:column; max-width:420px; width:100%;">
+      <!-- Card droite -->
+      <div class="blog-card reveal" style="display:flex; flex-direction:column; flex:0 0 380px; max-width:380px;">
         <a href="blog/geo-generative-engine-optimization.html">
           <img src="assets/blog-geo-cover.jpg" alt="GEO — Generative Engine Optimization" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-md) var(--radius-md) 0 0; display:block;">
         </a>
@@ -590,10 +593,6 @@
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="text-center mt-8">
-      <a href="blog.html" class="btn-secondary">Voir tous les articles</a>
     </div>
   </div>
 </section>
