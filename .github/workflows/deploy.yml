@@ -6,8 +6,10 @@ on:
 
 jobs:
   deploy:
-    name: Trigger Netlify deploy
+    name: Deploy via Netlify CLI
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Netlify build hook
-        run: curl -X POST "${{ secrets.NETLIFY_DEPLOY_HOOK }}"
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Netlify
+        run: npx netlify-cli deploy --prod --dir=. --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_SITE_ID }}
