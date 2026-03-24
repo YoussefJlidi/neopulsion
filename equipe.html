@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'équipe Neopulsion — Youssef Jlidi &amp; ses agents IA | Neopulsion</title>
+  <meta name="description" content="Un expert SEO & GEO humain et des milliers d'agents IA spécialisés. Découvrez comment Neopulsion combine expertise humaine et puissance de l'IA pour vos résultats.">
+  <link rel="canonical" href="https://neopulsion.fr/equipe.html">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .agent-card {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .agent-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      border-color: var(--blue);
+    }
+    .agent-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .agent-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .agent-role {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+    }
+    .agent-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .agent-tasks {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .agent-task {
+      font-size: 0.8rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .agent-task::before {
+      content: '→';
+      color: var(--blue);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .agent-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-top: auto;
+    }
+    .agent-status--active {
+      background: #F0FDF4;
+      color: #15803D;
+      border: 1px solid rgba(21,128,61,0.2);
+    }
+    .agent-status--dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .youssef-card {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="equipe.html" style="background:#EFF6FF; color:var(--blue);">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="services/seo.html">Référencement SEO</a>
+      <a href="services/geo.html">GEO — Référencement Génératif</a>
+      <a href="services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="ateliers.html">Ateliers</a>
+      <a href="formations.html">Formations</a>
+    </div>
+    <a href="blog.html">Blog</a>
+    <a href="glossaire.html">Glossaire</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="equipe.html">Équipe</a>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="equipe-title">
+  <div class="container">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Équipe</span>
+      </nav>
+      <p class="kicker page-hero-kicker">Qui sommes-nous</p>
+      <h1 id="equipe-title">Un expert. Des milliers d'agents.</h1>
+      <p class="page-hero-subtitle">Neopulsion, c'est l'expertise humaine de Youssef Jlidi — et un réseau d'agents IA spécialisés qui travaillent en parallèle. Le meilleur des deux mondes, au service de votre visibilité.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ÉQUIPE GRID -->
+<section class="section" aria-labelledby="equipe-grid-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">L'équipe</p>
+      <h2 class="section-title" id="equipe-grid-title">Neopulsion, c'est 6 membres actifs 24h/24</h2>
+      <p class="section-subtitle">Un expert humain qui orchestre, cinq agents spécialisés par domaine qui exécutent. Aucun intermédiaire, aucun junior — que de l'expertise, humaine ou artificielle.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Youssef Jlidi -->
+      <div class="agent-card reveal" style="border-color:var(--blue); background:linear-gradient(135deg,#F8FAFF,#EFF6FF);">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="assets/youssef-jlidi.png" alt="Youssef Jlidi"
+            style="width:44px; height:44px; border-radius:50%; object-fit:cover; border:2px solid var(--blue); flex-shrink:0;">
+          <div>
+            <div class="agent-name">Youssef Jlidi</div>
+            <div class="agent-role" style="color:var(--blue);">Stratégie &amp; Orchestration</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:var(--blue); color:white; padding:3px 9px; border-radius:100px; white-space:nowrap;">Humain</span>
+        </div>
+        <p class="agent-desc">10 ans de SEO, pionnier du GEO en France. Il définit la stratégie, orchestre les agents, valide chaque livrable et est votre seul interlocuteur du début à la fin.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Audit &amp; stratégie de visibilité</div>
+          <div class="agent-task">Orchestration des agents IA</div>
+          <div class="agent-task">Validation &amp; livraison client</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; margin-top:auto; padding-top:4px;">
+          <span class="agent-status agent-status--active"><span class="agent-status--dot"></span>Disponible directement</span>
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" style="margin-left:auto; font-size:0.75rem; color:var(--blue); font-weight:600; text-decoration:none;">LinkedIn →</a>
+        </div>
+      </div>
+
+      <!-- Agent SEO -->
+      <div class="agent-card reveal reveal-delay-1">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="agent-logo" style="background:linear-gradient(135deg,#1E40AF,#3B82F6);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <div>
+            <div class="agent-name">Agent SEO</div>
+            <div class="agent-role">Référencement naturel</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:#EFF6FF; color:#1E40AF; border:1px solid rgba(30,64,175,0.2); padding:3px 9px; border-radius:100px; white-space:nowrap;">Agent IA</span>
+        </div>
+        <p class="agent-desc">Spécialisé dans l'audit technique, le suivi de positions et la détection d'opportunités SEO. Actif en continu, il surveille et signale chaque anomalie.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Audit technique automatisé</div>
+          <div class="agent-task">Monitoring de positions quotidien</div>
+          <div class="agent-task">Analyse des pages concurrentes</div>
+        </div>
+        <div><span class="agent-status agent-status--active"><span class="agent-status--dot"></span>24h/24 — 7j/7</span></div>
+      </div>
+
+      <!-- Agent GEO -->
+      <div class="agent-card reveal reveal-delay-2">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="agent-logo" style="background:linear-gradient(135deg,#5B21B6,#8B5CF6);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <div>
+            <div class="agent-name">Agent GEO</div>
+            <div class="agent-role">Visibilité dans les IA</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:#F5F3FF; color:#5B21B6; border:1px solid rgba(91,33,182,0.2); padding:3px 9px; border-radius:100px; white-space:nowrap;">Agent IA</span>
+        </div>
+        <p class="agent-desc">Surveille en temps réel la présence des marques dans ChatGPT, Perplexity, Gemini et Google AI Overviews. Détecte les opportunités de citation et benchmark la concurrence.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Monitoring citations LLMs</div>
+          <div class="agent-task">Benchmark GEO vs concurrents</div>
+          <div class="agent-task">Rapports de présence hebdomadaires</div>
+        </div>
+        <div><span class="agent-status agent-status--active"><span class="agent-status--dot"></span>24h/24 — 7j/7</span></div>
+      </div>
+
+      <!-- Agent Contenu -->
+      <div class="agent-card reveal">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="agent-logo" style="background:linear-gradient(135deg,#065F46,#059669);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <div>
+            <div class="agent-name">Agent Contenu</div>
+            <div class="agent-role">Rédaction &amp; édition</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:#F0FDF4; color:#065F46; border:1px solid rgba(6,95,70,0.2); padding:3px 9px; border-radius:100px; white-space:nowrap;">Agent IA</span>
+        </div>
+        <p class="agent-desc">Rédige, optimise et structure le contenu éditorial — articles de blog, pages piliers, cocons sémantiques, métas. Toujours relu et validé par Youssef avant livraison.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Rédaction d'articles &amp; pages piliers</div>
+          <div class="agent-task">Optimisation sémantique des contenus</div>
+          <div class="agent-task">Structuration de cocons thématiques</div>
+        </div>
+        <div><span class="agent-status agent-status--active"><span class="agent-status--dot"></span>24h/24 — 7j/7</span></div>
+      </div>
+
+      <!-- Agent LinkedIn -->
+      <div class="agent-card reveal reveal-delay-1">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="agent-logo" style="background:#0A66C2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="agent-name">Agent LinkedIn</div>
+            <div class="agent-role">Présence sociale</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:#E8F0FE; color:#0A66C2; border:1px solid rgba(10,102,194,0.2); padding:3px 9px; border-radius:100px; white-space:nowrap;">Agent IA</span>
+        </div>
+        <p class="agent-desc">Analyse les tendances LinkedIn, identifie les formats et sujets porteurs, rédige des posts et surveille les performances éditoriales pour maximiser la portée organique.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Analyse de l'algorithme &amp; tendances</div>
+          <div class="agent-task">Rédaction &amp; optimisation de posts</div>
+          <div class="agent-task">Suivi des métriques d'engagement</div>
+        </div>
+        <div><span class="agent-status agent-status--active"><span class="agent-status--dot"></span>24h/24 — 7j/7</span></div>
+      </div>
+
+      <!-- Agent IA & Automatisation -->
+      <div class="agent-card reveal reveal-delay-2">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="agent-logo" style="background:linear-gradient(135deg,#92400E,#F59E0B);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div>
+            <div class="agent-name">Agent IA</div>
+            <div class="agent-role">Automatisation &amp; workflows</div>
+          </div>
+          <span style="margin-left:auto; font-size:0.65rem; font-weight:700; background:#FFFBEB; color:#92400E; border:1px solid rgba(146,64,14,0.2); padding:3px 9px; border-radius:100px; white-space:nowrap;">Agent IA</span>
+        </div>
+        <p class="agent-desc">Conçoit et exécute les pipelines d'automatisation — génération de rapports, chaînes de traitement de données, agents métier sur mesure et orchestration multi-outils.</p>
+        <div class="agent-tasks">
+          <div class="agent-task">Pipelines de traitement automatisés</div>
+          <div class="agent-task">Génération de rapports clients</div>
+          <div class="agent-task">Agents métier sur mesure</div>
+        </div>
+        <div><span class="agent-status agent-status--active"><span class="agent-status--dot"></span>24h/24 — 7j/7</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#0A1628,#0F2442); padding:96px 0; position:relative; overflow:hidden;" aria-label="Call to action">
+  <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:radial-gradient(ellipse 50% 80% at 70% 50%, rgba(37,99,235,0.18) 0%, transparent 70%); pointer-events:none;"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div style="display:flex; align-items:center; gap:56px; flex-wrap:wrap;">
+
+      <!-- Photo -->
+      <div style="flex-shrink:0;">
+        <div style="position:relative; display:inline-block;">
+          <img src="assets/youssef-jlidi-2.png" alt="Youssef Jlidi"
+            style="width:200px; height:240px; object-fit:cover; object-position:top; border-radius:16px; display:block; filter:grayscale(20%);">
+          <div style="position:absolute; bottom:-12px; left:50%; transform:translateX(-50%); white-space:nowrap; background:rgba(255,255,255,0.08); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.15); border-radius:100px; padding:6px 16px; display:flex; align-items:center; gap:8px;">
+            <div style="width:7px; height:7px; border-radius:50%; background:#22C55E;"></div>
+            <span style="font-size:0.78rem; font-weight:600; color:rgba(255,255,255,0.9);">Disponible</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte + CTA -->
+      <div style="flex:1; min-width:280px;">
+        <p style="font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:16px;">Youssef Jlidi · Fondateur</p>
+        <h2 style="color:white; font-size:clamp(1.6rem,3vw,2.25rem); line-height:1.2; margin-bottom:16px;">6 membres. Un seul appel pour démarrer.</h2>
+        <p style="color:rgba(255,255,255,0.6); font-size:1rem; line-height:1.75; margin-bottom:32px; max-width:500px;">Youssef répond, les agents se mettent en route. Pas de brief perdu, pas de délai d'onboarding — l'équipe est opérationnelle dès le lendemain.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="contact.html" class="btn-primary btn-lg">Réserver un appel</a>
+          <a href="services/seo.html" class="btn-outline-white btn-lg">Voir les services</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services/seo.html">Référencement SEO</a></li>
+          <li><a href="services/geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="services/linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="services/ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Apprendre</p>
+        <ul class="footer-links">
+          <li><a href="ateliers.html">Ateliers pratiques</a></li>
+          <li><a href="formations.html">Formations OPCO</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Neopulsion</p>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

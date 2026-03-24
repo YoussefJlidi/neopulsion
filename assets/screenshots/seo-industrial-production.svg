@@ -1,0 +1,41 @@
+<svg width="800" height="440" viewBox="0 0 800 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="440" rx="24" fill="#07090C"/>
+  <rect x="24" y="24" width="752" height="48" rx="12" fill="#10141A" stroke="#1B2430"/>
+  <circle cx="52" cy="48" r="6" fill="#FFE600"/>
+  <circle cx="72" cy="48" r="6" fill="#3A4250"/>
+  <circle cx="92" cy="48" r="6" fill="#3A4250"/>
+  <text x="118" y="54" fill="#DDE2EA" font-size="18" font-family="Arial, sans-serif">Pipeline Editorial Industrialise</text>
+
+  <rect x="32" y="92" width="736" height="324" rx="16" fill="#0D131A" stroke="#212A36"/>
+  <rect x="56" y="120" width="136" height="178" rx="12" fill="#101822" stroke="#293544"/>
+  <rect x="206" y="120" width="136" height="178" rx="12" fill="#101822" stroke="#293544"/>
+  <rect x="356" y="120" width="136" height="178" rx="12" fill="#101822" stroke="#293544"/>
+  <rect x="506" y="120" width="136" height="178" rx="12" fill="#101822" stroke="#293544"/>
+  <rect x="656" y="120" width="88" height="178" rx="12" fill="#101822" stroke="#293544"/>
+
+  <text x="78" y="148" fill="#D4DCE7" font-size="12" font-family="Arial, sans-serif">Brief IA</text>
+  <text x="228" y="148" fill="#D4DCE7" font-size="12" font-family="Arial, sans-serif">Draft</text>
+  <text x="378" y="148" fill="#D4DCE7" font-size="12" font-family="Arial, sans-serif">QA SEO</text>
+  <text x="528" y="148" fill="#D4DCE7" font-size="12" font-family="Arial, sans-serif">Publish</text>
+  <text x="676" y="148" fill="#D4DCE7" font-size="12" font-family="Arial, sans-serif">Scale</text>
+
+  <rect x="74" y="170" width="100" height="10" rx="5" fill="#FFE600"/>
+  <rect x="74" y="188" width="82" height="8" rx="4" fill="#2B3646"/>
+  <rect x="224" y="170" width="100" height="10" rx="5" fill="#BEE700"/>
+  <rect x="224" y="188" width="86" height="8" rx="4" fill="#2B3646"/>
+  <rect x="374" y="170" width="100" height="10" rx="5" fill="#A6CD00"/>
+  <rect x="374" y="188" width="70" height="8" rx="4" fill="#2B3646"/>
+  <rect x="524" y="170" width="100" height="10" rx="5" fill="#FFE600"/>
+  <rect x="524" y="188" width="88" height="8" rx="4" fill="#2B3646"/>
+  <rect x="670" y="170" width="56" height="10" rx="5" fill="#FFE600"/>
+  <rect x="670" y="188" width="42" height="8" rx="4" fill="#2B3646"/>
+
+  <line x1="192" y1="210" x2="206" y2="210" stroke="#FFE600" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="342" y1="210" x2="356" y2="210" stroke="#FFE600" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="492" y1="210" x2="506" y2="210" stroke="#FFE600" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="642" y1="210" x2="656" y2="210" stroke="#FFE600" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <rect x="56" y="324" width="688" height="68" rx="10" fill="#101822" stroke="#253141"/>
+  <text x="80" y="352" fill="#FFE600" font-size="24" font-family="Arial, sans-serif">+180 contenus / mois</text>
+  <text x="338" y="352" fill="#9EABBC" font-size="13" font-family="Arial, sans-serif">cadence editoriale avec controle qualite SEO</text>
+</svg>

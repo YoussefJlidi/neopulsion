@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google Tag Manager --><script>window.dataLayer = window.dataLayer || [];dataLayer.push({"typePage": "Information","espace": "Livres"});(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5BH676');</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+<meta name="alexaVerifyID" content="bpVtOKMRHP2TIOOyork9G3gGP-M" />
+<meta name="format-detection" content="telephone=no">
+<meta class="netreviewsWidget" id="netreviewsWidgetNum26413" data-jsurl="//cl.avis-verifies.com/fr/cache/2/1/3/213f1946-1b09-7d34-d1cb-05a1c82a7c78/widget4/widget21-26413_script.js"/>
+<meta name="language" content="fr-FR" />
+<meta name="description" content="Editions ENI est éditeur de livres informatique et de vidéos de formation, écrits par des experts du sujet traité." />
+
+<title>Erreur 404 - page introuvable</title>
+    
+<link rel="canonical" href="https://www.editions-eni.fr/404" />
+<link rel="icon" type="image/svg+xml" href="/rsc/img/favicon.svg"/>
+<link rel="alternate icon" type="image/x-icon" href="/rsc/img/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="/rsc/css/bundles/89836057F50F3764E1946D99AD4772D92D6E6074.css" />
+
+
+<!-- Microdonnées-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.editions-eni.fr",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.editions-eni.fr{1} article(s) répond(ent) à la recherche sur :  <strong>{0}</strong>?exp={query}"
+    },
+    "query-input": "required name=query"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Editions ENI",
+    "logo": "https://www.editions-eni.fr/rsc/shared/images/logo_ENI.svg",
+    "url": "https://www.editions-eni.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue Benjamin FRANKLIN",
+      "addressLocality": "Saint HERBLAIN",
+      "postalCode": "44812",
+      "addressCountry": "FRANCE"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "editions@eni.fr",
+        "telephone": "+33(0)2 51 80 15 15"
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "technical support",
+        "email": "support@eni.fr",
+        "telephone": "+33(0)8 92 700 160"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/EditionsENI",
+      "https://twitter.com/EditionsENI",
+      "https://www.youtube.com/user/EditionsENI",
+      "https://www.linkedin.com/company/editions-eni",
+      "https://www.instagram.com/enieditions"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "bestRating": "5",
+      "ratingCount": "240",
+      "ratingValue": "4.62",
+      "url": "https://www.avis-verifies.com/avis-clients/editions-eni.fr"
+    }
+  }
+}
+</script>
+</head>
+<body lang="fr"  class="NotLogged Livres">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-5BH676' height='0' width='0' style='display:none;visibility:hidden;'></iframe></noscript>
+<header id="Header">	
+	<!-- zone de messages -->
+	<ul id="Banner">
+		<li class="Banner_text_noir"><a href="/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399"><strong>ÉVÈNEMENT : </strong>Sécurité informatique – Ethical Hacking : <br>la 7ᵉ édition est disponible ! <b>Cliquez ici</b></a></li>
+		<li class="Banner_text_noir"><a href="/abonnement"><strong>Bibliothèque Numérique ENI : </strong> <br>tous nos contenus en ligne en accès illimité. <b>Cliquez ici</b></a></li>
+	</ul>
+
+	<!-- Entête -->
+	<section id="Head">
+		<div class="container">
+			<button id="btnReturnBack"></button>
+			<button id="btnMenu" aria-label="Menu" data-closed="&#xe930" data-opened="&#xe951"></button>
+			
+			<a id="Logo" href="/"><img src="/rsc/shared/images/logo_ENI.svg" alt="Editions ENI" /> Editions ENI <em>Livres | Vidéos | e-Formations</em></a>
+			
+			<div id="cd989feb-bef8-472c-9dc5-55b40bfb4e82" class="AV"></div><script async charset="utf-8" src="https://widgets.rr.skeepers.io/generated/213f1946-1b09-7d34-d1cb-05a1c82a7c78/cd989feb-bef8-472c-9dc5-55b40bfb4e82.js"></script>
+			<a id="WA" aria-label="Discutez avec nous sur WhatsApp" href="https://wa.me/+33674948685" target="_blank"></a>
+
+			<form id="Search">
+				<input type="search" value="" placeholder="Je cherche un livre, une vidéo..."data-url= "/recherche"  />
+				<button aria-label="Rechercher"></button>
+			</form>
+			
+			<nav id="Shopper">
+				<a id="linkBasket" href="/panier" data-count="0" title="panier" aria-label="Mon panier"><div id="alert"><b></b><p>Votre article a été ajouté au panier</p></div></a>
+				<button id="Account" data-mnu='' title="Compte" aria-label="Mon Compte"></button>
+			</nav>
+		</div>
+	</section>
+	
+	<!-- menu de navigation -->
+	<section id="NavBar">
+		<nav id="Spaces">
+			<a id="d9bd8b5e-f324-473f-b1fc-b41b421c950f" href="/" class="current"><b>Livres & vidéos</b></a>
+			<a id="2e947085-461f-49fb-af92-1a31dbd38df5" href="/formations-en-ligne"><b>Formations en ligne</b></a>
+			<a id="a8debefe-3dbe-4c25-b8cb-62642f426977" href="/abonnement"><b>Bibliothèque numérique</b></a>
+			<a id="cb34ff51-0590-46c9-8abf-b786265b79a7" href="/espace-professionnels"><b>Espace Professionnels</b></a>
+		</nav>
+		
+		<div class="container">
+			<nav id="Themes">
+				<a id="RA" href="/systeme-et-reseau" data-id="c41a356d-4b91-48e5-9d44-83fa08e4ebe3" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"d3b70451-8c5d-429e-9cab-5d831d1d886f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA1","Libelle":"Poste de travail","Ordre":1,"URL_Requested":"/systeme-et-reseau/poste-de-travail","CodeRoot":"RA","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"bf02fe8a-0992-4028-a709-f7be59f0f9ff","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"d3b70451-8c5d-429e-9cab-5d831d1d886f","CodeRubrique":"RA11","Libelle":"Windows","Ordre":1,"URL_Requested":"/systeme-et-reseau/poste-de-travail/windows","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c1909f0c-9b9e-4abc-b052-1eb231b51a53","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"d3b70451-8c5d-429e-9cab-5d831d1d886f","CodeRubrique":"RA12","Libelle":"Linux","Ordre":2,"URL_Requested":"/systeme-et-reseau/poste-de-travail/linux","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"876b4d5e-b680-4621-ba74-3fa035d90bea","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"d3b70451-8c5d-429e-9cab-5d831d1d886f","CodeRubrique":"RA13","Libelle":"Client léger","Ordre":3,"URL_Requested":"/systeme-et-reseau/poste-de-travail/client-leger","CodeRoot":"RA","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA2","Libelle":"Serveur","Ordre":2,"URL_Requested":"/systeme-et-reseau/serveur","CodeRoot":"RA","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"0d6ec99a-e06d-4142-9796-8e50060719f1","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","CodeRubrique":"RA21","Libelle":"Windows","Ordre":1,"URL_Requested":"/systeme-et-reseau/serveur/windows","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"d56c69d3-3786-46ea-9585-29db9e732b77","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","CodeRubrique":"RA22","Libelle":"Linux","Ordre":2,"URL_Requested":"/systeme-et-reseau/serveur/linux","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"f56ecbaf-8f11-40fc-a130-9819d34e0356","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","CodeRubrique":"RA23","Libelle":"Unix","Ordre":3,"URL_Requested":"/systeme-et-reseau/serveur/unix","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"552e2c5c-22f2-4382-ac69-6c903f9bccf6","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","CodeRubrique":"RA24","Libelle":"Scripting","Ordre":4,"URL_Requested":"/systeme-et-reseau/serveur/scripting","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"521b6524-526f-4d2c-a10d-ce39610da844","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c465cf84-e6d1-47e2-bd97-bb349658ed1f","CodeRubrique":"RA25","Libelle":"Serveurs web et services","Ordre":5,"URL_Requested":"/systeme-et-reseau/serveur/serveurs-web-et-services","CodeRoot":"RA","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA3","Libelle":"Réseau","Ordre":2,"URL_Requested":"/systeme-et-reseau/reseau","CodeRoot":"RA","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"97eebbee-5bde-42e9-9790-6c377df1315a","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","CodeRubrique":"RA31","Libelle":"Notions fondamentales","Ordre":1,"URL_Requested":"/systeme-et-reseau/reseau/notions-fondamentales","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"010b2d61-b009-45f8-a92e-73698a0545a7","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","CodeRubrique":"RA32","Libelle":"Supervision","Ordre":2,"URL_Requested":"/systeme-et-reseau/reseau/supervision","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ab7f2759-4dad-417f-ac4b-8a1e2259a232","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","CodeRubrique":"RA33","Libelle":"Protocoles","Ordre":3,"URL_Requested":"/systeme-et-reseau/reseau/protocoles","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"2966720b-97b8-4b42-b8cd-2e5c557c0a20","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","CodeRubrique":"RA34","Libelle":"Services réseau","Ordre":4,"URL_Requested":"/systeme-et-reseau/reseau/services-reseau","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ed2f0008-1fce-4def-9986-7f83a731557a","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"4a9f3bae-74c6-4bba-a389-bb6bf542a39b","CodeRubrique":"RA35","Libelle":"Cisco","Ordre":5,"URL_Requested":"/systeme-et-reseau/reseau/cisco","CodeRoot":"RA","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"3f99bf28-476c-40f4-af44-fdd765f2e443","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA4","Libelle":"Sécurité informatique","Ordre":3,"URL_Requested":"/systeme-et-reseau/securite-informatique","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"dccef53a-c5d5-4a84-a503-371d3508c672","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA5","Libelle":"Virtualisation et Cloud","Ordre":4,"URL_Requested":"/systeme-et-reseau/virtualisation-et-cloud","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"01f0ee31-4e72-4415-8578-0a9bdc625de6","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RA6","Libelle":"Organisation du SI","Ordre":5,"URL_Requested":"/systeme-et-reseau/organisation-du-si","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"350210ed-e015-4fb1-8b0f-306263760281","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"c41a356d-4b91-48e5-9d44-83fa08e4ebe3","CodeRubrique":"RD","Libelle":"Certification","Ordre":6,"URL_Requested":"/systeme-et-reseau/certification","CodeRoot":"RA","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"8bbb4ea1-b75a-47e1-8c47-32f402b91850","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"350210ed-e015-4fb1-8b0f-306263760281","CodeRubrique":"RD1","Libelle":"Certification Technique","Ordre":1,"URL_Requested":"/systeme-et-reseau/certification/certification-technique","CodeRoot":"RA","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"5ab4b260-4c57-447a-8c6b-9e84606bee36","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"8bbb4ea1-b75a-47e1-8c47-32f402b91850","CodeRubrique":"RD14","Libelle":"Certification Linux","Ordre":1,"URL_Requested":"/systeme-et-reseau/certification/certification-technique/certification-linux","CodeRoot":"RA","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"af46b02b-0346-4134-bf7e-d873cd4901a4","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"8bbb4ea1-b75a-47e1-8c47-32f402b91850","CodeRubrique":"RD15","Libelle":"Certification Cisco","Ordre":2,"URL_Requested":"/systeme-et-reseau/certification/certification-technique/certification-cisco","CodeRoot":"RA","subthemes":[]}]}]}]'><b>Système et réseau</b></a>
+				<a id="RB" href="/developpement-d-applications" data-id="307e3f3b-08ce-4c30-acdd-9a9a348c799d" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"87dd3a40-0ce5-4eb3-99af-be5ac5149b65","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB8","Libelle":"Pour les makers","Ordre":1,"URL_Requested":"/developpement-d-applications/pour-les-makers","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4b925806-fd3e-44c5-9e25-e43fe401b9e6","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB1","Libelle":"Pour les CMS et les réseaux sociaux","Ordre":2,"URL_Requested":"/developpement-d-applications/pour-les-cms-et-les-reseaux-sociaux","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"56e2dcc6-86aa-4019-9cd8-ba8c18b1be78","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB2","Libelle":"Pour les terminaux mobiles","Ordre":3,"URL_Requested":"/developpement-d-applications/pour-les-terminaux-mobiles","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"a901db20-55ad-47c7-b47d-be9654024198","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB3","Libelle":"Pour le Cloud","Ordre":4,"URL_Requested":"/developpement-d-applications/pour-le-cloud","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"9792c708-60c2-4282-8e6f-4432e421e6cd","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB4","Libelle":"Langages","Ordre":5,"URL_Requested":"/developpement-d-applications/langages","CodeRoot":"RB","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ad354753-43ae-46fe-92e6-6c903e55be90","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB41","Libelle":"Abap","Ordre":1,"URL_Requested":"/developpement-d-applications/langages/abap","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"eb3c4883-3c56-4d93-8b7c-91b61d4d2278","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB43","Libelle":"C et C++","Ordre":3,"URL_Requested":"/developpement-d-applications/langages/c-et-c","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"9fa888ea-b359-463e-b04c-4956e7d0b3b4","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB44","Libelle":"C#","Ordre":4,"URL_Requested":"/developpement-d-applications/langages/c","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"66351771-804d-480d-90b6-0610d53a6210","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB45","Libelle":"HTML et XHTML","Ordre":5,"URL_Requested":"/developpement-d-applications/langages/html-et-xhtml","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"b9461de0-30c9-4aee-936c-b56acec2d27b","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB46","Libelle":"Java","Ordre":6,"URL_Requested":"/developpement-d-applications/langages/java","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"259725fe-cf20-45ce-81bb-5351808fd431","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB47","Libelle":"Javascript","Ordre":7,"URL_Requested":"/developpement-d-applications/langages/javascript","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"34fdb851-4f75-4c9f-aa93-7383892883d5","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB491","Libelle":"PHP","Ordre":8,"URL_Requested":"/developpement-d-applications/langages/php","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c62447f3-3828-469b-a5e5-fcbffe23b118","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB492","Libelle":"Python","Ordre":9,"URL_Requested":"/developpement-d-applications/langages/python","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"f4f4e3ee-d0b1-4e37-9ae7-dca1608a100f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB498","Libelle":"R","Ordre":10,"URL_Requested":"/developpement-d-applications/langages/r","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"df377324-d9ac-41d4-bb71-be3b41a81748","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB494","Libelle":"VBA et VSTO","Ordre":11,"URL_Requested":"/developpement-d-applications/langages/vba-et-vsto","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4f7bde66-10d7-45bb-b72a-98a56d06b7c6","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB495","Libelle":"WinDev","Ordre":12,"URL_Requested":"/developpement-d-applications/langages/windev","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"f81fb376-d6de-4456-a885-cfeefea2c017","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"9792c708-60c2-4282-8e6f-4432e421e6cd","CodeRubrique":"RB497","Libelle":"Autres langages","Ordre":13,"URL_Requested":"/developpement-d-applications/langages/autres-langages","CodeRoot":"RB","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"6a2d69af-5ce0-41ae-b518-a82f03362acf","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB5","Libelle":"Méthode et normes","Ordre":6,"URL_Requested":"/developpement-d-applications/methode-et-normes","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4942cd7a-9aa5-46f9-bbf4-0a78383d3823","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB6","Libelle":"Tests et qualité","Ordre":7,"URL_Requested":"/developpement-d-applications/tests-et-qualite","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ca45fdbc-338c-46f6-970f-9b57b96b5dec","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB7","Libelle":"Etats - Rapports","Ordre":8,"URL_Requested":"/developpement-d-applications/etats-rapports","CodeRoot":"RB","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"dcbca098-e2a6-4890-8b7c-3ebae60cef4c","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"307e3f3b-08ce-4c30-acdd-9a9a348c799d","CodeRubrique":"RB9","Libelle":"Intelligence Artificielle","Ordre":9,"URL_Requested":"/developpement-d-applications/intelligence-artificielle","CodeRoot":"RB","subthemes":[]}]'><b>Développement d'applications</b></a>
+				<a id="RC" href="/data" data-id="1597d274-d9ed-474b-9770-b14d4c028082" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"593c6d16-ea66-4e79-b9da-840323859d45","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC1","Libelle":"Base de données","Ordre":1,"URL_Requested":"/data/base-de-donnees","CodeRoot":"RC","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"99bb458a-4604-4959-9eb5-650c292b217d","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"593c6d16-ea66-4e79-b9da-840323859d45","CodeRubrique":"RC11","Libelle":"Microsoft","Ordre":1,"URL_Requested":"/data/base-de-donnees/microsoft","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"29f70de5-7005-4308-9ccb-fe40b4f23f6c","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"593c6d16-ea66-4e79-b9da-840323859d45","CodeRubrique":"RC12","Libelle":"Open Source","Ordre":2,"URL_Requested":"/data/base-de-donnees/open-source","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"0cbd8975-0e07-47db-a757-c690b91a0f48","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"593c6d16-ea66-4e79-b9da-840323859d45","CodeRubrique":"RC13","Libelle":"Oracle","Ordre":3,"URL_Requested":"/data/base-de-donnees/oracle","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"bcfcbc7e-9c92-4d8b-a628-fb3d1c85f069","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"593c6d16-ea66-4e79-b9da-840323859d45","CodeRubrique":"RC14","Libelle":"Langage et méthode","Ordre":4,"URL_Requested":"/data/base-de-donnees/langage-et-methode","CodeRoot":"RC","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"30ce3d38-4ecf-44c3-ae6a-d9fc926650cf","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC2","Libelle":"Business Intelligence","Ordre":2,"URL_Requested":"/data/business-intelligence","CodeRoot":"RC","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"424e60fd-c61e-4a2d-bacb-5b56cd87e9cd","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"30ce3d38-4ecf-44c3-ae6a-d9fc926650cf","CodeRubrique":"RC21","Libelle":"Business Objects","Ordre":1,"URL_Requested":"/data/business-intelligence/business-objects","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"bc9b0def-f951-4b97-9ac7-7491e2410d6d","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"30ce3d38-4ecf-44c3-ae6a-d9fc926650cf","CodeRubrique":"RC22","Libelle":"Microsoft","Ordre":2,"URL_Requested":"/data/business-intelligence/microsoft","CodeRoot":"RC","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"f5b9680c-47b6-4380-8644-62c86298195a","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC3","Libelle":"Gestion de projet","Ordre":3,"URL_Requested":"/data/gestion-de-projet","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"96e4368d-dd40-492e-93a5-1db7b17d4f5f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC4","Libelle":"Messagerie et Communication","Ordre":4,"URL_Requested":"/data/messagerie-et-communication","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"9bab9b5c-37a8-4842-a682-d6614064954a","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC6","Libelle":"Plateforme collaborative","Ordre":5,"URL_Requested":"/data/plateforme-collaborative","CodeRoot":"RC","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4e9e5c36-6440-4317-9028-e7a01813cbe4","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"1597d274-d9ed-474b-9770-b14d4c028082","CodeRubrique":"RC7","Libelle":"Intégration de données","Ordre":6,"URL_Requested":"/data/integration-de-donnees","CodeRoot":"RC","subthemes":[]}]'><b>Data</b></a>
+				<a id="RE" href="/gestion-droit-entreprise-ia" data-id="81b69416-b322-4201-8341-d3975e8a8837" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"955f45a8-f2a5-4739-814c-89cb567d27bb","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE1","Libelle":"Droit de l&#39;informatique","Ordre":1,"URL_Requested":"/gestion-droit-entreprise-ia/droit-de-l-informatique","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"abe4eba2-4fae-485a-83d0-73243f2d5d43","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE2","Libelle":"Efficacité professionnelle","Ordre":2,"URL_Requested":"/gestion-droit-entreprise-ia/efficacite-professionnelle","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"e55c956f-aa15-4113-b05d-b879a1cfc016","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE3","Libelle":"E-Marketing","Ordre":3,"URL_Requested":"/gestion-droit-entreprise-ia/e-marketing","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"69f8a86a-15d1-4fd6-9693-eb0de1272d36","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE4","Libelle":"Environnement de travail collaboratif","Ordre":4,"URL_Requested":"/gestion-droit-entreprise-ia/environnement-de-travail-collaboratif","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"19e8b6c6-14bb-4df6-8661-ab72e2f62342","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE5","Libelle":"Gestion de l&#39;entreprise","Ordre":5,"URL_Requested":"/gestion-droit-entreprise-ia/gestion-de-l-entreprise","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"3ed52984-c8f8-4ebe-8d76-585ba61e2e2e","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE6","Libelle":"Gestion de projets","Ordre":6,"URL_Requested":"/gestion-droit-entreprise-ia/gestion-de-projets","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"5d7a531f-e6ba-4ade-a27d-70ce24e157e1","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE7","Libelle":"Gouvernance du SI","Ordre":7,"URL_Requested":"/gestion-droit-entreprise-ia/gouvernance-du-si","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"a39dfc1c-3c5b-4e7c-b61b-7ccf86918446","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE8","Libelle":"Solutions d&#39;entreprise","Ordre":8,"URL_Requested":"/gestion-droit-entreprise-ia/solutions-d-entreprise","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"657aa8bb-4092-48c6-8049-ce6541af1422","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE9","Libelle":"Business Intelligence","Ordre":9,"URL_Requested":"/gestion-droit-entreprise-ia/business-intelligence","CodeRoot":"RE","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"d60ca8f0-eeae-4ab1-99c5-60ce37230ae4","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"81b69416-b322-4201-8341-d3975e8a8837","CodeRubrique":"RE10","Libelle":"Intelligence Artificielle","Ordre":10,"URL_Requested":"/gestion-droit-entreprise-ia/intelligence-artificielle","CodeRoot":"RE","subthemes":[]}]'><b>Gestion - Droit - Entreprise - IA</b></a>
+				<a id="RF" href="/bureautique" data-id="26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"f3ae22de-a62b-44d1-8a7b-9d791c855359","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF1","Libelle":"Initiation informatique","Ordre":1,"URL_Requested":"/bureautique/initiation-informatique","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"569ff7ff-abd8-4dfb-9a0e-6034b9081550","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF2","Libelle":"Windows et réseau familial","Ordre":2,"URL_Requested":"/bureautique/windows-et-reseau-familial","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"2bc691a1-f7de-4cd3-b769-1b138bdec31e","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF3","Libelle":"Mac","Ordre":3,"URL_Requested":"/bureautique/mac","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"5d9d91aa-e3ab-4be2-91e8-9008688d61f8","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF4","Libelle":"Suite bureautique","Ordre":4,"URL_Requested":"/bureautique/suite-bureautique","CodeRoot":"RF","subthemes":[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"04251c63-543c-49d7-9cf3-7ff0786af08e","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"5d9d91aa-e3ab-4be2-91e8-9008688d61f8","CodeRubrique":"RF41","Libelle":"Microsoft Office","Ordre":1,"URL_Requested":"/bureautique/suite-bureautique/microsoft-office","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c63bca4e-752c-467a-a1eb-c01777542ac0","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"5d9d91aa-e3ab-4be2-91e8-9008688d61f8","CodeRubrique":"RF42","Libelle":"LibreOffice","Ordre":2,"URL_Requested":"/bureautique/suite-bureautique/libreoffice","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"7c3d8c7e-1480-47d4-bc72-0ded4110e357","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"5d9d91aa-e3ab-4be2-91e8-9008688d61f8","CodeRubrique":"RF44","Libelle":"Dans le Cloud","Ordre":4,"URL_Requested":"/bureautique/suite-bureautique/dans-le-cloud","CodeRoot":"RF","subthemes":[]}]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"273ae902-9f5f-42a8-9885-a687c59c18db","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF5","Libelle":"Word / Traitement de texte","Ordre":5,"URL_Requested":"/bureautique/word-traitement-de-texte","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c443bdd1-60ae-4987-9db0-967e8dfbaffc","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF6","Libelle":"Excel / Tableur","Ordre":6,"URL_Requested":"/bureautique/excel-tableur","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"114ff3c3-d7fb-4638-a2e6-e15ee1e9a670","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF7","Libelle":"PréAO / PowerPoint","Ordre":7,"URL_Requested":"/bureautique/preao-powerpoint","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"24e65945-e336-470b-99e5-1be5df4f0902","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF8","Libelle":"Messagerie / Outlook","Ordre":8,"URL_Requested":"/bureautique/messagerie-outlook","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"3002b8d6-daba-4530-9ec6-b7868360d33f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF9","Libelle":"Bases de données","Ordre":9,"URL_Requested":"/bureautique/bases-de-donnees","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"cc6f96c3-5bcd-4b37-b083-2d6e3c4de4d9","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF91","Libelle":"PAO","Ordre":10,"URL_Requested":"/bureautique/pao","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"c5bd5e27-75c8-4d20-aca7-80660f902328","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF92","Libelle":"Macros et VBA","Ordre":11,"URL_Requested":"/bureautique/macros-et-vba","CodeRoot":"RF","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4169b5b6-50fc-4eab-bee3-49807fd84904","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"26b6e6ff-9fd5-4d8e-b8d8-87d877f8f817","CodeRubrique":"RF93","Libelle":"Gestion de projet","Ordre":12,"URL_Requested":"/bureautique/gestion-de-projet","CodeRoot":"RF","subthemes":[]}]'><b>Bureautique</b></a>
+				<a id="RG" href="/graphisme-3d-animation-cao" data-id="6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ee858664-d6e6-4a7b-9e21-4e2f01661c93","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG1","Libelle":"3D","Ordre":1,"URL_Requested":"/graphisme-3d-animation-cao/3d","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"ebcd4c39-7bfc-4e41-85a4-d5206b0f9351","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG2","Libelle":"Animation","Ordre":2,"URL_Requested":"/graphisme-3d-animation-cao/animation","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"3f0e8f07-ddc3-4fa2-a988-2572b8872a07","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG3","Libelle":"CAO et DAO","Ordre":3,"URL_Requested":"/graphisme-3d-animation-cao/cao-et-dao","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"71decdf1-6650-4ac9-89b2-1702a33b978f","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG4","Libelle":"Dessin vectoriel","Ordre":4,"URL_Requested":"/graphisme-3d-animation-cao/dessin-vectoriel","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"30e29c4c-c673-4bfb-8b5b-1e837189842c","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG5","Libelle":"Diagrammes, Schémas et SIG","Ordre":5,"URL_Requested":"/graphisme-3d-animation-cao/diagrammes-schemas-et-sig","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"25cd598d-a9b9-4f24-aa1c-ca4dafa0bf09","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG6","Libelle":"PAO","Ordre":6,"URL_Requested":"/graphisme-3d-animation-cao/pao","CodeRoot":"RG","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"5d2f1576-d343-43fb-9a28-b614bc6c852d","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"6f4f9176-d7b3-4cb5-83ab-ed64dc3a62ca","CodeRubrique":"RG87","Libelle":"Retouche d&#39;images et photos","Ordre":7,"URL_Requested":"/graphisme-3d-animation-cao/retouche-d-images-et-photos","CodeRoot":"RG","subthemes":[]}]'><b>Graphisme, 3D, Animation, CAO</b></a>
+				<a id="RH" href="/web-et-e-marketing" data-id="080abd9d-dc16-49ed-a2c9-8abea91ba00e" data-subthemes='[{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"785c59e6-bbca-426f-a4dd-be14e4546545","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"080abd9d-dc16-49ed-a2c9-8abea91ba00e","CodeRubrique":"RH1","Libelle":"CMS","Ordre":1,"URL_Requested":"/web-et-e-marketing/cms","CodeRoot":"RH","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"fe163afb-07e8-41eb-9baf-ad50615b9622","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"080abd9d-dc16-49ed-a2c9-8abea91ba00e","CodeRubrique":"RH3","Libelle":"E-marketing","Ordre":2,"URL_Requested":"/web-et-e-marketing/e-marketing","CodeRoot":"RH","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"4cf77768-a2c2-4ebe-a621-2fa77e0c74ba","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"080abd9d-dc16-49ed-a2c9-8abea91ba00e","CodeRubrique":"RH4","Libelle":"Conception web","Ordre":3,"URL_Requested":"/web-et-e-marketing/conception-web","CodeRoot":"RH","subthemes":[]},{"IdActivite":1,"IdEspace":"d9bd8b5e-f324-473f-b1fc-b41b421c950f","IdRubrique":"9354086e-c6ae-43a1-bc7c-5db72df9f08b","IdRoot":"00000000-0000-0000-0000-000000000000","IdRubriqueParent":"080abd9d-dc16-49ed-a2c9-8abea91ba00e","CodeRubrique":"RH2","Libelle":"Objets connectés","Ordre":4,"URL_Requested":"/web-et-e-marketing/objets-connectes","CodeRoot":"RH","subthemes":[]}]'><b>Web et E-Marketing</b></a>
+			</nav>
+
+			<nav id="NavBarPanel">
+				<div id="SubThemes"></div>
+			</nav>
+		</div>
+	</section>
+</header>
+
+<!-- menu de navigation mobile -->
+<nav id="MobMenu">
+    <ul>        
+		<li id="mLivres" class="sm opnd">
+			<a href="/">Livres & vidéos<button></button></a>
+			  <ul><li>
+      <a id="RA" href="/systeme-et-reseau">Système et réseau<button></button></a><ul><li>
+      <a id="RA1" href="/systeme-et-reseau/poste-de-travail">Poste de travail<button></button></a><ul><li>
+      <a id="RA11" href="/systeme-et-reseau/poste-de-travail/windows">Windows</a>    </li><li>
+      <a id="RA12" href="/systeme-et-reseau/poste-de-travail/linux">Linux</a>    </li><li>
+      <a id="RA13" href="/systeme-et-reseau/poste-de-travail/client-leger">Client léger</a>    </li></ul>    </li><li>
+      <a id="RA2" href="/systeme-et-reseau/serveur">Serveur<button></button></a><ul><li>
+      <a id="RA21" href="/systeme-et-reseau/serveur/windows">Windows</a>    </li><li>
+      <a id="RA22" href="/systeme-et-reseau/serveur/linux">Linux</a>    </li><li>
+      <a id="RA23" href="/systeme-et-reseau/serveur/unix">Unix</a>    </li><li>
+      <a id="RA24" href="/systeme-et-reseau/serveur/scripting">Scripting</a>    </li><li>
+      <a id="RA25" href="/systeme-et-reseau/serveur/serveurs-web-et-services">Serveurs web et services</a>    </li></ul>    </li><li>
+      <a id="RA3" href="/systeme-et-reseau/reseau">Réseau<button></button></a><ul><li>
+      <a id="RA31" href="/systeme-et-reseau/reseau/notions-fondamentales">Notions fondamentales</a>    </li><li>
+      <a id="RA32" href="/systeme-et-reseau/reseau/supervision">Supervision</a>    </li><li>
+      <a id="RA33" href="/systeme-et-reseau/reseau/protocoles">Protocoles</a>    </li><li>
+      <a id="RA34" href="/systeme-et-reseau/reseau/services-reseau">Services réseau</a>    </li><li>
+      <a id="RA35" href="/systeme-et-reseau/reseau/cisco">Cisco</a>    </li></ul>    </li><li>
+      <a id="RA4" href="/systeme-et-reseau/securite-informatique">Sécurité informatique</a>    </li><li>
+      <a id="RA5" href="/systeme-et-reseau/virtualisation-et-cloud">Virtualisation et Cloud</a>    </li><li>
+      <a id="RA6" href="/systeme-et-reseau/organisation-du-si">Organisation du SI</a>    </li><li>
+      <a id="RD" href="/systeme-et-reseau/certification">Certification<button></button></a><ul><li>
+      <a id="RD1" href="/systeme-et-reseau/certification/certification-technique">Certification Technique<button></button></a><ul><li>
+      <a id="RD14" href="/systeme-et-reseau/certification/certification-technique/certification-linux">Certification Linux</a>    </li><li>
+      <a id="RD15" href="/systeme-et-reseau/certification/certification-technique/certification-cisco">Certification Cisco</a>    </li></ul>    </li></ul>    </li></ul>    </li><li>
+      <a id="RB" href="/developpement-d-applications">Développement d'applications<button></button></a><ul><li>
+      <a id="RB8" href="/developpement-d-applications/pour-les-makers">Pour les makers</a>    </li><li>
+      <a id="RB1" href="/developpement-d-applications/pour-les-cms-et-les-reseaux-sociaux">Pour les CMS et les réseaux sociaux</a>    </li><li>
+      <a id="RB2" href="/developpement-d-applications/pour-les-terminaux-mobiles">Pour les terminaux mobiles</a>    </li><li>
+      <a id="RB3" href="/developpement-d-applications/pour-le-cloud">Pour le Cloud</a>    </li><li>
+      <a id="RB4" href="/developpement-d-applications/langages">Langages<button></button></a><ul><li>
+      <a id="RB41" href="/developpement-d-applications/langages/abap">Abap</a>    </li><li>
+      <a id="RB43" href="/developpement-d-applications/langages/c-et-c">C et C++</a>    </li><li>
+      <a id="RB44" href="/developpement-d-applications/langages/c">C#</a>    </li><li>
+      <a id="RB45" href="/developpement-d-applications/langages/html-et-xhtml">HTML et XHTML</a>    </li><li>
+      <a id="RB46" href="/developpement-d-applications/langages/java">Java</a>    </li><li>
+      <a id="RB47" href="/developpement-d-applications/langages/javascript">Javascript</a>    </li><li>
+      <a id="RB491" href="/developpement-d-applications/langages/php">PHP</a>    </li><li>
+      <a id="RB492" href="/developpement-d-applications/langages/python">Python</a>    </li><li>
+      <a id="RB498" href="/developpement-d-applications/langages/r">R</a>    </li><li>
+      <a id="RB494" href="/developpement-d-applications/langages/vba-et-vsto">VBA et VSTO</a>    </li><li>
+      <a id="RB495" href="/developpement-d-applications/langages/windev">WinDev</a>    </li><li>
+      <a id="RB497" href="/developpement-d-applications/langages/autres-langages">Autres langages</a>    </li></ul>    </li><li>
+      <a id="RB5" href="/developpement-d-applications/methode-et-normes">Méthode et normes</a>    </li><li>
+      <a id="RB6" href="/developpement-d-applications/tests-et-qualite">Tests et qualité</a>    </li><li>
+      <a id="RB7" href="/developpement-d-applications/etats-rapports">Etats - Rapports</a>    </li><li>
+      <a id="RB9" href="/developpement-d-applications/intelligence-artificielle">Intelligence Artificielle</a>    </li></ul>    </li><li>
+      <a id="RC" href="/data">Data<button></button></a><ul><li>
+      <a id="RC1" href="/data/base-de-donnees">Base de données<button></button></a><ul><li>
+      <a id="RC11" href="/data/base-de-donnees/microsoft">Microsoft</a>    </li><li>
+      <a id="RC12" href="/data/base-de-donnees/open-source">Open Source</a>    </li><li>
+      <a id="RC13" href="/data/base-de-donnees/oracle">Oracle</a>    </li><li>
+      <a id="RC14" href="/data/base-de-donnees/langage-et-methode">Langage et méthode</a>    </li></ul>    </li><li>
+      <a id="RC2" href="/data/business-intelligence">Business Intelligence<button></button></a><ul><li>
+      <a id="RC21" href="/data/business-intelligence/business-objects">Business Objects</a>    </li><li>
+      <a id="RC22" href="/data/business-intelligence/microsoft">Microsoft</a>    </li></ul>    </li><li>
+      <a id="RC3" href="/data/gestion-de-projet">Gestion de projet</a>    </li><li>
+      <a id="RC4" href="/data/messagerie-et-communication">Messagerie et Communication</a>    </li><li>
+      <a id="RC6" href="/data/plateforme-collaborative">Plateforme collaborative</a>    </li><li>
+      <a id="RC7" href="/data/integration-de-donnees">Intégration de données</a>    </li></ul>    </li><li>
+      <a id="RE" href="/gestion-droit-entreprise-ia">Gestion - Droit - Entreprise - IA<button></button></a><ul><li>
+      <a id="RE1" href="/gestion-droit-entreprise-ia/droit-de-l-informatique">Droit de l'informatique</a>    </li><li>
+      <a id="RE2" href="/gestion-droit-entreprise-ia/efficacite-professionnelle">Efficacité professionnelle</a>    </li><li>
+      <a id="RE3" href="/gestion-droit-entreprise-ia/e-marketing">E-Marketing</a>    </li><li>
+      <a id="RE4" href="/gestion-droit-entreprise-ia/environnement-de-travail-collaboratif">Environnement de travail collaboratif</a>    </li><li>
+      <a id="RE5" href="/gestion-droit-entreprise-ia/gestion-de-l-entreprise">Gestion de l'entreprise</a>    </li><li>
+      <a id="RE6" href="/gestion-droit-entreprise-ia/gestion-de-projets">Gestion de projets</a>    </li><li>
+      <a id="RE7" href="/gestion-droit-entreprise-ia/gouvernance-du-si">Gouvernance du SI</a>    </li><li>
+      <a id="RE8" href="/gestion-droit-entreprise-ia/solutions-d-entreprise">Solutions d'entreprise</a>    </li><li>
+      <a id="RE9" href="/gestion-droit-entreprise-ia/business-intelligence">Business Intelligence</a>    </li><li>
+      <a id="RE10" href="/gestion-droit-entreprise-ia/intelligence-artificielle">Intelligence Artificielle</a>    </li></ul>    </li><li>
+      <a id="RF" href="/bureautique">Bureautique<button></button></a><ul><li>
+      <a id="RF1" href="/bureautique/initiation-informatique">Initiation informatique</a>    </li><li>
+      <a id="RF2" href="/bureautique/windows-et-reseau-familial">Windows et réseau familial</a>    </li><li>
+      <a id="RF3" href="/bureautique/mac">Mac</a>    </li><li>
+      <a id="RF4" href="/bureautique/suite-bureautique">Suite bureautique<button></button></a><ul><li>
+      <a id="RF41" href="/bureautique/suite-bureautique/microsoft-office">Microsoft Office</a>    </li><li>
+      <a id="RF42" href="/bureautique/suite-bureautique/libreoffice">LibreOffice</a>    </li><li>
+      <a id="RF44" href="/bureautique/suite-bureautique/dans-le-cloud">Dans le Cloud</a>    </li></ul>    </li><li>
+      <a id="RF5" href="/bureautique/word-traitement-de-texte">Word / Traitement de texte</a>    </li><li>
+      <a id="RF6" href="/bureautique/excel-tableur">Excel / Tableur</a>    </li><li>
+      <a id="RF7" href="/bureautique/preao-powerpoint">PréAO / PowerPoint</a>    </li><li>
+      <a id="RF8" href="/bureautique/messagerie-outlook">Messagerie / Outlook</a>    </li><li>
+      <a id="RF9" href="/bureautique/bases-de-donnees">Bases de données</a>    </li><li>
+      <a id="RF91" href="/bureautique/pao">PAO</a>    </li><li>
+      <a id="RF92" href="/bureautique/macros-et-vba">Macros et VBA</a>    </li><li>
+      <a id="RF93" href="/bureautique/gestion-de-projet">Gestion de projet</a>    </li></ul>    </li><li>
+      <a id="RG" href="/graphisme-3d-animation-cao">Graphisme, 3D, Animation, CAO<button></button></a><ul><li>
+      <a id="RG1" href="/graphisme-3d-animation-cao/3d">3D</a>    </li><li>
+      <a id="RG2" href="/graphisme-3d-animation-cao/animation">Animation</a>    </li><li>
+      <a id="RG3" href="/graphisme-3d-animation-cao/cao-et-dao">CAO et DAO</a>    </li><li>
+      <a id="RG4" href="/graphisme-3d-animation-cao/dessin-vectoriel">Dessin vectoriel</a>    </li><li>
+      <a id="RG5" href="/graphisme-3d-animation-cao/diagrammes-schemas-et-sig">Diagrammes, Schémas et SIG</a>    </li><li>
+      <a id="RG6" href="/graphisme-3d-animation-cao/pao">PAO</a>    </li><li>
+      <a id="RG87" href="/graphisme-3d-animation-cao/retouche-d-images-et-photos">Retouche d'images et photos</a>    </li></ul>    </li><li>
+      <a id="RH" href="/web-et-e-marketing">Web et E-Marketing<button></button></a><ul><li>
+      <a id="RH1" href="/web-et-e-marketing/cms">CMS</a>    </li><li>
+      <a id="RH3" href="/web-et-e-marketing/e-marketing">E-marketing</a>    </li><li>
+      <a id="RH4" href="/web-et-e-marketing/conception-web">Conception web</a>    </li><li>
+      <a id="RH2" href="/web-et-e-marketing/objets-connectes">Objets connectés</a>    </li></ul>    </li></ul>
+		</li>
+		<li id="mFormations" class="sm">
+			<a href="/formations-en-ligne">Formations en ligne<button></button></a>
+			  <ul><li>
+      <a id="RJ" href="/formations-en-ligne/en-autonomie-avec-exercices">Formations en ligne <b>en autonomie, avec exercices</b><button></button></a><ul><li>
+      <a id="T1" href="/formations-en-ligne/en-autonomie-avec-exercices/excel">Excel</a>    </li><li>
+      <a id="T3" href="/formations-en-ligne/en-autonomie-avec-exercices/powerpoint">PowerPoint</a>    </li><li>
+      <a id="T2" href="/formations-en-ligne/en-autonomie-avec-exercices/word">Word</a>    </li><li>
+      <a id="T4" href="/formations-en-ligne/en-autonomie-avec-exercices/access">Access</a>    </li><li>
+      <a id="T7" href="/formations-en-ligne/en-autonomie-avec-exercices/outlook">Outlook</a>    </li><li>
+      <a id="T9" href="/formations-en-ligne/en-autonomie-avec-exercices/microsoft-365">Microsoft 365</a>    </li><li>
+      <a id="T10" href="/formations-en-ligne/en-autonomie-avec-exercices/pack-office">Pack Office</a>    </li><li>
+      <a id="T11" href="/formations-en-ligne/en-autonomie-avec-exercices/python">Python</a>    </li><li>
+      <a id="T012" href="/formations-en-ligne/en-autonomie-avec-exercices/java">Java</a>    </li></ul>    </li><li>
+      <a id="T12" href="/formations-en-ligne/animees-en-direct-par-un-expert">Formations en ligne <b>animées en direct par un expert</b><button></button></a><ul><li>
+      <a id="T121" href="/formations-en-ligne/animees-en-direct-par-un-expert/excel">Excel</a>    </li><li>
+      <a id="T122" href="/formations-en-ligne/animees-en-direct-par-un-expert/word">Word</a>    </li><li>
+      <a id="T123" href="/formations-en-ligne/animees-en-direct-par-un-expert/powerpoint">PowerPoint</a>    </li><li>
+      <a id="T124" href="/formations-en-ligne/animees-en-direct-par-un-expert/outlook">Outlook</a>    </li><li>
+      <a id="T125" href="/formations-en-ligne/animees-en-direct-par-un-expert/power-bi">Power BI</a>    </li></ul>    </li><li>
+      <a id="RX" href="/formations-en-ligne/cours-et-formations-video">Cours et formations vidéo<button></button></a><ul><li>
+      <a id="RX1" href="/formations-en-ligne/cours-et-formations-video/intelligence-artificielle">Intelligence artificielle</a>    </li><li>
+      <a id="RX2" href="/formations-en-ligne/cours-et-formations-video/technique">Technique</a>    </li><li>
+      <a id="RX3" href="/formations-en-ligne/cours-et-formations-video/bureautique">Bureautique</a>    </li><li>
+      <a id="RX4" href="/formations-en-ligne/cours-et-formations-video/entreprise">Entreprise</a>    </li><li>
+      <a id="RX5" href="/formations-en-ligne/cours-et-formations-video/graphisme-cao-dao">Graphisme - CAO/DAO</a>    </li><li>
+      <a id="RX6" href="/formations-en-ligne/cours-et-formations-video/web-webmarketing">Web & webmarketing</a>    </li></ul>    </li></ul>
+		</li>
+		<li id="mBN" class="sm">
+			<a href="/abonnement">Bibliothèque numérique</a>
+		</li>
+		<li id="mSupports" class="sm">
+			<a href="/espace-professionnels">Espace Professionnels<button></button></a>
+			  <ul><li>
+      <a id="SA" href="/espace-professionnels/technique">Technique<button></button></a><ul><li>
+      <a id="SA1" href="/espace-professionnels/technique/support-de-cours">Support de Cours<button></button></a><ul><li>
+      <a id="SA1A" href="/espace-professionnels/technique/support-de-cours/debutant-a-confirme">Débutant à Confirmé</a>    </li><li>
+      <a id="SA1B" href="/espace-professionnels/technique/support-de-cours/confirme-a-expert">Confirmé à Expert</a>    </li><li>
+      <a id="SA1C" href="/espace-professionnels/technique/support-de-cours/par-thematique">Par thématique</a>    </li></ul>    </li><li>
+      <a id="SA2" href="/espace-professionnels/technique/tp-exercices-et-corriges">TP, exercices et corrigés<button></button></a><ul><li>
+      <a id="SA2A" href="/espace-professionnels/technique/tp-exercices-et-corriges/debutant-a-confirme">Débutant à Confirmé</a>    </li></ul>    </li><li>
+      <a id="SA3" href="/espace-professionnels/technique/certification">Certification<button></button></a><ul><li>
+      <a id="SA3B" href="/espace-professionnels/technique/certification/coupons-de-certification">Coupons de certification</a>    </li></ul>    </li><li>
+      <a id="SA8" href="/espace-professionnels/technique/livre">Livre<button></button></a><ul><li>
+      <a id="SA8A" href="/espace-professionnels/technique/livre/mise-en-pratique">Mise en pratique</a>    </li><li>
+      <a id="SA8B" href="/espace-professionnels/technique/livre/metiers">Métiers</a>    </li><li>
+      <a id="SA8C" href="/espace-professionnels/technique/livre/autres">Autres</a>    </li></ul>    </li><li>
+      <a id="SA9" href="/espace-professionnels/technique/depliant">Dépliant</a>    </li></ul>    </li><li>
+      <a id="SB" href="/espace-professionnels/pao-web-cao-dao">PAO - Web - CAO/DAO<button></button></a><ul><li>
+      <a id="SB2" href="/espace-professionnels/pao-web-cao-dao/support-de-cours-pao">Support de Cours PAO</a>    </li><li>
+      <a id="SB4" href="/espace-professionnels/pao-web-cao-dao/support-de-cours-web">Support de Cours Web</a>    </li><li>
+      <a id="SB3" href="/espace-professionnels/pao-web-cao-dao/livre-cao-dao">Livre CAO/DAO</a>    </li><li>
+      <a id="SB1" href="/espace-professionnels/pao-web-cao-dao/aide-memoire">Aide-mémoire</a>    </li></ul>    </li><li>
+      <a id="SC" href="/espace-professionnels/bureautique">Bureautique<button></button></a><ul><li>
+      <a id="SC6" href="/espace-professionnels/bureautique/certification">Certification<button></button></a><ul><li>
+      <a id="SC6B" href="/espace-professionnels/bureautique/certification/coupons-de-certification">Coupons de certification</a>    </li></ul>    </li><li>
+      <a id="SC5" href="/espace-professionnels/bureautique/exercices-et-corriges">Exercices et corrigés</a>    </li><li>
+      <a id="SC2" href="/espace-professionnels/bureautique/support-de-cours-francais">Support de Cours Français<button></button></a><ul><li>
+      <a id="SC2A" href="/espace-professionnels/bureautique/support-de-cours-francais/par-niveau-par-theme">Par niveau, par thème</a>    </li><li>
+      <a id="SC2B" href="/espace-professionnels/bureautique/support-de-cours-francais/de-reference">De Référence</a>    </li></ul>    </li><li>
+      <a id="SC1" href="/espace-professionnels/bureautique/aide-memoire">Aide-mémoire </a>    </li><li>
+      <a id="SC9" href="/espace-professionnels/bureautique/approche-metier">Approche métier</a>    </li><li>
+      <a id="SC3" href="/espace-professionnels/bureautique/support-francais-anglais">Support Français / Anglais<button></button></a><ul><li>
+      <a id="SC3B" href="/espace-professionnels/bureautique/support-francais-anglais/support-de-cours">Support de cours </a>    </li></ul>    </li><li>
+      <a id="SC4" href="/espace-professionnels/bureautique/support-anglais">Support Anglais <button></button></a><ul><li>
+      <a id="SC4B" href="/espace-professionnels/bureautique/support-anglais/support-de-cours">Support de cours </a>    </li></ul>    </li><li>
+      <a id="SC7" href="/espace-professionnels/bureautique/support-neerlandais-anglais">Support Néerlandais / Anglais <button></button></a><ul><li>
+      <a id="SC7B" href="/espace-professionnels/bureautique/support-neerlandais-anglais/support-de-cours">Support de cours </a>    </li></ul>    </li><li>
+      <a id="SC8" href="/espace-professionnels/bureautique/support-neerlandais">Support Néerlandais<button></button></a><ul><li>
+      <a id="SC8B" href="/espace-professionnels/bureautique/support-neerlandais/support-de-cours">Support de cours </a>    </li></ul>    </li><li>
+      <a id="SC12" href="/espace-professionnels/bureautique/support-allemand">Support Allemand </a>    </li></ul>    </li><li>
+      <a id="SE" href="/espace-professionnels/entreprise">Entreprise<button></button></a><ul><li>
+      <a id="SE1" href="/espace-professionnels/entreprise/e-marketing">E-marketing</a>    </li><li>
+      <a id="SE2" href="/espace-professionnels/entreprise/gestion">Gestion</a>    </li></ul>    </li><li>
+      <a id="SD" href="/espace-professionnels/supports-numeriques">Supports Numériques<button></button></a><ul><li>
+      <a id="SD1" href="/espace-professionnels/supports-numeriques/technique">Technique<button></button></a><ul><li>
+      <a id="SD1A" href="/espace-professionnels/supports-numeriques/technique/support-debutant-a-confirme">Support Débutant à Confirmé </a>    </li><li>
+      <a id="SD1B" href="/espace-professionnels/supports-numeriques/technique/support-confirme-a-expert">Support Confirmé à Expert </a>    </li></ul>    </li><li>
+      <a id="SD3" href="/espace-professionnels/supports-numeriques/pao-web">PAO - Web<button></button></a><ul><li>
+      <a id="SD3A" href="/espace-professionnels/supports-numeriques/pao-web/support-de-cours-pao">Support de cours PAO</a>    </li><li>
+      <a id="SD3B" href="/espace-professionnels/supports-numeriques/pao-web/support-de-cours-web">Support de cours Web</a>    </li></ul>    </li><li>
+      <a id="SD2" href="/espace-professionnels/supports-numeriques/bureautique">Bureautique<button></button></a><ul><li>
+      <a id="SD2A" href="/espace-professionnels/supports-numeriques/bureautique/support-de-reference">Support de référence</a>    </li><li>
+      <a id="SD2B" href="/espace-professionnels/supports-numeriques/bureautique/mise-en-pratique">Mise en pratique</a>    </li></ul>    </li><li>
+      <a id="SD4" href="/espace-professionnels/supports-numeriques/entreprise">Entreprise<button></button></a><ul><li>
+      <a id="SD4A" href="/espace-professionnels/supports-numeriques/entreprise/e-marketing">E-marketing</a>    </li><li>
+      <a id="SD4B" href="/espace-professionnels/supports-numeriques/entreprise/gestion">Gestion</a>    </li></ul>    </li></ul>    </li><li>
+      <a id="SF" href="/espace-professionnels/certifications">Certifications</a>    </li></ul>
+		</li>
+        <li id="mBestSales"><a href="/meilleures-ventes">Meilleures ventes</a></li>
+        <li id="mNewReleases"><a href="/nouveautes">Nouveautés</a></li>
+        <li id="mUpcoming"><a href="/prochaines-parutions">Prochaines parutions</a></li>
+		<li id="mBlog"><a href="/blog" target="_blank">ENI Blog</a></li>
+		<li id="mAuthor"><a href="/blog/devenir-auteur-eni/" target="_blank" >Devenez Auteur</a></li>
+    </ul>
+	<div class="contact-section">
+		<a aria-label="Chatear en WhatsApp" href="https://wa.me/+33674948685" target="_blank">
+			<div class="contact-title">Contactez-nous sur
+		<img src="/rsc/shared/images/WhatsApp.svg" alt="WhatsApp">
+		</div>
+		<div class="contact-hours">
+		Lun-Ven : <br />9h30 à 12h30 et 14h à 17h30
+		</div>
+			</a>
+	</div>
+</nav>
+
+<nav id="floatingMenu">
+	<a id="fm_blog" href="/blog" title="ENI BLOG" target="_blank"></a>
+	<a id="fm_author" href="/blog/devenir-auteur" title="Devenez auteur" target="_blank"></a>
+</nav>
+    
+    
+<section id="STATIQUE_PAGE_404" class="Static " >
+    <div class="container"><div class="systemesolaire"></div>
+<div class="galaxie">     
+  <div class="etoile">       
+    <div class="quatre Gauche">4</div>       
+    <div class="quatre Droit">4</div>       
+    <div class="planete">         
+      <picture>           
+        <source srcset="/rsc/shared/images/page_404_planete.webp" type="image/webp">           
+        <source srcset="/rsc/shared/images/page_404_planete.png" type="image/png">           
+        <img src="/rsc/shared/images/page_404_planete.png" loading="lazy" alt="element graphique - planete">
+      </picture>       
+    </div>        
+  <div class="cosmonaute">          
+    <picture>            
+      <source srcset="/rsc/shared/images/page_404_cosmonaute01.webp" type="image/webp">            
+      <source srcset="/rsc/shared/images/page_404_cosmonaute01.png" type="image/png">            
+      <img src="/rsc/shared/images/page_404_cosmonaute01.png" loading="lazy" alt="element graphique - cosmonaute">    
+    </picture>        
+  </div>       
+  <h1>PAGE INTROUVABLE</h1>      
+</div>      
+<h3>Cette page est arrivée sur la planète &#931;404, mais pas de panique...</h3>      
+<p>Découvrez les contenus de formation ENI adaptés à votre niveau :</p></div> 
+   </div>     
+        <div class="supraluminique">
+  <form class="Search">       
+    <input type="search" value="" placeholder="Je cherche un livre, une vidéo..." data-url="/recherche" /><button/>     
+  </form>
+  </div>
+</div>
+</section>
+
+<section id="PRODUCTS_H.NEWRELEASES" class="lstH NewReleases" >
+    <div class="container">
+<h2>Nos <b>nouveautés</b></h2>
+<a href='/nouveautes'>voir plus</a>
+<div class="products">
+  <button class="N"></button>
+  <div class="lst">
+  
+    <a href="/livre/arduino-apprivoisez-l-electronique-et-le-codage-avec-les-langages-arduino-et-micropython-4e-edition-9782409053214" title="Arduino Apprivoisez l'électronique et le codage avec les langages Arduino et MicroPython (4e édition)" class="Livre" data-title="Arduino Apprivoisez l'électronique et le codage avec les langages Arduino et MicroPython (4e édition)" data-ref="LFHS-4ARD" data-price="38.90" data-type="Livre" data-family="Technique" data-list="NewReleases" data-pos="1">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/arduino-apprivoisez-l-electronique-et-le-codage-avec-les-langages-arduino-et-micropython-4e-edition-9782409053214_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/arduino-apprivoisez-l-electronique-et-le-codage-avec-les-langages-arduino-et-micropython-4e-edition-9782409053214_M.jpg" alt="Arduino Apprivoisez l'électronique et le codage avec les langages Arduino et MicroPython (4e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Arduino <small>- Apprivoisez l'électronique et le codage avec les langages Arduino et MicroPython (4e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/chatgpt-pour-les-entreprises-exploiter-l-ia-generative-au-quotidien-9782409053276" title="ChatGPT pour les entreprises Exploiter l’IA générative au quotidien" class="Livre" data-title="ChatGPT pour les entreprises Exploiter l’IA générative au quotidien" data-ref="EICHATENT" data-price="39.00" data-type="Livre" data-family="Technique" data-list="NewReleases" data-pos="2">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/chatgpt-pour-les-entreprises-exploiter-l-ia-generative-au-quotidien-9782409053276_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/chatgpt-pour-les-entreprises-exploiter-l-ia-generative-au-quotidien-9782409053276_M.jpg" alt="ChatGPT pour les entreprises Exploiter l’IA générative au quotidien" loading="lazy" />
+        </picture>
+      </span>
+      <strong>ChatGPT pour les entreprises <small>- Exploiter l’IA générative au quotidien</small></strong>
+    </a>
+    
+    <a href="/livre/creer-et-promouvoir-sa-boutique-en-ligne-coffret-de-deux-livres-9782409053337" title="Créer et promouvoir sa boutique en ligne Coffret de deux livres" class="Coffret" data-title="Créer et promouvoir sa boutique en ligne Coffret de deux livres" data-ref="COMBBOUTVIS" data-price="61.00" data-type="Coffret" data-family="Bureautique" data-list="NewReleases" data-pos="3">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/creer-et-promouvoir-sa-boutique-en-ligne-coffret-de-deux-livres-9782409053337_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/creer-et-promouvoir-sa-boutique-en-ligne-coffret-de-deux-livres-9782409053337_M.jpg" alt="Créer et promouvoir sa boutique en ligne Coffret de deux livres" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Créer et promouvoir sa boutique en ligne <small>- Coffret de deux livres</small></strong>
+    </a>
+    
+    <a href="/livre/excel-versions-2024-et-microsoft-365-livre-avec-complement-video-apprendre-a-creer-des-formules-de-calcul-9782409053412" title="Excel (versions 2024 et Microsoft 365) Livre avec complément vidéo : Apprendre à créer des formules de calcul" class="Livre" data-title="Excel (versions 2024 et Microsoft 365) Livre avec complément vidéo : Apprendre à créer des formules de calcul" data-ref="VKBRB24EXC" data-price="31.95" data-type="Livre" data-family="Bureautique" data-list="NewReleases" data-pos="4">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/excel-versions-2024-et-microsoft-365-livre-avec-complement-video-apprendre-a-creer-des-formules-de-calcul-9782409053412_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/excel-versions-2024-et-microsoft-365-livre-avec-complement-video-apprendre-a-creer-des-formules-de-calcul-9782409053412_M.jpg" alt="Excel (versions 2024 et Microsoft 365) Livre avec complément vidéo : Apprendre à créer des formules de calcul" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Excel (versions 2024 et Microsoft 365) <small>- Livre avec complément vidéo : Apprendre à créer des formules de calcul</small></strong>
+    </a>
+    
+    <a href="/livre/intelligence-artificielle-premiers-pas-vers-le-deep-learning-avec-javascript-9782409053139" title="Intelligence Artificielle Premiers pas vers le Deep Learning avec JavaScript" class="Livre" data-title="Intelligence Artificielle Premiers pas vers le Deep Learning avec JavaScript" data-ref="EIIAJS" data-price="39.00" data-type="Livre" data-family="Technique" data-list="NewReleases" data-pos="5">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/intelligence-artificielle-premiers-pas-vers-le-deep-learning-avec-javascript-9782409053139_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/intelligence-artificielle-premiers-pas-vers-le-deep-learning-avec-javascript-9782409053139_M.jpg" alt="Intelligence Artificielle Premiers pas vers le Deep Learning avec JavaScript" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Intelligence Artificielle <small>- Premiers pas vers le Deep Learning avec JavaScript</small></strong>
+    </a>
+    
+    <a href="/livre/machine-learning-et-python-coffret-de-2-livres-implementation-avec-scikit-learn-2e-edition-9782409053177" title="Machine Learning et Python Coffret de 2 livres : Implémentation avec Scikit-learn (2e édition)" class="Coffret" data-title="Machine Learning et Python Coffret de 2 livres : Implémentation avec Scikit-learn (2e édition)" data-ref="COEI2MLPYTSL" data-price="78.00" data-type="Coffret" data-family="Technique" data-list="NewReleases" data-pos="6">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/machine-learning-et-python-coffret-de-2-livres-implementation-avec-scikit-learn-2e-edition-9782409053177_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/machine-learning-et-python-coffret-de-2-livres-implementation-avec-scikit-learn-2e-edition-9782409053177_M.jpg" alt="Machine Learning et Python Coffret de 2 livres : Implémentation avec Scikit-learn (2e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Machine Learning et Python <small>- Coffret de 2 livres : Implémentation avec Scikit-learn (2e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/power-bi-desktop-l-integrale-2e-edition-des-fondamentaux-aux-utilisations-avancees-9782409053313" title="Power BI Desktop L’intégrale (2e édition) - Des fondamentaux aux utilisations avancées" class="Livre" data-title="Power BI Desktop L’intégrale (2e édition) - Des fondamentaux aux utilisations avancées" data-ref="INHS-2POWBI" data-price="48.00" data-type="Livre" data-family="Bureautique" data-list="NewReleases" data-pos="7">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/power-bi-desktop-l-integrale-2e-edition-des-fondamentaux-aux-utilisations-avancees-9782409053313_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/power-bi-desktop-l-integrale-2e-edition-des-fondamentaux-aux-utilisations-avancees-9782409053313_M.jpg" alt="Power BI Desktop L’intégrale (2e édition) - Des fondamentaux aux utilisations avancées" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Power BI Desktop <small>- L’intégrale (2e édition) - Des fondamentaux aux utilisations avancées</small></strong>
+    </a>
+    
+    <a href="/livre/reseaux-informatiques-et-5g-coffret-de-2-livres-des-fondamentaux-aux-nouvelles-generations-de-communication-9782409053191" title="Réseaux informatiques et 5G Coffret de 2 livres : Des fondamentaux aux nouvelles générations de communication" class="Coffret" data-title="Réseaux informatiques et 5G Coffret de 2 livres : Des fondamentaux aux nouvelles générations de communication" data-ref="CORI5GRES" data-price="64.00" data-type="Coffret" data-family="Technique" data-list="NewReleases" data-pos="8">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/reseaux-informatiques-et-5g-coffret-de-2-livres-des-fondamentaux-aux-nouvelles-generations-de-communication-9782409053191_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/reseaux-informatiques-et-5g-coffret-de-2-livres-des-fondamentaux-aux-nouvelles-generations-de-communication-9782409053191_M.jpg" alt="Réseaux informatiques et 5G Coffret de 2 livres : Des fondamentaux aux nouvelles générations de communication" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Réseaux informatiques et 5G <small>- Coffret de 2 livres : Des fondamentaux aux nouvelles générations de communication</small></strong>
+    </a>
+    
+    <a href="/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399" title="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" class="Livre" data-title="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" data-ref="EPHS-7SEC" data-price="54.00" data-type="Livre" data-family="Technique" data-list="NewReleases" data-pos="9">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399_M.jpg" alt="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Sécurité informatique  <small>- Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/vmware-vsphere-8-architecture-deploiement-et-administration-9782409053351" title="VMware vSphere 8 Architecture, déploiement et administration" class="Livre" data-title="VMware vSphere 8 Architecture, déploiement et administration" data-ref="EI8VMVSARDEAD" data-price="39.00" data-type="Livre" data-family="Technique" data-list="NewReleases" data-pos="10">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/vmware-vsphere-8-architecture-deploiement-et-administration-9782409053351_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/vmware-vsphere-8-architecture-deploiement-et-administration-9782409053351_M.jpg" alt="VMware vSphere 8 Architecture, déploiement et administration" loading="lazy" />
+        </picture>
+      </span>
+      <strong>VMware vSphere 8 <small>- Architecture, déploiement et administration</small></strong>
+    </a>
+    
+    <a href="/video/administrer-azure-avec-powershell-et-veeam-vtazadpowvee" title="Administrer Azure avec PowerShell et Veeam " class="Video" data-title="Administrer Azure avec PowerShell et Veeam " data-ref="VTAZADPOWVEE" data-price="29.99" data-type="Video" data-family="Technique" data-list="NewReleases" data-pos="11">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/video/administrer-azure-avec-powershell-et-veeam-vtazadpowvee_M.webp"/>
+        <img src="//www.editions-eni.fr/video/administrer-azure-avec-powershell-et-veeam-vtazadpowvee_M.jpg" alt="Administrer Azure avec PowerShell et Veeam " loading="lazy" />
+        </picture>
+      </span>
+      <strong>Administrer Azure avec PowerShell et Veeam</strong>
+    </a>
+    
+    <a href="/video/google-gemini-pour-les-developpeurs-interagir-avec-les-modeles-de-google-via-l-api-restvrez-la-mise-en-place-de-services-cloud-v2-vtgoogem" title="Google Gemini pour les développeurs Interagir avec les modèles de Google via l’API RESTvrez la mise en place de services cloud (v2)" class="Video" data-title="Google Gemini pour les développeurs Interagir avec les modèles de Google via l’API RESTvrez la mise en place de services cloud (v2)" data-ref="VTGOOGEM" data-price="34.99" data-type="Video" data-family="Technique" data-list="NewReleases" data-pos="12">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/video/google-gemini-pour-les-developpeurs-interagir-avec-les-modeles-de-google-via-l-api-restvrez-la-mise-en-place-de-services-cloud-v2-vtgoogem_M.webp"/>
+        <img src="//www.editions-eni.fr/video/google-gemini-pour-les-developpeurs-interagir-avec-les-modeles-de-google-via-l-api-restvrez-la-mise-en-place-de-services-cloud-v2-vtgoogem_M.jpg" alt="Google Gemini pour les développeurs Interagir avec les modèles de Google via l’API RESTvrez la mise en place de services cloud (v2)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Google Gemini pour les développeurs <small>- Interagir avec les modèles de Google via l’API RESTvrez la mise en place de services cloud (v2)</small></strong>
+    </a>
+    
+  </div>
+  <button class="P"></button>
+</div></div>
+</section>
+<section id="PRODUCTS_H.BESTSALES" class="lstH BestSales" >
+    <div class="container">
+<h2>Nos <b>meilleures ventes</b></h2><!-- test -->
+<a href='/meilleures-ventes'>voir plus</a>
+<div class="products">
+  <button class="N"></button>
+  <div class="lst">
+  
+    <a href="/livre/les-sciences-informatiques-de-turing-a-l-intelligence-artificielle-9782409052262" title="Les sciences informatiques De Turing à l'intelligence artificielle" class="Livre" data-title="Les sciences informatiques De Turing à l'intelligence artificielle" data-ref="DPHS-INFTURIA" data-price="35.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="1">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/les-sciences-informatiques-de-turing-a-l-intelligence-artificielle-9782409052262_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/les-sciences-informatiques-de-turing-a-l-intelligence-artificielle-9782409052262_M.jpg" alt="Les sciences informatiques De Turing à l'intelligence artificielle" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Les sciences informatiques <small>- De Turing à l'intelligence artificielle</small></strong>
+    </a>
+    
+    <a href="/livre/reussir-avec-l-ia-de-microsoft-strategies-et-outils-pour-copilot-studio-microsoft-foundry-et-des-ia-non-generatives-9782409052552" title="Réussir avec l’IA de Microsoft Stratégies et outils pour Copilot Studio, Microsoft Foundry et des IA non génératives" class="Livre" data-title="Réussir avec l’IA de Microsoft Stratégies et outils pour Copilot Studio, Microsoft Foundry et des IA non génératives" data-ref="EIHS-IAMIC" data-price="39.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="2">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/reussir-avec-l-ia-de-microsoft-strategies-et-outils-pour-copilot-studio-microsoft-foundry-et-des-ia-non-generatives-9782409052552_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/reussir-avec-l-ia-de-microsoft-strategies-et-outils-pour-copilot-studio-microsoft-foundry-et-des-ia-non-generatives-9782409052552_M.jpg" alt="Réussir avec l’IA de Microsoft Stratégies et outils pour Copilot Studio, Microsoft Foundry et des IA non génératives" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Réussir avec l’IA de Microsoft <small>- Stratégies et outils pour Copilot Studio, Microsoft Foundry et des IA non génératives</small></strong>
+    </a>
+    
+    <a href="/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399" title="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" class="Livre" data-title="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" data-ref="EPHS-7SEC" data-price="54.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="3">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/securite-informatique-ethical-hacking-apprendre-l-attaque-pour-mieux-se-defendre-7e-edition-9782409053399_M.jpg" alt="Sécurité informatique  Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Sécurité informatique  <small>- Ethical Hacking : Apprendre l'attaque pour mieux se défendre (7e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/l-informatique-des-transistors-aux-microservices-9782409052088" title="L’informatique Des transistors aux microservices" class="Livre" data-title="L’informatique Des transistors aux microservices" data-ref="DPHS-INFTRANSI" data-price="35.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="4">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/l-informatique-des-transistors-aux-microservices-9782409052088_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/l-informatique-des-transistors-aux-microservices-9782409052088_M.jpg" alt="L’informatique Des transistors aux microservices" loading="lazy" />
+        </picture>
+      </span>
+      <strong>L’informatique <small>- Des transistors aux microservices</small></strong>
+    </a>
+    
+    <a href="/livre/power-bi-pour-les-professionnels-de-la-finance-l-essentiel-pour-creer-vos-indicateurs-et-tableaux-de-bord-9782409052637" title="Power BI pour les professionnels de la finance L’essentiel pour créer vos indicateurs et tableaux de bord" class="Livre" data-title="Power BI pour les professionnels de la finance L’essentiel pour créer vos indicateurs et tableaux de bord" data-ref="SOBHS-FINPOWBI" data-price="24.00" data-type="Livre" data-family="Informatique d'entreprise / Comptabilité" data-list="BestSales" data-pos="5">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/power-bi-pour-les-professionnels-de-la-finance-l-essentiel-pour-creer-vos-indicateurs-et-tableaux-de-bord-9782409052637_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/power-bi-pour-les-professionnels-de-la-finance-l-essentiel-pour-creer-vos-indicateurs-et-tableaux-de-bord-9782409052637_M.jpg" alt="Power BI pour les professionnels de la finance L’essentiel pour créer vos indicateurs et tableaux de bord" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Power BI pour les professionnels de la finance <small>- L’essentiel pour créer vos indicateurs et tableaux de bord</small></strong>
+    </a>
+    
+    <a href="/livre/l-intelligence-artificielle-expliquee-des-concepts-de-base-aux-applications-avancees-de-l-ia-9782409043567" title="L’intelligence artificielle expliquée Des concepts de base aux applications avancées de l’IA " class="Livre" data-title="L’intelligence artificielle expliquée Des concepts de base aux applications avancées de l’IA " data-ref="RIHS-IAEXPL" data-price="32.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="6">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/l-intelligence-artificielle-expliquee-des-concepts-de-base-aux-applications-avancees-de-l-ia-9782409043567_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/l-intelligence-artificielle-expliquee-des-concepts-de-base-aux-applications-avancees-de-l-ia-9782409043567_M.jpg" alt="L’intelligence artificielle expliquée Des concepts de base aux applications avancées de l’IA " loading="lazy" />
+        </picture>
+      </span>
+      <strong>L’intelligence artificielle expliquée <small>- Des concepts de base aux applications avancées de l’IA </small></strong>
+    </a>
+    
+    <a href="/livre/le-machine-learning-et-l-ia-generative-avec-python-de-la-theorie-a-la-pratique-2e-edition-9782409050015" title="Le Machine Learning et l'IA générative avec Python De la théorie à la pratique (2e édition)" class="Livre" data-title="Le Machine Learning et l'IA générative avec Python De la théorie à la pratique (2e édition)" data-ref="EIHS-2MLPYT" data-price="39.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="7">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/le-machine-learning-et-l-ia-generative-avec-python-de-la-theorie-a-la-pratique-2e-edition-9782409050015_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/le-machine-learning-et-l-ia-generative-avec-python-de-la-theorie-a-la-pratique-2e-edition-9782409050015_M.jpg" alt="Le Machine Learning et l'IA générative avec Python De la théorie à la pratique (2e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Le Machine Learning et l'IA générative avec Python <small>- De la théorie à la pratique (2e édition)</small></strong>
+    </a>
+    
+    <a href="/formation/formation-en-ligne-excel-2024-et-microsoft-365-toutes-les-fonctionnalites-d-excel-a-votre-portee-le-livre-en-ligne-excel-versions-2024-et-microsoft-365-offert-valable-1-an-en-illimite-fmladp-24exc" title="Formation en ligne Excel 2024 (et Microsoft 365) - Toutes les fonctionnalités d'Excel à votre portée + le livre en ligne Excel (versions 2024 et Microsoft 365) OFFERT - Valable 1 an, en illimité" class="Formation" data-title="Formation en ligne Excel 2024 (et Microsoft 365) - Toutes les fonctionnalités d'Excel à votre portée + le livre en ligne Excel (versions 2024 et Microsoft 365) OFFERT - Valable 1 an, en illimité" data-ref="FMLADP_24EXC" data-price="90.00" data-type="Formation" data-family="" data-list="BestSales" data-pos="8">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/formation/formation-en-ligne-excel-2024-et-microsoft-365-toutes-les-fonctionnalites-d-excel-a-votre-portee-le-livre-en-ligne-excel-versions-2024-et-microsoft-365-offert-valable-1-an-en-illimite-fmladp-24exc_M.webp"/>
+        <img src="//www.editions-eni.fr/formation/formation-en-ligne-excel-2024-et-microsoft-365-toutes-les-fonctionnalites-d-excel-a-votre-portee-le-livre-en-ligne-excel-versions-2024-et-microsoft-365-offert-valable-1-an-en-illimite-fmladp-24exc_M.jpg" alt="Formation en ligne Excel 2024 (et Microsoft 365) - Toutes les fonctionnalités d'Excel à votre portée + le livre en ligne Excel (versions 2024 et Microsoft 365) OFFERT - Valable 1 an, en illimité" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Formation en ligne Excel 2024 (et Microsoft 365) - Toutes les fonctionnalités d'Excel à votre portée <small>- + le livre en ligne Excel (versions 2024 et Microsoft 365) OFFERT - Valable 1 an, en illimité</small></strong>
+    </a>
+    
+    <a href="/livre/glpi-gestion-libre-de-parc-informatique-installation-et-configuration-d-une-solution-de-gestion-de-parc-et-de-helpdesk-5e-edition-9782409052590" title="GLPI (Gestion Libre de Parc Informatique) Installation et configuration d'une solution de gestion de parc et de helpdesk (5e édition)" class="Livre" data-title="GLPI (Gestion Libre de Parc Informatique) Installation et configuration d'une solution de gestion de parc et de helpdesk (5e édition)" data-ref="RI5GLPI" data-price="32.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="9">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/glpi-gestion-libre-de-parc-informatique-installation-et-configuration-d-une-solution-de-gestion-de-parc-et-de-helpdesk-5e-edition-9782409052590_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/glpi-gestion-libre-de-parc-informatique-installation-et-configuration-d-une-solution-de-gestion-de-parc-et-de-helpdesk-5e-edition-9782409052590_M.jpg" alt="GLPI (Gestion Libre de Parc Informatique) Installation et configuration d'une solution de gestion de parc et de helpdesk (5e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>GLPI (Gestion Libre de Parc Informatique) <small>- Installation et configuration d'une solution de gestion de parc et de helpdesk (5e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/reseaux-informatiques-notions-fondamentales-10e-edition-protocoles-architectures-reseaux-sans-fil-9782409048265" title="Réseaux informatiques Notions fondamentales (10e édition) - (Protocoles, Architectures, Réseaux sans fil…)" class="Livre" data-title="Réseaux informatiques Notions fondamentales (10e édition) - (Protocoles, Architectures, Réseaux sans fil…)" data-ref="RIHS-10RES" data-price="32.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="10">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/reseaux-informatiques-notions-fondamentales-10e-edition-protocoles-architectures-reseaux-sans-fil-9782409048265_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/reseaux-informatiques-notions-fondamentales-10e-edition-protocoles-architectures-reseaux-sans-fil-9782409048265_M.jpg" alt="Réseaux informatiques Notions fondamentales (10e édition) - (Protocoles, Architectures, Réseaux sans fil…)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Réseaux informatiques <small>- Notions fondamentales (10e édition) - (Protocoles, Architectures, Réseaux sans fil…)</small></strong>
+    </a>
+    
+    <a href="/livre/power-bi-desktop-reporting-et-analyse-de-donnees-au-quotidien-3e-edition-9782409046261" title="Power BI Desktop Reporting et analyse de données au quotidien (3e édition)" class="Livre" data-title="Power BI Desktop Reporting et analyse de données au quotidien (3e édition)" data-ref="SOBHS-3POWBI" data-price="24.00" data-type="Livre" data-family="Bureautique" data-list="BestSales" data-pos="11">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/power-bi-desktop-reporting-et-analyse-de-donnees-au-quotidien-3e-edition-9782409046261_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/power-bi-desktop-reporting-et-analyse-de-donnees-au-quotidien-3e-edition-9782409046261_M.jpg" alt="Power BI Desktop Reporting et analyse de données au quotidien (3e édition)" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Power BI Desktop <small>- Reporting et analyse de données au quotidien (3e édition)</small></strong>
+    </a>
+    
+    <a href="/livre/certified-ethical-hacker-preparation-a-la-certification-ceh-9782409051937" title="Certified Ethical Hacker Préparation à la certification CEH" class="Livre" data-title="Certified Ethical Hacker Préparation à la certification CEH" data-ref="CECEH" data-price="59.00" data-type="Livre" data-family="Technique" data-list="BestSales" data-pos="12">
+      <span    >
+        <picture>
+          
+                  
+        <source srcset="//www.editions-eni.fr/livre/certified-ethical-hacker-preparation-a-la-certification-ceh-9782409051937_M.webp"/>
+        <img src="//www.editions-eni.fr/livre/certified-ethical-hacker-preparation-a-la-certification-ceh-9782409051937_M.jpg" alt="Certified Ethical Hacker Préparation à la certification CEH" loading="lazy" />
+        </picture>
+      </span>
+      <strong>Certified Ethical Hacker <small>- Préparation à la certification CEH</small></strong>
+    </a>
+    
+  </div>
+  <button class="P"></button>
+</div></div>
+</section> 
+        
+    <footer id="Footer" class="Livres">
+	
+	<!-- liste des articles	  -->
+	  	<div class="FooterArticles">
+        <h4>Découvrez tous nos articles</h4>
+      <div class="FooterArticleslistSelect">
+          <div class="FooterArticlesSelected">choisissez votre thématique</div>
+        <ul class="FooterArticlesOptions">
+            <li class="FooterArticlesChoix"><a href="/5-raisons-de-choisir-microsoft-copilot-face-a-chatgpt">5 raisons de choisir Microsoft Copilot face à ChatGPT</a></li>
+			<li class="FooterArticlesChoix"><a href="/boostez-votre-productivite-avec-microsoft-copilot">Boostez votre productivité avec Microsoft Copilot</a></li>
+			<li class="FooterArticlesChoix"><a href="/l-informatique-se-met-au-vert">L’informatique se met au vert</a></li>
+			<li class="FooterArticlesChoix"><a href="/optimiser-referencement-naturel-seo-avec-intelligence-artificielle">Utiliser l’IA pour optimiser le référencement de son site web</a></li>
+		    <li class="FooterArticlesChoix"><a href="/lexique-intelligence-artificielle-chatgpt">Lexique sur l'Intelligence Artificielle</a></li>
+			<li class="FooterArticlesChoix"><a href="/comment-se-former-a-excel">Se former à Microsoft Excel</a></li>
+			<li class="FooterArticlesChoix"><a href="/comment-bien-utiliser-chatgpt-la-nouvelle-intelligence-artificielle">Bien utiliser ChatGPT</a></li>
+			<li class="FooterArticlesChoix"><a href="/comment-se-former-efficacement-au-pack-microsoft-office">Se former efficacement au pack office</a></li>
+        </ul>
+      </div>
+		</div>
+  </section>
+
+  <section id="commercialInfos">
+    <nav> <a id="ci1" href="/offres-promotionnelles"><b>Version en ligne<br/>
+      offerte pour 1 an</b> pour l'achat d'un<br/>
+      livre imprim&eacute;</a> <a id="ci2" href="/offres-promotionnelles"><b>48 heures<br/>
+      d'acc&egrave;s offert</b> &agrave; tous nos livres et vid&eacute;os<br/>
+      pour toute commande payée<br/>par CB ou par PayPal</a> <a id="ci3" href="/tarifs-et-delais-de-livraison"><b>Livraison<br/>
+      à 0,01&nbsp;&euro;</b>à partir de<br/>
+      35€ d'achats</a> <span id="ci4"><b>En stock<br/>
+      chez vous en 48h</b></span> </nav>
+  </section>
+  <section id="Newsletter">
+    <form class="CSM" data-error="Attention :" data-incomplete="Veuillez saisir votre E-mail." data-success="Votre inscription a bien été effectuée." data-exception="Exception">
+      <label for="email">Inscrivez-vous à notre newsletter <a href="/mentions-legales-cgv">voir notre politique de protection des données</a></label>
+      <input id="email" name="email" type="email" value="" placeholder="Votre e-mail" required data-error="L'e-mail saisi est invalide." />
+      <button class="Send" type="submit">je m'inscris</button>
+      <input class="hidden" name="lst" type="checkbox" value='["407b1447-1c78-4d22-9356-1db460510151"]'/>
+      <input class="hidden" name="lst" type="checkbox" value='["47645ede-37d7-4de5-a0fd-74376b8847a0"]' checked=""/>
+      <input type="hidden" name="origine" id="origine" value="FR-L-BOX"/>
+    </form>
+  </section>
+  <section id="Links">
+    <nav  id="socialLinks"> <b>Suivez-nous</b> 
+		<a href="https://www.linkedin.com/company/editions-eni" target="_blank" id="LinkedIn" title="LinkedIn">&#xe923;</a> 
+		<a href="https://www.youtube.com/user/EditionsENI" target="_blank" id="Youtube" title="Youtube">&#xe942;</a> 
+	  </nav>
+    <nav> <b>Nous connaître</b> 
+		<a href="/articles-actualites-informatique">Tous nos articles d'informatique</a> 
+		<a href="/qui-sommes-nous">Qui sommes-nous ?</a> 
+		<a href="/mentions-legales-cgv">Mentions légales</a> 
+		<a href="/mentions-legales-cgv">Conditions générales de vente</a> 
+		<a href="/politique-de-protection-des-donnees-du-groupe-eni">Politique de protection des données</a> 
+	  </nav>
+    <nav> <b>Vous aider</b> 
+		<a href="/questions-frequentes">Questions fréquentes</a> 
+		<a href="/paiement-securise">Paiement sécurisé</a> 
+		<a href="/tarifs-et-delais-de-livraison">Tarifs et délais de livraison</a> 
+		<a href="javascript:code_activation();">Activer un code</a> 
+		<a href="/contact">Contact</a> 
+	  </nav>
+    <nav> <b>Vous accompagner</b> 
+		<a href="/librairies">Librairies</a> 
+		<a href="/newsletter">Newsletter</a> 
+		<a href="/abonnement">Abonnements</a> 
+		<a href="/toutes-les-videos-eni">Toutes les vidéos</a> 
+		<a href="/blog/devenir-auteur-eni/" target="_blank">Devenez auteur</a>
+	  </nav>
+  </section>
+	<section id="Podcasts">
+			<div>
+				<p>Tous nos contenus pour rester à la pointe de la tech</p>
+			</div>
+		<nav>
+			<div>
+			<a href="https://www.youtube.com/playlist?list=PLGfKsHNQWwNHJ74oDE-XmQtdVbjHSOYJy" target="_blank" title="ENI TALKS"><img src="/rsc/shared/images/podcasts/ENI_Talks_logo_blanc_rouge.svg" alt="ENI TALKS" title="ENI TALKS" /></a>
+				<h4>Webinaires ENI TALKS</h4>
+				<h5>Table ronde avec des experts</h5>
+			</div>
+
+			<div>
+			<a href="https://podcast.ausha.co/horizons-tech-by-eni" target="_blank" title="HORIZONS TECH BY ENI"><img src="/rsc/shared/images/podcasts/horizons-tech-blc.svg" alt="HORIZONS TECH BY ENI" title="HORIZONS TECH BY ENI" /></a>
+				<h4>Podcast HORIZONS TECH BY ENI</h4>
+				<h5>1 épisode toutes les deux semaines à 8h</h5>
+			</div>
+
+			<div>
+			<a href="https://www.editions-eni.fr/blog/" target="_blank" title="ENI Blog"><img src="/rsc/shared/images/podcasts/logo-eniblog-blc.svg" alt="ENI Blog" title="ENI Blog" /></a>
+				<h4>ENI BLOG</h4>
+				<h5>Actus, interviews, dossiers…</h5>
+			</div>
+		</nav>
+	</section>
+  <section id="LinksENI">
+    <nav>
+		<div id="Blog"> <a href="/blog" target="_blank">ENI Blog</a>
+        <p>Actualités, interviews,  dossiers…<br>
+Toute l&rsquo;informatique vue par ENI</p>
+      </div>
+      <div id="Ecole"> <a href="https://www.eni-ecole.fr/" target="_blank">ENI Ecole informatique</a>
+        <p>Formations de BAC+2 à BAC+5,<br/>
+          dans nos campus physiques et en ligne</p>
+      </div>
+      <div id="CPF" > <a href="https://www.eni.fr/" target="_blank">Groupe ENI</a>
+        <p>Expert de la formation informatique<br/>
+          sous toutes ses formes depuis 1981</p>
+      </div>
+		<div id="Editions"><!-- <a href="/">Editions ENI</a>
+        <p>Livres, vidéos, e-formations<br/>
+          et accès illimité à notre bibliothèque</p>
+        <a class="lng" href="/">FR</a> <a class="lng" href="https://www.ediciones-eni.com" target="_blank">ES</a> --></div>
+      <div id="Pro"> ENTREPRISES, CENTRES DE FORMATION ET ENSEIGNEMENT SUPÉRIEUR </div>
+      <div id="Service"> <a href="https://www.eni-service.fr/" target="_blank">ENI Service</a>
+        <p>Formations avec formateur à l'informatique,<br/>
+          à distance ou en présentiel</p>
+      </div>
+      <div id="EditionsPro"> <a href="/espace-professionnels">Editions ENI Pro</a>
+        <p>Supports de cours<br/>
+          pour les organismes de formation</p>
+      </div>
+      <div id="Belearn"> <a href="https://www.eni-elearning.com/fr" target="_blank">ENI elearning</a>
+        <p>La solution de formation à l'informatique en ligne, disponible en 5 langues</p>
+        <!--<a class="lng" href="https://www.eni-elearning.com/fr" target="_blank">FR</a> <a class="lng" href="https://www.eni-elearning.com/es" target="_blank">ES</a> <a class="lng" href="https://www.eni-elearning.com/de" target="_blank">DE</a> <a class="lng" href="https://www.eni-elearning.com/en" target="_blank">EN</a> <a class="lng" href="https://www.eni-elearning.com/nl" target="_blank">NL</a> --></div>
+      <div id="Certif" > <a href="https://www.certifications-eni.com/fr" target="_blank">Certifications ENI</a>
+        <p>Certifications à l'informatique<br/>
+          éligibles CPF et reconnues par l'État</p>
+        <!--<a class="lng" href="https://www.certifications-eni.com/fr" target="_blank">FR</a> <a class="lng" href="https://www.certifications-eni.com/es" target="_blank">ES</a> <a class="lng" href="https://www.certifications-eni.com/de" target="_blank">DE</a> <a class="lng" href="https://www.certifications-eni.com/en" target="_blank">EN</a> <a class="lng" href="https://www.certifications-eni.com/nl" target="_blank">NL</a> --></div>
+    </nav>
+  </section>
+  <script>
+    (function (c, s, q, u, a, r, e) {
+        c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
+        c._hjSettings = { hjid: a };
+        r = s.getElementsByTagName('head')[0];
+        e = s.createElement('script');
+        e.async = true;
+        e.src = q + c._hjSettings.hjid + u;
+        r.appendChild(e);
+    })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 6473049);
+</script>
+</footer>
+
+    <script type="text/javascript" src="/rsc/js/bundles/6BA79B466DA06007194B8E544C48DCCD8CF782D6.js"></script>
+<script type="text/javascript">
+var RefPartner='',
+_Domain='www.editions-eni.fr',
+_Space='Livres',
+_l=1,
+_e='D9BD8B5E-F324-473F-B1FC-B41B421C950F',
+_r='3A6222CF-B921-41F5-886C-C989F77BA994',
+_bl='407B1447-1C78-4D22-9356-1DB460510151',
+_FBappKey='335989416513773',
+_FBchannelUrl='//www.editions-eni.fr/rsc/channel.htm',
+_FBlngUrlCode='fr-FR',
+_SCType, 
+_SCId, 
+_SCEmail, 
+_SCFirstname, 
+_SCLastname, 
+_current_SCType=0,
+_current_SCId;
+</script>
+
+
+    
+    <object aria-hidden="true" focusable="false" rel="preload" type="image/svg+xml" style="position:absolute;z-index:-1;" data="/rsc/shared/iconsets/icons.svg" onload="this.parentNode.replaceChild(this.contentDocument.documentElement, this);"></object>
+</body>
+</html>

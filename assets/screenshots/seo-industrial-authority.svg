@@ -1,0 +1,32 @@
+<svg width="800" height="440" viewBox="0 0 800 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="440" rx="24" fill="#07090C"/>
+  <rect x="24" y="24" width="752" height="48" rx="12" fill="#10141A" stroke="#1B2430"/>
+  <circle cx="52" cy="48" r="6" fill="#FFE600"/>
+  <circle cx="72" cy="48" r="6" fill="#3A4250"/>
+  <circle cx="92" cy="48" r="6" fill="#3A4250"/>
+  <text x="118" y="54" fill="#DDE2EA" font-size="18" font-family="Arial, sans-serif">Autorite &amp; Distribution</text>
+
+  <rect x="32" y="92" width="736" height="324" rx="16" fill="#0D131A" stroke="#212A36"/>
+  <circle cx="184" cy="244" r="78" fill="#101822" stroke="#2A3645"/>
+  <text x="149" y="238" fill="#FFE600" font-size="22" font-family="Arial, sans-serif">Domain</text>
+  <text x="160" y="265" fill="#FFE600" font-size="22" font-family="Arial, sans-serif">Core</text>
+
+  <circle cx="430" cy="156" r="44" fill="#101822" stroke="#2A3645"/>
+  <circle cx="566" cy="232" r="44" fill="#101822" stroke="#2A3645"/>
+  <circle cx="466" cy="328" r="44" fill="#101822" stroke="#2A3645"/>
+  <circle cx="650" cy="136" r="34" fill="#101822" stroke="#2A3645"/>
+  <circle cx="696" cy="272" r="34" fill="#101822" stroke="#2A3645"/>
+
+  <line x1="250" y1="220" x2="394" y2="168" stroke="#FFE600" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="260" y1="250" x2="522" y2="232" stroke="#FFE600" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="246" y1="280" x2="422" y2="314" stroke="#FFE600" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="470" y1="170" x2="616" y2="146" stroke="#D7BE00" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="606" y1="244" x2="662" y2="266" stroke="#D7BE00" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <text x="402" y="160" fill="#D9E1EB" font-size="12" font-family="Arial, sans-serif">Digital PR</text>
+  <text x="536" y="236" fill="#D9E1EB" font-size="12" font-family="Arial, sans-serif">Netlinking</text>
+  <text x="436" y="332" fill="#D9E1EB" font-size="12" font-family="Arial, sans-serif">Mentions</text>
+
+  <rect x="56" y="112" width="232" height="42" rx="10" fill="#101822" stroke="#263243"/>
+  <text x="76" y="138" fill="#C8D0DB" font-size="13" font-family="Arial, sans-serif">+36 domaines referents / trimestre</text>
+</svg>

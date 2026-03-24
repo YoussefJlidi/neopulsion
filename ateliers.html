@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateliers pratiques IA — Agents, sites, contenu SEO | Neopulsion</title>
+  <meta name="description" content="Des demi-journées pour construire, pas pour écouter. Créer un agent IA, un site avec Claude Code, du contenu SEO YourTextGuru. 49 €/pers. Neopulsion.">
+  <link rel="canonical" href="https://neopulsion.fr/ateliers.html">
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Atelier — Créer son premier agent IA",
+      "description": "Construire un agent IA fonctionnel de A à Z en une demi-journée. Sans coder. Vous repartez avec un agent qui tourne pour vous.",
+      "url": "https://neopulsion.fr/ateliers.html",
+      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.fr" },
+      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.fr/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
+      "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "duration": "PT4H",
+      "courseMode": ["online","onsite"],
+      "educationalLevel": "beginner",
+      "inLanguage": "fr",
+      "teaches": ["agents IA","n8n","Make","automatisation","Claude","ChatGPT"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Atelier — Un site web en 30 min avec Claude Code",
+      "description": "Créer un site web complet avec Claude Code, sans écrire une ligne de code. Vous repartez avec votre site en ligne.",
+      "url": "https://neopulsion.fr/ateliers.html",
+      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.fr" },
+      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.fr/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
+      "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "duration": "PT4H",
+      "courseMode": ["online","onsite"],
+      "educationalLevel": "beginner",
+      "inLanguage": "fr",
+      "teaches": ["Claude Code","vibe coding","développement web","Netlify","déploiement"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Atelier — Contenu SEO 100% YourTextGuru",
+      "description": "Générer des articles qui se positionnent grâce à YourTextGuru et l'IA. Vous repartez avec 2 articles optimisés prêts à publier.",
+      "url": "https://neopulsion.fr/ateliers.html",
+      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.fr" },
+      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.fr/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
+      "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "duration": "PT4H",
+      "courseMode": ["online","onsite"],
+      "educationalLevel": "beginner",
+      "inLanguage": "fr",
+      "teaches": ["SEO","YourTextGuru","contenu IA","rédaction SEO","sémantique"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Atelier — Créer son assistant IA sur mesure",
+      "description": "Écrire son propre system prompt et configurer un assistant IA taillé pour son métier. Vous repartez avec votre assistant opérationnel.",
+      "url": "https://neopulsion.fr/ateliers.html",
+      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.fr" },
+      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.fr/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
+      "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "duration": "PT4H",
+      "courseMode": ["online","onsite"],
+      "educationalLevel": "beginner",
+      "inLanguage": "fr",
+      "teaches": ["system prompt","prompt engineering","Claude","ChatGPT","assistant IA","personnalisation"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Atelier — Automatiser ses tâches avec Make & n8n",
+      "description": "Identifier ses tâches répétitives et construire son premier workflow automatisé en live. Vous repartez avec votre pipeline en production.",
+      "url": "https://neopulsion.fr/ateliers.html",
+      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.fr" },
+      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.fr/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
+      "offers": { "@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "duration": "PT4H",
+      "courseMode": ["online","onsite"],
+      "educationalLevel": "beginner",
+      "inLanguage": "fr",
+      "teaches": ["Make","n8n","automatisation","no-code","workflows","productivité"]
+    }
+  ]
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ========================
+       Ateliers page styles
+    ======================== */
+    .atelier-card {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .atelier-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      border-color: var(--blue);
+    }
+    .atelier-card-stripe {
+      height: 5px;
+    }
+    .atelier-card-stripe--agent { background: linear-gradient(90deg, #065F46, #059669); }
+    .atelier-card-stripe--code  { background: linear-gradient(90deg, #1E3A5F, #1D4ED8); }
+    .atelier-card-stripe--seo   { background: linear-gradient(90deg, #1E40AF, #3B82F6); }
+    .atelier-card-stripe--asst  { background: linear-gradient(90deg, #5B21B6, #8B5CF6); }
+    .atelier-card-stripe--auto  { background: linear-gradient(90deg, #92400E, #F59E0B); }
+
+    .atelier-card-header {
+      padding: 24px 24px 0;
+    }
+    .atelier-card-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .atelier-card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .atelier-card-duration {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .atelier-card-body {
+      padding: 16px 24px;
+      flex: 1;
+    }
+    .atelier-card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .atelier-card-program {
+      background: var(--bg-subtle);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .atelier-card-program-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .atelier-card-program ul {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .atelier-card-program ul li {
+      font-size: 0.83rem;
+      color: var(--text);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .atelier-card-program ul li::before {
+      content: '→';
+      color: var(--blue);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Deliverable highlight */
+    .atelier-deliverable {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: #F0FDF4;
+      border: 1px solid rgba(22,163,74,0.2);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+    .atelier-deliverable-icon {
+      width: 20px; height: 20px;
+      background: #16A34A;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .atelier-deliverable-icon svg { color: white; }
+    .atelier-deliverable-text {
+      font-size: 0.82rem;
+      color: #166534;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .atelier-deliverable-text span {
+      font-weight: 400;
+      color: #15803D;
+    }
+
+    .atelier-card-footer {
+      padding: 16px 24px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      gap: 12px;
+    }
+    .atelier-card-price {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .atelier-card-price small {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* Badges */
+    .badge-format {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid rgba(29,78,216,0.2);
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .badge-new-small {
+      display: inline-flex;
+      align-items: center;
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid rgba(146,64,14,0.2);
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .badge-pop {
+      display: inline-flex;
+      align-items: center;
+      background: #FEE2E2;
+      color: #991B1B;
+      border: 1px solid rgba(153,27,27,0.2);
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .badge-tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #1E293B;
+      color: #CBD5E1;
+      border: 1px solid rgba(203,213,225,0.15);
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: monospace;
+    }
+
+    /* Format info box */
+    .atelier-formats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .atelier-format-item {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      text-align: center;
+    }
+    .atelier-format-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 12px;
+    }
+    .atelier-format-title { font-size: 0.93rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .atelier-format-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; }
+
+    @media (max-width: 900px) {
+      .atelier-formats-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="ateliers.html" style="background:#EFF6FF; color:var(--blue);">Ateliers<small>Demi-journées — On construit en live</small></a>
+          <a href="formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="services/seo.html">Référencement SEO</a>
+      <a href="services/geo.html">GEO — Référencement Génératif</a>
+      <a href="services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="ateliers.html">Ateliers</a>
+      <a href="formations.html">Formations</a>
+    </div>
+    <a href="blog.html">Blog</a>
+    <a href="glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="a-propos.html">À propos</a>
+      <a href="equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="ateliers-title">
+  <div class="container">
+    <div style="display:flex; gap:56px; align-items:center; flex-wrap:wrap;">
+      <!-- Texte -->
+      <div style="flex:1; min-width:280px;">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <a href="ateliers.html">Apprendre</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Ateliers</span>
+        </nav>
+        <p class="kicker page-hero-kicker">Ateliers pratiques</p>
+        <h1 id="ateliers-title">Vous repartez avec quelque chose qui tourne</h1>
+        <p class="page-hero-subtitle">Pas de slides. On ouvre les outils, on construit en live — un agent, un site, des articles SEO optimisés. À la fin de chaque demi-journée, vous avez un livrable réel et opérationnel.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">Demi-journée · 4h</span>
+          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">5 à 15 participants</span>
+          <span class="badge" style="background:rgba(59,130,246,0.25); color:#93C5FD; border-color:rgba(147,197,253,0.3);">49 € / pers.</span>
+        </div>
+      </div>
+      <!-- Atelier card -->
+      <div style="flex-shrink:0; width:300px;">
+        <div style="border-radius:20px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,0.4);">
+          <!-- Card header -->
+          <div style="background:linear-gradient(135deg,#1D4ED8 0%,#6D28D9 100%); padding:22px 26px; display:flex; justify-content:space-between; align-items:flex-start;">
+            <div>
+              <p style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.12em; color:rgba(255,255,255,0.6); font-weight:700; margin-bottom:6px;">Format</p>
+              <p style="font-size:1.6rem; font-weight:900; color:#fff; line-height:1; margin-bottom:4px;">Atelier</p>
+              <p style="font-size:0.78rem; color:rgba(255,255,255,0.55);">Snack learning</p>
+            </div>
+            <div style="text-align:right; background:rgba(255,255,255,0.12); border-radius:12px; padding:10px 16px;">
+              <p style="font-size:2.2rem; font-weight:900; color:#fff; line-height:1;">4h</p>
+              <p style="font-size:0.65rem; color:rgba(255,255,255,0.55); font-weight:600; margin-top:3px; text-transform:uppercase; letter-spacing:0.06em;">par session</p>
+            </div>
+          </div>
+          <!-- Steps -->
+          <div style="background:#0F172A; padding:20px 26px; display:flex; flex-direction:column; gap:16px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:34px; height:34px; background:#1E3A5F; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div style="flex:1;">
+                <p style="font-size:0.82rem; font-weight:700; color:#fff; margin-bottom:4px;">Découverte de l'outil</p>
+                <div style="height:4px; background:rgba(255,255,255,0.08); border-radius:100px; overflow:hidden;">
+                  <div style="width:19%; height:100%; background:#60A5FA; border-radius:100px;"></div>
+                </div>
+              </div>
+              <span style="font-size:0.72rem; font-weight:700; color:#60A5FA; flex-shrink:0;">45 min</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:34px; height:34px; background:#064E3B; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+              <div style="flex:1;">
+                <p style="font-size:0.82rem; font-weight:700; color:#fff; margin-bottom:4px;">Démonstration live</p>
+                <div style="height:4px; background:rgba(255,255,255,0.08); border-radius:100px; overflow:hidden;">
+                  <div style="width:25%; height:100%; background:#34D399; border-radius:100px;"></div>
+                </div>
+              </div>
+              <span style="font-size:0.72rem; font-weight:700; color:#34D399; flex-shrink:0;">60 min</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:34px; height:34px; background:#451A03; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div style="flex:1;">
+                <p style="font-size:0.82rem; font-weight:700; color:#fff; margin-bottom:4px;">Construction en live</p>
+                <div style="height:4px; background:rgba(255,255,255,0.08); border-radius:100px; overflow:hidden;">
+                  <div style="width:31%; height:100%; background:#FCD34D; border-radius:100px;"></div>
+                </div>
+              </div>
+              <span style="font-size:0.72rem; font-weight:700; color:#FCD34D; flex-shrink:0;">75 min</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:34px; height:34px; background:#2E1065; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </div>
+              <div style="flex:1;">
+                <p style="font-size:0.82rem; font-weight:700; color:#fff; margin-bottom:4px;">Test &amp; mise en prod</p>
+                <div style="height:4px; background:rgba(255,255,255,0.08); border-radius:100px; overflow:hidden;">
+                  <div style="width:25%; height:100%; background:#A78BFA; border-radius:100px;"></div>
+                </div>
+              </div>
+              <span style="font-size:0.72rem; font-weight:700; color:#A78BFA; flex-shrink:0;">60 min</span>
+            </div>
+          </div>
+          <!-- Card footer -->
+          <div style="background:#0F172A; border-top:1px solid rgba(255,255,255,0.06); padding:14px 26px; display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:0.75rem; color:rgba(255,255,255,0.4);">5 à 15 participants</span>
+            <span style="font-size:1.15rem; font-weight:900; color:#fff;">49 € <span style="font-size:0.72rem; font-weight:500; color:rgba(255,255,255,0.4);">/ pers.</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ATELIERS GRID -->
+<section class="section" aria-labelledby="ateliers-list-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Apprenez en mode snack learning</p>
+      <h2 class="section-title" id="ateliers-list-title">Nos ateliers</h2>
+      <p class="section-subtitle">Chaque atelier est centré sur un outil et un résultat. Vous construisez quelque chose qui fonctionne — pas un exercice théorique.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Atelier 1 — Créer ses agents IA -->
+      <div class="atelier-card reveal">
+        <div class="atelier-card-stripe atelier-card-stripe--agent"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-pop">Bestseller</span>
+            <span class="badge-tool">Claude Agents</span>
+            <span class="badge-format">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4h
+            </span>
+          </div>
+          <h3 class="atelier-card-title">Créer ses agents IA — des agents qui travaillent pendant que vous dormez</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            5 à 15 participants — Distanciel ou présentiel
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Un agent IA ce n'est pas un chatbot — c'est un programme qui prend des décisions, utilise des outils et exécute des tâches en autonomie. En 4h on en construit un de A à Z sur votre cas réel.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Au programme</p>
+            <ul>
+              <li>Différence agent / chatbot / assistant : ce qui change vraiment</li>
+              <li>Démo live : un agent SEO qui monitore et alerte en autonomie</li>
+              <li>Définir les outils, la mémoire et les instructions de son agent</li>
+              <li>Construire son propre agent sur son cas métier</li>
+              <li>Tester, affiner et lancer en production</li>
+            </ul>
+          </div>
+          <div class="atelier-deliverable">
+            <div class="atelier-deliverable-icon">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="atelier-deliverable-text">
+              Vous repartez avec <span>votre agent en production, configuré sur votre cas d'usage réel.</span>
+            </div>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price">49 € <small>HT / pers.</small></div>
+          <a href="contact.html" class="btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Atelier 2 — Site web en 5 min avec Claude Code -->
+      <div class="atelier-card reveal reveal-delay-1">
+        <div class="atelier-card-stripe atelier-card-stripe--code"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-new-small">Exclusif</span>
+            <span class="badge-tool">Claude Code</span>
+            <span class="badge-format">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4h
+            </span>
+          </div>
+          <h3 class="atelier-card-title">Créer un site web en 5 min avec Claude Code — vibe coding de A à Z</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            5 à 15 participants — Distanciel ou présentiel
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Décrire son site en langage naturel et le voir apparaître en 5 minutes. Claude Code génère, vous itérez, vous déployez. Zéro connaissance technique requise — juste la bonne façon de briefer.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Au programme</p>
+            <ul>
+              <li>Installation et prise en main de Claude Code en direct</li>
+              <li>Démo live : site vitrine complet généré en 5 minutes</li>
+              <li>La méthode pour briefer Claude Code sans ambiguïté</li>
+              <li>Itérer, personnaliser, corriger sans jamais toucher le code</li>
+              <li>Déploiement sur Netlify — votre URL live à la fin de la session</li>
+            </ul>
+          </div>
+          <div class="atelier-deliverable">
+            <div class="atelier-deliverable-icon">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="atelier-deliverable-text">
+              Vous repartez avec <span>votre site en ligne sur Netlify et la méthode pour en créer autant que vous voulez.</span>
+            </div>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price">49 € <small>HT / pers.</small></div>
+          <a href="contact.html" class="btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Atelier 3 — Contenu SEO YourTextGuru -->
+      <div class="atelier-card reveal reveal-delay-2">
+        <div class="atelier-card-stripe atelier-card-stripe--seo"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-tool">YourTextGuru</span>
+            <span class="badge-format">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4h
+            </span>
+          </div>
+          <h3 class="atelier-card-title">Générer du contenu SEO 100% YourTextGuru-friendly</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            5 à 15 participants — Distanciel ou présentiel
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Apprendre à lire un rapport YourTextGuru, construire le prompt qui intègre les recommandations sémantiques, et générer un article qui atteint le score cible dès la première itération.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Au programme</p>
+            <ul>
+              <li>Comment YourTextGuru calcule la richesse sémantique d'un texte</li>
+              <li>Lire et décoder un rapport YTG en moins de 2 minutes</li>
+              <li>Construire le prompt qui intègre automatiquement les termes YTG</li>
+              <li>Générer → scorer → itérer : le workflow en live sur vos mots-clés</li>
+              <li>Industrialiser la production : brief → article → publication</li>
+            </ul>
+          </div>
+          <div class="atelier-deliverable">
+            <div class="atelier-deliverable-icon">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="atelier-deliverable-text">
+              Vous repartez avec <span>2 articles au score YTG cible + le prompt SEO réutilisable sur n'importe quel mot-clé.</span>
+            </div>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price">49 € <small>HT / pers.</small></div>
+          <a href="contact.html" class="btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Atelier 4 — GEO : être cité par les IA -->
+      <div class="atelier-card reveal">
+        <div class="atelier-card-stripe atelier-card-stripe--geo"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-new-small">Nouveau</span>
+            <span class="badge-tool">ChatGPT · Perplexity</span>
+            <span class="badge-format">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4h
+            </span>
+          </div>
+          <h3 class="atelier-card-title">GEO — Faire citer son site par ChatGPT, Perplexity et Google AI</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            5 à 15 participants — Distanciel ou présentiel
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Les IA génératives répondent à la place des sites. Comprendre pourquoi elles citent certains contenus, vérifier sa propre présence en live, et appliquer les optimisations GEO qui fonctionnent.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Au programme</p>
+            <ul>
+              <li>Comment les LLM sélectionnent leurs sources (et pourquoi ça change tout)</li>
+              <li>Audit live : vérifier sa présence dans ChatGPT, Perplexity et Google AI Overviews</li>
+              <li>Les 5 signaux GEO à travailler en priorité</li>
+              <li>Réécrire un contenu pour qu'il soit citable par les IA</li>
+              <li>Mettre en place un monitoring GEO de sa marque</li>
+            </ul>
+          </div>
+          <div class="atelier-deliverable">
+            <div class="atelier-deliverable-icon">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="atelier-deliverable-text">
+              Vous repartez avec <span>votre audit GEO, votre checklist d'optimisation et un contenu remanié prêt à citer.</span>
+            </div>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price">49 € <small>HT / pers.</small></div>
+          <a href="contact.html" class="btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Atelier 5 — LinkedIn × IA -->
+      <div class="atelier-card reveal reveal-delay-1">
+        <div class="atelier-card-stripe atelier-card-stripe--li"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-tool">LinkedIn · IA</span>
+            <span class="badge-format">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              4h
+            </span>
+          </div>
+          <h3 class="atelier-card-title">LinkedIn × IA — publier 3 posts par semaine sans y passer 3h</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            5 à 15 participants — Distanciel ou présentiel
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Maîtriser l'algorithme LinkedIn 2026, construire son système de création de contenu assisté par IA et publier son premier post en direct. On repart avec un pipeline de contenu qui tourne seul.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Au programme</p>
+            <ul>
+              <li>L'algorithme LinkedIn en 2026 : ce qui a vraiment changé</li>
+              <li>Les 4 formats qui génèrent de la portée organique</li>
+              <li>Construire son système IA de génération de posts (prompt → post en 3 min)</li>
+              <li>Créer un mois de contenu en une heure avec l'IA</li>
+              <li>Publier son premier post ensemble — en direct</li>
+            </ul>
+          </div>
+          <div class="atelier-deliverable">
+            <div class="atelier-deliverable-icon">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="atelier-deliverable-text">
+              Vous repartez avec <span>votre système de contenu LinkedIn, 4 semaines de posts planifiés et votre premier post publié.</span>
+            </div>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price">49 € <small>HT / pers.</small></div>
+          <a href="contact.html" class="btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Atelier sur mesure -->
+      <div class="atelier-card reveal reveal-delay-2" style="background:var(--bg-subtle); border-style:dashed;">
+        <div class="atelier-card-stripe" style="background:linear-gradient(90deg, #94A3B8, #CBD5E1);"></div>
+        <div class="atelier-card-header">
+          <div class="atelier-card-badges">
+            <span class="badge-format">Sur mesure</span>
+          </div>
+          <h3 class="atelier-card-title">Atelier sur mesure — votre outil, votre cas d'usage</h3>
+          <div class="atelier-card-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            Demi-journée ou journée — À partir de 5 participants
+          </div>
+        </div>
+        <div class="atelier-card-body">
+          <p class="atelier-card-desc">Vous avez un outil spécifique, un cas d'usage précis ou une stack particulière ? On conçoit un atelier 100% centré sur vos besoins réels — dans vos locaux ou en distanciel.</p>
+          <div class="atelier-card-program">
+            <p class="atelier-card-program-title">Exemples réalisés</p>
+            <ul>
+              <li>Pipeline de génération de fiches produit avec IA</li>
+              <li>Agent de monitoring SEO sur mesure</li>
+              <li>Intégration IA dans un CRM existant</li>
+              <li>Générateur de comptes-rendus de réunion automatisé</li>
+              <li>Tout autre projet IA / automatisation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="atelier-card-footer">
+          <div class="atelier-card-price" style="font-size:1rem; color:var(--text-muted);">Devis sous 24h</div>
+          <a href="contact.html" class="btn-secondary btn-sm">Nous écrire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="section section--subtle" aria-labelledby="formats-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Comment ça marche</p>
+      <h2 class="section-title" id="formats-title">La règle : on ne repart pas les mains vides</h2>
+      <p class="section-subtitle">Chaque atelier est construit autour d'un livrable. On ouvre les outils à la minute 1 et on ne les ferme qu'une fois que ça tourne.</p>
+    </div>
+    <div class="atelier-formats-grid">
+      <div class="atelier-format-item reveal">
+        <div class="atelier-format-icon" style="background:#EFF6FF; color:#1D4ED8;" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="atelier-format-title">Un outil, un livrable</div>
+        <div class="atelier-format-desc">Chaque atelier est centré sur un seul outil et produit un résultat concret. Pas de survol généraliste — on va au fond d'un sujet en 4h.</div>
+      </div>
+      <div class="atelier-format-item reveal reveal-delay-1">
+        <div class="atelier-format-icon" style="background:#F0FDF4; color:#16A34A;" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="atelier-format-title">5 à 15 participants max</div>
+        <div class="atelier-format-desc">Assez petit pour que Youssef suive chaque participant en temps réel et débogue sur son cas. Pas de grand groupe où on se perd.</div>
+      </div>
+      <div class="atelier-format-item reveal reveal-delay-2">
+        <div class="atelier-format-icon" style="background:#FFF7ED; color:#EA580C;" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="atelier-format-title">Ressources à vie incluses</div>
+        <div class="atelier-format-desc">Accès au template de prompt, aux workflows Make/n8n exportés, aux checklists — tout ce qui a été construit pendant la session vous appartient.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFÉRENCE FORMATIONS -->
+<section class="section" aria-labelledby="diff-title">
+  <div class="container">
+    <div class="grid-2" style="gap:64px; align-items:center;">
+      <div class="reveal">
+        <p class="kicker">Ateliers vs Formations</p>
+        <h2 id="diff-title">Quelle option choisir ?</h2>
+        <p style="font-size:1rem; color:var(--text-muted); line-height:1.7; margin-top:16px; margin-bottom:28px;">Les deux produisent des résultats — mais pas au même rythme ni pour les mêmes objectifs.</p>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="padding:18px; background:var(--bg-subtle); border-radius:var(--radius); border-left:3px solid var(--blue);">
+            <div style="font-weight:700; font-size:0.95rem; margin-bottom:6px;">Choisissez un atelier si…</div>
+            <div style="font-size:0.87rem; color:var(--text-muted); line-height:1.6;">Vous voulez construire quelque chose de concret rapidement, tester un outil sur votre cas réel, ou embarquer une équipe en demi-journée. Non finançable OPCO — mais résultat immédiat garanti.</div>
+          </div>
+          <div style="padding:18px; background:var(--bg-subtle); border-radius:var(--radius); border-left:3px solid #059669;">
+            <div style="font-weight:700; font-size:0.95rem; margin-bottom:6px;">Choisissez une formation si…</div>
+            <div style="font-size:0.87rem; color:var(--text-muted); line-height:1.6;">Vous voulez une montée en compétence structurée sur 1 à 2 jours, financer via OPCO, certifier vos collaborateurs ou couvrir un domaine en profondeur (SEO complet, IA appliquée à votre secteur…).</div>
+          </div>
+        </div>
+        <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="contact.html" class="btn-primary">Réserver un atelier</a>
+          <a href="formations.html" class="btn-secondary">Voir les formations</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div style="background:white; border:1.5px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <div style="background:var(--bg-subtle); padding:14px 20px; border-bottom:1px solid var(--border);">
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px;">
+              <div style="font-size:0.75rem; font-weight:700; color:var(--text-muted);">Critère</div>
+              <div style="font-size:0.75rem; font-weight:700; color:var(--blue); text-align:center;">Ateliers</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#059669; text-align:center;">Formations</div>
+            </div>
+          </div>
+          <div style="padding:0 20px;">
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px; padding:13px 0; border-bottom:1px solid var(--bg-subtle); font-size:0.82rem;">
+              <div style="color:var(--text);">Durée</div>
+              <div style="text-align:center; color:var(--text-muted);">Demi-journée</div>
+              <div style="text-align:center; color:var(--text-muted);">1–2 jours</div>
+            </div>
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px; padding:13px 0; border-bottom:1px solid var(--bg-subtle); font-size:0.82rem;">
+              <div style="color:var(--text);">Financement OPCO</div>
+              <div style="text-align:center; color:#6B7280;">—</div>
+              <div style="text-align:center; color:#059669; font-weight:700;">✓</div>
+            </div>
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px; padding:13px 0; border-bottom:1px solid var(--bg-subtle); font-size:0.82rem;">
+              <div style="color:var(--text);">Livrable à la fin</div>
+              <div style="text-align:center; color:var(--blue); font-weight:700;">✓</div>
+              <div style="text-align:center; color:var(--blue); font-weight:700;">✓</div>
+            </div>
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px; padding:13px 0; border-bottom:1px solid var(--bg-subtle); font-size:0.82rem;">
+              <div style="color:var(--text);">Groupe max.</div>
+              <div style="text-align:center; color:var(--text-muted);">15 pers.</div>
+              <div style="text-align:center; color:var(--text-muted);">12 pers.</div>
+            </div>
+            <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:8px; padding:13px 0; font-size:0.82rem;">
+              <div style="color:var(--text);">Tarif indicatif</div>
+              <div style="text-align:center; color:var(--text-muted);">49 €/pers.</div>
+              <div style="text-align:center; color:var(--text-muted);">800–1 400 €</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="ateliers-cta">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <p class="kicker kicker--light">Sessions disponibles</p>
+      <h2 id="ateliers-cta">Réservez votre demi-journée — ou organisez la vôtre</h2>
+      <p>Devis sous 24h pour les groupes. Sur site (Paris & région parisienne) ou en distanciel. On s'adapte à vos outils, votre secteur, votre niveau.</p>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn-primary btn-lg">Réserver un atelier</a>
+        <a href="formations.html" class="btn-outline-white btn-lg">Voir les formations →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="services/seo.html">Référencement SEO</a></li>
+          <li><a href="services/geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="services/linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="services/ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Apprendre</p>
+        <ul class="footer-links">
+          <li><a href="ateliers.html">Ateliers pratiques</a></li>
+          <li><a href="formations.html">Formation SEO &amp; GEO</a></li>
+          <li><a href="formations.html">Formation IA</a></li>
+          <li><a href="formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

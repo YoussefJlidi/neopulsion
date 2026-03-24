@@ -1,0 +1,52 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="600" y1="84" x2="600" y2="636" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#191919"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="card" x1="600" y1="174" x2="600" y2="546" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E1E1E"/>
+      <stop offset="1" stop-color="#141414"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(941 173) rotate(131.249) scale(193.231 250.657)">
+      <stop stop-color="#FFE600" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFE600" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="60" y="60" width="1080" height="600" rx="36" fill="url(#panel)"/>
+  <rect x="60.5" y="60.5" width="1079" height="599" rx="35.5" stroke="white" stroke-opacity="0.1"/>
+  <rect x="60" y="60" width="1080" height="600" rx="36" fill="url(#glow)"/>
+
+  <path d="M120 176H1080" stroke="white" stroke-opacity="0.06"/>
+  <path d="M120 312H1080" stroke="white" stroke-opacity="0.06"/>
+  <path d="M120 448H1080" stroke="white" stroke-opacity="0.06"/>
+  <path d="M120 584H1080" stroke="white" stroke-opacity="0.06"/>
+
+  <rect x="132" y="132" width="936" height="104" rx="24" fill="url(#card)"/>
+  <rect x="132.5" y="132.5" width="935" height="103" rx="23.5" stroke="white" stroke-opacity="0.09"/>
+  <circle cx="188" cy="184" r="10" fill="#FFE600"/>
+  <text x="220" y="192" fill="white" fill-opacity="0.92" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="0.04em">ChatGPT</text>
+  <path d="M785 196H970" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="1012" cy="196" r="8" fill="#FFE600"/>
+  <circle cx="970" cy="196" r="8" fill="#FFE600" fill-opacity="0.35"/>
+  <circle cx="928" cy="196" r="8" fill="#FFE600" fill-opacity="0.18"/>
+
+  <rect x="132" y="308" width="936" height="104" rx="24" fill="url(#card)"/>
+  <rect x="132.5" y="308.5" width="935" height="103" rx="23.5" stroke="white" stroke-opacity="0.09"/>
+  <circle cx="188" cy="360" r="10" fill="#FFE600"/>
+  <text x="220" y="368" fill="white" fill-opacity="0.92" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="0.04em">Perplexity</text>
+  <path d="M785 372H1012" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="862" cy="372" r="8" fill="#FFE600" fill-opacity="0.18"/>
+  <circle cx="928" cy="372" r="8" fill="#FFE600" fill-opacity="0.35"/>
+  <circle cx="1012" cy="372" r="8" fill="#FFE600"/>
+
+  <rect x="132" y="484" width="936" height="104" rx="24" fill="url(#card)"/>
+  <rect x="132.5" y="484.5" width="935" height="103" rx="23.5" stroke="white" stroke-opacity="0.09"/>
+  <circle cx="188" cy="536" r="10" fill="#FFE600"/>
+  <text x="220" y="544" fill="white" fill-opacity="0.92" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="0.04em">Google AI</text>
+  <path d="M785 548H884L936 512L1012 548" stroke="#FFE600" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="884" cy="548" r="8" fill="#FFE600" fill-opacity="0.18"/>
+  <circle cx="936" cy="512" r="8" fill="#FFE600"/>
+  <circle cx="1012" cy="548" r="8" fill="#FFE600" fill-opacity="0.35"/>
+</svg>

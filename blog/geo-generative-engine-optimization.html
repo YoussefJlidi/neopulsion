@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO : Comment être cité par ChatGPT, Perplexity et Gemini | Neopulsion</title>
+  <meta name="description" content="Le Generative Engine Optimization (GEO) est la nouvelle discipline pour apparaître dans les réponses des IA génératives. Guide complet et stratégie pratique par Youssef Jlidi.">
+  <link rel="canonical" href="https://neopulsion.fr/blog/geo-generative-engine-optimization.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero { padding: 80px 0 0; background: var(--bg); }
+    .article-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
+    .article-body { max-width: 720px; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; color: var(--text); }
+    .article-body h3 { font-size: 1.125rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
+    .article-body p  { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 20px; }
+    .article-body li { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 8px; }
+    .article-body strong { color: var(--text); font-weight: 700; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+    .article-callout { background: #EFF6FF; border-left: 4px solid var(--blue); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 20px 24px; margin: 32px 0; }
+    .article-callout p { margin: 0; color: var(--text); }
+
+    .article-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+    .article-stat { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+    .article-stat-num { font-size: 2rem; font-weight: 800; color: var(--blue); line-height: 1; }
+    .article-stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+    .article-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.9375rem; }
+    .article-table th { background: var(--bg-subtle); padding: 12px 16px; text-align: left; font-weight: 700; color: var(--text); border-bottom: 2px solid var(--border); }
+    .article-table td { padding: 12px 16px; border-bottom: 1px solid var(--border-light); color: var(--text-muted); vertical-align: top; }
+    .article-table tr:last-child td { border-bottom: none; }
+
+    /* Sidebar */
+    .article-sidebar { position: sticky; top: 100px; }
+    .sidebar-toc { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px; }
+    .sidebar-toc-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 14px; }
+    .sidebar-toc a { display: block; font-size: 0.875rem; color: var(--text-muted); text-decoration: none; padding: 5px 0; border-left: 2px solid var(--border); padding-left: 12px; margin-bottom: 4px; transition: all .2s; }
+    .sidebar-toc a:hover { color: var(--blue); border-left-color: var(--blue); }
+    .sidebar-cta { background: var(--blue); color: #fff; border-radius: var(--radius-md); padding: 24px; text-align: center; }
+    .sidebar-cta p { color: rgba(255,255,255,0.85); font-size: 0.875rem; margin-bottom: 16px; }
+
+    .author-block { display: flex; align-items: center; gap: 14px; padding: 24px; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); margin: 48px 0 0; }
+    .author-block img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .author-block-name { font-weight: 700; font-size: 1rem; }
+    .author-block-bio { font-size: 0.875rem; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+
+    @media(max-width:900px){
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+      .article-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="../services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="../services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="../services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="../services/seo.html">Référencement SEO</a>
+      <a href="../services/geo.html">GEO — Référencement Génératif</a>
+      <a href="../services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="../services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="padding-top:24px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../blog.html">Blog</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">GEO</span>
+    </nav>
+
+    <div style="max-width:800px; margin-top:32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+        <span class="blog-card-cat">GEO</span>
+        <time style="font-size:0.875rem; color:var(--text-muted);" datetime="2026-03-24">24 mars 2026</time>
+        <span style="font-size:0.875rem; color:var(--text-muted);">· 12 min de lecture</span>
+      </div>
+      <h1 style="font-size:clamp(1.75rem,4vw,2.75rem); font-weight:900; line-height:1.2; color:var(--text); margin-bottom:20px;">GEO : comment être cité par ChatGPT, Perplexity et Gemini en 2026</h1>
+      <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:680px;">Les sessions référées par les IA ont bondi de <strong style="color:var(--text);">+527 %</strong> en un an. La question n'est plus "est-ce que je dois m'y intéresser ?" mais "comment je fais pour apparaître ?" Voici la méthode.</p>
+    </div>
+
+    <img src="../assets/blog-geo-cover.jpg" alt="GEO Generative Engine Optimization — être cité par les IA génératives" class="article-cover">
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="article-layout">
+
+      <!-- ── Corps de l'article ── -->
+      <article class="article-body">
+
+        <p>Quand quelqu'un pose une question à ChatGPT, Perplexity ou Gemini, l'IA ne renvoie pas dix liens bleus. Elle formule une réponse synthétique, en citant parfois une poignée de sources. Votre concurrent qui apparaît dans ces citations capte une attention que vous ne récupérez pas. C'est exactement ce que le <strong>GEO (Generative Engine Optimization)</strong> cherche à changer.</p>
+
+        <div class="article-stat-grid">
+          <div class="article-stat">
+            <div class="article-stat-num">+527%</div>
+            <div class="article-stat-label">de sessions référées par les IA en un an</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num">780M</div>
+            <div class="article-stat-label">requêtes mensuelles sur Perplexity</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num">40%</div>
+            <div class="article-stat-label">des recherches Google touchées par les AI Overviews</div>
+          </div>
+        </div>
+
+        <h2 id="definition">Qu'est-ce que le GEO exactement ?</h2>
+
+        <p>Le <strong>Generative Engine Optimization</strong> est la discipline qui consiste à optimiser son contenu pour apparaître comme source citée dans les réponses des moteurs de recherche génératifs — ChatGPT, Perplexity, Gemini, Copilot, Claude — et dans les AI Overviews de Google.</p>
+
+        <p>À la différence du SEO classique, où l'objectif est de se positionner dans un classement de liens, le GEO vise à être <em>sélectionné</em> par un modèle de langage comme source fiable pour répondre à une question. Le critère de sélection n'est plus la popularité d'une page, mais sa densité informationnelle, sa clarté structurelle et son autorité perçue.</p>
+
+        <div class="article-callout">
+          <p><strong>Différence fondamentale :</strong> En SEO, vous optimisez pour un algorithme de ranking. En GEO, vous optimisez pour un modèle de langage qui <em>comprend</em> votre contenu et décide s'il est suffisamment fiable pour être cité.</p>
+        </div>
+
+        <h2 id="signaux">Les 7 signaux que les LLM utilisent pour vous citer</h2>
+
+        <p>Après l'analyse de plusieurs centaines de citations IA sur des requêtes B2B et B2C, voici les critères qui ressortent de façon systématique :</p>
+
+        <h3>1. La réponse directe dans les 60 premiers mots</h3>
+        <p>Les LLM cherchent des <strong>réponses nettes, immédiatement localisables</strong>. Si votre contenu commence par un historique de deux paragraphes avant d'aborder le sujet, il sera ignoré au profit d'une source plus directe. La question doit trouver sa réponse dans les premiers 40 à 60 mots de la section concernée.</p>
+
+        <h3>2. La densité factuelle</h3>
+        <p>Les modèles accordent plus de poids aux contenus qui contiennent des <strong>chiffres, des dates et des faits vérifiables</strong>. L'objectif est d'intégrer une donnée factuelle tous les 150 à 200 mots environ. Pas pour "paraître expert" — mais parce que les LLM utilisent ces ancres pour évaluer la fiabilité d'une affirmation.</p>
+
+        <h3>3. Les citations de sources externes</h3>
+        <p>Citer des sources tierres (études, rapports, médias reconnus) dans votre contenu envoie un signal de <strong>rigueur éditoriale</strong> que les modèles détectent. C'est contre-intuitif — on a longtemps évité de "faire sortir" le lecteur — mais pour le GEO, le sourçage est un facteur de confiance.</p>
+
+        <h3>4. La structure sémantique explicite</h3>
+        <p>Les balises H2/H3 formulées comme des <strong>questions ou des affirmations complètes</strong> permettent aux LLM de mapper votre contenu sur des intentions de recherche précises. "Comment le GEO fonctionne-t-il ?" est plus efficace que "Fonctionnement".</p>
+
+        <h3>5. Le balisage schema.org</h3>
+        <p>Les schemas <strong>FAQ, HowTo, Article et Organization</strong> sont lus directement par les modèles lors du crawl. Ils structurent l'information dans un format que les IA peuvent ingérer sans ambiguïté. Leur impact sur la citabilité est documenté, notamment sur les AI Overviews de Google.</p>
+
+        <h3>6. L'autorité de domaine et les signaux E-E-A-T</h3>
+        <p>ChatGPT et Perplexity ont tous les deux été entraînés sur des corpus qui surpondèrent les sources à haute autorité. Un domaine avec des backlinks de qualité, des auteurs identifiés et une cohérence thématique forte sera préféré à un site récent sans historique — même si le contenu est objectivement meilleur.</p>
+
+        <h3>7. La fraîcheur du contenu</h3>
+        <p>Perplexity en particulier accorde un poids fort à la <strong>récence</strong>. Les contenus mis à jour dans les 90 derniers jours ont un avantage sur des articles non touchés depuis deux ans. Ajouter une date de révision explicite et mettre à jour régulièrement vos articles stratégiques est une tactique simple à fort impact.</p>
+
+        <h2 id="differences">ChatGPT, Perplexity, Gemini : les différences à connaître</h2>
+
+        <table class="article-table">
+          <thead>
+            <tr>
+              <th>Plateforme</th>
+              <th>Mode de sélection des sources</th>
+              <th>Priorité principale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ChatGPT (Search)</strong></td>
+              <td>Crawl en temps réel via Bing + données d'entraînement</td>
+              <td>Contenu encyclopédique, structuré, autorité de domaine</td>
+            </tr>
+            <tr>
+              <td><strong>Perplexity</strong></td>
+              <td>Crawl temps réel multi-sources</td>
+              <td>Récence, densité factuelle, réponse directe</td>
+            </tr>
+            <tr>
+              <td><strong>Gemini</strong></td>
+              <td>Google Search + corpus propre</td>
+              <td>Positionnement SEO existant + E-E-A-T fort</td>
+            </tr>
+            <tr>
+              <td><strong>AI Overviews (Google)</strong></td>
+              <td>Indexation Google standard</td>
+              <td>Contenu déjà dans le top 10 + schema FAQ/HowTo</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>La bonne nouvelle : une page bien optimisée pour Perplexity fonctionnera généralement bien sur les autres plateformes. Les fondamentaux sont communs. Les différences de comportement justifient des ajustements à la marge, pas une stratégie distincte par IA.</p>
+
+        <h2 id="strategie">La stratégie GEO en 5 étapes</h2>
+
+        <h3>Étape 1 — Cartographier vos requêtes cibles</h3>
+        <p>Identifiez les 15 à 20 questions que vos prospects posent aux IA génératives dans votre secteur. Pas les mots-clés SEO classiques — les <strong>formulations conversationnelles</strong> : "quelle est la différence entre X et Y ?", "comment choisir un prestataire pour Z ?". Ces questions sont vos nouvelles cibles GEO.</p>
+
+        <h3>Étape 2 — Auditer votre citabilité actuelle</h3>
+        <p>Posez ces questions directement à ChatGPT, Perplexity et Gemini. Êtes-vous cité ? Vos concurrents le sont-ils ? Notez les sources qui reviennent. Ce sont vos benchmarks et vos modèles à analyser.</p>
+
+        <h3>Étape 3 — Retravailler vos contenus existants</h3>
+        <p>Avant de créer du nouveau contenu, <strong>réoptimisez vos meilleures pages</strong> : réponse directe dans les 60 premiers mots, restructuration des titres en questions, ajout de données chiffrées, mise à jour de la date de révision. C'est la tactique au meilleur ratio effort/résultat.</p>
+
+        <h3>Étape 4 — Créer des contenus GEO-natifs</h3>
+        <p>Produisez des pages spécifiquement conçues pour répondre aux questions conversationnelles de votre marché. Format privilégié : question + réponse directe (50 mots) + développement + FAQ structurée en bas de page. Chaque FAQ doit répondre à une variante de la question principale.</p>
+
+        <h3>Étape 5 — Mesurer et itérer</h3>
+        <p>Le tracking GEO est encore artisanal : vérification manuelle des citations, monitoring des mentions de marque dans les réponses IA, analyse du trafic referral en provenance des IA. Des outils comme Profound, Semrush AI Toolkit et Ahrefs commencent à proposer des fonctionnalités de suivi. Mettez en place un tableau de bord mensuel dès maintenant.</p>
+
+        <div class="article-callout">
+          <p>💡 <strong>Conseil pratique :</strong> La plupart des entreprises qui agissent maintenant sur le GEO le font dans un environnement concurrentiel encore peu encombré. Chaque mois de retard, c'est de la part de citation cédée à vos concurrents qui se positionnent.</p>
+        </div>
+
+        <h2 id="seo-geo">SEO et GEO : complémentaires, pas concurrents</h2>
+
+        <p>La question revient souvent : "Dois-je arbitrer entre SEO et GEO ?" La réponse est non. Les deux disciplines partagent les mêmes fondamentaux — contenu de qualité, autorité de domaine, structure technique solide. Le GEO ajoute une couche de critères supplémentaires sans invalider ce qui fonctionne déjà en SEO.</p>
+
+        <p>Pour Gemini notamment, <strong>être dans le top 10 de Google reste une condition quasi-nécessaire</strong> pour être cité. Le GEO se construit sur le SEO, pas à sa place.</p>
+
+        <p>Ce qui change, c'est la nature du résultat visible : non plus un lien cliqué, mais une citation dans une réponse synthétique. Le trafic généré est différent — plus qualifié, plus intentionnel — mais le volume est pour l'instant plus faible. L'investissement GEO se justifie comme une anticipation de la croissance continue des usages IA, pas comme un remplacement immédiat du SEO.</p>
+
+        <h2 id="conclusion">Pour conclure</h2>
+
+        <p>Le GEO n'est pas une mode passagère. C'est la conséquence logique d'un changement d'interface : les utilisateurs posent des questions aux IA, les IA synthétisent des sources, et certaines sources sont citées, d'autres pas. Être parmi les sources citées, c'est être visible là où l'attention se déplace.</p>
+
+        <p>Les entreprises qui investissent maintenant dans leur citabilité IA construisent une avance qui sera très difficile à rattraper dans 18 mois, quand le sujet sera mainstream et la compétition intense.</p>
+
+        <div class="author-block">
+          <img src="../assets/youssef-jlidi-2.png" alt="Youssef Jlidi">
+          <div>
+            <div class="author-block-name">Youssef Jlidi</div>
+            <div class="author-block-bio">Fondateur de Neopulsion, expert SEO &amp; GEO depuis 10 ans. Auteur ENI Éditions, formateur LinkedIn Learning (500 000+ apprenants). Pionnier du GEO en France.</div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ── Sidebar ── -->
+      <aside class="article-sidebar">
+        <div class="sidebar-toc">
+          <p class="sidebar-toc-title">Sommaire</p>
+          <a href="#definition">Qu'est-ce que le GEO ?</a>
+          <a href="#signaux">Les 7 signaux des LLM</a>
+          <a href="#differences">ChatGPT vs Perplexity vs Gemini</a>
+          <a href="#strategie">Stratégie en 5 étapes</a>
+          <a href="#seo-geo">SEO et GEO</a>
+          <a href="#conclusion">Conclusion</a>
+        </div>
+
+        <div class="sidebar-cta">
+          <p style="font-weight:700; font-size:1rem; color:#fff; margin-bottom:8px;">Audit GEO gratuit</p>
+          <p>Êtes-vous cité par les IA génératives sur votre marché ? Découvrez-le en 30 min.</p>
+          <a href="../contact.html" class="btn-primary" style="width:100%; justify-content:center; background:#fff; color:var(--blue); margin-top:4px;">Demander l'audit</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="article-cta">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <h2 id="article-cta">Passez du SEO au SEO + GEO</h2>
+      <p>Audit gratuit de votre citabilité IA. Nous analysons votre présence sur ChatGPT, Perplexity et Gemini et vous remettons un plan d'action concret.</p>
+      <div class="cta-banner-actions">
+        <a href="../contact.html" class="btn-primary btn-lg">Demander un audit gratuit</a>
+        <a href="../services/geo.html" class="btn-outline-white btn-lg">Découvrir le service GEO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="../services/seo.html">Référencement SEO</a></li>
+          <li><a href="../services/geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="../services/linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="../services/ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

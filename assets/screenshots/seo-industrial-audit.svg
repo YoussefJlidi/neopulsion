@@ -1,0 +1,37 @@
+<svg width="800" height="440" viewBox="0 0 800 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="440" rx="24" fill="#07090C"/>
+  <rect x="24" y="24" width="752" height="48" rx="12" fill="#10141A" stroke="#1B2430"/>
+  <circle cx="52" cy="48" r="6" fill="#FFE600"/>
+  <circle cx="72" cy="48" r="6" fill="#3A4250"/>
+  <circle cx="92" cy="48" r="6" fill="#3A4250"/>
+  <text x="118" y="54" fill="#DDE2EA" font-size="18" font-family="Arial, sans-serif">Audit &amp; Priorisation SEO</text>
+
+  <rect x="32" y="92" width="356" height="324" rx="14" fill="#0D131A" stroke="#212A36"/>
+  <text x="56" y="126" fill="#C8D0DB" font-size="15" font-family="Arial, sans-serif">Score technique global</text>
+  <text x="56" y="174" fill="#FFE600" font-size="44" font-family="Arial, sans-serif">74</text>
+  <text x="122" y="174" fill="#9BA9BA" font-size="22" font-family="Arial, sans-serif">/100</text>
+  <rect x="56" y="194" width="304" height="12" rx="6" fill="#1E2734"/>
+  <rect x="56" y="194" width="224" height="12" rx="6" fill="#FFE600"/>
+  <text x="56" y="238" fill="#9AA8B9" font-size="13" font-family="Arial, sans-serif">Crawl depth anormale: 312 urls</text>
+  <text x="56" y="262" fill="#9AA8B9" font-size="13" font-family="Arial, sans-serif">Pages orphelines: 148</text>
+  <text x="56" y="286" fill="#9AA8B9" font-size="13" font-family="Arial, sans-serif">Templates lents: 6</text>
+  <text x="56" y="310" fill="#9AA8B9" font-size="13" font-family="Arial, sans-serif">Cannibalisation: 24 clusters</text>
+
+  <rect x="412" y="92" width="356" height="152" rx="14" fill="#0D131A" stroke="#212A36"/>
+  <text x="436" y="124" fill="#C8D0DB" font-size="15" font-family="Arial, sans-serif">Opportunites priorisees</text>
+  <rect x="436" y="140" width="310" height="88" rx="10" fill="#101822" stroke="#283344"/>
+  <text x="456" y="168" fill="#FFE600" font-size="13" font-family="Arial, sans-serif">Quick wins: +18% trafic potentiel</text>
+  <text x="456" y="194" fill="#A4B0BF" font-size="12" font-family="Arial, sans-serif">Impact x Effort: 12 chantiers actifs</text>
+
+  <rect x="412" y="264" width="356" height="152" rx="14" fill="#0D131A" stroke="#212A36"/>
+  <text x="436" y="296" fill="#C8D0DB" font-size="15" font-family="Arial, sans-serif">Roadmap 90 jours</text>
+  <line x1="456" y1="332" x2="724" y2="332" stroke="#2E3948"/>
+  <circle cx="476" cy="332" r="7" fill="#FFE600"/>
+  <circle cx="556" cy="332" r="7" fill="#BFE800"/>
+  <circle cx="636" cy="332" r="7" fill="#A8CF00"/>
+  <circle cx="716" cy="332" r="7" fill="#90B500"/>
+  <text x="464" y="362" fill="#93A1B3" font-size="12" font-family="Arial, sans-serif">Sem 1-2</text>
+  <text x="542" y="362" fill="#93A1B3" font-size="12" font-family="Arial, sans-serif">Sem 3-4</text>
+  <text x="622" y="362" fill="#93A1B3" font-size="12" font-family="Arial, sans-serif">Mois 2</text>
+  <text x="700" y="362" fill="#93A1B3" font-size="12" font-family="Arial, sans-serif">Mois 3+</text>
+</svg>

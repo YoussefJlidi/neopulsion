@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO — Référencement Génératif | Soyez cité par les IA | Neopulsion</title>
+  <meta name="description" content="Optimisez votre visibilité dans ChatGPT, Gemini, Perplexity et les AI Overviews. Audit de citabilité, stratégie LLM-friendly, monitoring mensuel. À partir de 1 500 €/mois.">
+  <link rel="canonical" href="https://neopulsion.fr/services/geo.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── GEO PAGE — accent violet ──────────────────────────────── */
+    :root {
+      --geo-purple: #7C3AED;
+      --geo-purple-light: #A78BFA;
+      --geo-purple-bg: #F5F3FF;
+      --geo-purple-border: #DDD6FE;
+    }
+
+    /* Hero override pour dégradé violet */
+    .geo-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E1040 60%, #2D1B69 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .geo-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 50% 60% at 70% 40%, rgba(124,58,237,0.25) 0%, transparent 70%),
+        radial-gradient(ellipse 30% 40% at 20% 70%, rgba(37,99,235,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .geo-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 460px;
+      gap: 64px;
+      align-items: center;
+      position: relative; z-index: 1;
+    }
+    .geo-hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(124,58,237,0.2); border: 1px solid rgba(167,139,250,0.35);
+      color: #C4B5FD; border-radius: 100px; padding: 5px 14px;
+      font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em;
+      margin-bottom: 24px;
+    }
+    .geo-hero-badge-dot {
+      width: 6px; height: 6px; background: #A78BFA;
+      border-radius: 50%; flex-shrink: 0;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    .geo-hero-trust {
+      display: flex; align-items: center; gap: 24px;
+      flex-wrap: wrap; margin-top: 32px;
+    }
+    .geo-hero-trust-item {
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.5); font-size: 0.875rem;
+    }
+    .geo-hero-trust-item svg { color: #A78BFA; flex-shrink: 0; }
+
+    /* AI Chat visual */
+    .geo-ai-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(16px);
+    }
+    .geo-ai-card-header {
+      display: flex; align-items: center; gap: 10px;
+      padding-bottom: 16px; margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .geo-ai-card-dots { display: flex; gap: 6px; }
+    .geo-ai-card-dots span {
+      width: 10px; height: 10px; border-radius: 50%;
+    }
+    .geo-ai-card-dots span:nth-child(1) { background: #FF5F57; }
+    .geo-ai-card-dots span:nth-child(2) { background: #FEBC2E; }
+    .geo-ai-card-dots span:nth-child(3) { background: #28C840; }
+    .geo-ai-card-label {
+      font-size: 0.8125rem; color: rgba(255,255,255,0.4);
+      font-weight: 500; margin-left: auto;
+    }
+    .geo-ai-platforms {
+      display: flex; gap: 8px; margin-bottom: 16px;
+    }
+    .geo-ai-platform {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px; padding: 4px 12px;
+      font-size: 0.75rem; color: rgba(255,255,255,0.6);
+      cursor: pointer; transition: background 0.2s, border-color 0.2s;
+    }
+    .geo-ai-platform.active {
+      background: rgba(124,58,237,0.3); border-color: rgba(167,139,250,0.5);
+      color: #C4B5FD;
+    }
+    .geo-ai-platform-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+    .geo-ai-query {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 12px 16px; margin-bottom: 12px;
+    }
+    .geo-ai-query-label {
+      font-size: 0.6875rem; color: rgba(255,255,255,0.3);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px;
+    }
+    .geo-ai-query-text {
+      font-size: 0.875rem; color: rgba(255,255,255,0.8); font-style: italic;
+    }
+    .geo-ai-response {
+      background: rgba(124,58,237,0.12); border: 1px solid rgba(124,58,237,0.25);
+      border-radius: 12px; padding: 14px 16px;
+    }
+    .geo-ai-response-label {
+      font-size: 0.6875rem; color: rgba(167,139,250,0.7);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .geo-ai-response-label::before {
+      content: ''; width: 6px; height: 6px; border-radius: 50%; background: #A78BFA;
+    }
+    .geo-ai-response-text {
+      font-size: 0.875rem; color: rgba(255,255,255,0.75); line-height: 1.6;
+    }
+    .geo-ai-highlight {
+      background: rgba(167,139,250,0.25); color: #C4B5FD;
+      border-radius: 4px; padding: 1px 6px; font-weight: 700;
+    }
+    .geo-ai-sources {
+      display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;
+    }
+    .geo-ai-source {
+      font-size: 0.75rem; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 6px;
+      padding: 3px 10px; color: rgba(255,255,255,0.4);
+    }
+
+    /* Stats band violet */
+    .geo-stats-band {
+      background: #0F172A;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .geo-stats-inner {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .geo-stat-item {
+      padding: 32px 28px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .geo-stat-item:last-child { border-right: none; }
+    .geo-stat-number {
+      font-size: 2.5rem; font-weight: 900;
+      letter-spacing: -0.04em; color: white; line-height: 1; margin-bottom: 6px;
+    }
+    .geo-stat-number.purple { color: #A78BFA; }
+    .geo-stat-label {
+      font-size: 0.875rem; color: rgba(255,255,255,0.4); line-height: 1.4;
+    }
+
+    /* "What is GEO" explainer */
+    .geo-explainer {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+    }
+    .geo-explainer-visual {
+      background: var(--geo-purple-bg);
+      border: 1px solid var(--geo-purple-border);
+      border-radius: 20px; padding: 32px;
+      position: relative; overflow: hidden;
+    }
+    .geo-explainer-visual::before {
+      content: 'GEO';
+      position: absolute; bottom: -10px; right: -10px;
+      font-size: 8rem; font-weight: 900; color: rgba(124,58,237,0.07);
+      line-height: 1; letter-spacing: -0.04em;
+    }
+    .geo-vs-row {
+      display: flex; align-items: stretch; gap: 0; margin-bottom: 12px;
+    }
+    .geo-vs-col {
+      flex: 1; padding: 16px; border-radius: 12px;
+    }
+    .geo-vs-col--old { background: rgba(0,0,0,0.04); }
+    .geo-vs-col--new { background: rgba(124,58,237,0.1); margin-left: 8px; }
+    .geo-vs-label {
+      font-size: 0.6875rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; margin-bottom: 8px;
+    }
+    .geo-vs-col--old .geo-vs-label { color: #9CA3AF; }
+    .geo-vs-col--new .geo-vs-label { color: var(--geo-purple); }
+    .geo-vs-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 6px;
+    }
+    .geo-vs-item:last-child { margin-bottom: 0; }
+    .geo-vs-item-icon { font-size: 0.875rem; flex-shrink: 0; }
+
+    /* Diagnostic cards */
+    .geo-diag-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .geo-diag-card {
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex; gap: 14px; align-items: flex-start;
+      cursor: pointer; user-select: none;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .geo-diag-card:hover {
+      border-color: var(--geo-purple);
+      box-shadow: 0 0 0 3px rgba(124,58,237,0.08), var(--shadow-md);
+    }
+    .geo-diag-card.checked {
+      border-color: var(--geo-purple);
+      background: #FAF5FF;
+      box-shadow: 0 0 0 3px rgba(124,58,237,0.1);
+    }
+    .geo-diag-check {
+      width: 22px; height: 22px; flex-shrink: 0;
+      border: 2px solid var(--border); border-radius: 6px;
+      margin-top: 2px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .geo-diag-card.checked .geo-diag-check {
+      background: var(--geo-purple); border-color: var(--geo-purple);
+    }
+    .geo-diag-check svg {
+      opacity: 0; transform: scale(0.5);
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .geo-diag-card.checked .geo-diag-check svg {
+      opacity: 1; transform: scale(1);
+    }
+    .geo-diag-text { font-size: 0.9375rem; color: var(--text); font-weight: 500; line-height: 1.5; }
+    .geo-diag-sub  { font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px; }
+
+    .geo-diag-cta {
+      text-align: center; margin-top: 40px;
+    }
+    .geo-diag-counter {
+      display: inline-block;
+      font-size: 0.875rem; font-weight: 700;
+      background: var(--geo-purple); color: white;
+      border-radius: 100px; padding: 2px 12px; margin-left: 6px;
+      transition: opacity 0.2s;
+    }
+    .geo-diag-counter[data-count="0"] { opacity: 0; }
+    .geo-diag-cta-message {
+      font-size: 0.9375rem; color: var(--text-muted);
+      transition: color 0.3s; min-height: 1.5em;
+    }
+    .geo-diag-cta-message.active { color: var(--geo-purple); font-weight: 600; }
+
+    /* 4 leviers */
+    .geo-levier-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 20px; margin-top: 48px;
+    }
+    .geo-levier {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .geo-levier:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .geo-levier-num {
+      font-size: 2.5rem; font-weight: 900; color: var(--geo-purple);
+      opacity: 0.15; line-height: 1; flex-shrink: 0; width: 40px;
+    }
+    .geo-levier-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--geo-purple-bg); color: var(--geo-purple);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .geo-levier-title { font-size: 1.0625rem; font-weight: 800; margin-bottom: 8px; color: var(--text); }
+    .geo-levier-desc  { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+    .geo-levier-tags  { display: flex; flex-wrap: wrap; gap: 6px; }
+    .geo-levier-tag {
+      font-size: 0.75rem; font-weight: 600;
+      background: var(--geo-purple-bg); color: var(--geo-purple);
+      border-radius: 100px; padding: 2px 10px;
+    }
+
+    /* AI platforms showcase */
+    .geo-platforms-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 16px; margin-top: 48px;
+    }
+    .geo-platform-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 24px;
+      text-align: center;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .geo-platform-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .geo-platform-logo {
+      width: 56px; height: 56px; border-radius: 16px;
+      margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.625rem;
+    }
+    .geo-platform-name { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .geo-platform-stat { font-size: 1.375rem; font-weight: 900; color: var(--geo-purple); margin-bottom: 4px; }
+    .geo-platform-desc { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Process steps */
+    .geo-process-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; position: relative; margin-top: 48px;
+    }
+    .geo-process-line {
+      position: absolute; top: 40px; left: 12%; right: 12%;
+      height: 2px;
+      background: linear-gradient(to right, var(--geo-purple) 0%, #A78BFA 50%, #DDD6FE 100%);
+      z-index: 0;
+    }
+    .geo-process-step {
+      padding: 0 20px; text-align: center; position: relative; z-index: 1;
+    }
+    .geo-process-dot {
+      width: 80px; height: 80px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.625rem; font-weight: 900;
+      transition: transform var(--transition);
+    }
+    .geo-process-step:hover .geo-process-dot { transform: scale(1.08); }
+    .geo-process-step:nth-child(1) .geo-process-dot { background: var(--geo-purple); color: white; box-shadow: 0 8px 24px rgba(124,58,237,0.35); }
+    .geo-process-step:nth-child(2) .geo-process-dot { background: white; border: 2px solid var(--geo-purple); color: var(--geo-purple); }
+    .geo-process-step:nth-child(3) .geo-process-dot { background: white; border: 2px solid var(--geo-purple); color: var(--geo-purple); }
+    .geo-process-step:nth-child(4) .geo-process-dot { background: white; border: 2px solid var(--geo-purple); color: var(--geo-purple); }
+    .geo-process-timing {
+      display: inline-block; font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--geo-purple); background: var(--geo-purple-bg);
+      border-radius: 100px; padding: 3px 10px; margin-bottom: 10px;
+    }
+    .geo-process-title { font-size: 1.0625rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+    .geo-process-desc  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+    .geo-process-tags  { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
+    .geo-process-tag   { font-size: 0.75rem; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 100px; padding: 2px 10px; color: var(--text-muted); }
+
+    /* Deliverables */
+    .geo-deliverables-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 16px; margin-top: 48px;
+    }
+    .geo-deliverable {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 24px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .geo-deliverable:hover { border-color: var(--geo-purple); box-shadow: var(--shadow-md); }
+    .geo-deliverable-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--geo-purple-bg); color: var(--geo-purple);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .geo-deliverable-title { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .geo-deliverable-desc  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+    .geo-deliverable-tags  { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .geo-deliverable-tag   { font-size: 0.75rem; font-weight: 600; background: var(--geo-purple-bg); color: var(--geo-purple); border-radius: 100px; padding: 2px 10px; }
+
+    /* Compare */
+    .geo-compare {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden; margin-top: 48px;
+    }
+    .geo-compare-head {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      background: var(--bg-subtle); border-bottom: 1px solid var(--border);
+    }
+    .geo-compare-head > div { padding: 14px 20px; font-size: 0.875rem; font-weight: 700; color: var(--text); }
+    .geo-compare-head .highlight { background: var(--geo-purple-bg); color: var(--geo-purple); }
+    .geo-compare-row {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      border-bottom: 1px solid var(--border);
+    }
+    .geo-compare-row:last-child { border-bottom: none; }
+    .geo-compare-row > div { padding: 14px 20px; font-size: 0.875rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+    .geo-compare-row > div:first-child { color: var(--text); font-weight: 500; }
+    .geo-compare-row > div:nth-child(3) { background: #FDFBFF; }
+    .geo-check { color: #059669; }
+    .geo-cross  { color: #DC2626; opacity: 0.5; }
+
+    /* FAQ */
+    .geo-faq { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; max-width: 760px; margin-left: auto; margin-right: auto; }
+    .geo-faq-item { background: white; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: border-color var(--transition); }
+    .geo-faq-item.open { border-color: var(--geo-purple); }
+    .geo-faq-trigger { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; gap: 16px; font-size: 1rem; font-weight: 600; color: var(--text); cursor: pointer; text-align: left; background: none; border: none; transition: color var(--transition); }
+    .geo-faq-item.open .geo-faq-trigger { color: var(--geo-purple); }
+    .geo-faq-icon { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; transition: transform var(--transition), background var(--transition), border-color var(--transition); }
+    .geo-faq-item.open .geo-faq-icon { transform: rotate(45deg); background: var(--geo-purple); border-color: var(--geo-purple); color: white; }
+    .geo-faq-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .geo-faq-item.open .geo-faq-body { max-height: 400px; }
+    .geo-faq-body-inner { padding: 0 24px 20px; font-size: 0.9375rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* CTA banner purple */
+    .geo-cta-banner {
+      background: linear-gradient(135deg, #1E1040 0%, #2D1B69 100%);
+      padding: 80px 0;
+      position: relative; overflow: hidden;
+    }
+    .geo-cta-banner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(124,58,237,0.3) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .geo-cta-inner { text-align: center; position: relative; z-index: 1; }
+    .geo-cta-inner h2 { color: white; }
+    .geo-cta-inner p  { color: rgba(255,255,255,0.65); }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .geo-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .geo-ai-card { display: none; }
+      .geo-stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .geo-stat-item:nth-child(2) { border-right: none; }
+      .geo-stat-item:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.06); }
+      .geo-explainer { grid-template-columns: 1fr; }
+      .geo-diag-grid { grid-template-columns: repeat(2, 1fr); }
+      .geo-levier-grid { grid-template-columns: 1fr; }
+      .geo-platforms-grid { grid-template-columns: repeat(2, 1fr); }
+      .geo-process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .geo-process-line { display: none; }
+      .geo-deliverables-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .geo-diag-grid { grid-template-columns: 1fr; }
+      .geo-stats-inner { grid-template-columns: 1fr; }
+      .geo-stat-item { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .geo-stat-item:last-child { border-bottom: none; }
+      .geo-process-grid { grid-template-columns: 1fr; }
+      .geo-platforms-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="geo.html" style="background:#F5F3FF; color:#7C3AED;">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="seo.html">Référencement SEO</a>
+      <a href="geo.html">GEO — Référencement Génératif</a>
+      <a href="linkedin.html">Visibilité LinkedIn</a>
+      <a href="ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════ -->
+<section class="geo-hero" aria-labelledby="geo-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="margin-bottom:32px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../index.html#services">Services</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">GEO — Référencement Génératif</span>
+    </nav>
+    <div class="geo-hero-grid">
+      <!-- Left: text -->
+      <div>
+        <div class="geo-hero-badge">
+          <span class="geo-hero-badge-dot"></span>
+          GEO · Le référencement de demain, aujourd'hui
+        </div>
+        <h1 id="geo-title" style="color:white; font-size:clamp(2rem,4vw,3rem); margin-bottom:20px; line-height:1.15;">
+          Quand vos clients interrogent<br>une IA, est-ce vous<br>qu'elle recommande ?
+        </h1>
+        <p style="font-size:1.125rem; color:rgba(255,255,255,0.65); line-height:1.75; margin-bottom:20px; max-width:520px;">
+          58% des recherches Google se terminent sans clic. Les utilisateurs obtiennent leurs réponses directement des IA. Si votre marque n'est pas dans ces réponses, elle est invisible — peu importe votre position Google.
+        </p>
+        <p style="font-size:0.9375rem; color:rgba(255,255,255,0.45); line-height:1.6; margin-bottom:32px; max-width:500px;">
+          Le GEO est la discipline qui vous permet d'apparaître dans les réponses de ChatGPT, Gemini, Perplexity et Google AI Overviews. Comme le SEO l'a fait pour Google — mais pour l'ère de l'IA.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="../contact.html" style="background:#7C3AED; color:white; border-color:#7C3AED;" class="btn-primary btn-lg">Mesurer ma visibilité IA</a>
+          <a href="#leviers" class="btn-outline-white">Voir la méthode</a>
+        </div>
+        <p style="font-size:0.8125rem; color:rgba(255,255,255,0.35); margin-top:12px;">
+          Audit baseline offert · Résultats mesurables · Veille algorithmique incluse
+        </p>
+        <div class="geo-hero-trust">
+          <div class="geo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            ChatGPT · Gemini · Perplexity
+          </div>
+          <div class="geo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Google AI Overviews
+          </div>
+          <div class="geo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Monitoring mensuel
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: AI chat visual -->
+      <div class="geo-ai-card">
+        <div class="geo-ai-card-header">
+          <div class="geo-ai-card-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="geo-ai-card-label">Simulation de réponse IA</span>
+        </div>
+
+        <div class="geo-ai-platforms">
+          <div class="geo-ai-platform active">
+            <span class="geo-ai-platform-dot"></span>
+            ChatGPT
+          </div>
+          <div class="geo-ai-platform">
+            <span class="geo-ai-platform-dot"></span>
+            Perplexity
+          </div>
+          <div class="geo-ai-platform">
+            <span class="geo-ai-platform-dot"></span>
+            Gemini
+          </div>
+        </div>
+
+        <div class="geo-ai-query">
+          <div class="geo-ai-query-label">Question utilisateur</div>
+          <div class="geo-ai-query-text">« Quelle agence SEO recommandes-tu pour une PME en France ? »</div>
+        </div>
+
+        <div class="geo-ai-response">
+          <div class="geo-ai-response-label">Réponse générée</div>
+          <div class="geo-ai-response-text">
+            Pour une PME en France, plusieurs experts SEO se distinguent. <span class="geo-ai-highlight">Neopulsion</span>, fondé par Youssef Jlidi, est reconnu pour son approche orientée résultats mesurables, combinant SEO technique et stratégie GEO. Leur méthode en 90 jours est particulièrement adaptée aux entreprises qui veulent…
+          </div>
+          <div class="geo-ai-sources">
+            <span class="geo-ai-source">📎 neopulsion.fr</span>
+            <span class="geo-ai-source">📎 linkedin.com</span>
+            <span class="geo-ai-source">📎 lemonde.fr</span>
+          </div>
+        </div>
+
+        <p style="font-size:0.7rem; color:rgba(255,255,255,0.2); text-align:center; margin-top:14px;">
+          Simulation illustrative — résultats réels variables
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAND ════════════════════════════════════════════════ -->
+<div class="geo-stats-band">
+  <div class="container">
+    <div class="geo-stats-inner">
+      <div class="geo-stat-item">
+        <div class="geo-stat-number purple">−61<span style="font-size:1.5rem;">%</span></div>
+        <div class="geo-stat-label">de CTR organique sur les pages<br>touchées par Google AI Overviews</div>
+      </div>
+      <div class="geo-stat-item">
+        <div class="geo-stat-number purple">58<span style="font-size:1.5rem;">%</span></div>
+        <div class="geo-stat-label">des recherches Google<br>se terminent sans clic en 2025</div>
+      </div>
+      <div class="geo-stat-item">
+        <div class="geo-stat-number purple">4,4<span style="font-size:1.5rem;">×</span></div>
+        <div class="geo-stat-label">le taux de conversion du trafic<br>issu des IA vs l'organique classique</div>
+      </div>
+      <div class="geo-stat-item">
+        <div class="geo-stat-number purple">+150<span style="font-size:1.5rem;">%</span></div>
+        <div class="geo-stat-label">de croissance du trafic IA<br>en un an (2025→2026)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ QU'EST-CE QUE LE GEO ══════════════════════════════════════ -->
+<section class="section" aria-labelledby="geo-def-title">
+  <div class="container">
+    <div class="geo-explainer">
+      <!-- Left: visual comparison -->
+      <div class="geo-explainer-visual reveal">
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:20px; color:var(--text);">Le changement en cours</h3>
+        <div class="geo-vs-row">
+          <div class="geo-vs-col geo-vs-col--old">
+            <div class="geo-vs-label">Avant</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">🔵</span>Utilisateur → Google → 10 liens</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">🔵</span>Clic sur les résultats</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">🔵</span>Visite le site</div>
+          </div>
+          <div class="geo-vs-col geo-vs-col--new">
+            <div class="geo-vs-label">Maintenant</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">✦</span>Utilisateur → IA → 1 réponse</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">✦</span>Cite 2–3 sources</div>
+            <div class="geo-vs-item"><span class="geo-vs-item-icon">✦</span>Clique directement</div>
+          </div>
+        </div>
+        <div style="background:rgba(124,58,237,0.08); border-radius:12px; padding:16px; margin-top:16px;">
+          <p style="font-size:0.875rem; color:var(--geo-purple); font-weight:600; margin-bottom:4px;">Ce que ça change pour vous :</p>
+          <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.6;">Si vous n'êtes pas cité, vous êtes invisible pour ces utilisateurs — peu importe votre position Google.</p>
+        </div>
+      </div>
+
+      <!-- Right: explanation -->
+      <div class="reveal reveal-delay-1">
+        <p class="kicker" style="color:var(--geo-purple);">C'est quoi le GEO ?</p>
+        <h2 id="geo-def-title" style="margin-bottom:20px;">Optimiser son contenu pour que les IA le citent</h2>
+        <p style="font-size:1rem; color:var(--text-muted); line-height:1.75; margin-bottom:20px;">
+          Le <strong>Generative Engine Optimization (GEO)</strong> est l'ensemble des techniques qui permettent à votre contenu d'être sélectionné et cité par les moteurs de réponse IA (ChatGPT, Gemini, Perplexity, Google AI Overviews…).
+        </p>
+        <p style="font-size:1rem; color:var(--text-muted); line-height:1.75; margin-bottom:28px;">
+          Contrairement au SEO classique qui optimise pour les crawlers de Google, le GEO optimise pour les <em>modèles de langage</em> — une différence de fond qui nécessite une nouvelle approche.
+        </p>
+        <!-- SEO vs AEO vs GEO comparison table -->
+        <div style="background:white; border:1px solid var(--geo-purple-border); border-radius:12px; overflow:hidden; margin-bottom:24px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; background:var(--geo-purple-bg);">
+            <div style="padding:10px 14px; font-size:0.75rem; font-weight:700; color:var(--text);">Optimiser pour…</div>
+            <div style="padding:10px 14px; font-size:0.75rem; font-weight:700; color:#9CA3AF; border-left:1px solid var(--geo-purple-border);">SEO</div>
+            <div style="padding:10px 14px; font-size:0.75rem; font-weight:700; color:var(--geo-purple); border-left:1px solid var(--geo-purple-border);">GEO ✦</div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; border-top:1px solid var(--geo-purple-border);">
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text); font-weight:500;">Cible</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Crawlers Google</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Modèles de langage (LLM)</div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; border-top:1px solid var(--geo-purple-border);">
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text); font-weight:500;">Résultat visé</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Position #1 sur Google</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Citation dans la réponse IA</div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; border-top:1px solid var(--geo-purple-border);">
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text); font-weight:500;">Signal clé</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Mots-clés & backlinks</div>
+            <div style="padding:10px 14px; font-size:0.8125rem; color:var(--text-muted); border-left:1px solid var(--geo-purple-border);">Entités, EEAT & structure</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="width:24px; height:24px; background:var(--geo-purple-bg); color:var(--geo-purple); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p style="font-size:0.9375rem; color:var(--text-muted);">Mesure votre taux de citation actuel (votre "GEO score")</p>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="width:24px; height:24px; background:var(--geo-purple-bg); color:var(--geo-purple); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p style="font-size:0.9375rem; color:var(--text-muted);">Optimise vos contenus pour les signaux LLM (entités, EEAT, structure)</p>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <div style="width:24px; height:24px; background:var(--geo-purple-bg); color:var(--geo-purple); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p style="font-size:0.9375rem; color:var(--text-muted);">Monitore vos mentions dans les réponses IA chaque mois</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DIAGNOSTIC INTERACTIF ═════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="geo-diag-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Diagnostic rapide</p>
+      <h2 class="section-title" id="geo-diag-title">Votre marque est-elle invisible pour les IA ?</h2>
+      <p class="section-subtitle">Ces 6 signaux indiquent que votre contenu n'est pas optimisé pour les moteurs de réponse IA. Combien vous concernent ?</p>
+    </div>
+
+    <div class="geo-diag-grid">
+      <div class="geo-diag-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Vous n'apparaissez pas dans les réponses ChatGPT</div>
+          <div class="geo-diag-sub">Posez la question sur votre secteur — votre nom n'est jamais cité.</div>
+        </div>
+      </div>
+      <div class="geo-diag-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Vos concurrents sont cités, pas vous</div>
+          <div class="geo-diag-sub">Les mêmes requêtes remontent systématiquement d'autres marques.</div>
+        </div>
+      </div>
+      <div class="geo-diag-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Une IA donne des infos incorrectes sur votre marque</div>
+          <div class="geo-diag-sub">Hallucinations, informations obsolètes ou confusions avec un concurrent.</div>
+        </div>
+      </div>
+      <div class="geo-diag-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Votre contenu n'est pas structuré pour les LLM</div>
+          <div class="geo-diag-sub">Pas de FAQ, pas de définitions claires, pas de données structurées Schema.org.</div>
+        </div>
+      </div>
+      <div class="geo-diag-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Vous n'avez aucun suivi de vos citations IA</div>
+          <div class="geo-diag-sub">Vous ne savez pas si vous progressez ou régressez dans les réponses IA.</div>
+        </div>
+      </div>
+      <div class="geo-diag-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="geo-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-diag-text">Votre E-E-A-T n'est pas exploité pour les LLM</div>
+          <div class="geo-diag-sub">Expertise, Autorité, Confiance — les signaux que les IA utilisent pour choisir leurs sources.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="geo-diag-cta" style="text-align:center; margin-top:40px;">
+      <p>Votre score d'invisibilité IA <span class="geo-diag-counter" data-count="0" id="geo-diag-counter">0</span></p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:16px;">
+        <p class="geo-diag-cta-message" id="geo-diag-msg">Cochez les situations qui vous correspondent pour voir votre diagnostic.</p>
+        <a href="../contact.html" style="background:#7C3AED; border-color:#7C3AED;" class="btn-primary" id="geo-diag-btn" style="opacity:0.45; pointer-events:none;">Obtenir mon audit GEO baseline →</a>
+      </div>
+      <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:10px;">Gratuit · Sans engagement · Réponse sous 48h</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PLATEFORMES CIBLÉES ════════════════════════════════════════ -->
+<section class="section" aria-labelledby="platforms-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Périmètre d'optimisation</p>
+      <h2 class="section-title" id="platforms-title">Les IA que nous ciblons pour vous</h2>
+      <p class="section-subtitle">Chaque plateforme a ses propres signaux de sélection. Nous optimisons pour toutes.</p>
+    </div>
+
+    <div class="geo-platforms-grid">
+      <div class="geo-platform-card reveal">
+        <div class="geo-platform-logo" style="background:#f0f9ff;" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.532 16.87a22.3 22.3 0 0 0-.19-3.07h-17v5.8h9.73c-.42 2.26-1.69 4.18-3.6 5.46v4.54h5.83c3.41-3.14 5.23-7.76 5.23-12.73Z" fill="#4285F4"/><path d="M20.342 38c4.89 0 8.99-1.62 11.99-4.39l-5.83-4.54c-1.62 1.08-3.69 1.72-6.16 1.72-4.73 0-8.74-3.2-10.18-7.5H4.17v4.68A17.98 17.98 0 0 0 20.34 38Z" fill="#34A853"/><path d="M10.162 23.29a10.8 10.8 0 0 1 0-6.58v-4.68H4.17a17.98 17.98 0 0 0 0 15.94l5.99-4.68Z" fill="#FBBC05"/><path d="M20.342 9.19c2.66 0 5.05.92 6.93 2.72l5.19-5.19A17.96 17.96 0 0 0 20.34 2a17.98 17.98 0 0 0-16.17 10.03l5.99 4.68c1.44-4.3 5.45-7.52 10.18-7.52Z" fill="#EA4335"/></svg>
+        </div>
+        <div class="geo-platform-name">Google AI Overviews</div>
+        <div class="geo-platform-stat">47%</div>
+        <div class="geo-platform-desc">des recherches Google affichent une réponse IA en haut des résultats en 2025</div>
+      </div>
+
+      <div class="geo-platform-card reveal reveal-delay-1">
+        <div class="geo-platform-logo" style="background:#f0fdf4;" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.532 16.87a22.3 22.3 0 0 0-.19-3.07h-17v5.8h9.73c-.42 2.26-1.69 4.18-3.6 5.46v4.54h5.83c3.41-3.14 5.23-7.76 5.23-12.73Z" fill="#10B981"/><rect x="2" y="2" width="37" height="37" rx="8" fill="#10B981" opacity="0.15"/><text x="20.5" y="26" text-anchor="middle" font-size="16" font-weight="900" fill="#10B981" font-family="sans-serif">P</text></svg>
+        </div>
+        <div class="geo-platform-name">Perplexity AI</div>
+        <div class="geo-platform-stat">10M+</div>
+        <div class="geo-platform-desc">requêtes traitées quotidiennement, avec citation systématique des sources</div>
+      </div>
+
+      <div class="geo-platform-card reveal reveal-delay-2">
+        <div class="geo-platform-logo" style="background:#fff7ed;" aria-hidden="true">
+          <svg viewBox="0 0 41 41" fill="none" width="32" height="32"><rect x="2" y="2" width="37" height="37" rx="8" fill="#FF6B35" opacity="0.15"/><text x="20.5" y="27" text-anchor="middle" font-size="18" font-weight="900" fill="#FF6B35" font-family="sans-serif">G</text></svg>
+        </div>
+        <div class="geo-platform-name">ChatGPT / GPT-4o</div>
+        <div class="geo-platform-stat">200M</div>
+        <div class="geo-platform-desc">utilisateurs hebdomadaires actifs, références web activées par défaut</div>
+      </div>
+
+      <div class="geo-platform-card reveal">
+        <div class="geo-platform-logo" style="background:#f5f3ff;" aria-hidden="true">
+          <svg viewBox="0 0 41 41" fill="none" width="32" height="32"><rect x="2" y="2" width="37" height="37" rx="8" fill="#7C3AED" opacity="0.15"/><text x="20.5" y="27" text-anchor="middle" font-size="18" font-weight="900" fill="#7C3AED" font-family="sans-serif">G</text></svg>
+        </div>
+        <div class="geo-platform-name">Gemini (Google)</div>
+        <div class="geo-platform-stat">1B+</div>
+        <div class="geo-platform-desc">utilisateurs de l'écosystème Google exposés aux réponses Gemini</div>
+      </div>
+
+      <div class="geo-platform-card reveal reveal-delay-1">
+        <div class="geo-platform-logo" style="background:#eff6ff;" aria-hidden="true">
+          <svg viewBox="0 0 41 41" fill="none" width="32" height="32"><rect x="2" y="2" width="37" height="37" rx="8" fill="#2563EB" opacity="0.15"/><text x="20.5" y="27" text-anchor="middle" font-size="17" font-weight="900" fill="#2563EB" font-family="sans-serif">C</text></svg>
+        </div>
+        <div class="geo-platform-name">Claude (Anthropic)</div>
+        <div class="geo-platform-stat">Croissance</div>
+        <div class="geo-platform-desc">rapide chez les professionnels et développeurs, forte adoption B2B</div>
+      </div>
+
+      <div class="geo-platform-card reveal reveal-delay-2">
+        <div class="geo-platform-logo" style="background:#fef3c7;" aria-hidden="true">
+          <svg viewBox="0 0 41 41" fill="none" width="32" height="32"><rect x="2" y="2" width="37" height="37" rx="8" fill="#D97706" opacity="0.15"/><text x="20.5" y="27" text-anchor="middle" font-size="15" font-weight="900" fill="#D97706" font-family="sans-serif">+</text></svg>
+        </div>
+        <div class="geo-platform-name">Et les suivants…</div>
+        <div class="geo-platform-stat">∞</div>
+        <div class="geo-platform-desc">Le paysage évolue vite. Notre veille couvre les nouveaux moteurs de réponse dès leur émergence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4 LEVIERS GEO ════════════════════════════════════════════ -->
+<section class="section section--subtle" id="leviers" aria-labelledby="leviers-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Notre approche</p>
+      <h2 class="section-title" id="leviers-title">4 leviers pour devenir une source fiable pour les IA</h2>
+      <p class="section-subtitle">Les LLM choisissent leurs sources selon des critères précis. Nous optimisons chacun d'eux.</p>
+    </div>
+
+    <div class="geo-levier-grid">
+      <div class="geo-levier reveal">
+        <div class="geo-levier-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 class="geo-levier-title">Autorité & Réputation</h3>
+          <p class="geo-levier-desc">Les LLM favorisent les sources perçues comme expertes et fiables. On renforce vos signaux E-E-A-T : expertise, mentions médias, citations tierces et cohérence de votre identité en ligne.</p>
+          <div class="geo-levier-tags">
+            <span class="geo-levier-tag">E-E-A-T</span>
+            <span class="geo-levier-tag">Mentions médias</span>
+            <span class="geo-levier-tag">Profil auteur</span>
+            <span class="geo-levier-tag">Backlinks</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-levier reveal reveal-delay-1">
+        <div class="geo-levier-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <h3 class="geo-levier-title">Structure du contenu</h3>
+          <p class="geo-levier-desc">Un LLM "lit" votre contenu différemment d'un humain. Titres clairs, questions-réponses directes, listes structurées, définitions explicites — on reformate vos pages pour être extractibles facilement.</p>
+          <div class="geo-levier-tags">
+            <span class="geo-levier-tag">FAQ Schema</span>
+            <span class="geo-levier-tag">Structure H1-H6</span>
+            <span class="geo-levier-tag">Réponses directes</span>
+            <span class="geo-levier-tag">Lisibilité LLM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-levier reveal">
+        <div class="geo-levier-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+        </div>
+        <div>
+          <h3 class="geo-levier-title">Entités & Sémantique</h3>
+          <p class="geo-levier-desc">Les LLM raisonnent par entités (personnes, lieux, concepts) et non par mots-clés. On cartographie les entités de votre domaine et les ancre dans votre contenu pour être reconnu comme source de référence.</p>
+          <div class="geo-levier-tags">
+            <span class="geo-levier-tag">Knowledge Graph</span>
+            <span class="geo-levier-tag">Schema.org</span>
+            <span class="geo-levier-tag">Entités nommées</span>
+            <span class="geo-levier-tag">Sémantique</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-levier reveal reveal-delay-1">
+        <div class="geo-levier-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3 class="geo-levier-title">Monitoring & Veille</h3>
+          <p class="geo-levier-desc">La citabilité IA évolue chaque mois avec les nouvelles versions des modèles. On mesure votre taux de citation, on traque vos concurrents et on adapte la stratégie en temps réel selon les changements.</p>
+          <div class="geo-levier-tags">
+            <span class="geo-levier-tag">Audit mensuel</span>
+            <span class="geo-levier-tag">Benchmark concurrents</span>
+            <span class="geo-levier-tag">Veille modèles</span>
+            <span class="geo-levier-tag">Dashboard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESSUS ═════════════════════════════════════════════════ -->
+<section class="section" id="processus" aria-labelledby="geo-process-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Méthodologie</p>
+      <h2 class="section-title" id="geo-process-title">Du zéro citation à la recommandation IA</h2>
+      <p class="section-subtitle">Un processus mensuel itératif — parce que les LLM évoluent et votre stratégie doit évoluer avec eux.</p>
+    </div>
+
+    <div class="geo-process-grid">
+      <div class="geo-process-line" aria-hidden="true"></div>
+
+      <div class="geo-process-step reveal">
+        <div class="geo-process-dot">1</div>
+        <div class="geo-process-timing">Semaines 1–2</div>
+        <h3 class="geo-process-title">Audit Baseline</h3>
+        <p class="geo-process-desc">Test systématique sur 30–50 requêtes stratégiques dans ChatGPT, Gemini et Perplexity. On mesure votre taux de citation actuel et on identifie qui vous devance.</p>
+        <div class="geo-process-tags">
+          <span class="geo-process-tag">50 requêtes testées</span>
+          <span class="geo-process-tag">3 plateformes</span>
+        </div>
+      </div>
+
+      <div class="geo-process-step reveal reveal-delay-1">
+        <div class="geo-process-dot">2</div>
+        <div class="geo-process-timing">Semaines 3–4</div>
+        <h3 class="geo-process-title">Stratégie GEO</h3>
+        <p class="geo-process-desc">Plan d'optimisation priorisé : contenus à restructurer, entités à ancrer, signaux E-E-A-T à renforcer, mentions tierces à acquérir. Roadmap complète avec impacts estimés.</p>
+        <div class="geo-process-tags">
+          <span class="geo-process-tag">Roadmap 90j</span>
+          <span class="geo-process-tag">Quick wins</span>
+        </div>
+      </div>
+
+      <div class="geo-process-step reveal reveal-delay-2">
+        <div class="geo-process-dot">3</div>
+        <div class="geo-process-timing">Mois 2–3</div>
+        <h3 class="geo-process-title">Optimisation</h3>
+        <p class="geo-process-desc">Restructuration des contenus, implémentation des données structurées, renforcement EEAT, création de pages entités. Chaque action mesurée sur son impact de citabilité.</p>
+        <div class="geo-process-tags">
+          <span class="geo-process-tag">Contenu LLM-friendly</span>
+          <span class="geo-process-tag">Schema.org</span>
+        </div>
+      </div>
+
+      <div class="geo-process-step reveal reveal-delay-2">
+        <div class="geo-process-dot">4</div>
+        <div class="geo-process-timing">Mensuel</div>
+        <h3 class="geo-process-title">Monitoring & Ajustements</h3>
+        <p class="geo-process-desc">Restest mensuel de toutes les requêtes, comparaison avec les mois précédents, veille sur les nouvelles versions des modèles IA, rapport d'évolution et nouvelles opportunités.</p>
+        <div class="geo-process-tags">
+          <span class="geo-process-tag">Rapport mensuel</span>
+          <span class="geo-process-tag">Veille LLM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIVRABLES ═════════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="geo-livrables-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Ce que vous recevez</p>
+      <h2 class="section-title" id="geo-livrables-title">Des livrables inédits, pensés pour le GEO</h2>
+      <p class="section-subtitle">Des outils que vous ne trouverez pas ailleurs, conçus spécifiquement pour mesurer et améliorer votre citabilité IA.</p>
+    </div>
+
+    <div class="geo-deliverables-grid">
+      <div class="geo-deliverable reveal">
+        <div class="geo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div>
+          <div class="geo-deliverable-title">Rapport d'audit GEO baseline</div>
+          <div class="geo-deliverable-desc">Taux de citation actuel sur 30–50 requêtes dans les 3 principales plateformes IA. Benchmark concurrentiel et identification des opportunités immédiates.</div>
+          <div class="geo-deliverable-tags">
+            <span class="geo-deliverable-tag">ChatGPT · Gemini · Perplexity</span>
+            <span class="geo-deliverable-tag">Benchmark</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-deliverable reveal reveal-delay-1">
+        <div class="geo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>
+        </div>
+        <div>
+          <div class="geo-deliverable-title">Audit contenu LLM-friendly</div>
+          <div class="geo-deliverable-desc">Analyse de vos pages clés selon les critères de sélection des LLM : structure, densité sémantique, clarté des réponses, signaux E-E-A-T, données structurées.</div>
+          <div class="geo-deliverable-tags">
+            <span class="geo-deliverable-tag">Analyse page par page</span>
+            <span class="geo-deliverable-tag">Priorités A/B/C</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-deliverable reveal">
+        <div class="geo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="geo-deliverable-title">Cartographie des entités de votre domaine</div>
+          <div class="geo-deliverable-desc">Identification des entités nommées (concepts, personnes, lieux, produits) à ancrer dans votre contenu pour que les LLM vous associent à votre domaine d'expertise.</div>
+          <div class="geo-deliverable-tags">
+            <span class="geo-deliverable-tag">Knowledge Graph</span>
+            <span class="geo-deliverable-tag">Schema.org</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-deliverable reveal reveal-delay-1">
+        <div class="geo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <div class="geo-deliverable-title">Dashboard de monitoring citations IA</div>
+          <div class="geo-deliverable-desc">Suivi mensuel de l'évolution de votre taux de citation sur toutes les plateformes ciblées. Comparaison mois/mois, détection des variations et alertes sur les changements de comportement des modèles.</div>
+          <div class="geo-deliverable-tags">
+            <span class="geo-deliverable-tag">Rapport mensuel</span>
+            <span class="geo-deliverable-tag">Évolution graphique</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POURQUOI NEOPULSION ════════════════════════════════════════ -->
+<section class="section" aria-labelledby="geo-diff-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Pourquoi Neopulsion</p>
+      <h2 class="section-title" id="geo-diff-title">Le GEO est nouveau. Notre expertise, non.</h2>
+      <p class="section-subtitle">La plupart des agences SEO ont simplement changé leur PowerPoint. Neopulsion pratique le GEO depuis ses premières heures.</p>
+    </div>
+
+    <div class="geo-compare reveal">
+      <div class="geo-compare-head">
+        <div>Critère</div>
+        <div>Agence SEO classique</div>
+        <div class="highlight">Neopulsion GEO</div>
+      </div>
+      <div class="geo-compare-row">
+        <div>Mesure baseline</div>
+        <div><span class="geo-cross">✕</span> "On va optimiser votre contenu"</div>
+        <div><span class="geo-check">✓</span> Audit chiffré avant de commencer</div>
+      </div>
+      <div class="geo-compare-row">
+        <div>Plateformes couvertes</div>
+        <div><span class="geo-cross">✕</span> Google uniquement</div>
+        <div><span class="geo-check">✓</span> ChatGPT, Gemini, Perplexity, AI Overviews</div>
+      </div>
+      <div class="geo-compare-row">
+        <div>Suivi des résultats</div>
+        <div><span class="geo-cross">✕</span> Positions Google + trafic</div>
+        <div><span class="geo-check">✓</span> Taux de citation IA mesuré chaque mois</div>
+      </div>
+      <div class="geo-compare-row">
+        <div>Veille algorithmique</div>
+        <div><span class="geo-cross">✕</span> Aucune</div>
+        <div><span class="geo-check">✓</span> Suivi des changements de modèles IA</div>
+      </div>
+      <div class="geo-compare-row">
+        <div>Approche SEO + GEO</div>
+        <div><span class="geo-cross">✕</span> L'un ou l'autre</div>
+        <div><span class="geo-check">✓</span> Les deux en synergie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="geo-faq-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--geo-purple);">Questions fréquentes</p>
+      <h2 class="section-title" id="geo-faq-title">Tout ce que vous devez savoir sur le GEO</h2>
+    </div>
+
+    <div class="geo-faq">
+      <div class="geo-faq-item">
+        <button class="geo-faq-trigger" aria-expanded="false">
+          Le GEO remplace-t-il le SEO ?
+          <div class="geo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="geo-faq-body">
+          <div class="geo-faq-body-inner">
+            Non — le GEO complète le SEO, il ne le remplace pas. Google reste le premier moteur de recherche mondial. Mais l'IA grignote une part croissante des requêtes, et cette tendance ne fait que s'accélérer. Les marques gagnantes seront celles qui auront optimisé pour les deux. D'ailleurs, un bon SEO technique renforce souvent la citabilité IA.
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-faq-item">
+        <button class="geo-faq-trigger" aria-expanded="false">
+          Comment savoir si les IA me citent déjà ?
+          <div class="geo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="geo-faq-body">
+          <div class="geo-faq-body-inner">
+            C'est précisément l'objet de notre audit GEO baseline. On teste systématiquement 30 à 50 requêtes dans votre secteur sur ChatGPT, Gemini et Perplexity, on note si votre marque apparaît, avec quelle précision, et ce que disent les IA sur vous. Ce rapport de départ est offert.
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-faq-item">
+        <button class="geo-faq-trigger" aria-expanded="false">
+          En combien de temps vais-je voir des résultats GEO ?
+          <div class="geo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="geo-faq-body">
+          <div class="geo-faq-body-inner">
+            Certaines optimisations produisent des effets rapides (données structurées, restructuration de contenu) : 4 à 8 semaines. D'autres signaux (réputation de domaine, citations tierces) nécessitent 3 à 6 mois. Le GEO est un investissement cumulatif — chaque action renforce les suivantes.
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-faq-item">
+        <button class="geo-faq-trigger" aria-expanded="false">
+          Le GEO fonctionne-t-il pour tous les secteurs ?
+          <div class="geo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="geo-faq-body">
+          <div class="geo-faq-body-inner">
+            Les secteurs B2B, services professionnels, formation, technologie et e-commerce sont particulièrement bien adaptés au GEO : leurs prospects posent des questions de conseil à l'IA avant d'acheter. Les secteurs très locaux ou fortement réglementés nécessitent une approche adaptée. L'audit baseline vous dira si le GEO est pertinent pour vous.
+          </div>
+        </div>
+      </div>
+
+      <div class="geo-faq-item">
+        <button class="geo-faq-trigger" aria-expanded="false">
+          Quelle est la différence entre GEO et AEO ?
+          <div class="geo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="geo-faq-body">
+          <div class="geo-faq-body-inner">
+            Le GEO (Generative Engine Optimization) et l'AEO (Answer Engine Optimization) désignent la même discipline selon les auteurs. Certains réservent l'AEO aux moteurs de réponse en général (incluant les assistants vocaux), tandis que le GEO se concentre spécifiquement sur les IA génératives. En pratique, les techniques sont très proches — et chez Neopulsion, nous couvrons les deux.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══════════════════════════════════════════════════ -->
+<section class="geo-cta-banner" aria-labelledby="geo-cta">
+  <div class="container">
+    <div class="geo-cta-inner reveal">
+      <p class="kicker" style="color:#C4B5FD; justify-content:center; display:flex;">Prêt à exister dans l'ère de l'IA ?</p>
+      <h2 id="geo-cta" style="margin-bottom:16px;">Savez-vous combien de fois<br>les IA vous citent aujourd'hui ?</h2>
+      <p style="margin-bottom:36px;">Commencez par mesurer. L'audit GEO baseline vous donne votre point de départ — offert, sans engagement. À partir de là, on construit.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="../contact.html" style="background:#7C3AED; border-color:#7C3AED;" class="btn-primary btn-lg">Demander mon audit GEO</a>
+        <a href="seo.html" class="btn-outline-white">Voir aussi le SEO →</a>
+      </div>
+      <p style="margin-top:16px; font-size:0.8125rem; color:rgba(255,255,255,0.35);">
+        Sans engagement · Baseline offert · Réponse sous 48h
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="seo.html">Référencement SEO</a></li>
+          <li><a href="geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // ── GEO DIAGNOSTIC CHECKBOXES ───────────────────────────────
+  var geoDiagCards   = document.querySelectorAll('.geo-diag-card');
+  var geoDiagCounter = document.getElementById('geo-diag-counter');
+  var geoDiagBtn     = document.getElementById('geo-diag-btn');
+  var geoDiagMsg     = document.getElementById('geo-diag-msg');
+
+  var geoMessages = [
+    'Cochez les situations qui vous correspondent pour voir votre diagnostic.',
+    'Vous avez 1 signal d\'alerte. Peut-être un hasard — ou le début d\'un problème.',
+    'Vous avez 2 signaux. Votre visibilité IA est probablement nulle. Un audit s\'impose.',
+    'Situation préoccupante : 3 signaux actifs. Vos concurrents ont de l\'avance.',
+    'Alerte rouge — 4 signaux. Chaque jour sans action, c\'est du terrain perdu.',
+    'Invisibilité quasi-totale. 5 signaux : il faut agir maintenant.',
+    '6/6 — Urgence maximale. Votre marque n\'existe pas pour les IA.',
+  ];
+
+  function updateGeoDiagnostic() {
+    var count = document.querySelectorAll('.geo-diag-card.checked').length;
+    geoDiagCounter.textContent = count;
+    geoDiagCounter.setAttribute('data-count', count);
+    geoDiagMsg.textContent = geoMessages[Math.min(count, geoMessages.length - 1)];
+
+    if (count >= 2) {
+      geoDiagMsg.classList.add('active');
+      geoDiagBtn.style.opacity = '1';
+      geoDiagBtn.style.pointerEvents = '';
+    } else {
+      geoDiagMsg.classList.remove('active');
+      geoDiagBtn.style.opacity = '0.45';
+      geoDiagBtn.style.pointerEvents = 'none';
+    }
+  }
+
+  geoDiagCards.forEach(function(card) {
+    function toggle() {
+      var checked = card.classList.toggle('checked');
+      card.setAttribute('aria-checked', checked);
+      updateGeoDiagnostic();
+    }
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function(e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // ── GEO FAQ ACCORDION ───────────────────────────────────────
+  document.querySelectorAll('.geo-faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = this.closest('.geo-faq-item');
+      var isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.geo-faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.geo-faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── AI PLATFORM TABS ────────────────────────────────────────
+  document.querySelectorAll('.geo-ai-platform').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.geo-ai-platform').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

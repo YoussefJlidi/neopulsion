@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visibilité LinkedIn — Attirer des clients sans payer de pub | Neopulsion</title>
+  <meta name="description" content="Transformez LinkedIn en levier d'acquisition organique. Personal branding, thought leadership, social selling B2B. Profils personnels : 561% plus de reach que les pages entreprise.">
+  <link rel="canonical" href="https://neopulsion.fr/services/linkedin.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── LINKEDIN PAGE — accent LinkedIn blue ──────────────────── */
+    :root {
+      --li: #0A66C2;
+      --li-dark: #004182;
+      --li-light: #EBF3FB;
+      --li-border: #BFDBFE;
+    }
+
+    /* Hero */
+    .li-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #0D2137 60%, #003060 100%);
+      padding: 140px 0 80px;
+      position: relative; overflow: hidden;
+    }
+    .li-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 50% 60% at 70% 40%, rgba(10,102,194,0.3) 0%, transparent 65%),
+        radial-gradient(ellipse 30% 40% at 15% 70%, rgba(37,99,235,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .li-hero-grid {
+      display: grid; grid-template-columns: 1fr 460px;
+      gap: 64px; align-items: center; position: relative; z-index: 1;
+    }
+    .li-hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(10,102,194,0.2); border: 1px solid rgba(10,102,194,0.4);
+      color: #93C5FD; border-radius: 100px; padding: 5px 14px;
+      font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 24px;
+    }
+    .li-hero-badge-dot { width: 6px; height: 6px; background: #4ADE80; border-radius: 50%; flex-shrink: 0; }
+    .li-hero-trust { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 32px; }
+    .li-hero-trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.5); font-size: 0.875rem; }
+    .li-hero-trust-item svg { color: #4ADE80; flex-shrink: 0; }
+
+    /* LinkedIn feed card visual */
+    .li-feed-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px; padding: 24px;
+      backdrop-filter: blur(16px);
+    }
+    .li-feed-header {
+      display: flex; align-items: center; gap: 10px;
+      padding-bottom: 16px; margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .li-feed-dots { display: flex; gap: 6px; }
+    .li-feed-dots span { width: 10px; height: 10px; border-radius: 50%; }
+    .li-feed-dots span:nth-child(1) { background: #FF5F57; }
+    .li-feed-dots span:nth-child(2) { background: #FEBC2E; }
+    .li-feed-dots span:nth-child(3) { background: #28C840; }
+    .li-feed-logo {
+      margin-left: auto;
+      display: flex; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.3); font-size: 0.75rem; font-weight: 700;
+    }
+    .li-feed-logo svg { color: #0A66C2; }
+
+    /* Post mockup */
+    .li-post {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 16px; margin-bottom: 12px;
+    }
+    .li-post-author { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .li-post-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, #0A66C2, #0D8ECF);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.875rem; font-weight: 700; color: white; flex-shrink: 0;
+    }
+    .li-post-name { font-size: 0.875rem; font-weight: 600; color: rgba(255,255,255,0.8); }
+    .li-post-role { font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+    .li-post-text { font-size: 0.8125rem; color: rgba(255,255,255,0.65); line-height: 1.5; margin-bottom: 12px; }
+    .li-post-metrics { display: flex; gap: 16px; }
+    .li-post-metric { display: flex; align-items: center; gap: 5px; }
+    .li-post-metric-val { font-size: 0.875rem; font-weight: 700; color: white; }
+    .li-post-metric-lbl { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+    /* Notification cards */
+    .li-notifs { display: flex; flex-direction: column; gap: 8px; }
+    .li-notif {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(10,102,194,0.15); border: 1px solid rgba(10,102,194,0.25);
+      border-radius: 10px; padding: 10px 12px;
+    }
+    .li-notif-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: rgba(10,102,194,0.3); color: #93C5FD;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .li-notif-text { font-size: 0.8125rem; color: rgba(255,255,255,0.7); }
+    .li-notif-text strong { color: white; }
+    .li-notif-time { font-size: 0.6875rem; color: rgba(255,255,255,0.3); margin-left: auto; white-space: nowrap; }
+
+    /* Stats band */
+    .li-stats-band { background: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .li-stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .li-stat-item { padding: 36px 28px; text-align: center; border-right: 1px solid var(--border); }
+    .li-stat-item:last-child { border-right: none; }
+    .li-stat-number { font-size: 2.75rem; font-weight: 900; letter-spacing: -0.04em; color: var(--li); line-height: 1; margin-bottom: 6px; }
+    .li-stat-label { font-size: 0.9375rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* Opportunity section */
+    .li-opportunity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .li-opportunity-visual { background: var(--li-light); border: 1px solid var(--li-border); border-radius: 20px; padding: 32px; }
+    .li-opp-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .li-opp-row:last-child { border-bottom: none; }
+    .li-opp-label { font-size: 0.9375rem; color: var(--text-muted); }
+    .li-opp-val { font-size: 1.125rem; font-weight: 800; color: var(--li); }
+    .li-opp-val.green { color: #059669; }
+
+    /* Thought leadership stats */
+    .li-tl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+    .li-tl-card {
+      background: white; border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 28px; text-align: center;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .li-tl-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .li-tl-num { font-size: 2.5rem; font-weight: 900; color: var(--li); letter-spacing: -0.04em; margin-bottom: 8px; }
+    .li-tl-text { font-size: 0.875rem; color: var(--text-muted); line-height: 1.5; }
+    .li-tl-source { font-size: 0.75rem; color: var(--text-muted); opacity: 0.6; margin-top: 8px; font-style: italic; }
+
+    /* Diagnostic */
+    .li-diag-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+    .li-diag-card {
+      background: white; border: 1.5px solid var(--border); border-radius: var(--radius-lg);
+      padding: 24px; display: flex; gap: 14px; align-items: flex-start;
+      cursor: pointer; user-select: none;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .li-diag-card:hover { border-color: var(--li); box-shadow: 0 0 0 3px rgba(10,102,194,0.08), var(--shadow-md); }
+    .li-diag-card.checked { border-color: var(--li); background: var(--li-light); box-shadow: 0 0 0 3px rgba(10,102,194,0.1); }
+    .li-diag-check {
+      width: 22px; height: 22px; flex-shrink: 0; border: 2px solid var(--border);
+      border-radius: 6px; margin-top: 2px; display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .li-diag-card.checked .li-diag-check { background: var(--li); border-color: var(--li); }
+    .li-diag-check svg { opacity: 0; transform: scale(0.5); transition: opacity 0.15s, transform 0.15s; }
+    .li-diag-card.checked .li-diag-check svg { opacity: 1; transform: scale(1); }
+    .li-diag-text { font-size: 0.9375rem; color: var(--text); font-weight: 500; line-height: 1.5; }
+    .li-diag-sub  { font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px; }
+    .li-diag-counter { display: inline-block; font-size: 0.875rem; font-weight: 700; background: var(--li); color: white; border-radius: 100px; padding: 2px 12px; margin-left: 6px; transition: opacity 0.2s; }
+    .li-diag-counter[data-count="0"] { opacity: 0; }
+    .li-diag-cta-message { font-size: 0.9375rem; color: var(--text-muted); transition: color 0.3s; min-height: 1.5em; }
+    .li-diag-cta-message.active { color: var(--li); font-weight: 600; }
+
+    /* Pillars */
+    .li-pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 48px; }
+    .li-pillar {
+      background: white; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .li-pillar:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .li-pillar-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--li-light); color: var(--li); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .li-pillar-title { font-size: 1.0625rem; font-weight: 800; margin-bottom: 8px; color: var(--text); }
+    .li-pillar-desc  { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+    .li-pillar-tags  { display: flex; flex-wrap: wrap; gap: 6px; }
+    .li-pillar-tag   { font-size: 0.75rem; font-weight: 600; background: var(--li-light); color: var(--li); border-radius: 100px; padding: 2px 10px; }
+
+    /* Process */
+    .li-process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; margin-top: 48px; }
+    .li-process-line { position: absolute; top: 40px; left: 12%; right: 12%; height: 2px; background: linear-gradient(to right, var(--li) 0%, #60A5FA 50%, #BFDBFE 100%); z-index: 0; }
+    .li-process-step { padding: 0 20px; text-align: center; position: relative; z-index: 1; }
+    .li-process-dot { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.625rem; font-weight: 900; transition: transform var(--transition); }
+    .li-process-step:hover .li-process-dot { transform: scale(1.08); }
+    .li-process-step:nth-child(1) .li-process-dot { background: var(--li); color: white; box-shadow: 0 8px 24px rgba(10,102,194,0.35); }
+    .li-process-step:nth-child(2) .li-process-dot,
+    .li-process-step:nth-child(3) .li-process-dot,
+    .li-process-step:nth-child(4) .li-process-dot { background: white; border: 2px solid var(--li); color: var(--li); }
+    .li-process-timing { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--li); background: var(--li-light); border-radius: 100px; padding: 3px 10px; margin-bottom: 10px; }
+    .li-process-title { font-size: 1.0625rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+    .li-process-desc  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+    .li-process-tags  { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
+    .li-process-tag   { font-size: 0.75rem; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 100px; padding: 2px 10px; color: var(--text-muted); }
+
+    /* Deliverables */
+    .li-deliverables-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 48px; }
+    .li-deliverable { display: flex; align-items: flex-start; gap: 16px; background: white; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; transition: border-color var(--transition), box-shadow var(--transition); }
+    .li-deliverable:hover { border-color: var(--li); box-shadow: var(--shadow-md); }
+    .li-deliverable-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--li-light); color: var(--li); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .li-deliverable-title { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .li-deliverable-desc  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+    .li-deliverable-tags  { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .li-deliverable-tag   { font-size: 0.75rem; font-weight: 600; background: var(--li-light); color: var(--li); border-radius: 100px; padding: 2px 10px; }
+
+    /* Compare */
+    .li-compare { background: white; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-top: 48px; }
+    .li-compare-head { display: grid; grid-template-columns: 1fr 1fr 1fr; background: var(--bg-subtle); border-bottom: 1px solid var(--border); }
+    .li-compare-head > div { padding: 14px 20px; font-size: 0.875rem; font-weight: 700; color: var(--text); }
+    .li-compare-head .highlight { background: var(--li-light); color: var(--li); }
+    .li-compare-row { display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid var(--border); }
+    .li-compare-row:last-child { border-bottom: none; }
+    .li-compare-row > div { padding: 14px 20px; font-size: 0.875rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+    .li-compare-row > div:first-child { color: var(--text); font-weight: 500; }
+    .li-compare-row > div:nth-child(3) { background: #F0F7FF; }
+    .li-check { color: #059669; }
+    .li-cross { color: #DC2626; opacity: 0.5; }
+
+    /* FAQ */
+    .li-faq { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; max-width: 760px; margin-left: auto; margin-right: auto; }
+    .li-faq-item { background: white; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: border-color var(--transition); }
+    .li-faq-item.open { border-color: var(--li); }
+    .li-faq-trigger { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; gap: 16px; font-size: 1rem; font-weight: 600; color: var(--text); cursor: pointer; text-align: left; background: none; border: none; transition: color var(--transition); }
+    .li-faq-item.open .li-faq-trigger { color: var(--li); }
+    .li-faq-icon { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; transition: transform var(--transition), background var(--transition), border-color var(--transition); }
+    .li-faq-item.open .li-faq-icon { transform: rotate(45deg); background: var(--li); border-color: var(--li); color: white; }
+    .li-faq-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .li-faq-item.open .li-faq-body { max-height: 400px; }
+    .li-faq-body-inner { padding: 0 24px 20px; font-size: 0.9375rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* CTA */
+    .li-cta-banner { background: linear-gradient(135deg, #0D1B2A 0%, #0A2A4A 60%, #003366 100%); padding: 80px 0; position: relative; overflow: hidden; }
+    .li-cta-banner::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(10,102,194,0.35) 0%, transparent 70%); pointer-events: none; }
+    .li-cta-inner { text-align: center; position: relative; z-index: 1; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .li-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .li-feed-card { display: none; }
+      .li-stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .li-stat-item:nth-child(2) { border-right: none; }
+      .li-stat-item:nth-child(3) { border-top: 1px solid var(--border); }
+      .li-opportunity-grid { grid-template-columns: 1fr; }
+      .li-tl-grid { grid-template-columns: 1fr; }
+      .li-diag-grid { grid-template-columns: repeat(2, 1fr); }
+      .li-pillars-grid { grid-template-columns: 1fr; }
+      .li-process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .li-process-line { display: none; }
+      .li-deliverables-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .li-diag-grid { grid-template-columns: 1fr; }
+      .li-stats-inner { grid-template-columns: 1fr; }
+      .li-stat-item { border-right: none !important; border-bottom: 1px solid var(--border); }
+      .li-stat-item:last-child { border-bottom: none; }
+      .li-process-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="linkedin.html" style="background:#EBF3FB; color:#0A66C2;">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="seo.html">Référencement SEO</a>
+      <a href="geo.html">GEO — Référencement Génératif</a>
+      <a href="linkedin.html">Visibilité LinkedIn</a>
+      <a href="ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════ -->
+<section class="li-hero" aria-labelledby="li-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="margin-bottom:32px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../index.html#services">Services</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Visibilité LinkedIn</span>
+    </nav>
+    <div class="li-hero-grid">
+      <!-- Left -->
+      <div>
+        <div class="li-hero-badge">
+          <span class="li-hero-badge-dot"></span>
+          LinkedIn Organique · Zéro pub
+        </div>
+        <h1 id="li-title" style="color:white; font-size:clamp(2rem,4vw,3rem); margin-bottom:20px; line-height:1.15;">
+          Transformez LinkedIn<br>en machine à leads —<br>sans payer un euro de pub
+        </h1>
+        <p style="font-size:1.125rem; color:rgba(255,255,255,0.65); line-height:1.75; margin-bottom:20px; max-width:520px;">
+          1% des utilisateurs LinkedIn publient du contenu. Ils génèrent 9 milliards d'impressions par semaine. Votre expertise mérite d'être dans cette minorité qui attire, pas qui court après.
+        </p>
+        <p style="font-size:0.9375rem; color:rgba(255,255,255,0.4); line-height:1.6; margin-bottom:32px; max-width:500px;">
+          Stratégie éditoriale, personal branding, optimisation profil et social selling B2B. Des leads inbound qui arrivent — sans cold calls, sans ads.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="../contact.html" style="background:#0A66C2; border-color:#0A66C2;" class="btn-primary btn-lg">Auditer mon profil LinkedIn</a>
+          <a href="#methode" class="btn-outline-white">Voir la méthode</a>
+        </div>
+        <p style="font-size:0.8125rem; color:rgba(255,255,255,0.3); margin-top:12px;">
+          Audit offert · Stratégie personnalisée · Résultats en 60–90 jours
+        </p>
+        <div class="li-hero-trust">
+          <div class="li-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Personal branding dirigeants
+          </div>
+          <div class="li-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Thought leadership B2B
+          </div>
+          <div class="li-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Social selling organique
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: LinkedIn feed mockup -->
+      <div class="li-feed-card">
+        <div class="li-feed-header">
+          <div class="li-feed-dots"><span></span><span></span><span></span></div>
+          <div class="li-feed-logo">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </div>
+        </div>
+
+        <!-- Post -->
+        <div class="li-post">
+          <div class="li-post-author">
+            <div class="li-post-avatar">YJ</div>
+            <div>
+              <div class="li-post-name">Youssef Jlidi</div>
+              <div class="li-post-role">Expert SEO & GEO · Neopulsion</div>
+            </div>
+          </div>
+          <div class="li-post-text">
+            En 2026, votre position Google ne suffit plus.<br>
+            L'IA répond avant que vos clients cliquent.<br><br>
+            Voici les 3 signaux que ChatGPT utilise pour vous citer — ou ignorer…
+          </div>
+          <div class="li-post-metrics">
+            <div class="li-post-metric">
+              <div class="li-post-metric-val">47 200</div>
+              <div class="li-post-metric-lbl">vues</div>
+            </div>
+            <div class="li-post-metric">
+              <div class="li-post-metric-val">892</div>
+              <div class="li-post-metric-lbl">réactions</div>
+            </div>
+            <div class="li-post-metric">
+              <div class="li-post-metric-val">213</div>
+              <div class="li-post-metric-lbl">commentaires</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="li-notifs">
+          <div class="li-notif">
+            <div class="li-notif-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div class="li-notif-text"><strong>Sophie R.</strong> vous a envoyé un message : "Votre post sur le GEO m'a convaincu, on peut se parler ?"</div>
+            <div class="li-notif-time">2 min</div>
+          </div>
+          <div class="li-notif">
+            <div class="li-notif-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <div class="li-notif-text"><strong>Marc D. · DirMkt</strong> a commenté votre article</div>
+            <div class="li-notif-time">14 min</div>
+          </div>
+          <div class="li-notif">
+            <div class="li-notif-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.9v2z"/></svg>
+            </div>
+            <div class="li-notif-text"><strong>Thomas B.</strong> souhaite vous contacter pour une mission</div>
+            <div class="li-notif-time">1 h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAND ════════════════════════════════════════════════ -->
+<div class="li-stats-band">
+  <div class="container">
+    <div class="li-stats-inner">
+      <div class="li-stat-item">
+        <div class="li-stat-number">1<span style="font-size:1.5rem;">%</span></div>
+        <div class="li-stat-label">des utilisateurs publient<br>→ 9 milliards d'impressions/semaine</div>
+      </div>
+      <div class="li-stat-item">
+        <div class="li-stat-number">561<span style="font-size:1.5rem;">%</span></div>
+        <div class="li-stat-label">plus de reach pour un profil<br>perso vs une page entreprise</div>
+      </div>
+      <div class="li-stat-item">
+        <div class="li-stat-number">80<span style="font-size:1.5rem;">%</span></div>
+        <div class="li-stat-label">des leads B2B sociaux<br>viennent de LinkedIn</div>
+      </div>
+      <div class="li-stat-item">
+        <div class="li-stat-number">277<span style="font-size:1.5rem;">%</span></div>
+        <div class="li-stat-label">plus efficace que Facebook<br>pour la génération de leads B2B</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ DIAGNOSTIC INTERACTIF ═════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="li-diag-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Diagnostic rapide</p>
+      <h2 class="section-title" id="li-diag-title">Votre LinkedIn travaille-t-il pour vous ?</h2>
+      <p class="section-subtitle">Ces 6 signaux indiquent que votre présence LinkedIn sous-performe. Cochez ceux qui vous correspondent.</p>
+    </div>
+
+    <div class="li-diag-grid">
+      <div class="li-diag-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Vous postez, mais rien ne se passe</div>
+          <div class="li-diag-sub">Peu de réactions, zéro message entrant, trafic inexistant vers votre profil.</div>
+        </div>
+      </div>
+      <div class="li-diag-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Votre page entreprise est un désert</div>
+          <div class="li-diag-sub">Les pages entreprise n'atteignent que 1,6% des abonnés. Votre effort est invisible.</div>
+        </div>
+      </div>
+      <div class="li-diag-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Vous n'avez pas le temps d'écrire</div>
+          <div class="li-diag-sub">L'expertise est là, mais la régularité éditoriale reste impossible à tenir seul.</div>
+        </div>
+      </div>
+      <div class="li-diag-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Votre profil n'est pas optimisé pour convertir</div>
+          <div class="li-diag-sub">Un visiteur sur votre profil ne comprend pas en 5 secondes ce que vous faites ni comment vous contacter.</div>
+        </div>
+      </div>
+      <div class="li-diag-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Vos commerciaux prospectent encore à froid</div>
+          <div class="li-diag-sub">Cold calls, séquences de mails froids… alors que le social selling convertit à bien moindre friction.</div>
+        </div>
+      </div>
+      <div class="li-diag-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="li-diag-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="li-diag-text">Votre contenu ressemble à tout le monde</div>
+          <div class="li-diag-sub">Posts génériques, peu de point de vue, pas de ligne éditoriale identifiable. Vous êtes noyé dans le flux.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <p>Votre score LinkedIn <span class="li-diag-counter" data-count="0" id="li-diag-counter">0</span></p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:16px;">
+        <p class="li-diag-cta-message" id="li-diag-msg">Cochez les situations qui vous correspondent pour voir votre diagnostic.</p>
+        <a href="../contact.html" style="background:#0A66C2; border-color:#0A66C2;" class="btn-primary" id="li-diag-btn" style="opacity:0.45; pointer-events:none;">Obtenir mon audit LinkedIn →</a>
+      </div>
+      <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:10px;">Gratuit · Sans engagement · Stratégie incluse</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OPPORTUNITÉ LINKEDIN ══════════════════════════════════════ -->
+<section class="section" aria-labelledby="li-opp-title">
+  <div class="container">
+    <div class="li-opportunity-grid">
+      <div class="li-opportunity-visual reveal">
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:20px; color:var(--text);">Profil personnel vs Page entreprise</h3>
+        <div class="li-opp-row">
+          <span class="li-opp-label">Reach organique moyen</span>
+          <span class="li-opp-val">+561%</span>
+        </div>
+        <div class="li-opp-row">
+          <span class="li-opp-label">Taux d'engagement</span>
+          <span class="li-opp-val">5× plus élevé</span>
+        </div>
+        <div class="li-opp-row">
+          <span class="li-opp-label">Reach page entreprise</span>
+          <span class="li-opp-val" style="color:#DC2626;">1,6% des abonnés</span>
+        </div>
+        <div class="li-opp-row">
+          <span class="li-opp-label">Leads B2B issus de LinkedIn</span>
+          <span class="li-opp-val green">80%</span>
+        </div>
+        <div class="li-opp-row">
+          <span class="li-opp-label">Utilisateurs qui publient</span>
+          <span class="li-opp-val green">1% seulement</span>
+        </div>
+        <div style="background:rgba(10,102,194,0.08); border-radius:12px; padding:14px 16px; margin-top:16px;">
+          <p style="font-size:0.875rem; color:var(--li); font-weight:600; margin-bottom:4px;">La fenêtre d'opportunité :</p>
+          <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.6;">Seul 1% publie — mais ils captent 100% de la visibilité. Rejoindre ce groupe maintenant, c'est jouer sur un terrain où la concurrence reste faible.</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <p class="kicker" style="color:var(--li);">Pourquoi maintenant</p>
+        <h2 id="li-opp-title" style="margin-bottom:20px;">Les décideurs B2B prennent leurs décisions sur LinkedIn</h2>
+        <p style="font-size:1rem; color:var(--text-muted); line-height:1.75; margin-bottom:20px;">
+          LinkedIn n'est plus un simple CV en ligne. C'est le canal où les décideurs B2B se forment une opinion sur vos concurrents et sur vous — avant même de vous contacter.
+        </p>
+        <p style="font-size:1rem; color:var(--text-muted); line-height:1.75; margin-bottom:28px;">
+          Un profil personnel actif, une ligne éditoriale cohérente et un contenu thought leadership transforment votre marque personnelle en <strong>premier commercial de l'entreprise</strong> — qui travaille 24h/24, sans budget pub.
+        </p>
+        <div style="display:flex; gap:12px; align-items:center; background:var(--li-light); border:1px solid var(--li-border); border-radius:12px; padding:16px 20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A66C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5; margin:0;">
+            <strong style="color:var(--li);">Les "Visible Experts"</strong> (Hinge Marketing) commandent des honoraires <strong>13× plus élevés</strong> que leurs pairs avec la même expertise mais moins de visibilité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THOUGHT LEADERSHIP IMPACT ════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="li-tl-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Données Edelman × LinkedIn 2025</p>
+      <h2 class="section-title" id="li-tl-title">Le thought leadership influence directement les décisions d'achat</h2>
+      <p class="section-subtitle">Ce n'est pas une intuition — c'est mesuré sur des milliers de décideurs B2B dans le monde entier.</p>
+    </div>
+    <div class="li-tl-grid">
+      <div class="li-tl-card reveal">
+        <div class="li-tl-num">75%</div>
+        <div class="li-tl-text">des décideurs ont recherché un produit qu'ils ne connaissaient pas après avoir lu du thought leadership de qualité</div>
+        <div class="li-tl-source">Edelman × LinkedIn B2B Thought Leadership Report 2025</div>
+      </div>
+      <div class="li-tl-card reveal reveal-delay-1">
+        <div class="li-tl-num">9/10</div>
+        <div class="li-tl-text">des C-suite sont plus réceptifs à une approche commerciale d'une entreprise qui produit du thought leadership régulier</div>
+        <div class="li-tl-source">Edelman × LinkedIn 2025</div>
+      </div>
+      <div class="li-tl-card reveal reveal-delay-2">
+        <div class="li-tl-num">60%</div>
+        <div class="li-tl-text">des décideurs sont prêts à payer un premium pour des entreprises qui démontrent une forte autorité de contenu</div>
+        <div class="li-tl-source">Edelman × LinkedIn 2025</div>
+      </div>
+      <div class="li-tl-card reveal">
+        <div class="li-tl-num">70%</div>
+        <div class="li-tl-text">des C-suite ont reconsidéré leur fournisseur actuel après avoir lu du contenu thought leadership d'un concurrent</div>
+        <div class="li-tl-source">Edelman × LinkedIn 2025</div>
+      </div>
+      <div class="li-tl-card reveal reveal-delay-1">
+        <div class="li-tl-num">86%</div>
+        <div class="li-tl-text">des acheteurs B2B inviteraient à soumettre un devis une entreprise produisant du contenu de qualité régulier</div>
+        <div class="li-tl-source">Edelman × LinkedIn 2025</div>
+      </div>
+      <div class="li-tl-card reveal reveal-delay-2">
+        <div class="li-tl-num">73%</div>
+        <div class="li-tl-text">jugent le thought leadership plus fiable que les supports marketing traditionnels pour évaluer les compétences d'un prestataire</div>
+        <div class="li-tl-source">Edelman × LinkedIn 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4 PILIERS LINKEDIN ════════════════════════════════════════ -->
+<section class="section" id="methode" aria-labelledby="li-piliers-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Notre approche</p>
+      <h2 class="section-title" id="li-piliers-title">4 piliers pour une présence LinkedIn qui génère des leads</h2>
+      <p class="section-subtitle">Poster du contenu sans stratégie, c'est crier dans le vide. Voici comment on construit une présence qui travaille pour vous.</p>
+    </div>
+
+    <div class="li-pillars-grid">
+      <div class="li-pillar reveal">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a9.5 9.5 0 0113 0"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Profil optimisé pour convertir</h3>
+          <p class="li-pillar-desc">Votre profil est votre page de vente organique. Titre accrocheur, résumé orienté client, section "À la une" pensée pour la conversion, URL personnalisée et mots-clés LinkedIn & Google.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Titre & Résumé</span>
+            <span class="li-pillar-tag">SEO natif LinkedIn</span>
+            <span class="li-pillar-tag">À la une</span>
+            <span class="li-pillar-tag">CTA profil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar reveal reveal-delay-1">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Ligne éditoriale thought leadership</h3>
+          <p class="li-pillar-desc">Un contenu qui vous ressemble, qui reflète votre vraie expertise et qui positionne votre point de vue. Pas des posts génériques — une voix reconnaissable qui construit une autorité durable.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Stratégie éditoriale</span>
+            <span class="li-pillar-tag">Ghostwriting</span>
+            <span class="li-pillar-tag">Formats variés</span>
+            <span class="li-pillar-tag">Calendrier</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar reveal">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Croissance réseau ciblée</h3>
+          <p class="li-pillar-desc">Développer les bons abonnés, pas juste des chiffres. Stratégie de connexion ciblée sur vos prospects idéaux, engagement authentique dans les commentaires, visibilité dans les communautés de votre secteur.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Ciblage ICP</span>
+            <span class="li-pillar-tag">Engagement stratégique</span>
+            <span class="li-pillar-tag">Commentaires</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar reveal reveal-delay-1">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Social selling & pipeline</h3>
+          <p class="li-pillar-desc">Transformer la visibilité en opportunités business. Formation de vos équipes commerciales au social selling organique, scripts de prise de contact qui ne sonnent pas "commercial" et process de conversion inbound.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Formation équipe</span>
+            <span class="li-pillar-tag">Scripts outreach</span>
+            <span class="li-pillar-tag">Leads inbound</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESSUS ═════════════════════════════════════════════════ -->
+<section class="section section--subtle" id="processus" aria-labelledby="li-process-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Méthodologie</p>
+      <h2 class="section-title" id="li-process-title">De l'audit à votre premier lead inbound</h2>
+      <p class="section-subtitle">Un processus en 4 étapes, conçu pour des résultats visibles en 60 à 90 jours.</p>
+    </div>
+
+    <div class="li-process-grid">
+      <div class="li-process-line" aria-hidden="true"></div>
+      <div class="li-process-step reveal">
+        <div class="li-process-dot">1</div>
+        <div class="li-process-timing">Semaine 1</div>
+        <h3 class="li-process-title">Audit & Benchmark</h3>
+        <p class="li-process-desc">Analyse complète de votre profil actuel, de votre page entreprise, de votre taux d'engagement et des comptes qui performent dans votre secteur. On sait exactement d'où on part.</p>
+        <div class="li-process-tags">
+          <span class="li-process-tag">Profil</span>
+          <span class="li-process-tag">Page entreprise</span>
+          <span class="li-process-tag">Concurrents</span>
+        </div>
+      </div>
+      <div class="li-process-step reveal reveal-delay-1">
+        <div class="li-process-dot">2</div>
+        <div class="li-process-timing">Semaines 2–3</div>
+        <h3 class="li-process-title">Stratégie & Positionnement</h3>
+        <p class="li-process-desc">Définition de votre ligne éditoriale, de votre voix, des thématiques à investir et du calendrier de publication. Refonte des profils avec les bons mots-clés et les bons messages.</p>
+        <div class="li-process-tags">
+          <span class="li-process-tag">Ligne éditoriale</span>
+          <span class="li-process-tag">Refonte profil</span>
+          <span class="li-process-tag">Calendrier</span>
+        </div>
+      </div>
+      <div class="li-process-step reveal reveal-delay-2">
+        <div class="li-process-dot">3</div>
+        <div class="li-process-timing">Mois 1–3</div>
+        <h3 class="li-process-title">Production & Publication</h3>
+        <p class="li-process-desc">Création ou ghostwriting du contenu, publication régulière, engagement actif dans les commentaires, croissance ciblée du réseau. Les premiers signaux d'audience arrivent dès le premier mois.</p>
+        <div class="li-process-tags">
+          <span class="li-process-tag">Posts & articles</span>
+          <span class="li-process-tag">Engagement</span>
+          <span class="li-process-tag">Réseau ciblé</span>
+        </div>
+      </div>
+      <div class="li-process-step reveal reveal-delay-2">
+        <div class="li-process-dot">4</div>
+        <div class="li-process-timing">Mensuel</div>
+        <h3 class="li-process-title">Suivi & Optimisation</h3>
+        <p class="li-process-desc">Analyse des métriques (vues, engagement, leads entrants), identification des contenus les plus performants, ajustement de la stratégie et formation continue des équipes si besoin.</p>
+        <div class="li-process-tags">
+          <span class="li-process-tag">Reporting</span>
+          <span class="li-process-tag">A/B formats</span>
+          <span class="li-process-tag">Leads tracking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIVRABLES ═════════════════════════════════════════════════ -->
+<section class="section" aria-labelledby="li-livrables-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Ce que vous recevez</p>
+      <h2 class="section-title" id="li-livrables-title">Un dispositif complet, pas juste des posts</h2>
+    </div>
+    <div class="li-deliverables-grid">
+      <div class="li-deliverable reveal">
+        <div class="li-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a9.5 9.5 0 0113 0"/></svg>
+        </div>
+        <div>
+          <div class="li-deliverable-title">Audit & refonte profil/page</div>
+          <div class="li-deliverable-desc">Analyse de votre présence actuelle sur 30+ critères. Réécriture du titre, du résumé, de la section "À la une" et optimisation SEO natif pour LinkedIn et Google.</div>
+          <div class="li-deliverable-tags"><span class="li-deliverable-tag">Profil & Page</span><span class="li-deliverable-tag">SEO natif</span></div>
+        </div>
+      </div>
+      <div class="li-deliverable reveal reveal-delay-1">
+        <div class="li-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <div class="li-deliverable-title">Stratégie éditoriale & calendrier</div>
+          <div class="li-deliverable-desc">Ligne éditoriale personnalisée, 4–6 thématiques clés, mix de formats (posts texte, carrousels, vidéos, articles) et calendrier de publication sur 3 mois.</div>
+          <div class="li-deliverable-tags"><span class="li-deliverable-tag">Calendrier 90j</span><span class="li-deliverable-tag">Mix formats</span></div>
+        </div>
+      </div>
+      <div class="li-deliverable reveal">
+        <div class="li-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="li-deliverable-title">Ghostwriting & production de contenu</div>
+          <div class="li-deliverable-desc">Rédaction de vos posts dans votre voix — pas un template générique. On extrait votre expertise en entretien et on la transforme en contenu qui engage votre audience cible.</div>
+          <div class="li-deliverable-tags"><span class="li-deliverable-tag">Votre voix</span><span class="li-deliverable-tag">Validation avant publication</span></div>
+        </div>
+      </div>
+      <div class="li-deliverable reveal reveal-delay-1">
+        <div class="li-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <div class="li-deliverable-title">Formation social selling équipe</div>
+          <div class="li-deliverable-desc">Session pratique pour vos équipes commerciales : comment prospecter sur LinkedIn sans paraître intrusif, scripts de prise de contact, optimisation des profils et process de suivi.</div>
+          <div class="li-deliverable-tags"><span class="li-deliverable-tag">Session 3h</span><span class="li-deliverable-tag">Supports inclus</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DIFFÉRENCIATION ════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="li-diff-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Pourquoi Neopulsion</p>
+      <h2 class="section-title" id="li-diff-title">Pas juste poster du contenu</h2>
+      <p class="section-subtitle">Beaucoup proposent "du contenu LinkedIn". La différence est dans la stratégie et dans la cohérence avec votre positionnement global.</p>
+    </div>
+    <div class="li-compare reveal">
+      <div class="li-compare-head">
+        <div>Critère</div>
+        <div>"Agence contenu" classique</div>
+        <div class="highlight">Neopulsion LinkedIn</div>
+      </div>
+      <div class="li-compare-row">
+        <div>Approche</div>
+        <div><span class="li-cross">✕</span> Templates génériques, peu de personnalisation</div>
+        <div><span class="li-check">✓</span> Voix extraite en entretien, 100% vous</div>
+      </div>
+      <div class="li-compare-row">
+        <div>Stratégie globale</div>
+        <div><span class="li-cross">✕</span> LinkedIn isolé des autres canaux</div>
+        <div><span class="li-check">✓</span> Aligné avec votre SEO, GEO et positionnement</div>
+      </div>
+      <div class="li-compare-row">
+        <div>Profil & SEO natif</div>
+        <div><span class="li-cross">✕</span> Souvent ignoré</div>
+        <div><span class="li-check">✓</span> Optimisé pour la recherche LinkedIn & Google</div>
+      </div>
+      <div class="li-compare-row">
+        <div>Mesure des résultats</div>
+        <div><span class="li-cross">✕</span> Likes et abonnés</div>
+        <div><span class="li-check">✓</span> Leads entrants, vues profil, messages qualifiés</div>
+      </div>
+      <div class="li-compare-row">
+        <div>Social selling équipe</div>
+        <div><span class="li-cross">✕</span> Non inclus</div>
+        <div><span class="li-check">✓</span> Formation commerciaux incluse si besoin</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════════ -->
+<section class="section" aria-labelledby="li-faq-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker" style="color:var(--li);">Questions fréquentes</p>
+      <h2 class="section-title" id="li-faq-title">Vos questions sur LinkedIn organique</h2>
+    </div>
+    <div class="li-faq">
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Est-ce que ça fonctionne si je n'ai pas beaucoup d'abonnés ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Oui — et c'est même le meilleur moment pour commencer. L'algorithme LinkedIn favorise la régularité et la pertinence, pas la taille du réseau. Un post de qualité diffusé à 500 bonnes personnes génère plus de business qu'un post générique vu par 5 000 inconnus. Nos clients voient les premiers leads inbound entre 60 et 90 jours, quel que soit leur point de départ.
+          </div>
+        </div>
+      </div>
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Allez-vous écrire à ma place ? Sera-ce vraiment ma voix ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Le ghostwriting LinkedIn est une pratique courante chez les dirigeants (comme les acteurs ont des cascadeurs). On commence par un entretien approfondi pour extraire votre expertise, vos anecdotes, vos opinions — puis on écrit dans votre voix. Chaque contenu est validé par vous avant publication. Nos clients disent souvent : "C'est exactement ce que j'aurais dit, mais en mieux formulé."
+          </div>
+        </div>
+      </div>
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          La page entreprise ou le profil personnel — par quoi commencer ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Le profil personnel, sans hésitation. Les pages entreprise ne touchent en moyenne que 1,6% de leurs abonnés. Les profils personnels génèrent 561% plus de reach à contenu équivalent. Pour les PME et ETI, la stratégie la plus efficace est d'activer le profil du dirigeant en priorité, puis d'utiliser la page entreprise comme vitrine secondaire.
+          </div>
+        </div>
+      </div>
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Combien de temps dois-je consacrer à LinkedIn chaque semaine ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Avec notre accompagnement, entre 30 et 60 minutes par semaine suffisent. On s'occupe de la stratégie, de la rédaction et de la planification. Vous validez les contenus et passez quelques minutes à répondre aux commentaires — ce qui est justement ce qui nourrit l'engagement et les relations.
+          </div>
+        </div>
+      </div>
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Quel est le budget pour un accompagnement LinkedIn ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Le tarif dépend du périmètre : audit seul, accompagnement mensuel dirigeant, formation équipe ou dispositif complet. Les engagements démarrent généralement sur 3 mois minimum pour laisser le temps à la stratégie de produire des résultats. Un seul deal signé via LinkedIn couvre généralement plusieurs mois d'investissement. Demandez un devis — l'audit initial est gratuit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══════════════════════════════════════════════════ -->
+<section class="li-cta-banner" aria-labelledby="li-cta">
+  <div class="container">
+    <div class="li-cta-inner reveal">
+      <p class="kicker" style="color:#93C5FD; justify-content:center; display:flex;">Prêt à faire travailler votre expertise ?</p>
+      <h2 id="li-cta" style="color:white; margin-bottom:16px;">Votre meilleur commercial<br>n'a pas encore de profil LinkedIn actif</h2>
+      <p style="color:rgba(255,255,255,0.6); margin-bottom:36px; max-width:560px; margin-left:auto; margin-right:auto;">Commencez par un audit de votre présence actuelle. En 30 minutes, on identifie vos 3 leviers prioritaires et on vous propose une stratégie adaptée à votre secteur.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="../contact.html" style="background:#0A66C2; border-color:#0A66C2;" class="btn-primary btn-lg">Auditer mon LinkedIn gratuitement</a>
+        <a href="ia.html" class="btn-outline-white">Voir aussi l'IA →</a>
+      </div>
+      <p style="margin-top:16px; font-size:0.8125rem; color:rgba(255,255,255,0.3);">
+        Sans engagement · Audit offert · Premiers résultats en 60–90 jours
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="seo.html">Référencement SEO</a></li>
+          <li><a href="geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // ── DIAGNOSTIC LINKEDIN ──────────────────────────────────────
+  var liCards   = document.querySelectorAll('.li-diag-card');
+  var liCounter = document.getElementById('li-diag-counter');
+  var liBtn     = document.getElementById('li-diag-btn');
+  var liMsg     = document.getElementById('li-diag-msg');
+
+  var liMessages = [
+    'Cochez les situations qui vous correspondent pour voir votre diagnostic.',
+    'Un signal détecté. Votre LinkedIn a du potentiel inexploité.',
+    '2 signaux : votre présence LinkedIn sous-performe clairement. Un audit s\'impose.',
+    '3 signaux actifs. Pendant ce temps, vos concurrents captent vos prospects.',
+    'Situation critique : 4 blocages LinkedIn identifiés.',
+    'Votre LinkedIn ne travaille pas pour vous — 5 points à corriger en urgence.',
+    '6/6 — LinkedIn est une opportunité manquée chaque jour. Il est temps d\'agir.',
+  ];
+
+  function updateLiDiag() {
+    var count = document.querySelectorAll('.li-diag-card.checked').length;
+    liCounter.textContent = count;
+    liCounter.setAttribute('data-count', count);
+    liMsg.textContent = liMessages[Math.min(count, liMessages.length - 1)];
+    if (count >= 2) {
+      liMsg.classList.add('active');
+      liBtn.style.opacity = '1';
+      liBtn.style.pointerEvents = '';
+    } else {
+      liMsg.classList.remove('active');
+      liBtn.style.opacity = '0.45';
+      liBtn.style.pointerEvents = 'none';
+    }
+  }
+
+  liCards.forEach(function(card) {
+    function toggle() {
+      var checked = card.classList.toggle('checked');
+      card.setAttribute('aria-checked', checked);
+      updateLiDiag();
+    }
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function(e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // ── FAQ ──────────────────────────────────────────────────────
+  document.querySelectorAll('.li-faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = this.closest('.li-faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.li-faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.li-faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

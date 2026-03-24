@@ -1,0 +1,28 @@
+<svg width="800" height="440" viewBox="0 0 800 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="440" rx="24" fill="#07090C"/>
+  <rect x="24" y="24" width="752" height="48" rx="12" fill="#10141A" stroke="#1B2430"/>
+  <circle cx="52" cy="48" r="6" fill="#FFE600"/>
+  <text x="84" y="54" fill="#DDE2EA" font-size="18" font-family="Arial, sans-serif">Contenu IA + Autorite Externe</text>
+
+  <rect x="32" y="92" width="736" height="324" rx="16" fill="#0D131A" stroke="#212A36"/>
+  <rect x="56" y="116" width="688" height="92" rx="12" fill="#101822" stroke="#273344"/>
+  <circle cx="98" cy="162" r="26" fill="#FF4500"/>
+  <text x="138" y="155" fill="#D9E0EA" font-size="14" font-family="Arial, sans-serif">r/seo : thread \"GEO framework\" avec source citee</text>
+  <text x="138" y="178" fill="#A2AFBF" font-size="12" font-family="Arial, sans-serif">Upvotes 420 | Mentions marque: 14 | Citations sortantes: 6</text>
+
+  <rect x="56" y="224" width="336" height="168" rx="12" fill="#101822" stroke="#273344"/>
+  <text x="80" y="254" fill="#C8D0DB" font-size="14" font-family="Arial, sans-serif">Distribution answer-first</text>
+  <rect x="80" y="272" width="288" height="10" rx="5" fill="#1E2734"/>
+  <rect x="80" y="272" width="214" height="10" rx="5" fill="#FFE600"/>
+  <text x="80" y="302" fill="#A5B2C0" font-size="12" font-family="Arial, sans-serif">Posts Q&amp;A qualifies: +62%</text>
+  <text x="80" y="326" fill="#A5B2C0" font-size="12" font-family="Arial, sans-serif">Threads evergreen actifs: 21</text>
+  <text x="80" y="350" fill="#A5B2C0" font-size="12" font-family="Arial, sans-serif">Citations in-thread vers pages sources</text>
+
+  <rect x="408" y="224" width="336" height="168" rx="12" fill="#101822" stroke="#273344"/>
+  <text x="432" y="254" fill="#C8D0DB" font-size="14" font-family="Arial, sans-serif">Authority spread (Reddit + PR)</text>
+  <line x1="432" y1="364" x2="720" y2="364" stroke="#2D3846"/>
+  <rect x="454" y="308" width="36" height="56" rx="6" fill="#FFE600"/>
+  <rect x="512" y="286" width="36" height="78" rx="6" fill="#B7E000"/>
+  <rect x="570" y="270" width="36" height="94" rx="6" fill="#9ECA00"/>
+  <rect x="628" y="246" width="36" height="118" rx="6" fill="#FFE94A"/>
+</svg>

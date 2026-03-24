@@ -1,0 +1,29 @@
+<svg width="800" height="440" viewBox="0 0 800 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="440" rx="24" fill="#07090C"/>
+  <rect x="24" y="24" width="752" height="48" rx="12" fill="#10141A" stroke="#1B2430"/>
+  <circle cx="52" cy="48" r="6" fill="#FFE600"/>
+  <text x="84" y="54" fill="#DDE2EA" font-size="18" font-family="Arial, sans-serif">Fondations GEO</text>
+
+  <rect x="32" y="92" width="352" height="324" rx="14" fill="#0D131A" stroke="#212A36"/>
+  <text x="56" y="124" fill="#C8D0DB" font-size="15" font-family="Arial, sans-serif">Audit citabilite</text>
+  <rect x="56" y="142" width="304" height="248" rx="10" fill="#101822" stroke="#283344"/>
+  <rect x="72" y="162" width="272" height="36" rx="8" fill="#FFE600" fill-opacity="0.16" stroke="#FFE600"/>
+  <rect x="72" y="210" width="272" height="36" rx="8" fill="#FFE600" fill-opacity="0.12" stroke="#B8A200"/>
+  <rect x="72" y="258" width="272" height="36" rx="8" fill="#FFE600" fill-opacity="0.08" stroke="#977F00"/>
+  <rect x="72" y="306" width="272" height="36" rx="8" fill="#FFE600" fill-opacity="0.08" stroke="#977F00"/>
+  <text x="84" y="185" fill="#D7DEE8" font-size="12" font-family="Arial, sans-serif">Signal 1 - Indexation prioritaire</text>
+  <text x="84" y="233" fill="#D7DEE8" font-size="12" font-family="Arial, sans-serif">Signal 2 - Qualite des sources</text>
+  <text x="84" y="281" fill="#D7DEE8" font-size="12" font-family="Arial, sans-serif">Signal 3 - Entites explicites</text>
+  <text x="84" y="329" fill="#D7DEE8" font-size="12" font-family="Arial, sans-serif">Signal 4 - Fraicheur des contenus</text>
+
+  <rect x="416" y="92" width="352" height="324" rx="14" fill="#0D131A" stroke="#212A36"/>
+  <text x="440" y="124" fill="#C8D0DB" font-size="15" font-family="Arial, sans-serif">Score de citabilite GEO</text>
+  <rect x="440" y="146" width="304" height="52" rx="10" fill="#101822" stroke="#283344"/>
+  <text x="460" y="177" fill="#FFE600" font-size="20" font-family="Arial, sans-serif">84% signaux exploitables</text>
+  <rect x="440" y="216" width="304" height="174" rx="10" fill="#101822" stroke="#283344"/>
+  <text x="460" y="246" fill="#A0ADBE" font-size="13" font-family="Arial, sans-serif">- Indexation utile: 91%</text>
+  <text x="460" y="272" fill="#A0ADBE" font-size="13" font-family="Arial, sans-serif">- Entites normalisees: marque/offres/auteurs</text>
+  <text x="460" y="298" fill="#A0ADBE" font-size="13" font-family="Arial, sans-serif">- Sources tierces detectees</text>
+  <text x="460" y="324" fill="#A0ADBE" font-size="13" font-family="Arial, sans-serif">- Coherence SEO/GEO validee</text>
+  <text x="460" y="350" fill="#A0ADBE" font-size="13" font-family="Arial, sans-serif">- Backlog priorise impact business</text>
+</svg>

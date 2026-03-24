@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Référencement SEO — Visibilité Organique Durable | Neopulsion</title>
+  <meta name="description" content="Audit technique, sémantique, Core Web Vitals. Une roadmap priorisée — +43% de trafic organique en moyenne. À partir de 2 000 €. Neopulsion — Youssef Jlidi.">
+  <link rel="canonical" href="https://neopulsion.fr/services/seo.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── SEO PAGE SPECIFIC ─────────────────────────── */
+
+    /* Hero 2-col */
+    .seo-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 64px;
+      align-items: center;
+    }
+    .seo-hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3);
+      color: #93C5FD; border-radius: 100px; padding: 5px 14px;
+      font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em;
+      margin-bottom: 24px;
+    }
+    .seo-hero-badge-dot {
+      width: 6px; height: 6px; background: #4ADE80;
+      border-radius: 50%; flex-shrink: 0;
+    }
+    .seo-hero-trust {
+      display: flex; align-items: center; gap: 24px;
+      flex-wrap: wrap; margin-top: 32px;
+    }
+    .seo-hero-trust-item {
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.6); font-size: 0.875rem;
+    }
+    .seo-hero-trust-item svg { color: #4ADE80; flex-shrink: 0; }
+
+    /* Ranking card visual */
+    .seo-ranking-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+    }
+    .seo-ranking-card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .seo-ranking-card-title {
+      font-size: 0.8125rem; font-weight: 600;
+      color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .seo-ranking-label {
+      display: flex; gap: 12px;
+    }
+    .seo-ranking-label span {
+      font-size: 0.75rem; padding: 3px 10px; border-radius: 100px;
+      font-weight: 600;
+    }
+    .seo-ranking-label .before { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.4); }
+    .seo-ranking-label .after  { background: rgba(37,99,235,0.25); color: #93C5FD; }
+
+    .seo-ranking-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .seo-ranking-row:last-child { border-bottom: none; }
+    .seo-ranking-keyword {
+      flex: 1; font-size: 0.875rem; color: rgba(255,255,255,0.8); font-weight: 500;
+    }
+    .seo-ranking-before {
+      width: 36px; text-align: center;
+      font-size: 0.8125rem; font-weight: 600; color: rgba(255,255,255,0.3);
+    }
+    .seo-ranking-arrow {
+      color: #4ADE80; font-size: 0.875rem; font-weight: 700;
+    }
+    .seo-ranking-after {
+      width: 36px; text-align: center;
+      font-size: 0.9375rem; font-weight: 800; color: white;
+    }
+    .seo-ranking-delta {
+      width: 48px; text-align: right;
+      font-size: 0.75rem; font-weight: 700;
+      color: #4ADE80;
+    }
+
+    /* Traffic mini-chart inside card */
+    .seo-ranking-chart {
+      margin-top: 20px; padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .seo-ranking-chart-label {
+      font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-bottom: 8px;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+
+    /* Diagnostic section */
+    .seo-problems-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .seo-problem-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      cursor: pointer;
+      user-select: none;
+      transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+    .seo-problem-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.08), var(--shadow-md);
+    }
+    .seo-problem-card.checked {
+      border-color: var(--blue);
+      background: #F0F6FF;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+    .seo-problem-check {
+      width: 22px; height: 22px; flex-shrink: 0;
+      border: 2px solid var(--border); border-radius: 6px;
+      margin-top: 2px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .seo-problem-card.checked .seo-problem-check {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+    .seo-problem-check svg {
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    .seo-problem-card.checked .seo-problem-check svg {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .seo-problem-text { font-size: 0.9375rem; color: var(--text); line-height: 1.5; font-weight: 500; }
+    .seo-problem-sub { font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px; font-weight: 400; }
+    .seo-problems-cta {
+      text-align: center; margin-top: 40px;
+    }
+    .seo-problems-cta p {
+      font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;
+      transition: color 0.2s;
+    }
+    .seo-problems-cta strong { color: var(--text); }
+    .seo-problems-counter {
+      display: inline-block;
+      font-size: 0.875rem; font-weight: 700;
+      background: var(--blue); color: white;
+      border-radius: 100px; padding: 2px 12px;
+      margin-left: 6px;
+      transition: opacity 0.2s;
+    }
+    .seo-problems-counter[data-count="0"] { opacity: 0; }
+    .seo-cta-wrapper {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+    }
+    .seo-cta-message {
+      font-size: 0.9375rem; color: var(--text-muted);
+      transition: color 0.3s;
+      min-height: 1.5em;
+    }
+    .seo-cta-message.active { color: var(--blue); font-weight: 600; }
+
+    /* 3 Piliers SEO */
+    .seo-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .seo-pillar {
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .seo-pillar--tech   { background: #EFF6FF; border: 1px solid #BFDBFE; }
+    .seo-pillar--content{ background: #F5F3FF; border: 1px solid #DDD6FE; }
+    .seo-pillar--auth   { background: #F0FDF4; border: 1px solid #BBF7D0; }
+
+    .seo-pillar-num {
+      font-size: 5rem; font-weight: 900; line-height: 1;
+      position: absolute; top: 16px; right: 20px;
+      opacity: 0.07; letter-spacing: -0.04em;
+      color: var(--text);
+    }
+    .seo-pillar-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .seo-pillar--tech .seo-pillar-icon   { background: #DBEAFE; color: var(--blue); }
+    .seo-pillar--content .seo-pillar-icon { background: #EDE9FE; color: #7C3AED; }
+    .seo-pillar--auth .seo-pillar-icon    { background: #DCFCE7; color: #059669; }
+
+    .seo-pillar-title {
+      font-size: 1.1875rem; font-weight: 800;
+      margin-bottom: 8px; color: var(--text);
+    }
+    .seo-pillar-desc {
+      font-size: 0.9375rem; color: var(--text-muted);
+      line-height: 1.6; margin-bottom: 20px;
+    }
+    .seo-pillar-list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .seo-pillar-list li {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 0.875rem; color: var(--text-muted); line-height: 1.4;
+    }
+    .seo-pillar-list li::before {
+      content: '';
+      width: 6px; height: 6px; border-radius: 50%;
+      flex-shrink: 0; margin-top: 5px;
+    }
+    .seo-pillar--tech .seo-pillar-list li::before   { background: var(--blue); }
+    .seo-pillar--content .seo-pillar-list li::before { background: #7C3AED; }
+    .seo-pillar--auth .seo-pillar-list li::before    { background: #059669; }
+
+    /* Processus horizontal timeline */
+    .seo-process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+      margin-top: 48px;
+    }
+    .seo-process-line {
+      position: absolute;
+      top: 40px; left: 12%; right: 12%;
+      height: 2px;
+      background: linear-gradient(to right, var(--blue) 0%, #93C5FD 50%, #BFDBFE 100%);
+      z-index: 0;
+    }
+    .seo-process-step {
+      padding: 0 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .seo-process-dot {
+      width: 80px; height: 80px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.625rem; font-weight: 900;
+      transition: transform var(--transition);
+    }
+    .seo-process-step:hover .seo-process-dot { transform: scale(1.08); }
+
+    .seo-process-step:nth-child(1) .seo-process-dot { background: var(--blue); color: white; box-shadow: 0 8px 24px rgba(37,99,235,0.35); }
+    .seo-process-step:nth-child(2) .seo-process-dot { background: white; border: 2px solid var(--blue); color: var(--blue); }
+    .seo-process-step:nth-child(3) .seo-process-dot { background: white; border: 2px solid var(--blue); color: var(--blue); }
+    .seo-process-step:nth-child(4) .seo-process-dot { background: white; border: 2px solid var(--blue); color: var(--blue); }
+
+    .seo-process-timing {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: var(--blue);
+      background: #EFF6FF; border-radius: 100px;
+      padding: 3px 10px; margin-bottom: 10px;
+    }
+    .seo-process-title {
+      font-size: 1.0625rem; font-weight: 800; color: var(--text);
+      margin-bottom: 8px;
+    }
+    .seo-process-desc {
+      font-size: 0.875rem; color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .seo-process-tags {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;
+      margin-top: 12px;
+    }
+    .seo-process-tag {
+      font-size: 0.75rem; background: var(--bg-subtle);
+      border: 1px solid var(--border); border-radius: 100px;
+      padding: 2px 10px; color: var(--text-muted);
+    }
+
+    /* Deliverables — full list */
+    .seo-deliverables-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .seo-deliverable {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 24px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .seo-deliverable:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-md);
+    }
+    .seo-deliverable-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: #EFF6FF; color: var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .seo-deliverable-title {
+      font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 4px;
+    }
+    .seo-deliverable-desc {
+      font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;
+    }
+    .seo-deliverable-tags {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px;
+    }
+    .seo-deliverable-tag {
+      font-size: 0.75rem; font-weight: 600; background: #EFF6FF;
+      color: var(--blue); border-radius: 100px; padding: 2px 10px;
+    }
+
+    /* FAQ */
+    .seo-faq {
+      margin-top: 48px;
+      display: flex; flex-direction: column; gap: 12px;
+      max-width: 760px; margin-left: auto; margin-right: auto;
+      margin-top: 48px;
+    }
+    .seo-faq-item {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--transition);
+    }
+    .seo-faq-item.open { border-color: var(--blue); }
+    .seo-faq-trigger {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; gap: 16px;
+      font-size: 1rem; font-weight: 600; color: var(--text);
+      cursor: pointer; text-align: left; background: none; border: none;
+      transition: color var(--transition);
+    }
+    .seo-faq-item.open .seo-faq-trigger { color: var(--blue); }
+    .seo-faq-icon {
+      width: 24px; height: 24px; flex-shrink: 0;
+      border-radius: 50%; border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform var(--transition), background var(--transition), border-color var(--transition);
+    }
+    .seo-faq-item.open .seo-faq-icon {
+      transform: rotate(45deg);
+      background: var(--blue); border-color: var(--blue); color: white;
+    }
+    .seo-faq-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .seo-faq-item.open .seo-faq-body { max-height: 300px; }
+    .seo-faq-body-inner {
+      padding: 0 24px 20px;
+      font-size: 0.9375rem; color: var(--text-muted); line-height: 1.7;
+    }
+
+    /* Comparison table */
+    .seo-compare {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      margin-top: 48px;
+    }
+    .seo-compare-head {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border);
+    }
+    .seo-compare-head > div {
+      padding: 14px 20px;
+      font-size: 0.875rem; font-weight: 700; color: var(--text);
+    }
+    .seo-compare-head .highlight { background: #EFF6FF; color: var(--blue); }
+    .seo-compare-row {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      border-bottom: 1px solid var(--border);
+    }
+    .seo-compare-row:last-child { border-bottom: none; }
+    .seo-compare-row > div {
+      padding: 14px 20px;
+      font-size: 0.875rem; color: var(--text-muted);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .seo-compare-row > div:first-child { color: var(--text); font-weight: 500; }
+    .seo-compare-row > div:nth-child(3) { background: #FAFBFF; }
+    .seo-icon-check { color: #059669; }
+    .seo-icon-cross { color: #DC2626; opacity: 0.5; }
+
+    /* Stats band specific */
+    .seo-stats-band {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .seo-stats-inner {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      divide-x: 1px solid var(--border);
+    }
+    .seo-stat-item {
+      padding: 36px 32px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .seo-stat-item:last-child { border-right: none; }
+    .seo-stat-number {
+      font-size: 2.75rem; font-weight: 900;
+      letter-spacing: -0.04em; color: var(--navy); line-height: 1;
+      margin-bottom: 6px;
+    }
+    .seo-stat-number span.blue { color: var(--blue); }
+    .seo-stat-label {
+      font-size: 0.9375rem; color: var(--text-muted); line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .seo-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .seo-ranking-card { display: none; }
+      .seo-problems-grid { grid-template-columns: repeat(2, 1fr); }
+      .seo-pillars-grid { grid-template-columns: 1fr; }
+      .seo-process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .seo-process-line { display: none; }
+      .seo-deliverables-grid { grid-template-columns: 1fr; }
+      .seo-stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .seo-stat-item:nth-child(2) { border-right: none; }
+      .seo-stat-item:nth-child(3) { border-top: 1px solid var(--border); }
+      .seo-compare { overflow-x: auto; }
+    }
+    @media (max-width: 600px) {
+      .seo-problems-grid { grid-template-columns: 1fr; }
+      .seo-process-grid { grid-template-columns: 1fr; }
+      .seo-stats-inner { grid-template-columns: 1fr; }
+      .seo-stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .seo-stat-item:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="seo.html" style="background:#EFF6FF; color:var(--blue);">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="seo.html">Référencement SEO</a>
+      <a href="geo.html">GEO — Référencement Génératif</a>
+      <a href="linkedin.html">Visibilité LinkedIn</a>
+      <a href="ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════ -->
+<section class="page-hero" aria-labelledby="seo-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="margin-bottom:32px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../index.html#services">Services</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Référencement SEO</span>
+    </nav>
+    <div class="seo-hero-grid">
+      <!-- Left: text -->
+      <div>
+        <div class="seo-hero-badge">
+          <span class="seo-hero-badge-dot"></span>
+          Expert SEO · Depuis 2019
+        </div>
+        <h1 id="seo-title" style="color:white; font-size:clamp(2rem,4vw,3rem); margin-bottom:20px; line-height:1.15;">
+          Attirez des clients qui<br>vous cherchent — sans payer<br>pour chaque clic
+        </h1>
+        <p style="font-size:1.125rem; color:rgba(255,255,255,0.7); line-height:1.75; margin-bottom:32px; max-width:520px;">
+          Audit, stratégie et exécution SEO pour les PME et ETI qui veulent une visibilité organique solide. Pas de promesses floues : une roadmap concrète, des résultats mesurables.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="../contact.html" class="btn-primary btn-lg">Demander mon audit gratuit</a>
+          <a href="#processus" class="btn-outline-white">Voir la méthode</a>
+        </div>
+        <p style="font-size:0.8125rem; color:rgba(255,255,255,0.4); margin-top:12px;">
+          Sans engagement · Réponse sous 48h · Analyse personnalisée
+        </p>
+        <div class="seo-hero-trust">
+          <div class="seo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            +43% de trafic organique en moyenne
+          </div>
+          <div class="seo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Résultats en 90 jours
+          </div>
+          <div class="seo-hero-trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            50+ audits livrés
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: ranking visual -->
+      <div class="seo-ranking-card">
+        <div class="seo-ranking-card-header">
+          <span class="seo-ranking-card-title">Positions Google · 90 jours</span>
+          <div class="seo-ranking-label">
+            <span class="before">Avant</span>
+            <span class="after">Après</span>
+          </div>
+        </div>
+
+        <div class="seo-ranking-row">
+          <span class="seo-ranking-keyword">agence seo paris</span>
+          <span class="seo-ranking-before">#14</span>
+          <span class="seo-ranking-arrow">→</span>
+          <span class="seo-ranking-after">#2</span>
+          <span class="seo-ranking-delta">↑12</span>
+        </div>
+        <div class="seo-ranking-row">
+          <span class="seo-ranking-keyword">audit seo technique</span>
+          <span class="seo-ranking-before">#22</span>
+          <span class="seo-ranking-arrow">→</span>
+          <span class="seo-ranking-after">#4</span>
+          <span class="seo-ranking-delta">↑18</span>
+        </div>
+        <div class="seo-ranking-row">
+          <span class="seo-ranking-keyword">stratégie seo PME</span>
+          <span class="seo-ranking-before">#31</span>
+          <span class="seo-ranking-arrow">→</span>
+          <span class="seo-ranking-after">#5</span>
+          <span class="seo-ranking-delta">↑26</span>
+        </div>
+        <div class="seo-ranking-row">
+          <span class="seo-ranking-keyword">consultant seo freelance</span>
+          <span class="seo-ranking-before">#8</span>
+          <span class="seo-ranking-arrow">→</span>
+          <span class="seo-ranking-after">#1</span>
+          <span class="seo-ranking-delta">↑7</span>
+        </div>
+
+        <!-- Mini traffic chart -->
+        <div class="seo-ranking-chart">
+          <div class="seo-ranking-chart-label">Trafic organique mensuel</div>
+          <svg viewBox="0 0 400 80" width="100%" aria-hidden="true">
+            <defs>
+              <linearGradient id="trafficGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- Grid lines -->
+            <line x1="0" y1="64" x2="400" y2="64" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="0" y1="40" x2="400" y2="40" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="0" y1="16" x2="400" y2="16" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <!-- Intervention line -->
+            <line x1="180" y1="0" x2="180" y2="80" stroke="rgba(74,222,128,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <!-- Label intervention -->
+            <text x="184" y="12" font-size="9" fill="rgba(74,222,128,0.7)" font-family="sans-serif" font-weight="600">Neopulsion</text>
+            <!-- Area fill -->
+            <path d="M0,60 C40,58 80,55 120,52 C160,50 170,48 180,46 C220,38 260,22 300,12 C340,4 370,2 400,1 L400,80 L0,80 Z" fill="url(#trafficGrad)"/>
+            <!-- Line -->
+            <path d="M0,60 C40,58 80,55 120,52 C160,50 170,48 180,46 C220,38 260,22 300,12 C340,4 370,2 400,1" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+            <!-- Dots -->
+            <circle cx="0" cy="60" r="3" fill="#2563EB"/>
+            <circle cx="180" cy="46" r="3" fill="#4ADE80"/>
+            <circle cx="400" cy="1" r="3" fill="#2563EB"/>
+          </svg>
+          <div style="display:flex; justify-content:space-between; margin-top:6px;">
+            <span style="font-size:0.75rem; color:rgba(255,255,255,0.3);">Mois 1</span>
+            <span style="font-size:0.75rem; color:rgba(74,222,128,0.7); font-weight:600;">+43% ↑</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAND ════════════════════════════════════════════════ -->
+<div class="seo-stats-band">
+  <div class="container">
+    <div class="seo-stats-inner">
+      <div class="seo-stat-item">
+        <div class="seo-stat-number"><span class="blue" data-counter data-target="43" data-suffix="%">43%</span></div>
+        <div class="seo-stat-label">de trafic organique<br>en plus en moyenne</div>
+      </div>
+      <div class="seo-stat-item">
+        <div class="seo-stat-number"><span data-counter data-target="90" data-suffix=" j">90 j</span></div>
+        <div class="seo-stat-label">pour mesurer les<br>premiers résultats</div>
+      </div>
+      <div class="seo-stat-item">
+        <div class="seo-stat-number"><span data-counter data-target="50" data-suffix="+">50+</span></div>
+        <div class="seo-stat-label">audits et missions<br>SEO livrés</div>
+      </div>
+      <div class="seo-stat-item">
+        <div class="seo-stat-number"><span style="font-size:2rem; font-weight:900; color:var(--navy);">Top 3</span></div>
+        <div class="seo-stat-label">pour 68% des mots-clés<br>ciblés dans nos missions</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ DIAGNOSTIC — PROBLÈMES ══════════════════════════════════ -->
+<section class="section" aria-labelledby="problemes-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Diagnostic rapide</p>
+      <h2 class="section-title" id="problemes-title">Votre site souffre peut-être de…</h2>
+      <p class="section-subtitle">Ces blocages sont la cause de 80% des stagnations de trafic. Combien reconnaissez-vous ?</p>
+    </div>
+
+    <div class="seo-problems-grid">
+      <div class="seo-problem-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Un trafic qui stagne depuis des mois</div>
+          <div class="seo-problem-sub">Malgré des contenus publiés régulièrement, les positions ne décollent pas.</div>
+        </div>
+      </div>
+      <div class="seo-problem-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Des pages lentes qui font fuir vos visiteurs</div>
+          <div class="seo-problem-sub">Google pénalise les sites avec de mauvais Core Web Vitals.</div>
+        </div>
+      </div>
+      <div class="seo-problem-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Aucune visibilité sur vos mots-clés cibles</div>
+          <div class="seo-problem-sub">Vos concurrents captent les recherches de vos clients potentiels.</div>
+        </div>
+      </div>
+      <div class="seo-problem-card reveal" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Un site avec des erreurs techniques invisibles</div>
+          <div class="seo-problem-sub">Pages orphelines, redirections chaînées, canonicals mal configurés…</div>
+        </div>
+      </div>
+      <div class="seo-problem-card reveal reveal-delay-1" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Un contenu qui ne convertit pas</div>
+          <div class="seo-problem-sub">Vous avez du trafic, mais les visiteurs repartent sans contacter.</div>
+        </div>
+      </div>
+      <div class="seo-problem-card reveal reveal-delay-2" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="seo-problem-check" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-problem-text">Une dépendance totale à la pub payante</div>
+          <div class="seo-problem-sub">Dès que vous coupez le budget Google Ads, votre trafic chute à zéro.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seo-problems-cta">
+      <p id="diag-message">Cochez les situations qui vous correspondent <span class="seo-problems-counter" data-count="0" id="diag-counter">0</span></p>
+      <div class="seo-cta-wrapper">
+        <p class="seo-cta-message" id="diag-cta-msg">Sélectionnez au moins 2 cases pour voir votre diagnostic.</p>
+        <a href="../contact.html" class="btn-primary" id="diag-cta-btn" style="opacity:0.45; pointer-events:none;">Obtenir mon audit gratuit →</a>
+      </div>
+      <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:10px;">Sans engagement · 100% personnalisé · Pas de template</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3 PILIERS SEO ═════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="piliers-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Notre approche</p>
+      <h2 class="section-title" id="piliers-title">Un SEO qui repose sur 3 piliers solides</h2>
+      <p class="section-subtitle">Ignorer l'un des trois revient à construire sur du sable. Nous travaillons sur l'ensemble du spectre.</p>
+    </div>
+
+    <div class="seo-pillars-grid">
+      <!-- Pilier 1: Technique -->
+      <div class="seo-pillar seo-pillar--tech reveal">
+        <div class="seo-pillar-num" aria-hidden="true">01</div>
+        <div class="seo-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="seo-pillar-title">SEO Technique</h3>
+        <p class="seo-pillar-desc">Les fondations invisibles que Google inspecte avant tout. Sans une base saine, le reste ne sert à rien.</p>
+        <ul class="seo-pillar-list">
+          <li>Crawlabilité & indexation maîtrisée</li>
+          <li>Core Web Vitals (LCP, CLS, INP)</li>
+          <li>Architecture d'URL & redirections</li>
+          <li>Données structurées (Schema.org)</li>
+          <li>Sitemap, robots.txt, canonicals</li>
+          <li>HTTPS, sécurité & mobile-first</li>
+        </ul>
+      </div>
+
+      <!-- Pilier 2: Contenu -->
+      <div class="seo-pillar seo-pillar--content reveal reveal-delay-1">
+        <div class="seo-pillar-num" aria-hidden="true">02</div>
+        <div class="seo-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3 class="seo-pillar-title">Contenu Sémantique</h3>
+        <p class="seo-pillar-desc">Le signal d'autorité que Google valorise le plus. Un contenu pertinent, structuré et exhaustif sur votre domaine.</p>
+        <ul class="seo-pillar-list">
+          <li>Recherche de mots-clés stratégiques</li>
+          <li>Cocons sémantiques & maillage interne</li>
+          <li>Optimisation des balises & métas</li>
+          <li>Détection de cannibalisation</li>
+          <li>Couverture thématique des intentions</li>
+          <li>E-E-A-T & signaux d'expertise</li>
+        </ul>
+      </div>
+
+      <!-- Pilier 3: Autorité -->
+      <div class="seo-pillar seo-pillar--auth reveal reveal-delay-2">
+        <div class="seo-pillar-num" aria-hidden="true">03</div>
+        <div class="seo-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3 class="seo-pillar-title">Autorité & Liens</h3>
+        <p class="seo-pillar-desc">La réputation de votre domaine aux yeux de Google. Des backlinks qualitatifs, pas une course au volume.</p>
+        <ul class="seo-pillar-list">
+          <li>Analyse du profil de liens entrants</li>
+          <li>Stratégie de link building qualitatif</li>
+          <li>Désaveu des liens toxiques</li>
+          <li>Mentions de marque & PR digitale</li>
+          <li>Partenariats & co-citations</li>
+          <li>Suivi de la réputation de domaine</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESSUS ═════════════════════════════════════════════════ -->
+<section class="section" id="processus" aria-labelledby="processus-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Méthodologie</p>
+      <h2 class="section-title" id="processus-title">4 étapes pour passer de l'audit aux résultats</h2>
+      <p class="section-subtitle">Un processus rodé sur 50+ missions, conçu pour aller vite sans sacrifier la qualité.</p>
+    </div>
+
+    <div class="seo-process-grid">
+      <div class="seo-process-line" aria-hidden="true"></div>
+
+      <div class="seo-process-step reveal">
+        <div class="seo-process-dot">1</div>
+        <div class="seo-process-timing">Semaines 1–2</div>
+        <h3 class="seo-process-title">Audit & Diagnostic</h3>
+        <p class="seo-process-desc">Crawl complet, analyse des signaux techniques, audit sémantique et benchmark concurrentiel. On cartographie tout ce qui freine votre visibilité.</p>
+        <div class="seo-process-tags">
+          <span class="seo-process-tag">Crawl Screaming Frog</span>
+          <span class="seo-process-tag">GSC</span>
+          <span class="seo-process-tag">Semrush</span>
+        </div>
+      </div>
+
+      <div class="seo-process-step reveal reveal-delay-1">
+        <div class="seo-process-dot">2</div>
+        <div class="seo-process-timing">Semaines 3–4</div>
+        <h3 class="seo-process-title">Stratégie & Roadmap</h3>
+        <p class="seo-process-desc">Priorisation des actions par impact/effort, plan de contenu sur 3 mois, architecture sémantique et axes de netlinking. Chaque recommandation est justifiée.</p>
+        <div class="seo-process-tags">
+          <span class="seo-process-tag">Roadmap 90j</span>
+          <span class="seo-process-tag">Plan contenu</span>
+          <span class="seo-process-tag">Quick wins</span>
+        </div>
+      </div>
+
+      <div class="seo-process-step reveal reveal-delay-2">
+        <div class="seo-process-dot">3</div>
+        <div class="seo-process-timing">Mois 2–3</div>
+        <h3 class="seo-process-title">Exécution & Optimisation</h3>
+        <p class="seo-process-desc">Mise en œuvre des corrections techniques, production ou optimisation du contenu, déploiement des données structurées. Avec vos équipes ou en autonomie.</p>
+        <div class="seo-process-tags">
+          <span class="seo-process-tag">Développement</span>
+          <span class="seo-process-tag">Rédaction SEO</span>
+          <span class="seo-process-tag">Schema.org</span>
+        </div>
+      </div>
+
+      <div class="seo-process-step reveal reveal-delay-2">
+        <div class="seo-process-dot">4</div>
+        <div class="seo-process-timing">Mensuel</div>
+        <h3 class="seo-process-title">Suivi & Reporting</h3>
+        <p class="seo-process-desc">Dashboard personnalisé, suivi des positions, analyse des variations, ajustements continus. Vous voyez exactement où en est votre investissement chaque mois.</p>
+        <div class="seo-process-tags">
+          <span class="seo-process-tag">Dashboard</span>
+          <span class="seo-process-tag">Positions</span>
+          <span class="seo-process-tag">Trafic</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIVRABLES ═════════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="livrables-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Ce que vous recevez</p>
+      <h2 class="section-title" id="livrables-title">Des livrables concrets, pas des slides</h2>
+      <p class="section-subtitle">Chaque mission inclut un périmètre complet, documenté et actionnable immédiatement.</p>
+    </div>
+
+    <div class="seo-deliverables-grid">
+      <div class="seo-deliverable reveal">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Rapport d'audit technique complet</div>
+          <div class="seo-deliverable-desc">Analyse de plus de 150 points de contrôle : crawlabilité, vitesse, indexation, erreurs HTTP, balises, redirections, hreflang, sécurité.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">PDF + Spreadsheet</span>
+            <span class="seo-deliverable-tag">Priorité A/B/C</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-deliverable reveal reveal-delay-1">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Analyse sémantique & maillage</div>
+          <div class="seo-deliverable-desc">Couverture thématique, détection des cannibalisations, plan de cocons sémantiques, optimisation du maillage interne pour maximiser la circulation du PageRank.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">Carte des cocons</span>
+            <span class="seo-deliverable-tag">Plan de maillage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-deliverable reveal">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Roadmap priorisée 90 jours</div>
+          <div class="seo-deliverable-desc">Plan d'action classé par impact/effort avec délais réalistes. Quick wins pour les 30 premiers jours, optimisations structurelles pour le trimestre.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">Notion / Spreadsheet</span>
+            <span class="seo-deliverable-tag">Quick wins J30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-deliverable reveal reveal-delay-1">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Dashboard de suivi personnalisé</div>
+          <div class="seo-deliverable-desc">Tableau de bord mis à jour mensuellement : positions des mots-clés cibles, trafic organique, Core Web Vitals, taux de clics et indicateurs de progression.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">Looker Studio</span>
+            <span class="seo-deliverable-tag">Reporting mensuel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-deliverable reveal">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Analyse concurrentielle approfondie</div>
+          <div class="seo-deliverable-desc">Benchmark de vos 3–5 concurrents principaux : mots-clés capturés, profil de liens, forces et failles à exploiter dans votre stratégie.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">Gap analysis</span>
+            <span class="seo-deliverable-tag">Opportunités</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-deliverable reveal reveal-delay-1">
+        <div class="seo-deliverable-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <div class="seo-deliverable-title">Plan de contenu sémantique</div>
+          <div class="seo-deliverable-desc">Liste des pages à créer, optimiser ou fusionner avec leurs intentions de recherche cibles, volumes et niveau de priorité. Prêt à briefer votre équipe éditoriale.</div>
+          <div class="seo-deliverable-tags">
+            <span class="seo-deliverable-tag">Briefs rédigés</span>
+            <span class="seo-deliverable-tag">Intentions ciblées</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POUR QUI ════════════════════════════════════════════════════ -->
+<section class="section" aria-labelledby="personas-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Pour qui</p>
+      <h2 class="section-title" id="personas-title">Fait pour ceux qui veulent des résultats, pas des rapports</h2>
+    </div>
+    <div class="grid-3">
+      <div class="pain-card reveal" style="--check-color: var(--blue);">
+        <div class="pain-card-icon" style="background:#EFF6FF; color:var(--blue);" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h3 class="pain-card-title">Directeur·rice Marketing</h3>
+        <p class="pain-card-text">Vous pilotez la stratégie digitale et devez justifier chaque euro investi. Vous avez besoin d'un canal organique prévisible pour réduire la dépendance aux canaux payants.</p>
+        <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+          <p style="font-size:0.8125rem; color:var(--blue); font-weight:600;">Ce que vous obtenez :</p>
+          <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:4px;">Un reporting clair avec ROI mesurable, présentable en COMEX.</p>
+        </div>
+      </div>
+
+      <div class="pain-card reveal reveal-delay-1">
+        <div class="pain-card-icon" style="background:#F0FDF4; color:#059669;" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </div>
+        <h3 class="pain-card-title">Dirigeant de PME / ETI</h3>
+        <p class="pain-card-text">Votre site existe depuis des années mais le trafic stagne. Vous sentez que quelque chose cloche mais personne ne vous a encore donné un diagnostic clair et un plan concret.</p>
+        <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+          <p style="font-size:0.8125rem; color:#059669; font-weight:600;">Ce que vous obtenez :</p>
+          <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:4px;">Un diagnostic sans jargon, un plan d'action clair, un suivi mensuel.</p>
+        </div>
+      </div>
+
+      <div class="pain-card reveal reveal-delay-2">
+        <div class="pain-card-icon" style="background:#F5F3FF; color:#7C3AED;" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        </div>
+        <h3 class="pain-card-title">Chef de projet SEO interne</h3>
+        <p class="pain-card-text">Vous avez les bases mais manquez de temps ou de ressources pour tout gérer. Vous avez besoin d'un regard expert externe pour prioriser et valider vos décisions.</p>
+        <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+          <p style="font-size:0.8125rem; color:#7C3AED; font-weight:600;">Ce que vous obtenez :</p>
+          <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:4px;">Un partenaire expert qui renforce et accélère votre équipe en place.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POURQUOI NEOPULSION ════════════════════════════════════════ -->
+<section class="section" aria-labelledby="diff-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Pourquoi Neopulsion</p>
+      <h2 class="section-title" id="diff-title">Ce qui nous différencie des agences classiques</h2>
+      <p class="section-subtitle">La plupart des agences SEO vous vendent un abonnement et délèguent à des juniors. Voici ce que vous obtenez avec Neopulsion.</p>
+    </div>
+
+    <div class="seo-compare reveal">
+      <div class="seo-compare-head">
+        <div>Critère</div>
+        <div>Agence classique</div>
+        <div class="highlight">Neopulsion</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Interlocuteur principal</div>
+        <div><span class="seo-icon-cross">✕</span> Account manager généraliste</div>
+        <div><span class="seo-icon-check">✓</span> Youssef Jlidi directement</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Rapport livré</div>
+        <div><span class="seo-icon-cross">✕</span> Template générique, 80 slides</div>
+        <div><span class="seo-icon-check">✓</span> Roadmap actionnables, priorisées</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Stratégie</div>
+        <div><span class="seo-icon-cross">✕</span> Copier-coller secteur</div>
+        <div><span class="seo-icon-check">✓</span> Construite sur vos données réelles</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Résultats visibles</div>
+        <div><span class="seo-icon-cross">✕</span> "6 à 12 mois minimum"</div>
+        <div><span class="seo-icon-check">✓</span> Quick wins dès les 30 premiers jours</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Transparence tarifaire</div>
+        <div><span class="seo-icon-cross">✕</span> Forfaits opaques, upsells cachés</div>
+        <div><span class="seo-icon-check">✓</span> Devis clair, périmètre défini</div>
+      </div>
+      <div class="seo-compare-row">
+        <div>Vision IA & GEO</div>
+        <div><span class="seo-icon-cross">✕</span> SEO Google uniquement</div>
+        <div><span class="seo-icon-check">✓</span> SEO + visibilité dans les IA génératives</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════════ -->
+<section class="section section--subtle" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Questions fréquentes</p>
+      <h2 class="section-title" id="faq-title">Tout ce que vous voulez savoir avant de démarrer</h2>
+    </div>
+
+    <div class="seo-faq">
+      <div class="seo-faq-item">
+        <button class="seo-faq-trigger accordion-trigger" aria-expanded="false">
+          En combien de temps vais-je voir des résultats ?
+          <div class="seo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="seo-faq-body">
+          <div class="seo-faq-body-inner">
+            Les quick wins techniques (corrections d'erreurs, améliorations de vitesse) peuvent produire des effets visibles dès les premières semaines. Les gains de positions sur des mots-clés concurrentiels nécessitent généralement 2 à 4 mois. Le SEO est un investissement moyen/long terme : les résultats sont durables, contrairement à la pub payante.
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-faq-item">
+        <button class="seo-faq-trigger accordion-trigger" aria-expanded="false">
+          Quelle est la différence avec une agence SEO classique ?
+          <div class="seo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="seo-faq-body">
+          <div class="seo-faq-body-inner">
+            Avec Neopulsion, vous travaillez directement avec Youssef Jlidi — pas avec un junior qui gère 40 clients en parallèle. Chaque mission est personnalisée, les livrables sont actionnables et vous avez un accès direct à l'expert à tout moment. Pas de rapport générique, pas de sur-promesse.
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-faq-item">
+        <button class="seo-faq-trigger accordion-trigger" aria-expanded="false">
+          Quel est le budget minimum pour une mission SEO ?
+          <div class="seo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="seo-faq-body">
+          <div class="seo-faq-body-inner">
+            Un audit SEO complet est proposé à partir de 2 000 €. L'accompagnement mensuel (suivi, exécution, reporting) commence à 1 500 €/mois selon le périmètre. Chaque devis est personnalisé selon la taille et la complexité de votre site. L'audit gratuit préalable permet d'affiner le périmètre.
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-faq-item">
+        <button class="seo-faq-trigger accordion-trigger" aria-expanded="false">
+          Avez-vous besoin d'accès à notre site / CMS ?
+          <div class="seo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="seo-faq-body">
+          <div class="seo-faq-body-inner">
+            Pour l'audit, nous avons besoin d'un accès en lecture à Google Search Console et Google Analytics. L'accès au CMS (WordPress, Shopify, etc.) est nécessaire uniquement pour la phase d'exécution des recommandations. Tout accès est géré de façon sécurisée et révocable.
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-faq-item">
+        <button class="seo-faq-trigger accordion-trigger" aria-expanded="false">
+          Pouvez-vous travailler avec notre équipe en place ?
+          <div class="seo-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="seo-faq-body">
+          <div class="seo-faq-body-inner">
+            Absolument. Neopulsion peut intervenir en mode conseil pur (vous livrez les recommandations, vos équipes exécutent) ou en mode hybride (vous co-exécutez avec nous). Nous nous adaptons à votre organisation et formons votre équipe si nécessaire.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══════════════════════════════════════════════════ -->
+<section class="section section--dark cta-banner" aria-labelledby="seo-cta">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <p class="kicker" style="color:#93C5FD;">Prêt à passer à l'action ?</p>
+      <h2 id="seo-cta">Un premier audit gratuit<br>pour savoir où vous en êtes</h2>
+      <p>Analyse rapide de votre site, identification des 3 blocages prioritaires, et une roadmap d'action — sans engagement. Réponse sous 48h.</p>
+      <div class="cta-banner-actions">
+        <a href="../contact.html" class="btn-primary btn-lg">Demander mon audit gratuit</a>
+        <a href="geo.html" class="btn-outline-white">Découvrir le GEO →</a>
+      </div>
+      <p style="margin-top:16px; font-size:0.8125rem; color:rgba(255,255,255,0.4);">
+        Sans engagement · Pas de contrat long terme · Réponse sous 48h
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="seo.html">Référencement SEO</a></li>
+          <li><a href="geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // ── DIAGNOSTIC CHECKBOXES ───────────────────────────────────
+  var diagCards   = document.querySelectorAll('.seo-problem-card');
+  var diagCounter = document.getElementById('diag-counter');
+  var diagCtaBtn  = document.getElementById('diag-cta-btn');
+  var diagCtaMsg  = document.getElementById('diag-cta-msg');
+
+  var messages = [
+    'Sélectionnez au moins 2 cases pour voir votre diagnostic.',
+    'Encore une case — vous approchez du seuil critique.',
+    'Vous avez 2 problèmes identifiés. Un audit peut vous débloquer.',
+    'Votre site a 3 freins actifs. L\'audit va tous les cartographier.',
+    'Situation sérieuse — 4 blocages à corriger en priorité.',
+    'Votre SEO est en danger. Il faut agir maintenant.',
+    '6/6 — Audit urgent recommandé. Contactez-nous aujourd\'hui.',
+  ];
+
+  function updateDiagnostic() {
+    var count = document.querySelectorAll('.seo-problem-card.checked').length;
+    diagCounter.textContent = count;
+    diagCounter.setAttribute('data-count', count);
+
+    diagCtaMsg.textContent = messages[Math.min(count, messages.length - 1)];
+
+    if (count >= 2) {
+      diagCtaMsg.classList.add('active');
+      diagCtaBtn.style.opacity = '1';
+      diagCtaBtn.style.pointerEvents = '';
+    } else {
+      diagCtaMsg.classList.remove('active');
+      diagCtaBtn.style.opacity = '0.45';
+      diagCtaBtn.style.pointerEvents = 'none';
+    }
+  }
+
+  diagCards.forEach(function(card) {
+    function toggle() {
+      var checked = card.classList.toggle('checked');
+      card.setAttribute('aria-checked', checked);
+      updateDiagnostic();
+    }
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function(e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // SEO FAQ accordion
+  document.querySelectorAll('.seo-faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = this.closest('.seo-faq-item');
+      var isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.seo-faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.seo-faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open this one if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

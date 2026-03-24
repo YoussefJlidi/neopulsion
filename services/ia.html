@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accompagnement IA — Agents & Workflows IA pour votre contenu | Neopulsion</title>
+  <meta name="description" content="Déployez des agents IA dans vos workflows : production de contenu, audits automatisés, veille sémantique. Coaching équipes et mise en place d'outils. Sur devis. Neopulsion — Youssef Jlidi.">
+  <link rel="canonical" href="https://neopulsion.fr/services/ia.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ========================
+       IA Page — Color Vars
+    ======================== */
+    :root {
+      --ia: #059669;
+      --ia-dark: #047857;
+      --ia-light: #ECFDF5;
+      --ia-glow: rgba(5,150,105,0.15);
+    }
+
+    /* ========================
+       HERO
+    ======================== */
+    .ia-hero {
+      background: linear-gradient(135deg, #0A1628 0%, #082318 55%, #0C3220 100%);
+      color: white;
+      padding: 120px 0 80px;
+    }
+    .ia-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .ia-hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(5,150,105,0.2);
+      border: 1px solid rgba(5,150,105,0.4);
+      color: #6EE7B7;
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .ia-hero h1 {
+      font-size: clamp(2rem, 3.8vw, 2.9rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: white;
+      margin: 0 0 20px;
+    }
+    .ia-hero h1 em {
+      font-style: normal;
+      color: #6EE7B7;
+    }
+    .ia-hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .ia-hero-stat-row {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 36px;
+    }
+    .ia-hero-stat { text-align: center; }
+    .ia-hero-stat-val {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #6EE7B7;
+      line-height: 1;
+    }
+    .ia-hero-stat-label {
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+    .ia-hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-ia-primary {
+      background: var(--ia);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s;
+    }
+    .btn-ia-primary:hover { background: var(--ia-dark); color: white; }
+    .btn-ia-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.85);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+    }
+    .btn-ia-ghost:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); color: white; }
+
+    /* AI Workflow card */
+    .ia-wf-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ia-wf-card::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, rgba(5,150,105,0.18), transparent 65%);
+      pointer-events: none;
+    }
+    .ia-wf-topbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .ia-wf-dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+    }
+    .ia-wf-bar-title {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.4);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      margin-left: 4px;
+    }
+    .ia-wf-badge {
+      margin-left: auto;
+      font-size: 0.65rem;
+      background: rgba(5,150,105,0.2);
+      color: #6EE7B7;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+    .ia-wf-input-box {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 11px 14px;
+      margin-bottom: 14px;
+    }
+    .ia-wf-input-label {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 5px;
+    }
+    .ia-wf-input-text {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.82);
+    }
+    .ia-wf-steps { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .ia-wf-step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 13px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+    .ia-wf-step.step-done {
+      background: rgba(5,150,105,0.08);
+      border-color: rgba(5,150,105,0.15);
+    }
+    .ia-wf-step.step-running {
+      background: rgba(5,150,105,0.15);
+      border-color: rgba(5,150,105,0.35);
+    }
+    .ia-wf-step.step-pending {
+      background: rgba(255,255,255,0.03);
+      border-color: rgba(255,255,255,0.06);
+    }
+    .ia-wf-step-icon {
+      width: 26px; height: 26px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 12px;
+    }
+    .step-done .ia-wf-step-icon { background: rgba(5,150,105,0.25); }
+    .step-running .ia-wf-step-icon { background: rgba(5,150,105,0.35); }
+    .step-pending .ia-wf-step-icon { background: rgba(255,255,255,0.07); }
+    .ia-wf-step-body { flex: 1; }
+    .ia-wf-step-name {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+    }
+    .ia-wf-step-sub {
+      font-size: 0.67rem;
+      color: rgba(255,255,255,0.38);
+    }
+    .ia-wf-step-tag {
+      font-size: 0.62rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 100px;
+    }
+    .step-done .ia-wf-step-tag { background: rgba(5,150,105,0.2); color: rgba(110,231,183,0.8); }
+    .step-running .ia-wf-step-tag { background: rgba(5,150,105,0.35); color: #6EE7B7; }
+    .step-pending .ia-wf-step-tag { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); }
+    .ia-wf-output {
+      background: rgba(5,150,105,0.12);
+      border: 1px solid rgba(5,150,105,0.28);
+      border-radius: 8px;
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ia-wf-output-label { font-size: 0.75rem; color: #6EE7B7; font-weight: 600; }
+    .ia-wf-output-metrics { display: flex; gap: 16px; }
+    .ia-wf-metric { text-align: center; }
+    .ia-wf-metric-val { font-size: 1.05rem; font-weight: 800; color: white; line-height: 1; }
+    .ia-wf-metric-label { font-size: 0.6rem; color: rgba(255,255,255,0.45); }
+    .ia-wf-footer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 6px;
+    }
+    .ia-wf-footer-text { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+    .ia-wf-footer-text strong { color: #6EE7B7; }
+
+    /* ========================
+       STATS BAND
+    ======================== */
+    .ia-stats-band {
+      background: #0F172A;
+      padding: 52px 0;
+    }
+    .ia-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .ia-stat {
+      text-align: center;
+      padding: 0 24px;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .ia-stat:last-child { border-right: none; }
+    .ia-stat-val {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #6EE7B7;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .ia-stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.4;
+    }
+    .ia-stat-source {
+      font-size: 0.62rem;
+      color: rgba(255,255,255,0.22);
+      margin-top: 5px;
+    }
+
+    /* ========================
+       DIAGNOSTIC
+    ======================== */
+    .ia-diag-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+      margin-bottom: 28px;
+    }
+    .ia-diag-card {
+      border: 1.5px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 18px;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+      background: white;
+      user-select: none;
+    }
+    .ia-diag-card:hover { border-color: var(--ia); background: #F0FDF7; }
+    .ia-diag-card.checked {
+      border-color: var(--ia);
+      background: var(--ia-light);
+      box-shadow: 0 0 0 3px rgba(5,150,105,0.1);
+    }
+    .ia-diag-check {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      border: 2px solid #D1D5DB;
+      display: flex; align-items: center; justify-content: center;
+      position: absolute; top: 16px; right: 16px;
+      transition: all 0.2s;
+    }
+    .ia-diag-card.checked .ia-diag-check { background: var(--ia); border-color: var(--ia); }
+    .ia-diag-check svg { display: none; }
+    .ia-diag-card.checked .ia-diag-check svg { display: block; }
+    .ia-diag-icon {
+      width: 38px; height: 38px;
+      border-radius: 8px;
+      background: #F3F4F6;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 10px;
+      transition: background 0.2s;
+      color: #6B7280;
+    }
+    .ia-diag-card.checked .ia-diag-icon { background: rgba(5,150,105,0.15); color: var(--ia); }
+    .ia-diag-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 4px;
+      padding-right: 26px;
+      line-height: 1.3;
+    }
+    .ia-diag-text { font-size: 0.77rem; color: #6B7280; line-height: 1.5; }
+    .ia-diag-feedback {
+      background: #F9FAFB;
+      border: 1.5px solid #E5E7EB;
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+    .ia-diag-counter {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--ia);
+      min-width: 28px;
+      line-height: 1;
+    }
+    .ia-diag-msg { font-size: 0.87rem; color: #374151; line-height: 1.5; }
+    .ia-diag-cta-btn {
+      opacity: 0.35;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ia);
+      color: white;
+      padding: 13px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .ia-micro-copy { font-size: 0.73rem; color: #9CA3AF; margin-top: 10px; }
+
+    /* ========================
+       PILIERS
+    ======================== */
+    .ia-piliers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .ia-pilier {
+      border-radius: 14px;
+      padding: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ia-pilier--agents {
+      background: linear-gradient(135deg, #ECFDF5, #D1FAE5);
+      border: 1.5px solid rgba(5,150,105,0.22);
+    }
+    .ia-pilier--workflows {
+      background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+      border: 1.5px solid rgba(59,130,246,0.22);
+    }
+    .ia-pilier--formation {
+      background: linear-gradient(135deg, #FFF7ED, #FFEDD5);
+      border: 1.5px solid rgba(234,88,12,0.22);
+    }
+    .ia-pilier-num {
+      font-size: 3.5rem;
+      font-weight: 900;
+      opacity: 0.08;
+      position: absolute;
+      top: 8px; right: 14px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .ia-pilier--agents .ia-pilier-num { color: #059669; }
+    .ia-pilier--workflows .ia-pilier-num { color: #3B82F6; }
+    .ia-pilier--formation .ia-pilier-num { color: #EA580C; }
+    .ia-pilier-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .ia-pilier--agents .ia-pilier-icon { background: rgba(5,150,105,0.15); color: #059669; }
+    .ia-pilier--workflows .ia-pilier-icon { background: rgba(59,130,246,0.15); color: #3B82F6; }
+    .ia-pilier--formation .ia-pilier-icon { background: rgba(234,88,12,0.15); color: #EA580C; }
+    .ia-pilier-title { font-size: 1.05rem; font-weight: 800; color: #111827; margin-bottom: 8px; }
+    .ia-pilier-desc { font-size: 0.83rem; color: #4B5563; line-height: 1.6; margin-bottom: 14px; }
+    .ia-pilier-list { list-style: none; padding: 0; margin: 0; }
+    .ia-pilier-list li {
+      font-size: 0.79rem;
+      color: #374151;
+      padding: 4px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
+    .ia-pilier-list li::before { content: '→'; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .ia-pilier--agents .ia-pilier-list li::before { color: #059669; }
+    .ia-pilier--workflows .ia-pilier-list li::before { color: #3B82F6; }
+    .ia-pilier--formation .ia-pilier-list li::before { color: #EA580C; }
+
+    /* ========================
+       PROCESS
+    ======================== */
+    .ia-process-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+      margin-top: 52px;
+    }
+    .ia-process-wrap::before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: calc(12.5%);
+      right: calc(12.5%);
+      height: 2px;
+      background: linear-gradient(90deg, #059669, #6EE7B7);
+      z-index: 0;
+    }
+    .ia-process-step { text-align: center; padding: 0 14px; position: relative; z-index: 1; }
+    .ia-process-num {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--ia);
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      box-shadow: 0 0 0 4px white, 0 0 0 6px rgba(5,150,105,0.18);
+    }
+    .ia-process-title { font-size: 0.93rem; font-weight: 700; color: #111827; margin-bottom: 8px; }
+    .ia-process-desc { font-size: 0.77rem; color: #6B7280; line-height: 1.55; }
+    .ia-process-tag {
+      display: inline-block;
+      background: var(--ia-light);
+      color: var(--ia);
+      font-size: 0.67rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-top: 10px;
+    }
+
+    /* ========================
+       DELIVERABLES
+    ======================== */
+    .ia-deliv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .ia-deliv {
+      background: white;
+      border: 1.5px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .ia-deliv:hover { border-color: var(--ia); box-shadow: 0 4px 16px rgba(5,150,105,0.08); }
+    .ia-deliv-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--ia-light);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--ia);
+    }
+    .ia-deliv-title { font-size: 0.93rem; font-weight: 700; color: #111827; margin-bottom: 5px; }
+    .ia-deliv-desc { font-size: 0.8rem; color: #6B7280; line-height: 1.55; }
+
+    /* ========================
+       COMPARE TABLE
+    ======================== */
+    .ia-compare {
+      border: 1.5px solid #E5E7EB;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .ia-compare-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      background: #F9FAFB;
+      border-bottom: 1.5px solid #E5E7EB;
+    }
+    .ia-compare-header > div { padding: 14px 20px; font-size: 0.8rem; font-weight: 700; color: #374151; }
+    .ia-compare-header > div:nth-child(2) {
+      text-align: center;
+      background: var(--ia-light);
+      color: var(--ia);
+      border-left: 1.5px solid rgba(5,150,105,0.2);
+    }
+    .ia-compare-header > div:nth-child(3) { text-align: center; border-left: 1.5px solid #E5E7EB; }
+    .ia-compare-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .ia-compare-row:last-child { border-bottom: none; }
+    .ia-compare-row > div { padding: 13px 20px; font-size: 0.82rem; color: #4B5563; }
+    .ia-compare-row > div:nth-child(2) {
+      text-align: center;
+      background: rgba(5,150,105,0.03);
+      border-left: 1.5px solid rgba(5,150,105,0.1);
+      font-weight: 600;
+    }
+    .ia-compare-row > div:nth-child(3) { text-align: center; border-left: 1.5px solid #E5E7EB; }
+    .ic { color: #059669; font-weight: 900; font-size: 1rem; }
+    .ix { color: #EF4444; font-weight: 700; }
+    .ip { color: #F59E0B; font-weight: 700; }
+
+    /* ========================
+       FAQ
+    ======================== */
+    .ia-faq { max-width: 800px; margin: 0 auto; }
+    .ia-faq-item {
+      border: 1.5px solid #E5E7EB;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .ia-faq-question {
+      width: 100%;
+      background: white;
+      border: none;
+      padding: 18px 20px;
+      text-align: left;
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: #111827;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .ia-faq-question:hover { background: #FAFAFA; }
+    .ia-faq-chevron { flex-shrink: 0; transition: transform 0.25s; color: #9CA3AF; }
+    .ia-faq-item.open .ia-faq-chevron { transform: rotate(180deg); }
+    .ia-faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .ia-faq-item.open .ia-faq-answer { max-height: 350px; }
+    .ia-faq-answer-inner { padding: 0 20px 18px; font-size: 0.87rem; color: #4B5563; line-height: 1.65; }
+
+    /* ========================
+       CTA BANNER
+    ======================== */
+    .ia-cta-section {
+      background: linear-gradient(135deg, #051A10 0%, #082515 50%, #0A3020 100%);
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+    }
+    .ia-cta-section h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: white;
+      margin-bottom: 14px;
+    }
+    .ia-cta-section p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.62);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.65;
+    }
+    .ia-cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ========================
+       RESPONSIVE
+    ======================== */
+    @media (max-width: 900px) {
+      .ia-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ia-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+      .ia-stat { border-right: none; }
+      .ia-diag-grid { grid-template-columns: repeat(2, 1fr); }
+      .ia-piliers-grid { grid-template-columns: 1fr; }
+      .ia-process-wrap { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+      .ia-process-wrap::before { display: none; }
+      .ia-deliv-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .ia-hero { padding: 96px 0 56px; }
+      .ia-diag-grid { grid-template-columns: 1fr; }
+      .ia-process-wrap { grid-template-columns: 1fr; }
+      .ia-hero-stat-row { gap: 18px; }
+      .ia-compare-header, .ia-compare-row { grid-template-columns: 1.5fr 1fr 1fr; }
+      .ia-compare-header > div, .ia-compare-row > div { padding: 11px 12px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav-transparent" id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="ia.html" style="background:#ECFDF5; color:#059669;">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="seo.html">Référencement SEO</a>
+      <a href="geo.html">GEO — Référencement Génératif</a>
+      <a href="linkedin.html">Visibilité LinkedIn</a>
+      <a href="ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ===========================
+     HERO
+=========================== -->
+<section class="ia-hero" aria-labelledby="ia-hero-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="margin-bottom:32px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true" style="color:rgba(255,255,255,0.3);">/</span>
+      <a href="../index.html#services" style="color:rgba(255,255,255,0.5);">Services</a>
+      <span class="breadcrumb-sep" aria-hidden="true" style="color:rgba(255,255,255,0.3);">/</span>
+      <span aria-current="page" style="color:rgba(255,255,255,0.7);">Accompagnement IA</span>
+    </nav>
+    <div class="ia-hero-grid">
+      <!-- Left: Text -->
+      <div>
+        <p class="ia-hero-kicker">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Accompagnement IA
+        </p>
+        <h1 id="ia-hero-title">Vos équipes produisent 3× plus.<br><em>Sans recruter.</em></h1>
+        <p class="ia-hero-subtitle">Les entreprises qui déploient l'IA de façon structurée gagnent 40% de productivité. Celles qui improvisent avec ChatGPT perdent du temps. On fait partie de la première catégorie — et on vous y emmène.</p>
+        <div class="ia-hero-stat-row">
+          <div class="ia-hero-stat">
+            <div class="ia-hero-stat-val">+40%</div>
+            <div class="ia-hero-stat-label">Gain de<br>productivité</div>
+          </div>
+          <div class="ia-hero-stat">
+            <div class="ia-hero-stat-val">90j</div>
+            <div class="ia-hero-stat-label">Premier ROI<br>mesurable</div>
+          </div>
+          <div class="ia-hero-stat">
+            <div class="ia-hero-stat-val">3×</div>
+            <div class="ia-hero-stat-label">Volume de<br>contenu produit</div>
+          </div>
+          <div class="ia-hero-stat">
+            <div class="ia-hero-stat-val">68%</div>
+            <div class="ia-hero-stat-label">Équipes sans<br>formation IA</div>
+          </div>
+        </div>
+        <div class="ia-hero-btns">
+          <a href="../contact.html" class="btn-ia-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Discuter de mon projet IA
+          </a>
+          <a href="#diagnostic" class="btn-ia-ghost">Faire mon diagnostic</a>
+        </div>
+      </div>
+      <!-- Right: AI Workflow card -->
+      <div>
+        <div class="ia-wf-card">
+          <div class="ia-wf-topbar">
+            <div class="ia-wf-dot" style="background:#EF4444;"></div>
+            <div class="ia-wf-dot" style="background:#F59E0B;"></div>
+            <div class="ia-wf-dot" style="background:#22C55E;"></div>
+            <span class="ia-wf-bar-title">agent-contenu.neopulsion</span>
+            <span class="ia-wf-badge">● En cours</span>
+          </div>
+          <div class="ia-wf-input-box">
+            <div class="ia-wf-input-label">Tâche déclenchée</div>
+            <div class="ia-wf-input-text">Rédiger 5 articles SEO sur [Logiciel CRM] — optimisés Top 3, ton expert, 1 200 mots/article</div>
+          </div>
+          <div class="ia-wf-steps">
+            <div class="ia-wf-step step-done">
+              <div class="ia-wf-step-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ia-wf-step-body">
+                <div class="ia-wf-step-name">Analyse sémantique</div>
+                <div class="ia-wf-step-sub">Clusters, intention, SERP, concurrents</div>
+              </div>
+              <span class="ia-wf-step-tag">Terminé</span>
+            </div>
+            <div class="ia-wf-step step-done">
+              <div class="ia-wf-step-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ia-wf-step-body">
+                <div class="ia-wf-step-name">Structuration & briefs</div>
+                <div class="ia-wf-step-sub">Plan détaillé, H2/H3, entités liées</div>
+              </div>
+              <span class="ia-wf-step-tag">Terminé</span>
+            </div>
+            <div class="ia-wf-step step-running">
+              <div class="ia-wf-step-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="ia-wf-step-body">
+                <div class="ia-wf-step-name">Génération du contenu</div>
+                <div class="ia-wf-step-sub">3/5 articles — ton de marque appliqué</div>
+              </div>
+              <span class="ia-wf-step-tag">En cours…</span>
+            </div>
+            <div class="ia-wf-step step-pending">
+              <div class="ia-wf-step-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              </div>
+              <div class="ia-wf-step-body">
+                <div class="ia-wf-step-name">Optimisation SEO/GEO</div>
+                <div class="ia-wf-step-sub">Score, maillage, balises, FAQ schema</div>
+              </div>
+              <span class="ia-wf-step-tag">En attente</span>
+            </div>
+          </div>
+          <div class="ia-wf-output">
+            <div class="ia-wf-output-label">✓ Livraison prévue</div>
+            <div class="ia-wf-output-metrics">
+              <div class="ia-wf-metric">
+                <div class="ia-wf-metric-val">5</div>
+                <div class="ia-wf-metric-label">articles</div>
+              </div>
+              <div class="ia-wf-metric">
+                <div class="ia-wf-metric-val">2h</div>
+                <div class="ia-wf-metric-label">temps total</div>
+              </div>
+              <div class="ia-wf-metric">
+                <div class="ia-wf-metric-val">6 000</div>
+                <div class="ia-wf-metric-label">mots</div>
+              </div>
+            </div>
+          </div>
+          <div class="ia-wf-footer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span class="ia-wf-footer-text">Équivalent <strong>25h de travail manuel</strong> économisées sur cette seule tâche</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     STATS BAND
+=========================== -->
+<section class="ia-stats-band" aria-label="Chiffres clés IA">
+  <div class="container">
+    <div class="ia-stats-grid">
+      <div class="ia-stat reveal">
+        <div class="ia-stat-val" data-counter data-target="43">0</div>
+        <div class="ia-stat-label">% de gain de productivité<br>avec accompagnement IA</div>
+        <div class="ia-stat-source">Stanford HAI / Harvard Business School</div>
+      </div>
+      <div class="ia-stat reveal reveal-delay-1">
+        <div class="ia-stat-val">3,7×</div>
+        <div class="ia-stat-label">de ROI pour chaque euro<br>investi dans l'IA</div>
+        <div class="ia-stat-source">BCG AI Value Creation, 2025</div>
+      </div>
+      <div class="ia-stat reveal reveal-delay-2">
+        <div class="ia-stat-val">55%</div>
+        <div class="ia-stat-label">des PME françaises utilisent<br>déjà l'IA générative</div>
+        <div class="ia-stat-source">Bpifrance, fin 2025</div>
+      </div>
+      <div class="ia-stat reveal reveal-delay-3">
+        <div class="ia-stat-val">6%</div>
+        <div class="ia-stat-label">seulement capturent une valeur<br>substantielle de l'IA</div>
+        <div class="ia-stat-source">McKinsey State of AI, 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     DIAGNOSTIC
+=========================== -->
+<section class="section" id="diagnostic" aria-labelledby="ia-diag-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Diagnostic IA</p>
+      <h2 class="section-title" id="ia-diag-title">Votre organisation est-elle<br>prête à passer à l'échelle avec l'IA ?</h2>
+      <p class="section-subtitle">Cochez les situations qui s'appliquent à votre équipe. Plus vous en cochez, plus le potentiel de gains est important.</p>
+    </div>
+    <div class="ia-diag-grid" id="ia-diag-grid" role="group" aria-label="Problématiques IA à identifier">
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="ia-diag-title">Votre équipe perd des heures sur des tâches répétitives</div>
+        <div class="ia-diag-text">Briefs, rapports, audits SEO, comptes-rendus — des tâches à faible valeur qui mobilisent vos meilleurs talents.</div>
+      </div>
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="ia-diag-title">Vous avez essayé ChatGPT — sans résultats cohérents</div>
+        <div class="ia-diag-text">Quelques expériences isolées, des résultats inégaux. Pas de méthode, pas d'intégration dans les vrais workflows.</div>
+      </div>
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="ia-diag-title">Vos concurrents publient plus, sans sembler avoir plus d'équipes</div>
+        <div class="ia-diag-text">Certains acteurs du secteur ont industrialisé leur production de contenu. Vous sentez l'écart se creuser.</div>
+      </div>
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="ia-diag-title">Vous avez des outils IA épars, sans stratégie cohérente</div>
+        <div class="ia-diag-text">Claude ici, Jasper là, n8n pas encore configuré. Des silos, pas un système.</div>
+      </div>
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="ia-diag-title">Vos contenus IA manquent de personnalité et de ton de marque</div>
+        <div class="ia-diag-text">Les textes générés sont génériques, impersonnels. Ils ne ressemblent pas à votre expertise — et ça se sent.</div>
+      </div>
+
+      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="ia-diag-check" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ia-diag-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </div>
+        <div class="ia-diag-title">Vous ne savez pas par où commencer pour maximiser le ROI</div>
+        <div class="ia-diag-text">Automatiser quoi en premier ? Quels outils ? Quelle stack IA ? L'absence de cap coûte plus cher que l'inaction.</div>
+      </div>
+
+    </div>
+
+    <div class="ia-diag-feedback" id="ia-diag-feedback">
+      <div class="ia-diag-counter" id="ia-diag-counter">0</div>
+      <div class="ia-diag-msg" id="ia-diag-msg">Cochez les situations qui vous correspondent pour découvrir votre diagnostic IA.</div>
+    </div>
+    <div>
+      <a href="../contact.html" class="ia-diag-cta-btn" id="ia-diag-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Obtenir mon plan IA personnalisé
+      </a>
+      <p class="ia-micro-copy">Sans engagement · Réponse sous 48h · Analyse sur mesure</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     3 PILIERS IA
+=========================== -->
+<section class="section section--subtle" id="approche" aria-labelledby="ia-piliers-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Notre approche</p>
+      <h2 class="section-title" id="ia-piliers-title">3 piliers pour une IA qui crée<br>de la valeur durable</h2>
+      <p class="section-subtitle">L'IA bien déployée n'est pas un outil — c'est une infrastructure. Elle repose sur trois piliers que nous construisons ensemble.</p>
+    </div>
+    <div class="ia-piliers-grid">
+
+      <div class="ia-pilier ia-pilier--agents reveal">
+        <span class="ia-pilier-num" aria-hidden="true">1</span>
+        <div class="ia-pilier-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <h3 class="ia-pilier-title">Agents IA sur mesure</h3>
+        <p class="ia-pilier-desc">Des agents construits autour de vos cas d'usage spécifiques — pas des templates génériques. Chaque agent connaît votre secteur, votre ton, vos contraintes SEO/GEO.</p>
+        <ul class="ia-pilier-list">
+          <li>Agent de rédaction SEO/GEO contextualisé</li>
+          <li>Agent d'audit et d'optimisation de contenu</li>
+          <li>Agent de veille concurrentielle & sémantique</li>
+          <li>Agent de génération de briefs et rapports</li>
+        </ul>
+      </div>
+
+      <div class="ia-pilier ia-pilier--workflows reveal reveal-delay-1">
+        <span class="ia-pilier-num" aria-hidden="true">2</span>
+        <div class="ia-pilier-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="ia-pilier-title">Workflows automatisés</h3>
+        <p class="ia-pilier-desc">Des pipelines de production qui transforment un brief en article publié, un audit manuel en rapport automatique, une idée en calendrier éditorial — sans intervention humaine étape par étape.</p>
+        <ul class="ia-pilier-list">
+          <li>Pipeline de production de contenu end-to-end</li>
+          <li>Automatisation des audits SEO récurrents</li>
+          <li>Veille automatisée et alertes stratégiques</li>
+          <li>Intégration dans vos outils existants (Notion, Sheets…)</li>
+        </ul>
+      </div>
+
+      <div class="ia-pilier ia-pilier--formation reveal reveal-delay-2">
+        <span class="ia-pilier-num" aria-hidden="true">3</span>
+        <div class="ia-pilier-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 class="ia-pilier-title">Formation & transfert réel</h3>
+        <p class="ia-pilier-desc">Un accompagnement ne se termine pas au déploiement. Vos équipes apprennent à piloter, adapter et enrichir les agents IA. L'objectif : zéro dépendance, autonomie totale.</p>
+        <ul class="ia-pilier-list">
+          <li>Ateliers pratiques sur les outils déployés</li>
+          <li>Documentation des workflows et agents</li>
+          <li>Formation au prompt engineering appliqué</li>
+          <li>Suivi des gains et ajustements continus</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     PROCESS
+=========================== -->
+<section class="section" aria-labelledby="ia-process-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Méthodologie</p>
+      <h2 class="section-title" id="ia-process-title">Notre processus en 4 étapes</h2>
+      <p class="section-subtitle">Un déploiement progressif qui minimise les risques et maximise les gains — sans disruption de vos opérations existantes.</p>
+    </div>
+    <div class="ia-process-wrap">
+      <div class="ia-process-step reveal">
+        <div class="ia-process-num" aria-hidden="true">1</div>
+        <h3 class="ia-process-title">Audit & cartographie</h3>
+        <p class="ia-process-desc">On analyse vos workflows actuels, vos volumes, vos outils. On identifie les tâches à fort potentiel d'automatisation et les cas d'usage IA à ROI immédiat dans votre contexte spécifique.</p>
+        <span class="ia-process-tag">Semaine 1–2</span>
+      </div>
+      <div class="ia-process-step reveal reveal-delay-1">
+        <div class="ia-process-num" aria-hidden="true">2</div>
+        <h3 class="ia-process-title">Architecture IA</h3>
+        <p class="ia-process-desc">Conception des agents et workflows adaptés, sélection de la stack technique, définition des garde-fous qualité et plan de déploiement progressif validé avec vos équipes.</p>
+        <span class="ia-process-tag">Semaine 3–4</span>
+      </div>
+      <div class="ia-process-step reveal reveal-delay-2">
+        <div class="ia-process-num" aria-hidden="true">3</div>
+        <h3 class="ia-process-title">Déploiement & tests</h3>
+        <p class="ia-process-desc">Mise en production des agents, intégration dans vos outils existants, tests itératifs avec vos équipes pour affiner les outputs et valider les performances avant passage à l'échelle.</p>
+        <span class="ia-process-tag">Mois 2</span>
+      </div>
+      <div class="ia-process-step reveal reveal-delay-3">
+        <div class="ia-process-num" aria-hidden="true">4</div>
+        <h3 class="ia-process-title">Formation & autonomie</h3>
+        <p class="ia-process-desc">Ateliers pratiques pour rendre vos équipes complètement autonomes. Documentation, suivi des KPIs de productivité, ajustements continus et accompagnement post-déploiement.</p>
+        <span class="ia-process-tag">Mois 3+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     DELIVERABLES
+=========================== -->
+<section class="section section--subtle" aria-labelledby="ia-deliv-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Inclus dans la mission</p>
+      <h2 class="section-title" id="ia-deliv-title">Ce que vous obtenez</h2>
+      <p class="section-subtitle">Un accompagnement complet, de l'audit initial au transfert de compétences — conçu pour des résultats durables, pas des démos.</p>
+    </div>
+    <div class="ia-deliv-grid">
+
+      <div class="ia-deliv reveal">
+        <div class="ia-deliv-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div>
+          <div class="ia-deliv-title">Audit & cartographie de vos processus</div>
+          <div class="ia-deliv-desc">Analyse complète de vos workflows existants, identification des goulets d'étranglement et cartographie des opportunités IA à fort ROI pour votre contexte spécifique.</div>
+        </div>
+      </div>
+
+      <div class="ia-deliv reveal reveal-delay-1">
+        <div class="ia-deliv-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="ia-deliv-title">Agents IA personnalisés & déployés</div>
+          <div class="ia-deliv-desc">Conception et mise en production d'agents sur mesure adaptés à vos cas d'usage : rédaction SEO/GEO, audit automatisé, génération de rapports, veille sémantique.</div>
+        </div>
+      </div>
+
+      <div class="ia-deliv reveal reveal-delay-2">
+        <div class="ia-deliv-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <div class="ia-deliv-title">Workflows de production automatisés</div>
+          <div class="ia-deliv-desc">Pipelines IA end-to-end intégrés à vos outils existants (Notion, Google Sheets, CMS) pour accélérer la production de contenu et les audits récurrents sans perte de qualité.</div>
+        </div>
+      </div>
+
+      <div class="ia-deliv reveal reveal-delay-3">
+        <div class="ia-deliv-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div>
+          <div class="ia-deliv-title">Formation & autonomie complète</div>
+          <div class="ia-deliv-desc">Ateliers pratiques sur les agents déployés, documentation des workflows, formation au prompt engineering appliqué et suivi des gains de productivité sur 3 mois minimum.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     COMPARE TABLE
+=========================== -->
+<section class="section" aria-labelledby="ia-compare-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Pourquoi Neopulsion</p>
+      <h2 class="section-title" id="ia-compare-title">L'accompagnement IA spécialisé contenu,<br>c'est différent</h2>
+      <p class="section-subtitle">Un consultant IA généraliste peut déployer des agents. Seul un spécialiste contenu & SEO sait les faire créer de la valeur réelle pour votre visibilité.</p>
+    </div>
+    <div class="ia-compare reveal">
+      <div class="ia-compare-header">
+        <div>Critère</div>
+        <div>Neopulsion</div>
+        <div>Consultant IA généraliste</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Spécialisation contenu, SEO & GEO</div>
+        <div><span class="ic">✓</span> Expertise cœur</div>
+        <div><span class="ix">✗</span> Hors périmètre</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Agents IA sur mesure (pas des templates)</div>
+        <div><span class="ic">✓</span> 100% personnalisé</div>
+        <div><span class="ip">~</span> Solutions génériques</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Intégration dans vos outils existants</div>
+        <div><span class="ic">✓</span> Inclus</div>
+        <div><span class="ip">~</span> Selon périmètre</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Formation équipe & transfert de compétences</div>
+        <div><span class="ic">✓</span> Inclus dans la mission</div>
+        <div><span class="ix">✗</span> Rare ou payant</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Suivi des KPIs de productivité</div>
+        <div><span class="ic">✓</span> Tableau de bord inclus</div>
+        <div><span class="ix">✗</span> Non prévu</div>
+      </div>
+      <div class="ia-compare-row">
+        <div>Déploiement progressif sans disruption</div>
+        <div><span class="ic">✓</span> Méthode éprouvée</div>
+        <div><span class="ip">~</span> Variable</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     FAQ
+=========================== -->
+<section class="section section--subtle" aria-labelledby="ia-faq-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker">Questions fréquentes</p>
+      <h2 class="section-title" id="ia-faq-title">Ce que vous vous demandez<br>avant de vous lancer</h2>
+    </div>
+    <div class="ia-faq" id="ia-faq">
+
+      <div class="ia-faq-item">
+        <button class="ia-faq-question" aria-expanded="false">
+          Faut-il des compétences techniques pour utiliser les agents déployés ?
+          <svg class="ia-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ia-faq-answer" role="region">
+          <div class="ia-faq-answer-inner">Non. L'objectif est précisément l'inverse. Les agents sont conçus pour que vos équipes — rédacteurs, chefs de projet, marketeurs — les utilisent comme des outils quotidiens, sans compétences en IA ni en code. La formation incluse garantit que tout le monde est à l'aise avant la fin de la mission.</div>
+        </div>
+      </div>
+
+      <div class="ia-faq-item">
+        <button class="ia-faq-question" aria-expanded="false">
+          Combien de temps avant de voir des résultats concrets ?
+          <svg class="ia-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ia-faq-answer" role="region">
+          <div class="ia-faq-answer-inner">Les premiers gains de productivité sont visibles dès la phase de test, généralement dans les 3 à 4 semaines suivant le début de la mission. Le ROI complet — avec workflows intégrés et équipes formées — se matérialise sur 90 jours. On définit ensemble les KPIs de succès avant de commencer.</div>
+        </div>
+      </div>
+
+      <div class="ia-faq-item">
+        <button class="ia-faq-question" aria-expanded="false">
+          L'IA va-t-elle remplacer mes équipes ?
+          <svg class="ia-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ia-faq-answer" role="region">
+          <div class="ia-faq-answer-inner">Non — et c'est même l'argument inverse qui nous convainc d'agir. Les équipes qui maîtrisent l'IA produisent davantage, se concentrent sur des tâches stratégiques et deviennent plus difficiles à remplacer. L'IA décharge les tâches répétitives et libère le jugement humain pour ce qui compte vraiment : la stratégie, la création, la relation client.</div>
+        </div>
+      </div>
+
+      <div class="ia-faq-item">
+        <button class="ia-faq-question" aria-expanded="false">
+          Quels outils IA utilisez-vous et vais-je en dépendre ?
+          <svg class="ia-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ia-faq-answer" role="region">
+          <div class="ia-faq-answer-inner">On sélectionne les outils adaptés à votre contexte : Claude, GPT-4o, Perplexity, n8n, Make, selon vos besoins et votre stack existante. L'architecture est conçue pour être modulaire — si un outil évolue ou devient moins pertinent, on peut l'adapter sans tout reconstruire. La documentation fournie vous rend totalement autonomes.</div>
+        </div>
+      </div>
+
+      <div class="ia-faq-item">
+        <button class="ia-faq-question" aria-expanded="false">
+          Quel budget prévoir pour un accompagnement IA ?
+          <svg class="ia-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="ia-faq-answer" role="region">
+          <div class="ia-faq-answer-inner">La tarification est sur devis, calée sur le périmètre réel de votre projet : nombre de workflows, d'agents, volume d'équipes à former et durée de l'accompagnement. Le premier échange de 30 minutes est gratuit et permet de cadrer précisément ce dont vous avez besoin — sans engagement de votre part.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     CTA BANNER
+=========================== -->
+<section class="ia-cta-section" aria-labelledby="ia-cta-title">
+  <div class="container">
+    <div class="reveal">
+      <p class="ia-hero-kicker" style="display:inline-flex; margin-bottom:20px;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Accompagnement IA
+      </p>
+      <h2 id="ia-cta-title">Prêt à faire de l'IA un levier<br>de croissance réel ?</h2>
+      <p>Tarif sur devis selon votre périmètre. Échangeons 30 minutes pour identifier où l'IA crée le plus de valeur pour vous — sans jargon, sans engagement.</p>
+      <div class="ia-cta-actions">
+        <a href="../contact.html" class="btn-ia-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Discuter de mon projet IA
+        </a>
+        <a href="seo.html" style="background:transparent; color:rgba(255,255,255,0.7); padding:14px 24px; border-radius:8px; font-weight:600; font-size:0.9rem; text-decoration:none; border:1px solid rgba(255,255,255,0.2); transition:all 0.2s; display:inline-block;">Voir le SEO →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="seo.html">Référencement SEO</a></li>
+          <li><a href="geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // ── Interactive Diagnostic ──
+  (function() {
+    var cards = document.querySelectorAll('#ia-diag-grid .ia-diag-card');
+    var counter = document.getElementById('ia-diag-counter');
+    var msg = document.getElementById('ia-diag-msg');
+    var ctaBtn = document.getElementById('ia-diag-cta');
+    var feedback = document.getElementById('ia-diag-feedback');
+
+    var messages = [
+      'Cochez les situations qui vous correspondent pour découvrir votre diagnostic IA.',
+      '1 problématique identifiée — un seul point de levier peut transformer votre productivité.',
+      '2 problèmes identifiés. Votre équipe perd probablement plusieurs heures par semaine à cause d\'une IA non structurée.',
+      '3 points sur 6 — c\'est la zone de friction IA la plus coûteuse. Un accompagnement peut doubler votre output.',
+      '4/6 — Votre organisation IA a besoin d\'une refonte. Les gains potentiels sont significatifs.',
+      '5/6 — Situation critique. Chaque mois sans stratégie IA structurée, vous accumulez un retard concurrentiel réel.',
+      '6/6 — L\'IA est votre plus grande opportunité non exploitée. Il est temps d\'agir.'
+    ];
+
+    function update() {
+      var count = document.querySelectorAll('#ia-diag-grid .ia-diag-card.checked').length;
+      counter.textContent = count;
+      msg.textContent = messages[count];
+      if (count >= 2) {
+        ctaBtn.style.opacity = '1';
+        ctaBtn.style.pointerEvents = '';
+        feedback.style.borderColor = '#059669';
+      } else {
+        ctaBtn.style.opacity = '0.35';
+        ctaBtn.style.pointerEvents = 'none';
+        feedback.style.borderColor = '#E5E7EB';
+      }
+    }
+
+    cards.forEach(function(card) {
+      function toggle() {
+        var checked = card.classList.toggle('checked');
+        card.setAttribute('aria-checked', checked ? 'true' : 'false');
+        update();
+      }
+      card.addEventListener('click', toggle);
+      card.addEventListener('keydown', function(e) {
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+      });
+    });
+  })();
+
+  // ── FAQ Accordion ──
+  (function() {
+    var items = document.querySelectorAll('#ia-faq .ia-faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.ia-faq-question');
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.ia-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
