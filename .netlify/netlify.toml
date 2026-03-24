@@ -1,14 +1,13 @@
+functionsDirectory = "/Users/youssef/neopulsion/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
 headersOrigin = "config"
 plugins = []
 redirects = []
 
-[functions]
-
-[functions."*"]
-
 [build]
 publish = "/Users/youssef/neopulsion"
 publishOrigin = "config"
+functions = "/Users/youssef/neopulsion/netlify/functions"
 
 [build.environment]
 
@@ -23,6 +22,10 @@ publishOrigin = "config"
 [build.processing.js]
 
 [build.services]
+
+[functions]
+
+[functions."*"]
 
 [[headers]]
 for = "/*.html"

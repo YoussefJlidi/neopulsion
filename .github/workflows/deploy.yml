@@ -11,5 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install function dependencies
+        run: cd netlify/functions && npm install
+
       - name: Deploy to Netlify
-        run: npx netlify-cli deploy --prod --dir=. --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_SITE_ID }}
+        run: npx netlify-cli deploy --prod --dir=. --functions=netlify/functions --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_SITE_ID }}
