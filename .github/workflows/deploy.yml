@@ -1,4 +1,4 @@
-name: Deploy to o2switch
+name: Deploy to Netlify
 
 on:
   push:
@@ -6,20 +6,8 @@ on:
 
 jobs:
   deploy:
-    name: Deploy via rsync
+    name: Trigger Netlify deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Deploy to o2switch via rsync
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -avzr --delete --exclude='.git*' --exclude='.github' --exclude='*.md'
-          path: ./
-          remote_path: ${{ secrets.SSH_PATH }}
-          remote_host: ${{ secrets.SSH_HOST }}
-          remote_user: ${{ secrets.SSH_USER }}
-          remote_key: ${{ secrets.SSH_KEY }}
-          remote_port: 22
+      - name: Trigger Netlify build hook
+        run: curl -X POST "${{ secrets.NETLIFY_DEPLOY_HOOK }}"
