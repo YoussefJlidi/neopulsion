@@ -17,3 +17,6 @@ Thumbs.db
 
 # Node (si jamais)
 node_modules/
+
+# Netlify local state (contient le site ID)
+.netlify/
