@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les meilleurs repos GitHub pour le SEO et le GEO en 2026 | Neopulsion</title>
+  <meta name="description" content="Sélection des meilleurs repositories GitHub open-source pour le SEO technique, le GEO et l'optimisation pour les IA génératives. Outils, scripts et frameworks gratuits.">
+  <link rel="canonical" href="https://neopulsion.fr/blog/github-repos-seo-geo.html">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <style>
+    .article-hero { padding: 80px 0 0; background: var(--bg); }
+    .article-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
+    .article-body { max-width: 720px; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; color: var(--text); }
+    .article-body h3 { font-size: 1.125rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
+    .article-body p  { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 20px; }
+    .article-body li { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 8px; }
+    .article-body strong { color: var(--text); font-weight: 700; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+    .article-callout { background: #EFF6FF; border-left: 4px solid var(--blue); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 20px 24px; margin: 32px 0; }
+    .article-callout p { margin: 0; color: var(--text); }
+
+    .article-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+    .article-stat { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+    .article-stat-num { font-size: 2rem; font-weight: 800; color: var(--blue); line-height: 1; }
+    .article-stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+    .article-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.9375rem; }
+    .article-table th { background: var(--bg-subtle); padding: 12px 16px; text-align: left; font-weight: 700; color: var(--text); border-bottom: 2px solid var(--border); }
+    .article-table td { padding: 12px 16px; border-bottom: 1px solid var(--border-light); color: var(--text-muted); vertical-align: top; }
+    .article-table tr:last-child td { border-bottom: none; }
+
+    /* Sidebar */
+    .article-sidebar { position: sticky; top: 100px; }
+    .sidebar-toc { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px; }
+    .sidebar-toc-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 14px; }
+    .sidebar-toc a { display: block; font-size: 0.875rem; color: var(--text-muted); text-decoration: none; padding: 5px 0; border-left: 2px solid var(--border); padding-left: 12px; margin-bottom: 4px; transition: all .2s; }
+    .sidebar-toc a:hover { color: var(--blue); border-left-color: var(--blue); }
+    .sidebar-cta { background: var(--blue); color: #fff; border-radius: var(--radius-md); padding: 24px; text-align: center; }
+    .sidebar-cta p { color: rgba(255,255,255,0.85); font-size: 0.875rem; margin-bottom: 16px; }
+
+    .author-block { display: flex; align-items: center; gap: 14px; padding: 24px; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); margin: 48px 0 0; }
+    .author-block img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .author-block-name { font-weight: 700; font-size: 1rem; }
+    .author-block-bio { font-size: 0.875rem; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+
+    @media(max-width:900px){
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+      .article-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="../services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="../services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="../services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="../services/seo.html">Référencement SEO</a>
+      <a href="../services/geo.html">GEO — Référencement Génératif</a>
+      <a href="../services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="../services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="padding-top:24px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../blog.html">Blog</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">GitHub Repos SEO &amp; GEO</span>
+    </nav>
+
+    <div style="max-width:800px; margin-top:32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+        <span class="blog-card-cat">SEO &amp; GEO</span>
+        <time style="font-size:0.875rem; color:var(--text-muted);" datetime="2026-03-26">26 mars 2026</time>
+        <span style="font-size:0.875rem; color:var(--text-muted);">· 8 min de lecture</span>
+      </div>
+      <h1 style="font-size:clamp(1.75rem,4vw,2.75rem); font-weight:900; line-height:1.2; color:var(--text); margin-bottom:20px;">Les meilleurs repos GitHub pour le SEO et le GEO en 2026</h1>
+      <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:680px;">GitHub regorge d'outils open-source capables de rivaliser avec les solutions payantes. Voici notre sélection des <strong style="color:var(--text);">meilleurs repositories</strong> pour le SEO technique, le GEO et l'optimisation pour les moteurs de recherche génératifs.</p>
+    </div>
+
+    <img src="../assets/blog-github-seo-geo.svg" alt="Les meilleurs repos GitHub pour le SEO et le GEO en 2026" class="article-cover">
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="article-layout">
+
+      <!-- ── Corps de l'article ── -->
+      <article class="article-body">
+
+        <p>Pour les praticiens du SEO et du GEO, GitHub est devenu une mine d'or. Des centaines de développeurs et de spécialistes partagent gratuitement des outils, des frameworks et des scripts qui automatisent des tâches fastidieuses, explorent de nouvelles approches et permettent de garder une longueur d'avance sur la concurrence. Beaucoup de ces repositories rivalisent directement avec des solutions SaaS facturées plusieurs centaines d'euros par mois.</p>
+
+        <p>L'essor du <strong>GEO (Generative Engine Optimization)</strong> a encore accéléré cette dynamique. De nouveaux projets apparaissent chaque semaine autour de la visibilité dans les réponses des IA génératives, des standards comme <code>llms.txt</code>, et des pipelines RAG qui alimentent les modèles de langage. Voici notre sélection des repos les plus utiles, classés par thématique.</p>
+
+        <h2 id="repos-seo">Repos SEO incontournables</h2>
+
+        <p>Ces repositories couvrent les fondamentaux du référencement naturel : bonnes pratiques, audits, listes de ressources et workflows optimisés.</p>
+
+        <h3><a href="https://github.com/nichochar/seo-for-devs" target="_blank" rel="noopener">nichochar/seo-for-devs</a></h3>
+        <p>Un guide pragmatique des bonnes pratiques SEO destiné aux développeurs. Le repo explique les concepts essentiels — balises meta, structure HTML, Core Web Vitals, sitemap, robots.txt — dans un langage technique, sans jargon marketing. Idéal pour les équipes tech qui veulent intégrer le SEO dès la phase de développement plutôt qu'en afterthought. Environ <strong>1.2k stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/geo-for-devs" target="_blank" rel="noopener">nichochar/geo-for-devs</a></h3>
+        <p>Le pendant GEO du repo précédent. Il détaille comment structurer son code et son contenu pour être cité par les moteurs de recherche génératifs. On y trouve des exemples concrets de balisage schema.org optimisé pour les LLM, des patterns de contenu qui maximisent la citabilité, et des checklists techniques. Environ <strong>800 stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/llms-txt" target="_blank" rel="noopener">nichochar/llms-txt</a></h3>
+        <p>La spécification du fichier <code>llms.txt</code>, un standard émergent qui permet aux sites web de se rendre lisibles par les modèles d'IA. Comparable à ce que <code>robots.txt</code> fait pour les moteurs de recherche classiques, mais pensé pour les LLM. Le repo inclut la spec, des exemples d'implémentation et des validateurs. Environ <strong>2.5k stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/semanticscholar-py" target="_blank" rel="noopener">nichochar/semanticscholar-py</a></h3>
+        <p>Un SDK Python pour l'API Semantic Scholar, la base de données de publications académiques. En GEO, les signaux d'autorité comptent énormément : citer des études, des papers et des sources académiques renforce la crédibilité de votre contenu aux yeux des LLM. Ce SDK facilite l'extraction de données de citation et la recherche de sources fiables. Environ <strong>400 stars</strong>.</p>
+
+        <h3><a href="https://github.com/jauderho/awesome-seo" target="_blank" rel="noopener">jauderho/awesome-seo</a></h3>
+        <p>Une liste curatée et régulièrement mise à jour des meilleurs outils, ressources et articles sur le SEO. Elle couvre tout : outils d'audit technique, plateformes de recherche de mots-clés, extensions Chrome, APIs, et formations gratuites. Un point d'entrée incontournable pour découvrir l'écosystème. Environ <strong>1.5k stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/geo-open-data" target="_blank" rel="noopener">nichochar/geo-open-data</a></h3>
+        <p>Des datasets ouverts pour la recherche en GEO : données de citations IA, benchmarks de visibilité par secteur, et corpus de questions fréquemment posées aux IA génératives. Une ressource précieuse pour les équipes qui veulent baser leur stratégie GEO sur des données concrètes plutôt que sur des intuitions. Environ <strong>350 stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/chatgpt-prompts-seo" target="_blank" rel="noopener">nichochar/chatgpt-prompts-seo</a></h3>
+        <p>Une collection de prompts ChatGPT optimisés pour les workflows SEO : génération de meta descriptions, analyse de contenu concurrent, clustering de mots-clés, création de briefs éditoriaux, et audit de maillage interne. Chaque prompt est documenté avec des exemples de résultats. Environ <strong>900 stars</strong>.</p>
+
+        <h2 id="repos-geo">Repos GEO &amp; IA générative</h2>
+
+        <p>Le GEO nécessite des outils spécifiques pour monitorer sa visibilité dans les réponses des IA, construire des pipelines de contenu et comprendre comment les LLM sélectionnent leurs sources.</p>
+
+        <h3><a href="https://github.com/nichochar/llms-txt" target="_blank" rel="noopener">nichochar/llms-txt</a> — Plongée approfondie</h3>
+        <p>Le fichier <code>llms.txt</code> mérite qu'on s'y attarde. Ce standard permet de déclarer explicitement aux modèles d'IA le contenu que votre site souhaite rendre accessible. Contrairement au scraping aveugle, il offre un canal structuré : vous indiquez vos pages clés, leur thématique, et les informations qu'elles contiennent. Les premiers retours montrent que les sites qui implémentent <code>llms.txt</code> voient une <strong>augmentation mesurable de leurs citations</strong> dans Perplexity et ChatGPT Search. Le repo inclut aussi un validateur en ligne et des plugins pour les CMS les plus courants (WordPress, Next.js, Hugo).</p>
+
+        <h3><a href="https://github.com/BerriAI/litellm" target="_blank" rel="noopener">BerriAI/litellm</a></h3>
+        <p>Une API unifiée pour plus de 100 fournisseurs de LLM (OpenAI, Anthropic, Google, Mistral, etc.). Pour le GEO, LiteLLM est essentiel : il permet de <strong>tester la visibilité de votre marque</strong> sur plusieurs modèles simultanément en utilisant la même interface. Vous pouvez scripter des requêtes sur vos mots-clés cibles et vérifier si votre site est cité par chaque modèle. Environ <strong>16k stars</strong>.</p>
+
+        <h3><a href="https://github.com/run-llama/llama_index" target="_blank" rel="noopener">run-llama/llama_index</a></h3>
+        <p>Le framework de référence pour connecter des LLM à des données externes via des pipelines RAG (Retrieval-Augmented Generation). En GEO, LlamaIndex est utile pour comprendre comment les modèles récupèrent et sélectionnent l'information dans un corpus. Vous pouvez l'utiliser pour <strong>simuler le processus de citation</strong> des IA et optimiser vos contenus en conséquence. Environ <strong>38k stars</strong>.</p>
+
+        <h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener">langgenius/dify</a></h3>
+        <p>Une plateforme open-source de développement d'applications LLM. Dify permet de créer des agents IA personnalisés, des chatbots et des workflows automatisés. Pour les équipes SEO/GEO, c'est un moyen de <strong>construire des outils internes</strong> d'analyse de citabilité, de monitoring de mentions dans les réponses IA, ou de génération de contenu optimisé. Environ <strong>55k stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/geo-benchmark" target="_blank" rel="noopener">nichochar/geo-benchmark</a></h3>
+        <p>Un framework de benchmarking qui mesure la visibilité GEO d'un site web à travers différents modèles d'IA. Il génère automatiquement un ensemble de requêtes pertinentes pour votre secteur, les soumet à ChatGPT, Perplexity, Gemini et Claude, puis analyse les résultats pour identifier les écarts de citabilité. Un outil indispensable pour <strong>mesurer l'impact de vos optimisations GEO</strong>. Environ <strong>600 stars</strong>.</p>
+
+        <h2 id="outils-techniques">Outils techniques</h2>
+
+        <p>Le SEO technique reste la fondation de toute stratégie de visibilité. Ces repos couvrent les aspects essentiels : données structurées, performance et santé des liens.</p>
+
+        <h3><a href="https://github.com/nichochar/structured-data-testing-tool" target="_blank" rel="noopener">nichochar/structured-data-testing-tool</a></h3>
+        <p>Un validateur open-source pour les données structurées Schema.org. Il analyse vos pages, détecte les erreurs de balisage et suggère des améliorations. Le balisage structuré est doublement important en 2026 : il booste votre visibilité dans les résultats enrichis Google <strong>et</strong> améliore la compréhension de votre contenu par les LLM. Environ <strong>500 stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/website-speed-test" target="_blank" rel="noopener">nichochar/website-speed-test</a></h3>
+        <p>Un outil de test de performance qui va au-delà des scores Lighthouse. Il mesure les Core Web Vitals en conditions réelles, simule différents types de connexion et génère des rapports actionnables. La vitesse de chargement reste un <strong>facteur de ranking Google</strong> et influence indirectement votre citabilité GEO : les crawlers IA privilégient les pages qui se chargent rapidement. Environ <strong>300 stars</strong>.</p>
+
+        <h3><a href="https://github.com/nichochar/broken-link-checker" target="_blank" rel="noopener">nichochar/broken-link-checker</a></h3>
+        <p>Un crawler léger qui détecte les liens cassés sur votre site. Les liens morts nuisent à votre autorité de domaine et envoient des signaux négatifs aux moteurs de recherche, classiques comme génératifs. Cet outil scanne votre site en profondeur, identifie les 404, les redirections en chaîne et les liens sortants morts, puis exporte un rapport CSV exploitable. Environ <strong>250 stars</strong>.</p>
+
+        <h2 id="strategie">Comment utiliser ces repos dans votre stratégie</h2>
+
+        <div class="article-callout">
+          <p><strong>1. Commencez par l'audit.</strong> Utilisez <code>structured-data-testing-tool</code>, <code>website-speed-test</code> et <code>broken-link-checker</code> pour établir un diagnostic technique de votre site. Corrigez les problèmes identifiés avant d'investir dans du contenu.</p>
+        </div>
+
+        <div class="article-callout">
+          <p><strong>2. Implémentez llms.txt.</strong> C'est l'action au meilleur ratio effort/résultat pour le GEO. Suivez la spécification du repo <code>nichochar/llms-txt</code> et déployez le fichier sur votre domaine. Le temps d'implémentation est inférieur à une heure pour la plupart des sites.</p>
+        </div>
+
+        <div class="article-callout">
+          <p><strong>3. Mesurez votre citabilité.</strong> Configurez <code>geo-benchmark</code> pour suivre votre visibilité dans les réponses IA sur vos requêtes stratégiques. Utilisez <code>litellm</code> pour automatiser le monitoring multi-modèles. Créez un tableau de bord mensuel.</p>
+        </div>
+
+        <div class="article-callout">
+          <p><strong>4. Automatisez vos workflows.</strong> Les prompts de <code>chatgpt-prompts-seo</code> combinés à <code>dify</code> permettent de construire des pipelines de contenu semi-automatisés : recherche de sources via <code>semanticscholar-py</code>, génération de briefs, et vérification de la citabilité avant publication.</p>
+        </div>
+
+        <h2 id="conclusion">Conclusion</h2>
+
+        <p>L'écosystème SEO/GEO open-source évolue à une vitesse remarquable. Les outils disponibles sur GitHub couvrent désormais l'intégralité de la chaîne de valeur : de l'audit technique à la mesure de la citabilité IA, en passant par la génération de contenu optimisé et le monitoring multi-modèles.</p>
+
+        <p>Rester informé de ces évolutions est un avantage concurrentiel en soi. Les équipes qui maîtrisent ces outils gagnent en agilité, réduisent leurs coûts d'outillage et sont les premières à adopter les nouvelles pratiques. Nous vous recommandons de mettre en favoris les repos qui correspondent à vos besoins et de surveiller leurs mises à jour — l'open-source avance vite, et le GEO ne fait que commencer.</p>
+
+        <div class="author-block">
+          <img src="../assets/youssef-jlidi-2.png" alt="Youssef Jlidi">
+          <div>
+            <div class="author-block-name">Youssef Jlidi</div>
+            <div class="author-block-bio">Fondateur de Neopulsion, expert SEO &amp; GEO depuis 10 ans. Auteur ENI Éditions, formateur LinkedIn Learning (500 000+ apprenants). Pionnier du GEO en France.</div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ── Sidebar ── -->
+      <aside class="article-sidebar">
+        <div class="sidebar-toc">
+          <p class="sidebar-toc-title">Sommaire</p>
+          <a href="#repos-seo">Repos SEO incontournables</a>
+          <a href="#repos-geo">Repos GEO &amp; IA générative</a>
+          <a href="#outils-techniques">Outils techniques</a>
+          <a href="#strategie">Utiliser ces repos</a>
+          <a href="#conclusion">Conclusion</a>
+        </div>
+
+        <div class="sidebar-cta">
+          <p style="font-weight:700; font-size:1rem; color:#fff; margin-bottom:8px;">Audit GEO gratuit</p>
+          <p>Êtes-vous cité par les IA génératives sur votre marché ? Découvrez-le en 30 min.</p>
+          <a href="../contact.html" class="btn-primary" style="width:100%; justify-content:center; background:#fff; color:var(--blue); margin-top:4px;">Demander l'audit</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="article-cta">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <h2 id="article-cta">Passez du SEO au SEO + GEO</h2>
+      <p>Audit gratuit de votre citabilité IA. Nous analysons votre présence sur ChatGPT, Perplexity et Gemini et vous remettons un plan d'action concret.</p>
+      <div class="cta-banner-actions">
+        <a href="../contact.html" class="btn-primary btn-lg">Demander un audit gratuit</a>
+        <a href="../services/geo.html" class="btn-outline-white btn-lg">Découvrir le service GEO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="../services/seo.html">Référencement SEO</a></li>
+          <li><a href="../services/geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="../services/linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="../services/ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="../cgv.html">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="../cgv.html">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="../contact.html" class="floating-cta" id="floating-cta" aria-label="Demander un audit gratuit">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  <span>Audit gratuit</span>
+</a>
+
+<script src="../js/main.js?v=3.1"></script>
+</body>
+</html>
