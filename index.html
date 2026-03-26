@@ -416,34 +416,37 @@
 <!-- ========== BLOG ========== -->
 <section class="section section--subtle" aria-labelledby="blog-title">
   <div class="container">
-    <div style="display:flex; align-items:center; gap:4rem; flex-wrap:wrap;">
-      <!-- Texte gauche -->
-      <div style="flex:1; min-width:260px;">
-        <p class="kicker">Analyses &amp; ressources</p>
-        <h2 class="section-title" id="blog-title">Dernières analyses</h2>
-        <p class="section-subtitle" style="margin-bottom:1.5rem;">Décryptages SEO &amp; GEO, études de cas, guides pratiques — pour rester en avance sur les évolutions algorithmiques.</p>
-        <a href="blog.html" class="btn-secondary">Voir tous les articles</a>
-      </div>
+    <div class="section-header">
+      <p class="kicker">Analyses &amp; ressources</p>
+      <h2 class="section-title" id="blog-title">Dernières analyses</h2>
+    </div>
 
-      <!-- Card droite -->
-      <div class="blog-card reveal" style="display:flex; flex-direction:column; flex:0 0 380px; max-width:380px;">
-        <a href="blog/github-repos-seo-geo.html">
-          <img src="assets/blog-github-seo-geo.svg" alt="Les meilleurs repos GitHub pour le SEO et le GEO" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-md) var(--radius-md) 0 0; display:block;">
-        </a>
-        <div class="blog-card-body" style="flex:1;">
+    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px; margin-bottom:40px;">
+      <a href="blog/github-repos-seo-geo.html" class="blog-card-mini reveal">
+        <img src="assets/blog-github-seo-geo.svg" alt="Les meilleurs repos GitHub pour le SEO et le GEO" class="blog-card-mini-img">
+        <div class="blog-card-mini-body">
           <div class="blog-card-meta">
             <span class="blog-card-cat">SEO &amp; GEO</span>
             <time class="blog-card-date" datetime="2026-03-26">26 mars 2026</time>
-            <span style="font-size:0.8rem; color:var(--text-muted);">· 8 min</span>
           </div>
-          <h3 class="blog-card-title" style="font-size:1.1rem;">Les meilleurs repos GitHub pour le SEO et le GEO en 2026</h3>
-          <p class="blog-card-excerpt" style="font-size:0.875rem;">Sélection des repositories open-source incontournables : outils, scripts et frameworks gratuits pour le SEO technique et le GEO.</p>
-          <a href="blog/github-repos-seo-geo.html" class="blog-card-link">
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h3 class="blog-card-mini-title">Les meilleurs repos GitHub pour le SEO et le GEO en 2026</h3>
+          <span class="blog-card-mini-link">Lire la suite →</span>
         </div>
-      </div>
+      </a>
+      <a href="blog/geo-generative-engine-optimization.html" class="blog-card-mini reveal reveal-delay-1">
+        <img src="assets/blog-geo-cover.jpg" alt="GEO — Generative Engine Optimization" class="blog-card-mini-img">
+        <div class="blog-card-mini-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">GEO</span>
+            <time class="blog-card-date" datetime="2026-03-24">24 mars 2026</time>
+          </div>
+          <h3 class="blog-card-mini-title">GEO : comment être cité par ChatGPT, Perplexity et Gemini</h3>
+          <span class="blog-card-mini-link">Lire la suite →</span>
+        </div>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="blog.html" class="btn-secondary">Voir tous les articles</a>
     </div>
   </div>
 </section>

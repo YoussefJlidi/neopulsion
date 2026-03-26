@@ -926,6 +926,15 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+.blog-card-mini-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--blue);
+  transition: gap var(--transition);
+}
+.blog-card-mini:hover .blog-card-mini-link { text-decoration: underline; }
 
 @media (max-width: 580px) {
   #blog-grid { grid-template-columns: 1fr !important; }
