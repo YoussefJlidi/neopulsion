@@ -2,6 +2,9 @@
   publish = "."
   functions = "netlify/functions"
 
+[build.processing.html]
+  pretty_urls = false
+
 # Security headers — toutes les pages
 [[headers]]
   for = "/*"
