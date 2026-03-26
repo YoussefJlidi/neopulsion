@@ -931,28 +931,6 @@
         <div class="ia-diag-text">Claude ici, Jasper là, n8n pas encore configuré. Des silos, pas un système.</div>
       </div>
 
-      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
-        <div class="ia-diag-check" aria-hidden="true">
-          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="ia-diag-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-        </div>
-        <div class="ia-diag-title">Vos contenus IA manquent de personnalité et de ton de marque</div>
-        <div class="ia-diag-text">Les textes générés sont génériques, impersonnels. Ils ne ressemblent pas à votre expertise — et ça se sent.</div>
-      </div>
-
-      <div class="ia-diag-card" role="checkbox" aria-checked="false" tabindex="0">
-        <div class="ia-diag-check" aria-hidden="true">
-          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="ia-diag-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-        </div>
-        <div class="ia-diag-title">Vous ne savez pas par où commencer pour maximiser le ROI</div>
-        <div class="ia-diag-text">Automatiser quoi en premier ? Quels outils ? Quelle stack IA ? L'absence de cap coûte plus cher que l'inaction.</div>
-      </div>
-
     </div>
 
     <div class="ia-diag-feedback" id="ia-diag-feedback">
@@ -1044,25 +1022,25 @@
       <div class="ia-process-step reveal">
         <div class="ia-process-num" aria-hidden="true">1</div>
         <h3 class="ia-process-title">Audit & cartographie</h3>
-        <p class="ia-process-desc">On analyse vos workflows actuels, vos volumes, vos outils. On identifie les tâches à fort potentiel d'automatisation et les cas d'usage IA à ROI immédiat dans votre contexte spécifique.</p>
+        <p class="ia-process-desc">Analyse de vos workflows et identification des tâches à fort potentiel d'automatisation IA.</p>
         <span class="ia-process-tag">Semaine 1–2</span>
       </div>
       <div class="ia-process-step reveal reveal-delay-1">
         <div class="ia-process-num" aria-hidden="true">2</div>
         <h3 class="ia-process-title">Architecture IA</h3>
-        <p class="ia-process-desc">Conception des agents et workflows adaptés, sélection de la stack technique, définition des garde-fous qualité et plan de déploiement progressif validé avec vos équipes.</p>
+        <p class="ia-process-desc">Conception des agents, sélection de la stack et plan de déploiement validé avec vos équipes.</p>
         <span class="ia-process-tag">Semaine 3–4</span>
       </div>
       <div class="ia-process-step reveal reveal-delay-2">
         <div class="ia-process-num" aria-hidden="true">3</div>
         <h3 class="ia-process-title">Déploiement & tests</h3>
-        <p class="ia-process-desc">Mise en production des agents, intégration dans vos outils existants, tests itératifs avec vos équipes pour affiner les outputs et valider les performances avant passage à l'échelle.</p>
+        <p class="ia-process-desc">Mise en production des agents, intégration dans vos outils et tests itératifs avant passage à l'échelle.</p>
         <span class="ia-process-tag">Mois 2</span>
       </div>
       <div class="ia-process-step reveal reveal-delay-3">
         <div class="ia-process-num" aria-hidden="true">4</div>
         <h3 class="ia-process-title">Formation & autonomie</h3>
-        <p class="ia-process-desc">Ateliers pratiques pour rendre vos équipes complètement autonomes. Documentation, suivi des KPIs de productivité, ajustements continus et accompagnement post-déploiement.</p>
+        <p class="ia-process-desc">Ateliers pratiques, documentation et suivi des KPIs pour rendre vos équipes autonomes.</p>
         <span class="ia-process-tag">Mois 3+</span>
       </div>
     </div>
@@ -1312,6 +1290,12 @@
   </div>
 </footer>
 
+<!-- Floating CTA -->
+<a href="../contact.html" class="floating-cta" id="floating-cta" aria-label="Demander un audit gratuit">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  <span>Audit gratuit</span>
+</a>
+
 <script src="../js/main.js"></script>
 <script>
   // ── Interactive Diagnostic ──
@@ -1326,10 +1310,8 @@
       'Cochez les situations qui vous correspondent pour découvrir votre diagnostic IA.',
       '1 problématique identifiée — un seul point de levier peut transformer votre productivité.',
       '2 problèmes identifiés. Votre équipe perd probablement plusieurs heures par semaine à cause d\'une IA non structurée.',
-      '3 points sur 6 — c\'est la zone de friction IA la plus coûteuse. Un accompagnement peut doubler votre output.',
-      '4/6 — Votre organisation IA a besoin d\'une refonte. Les gains potentiels sont significatifs.',
-      '5/6 — Situation critique. Chaque mois sans stratégie IA structurée, vous accumulez un retard concurrentiel réel.',
-      '6/6 — L\'IA est votre plus grande opportunité non exploitée. Il est temps d\'agir.'
+      '3/4 — C\'est la zone de friction IA la plus coûteuse. Un accompagnement peut doubler votre output.',
+      '4/4 — L\'IA est votre plus grande opportunité non exploitée. Il est temps d\'agir.'
     ];
 
     function update() {
