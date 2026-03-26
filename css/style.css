@@ -923,16 +923,16 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 .blog-card-mini:hover .blog-card-mini-title { color: var(--blue); }
 .blog-card-mini-read {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
+  font-style: italic;
 }
 .blog-card-mini-link {
   display: inline-block;
   margin-top: 12px;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--blue);
-  transition: gap var(--transition);
 }
 .blog-card-mini:hover .blog-card-mini-link { text-decoration: underline; }
 
