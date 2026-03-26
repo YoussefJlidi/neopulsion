@@ -486,6 +486,23 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .page-hero h1 { color: white; margin-bottom: 20px; }
 .page-hero-subtitle { font-size: 1.0625rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 32px; }
 
+/* Hero Flex Layout (ateliers + formations) */
+.hero-flex-layout {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-flex-text {
+  flex: 1;
+  min-width: 280px;
+}
+.hero-flex-card {
+  flex-shrink: 0;
+  width: 300px;
+  max-width: 340px;
+}
+
 /* ============================================
    LOGOS MARQUEE
    ============================================ */
@@ -1310,6 +1327,8 @@ footer {
   .alpha-nav { flex-direction: row; flex-wrap: wrap; }
   .about-quick-inner { grid-template-columns: 200px 1fr; gap: 40px; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .hero-flex-layout { gap: 32px; }
+  .hero-flex-card { width: 260px; }
 }
 
 /* ============================================
@@ -1411,6 +1430,9 @@ footer {
   .mobile-bottom-bar { display: flex; }
   .back-to-top { bottom: 76px; right: 16px; }
   .testimonial-carousel .testimonial-quote { font-size: 1rem; }
+  .hero-flex-layout { flex-direction: column; gap: 24px; }
+  .hero-flex-text { min-width: 0; }
+  .hero-flex-card { width: 100%; max-width: 100%; }
   h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
   h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
   .hero { padding: 120px 0 64px; }
