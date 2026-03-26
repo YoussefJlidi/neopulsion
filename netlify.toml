@@ -5,6 +5,78 @@
 [build.processing.html]
   pretty_urls = false
 
+# Redirect non-.html URLs to .html canonical versions
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/formations"
+  to = "/formations.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ateliers"
+  to = "/ateliers.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/glossaire"
+  to = "/glossaire.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/a-propos"
+  to = "/a-propos.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/equipe"
+  to = "/equipe.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/cgv"
+  to = "/cgv.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/seo"
+  to = "/services/seo.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/geo"
+  to = "/services/geo.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/linkedin"
+  to = "/services/linkedin.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/ia"
+  to = "/services/ia.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/geo-generative-engine-optimization"
+  to = "/blog/geo-generative-engine-optimization.html"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/github-repos-seo-geo"
+  to = "/blog/github-repos-seo-geo.html"
+  status = 301
+  force = true
+
 # Security headers — toutes les pages
 [[headers]]
   for = "/*"
