@@ -888,6 +888,49 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .blog-card-link { font-size: 0.875rem; font-weight: 600; color: var(--blue); display: inline-flex; align-items: center; gap: 4px; transition: gap var(--transition); }
 .blog-card-link:hover { gap: 8px; }
 
+/* Blog Card Mini */
+.blog-card-mini {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-md);
+  text-decoration: none;
+  color: inherit;
+}
+.blog-card-mini:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+.blog-card-mini-img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: block;
+}
+.blog-card-mini-body {
+  padding: 20px;
+}
+.blog-card-mini-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+  margin-bottom: 8px;
+  transition: color var(--transition);
+}
+.blog-card-mini:hover .blog-card-mini-title { color: var(--blue); }
+.blog-card-mini-read {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 580px) {
+  #blog-grid { grid-template-columns: 1fr !important; }
+}
+
 /* Blog gradient card images */
 .blog-card-img--seo    { background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%); }
 .blog-card-img--geo    { background: linear-gradient(135deg, #1E3A8A 0%, #0284C7 100%); }

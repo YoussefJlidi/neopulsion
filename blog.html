@@ -115,45 +115,31 @@
       <button class="blog-filter-btn" data-filter="formation">Formation</button>
     </div>
 
-    <div id="blog-grid" aria-label="Liste des articles" style="max-width:680px;">
+    <div id="blog-grid" aria-label="Liste des articles" style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;">
 
-      <div class="blog-card reveal" data-cat="seo" style="display:flex; flex-direction:column;">
-        <a href="blog/github-repos-seo-geo.html">
-          <img src="assets/blog-github-seo-geo.svg" alt="Les meilleurs repos GitHub pour le SEO et le GEO" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-md) var(--radius-md) 0 0; display:block;">
-        </a>
-        <div class="blog-card-body" style="flex:1;">
+      <a href="blog/github-repos-seo-geo.html" class="blog-card-mini reveal" data-cat="seo">
+        <img src="assets/blog-github-seo-geo.svg" alt="Les meilleurs repos GitHub pour le SEO et le GEO" class="blog-card-mini-img">
+        <div class="blog-card-mini-body">
           <div class="blog-card-meta">
             <span class="blog-card-cat">SEO &amp; GEO</span>
             <time class="blog-card-date" datetime="2026-03-26">26 mars 2026</time>
-            <span style="font-size:0.8rem; color:var(--text-muted);">· 8 min</span>
           </div>
-          <h2 class="blog-card-title" style="font-size:1.375rem;">Les meilleurs repos GitHub pour le SEO et le GEO en 2026</h2>
-          <p class="blog-card-excerpt">Sélection des repositories open-source incontournables pour le SEO technique, le GEO et l'optimisation pour les IA génératives. Outils, scripts et frameworks gratuits.</p>
-          <a href="blog/github-repos-seo-geo.html" class="blog-card-link">
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h2 class="blog-card-mini-title">Les meilleurs repos GitHub pour le SEO et le GEO en 2026</h2>
+          <span class="blog-card-mini-read">8 min de lecture</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card reveal" data-cat="geo" style="display:flex; flex-direction:column;">
-        <a href="blog/geo-generative-engine-optimization.html">
-          <img src="assets/blog-geo-cover.jpg" alt="GEO — Generative Engine Optimization" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-md) var(--radius-md) 0 0; display:block;">
-        </a>
-        <div class="blog-card-body" style="flex:1;">
+      <a href="blog/geo-generative-engine-optimization.html" class="blog-card-mini reveal reveal-delay-1" data-cat="geo">
+        <img src="assets/blog-geo-cover.jpg" alt="GEO — Generative Engine Optimization" class="blog-card-mini-img">
+        <div class="blog-card-mini-body">
           <div class="blog-card-meta">
             <span class="blog-card-cat">GEO</span>
             <time class="blog-card-date" datetime="2026-03-24">24 mars 2026</time>
-            <span style="font-size:0.8rem; color:var(--text-muted);">· 12 min</span>
           </div>
-          <h2 class="blog-card-title" style="font-size:1.375rem;">GEO : comment être cité par ChatGPT, Perplexity et Gemini en 2026</h2>
-          <p class="blog-card-excerpt">Les sessions référées par les IA ont bondi de +527 % en un an. Voici les 7 signaux que les LLM utilisent pour décider de vous citer — et la stratégie en 5 étapes pour apparaître dès maintenant.</p>
-          <a href="blog/geo-generative-engine-optimization.html" class="blog-card-link">
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h2 class="blog-card-mini-title">GEO : comment être cité par ChatGPT, Perplexity et Gemini en 2026</h2>
+          <span class="blog-card-mini-read">12 min de lecture</span>
         </div>
-      </div>
+      </a>
 
     </div>
 
