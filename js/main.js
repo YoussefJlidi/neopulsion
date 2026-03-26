@@ -224,6 +224,38 @@
     });
   }
 
+  // ── METHODOLOGY TABS ───────────────────────────────────────
+  const tabBtns   = document.querySelectorAll('.method-tab-btn');
+  const tabPanels = document.querySelectorAll('.method-tab-panel');
+
+  if (tabBtns.length && tabPanels.length) {
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var idx = this.getAttribute('data-tab');
+
+        tabBtns.forEach(function (b) { b.classList.remove('active'); });
+        tabPanels.forEach(function (p) { p.classList.remove('active'); });
+
+        this.classList.add('active');
+        var panel = document.querySelector('.method-tab-panel[data-panel="' + idx + '"]');
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+
+  // ── FLOATING CTA ──────────────────────────────────────────
+  var floatingCta = document.getElementById('floating-cta');
+
+  if (floatingCta) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 500) {
+        floatingCta.classList.add('visible');
+      } else {
+        floatingCta.classList.remove('visible');
+      }
+    }, { passive: true });
+  }
+
   // ── ACCORDION ───────────────────────────────────────────────
   document.querySelectorAll('.accordion-trigger').forEach(function (trigger) {
     trigger.addEventListener('click', function () {
