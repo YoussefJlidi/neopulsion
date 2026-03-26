@@ -224,6 +224,80 @@
     });
   }
 
+  // ── SCROLL PROGRESS BAR ────────────────────────────────────
+  var progressBar = document.getElementById('scroll-progress');
+
+  if (progressBar) {
+    window.addEventListener('scroll', function () {
+      var scrollTop = document.documentElement.scrollTop;
+      var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    }, { passive: true });
+  }
+
+  // ── BACK TO TOP ───────────────────────────────────────────
+  var backToTop = document.getElementById('back-to-top');
+
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ── MOBILE BOTTOM BAR ─────────────────────────────────────
+  var mobileBar = document.getElementById('mobile-bottom-bar');
+
+  if (mobileBar) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        mobileBar.classList.add('visible');
+      } else {
+        mobileBar.classList.remove('visible');
+      }
+    }, { passive: true });
+  }
+
+  // ── TESTIMONIAL CAROUSEL ──────────────────────────────────
+  var carousel = document.getElementById('testimonial-carousel');
+
+  if (carousel) {
+    var slides = carousel.querySelectorAll('.testimonial-slide');
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    var currentSlide = 0;
+    var autoplayInterval;
+
+    function goToSlide(idx) {
+      slides.forEach(function (s) { s.classList.remove('active'); });
+      dots.forEach(function (d) { d.classList.remove('active'); });
+      slides[idx].classList.add('active');
+      dots[idx].classList.add('active');
+      currentSlide = idx;
+    }
+
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % slides.length);
+    }
+
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        goToSlide(parseInt(this.getAttribute('data-slide')));
+        clearInterval(autoplayInterval);
+        autoplayInterval = setInterval(nextSlide, 5000);
+      });
+    });
+
+    autoplayInterval = setInterval(nextSlide, 5000);
+  }
+
   // ── METHODOLOGY TABS ───────────────────────────────────────
   const tabBtns   = document.querySelectorAll('.method-tab-btn');
   const tabPanels = document.querySelectorAll('.method-tab-panel');

@@ -982,6 +982,199 @@ footer {
 .hidden { display: none; }
 
 /* ============================================
+   SCROLL PROGRESS BAR
+   ============================================ */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--blue), #7C3AED);
+  z-index: 1100;
+  transition: width 0.1s linear;
+}
+
+/* ============================================
+   BACK TO TOP
+   ============================================ */
+
+.back-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  z-index: 899;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+/* ============================================
+   TESTIMONIAL CAROUSEL
+   ============================================ */
+
+.testimonial-carousel {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-slide {
+  display: none;
+  text-align: center;
+  animation: fadeSlide 0.5s ease;
+}
+.testimonial-slide.active { display: block; }
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-carousel .testimonial-stars {
+  font-size: 1.25rem;
+  color: #FCD34D;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonial-carousel .testimonial-quote {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testimonial-carousel .testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.testimonial-carousel .testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: white;
+}
+
+.testimonial-carousel .testimonial-name {
+  font-weight: 600;
+  color: white;
+  font-size: 0.9375rem;
+}
+
+.testimonial-carousel .testimonial-role {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+.carousel-dot.active,
+.carousel-dot:hover {
+  background: white;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+/* ============================================
+   MOBILE BOTTOM BAR
+   ============================================ */
+
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: white;
+  border-top: 1px solid var(--border);
+  padding: 10px 16px;
+  gap: 10px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.mobile-bottom-bar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-bar-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mobile-bar-btn--primary {
+  background: var(--blue);
+  color: white;
+}
+.mobile-bar-btn--secondary {
+  background: var(--bg-subtle);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* ============================================
    METHODOLOGY TABS
    ============================================ */
 
@@ -1214,7 +1407,10 @@ footer {
   .method-tab-nav { flex-direction: column; }
   .method-tab-btn { border-right: none; border-bottom: 1px solid var(--border); }
   .method-tab-btn:last-child { border-bottom: none; }
-  .floating-cta { bottom: 16px; right: 16px; padding: 12px 20px; font-size: 0.875rem; }
+  .floating-cta { display: none; }
+  .mobile-bottom-bar { display: flex; }
+  .back-to-top { bottom: 76px; right: 16px; }
+  .testimonial-carousel .testimonial-quote { font-size: 1rem; }
   h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
   h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
   .hero { padding: 120px 0 64px; }
