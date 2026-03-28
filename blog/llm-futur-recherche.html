@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On nous avait prévenus : les LLMs ne sont pas prêts pour la recherche | Neopulsion</title>
+  <meta name="description" content="Il y a un an, un article prévenait que les LLMs n'étaient pas prêts pour la recherche. 14 mois plus tard, les données 2025-2026 lui donnent raison. Analyse complète et introduction du Piloted Search.">
+  <link rel="canonical" href="https://neopulsion.com/blog/llm-futur-recherche.html">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <style>
+    .article-hero { padding: 80px 0 0; background: var(--bg); }
+    .article-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
+    .article-body { max-width: 720px; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; color: var(--text); }
+    .article-body h3 { font-size: 1.125rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
+    .article-body p  { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 20px; }
+    .article-body li { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 8px; }
+    .article-body strong { color: var(--text); font-weight: 700; }
+    .article-body a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+
+    .article-callout { background: #EFF6FF; border-left: 4px solid var(--blue); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 20px 24px; margin: 32px 0; }
+    .article-callout p { margin: 0; color: var(--text); }
+
+    .article-blockquote { background: var(--bg-subtle); border-left: 4px solid var(--text); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 20px 24px; margin: 32px 0; font-style: italic; }
+    .article-blockquote p { margin: 0; color: var(--text); font-size: 1.0625rem; line-height: 1.8; }
+    .article-blockquote cite { display: block; margin-top: 8px; font-style: normal; font-size: 0.875rem; color: var(--text-muted); }
+
+    .article-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+    .article-stat { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+    .article-stat-num { font-size: 2rem; font-weight: 800; color: #ef4444; line-height: 1; }
+    .article-stat-num--blue { color: var(--blue); }
+    .article-stat-num--green { color: #22c55e; }
+    .article-stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+    .article-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.9375rem; }
+    .article-table th { background: var(--bg-subtle); padding: 12px 16px; text-align: left; font-weight: 700; color: var(--text); border-bottom: 2px solid var(--border); }
+    .article-table td { padding: 12px 16px; border-bottom: 1px solid var(--border-light); color: var(--text-muted); vertical-align: top; }
+    .article-table tr:last-child td { border-bottom: none; }
+
+    /* Sidebar */
+    .article-sidebar { position: sticky; top: 100px; }
+    .sidebar-toc { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px; }
+    .sidebar-toc-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 14px; }
+    .sidebar-toc a { display: block; font-size: 0.875rem; color: var(--text-muted); text-decoration: none; padding: 5px 0; border-left: 2px solid var(--border); padding-left: 12px; margin-bottom: 4px; transition: all .2s; }
+    .sidebar-toc a:hover { color: var(--blue); border-left-color: var(--blue); }
+    .sidebar-cta { background: var(--blue); color: #fff; border-radius: var(--radius-md); padding: 24px; text-align: center; }
+    .sidebar-cta p { color: rgba(255,255,255,0.85); font-size: 0.875rem; margin-bottom: 16px; }
+
+    .author-block { display: flex; align-items: center; gap: 14px; padding: 24px; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); margin: 48px 0 0; }
+    .author-block img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .author-block-name { font-weight: 700; font-size: 1rem; }
+    .author-block-bio { font-size: 0.875rem; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+
+    .source-list { list-style: none; padding: 0; }
+    .source-list li { font-size: 0.9375rem; margin-bottom: 8px; padding-left: 0; }
+    .source-list li::before { content: none; }
+
+    @media(max-width:900px){
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+      .article-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="container nav-inner">
+    <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <div class="nav-links" id="primary-nav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="../services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="../services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="../services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          À propos
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
+          <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cta">
+      <a href="../contact.html" class="btn-ghost-nav">Contact</a>
+      <a href="../contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+    </div>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="../services/seo.html">Référencement SEO</a>
+      <a href="../services/geo.html">GEO — Référencement Génératif</a>
+      <a href="../services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="../services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
+    <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href="../a-propos.html">À propos</a>
+      <a href="../equipe.html">Équipe</a>
+    </div>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="../contact.html" class="btn-primary">Audit gratuit</a>
+    <a href="../contact.html" class="btn-secondary">Nous contacter</a>
+  </div>
+</div>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" style="padding-top:24px;">
+      <a href="../index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../blog.html">Blog</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Piloted Search</span>
+    </nav>
+
+    <div style="max-width:800px; margin-top:32px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+        <span class="blog-card-cat">IA &amp; Recherche</span>
+        <time style="font-size:0.875rem; color:var(--text-muted);" datetime="2026-03-28">28 mars 2026</time>
+        <span style="font-size:0.875rem; color:var(--text-muted);">· 16 min de lecture</span>
+      </div>
+      <h1 style="font-size:clamp(1.75rem,4vw,2.75rem); font-weight:900; line-height:1.2; color:var(--text); margin-bottom:20px;">On nous avait prévenus. Un an plus tard, les chiffres sont tombés.</h1>
+      <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:680px;">En janvier 2025, un article annonçait que les LLMs n'étaient pas prêts pour la recherche. On l'a ignoré. Les données de 2026 lui donnent raison. Et si la solution n'était ni l'humain seul, ni l'IA seule — mais un nouveau modèle : le Piloted Search ?</p>
+    </div>
+
+    <img src="../assets/blog-llm-recherche.svg" alt="Piloted Search — l'humain pilote, l'IA exécute" class="article-cover">
+  </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="article-layout">
+
+      <!-- Corps de l'article -->
+      <article class="article-body">
+
+        <h2 id="prediction">La prédiction que personne n'a écoutée</h2>
+
+        <p>En janvier 2025, James Hartree-Law publiait <a href="https://forum.effectivealtruism.org/posts/RjpDLREFgNqjhDntz/llms-might-not-be-the-future-of-search-at-least-not-yet" target="_blank" rel="noopener">une analyse détaillée</a> sur le Forum Effective Altruism. Son titre : <em>"LLMs might not be the future of search: at least, not yet."</em></p>
+
+        <p>Sa thèse tenait en trois points :</p>
+
+        <ul>
+          <li><strong>Les LLMs hallucinent par conception</strong> — ce ne sont pas des bases de données, ce sont des générateurs de texte plausible</li>
+          <li><strong>Google déployait Gemini sous pression concurrentielle</strong>, pas parce que la technologie était prête</li>
+          <li><strong>Les citations affichées donnent une illusion de fiabilité</strong> que les données ne soutiennent pas</li>
+        </ul>
+
+        <p>Il s'appuyait sur l'étude de <a href="https://arxiv.org/html/2410.22349v1" target="_blank" rel="noopener">Shahan Ali Memon</a> (University of Washington) montrant que <strong>seulement 51,5% des phrases générées</strong> par les moteurs IA étaient réellement soutenues par leurs sources — et qu'une citation sur quatre ne disait pas du tout ce que le LLM prétendait.</p>
+
+        <p>Il citait aussi Andrej Karpathy, cofondateur d'OpenAI :</p>
+
+        <div class="article-blockquote">
+          <p>"An LLM is 100% dreaming and has the hallucination problem. A search engine is 0% dreaming and has the creativity problem."</p>
+          <cite>— Andrej Karpathy, cofondateur d'OpenAI (décembre 2023)</cite>
+        </div>
+
+        <p>À l'époque, on pouvait balayer ces inquiétudes. Les modèles allaient s'améliorer. Google allait corriger le tir. Ce n'était qu'une question de mois.</p>
+
+        <p><strong>Quatorze mois plus tard, les données sont tombées.</strong></p>
+
+        <h2 id="bilan">Ce qui s'est passé depuis : un bilan accablant</h2>
+
+        <h3 id="columbia">Février 2025 — Columbia enfonce le clou</h3>
+
+        <p>Le Tow Center for Digital Journalism de l'Université Columbia publie <a href="https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php" target="_blank" rel="noopener">l'étude la plus rigoureuse à ce jour</a>. Huit moteurs de recherche IA testés sur des requêtes factuelles liées à l'actualité.</p>
+
+        <p><strong>Résultat : plus de 60% de réponses incorrectes.</strong></p>
+
+        <div class="article-stat-grid">
+          <div class="article-stat">
+            <div class="article-stat-num">37%</div>
+            <div class="article-stat-label">d'erreurs Perplexity (le "meilleur")</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num">73%</div>
+            <div class="article-stat-label">ChatGPT Search "confidemment faux"</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num">94%</div>
+            <div class="article-stat-label">d'erreurs Grok 3</div>
+          </div>
+        </div>
+
+        <p>Le constat le plus glaçant : <strong>ces outils ne déclinent presque jamais.</strong> Ils ne disent pas "je ne sais pas". Ils répondent avec le ton assuré d'un expert — même quand ils fabriquent de toutes pièces.</p>
+
+        <p>L'article de Hartree-Law pointait exactement ce problème. <strong>Un an avant.</strong></p>
+
+        <h3 id="paradoxe">2025 — Le paradoxe du raisonnement</h3>
+
+        <p>Un phénomène que personne n'avait prédit a émergé : <strong>les modèles conçus pour raisonner plus profondément hallucinent davantage sur les faits.</strong></p>
+
+        <ul>
+          <li><strong>OpenAI o3</strong> (modèle de raisonnement avancé) : <strong>33% d'hallucinations</strong> sur le benchmark PersonQA</li>
+          <li><strong>Domaine juridique :</strong> les LLMs hallucinaient au moins <strong>75% du temps</strong>, inventant plus de 120 affaires judiciaires fictives (Stanford)</li>
+          <li><strong>GPT-5 sans accès web :</strong> <strong>47%</strong> de taux d'erreur sur SimpleQA (9,6% avec accès web)</li>
+        </ul>
+
+        <p>Explication : le raisonnement en chaîne pousse le modèle à construire des argumentations cohérentes. Quand un fait manque, il le fabrique pour maintenir la logique d'ensemble. Plus le raisonnement est long, plus les maillons inventés s'accumulent.</p>
+
+        <div class="article-callout">
+          <p><strong>Le résultat :</strong> les modèles sont devenus meilleurs pour <em>paraître</em> rigoureux. Pas pour <em>être</em> rigoureux.</p>
+        </div>
+
+        <h3 id="trafic">Septembre 2025 — L'effondrement du trafic</h3>
+
+        <p>Seer Interactive publie les chiffres que l'industrie redoutait :</p>
+
+        <div class="article-stat-grid">
+          <div class="article-stat">
+            <div class="article-stat-num">-61%</div>
+            <div class="article-stat-label">de CTR organique (de 1,76% à 0,61%)</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num">-68%</div>
+            <div class="article-stat-label">de CTR publicitaire (de 19,7% à 6,34%)</div>
+          </div>
+          <div class="article-stat">
+            <div class="article-stat-num article-stat-num--blue">90%</div>
+            <div class="article-stat-label">part de marché Google sur la recherche globale</div>
+          </div>
+        </div>
+
+        <p>L'ironie est cruelle : les LLMs synthétisent le travail des créateurs de contenu, tout en les privant du trafic qui finançait ce travail. Sans eux, les modèles n'ont rien à résumer. Mais avec les AI Overviews, les utilisateurs n'ont plus besoin de les visiter.</p>
+
+        <p><strong>C'est une boucle de destruction :</strong> moins de trafic &rarr; moins de revenus &rarr; moins de contenu original &rarr; des modèles qui se nourrissent de contenu de plus en plus dégradé.</p>
+
+        <h3>Les procès s'accumulent</h3>
+
+        <ul>
+          <li><strong>Février 2025 :</strong> Chegg poursuit Alphabet — les AI Overviews dirigent les étudiants vers des « résumés IA non vérifiés et de faible qualité »</li>
+          <li><strong>Septembre 2025 :</strong> Penske Media Corporation attaque Google — les AI Overviews « régurgitent illégalement » le contenu de leurs sites</li>
+        </ul>
+
+        <h3 id="sante">Janvier 2026 — La santé, ligne rouge franchie</h3>
+
+        <p>Google est contraint de <a href="https://www.euronews.com/next/2026/01/12/google-removes-some-health-related-questions-from-its-ai-overviews-following-accuracy-conc" target="_blank" rel="noopener">retirer certaines requêtes de santé</a> des AI Overviews après une enquête du Guardian sur la désinformation médicale.</p>
+
+        <p>Rappel : en mai 2024, les AI Overviews recommandaient déjà de « mettre de la colle sur la pizza » (source : un post Reddit humoristique) et de « manger une petite pierre par jour » (source : un article satirique). Vingt mois plus tard, le même type de problème persiste — cette fois sur des questions de santé.</p>
+
+        <h2 id="course">Pourquoi rien n'a changé</h2>
+
+        <p>Hartree-Law avait identifié la cause dès janvier 2025 : <strong>Google ne déployait pas cette technologie parce qu'elle était prête, mais parce que la concurrence l'y forçait.</strong></p>
+
+        <div class="article-blockquote">
+          <p>"OpenAI était une menace pour leur activité. [...] C'est une compétition perturbatrice — d'un genre nouveau."</p>
+          <cite>— Kenneth Stanley, fondateur d'Uber AI Labs, ancien dirigeant OpenAI</cite>
+        </div>
+
+        <p>Les chiffres de la course confirment l'urgence :</p>
+
+        <table class="article-table">
+          <thead>
+            <tr>
+              <th>Plateforme</th>
+              <th>Évolution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Perplexity</strong></td>
+              <td>230M &rarr; 780M requêtes/mois en 1 an (+340%)</td>
+            </tr>
+            <tr>
+              <td><strong>Google Gemini</strong></td>
+              <td>5,4% &rarr; 18,2% de part de marché chatbot IA</td>
+            </tr>
+            <tr>
+              <td><strong>ChatGPT</strong></td>
+              <td>87,2% &rarr; 68% (dominant mais en chute rapide)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>La stratégie de Google est limpide : occuper le terrain maintenant, corriger après. Le problème, c'est qu'un an après, le « après » n'est toujours pas arrivé.</p>
+
+        <h2 id="confiance">La confiance : le vrai sujet</h2>
+
+        <p>Selon le Reuters Institute et Oxford, <strong>seulement 20 à 25%</strong> des utilisateurs font autant confiance aux résumés IA qu'aux résultats classiques. L'Edelman Trust Barometer (2025) va plus loin : <strong>plus de 60%</strong> des sondés s'inquiètent de la désinformation IA dans la recherche.</p>
+
+        <p>Mais la confiance mesurée n'est pas la confiance pratiquée. Les gens disent ne pas faire confiance — et ne vérifient pas quand même. Le design de ces outils (réponse unique, ton affirmatif, sources à peine visibles) <strong>fabrique de la crédulité à grande échelle</strong>.</p>
+
+        <p>C'est exactement ce que Memon décrivait : le slogan de Google « Laissez Google chercher pour vous » revient en pratique à « vous donner une mauvaise réponse très rapidement ».</p>
+
+        <h2 id="piloted-search">L'ère du Piloted Search</h2>
+
+        <p>En 2005, un tournoi d'échecs freestyle a produit un résultat que personne n'attendait. Les vainqueurs n'étaient ni des grands maîtres, ni des superordinateurs. C'étaient deux amateurs américains assistés par trois programmes tournant sur des laptops ordinaires.</p>
+
+        <p><strong>Leur avantage ?</strong> Ils savaient quand faire confiance à la machine et quand reprendre la main. Ils pilotaient l'IA. Ils ne la subissaient pas.</p>
+
+        <p>La recherche en ligne a besoin de son moment pilote.</p>
+
+        <h3>Le modèle actuel est un cul-de-sac</h3>
+
+        <p>Aujourd'hui, on a deux extrêmes :</p>
+
+        <ul>
+          <li><strong>Le vieux Google (pré-2024) :</strong> l'humain fait tout. Il tape, trie dix liens bleus, évalue les sources, synthétise. C'est lent, mais fiable — parce que le jugement humain est dans la boucle.</li>
+          <li><strong>Google Gemini / ChatGPT Search (2024-2026) :</strong> l'IA fait tout. Elle interprète, choisit les sources, synthétise, et livre une réponse prémâchée. C'est rapide, mais on a vu les résultats : 60% d'erreurs, citations fantômes, contexte détourné.</li>
+        </ul>
+
+        <p>Les deux échouent parce qu'ils excluent l'autre moitié de l'équation. L'humain seul est lent. L'IA seule est aveugle.</p>
+
+        <div class="article-callout">
+          <p><strong>Le Piloted Search</strong> est un modèle hybride où l'humain pilote et l'IA exécute. Ni 100% humain, ni 100% machine — un cockpit partagé où chacun fait ce qu'il fait de mieux.</p>
+        </div>
+
+        <h3 id="concretement">À quoi ressemble le Piloted Search ?</h3>
+
+        <p><strong>1. L'humain affine l'intention, l'IA élargit le champ.</strong></p>
+
+        <p>Aujourd'hui, vous tapez une requête et priez. Dans un modèle piloté, l'IA vous pose des questions de clarification <em>avant</em> de chercher. « Tu cherches les effets de la nicotine dans un contexte médical, récréatif, ou de sevrage ? » Le résultat change radicalement selon la réponse. Perplexity a esquissé cette approche avec son mode Copilot — mais c'est encore embryonnaire.</p>
+
+        <p><strong>2. L'IA propose des sources, l'humain les valide.</strong></p>
+
+        <p>Au lieu de cacher les sources derrière une synthèse, le moteur les expose en premier. L'IA les classe par pertinence et fiabilité estimée. L'humain choisit lesquelles méritent d'être synthétisées. Le jugement éditorial reste humain — la puissance de traitement est machinale.</p>
+
+        <p><strong>3. L'humain challenge, l'IA se corrige.</strong></p>
+
+        <p>« D'où tu tires ce chiffre ? » devrait être un bouton, pas une prière. Dans un modèle piloté, chaque affirmation est traçable. L'utilisateur peut demander le passage exact de la source, comparer avec d'autres sources, et signaler une incohérence.</p>
+
+        <p><strong>4. La transparence est native, pas optionnelle.</strong></p>
+
+        <p>Chaque réponse affiche un score de confiance visible — comme un Nutri-Score de l'information. « Cette synthèse s'appuie sur 3 sources concordantes (confiance : haute) » vs « Cette réponse est basée sur une seule source non vérifiée (confiance : faible) ». L'utilisateur voit immédiatement quand il peut faire confiance et quand il doit creuser.</p>
+
+        <h3>Pourquoi le Piloted Search l'emporte</h3>
+
+        <table class="article-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Humain seul</th>
+              <th>IA seule</th>
+              <th>Piloted Search</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Vitesse</strong></td>
+              <td>Lent</td>
+              <td>Instantané</td>
+              <td>Rapide</td>
+            </tr>
+            <tr>
+              <td><strong>Fiabilité</strong></td>
+              <td>Haute</td>
+              <td>Basse (60%+ d'erreurs)</td>
+              <td>Haute</td>
+            </tr>
+            <tr>
+              <td><strong>Échelle</strong></td>
+              <td>Limitée</td>
+              <td>Illimitée</td>
+              <td>Illimitée</td>
+            </tr>
+            <tr>
+              <td><strong>Jugement</strong></td>
+              <td>Fort</td>
+              <td>Absent</td>
+              <td>Fort</td>
+            </tr>
+            <tr>
+              <td><strong>Traçabilité</strong></td>
+              <td>Manuelle</td>
+              <td>Absente</td>
+              <td>Native</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="signaux">Le signal existe déjà</h3>
+
+        <ul>
+          <li><strong>Gartner</strong> prédit que 25% des requêtes mondiales passeront par des assistants IA d'ici fin 2026</li>
+          <li>La <strong>curation humaine</strong> est identifiée comme <a href="https://www.jasminedirectory.com/blog/why-human-curation-is-the-ultimate-premium-feature-in-2026/" target="_blank" rel="noopener">« la feature premium ultime de 2026 »</a></li>
+          <li>OpenAI parle de <strong>« Vibe Research »</strong> — la recherche collaborative humain-IA — comme nouveau paradigme</li>
+          <li>D'ici 2026, plus de <strong>90% du contenu en ligne sera généré par l'IA</strong> — ce qui rend le filtre humain non pas optionnel, mais vital</li>
+        </ul>
+
+        <p>Le marché est prêt. La technologie est prête. Ce qui manque, c'est la volonté de ralentir la course assez longtemps pour construire le bon modèle.</p>
+
+        <h2 id="conclusion">Le mot de la fin</h2>
+
+        <p>Il y a quatorze mois, un article posait une question simple : les LLMs sont-ils prêts pour la recherche ?</p>
+
+        <p>La réponse était non.</p>
+
+        <p>Quatorze mois, des milliards de requêtes, des procès, des retraits de fonctionnalité et une enquête du Guardian plus tard, la réponse n'a pas changé.</p>
+
+        <p>Mais la bonne question n'a jamais été « faut-il retirer l'IA de la recherche ? ». C'est : <strong>qui pilote ?</strong></p>
+
+        <p>Aujourd'hui, personne. L'IA génère, l'utilisateur subit, et les créateurs de contenu disparaissent. Le Piloted Search propose une alternative : <strong>l'IA comme instrument de vol, l'humain comme pilote.</strong></p>
+
+        <div class="article-blockquote">
+          <p>L'IA n'a pas besoin de quitter le cockpit. Elle a juste besoin d'un pilote qui sait lire les instruments.</p>
+        </div>
+
+        <p>On nous avait prévenus. La question maintenant, c'est : est-ce qu'on écoute ?</p>
+
+        <h2 id="sources">Sources</h2>
+
+        <ul class="source-list">
+          <li><a href="https://forum.effectivealtruism.org/posts/RjpDLREFgNqjhDntz/llms-might-not-be-the-future-of-search-at-least-not-yet" target="_blank" rel="noopener">Article original — EA Forum, James Hartree-Law (janv. 2025)</a></li>
+          <li><a href="https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php" target="_blank" rel="noopener">Columbia Tow Center — "We compared eight AI search engines" (CJR, 2025)</a></li>
+          <li><a href="https://www.niemanlab.org/2025/03/ai-search-engines-fail-to-produce-accurate-citations-in-over-60-of-tests-according-to-new-tow-center-study/" target="_blank" rel="noopener">Nieman Lab — AI search engines fail in 60%+ of tests (mars 2025)</a></li>
+          <li><a href="https://arxiv.org/html/2410.22349v1" target="_blank" rel="noopener">Memon, S.A. — Search Engines in an AI Era (arXiv)</a></li>
+          <li><a href="https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/" target="_blank" rel="noopener">Suprmind — AI Hallucination Rates &amp; Benchmarks 2026</a></li>
+          <li><a href="https://www.allaboutai.com/resources/ai-statistics/ai-hallucinations/" target="_blank" rel="noopener">All About AI — AI Hallucination Report 2026</a></li>
+          <li><a href="https://x.com/karpathy/status/1733299213503787018" target="_blank" rel="noopener">Andrej Karpathy — "Hallucination is all LLMs do" (X, déc. 2023)</a></li>
+          <li><a href="https://fortune.com/2025/03/18/ai-search-engines-confidently-wrong-citing-sources-columbia-study/" target="_blank" rel="noopener">Fortune — AI search engines confidently wrong (mars 2025)</a></li>
+          <li><a href="https://www.euronews.com/next/2026/01/12/google-removes-some-health-related-questions-from-its-ai-overviews-following-accuracy-conc" target="_blank" rel="noopener">Euronews — Google retire des requêtes santé des AI Overviews (janv. 2026)</a></li>
+          <li><a href="https://www.dataslayer.ai/blog/google-ai-overviews-the-end-of-traditional-ctr-and-how-to-adapt-in-2025" target="_blank" rel="noopener">Dataslayer — AI Overviews : CTR organique -61% (sept. 2025)</a></li>
+          <li><a href="https://www.jasminedirectory.com/blog/why-human-curation-is-the-ultimate-premium-feature-in-2026/" target="_blank" rel="noopener">Jasmine Directory — Human curation premium feature (2026)</a></li>
+        </ul>
+
+        <div class="author-block">
+          <img src="../assets/youssef-jlidi-2.png" alt="Youssef Jlidi">
+          <div>
+            <div class="author-block-name">Youssef Jlidi</div>
+            <div class="author-block-bio">Fondateur de Neopulsion, expert SEO &amp; GEO depuis 10 ans. Auteur ENI Éditions, formateur LinkedIn Learning (500 000+ apprenants). Pionnier du GEO en France.</div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+        <div class="sidebar-toc">
+          <p class="sidebar-toc-title">Sommaire</p>
+          <a href="#prediction">La prédiction ignorée</a>
+          <a href="#bilan">Le bilan 14 mois après</a>
+          <a href="#columbia">L'étude Columbia</a>
+          <a href="#paradoxe">Le paradoxe du raisonnement</a>
+          <a href="#trafic">L'effondrement du trafic</a>
+          <a href="#course">Pourquoi rien n'a changé</a>
+          <a href="#confiance">Le vrai sujet : la confiance</a>
+          <a href="#piloted-search">Le Piloted Search</a>
+          <a href="#concretement">À quoi ça ressemble</a>
+          <a href="#signaux">Les signaux du marché</a>
+          <a href="#conclusion">Le mot de la fin</a>
+          <a href="#sources">Sources</a>
+        </div>
+
+        <div class="sidebar-cta">
+          <p style="font-weight:700; font-size:1rem; color:#fff; margin-bottom:8px;">Audit SEO &amp; GEO gratuit</p>
+          <p>Votre site est-il visible sur Google ET dans les réponses des IA ? Découvrez-le en 30 min.</p>
+          <a href="../contact.html" class="btn-primary" style="width:100%; justify-content:center; background:#fff; color:var(--blue); margin-top:4px;">Demander l'audit</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="article-cta">
+  <div class="container">
+    <div class="cta-banner-inner reveal">
+      <h2 id="article-cta">Passez au Piloted Search pour votre visibilité</h2>
+      <p>L'IA ne remplace pas (encore) les moteurs de recherche. Mais elle change les règles. Audit gratuit pour évaluer votre positionnement sur Google et dans les IA génératives.</p>
+      <div class="cta-banner-actions">
+        <a href="../contact.html" class="btn-primary btn-lg">Demander un audit gratuit</a>
+        <a href="../services/geo.html" class="btn-outline-white btn-lg">Découvrir le service GEO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="../services/seo.html">Référencement SEO</a></li>
+          <li><a href="../services/geo.html">GEO — Référencement Génératif</a></li>
+          <li><a href="../services/linkedin.html">Visibilité LinkedIn</a></li>
+          <li><a href="../services/ia.html">Accompagnement IA</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href="../formations.html">SEO &amp; GEO</a></li>
+          <li><a href="../formations.html">IA pour marketeurs</a></li>
+          <li><a href="../formations.html">Prompt Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../glossaire.html">Glossaire</a></li>
+          <li><a href="../a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="../cgv.html">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="../cgv.html">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="../contact.html" class="floating-cta" id="floating-cta" aria-label="Demander un audit gratuit">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  <span>Audit gratuit</span>
+</a>
+
+<script src="../js/main.js?v=3.1"></script>
+</body>
+</html>

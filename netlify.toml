@@ -76,6 +76,11 @@
   to = "/blog/github-repos-seo-geo.html"
   status = 301
   force = true
+[[redirects]]
+  from = "/blog/llm-futur-recherche"
+  to = "/blog/llm-futur-recherche.html"
+  status = 301
+  force = true
 
 # Security headers — toutes les pages
 [[headers]]
