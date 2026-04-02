@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://neopulsion.com/">
   <meta property="og:image" content="https://neopulsion.com/assets/og-image.jpg">
   <link rel="canonical" href="https://neopulsion.com/">
-  <link rel="stylesheet" href="css/style.css?v=3.1">
+  <link rel="stylesheet" href="css/style.css?v=4.0">
 
   <script type="application/ld+json">
   {
@@ -125,33 +125,78 @@
   </div>
 </div>
 
-<!-- ========== HERO ========== -->
-<section class="hero" aria-label="Introduction">
-  <div class="hero-orb" aria-hidden="true"></div>
-  <div class="container hero-inner hero-inner--centered">
-    <div class="hero-content hero-content--centered">
-      <p class="kicker kicker--light">SEO · GEO · IA — Consulting &amp; Formation</p>
-      <h1 class="hero-title">Devenez <mark>visible</mark> et <mark>rentable</mark> grâce à <em>l'intelligence artificielle</em></h1>
-      <p class="hero-subtitle">Deux chemins, un seul objectif : être visible là où vos clients cherchent — sur Google, sur Perplexity, dans ChatGPT.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          Confier ma visibilité
-        </a>
-        <a href="formations.html" class="btn-outline-white btn-lg">Me former</a>
+<!-- ========== HERO — SPLIT PORTAL ========== -->
+<section class="split-hero" aria-label="Introduction">
+  <h1 class="sr-only">Neopulsion — Agence SEO & GEO, Formation IA | Accompagnement et Formation</h1>
+
+  <!-- Left Panel: Accompagnement -->
+  <div class="split-panel split-panel--consulting" data-panel="consulting">
+    <div class="split-panel-orb" aria-hidden="true"></div>
+    <div class="split-panel-overlay" aria-hidden="true"></div>
+    <div class="split-panel-content">
+      <div class="split-panel-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.926 14.926 0 0 1-5.84 2.58m0 0a6 6 0 1 1-7.38-5.84"/><circle cx="12" cy="12" r="0"/><path d="M7.5 16.5 3 21"/><path d="M14 8h.01"/></svg>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-number">10+</div>
-          <div class="hero-stat-label">ans d'expertise</div>
+      <p class="split-panel-kicker">Consulting</p>
+      <h2 class="split-panel-title">Accompagnement</h2>
+      <p class="split-panel-subtitle">On gère votre visibilité SEO, GEO &amp; IA</p>
+      <ul class="split-panel-list">
+        <li>Audit &amp; stratégie SEO</li>
+        <li>Référencement dans les IA (GEO)</li>
+        <li>Visibilité LinkedIn</li>
+        <li>Intégration IA</li>
+      </ul>
+      <a href="services/seo.html" class="split-panel-cta split-panel-cta--blue">
+        Découvrir nos services
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="split-panel-stats">
+        <div class="split-panel-stat">
+          <span class="split-panel-stat-number">10+</span>
+          <span class="split-panel-stat-label">ans d’expertise</span>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number">324+</div>
-          <div class="hero-stat-label">entreprises</div>
+        <div class="split-panel-stat">
+          <span class="split-panel-stat-number">324+</span>
+          <span class="split-panel-stat-label">entreprises</span>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number">230K+</div>
-          <div class="hero-stat-label">personnes formées</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="split-divider" aria-hidden="true">
+    <span class="split-divider-text">OU</span>
+  </div>
+
+  <!-- Right Panel: Formation -->
+  <div class="split-panel split-panel--formation" data-panel="formation">
+    <div class="split-panel-orb" aria-hidden="true"></div>
+    <div class="split-panel-overlay" aria-hidden="true"></div>
+    <div class="split-panel-content">
+      <div class="split-panel-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+      </div>
+      <p class="split-panel-kicker">Éducation</p>
+      <h2 class="split-panel-title">Formation</h2>
+      <p class="split-panel-subtitle">Montez en compétence sur le SEO &amp; l’IA</p>
+      <ul class="split-panel-list">
+        <li>Formations finançables OPCO</li>
+        <li>Ateliers pratiques 2h</li>
+        <li>Prompt Engineering</li>
+        <li>SEO &amp; GEO complets</li>
+      </ul>
+      <a href="formations.html" class="split-panel-cta split-panel-cta--amber">
+        Explorer les formations
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="split-panel-stats">
+        <div class="split-panel-stat">
+          <span class="split-panel-stat-number">230K+</span>
+          <span class="split-panel-stat-label">personnes formées</span>
+        </div>
+        <div class="split-panel-stat">
+          <span class="split-panel-stat-number split-panel-stat-number--badge">Qualiopi</span>
+          <span class="split-panel-stat-label">certifié</span>
         </div>
       </div>
     </div>

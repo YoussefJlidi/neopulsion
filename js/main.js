@@ -367,6 +367,47 @@
     });
   }
 
+  // ── SPLIT HERO HOVER & PARALLAX ──────────────────────────
+  var splitHero = document.querySelector('.split-hero');
+
+  if (splitHero) {
+    var splitPanels = splitHero.querySelectorAll('.split-panel');
+    var splitOrbs = splitHero.querySelectorAll('.split-panel-orb');
+
+    // Hover expand/contract — desktop only
+    splitPanels.forEach(function(panel) {
+      panel.addEventListener('mouseenter', function() {
+        if (window.innerWidth <= 768) return;
+        splitPanels.forEach(function(p) {
+          if (p === panel) {
+            p.classList.add('expanded');
+            p.classList.remove('contracted');
+          } else {
+            p.classList.add('contracted');
+            p.classList.remove('expanded');
+          }
+        });
+      });
+    });
+
+    splitHero.addEventListener('mouseleave', function() {
+      splitPanels.forEach(function(p) {
+        p.classList.remove('expanded', 'contracted');
+      });
+    });
+
+    // Orb parallax on split panels
+    splitHero.addEventListener('mousemove', function(e) {
+      if (window.innerWidth <= 768) return;
+      splitOrbs.forEach(function(orb) {
+        var rect = orb.closest('.split-panel').getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width - 0.5) * 30;
+        var y = ((e.clientY - rect.top) / rect.height - 0.5) * 30;
+        orb.style.transform = 'translate(calc(-50% + ' + x + 'px), calc(-50% + ' + y + 'px))';
+      });
+    });
+  }
+
   // ── CARD TILT ─────────────────────────────────────────────
   var tiltCards = document.querySelectorAll('.bento-card, .pain-card, .method-tab-panel');
   tiltCards.forEach(function(card) {
