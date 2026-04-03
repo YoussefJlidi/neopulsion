@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://neopulsion.com/">
   <meta property="og:image" content="https://neopulsion.com/assets/og-image.jpg">
   <link rel="canonical" href="https://neopulsion.com/">
-  <link rel="stylesheet" href="css/style.css?v=4.0">
+  <link rel="stylesheet" href="css/style.css?v=5.0">
 
   <script type="application/ld+json">
   {
@@ -47,32 +47,9 @@
     <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
 
     <div class="nav-links" id="primary-nav">
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Services
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <div class="dropdown-menu">
-          <a href="services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
-          <a href="services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
-          <a href="services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
-          <a href="services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Apprendre
-          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="dropdown-menu">
-          <a href="ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
-          <a href="formations.html">Formations<small>Programmes finançables OPCO</small></a>
-        </div>
-      </div>
+      <a href="accompagnement.html">Accompagnement</a>
+      <a href="formation.html">Formation</a>
       <a href="blog.html">Blog</a>
-      <a href="glossaire.html">Glossaire</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
           À propos
@@ -81,6 +58,7 @@
         <div class="dropdown-menu">
           <a href="a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
           <a href="equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
+          <a href="glossaire.html">Glossaire<small>Définitions SEO &amp; GEO</small></a>
         </div>
       </div>
     </div>
@@ -99,24 +77,14 @@
 <!-- Mobile Nav -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <div class="mobile-nav-links">
-    <span class="mobile-nav-group-title">Services</span>
-    <div class="mobile-nav-submenu">
-      <a href="services/seo.html">Référencement SEO</a>
-      <a href="services/geo.html">GEO — Référencement Génératif</a>
-      <a href="services/linkedin.html">Visibilité LinkedIn</a>
-      <a href="services/ia.html">Accompagnement IA</a>
-    </div>
-    <span class="mobile-nav-group-title">Apprendre</span>
-    <div class="mobile-nav-submenu">
-      <a href="ateliers.html">Ateliers</a>
-      <a href="formations.html">Formations</a>
-    </div>
+    <a href="accompagnement.html">Accompagnement</a>
+    <a href="formation.html">Formation</a>
     <a href="blog.html">Blog</a>
-    <a href="glossaire.html">Glossaire</a>
     <span class="mobile-nav-group-title">À propos</span>
     <div class="mobile-nav-submenu">
       <a href="a-propos.html">À propos</a>
       <a href="equipe.html">Équipe</a>
+      <a href="glossaire.html">Glossaire</a>
     </div>
   </div>
   <div class="mobile-nav-cta">
@@ -146,7 +114,7 @@
         <li>Visibilité LinkedIn</li>
         <li>Intégration IA</li>
       </ul>
-      <a href="services/seo.html" class="split-panel-cta split-panel-cta--blue">
+      <a href="accompagnement.html" class="split-panel-cta split-panel-cta--blue">
         Découvrir nos services
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -185,7 +153,7 @@
         <li>Prompt Engineering</li>
         <li>SEO &amp; GEO complets</li>
       </ul>
-      <a href="formations.html" class="split-panel-cta split-panel-cta--amber">
+      <a href="formation.html" class="split-panel-cta split-panel-cta--amber">
         Explorer les formations
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -222,186 +190,78 @@
   </div>
 </section>
 
-<!-- ========== PROBLÈME ========== -->
-<section class="section section--dark" aria-labelledby="problem-title">
-  <div class="container">
-    <div class="section-header">
-      <p class="kicker kicker--light">Le problème</p>
-      <h2 class="section-title" id="problem-title">L'IA grignote votre visibilité. <mark>Chaque jour.</mark></h2>
-      <p class="section-subtitle">Les règles du référencement ont changé. Les entreprises qui n'adaptent pas leur stratégie aujourd'hui paieront le prix demain.</p>
-    </div>
-
-    <div class="grid-3">
-      <div class="pain-card reveal">
-        <div class="pain-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
-        </div>
-        <h3 class="pain-card-title">Google AI Overviews réduit vos clics</h3>
-        <p class="pain-card-text">Les réponses IA s'affichent en tête de Google. Même en position 1, vos clics s'effondrent.</p>
-      </div>
-
-      <div class="pain-card reveal reveal-delay-1">
-        <div class="pain-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-        </div>
-        <h3 class="pain-card-title">Les IA ne vous citent pas</h3>
-        <p class="pain-card-text">ChatGPT, Perplexity et Gemini répondent à vos clients — mais citent vos concurrents, pas vous.</p>
-      </div>
-
-      <div class="pain-card reveal reveal-delay-2">
-        <div class="pain-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <h3 class="pain-card-title">Vos équipes accusent du retard</h3>
-        <p class="pain-card-text">73 % des équipes marketing n'ont pas adapté leur stratégie. Chaque mois d'inaction renforce vos concurrents.</p>
-      </div>
-    </div>
-
-    <!-- Stats animées -->
-    <div class="stats-band reveal">
-      <div class="stat-item">
-        <div class="stat-number" data-counter data-target="40" data-suffix="%" aria-label="40%">40%</div>
-        <div class="stat-label">des recherches génèrent une<br>réponse IA en premier</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter data-target="13" data-suffix="%/mois" aria-label="+13%/mois">+13%/mois</div>
-        <div class="stat-label">de croissance des requêtes<br>traitées par les IA génératives</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter data-target="30" data-suffix="%" aria-label="+30%">+30%</div>
-        <div class="stat-label">de visibilité gagnée en moyenne<br>grâce à une stratégie GEO</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== SERVICES ========== -->
-<section class="section" id="services" aria-labelledby="services-title">
-  <div class="container">
-    <div class="section-header">
-      <p class="kicker">Ce que nous faisons</p>
-      <h2 class="section-title" id="services-title">Votre visibilité, de <mark>Google</mark> aux <mark>IA</mark></h2>
-      <p class="section-subtitle">Vous êtes introuvable sur Google ? Absent des réponses ChatGPT ? Silencieux sur LinkedIn ? On s'en occupe — concrètement.</p>
-    </div>
-    <div class="bento-grid">
-
-      <!-- Carte 1: SEO (large) -->
-      <div class="bento-card bento-card--large reveal" data-accent="blue">
-        <div class="svc-card-header-row">
-          <div class="svc-card-icon svc-card-icon--seo">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          </div>
-          <h3 class="svc-card-title">Référencement Google</h3>
-        </div>
-        <p class="svc-card-tag">Apparaître quand vos clients vous cherchent</p>
-        <ul class="svc-card-list">
-          <li>Diagnostic complet de votre site</li>
-          <li>Plan d'action clair et priorisé</li>
-          <li>Résultats mesurables sous 90 jours</li>
-        </ul>
-        <div class="svc-card-footer">
-          <span class="svc-card-price">À partir de 2 000 €</span>
-          <a href="services/seo.html" class="svc-card-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- Carte 2: GEO -->
-      <div class="bento-card reveal" data-accent="purple">
-        <div class="svc-card-header-row">
-          <div class="svc-card-icon svc-card-icon--geo">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="18" cy="6" r="3" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <h3 class="svc-card-title">Visibilité dans les IA</h3>
-        </div>
-        <p class="svc-card-tag">Être recommandé par ChatGPT, Gemini, Perplexity</p>
-        <ul class="svc-card-list">
-          <li>Analyse de vos chances d'être cité</li>
-          <li>Contenu adapté aux IA génératives</li>
-          <li>Suivi mensuel de vos citations</li>
-        </ul>
-        <div class="svc-card-footer">
-          <span class="svc-card-price">À partir de 1 500 €/mois</span>
-          <a href="services/geo.html" class="svc-card-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- Carte 3: LinkedIn -->
-      <div class="bento-card reveal" data-accent="linkedin">
-        <div class="svc-card-header-row">
-          <div class="svc-card-icon svc-card-icon--li">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </div>
-          <h3 class="svc-card-title">Présence LinkedIn</h3>
-        </div>
-        <p class="svc-card-tag">Attirer des clients sans payer de pub</p>
-        <ul class="svc-card-list">
-          <li>Profil et page entreprise optimisés</li>
-          <li>Contenu qui génère de la visibilité</li>
-          <li>Opportunités entrantes régulières</li>
-        </ul>
-        <div class="svc-card-footer">
-          <span class="svc-card-price">Sur devis</span>
-          <a href="services/linkedin.html" class="svc-card-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- Carte 4: IA -->
-      <div class="bento-card reveal" data-accent="green">
-        <div class="svc-card-header-row">
-          <div class="svc-card-icon svc-card-icon--ia">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <h3 class="svc-card-title">Intégration IA</h3>
-        </div>
-        <p class="svc-card-tag">Produire plus, avec moins d'effort</p>
-        <ul class="svc-card-list">
-          <li>Outils IA intégrés à votre équipe</li>
-          <li>Contenu produit 5× plus vite</li>
-          <li>Moins de coûts, plus de résultats</li>
-        </ul>
-        <div class="svc-card-footer">
-          <span class="svc-card-price">Sur devis</span>
-          <a href="services/ia.html" class="svc-card-link">En savoir plus →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========== MÉTHODOLOGIE ========== -->
-<section class="section section--subtle" aria-labelledby="method-title">
+<!-- ========== DEUX UNIVERS ========== -->
+<section class="section" aria-labelledby="univers-title">
   <div class="container">
     <div class="section-header section-header--centered">
       <p class="kicker">Notre approche</p>
-      <h2 class="section-title" id="method-title">Notre méthode en 4 étapes</h2>
-      <p class="section-subtitle">Un processus rodé pour passer du diagnostic à la croissance mesurable — sans improvisation.</p>
+      <h2 class="section-title" id="univers-title">Deux expertises. <mark>Une vision.</mark></h2>
+      <p class="section-subtitle">Que vous cherchiez un partenaire pour gérer votre visibilité ou une formation pour monter en compétence — on a ce qu'il vous faut.</p>
     </div>
 
-    <div class="method-tabs reveal">
-      <div class="method-tab-nav">
-        <button class="method-tab-btn active" data-tab="0"><span class="method-tab-num">1</span> Audit</button>
-        <button class="method-tab-btn" data-tab="1"><span class="method-tab-num">2</span> Stratégie</button>
-        <button class="method-tab-btn" data-tab="2"><span class="method-tab-num">3</span> Exécution</button>
-        <button class="method-tab-btn" data-tab="3"><span class="method-tab-num">4</span> Mesure</button>
+    <div class="univers-grid">
+      <!-- Consulting column -->
+      <div class="univers-card univers-card--consulting reveal">
+        <div class="univers-card-header">
+          <div class="univers-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 8.41m5.96 5.96a14.926 14.926 0 0 1-5.84 2.58m0 0a6 6 0 1 1-7.38-5.84"/><path d="M14 8h.01"/></svg>
+          </div>
+          <h3 class="univers-card-title">Accompagnement</h3>
+        </div>
+        <p class="univers-card-desc">On prend en main votre visibilité sur Google, dans les IA génératives et sur LinkedIn. Audit, stratégie et exécution — vous n'avez rien à faire.</p>
+        <ul class="univers-card-list univers-card-list--blue">
+          <li>Référencement Google (SEO)</li>
+          <li>Visibilité dans ChatGPT, Perplexity, Gemini (GEO)</li>
+          <li>Présence LinkedIn organique</li>
+          <li>Intégration IA dans vos process</li>
+        </ul>
+        <div class="univers-card-stats">
+          <span><strong>10+</strong> ans d'expertise</span>
+          <span><strong>324+</strong> entreprises accompagnées</span>
+        </div>
+        <a href="accompagnement.html" class="btn-primary" style="background:var(--blue);text-align:center;justify-content:center;">Découvrir l'accompagnement →</a>
       </div>
-      <div class="method-tab-panels">
-        <div class="method-tab-panel active" data-panel="0">
-          <h3>Audit complet</h3>
-          <p>Analyse technique SEO, étude de votre citabilité par les IA, audit de contenu et analyse concurrentielle.</p>
+
+      <!-- Formation column -->
+      <div class="univers-card univers-card--formation reveal reveal-delay-1">
+        <div class="univers-card-header">
+          <div class="univers-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+          </div>
+          <h3 class="univers-card-title">Formation</h3>
         </div>
-        <div class="method-tab-panel" data-panel="1">
-          <h3>Plan d'action</h3>
-          <p>Axes de contenu priorisés, maillage interne, stratégie de citabilité GEO et roadmap sur 6 mois.</p>
+        <p class="univers-card-desc">Montez en compétence sur le SEO, le GEO et l'IA. Formations certifiantes finançables OPCO et ateliers pratiques en demi-journée.</p>
+        <ul class="univers-card-list univers-card-list--amber">
+          <li>SEO & GEO — Maîtrise totale (2j)</li>
+          <li>IA Productive (1j)</li>
+          <li>Prompt Engineering Expert (1j)</li>
+          <li>Ateliers pratiques dès 49€</li>
+        </ul>
+        <div class="univers-card-stats">
+          <span><strong>230K+</strong> personnes formées</span>
+          <span><strong>Qualiopi</strong> certifié</span>
         </div>
-        <div class="method-tab-panel" data-panel="2">
-          <h3>Mise en œuvre</h3>
-          <p>Production de contenu optimisé, corrections techniques, netlinking et optimisations GEO documentées.</p>
-        </div>
-        <div class="method-tab-panel" data-panel="3">
-          <h3>Résultats mesurés</h3>
-          <p>Dashboard personnalisé, reporting mensuel, suivi des positions Google ET des citations IA.</p>
-        </div>
+        <a href="formation.html" class="btn-primary" style="background:var(--amber);text-align:center;justify-content:center;">Explorer les formations →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="section section--dark" aria-labelledby="stats-title">
+  <div class="container">
+    <div class="stats-band reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-counter data-target="40" data-suffix="%">40%</div>
+        <div class="stat-label">des recherches génèrent une<br>réponse IA en premier</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-counter data-target="13" data-suffix="%/mois">+13%/mois</div>
+        <div class="stat-label">de croissance des requêtes<br>traitées par les IA génératives</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-counter data-target="30" data-suffix="%">+30%</div>
+        <div class="stat-label">de visibilité gagnée en moyenne<br>grâce à une stratégie GEO</div>
       </div>
     </div>
   </div>
@@ -503,10 +363,10 @@
     <div class="cta-banner-inner reveal">
       <p class="kicker kicker--light">Passez à l'action</p>
       <h2 id="cta-title">Prêt à reprendre le <mark>contrôle</mark> de votre visibilité ?</h2>
-      <p>Un audit gratuit de 30 minutes pour évaluer votre situation actuelle sur Google et dans les IA génératives. Sans engagement, avec des recommandations concrètes.</p>
+      <p>Que vous cherchiez un accompagnement clé-en-main ou une formation pour vos équipes — on a la solution.</p>
       <div class="cta-banner-actions">
-        <a href="contact.html" class="btn-primary btn-lg">Demander un audit gratuit</a>
-        <a href="formations.html" class="btn-outline-white btn-lg">Explorer les formations</a>
+        <a href="accompagnement.html" class="btn-primary btn-lg">Accompagnement →</a>
+        <a href="formation.html" class="btn-outline-white btn-lg" style="border-color:rgba(251,191,36,0.5);color:#FBBF24;">Formation →</a>
       </div>
     </div>
   </div>
@@ -530,22 +390,22 @@
       </div>
 
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title">Accompagnement</p>
         <ul class="footer-links">
-          <li><a href="services/seo.html">Référencement SEO</a></li>
-          <li><a href="services/geo.html">GEO — Référencement Génératif</a></li>
-          <li><a href="services/linkedin.html">Visibilité LinkedIn</a></li>
-          <li><a href="services/ia.html">Accompagnement IA</a></li>
+          <li><a href="accompagnement.html">Référencement SEO</a></li>
+          <li><a href="accompagnement.html#geo">Référencement GEO</a></li>
+          <li><a href="accompagnement.html#linkedin">Visibilité LinkedIn</a></li>
+          <li><a href="accompagnement.html#ia">Intégration IA</a></li>
         </ul>
       </div>
 
       <div>
-        <p class="footer-col-title">Formations</p>
+        <p class="footer-col-title">Formation</p>
         <ul class="footer-links">
-          <li><a href="formations.html">SEO &amp; GEO — Complète</a></li>
-          <li><a href="formations.html">IA pour marketeurs</a></li>
-          <li><a href="formations.html">Prompt Engineering</a></li>
-          <li><a href="formations.html">Financement OPCO</a></li>
+          <li><a href="formation.html">SEO &amp; GEO — Complète</a></li>
+          <li><a href="formation.html#ia">IA pour marketeurs</a></li>
+          <li><a href="formation.html#prompt">Prompt Engineering</a></li>
+          <li><a href="formation.html#ateliers">Ateliers pratiques</a></li>
         </ul>
       </div>
 
@@ -596,6 +456,6 @@
   <span>Audit gratuit</span>
 </a>
 
-<script src="js/main.js?v=4.0"></script>
+<script src="js/main.js?v=5.0"></script>
 </body>
 </html>
