@@ -582,9 +582,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   background: linear-gradient(165deg, #0a1628 0%, #0d1f3c 40%, #0b1a30 100%);
 }
 
-/* Formation panel — dark with amber warmth */
+/* Formation panel — warm white with amber accents */
 .split-panel--formation {
-  background: linear-gradient(195deg, #1a1207 0%, #1c1608 40%, #181108 100%);
+  background: linear-gradient(195deg, #FFFCF5 0%, #FFF9EB 40%, #FFFDF7 100%);
 }
 
 /* Gradient overlays */
@@ -600,7 +600,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel--formation .split-panel-overlay {
-  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(217, 119, 6, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(217, 119, 6, 0.06) 0%, transparent 70%);
 }
 
 /* Orbs */
@@ -626,7 +626,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel--formation .split-panel-orb {
-  background: radial-gradient(circle, rgba(217, 119, 6, 0.25) 0%, rgba(251, 191, 36, 0.1) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, rgba(251, 191, 36, 0.05) 50%, transparent 70%);
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -688,9 +688,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel--formation .split-panel-icon {
-  background: rgba(217, 119, 6, 0.15);
-  color: var(--portal-formation-light);
-  border: 1px solid rgba(251, 191, 36, 0.2);
+  background: rgba(217, 119, 6, 0.1);
+  color: var(--amber);
+  border: 1px solid rgba(217, 119, 6, 0.2);
 }
 
 .split-panel.expanded .split-panel-icon {
@@ -717,7 +717,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   color: var(--portal-consulting-light);
 }
 .split-panel--formation .split-panel-kicker {
-  color: var(--portal-formation-light);
+  color: var(--amber);
 }
 
 /* Panel title */
@@ -876,11 +876,11 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: rgba(255, 255, 255, 0.5);
+  background: rgba(100, 100, 100, 0.15);
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: rgba(120, 120, 120, 0.8);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -911,6 +911,51 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   color: white;
   border-color: var(--portal-consulting);
 }
+
+/* ── Formation panel: light background overrides ── */
+.split-panel--formation .split-panel-title {
+  color: var(--text);
+}
+.split-panel--formation .split-panel-subtitle {
+  color: var(--text-muted);
+}
+.split-panel--formation .split-panel-list li {
+  color: #52525b;
+}
+.split-panel--formation .split-panel-list li::before {
+  background: var(--amber);
+  box-shadow: 0 0 6px rgba(217, 119, 6, 0.3);
+}
+.split-panel--formation .split-panel-cta--amber {
+  background: var(--amber);
+  color: white;
+  border-color: rgba(217, 119, 6, 0.3);
+}
+.split-panel--formation .split-panel-cta--amber:hover {
+  background: var(--amber-dark);
+  box-shadow: 0 8px 28px rgba(217, 119, 6, 0.25);
+}
+.split-panel--formation .split-panel-stats {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+.split-panel--formation .split-panel-stat-number {
+  color: var(--text);
+}
+.split-panel--formation .split-panel-stat-number--badge {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.2);
+  color: var(--amber);
+}
+.split-panel--formation .split-panel-stat-label {
+  color: var(--text-muted);
+}
+.split-panel--formation.expanded .split-panel-icon {
+  box-shadow: 0 0 24px rgba(217, 119, 6, 0.15);
+}
+.split-panel--formation.contracted .split-panel-orb {
+  opacity: 0.15;
+}
+/* Divider text overlay for dark/light boundary */
 
 /* Page Hero */
 .page-hero {
@@ -2477,8 +2522,8 @@ header.nav-transparent:not(.scrolled) [data-universe="formation"] .nav-logo span
     width: 100%;
     background: linear-gradient(90deg,
       rgba(37, 99, 235, 0.08),
-      rgba(255, 255, 255, 0.03),
-      rgba(217, 119, 6, 0.08)
+      rgba(200, 200, 200, 0.1),
+      rgba(217, 119, 6, 0.06)
     );
   }
   .split-divider::before,
@@ -2486,7 +2531,7 @@ header.nav-transparent:not(.scrolled) [data-universe="formation"] .nav-logo span
     width: auto;
     height: 1px;
     flex: 1;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(to right, transparent, rgba(150, 150, 150, 0.2), transparent);
   }
   .split-divider-text {
     margin: 0 12px;
