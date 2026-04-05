@@ -453,12 +453,12 @@
   // ── HERO CURSOR BLINK ─────────────────────────────────────
   var heroEm = document.querySelector('.hero-title em');
   if (heroEm) {
-    heroEm.style.borderRight = '2px solid rgba(147,197,253,0.6)';
+    heroEm.style.borderRight = '2px solid rgba(165,180,252,0.6)';
     heroEm.style.paddingRight = '4px';
     setTimeout(function() {
       heroEm.style.transition = 'border-color 0.3s ease';
       var blinkInterval = setInterval(function() {
-        heroEm.style.borderColor = heroEm.style.borderColor === 'transparent' ? 'rgba(147,197,253,0.6)' : 'transparent';
+        heroEm.style.borderColor = heroEm.style.borderColor === 'transparent' ? 'rgba(165,180,252,0.6)' : 'transparent';
       }, 600);
       // Stop blinking after 4 seconds
       setTimeout(function() {
