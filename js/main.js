@@ -396,14 +396,32 @@
       });
     });
 
-    // Orb parallax on split panels
+    // Orb + starfield parallax on split panels
+    var starLayers = [
+      { el: splitHero.querySelector('.hero-stars'),     factor: 8 },
+      { el: splitHero.querySelector('.hero-stars-mid'), factor: 14 },
+      { el: splitHero.querySelector('.hero-stars-far'), factor: 4 },
+      { el: splitHero.querySelector('.hero-nebula'),    factor: 6 }
+    ].filter(function(l) { return l.el; });
+
     splitHero.addEventListener('mousemove', function(e) {
       if (window.innerWidth <= 768) return;
+      var cx = (e.clientX / window.innerWidth - 0.5);
+      var cy = (e.clientY / window.innerHeight - 0.5);
+
+      // Orb parallax
       splitOrbs.forEach(function(orb) {
         var rect = orb.closest('.split-panel').getBoundingClientRect();
         var x = ((e.clientX - rect.left) / rect.width - 0.5) * 30;
         var y = ((e.clientY - rect.top) / rect.height - 0.5) * 30;
         orb.style.transform = 'translate(calc(-50% + ' + x + 'px), calc(-50% + ' + y + 'px))';
+      });
+
+      // Starfield depth parallax
+      starLayers.forEach(function(layer) {
+        var tx = cx * layer.factor;
+        var ty = cy * layer.factor;
+        layer.el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px)';
       });
     });
   }
