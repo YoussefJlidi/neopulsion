@@ -6,7 +6,7 @@
   <title>On nous avait prévenus : les LLMs ne sont pas prêts pour la recherche | Neopulsion</title>
   <meta name="description" content="Il y a un an, un article prévenait que les LLMs n'étaient pas prêts pour la recherche. 14 mois plus tard, les données 2025-2026 lui donnent raison. Analyse complète et introduction du Piloted Search.">
   <link rel="canonical" href="https://neopulsion.com/blog/llm-futur-recherche.html">
-  <link rel="stylesheet" href="../css/style.css?v=4.0">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
   <style>
     .article-hero { padding: 80px 0 0; background: var(--bg); }
     .article-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
@@ -70,9 +70,30 @@
   <nav class="container nav-inner">
     <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
     <div class="nav-links" id="primary-nav">
-      <a href="../accompagnement.html">Accompagnement</a>
-      <a href="../formation.html">Formation</a>
-      <a href="../blog.html">Blog</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
+          <a href="../services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
+          <a href="../services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
+          <a href="../services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Apprendre
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="../ateliers.html">Ateliers<small>Sessions courtes 2h — non OPCO</small></a>
+          <a href="../formations.html">Formations<small>Programmes finançables OPCO</small></a>
+        </div>
+      </div>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../glossaire.html">Glossaire</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
           À propos
@@ -81,7 +102,6 @@
         <div class="dropdown-menu">
           <a href="../a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
           <a href="../equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
-          <a href="../glossaire.html">Glossaire<small>Définitions SEO &amp; GEO</small></a>
         </div>
       </div>
     </div>
@@ -97,14 +117,24 @@
 
 <div class="mobile-nav" id="mobile-nav">
   <div class="mobile-nav-links">
-    <a href="../accompagnement.html">Accompagnement</a>
-    <a href="../formation.html">Formation</a>
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href="../services/seo.html">Référencement SEO</a>
+      <a href="../services/geo.html">GEO — Référencement Génératif</a>
+      <a href="../services/linkedin.html">Visibilité LinkedIn</a>
+      <a href="../services/ia.html">Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href="../ateliers.html">Ateliers</a>
+      <a href="../formations.html">Formations</a>
+    </div>
     <a href="../blog.html">Blog</a>
+    <a href="../glossaire.html">Glossaire</a>
     <span class="mobile-nav-group-title">À propos</span>
     <div class="mobile-nav-submenu">
       <a href="../a-propos.html">À propos</a>
       <a href="../equipe.html">Équipe</a>
-      <a href="../glossaire.html">Glossaire</a>
     </div>
   </div>
   <div class="mobile-nav-cta">
@@ -123,11 +153,6 @@
       <span class="breadcrumb-sep" aria-hidden="true">/</span>
       <span aria-current="page">Piloted Search</span>
     </nav>
-
-    <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
-      <a href="../services/seo.html" class="universe-badge universe-badge--consulting"><span>Accompagnement</span></a>
-      <a href="../formations.html" class="universe-badge universe-badge--formation"><span>Formation</span></a>
-    </div>
 
     <div style="max-width:800px; margin-top:32px;">
       <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
@@ -488,7 +513,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="../index.html" class="nav-logo">neo<span>pulsion</span></a>
-        <p class="footer-tagline">Accompagnement SEO &amp; GEO · Formation IA — Deux univers, une vision.</p>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
@@ -538,6 +563,6 @@
   <span>Audit gratuit</span>
 </a>
 
-<script src="../js/main.js?v=4.0"></script>
+<script src="../js/main.js?v=3.1"></script>
 </body>
 </html>

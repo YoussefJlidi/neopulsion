@@ -367,57 +367,6 @@
     });
   }
 
-  // ── SPLIT HERO HOVER & PARALLAX ──────────────────────────
-  var splitHero = document.querySelector('.split-hero');
-
-  if (splitHero) {
-    var splitPanels = splitHero.querySelectorAll('.split-panel');
-
-    // Hover expand/contract — desktop only
-    splitPanels.forEach(function(panel) {
-      panel.addEventListener('mouseenter', function() {
-        if (window.innerWidth <= 768) return;
-        splitPanels.forEach(function(p) {
-          if (p === panel) {
-            p.classList.add('expanded');
-            p.classList.remove('contracted');
-          } else {
-            p.classList.add('contracted');
-            p.classList.remove('expanded');
-          }
-        });
-      });
-    });
-
-    splitHero.addEventListener('mouseleave', function() {
-      splitPanels.forEach(function(p) {
-        p.classList.remove('expanded', 'contracted');
-      });
-    });
-
-    // Starfield + planets parallax
-    var parallaxEls = [
-      { el: splitHero.querySelector('.hero-stars'),     factor: 6 },
-      { el: splitHero.querySelector('.hero-stars-mid'), factor: 10 },
-      { el: splitHero.querySelector('.hero-stars-far'), factor: 3 },
-      { el: splitHero.querySelector('.planet--green'),  factor: 12 },
-      { el: splitHero.querySelector('.planet--orange'), factor: 15 },
-      { el: splitHero.querySelector('.hero-astronaut'), factor: 8 }
-    ].filter(function(l) { return l.el; });
-
-    splitHero.addEventListener('mousemove', function(e) {
-      if (window.innerWidth <= 768) return;
-      var cx = (e.clientX / window.innerWidth - 0.5);
-      var cy = (e.clientY / window.innerHeight - 0.5);
-
-      parallaxEls.forEach(function(layer) {
-        var tx = cx * layer.factor;
-        var ty = cy * layer.factor;
-        layer.el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px)';
-      });
-    });
-  }
-
   // ── CARD TILT ─────────────────────────────────────────────
   var tiltCards = document.querySelectorAll('.bento-card, .pain-card, .method-tab-panel');
   tiltCards.forEach(function(card) {
@@ -463,12 +412,12 @@
   // ── HERO CURSOR BLINK ─────────────────────────────────────
   var heroEm = document.querySelector('.hero-title em');
   if (heroEm) {
-    heroEm.style.borderRight = '2px solid rgba(165,180,252,0.6)';
+    heroEm.style.borderRight = '2px solid rgba(147,197,253,0.6)';
     heroEm.style.paddingRight = '4px';
     setTimeout(function() {
       heroEm.style.transition = 'border-color 0.3s ease';
       var blinkInterval = setInterval(function() {
-        heroEm.style.borderColor = heroEm.style.borderColor === 'transparent' ? 'rgba(165,180,252,0.6)' : 'transparent';
+        heroEm.style.borderColor = heroEm.style.borderColor === 'transparent' ? 'rgba(147,197,253,0.6)' : 'transparent';
       }, 600);
       // Stop blinking after 4 seconds
       setTimeout(function() {
