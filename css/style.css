@@ -555,7 +555,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 /* ============================================
-   SPLIT PORTAL HERO — SPACE EDITION
+   SPLIT PORTAL HERO — SOLAR SYSTEM
    ============================================ */
 .split-hero {
   display: flex;
@@ -565,121 +565,230 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   background: #050508;
 }
 
-/* ── Starfield layers (CSS-only, 3 parallax depths) ── */
+/* ── Starfield ── */
 .hero-stars, .hero-stars-mid, .hero-stars-far {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
 }
 .hero-stars {
   background-image:
-    radial-gradient(1.2px 1.2px at 12% 28%, rgba(255,255,255,0.5) 50%, transparent 50%),
-    radial-gradient(1px 1px at 67% 14%, rgba(255,255,255,0.35) 50%, transparent 50%),
-    radial-gradient(1.4px 1.4px at 34% 72%, rgba(255,255,255,0.45) 50%, transparent 50%),
-    radial-gradient(1px 1px at 82% 56%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(1.1px 1.1px at 5% 89%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(1px 1px at 91% 38%, rgba(255,255,255,0.25) 50%, transparent 50%),
-    radial-gradient(1.3px 1.3px at 48% 5%, rgba(255,255,255,0.5) 50%, transparent 50%),
-    radial-gradient(0.8px 0.8px at 23% 46%, rgba(255,255,255,0.2) 50%, transparent 50%),
-    radial-gradient(1px 1px at 76% 82%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(1.2px 1.2px at 55% 33%, rgba(255,255,255,0.35) 50%, transparent 50%);
-  animation: starsTwinkle 6s ease-in-out infinite alternate;
+    radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 65% 12%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 30% 70%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 80% 55%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 4% 88%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 92% 35%, rgba(255,255,255,0.35) 50%, transparent 50%),
+    radial-gradient(1.8px 1.8px at 50% 8%, rgba(255,255,255,0.65) 50%, transparent 50%),
+    radial-gradient(1px 1px at 20% 42%, rgba(255,255,255,0.3) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 75% 80%, rgba(255,255,255,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 55% 30%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(1.2px 1.2px at 42% 52%, rgba(255,255,255,0.3) 50%, transparent 50%),
+    radial-gradient(0.8px 0.8px at 88% 15%, rgba(255,255,255,0.25) 50%, transparent 50%);
+  animation: starsTwinkle 5s ease-in-out infinite alternate;
 }
 .hero-stars-mid {
   background-image:
-    radial-gradient(0.8px 0.8px at 18% 62%, rgba(165,180,252,0.3) 50%, transparent 50%),
-    radial-gradient(0.7px 0.7px at 44% 19%, rgba(167,139,250,0.25) 50%, transparent 50%),
-    radial-gradient(0.9px 0.9px at 72% 44%, rgba(165,180,252,0.2) 50%, transparent 50%),
-    radial-gradient(0.6px 0.6px at 8% 77%, rgba(167,139,250,0.2) 50%, transparent 50%),
-    radial-gradient(0.8px 0.8px at 88% 71%, rgba(199,210,254,0.15) 50%, transparent 50%),
-    radial-gradient(0.7px 0.7px at 31% 91%, rgba(165,180,252,0.2) 50%, transparent 50%),
-    radial-gradient(0.9px 0.9px at 63% 8%, rgba(167,139,250,0.25) 50%, transparent 50%);
-  animation: starsTwinkle 8s ease-in-out 2s infinite alternate;
+    radial-gradient(1px 1px at 15% 60%, rgba(138,170,148,0.25) 50%, transparent 50%),
+    radial-gradient(0.8px 0.8px at 42% 22%, rgba(201,168,130,0.2) 50%, transparent 50%),
+    radial-gradient(1px 1px at 70% 42%, rgba(138,170,148,0.18) 50%, transparent 50%),
+    radial-gradient(0.8px 0.8px at 85% 70%, rgba(201,168,130,0.15) 50%, transparent 50%),
+    radial-gradient(1px 1px at 28% 85%, rgba(138,170,148,0.15) 50%, transparent 50%),
+    radial-gradient(0.8px 0.8px at 60% 10%, rgba(201,168,130,0.18) 50%, transparent 50%);
+  animation: starsTwinkle 7s ease-in-out 1.5s infinite alternate;
 }
 .hero-stars-far {
   background-image:
-    radial-gradient(0.5px 0.5px at 15% 35%, rgba(255,255,255,0.12) 50%, transparent 50%),
-    radial-gradient(0.4px 0.4px at 40% 60%, rgba(255,255,255,0.1) 50%, transparent 50%),
-    radial-gradient(0.5px 0.5px at 70% 20%, rgba(255,255,255,0.08) 50%, transparent 50%),
-    radial-gradient(0.4px 0.4px at 90% 80%, rgba(255,255,255,0.1) 50%, transparent 50%),
-    radial-gradient(0.5px 0.5px at 25% 90%, rgba(255,255,255,0.08) 50%, transparent 50%),
-    radial-gradient(0.4px 0.4px at 58% 48%, rgba(255,255,255,0.06) 50%, transparent 50%);
+    radial-gradient(0.6px 0.6px at 12% 30%, rgba(255,255,255,0.15) 50%, transparent 50%),
+    radial-gradient(0.5px 0.5px at 38% 58%, rgba(255,255,255,0.12) 50%, transparent 50%),
+    radial-gradient(0.6px 0.6px at 68% 18%, rgba(255,255,255,0.1) 50%, transparent 50%),
+    radial-gradient(0.5px 0.5px at 92% 78%, rgba(255,255,255,0.12) 50%, transparent 50%),
+    radial-gradient(0.6px 0.6px at 22% 88%, rgba(255,255,255,0.1) 50%, transparent 50%);
 }
-
 @keyframes starsTwinkle {
-  0%   { opacity: 0.6; }
-  100% { opacity: 1; }
-}
-
-/* ── Nebula glow — very subtle ── */
-.hero-nebula {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 45% 40% at 25% 55%, rgba(99,102,241,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 45% at 75% 45%, rgba(139,92,246,0.05) 0%, transparent 70%),
-    radial-gradient(ellipse 80% 30% at 50% 100%, rgba(99,102,241,0.04) 0%, transparent 60%);
+  0% { opacity: 0.7; } 100% { opacity: 1; }
 }
 
 /* ── Shooting stars ── */
 .shooting-star {
-  position: absolute;
-  width: 80px;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.6), transparent);
-  border-radius: 100px;
-  z-index: 1;
-  opacity: 0;
-  pointer-events: none;
+  position: absolute; height: 1px; border-radius: 100px; z-index: 1; opacity: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,0.8), transparent);
 }
-.shooting-star:nth-child(1) {
-  top: 18%; left: 10%;
-  transform: rotate(-25deg);
-  animation: shootingStar 8s 2s ease-in infinite;
-}
-.shooting-star:nth-child(2) {
-  top: 35%; right: 5%; left: auto;
-  transform: rotate(-35deg);
-  animation: shootingStar 11s 6s ease-in infinite;
-  width: 60px;
-}
-.shooting-star:nth-child(3) {
-  top: 65%; left: 30%;
-  transform: rotate(-20deg);
-  animation: shootingStar 14s 10s ease-in infinite;
-  width: 50px;
+.shooting-star:nth-child(1) { top: 15%; left: 8%; width: 100px; transform: rotate(-25deg); animation: shootingStar 7s 1.5s ease-in infinite; }
+.shooting-star:nth-child(2) { top: 40%; right: 8%; left: auto; width: 70px; transform: rotate(-35deg); animation: shootingStar 10s 5s ease-in infinite; }
+.shooting-star:nth-child(3) { top: 70%; left: 25%; width: 60px; transform: rotate(-18deg); animation: shootingStar 13s 9s ease-in infinite; }
+@keyframes shootingStar {
+  0%  { opacity: 0; transform: rotate(-25deg) translateX(0); }
+  2%  { opacity: 1; }
+  7%  { opacity: 0; transform: rotate(-25deg) translateX(300px); }
+  100%{ opacity: 0; }
 }
 
-@keyframes shootingStar {
-  0%   { opacity: 0; transform: rotate(-25deg) translateX(0); }
-  2%   { opacity: 0.8; }
-  6%   { opacity: 0; transform: rotate(-25deg) translateX(250px); }
-  100% { opacity: 0; }
+/* ── Orbital paths ── */
+.orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.04);
+  pointer-events: none;
+  z-index: 0;
+}
+.orbit--1 {
+  width: 500px; height: 500px;
+  margin-top: -250px; margin-left: -250px;
+  border-color: rgba(255,255,255,0.05);
+}
+.orbit--2 {
+  width: 750px; height: 750px;
+  margin-top: -375px; margin-left: -375px;
+  border-color: rgba(255,255,255,0.035);
+  transform: rotate(15deg);
+}
+.orbit--3 {
+  width: 1050px; height: 1050px;
+  margin-top: -525px; margin-left: -525px;
+  border-color: rgba(255,255,255,0.02);
+  transform: rotate(-10deg);
+}
+
+/* ── Planets ── */
+.planet {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Green planet — Accompagnement side (muted grey-green, flat) */
+.planet--green {
+  width: 180px; height: 180px;
+  top: 22%; left: 8%;
+  animation: planetFloat 16s ease-in-out infinite;
+}
+.planet--green .planet-surface {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 32%, rgba(180,200,185,0.5) 0%, transparent 45%),
+    radial-gradient(circle at 60% 60%, rgba(80,110,90,0.4) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #6b8f71 0%, #5a7d62 35%, #4a6b53 65%, #3d5945 100%);
+  box-shadow: inset -20px -10px 40px rgba(0,0,0,0.45), inset 6px 6px 16px rgba(180,200,185,0.08);
+}
+.planet--green .planet-atmosphere {
+  position: absolute; inset: -15px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(107,143,113,0.10) 50%, rgba(90,125,98,0.04) 70%, transparent 80%);
+  filter: blur(10px);
+  animation: atmospherePulse 6s ease-in-out infinite;
+}
+.planet--green .planet-ring {
+  position: absolute;
+  top: 50%; left: -20%;
+  width: 140%; height: 40px;
+  border: 1.5px solid rgba(180,200,185,0.12);
+  border-radius: 50%;
+  transform: rotateX(75deg) rotateZ(-15deg);
+  border-bottom-color: transparent;
+  border-right-color: rgba(180,200,185,0.05);
+}
+.planet--green .moon {
+  position: absolute;
+  top: -12%; right: -5%;
+}
+
+/* Orange planet — Formation side (muted grey-orange, flat) */
+.planet--orange {
+  width: 150px; height: 150px;
+  bottom: 18%; right: 10%;
+  animation: planetFloat 20s ease-in-out 3s infinite;
+}
+.planet--orange .planet-surface {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(210,185,160,0.5) 0%, transparent 40%),
+    radial-gradient(circle at 60% 62%, rgba(160,110,70,0.35) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #b8906a 0%, #a67d5a 35%, #8f6b4a 65%, #7a5a3e 100%);
+  box-shadow: inset -18px -8px 35px rgba(0,0,0,0.45), inset 5px 5px 14px rgba(210,185,160,0.08);
+}
+.planet--orange .planet-atmosphere {
+  position: absolute; inset: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184,144,106,0.10) 50%, rgba(166,125,90,0.04) 70%, transparent 80%);
+  filter: blur(8px);
+  animation: atmospherePulse 8s ease-in-out 2s infinite;
+}
+.planet--orange .moon:first-of-type { top: -8%; left: -8%; }
+.planet--orange .moon.moon--orange-2 { bottom: 5%; right: -15%; animation-delay: -5s; }
+
+@keyframes planetFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-20px); }
+}
+@keyframes atmospherePulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50%      { opacity: 1; transform: scale(1.04); }
+}
+
+/* Moons */
+.moon {
+  position: absolute;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  animation: moonOrbit 10s linear infinite;
+}
+.moon--green {
+  background:
+    radial-gradient(circle at 35% 35%, rgba(180,200,185,0.6) 0%, transparent 60%),
+    radial-gradient(circle, #8aaa94 0%, #7a9a84 50%, #6b8f71 100%);
+  box-shadow: 0 0 8px rgba(107,143,113,0.2), inset -4px -2px 6px rgba(0,0,0,0.3);
+}
+.moon--orange, .moon--orange-2 {
+  background:
+    radial-gradient(circle at 35% 35%, rgba(210,185,160,0.6) 0%, transparent 60%),
+    radial-gradient(circle, #c9a882 0%, #b8906a 50%, #a67d5a 100%);
+  box-shadow: 0 0 8px rgba(184,144,106,0.2), inset -4px -2px 6px rgba(0,0,0,0.3);
+  width: 18px; height: 18px;
+}
+@keyframes moonOrbit {
+  0%   { transform: rotate(0deg) translateX(12px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+
+/* ── Central sun ── */
+.solar-sun {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 24px; height: 24px;
+  margin-top: -12px; margin-left: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(220,210,190,0.3) 40%, transparent 70%);
+  box-shadow: 0 0 30px rgba(220,210,190,0.15), 0 0 60px rgba(200,190,170,0.06);
+  z-index: 8;
+  animation: sunPulse 5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes sunPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(220,210,190,0.15), 0 0 60px rgba(200,190,170,0.06); }
+  50%      { transform: scale(1.1); box-shadow: 0 0 40px rgba(220,210,190,0.2), 0 0 80px rgba(200,190,170,0.08); }
 }
 
 /* ── Floating astronaut ── */
 .hero-astronaut {
   position: absolute;
-  bottom: 8%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
+  width: 120px;
   height: auto;
   z-index: 3;
-  opacity: 0.18;
-  filter: drop-shadow(0 0 30px rgba(139,92,246,0.15));
-  animation: astronautFloat 12s ease-in-out infinite;
+  opacity: 0.35;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.1));
+  animation: astronautFloat 14s ease-in-out infinite;
   pointer-events: none;
 }
-
 @keyframes astronautFloat {
-  0%, 100% { transform: translateX(-50%) translateY(0) rotate(-2deg); }
-  25%      { transform: translateX(-50%) translateY(-14px) rotate(0deg); }
-  50%      { transform: translateX(-50%) translateY(-6px) rotate(2deg); }
-  75%      { transform: translateX(-50%) translateY(-18px) rotate(0deg); }
+  0%, 100% { transform: translateX(-50%) translateY(0) rotate(-3deg); }
+  25%      { transform: translateX(calc(-50% + 10px)) translateY(-18px) rotate(0deg); }
+  50%      { transform: translateX(calc(-50% - 5px)) translateY(-8px) rotate(3deg); }
+  75%      { transform: translateX(calc(-50% + 5px)) translateY(-22px) rotate(0deg); }
 }
 
 /* Each panel */
@@ -695,134 +804,70 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   cursor: pointer;
   z-index: 2;
 }
-
-/* Consulting panel — transparent, inherits hero gradient */
-.split-panel--consulting {
-  background: transparent;
-}
-
-/* Formation panel — transparent, inherits hero gradient */
-.split-panel--formation {
-  background: transparent;
-}
+.split-panel--consulting { background: transparent; }
+.split-panel--formation { background: transparent; }
 
 /* Gradient overlays */
 .split-panel-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+  position: absolute; inset: 0; pointer-events: none;
   transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .split-panel--consulting .split-panel-overlay {
-  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(99, 102, 241, 0.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(107, 143, 113, 0.04) 0%, transparent 70%);
 }
-
 .split-panel--formation .split-panel-overlay {
-  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(139, 92, 246, 0.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(184, 144, 106, 0.04) 0%, transparent 70%);
 }
 
-/* Orbs — nebula style */
-.split-panel-orb {
+/* ── Noise texture overlay ── */
+.split-hero::before {
+  content: '';
   position: absolute;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  filter: blur(100px);
+  inset: 0;
+  z-index: 1;
   pointer-events: none;
-  animation: orbFloat 8s ease-in-out infinite;
-  transition: width 600ms cubic-bezier(0.16, 1, 0.3, 1),
-              height 600ms cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
-  opacity: 0.35;
-}
-
-.split-panel--consulting .split-panel-orb {
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, rgba(129, 140, 248, 0.08) 40%, transparent 70%);
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.split-panel--formation .split-panel-orb {
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(167, 139, 250, 0.08) 40%, transparent 70%);
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
 }
 
 /* Hover: expand active panel */
-.split-panel.expanded {
-  flex: 1.3;
-}
-.split-panel.contracted {
-  flex: 0.7;
-}
+.split-panel.expanded { flex: 1.3; }
+.split-panel.contracted { flex: 0.7; }
 
-/* On hover, orb grows & brightens */
-.split-panel.expanded .split-panel-orb {
-  width: 550px;
-  height: 550px;
-  opacity: 0.55;
-}
-.split-panel.contracted .split-panel-orb {
-  opacity: 0.15;
-}
-
-/* Content scale on hover */
+/* Content */
 .split-panel-content {
-  position: relative;
-  z-index: 2;
-  max-width: 420px;
-  width: 100%;
-  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative; z-index: 2; max-width: 420px; width: 100%;
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1), opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
+.split-panel.expanded .split-panel-content { transform: scale(1.03); }
+.split-panel.contracted .split-panel-content { opacity: 0.5; transform: scale(0.97); }
 
-.split-panel.expanded .split-panel-content {
-  transform: scale(1.03);
-}
-.split-panel.contracted .split-panel-content {
-  opacity: 0.5;
-  transform: scale(0.97);
-}
-
-/* Panel icon — glass morphism */
+/* Panel icon */
 .split-panel-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 56px; height: 56px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
   margin-bottom: 24px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 400ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .split-panel--consulting .split-panel-icon {
-  background: rgba(99, 102, 241, 0.10);
-  color: var(--portal-consulting-light);
-  border: 1px solid rgba(129, 140, 248, 0.15);
+  background: rgba(107, 143, 113, 0.12);
+  color: #8aaa94;
+  border: 1px solid rgba(107, 143, 113, 0.15);
 }
-
 .split-panel--formation .split-panel-icon {
-  background: rgba(139, 92, 246, 0.10);
-  color: var(--portal-formation-light);
-  border: 1px solid rgba(167, 139, 250, 0.15);
+  background: rgba(184, 144, 106, 0.12);
+  color: #c9a882;
+  border: 1px solid rgba(184, 144, 106, 0.15);
 }
-
-.split-panel.expanded .split-panel-icon {
-  transform: scale(1.08);
-}
-
+.split-panel.expanded .split-panel-icon { transform: scale(1.08); }
 .split-panel--consulting.expanded .split-panel-icon {
-  box-shadow: 0 0 32px rgba(99, 102, 241, 0.2), 0 0 60px rgba(99, 102, 241, 0.08);
+  box-shadow: 0 0 24px rgba(107, 143, 113, 0.15);
 }
 .split-panel--formation.expanded .split-panel-icon {
-  box-shadow: 0 0 32px rgba(139, 92, 246, 0.2), 0 0 60px rgba(139, 92, 246, 0.08);
+  box-shadow: 0 0 24px rgba(184, 144, 106, 0.15);
 }
 
 /* Panel kicker */
@@ -835,10 +880,10 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel--consulting .split-panel-kicker {
-  color: var(--portal-consulting-light);
+  color: #8aaa94;
 }
 .split-panel--formation .split-panel-kicker {
-  color: var(--portal-formation-light);
+  color: #c9a882;
 }
 
 /* Panel title */
@@ -888,12 +933,12 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel--consulting .split-panel-list li::before {
-  background: var(--portal-consulting-light);
-  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5), 0 0 3px rgba(129, 140, 248, 0.8);
+  background: #7a9a84;
+  box-shadow: 0 0 6px rgba(107, 143, 113, 0.3);
 }
 .split-panel--formation .split-panel-list li::before {
-  background: var(--portal-formation-light);
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5), 0 0 3px rgba(167, 139, 250, 0.8);
+  background: #b8906a;
+  box-shadow: 0 0 6px rgba(184, 144, 106, 0.3);
 }
 
 /* CTA buttons — glass + glow */
@@ -914,23 +959,23 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 .split-panel-cta--blue {
-  background: rgba(99, 102, 241, 0.25);
-  border: 1.5px solid rgba(129, 140, 248, 0.25);
+  background: rgba(107, 143, 113, 0.12);
+  border: 1.5px solid rgba(107, 143, 113, 0.2);
 }
 .split-panel-cta--blue:hover {
-  background: rgba(99, 102, 241, 0.4);
+  background: rgba(107, 143, 113, 0.22);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3), 0 0 60px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 8px 24px rgba(107, 143, 113, 0.15);
 }
 
 .split-panel-cta--amber {
-  background: rgba(139, 92, 246, 0.25);
-  border: 1.5px solid rgba(167, 139, 250, 0.25);
+  background: rgba(184, 144, 106, 0.12);
+  border: 1.5px solid rgba(184, 144, 106, 0.2);
 }
 .split-panel-cta--amber:hover {
-  background: rgba(139, 92, 246, 0.4);
+  background: rgba(184, 144, 106, 0.22);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3), 0 0 60px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 8px 24px rgba(184, 144, 106, 0.15);
 }
 
 /* Panel stats */
@@ -958,9 +1003,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   font-size: 1.25rem;
   padding: 2px 12px;
   border-radius: 100px;
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid rgba(167, 139, 250, 0.2);
-  color: var(--portal-formation-light);
+  background: rgba(251, 146, 60, 0.12);
+  border: 1px solid rgba(251, 146, 60, 0.2);
+  color: #fdba74;
   display: inline-block;
   width: fit-content;
 }
@@ -2600,11 +2645,14 @@ header.nav-transparent:not(.scrolled) [data-universe="formation"] .nav-logo span
     width: 300px !important;
     height: 300px !important;
   }
+  .planet--green { width: 100px; height: 100px; top: 8%; left: 5%; }
+  .planet--orange { width: 80px; height: 80px; bottom: 8%; right: 5%; }
+  .orbit { display: none; }
   .hero-astronaut {
-    width: 60px;
+    width: 70px;
     bottom: auto;
     top: 48%;
-    opacity: 0.12;
+    opacity: 0.2;
   }
   .split-divider {
     position: relative;

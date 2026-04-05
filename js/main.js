@@ -372,7 +372,6 @@
 
   if (splitHero) {
     var splitPanels = splitHero.querySelectorAll('.split-panel');
-    var splitOrbs = splitHero.querySelectorAll('.split-panel-orb');
 
     // Hover expand/contract — desktop only
     splitPanels.forEach(function(panel) {
@@ -396,12 +395,14 @@
       });
     });
 
-    // Orb + starfield parallax on split panels
-    var starLayers = [
-      { el: splitHero.querySelector('.hero-stars'),     factor: 8 },
-      { el: splitHero.querySelector('.hero-stars-mid'), factor: 14 },
-      { el: splitHero.querySelector('.hero-stars-far'), factor: 4 },
-      { el: splitHero.querySelector('.hero-nebula'),    factor: 6 }
+    // Starfield + planets parallax
+    var parallaxEls = [
+      { el: splitHero.querySelector('.hero-stars'),     factor: 6 },
+      { el: splitHero.querySelector('.hero-stars-mid'), factor: 10 },
+      { el: splitHero.querySelector('.hero-stars-far'), factor: 3 },
+      { el: splitHero.querySelector('.planet--green'),  factor: 12 },
+      { el: splitHero.querySelector('.planet--orange'), factor: 15 },
+      { el: splitHero.querySelector('.hero-astronaut'), factor: 8 }
     ].filter(function(l) { return l.el; });
 
     splitHero.addEventListener('mousemove', function(e) {
@@ -409,16 +410,7 @@
       var cx = (e.clientX / window.innerWidth - 0.5);
       var cy = (e.clientY / window.innerHeight - 0.5);
 
-      // Orb parallax
-      splitOrbs.forEach(function(orb) {
-        var rect = orb.closest('.split-panel').getBoundingClientRect();
-        var x = ((e.clientX - rect.left) / rect.width - 0.5) * 30;
-        var y = ((e.clientY - rect.top) / rect.height - 0.5) * 30;
-        orb.style.transform = 'translate(calc(-50% + ' + x + 'px), calc(-50% + ' + y + 'px))';
-      });
-
-      // Starfield depth parallax
-      starLayers.forEach(function(layer) {
+      parallaxEls.forEach(function(layer) {
         var tx = cx * layer.factor;
         var ty = cy * layer.factor;
         layer.el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px)';
