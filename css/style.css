@@ -506,37 +506,72 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .mobile-nav-cta .btn-primary,
 .mobile-nav-cta .btn-secondary { text-align: center; justify-content: center; }
 
-/* (body dark removed — light theme) */
-
 /* ============================================
-   NEO HERO (light, humanized)
+   NEO HERO — gradient blanc → bleu, futuriste
    ============================================ */
 .neo-hero {
-  background: var(--bg);
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f6ff 40%, #dbeafe 75%, #bfdbfe 100%);
   padding: 160px 0 0;
   text-align: center;
+  overflow: hidden;
+}
+.neo-hero-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 .neo-hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 720px;
   margin: 0 auto;
 }
-.neo-hero-kicker {
-  font-size: 0.8125rem;
+
+/* Badge kicker */
+.neo-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--blue);
-  margin-bottom: 24px;
+  letter-spacing: 0.1em;
+  color: var(--blue-dark);
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.15);
+  padding: 8px 20px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
 }
+.neo-hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(59,130,246,0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(59,130,246,0); }
+}
+
 .neo-hero-title {
   font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 800;
-  color: var(--text);
+  color: var(--navy);
   line-height: 1.12;
   letter-spacing: -0.04em;
   margin-bottom: 24px;
 }
-.text-blue  { color: var(--blue); }
+.text-blue  { color: var(--blue-dark); }
 .text-amber { color: #D97706; }
 .text-green { color: var(--green); }
 .text-underline {
@@ -547,7 +582,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 .neo-hero-desc {
   font-size: 1.125rem;
-  color: var(--text-muted);
+  color: #475569;
   line-height: 1.75;
   margin-bottom: 36px;
   max-width: 560px;
@@ -566,22 +601,21 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   align-items: center;
   gap: 6px;
   padding: 14px 28px;
-  color: var(--text-muted);
+  color: var(--blue-dark);
   font-weight: 600;
   font-size: 0.9375rem;
   text-decoration: none;
   border-radius: var(--radius-sm);
-  transition: color var(--transition);
+  transition: all var(--transition);
   font-family: var(--font);
 }
-.btn-ghost-light:hover { color: var(--text); }
+.btn-ghost-light:hover { color: var(--navy); }
 
 .neo-hero-stats {
   display: flex;
   justify-content: center;
   gap: 48px;
-  padding-bottom: 56px;
-  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 48px;
 }
 .neo-hero-stat {
   display: flex;
@@ -592,28 +626,46 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .neo-hero-stat strong {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--text);
+  color: var(--navy);
   letter-spacing: -0.03em;
 }
 .neo-hero-stat span {
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: #64748b;
   font-weight: 500;
 }
 
-/* Logos inside hero — dark strip for white logos */
+/* Logos — blended into gradient */
 .neo-hero-logos {
-  padding: 36px 0 40px;
-  background: var(--navy);
+  padding: 32px 0 40px;
   text-align: center;
+  background: linear-gradient(180deg, #bfdbfe 0%, #eff6ff 100%);
 }
 .neo-hero-logos-label {
   font-size: 0.6875rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255,255,255,0.4);
+  color: #94a3b8;
   margin-bottom: 20px;
+}
+.neo-hero-logos-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all var(--transition);
+}
+.neo-hero-logos-row:hover {
+  opacity: 0.8;
+  filter: grayscale(0%);
+}
+.neo-hero-logos-row img {
+  height: 28px;
+  width: auto;
 }
 
 /* ============================================
@@ -623,8 +675,11 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   padding: 64px 0;
   background: var(--bg);
 }
+.row-section:first-of-type {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
 .row-section--subtle {
-  background: var(--bg-subtle);
+  background: #f8fafc;
 }
 .row-header {
   display: flex;
@@ -668,8 +723,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .row-card {
   flex: 0 0 280px;
   scroll-snap-align: start;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59,130,246,0.08);
   border-radius: var(--radius-md);
   padding: 28px;
   display: flex;
@@ -679,8 +735,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   overflow: hidden;
 }
 .row-card:hover {
-  border-color: rgba(0,0,0,0.12);
-  box-shadow: var(--shadow-lg);
+  background: white;
+  border-color: rgba(59,130,246,0.2);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.08), 0 0 0 1px rgba(59,130,246,0.05);
   transform: translateY(-4px);
 }
 
@@ -750,8 +807,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .res-card {
   flex: 0 0 300px;
   scroll-snap-align: start;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59,130,246,0.08);
   border-radius: var(--radius-md);
   overflow: hidden;
   text-decoration: none;
@@ -761,8 +819,9 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   flex-direction: column;
 }
 .res-card:hover {
-  border-color: rgba(0,0,0,0.12);
-  box-shadow: var(--shadow-lg);
+  background: white;
+  border-color: rgba(59,130,246,0.2);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.08);
   transform: translateY(-4px);
 }
 .res-card-img {
