@@ -429,4 +429,49 @@
     }, 1500);
   }
 
+  // ── OFFER FILTERS ────────────────────────────────────────
+  const filterBtns = document.querySelectorAll('.offer-filter');
+  const offerCards = document.querySelectorAll('.offer-card');
+  const navFilterLinks = document.querySelectorAll('[data-filter]');
+
+  function filterOffers(type) {
+    filterBtns.forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.filter === type);
+    });
+    offerCards.forEach(function (card) {
+      if (type === 'all' || card.dataset.type === type) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterOffers(btn.dataset.filter);
+    });
+  });
+
+  navFilterLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var type = link.dataset.filter;
+      if (type) {
+        e.preventDefault();
+        filterOffers(type);
+        var target = document.getElementById('offres');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        if (mobileNav && mobileNav.classList.contains('open')) {
+          mobileNav.classList.remove('open');
+          if (burgerBtn) {
+            burgerBtn.classList.remove('open');
+            burgerBtn.setAttribute('aria-expanded', 'false');
+          }
+          mobileNav.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+  });
+
 })();
