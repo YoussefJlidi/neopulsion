@@ -429,49 +429,33 @@
     }, 1500);
   }
 
-  // ── OFFER FILTERS ────────────────────────────────────────
-  const filterBtns = document.querySelectorAll('.offer-filter');
-  const offerCards = document.querySelectorAll('.offer-card');
-  const navFilterLinks = document.querySelectorAll('[data-filter]');
+  // ── HERO SLIDER ──────────────────────────────────────────
+  var heroSlides = document.querySelectorAll('.hero-slide');
+  var heroDots   = document.querySelectorAll('.hero-slider-dot');
+  var currentSlide = 0;
+  var slideInterval;
 
-  function filterOffers(type) {
-    filterBtns.forEach(function (btn) {
-      btn.classList.toggle('active', btn.dataset.filter === type);
-    });
-    offerCards.forEach(function (card) {
-      if (type === 'all' || card.dataset.type === type) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
+  function goToSlide(idx) {
+    heroSlides.forEach(function (s) { s.classList.remove('active'); });
+    heroDots.forEach(function (d)   { d.classList.remove('active'); });
+    if (heroSlides[idx]) heroSlides[idx].classList.add('active');
+    if (heroDots[idx])   heroDots[idx].classList.add('active');
+    currentSlide = idx;
   }
 
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      filterOffers(btn.dataset.filter);
-    });
-  });
+  function nextSlide() {
+    goToSlide((currentSlide + 1) % heroSlides.length);
+  }
 
-  navFilterLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      var type = link.dataset.filter;
-      if (type) {
-        e.preventDefault();
-        filterOffers(type);
-        var target = document.getElementById('offres');
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-        if (mobileNav && mobileNav.classList.contains('open')) {
-          mobileNav.classList.remove('open');
-          if (burgerBtn) {
-            burgerBtn.classList.remove('open');
-            burgerBtn.setAttribute('aria-expanded', 'false');
-          }
-          mobileNav.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
-        }
-      }
+  if (heroSlides.length > 1) {
+    slideInterval = setInterval(nextSlide, 6000);
+    heroDots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        clearInterval(slideInterval);
+        goToSlide(parseInt(dot.dataset.slide, 10));
+        slideInterval = setInterval(nextSlide, 6000);
+      });
     });
-  });
+  }
 
 })();
