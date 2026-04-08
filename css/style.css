@@ -697,13 +697,15 @@ header.nav-transparent:not(.scrolled) .btn-ghost-nav:hover { color: white; backg
   gap: 64px;
 }
 .neo-hero-content {
-  flex: 1;
-  max-width: 560px;
+  flex: 1 1 55%;
+  max-width: 580px;
+  position: relative;
+  z-index: 2;
 }
 .neo-hero-visual {
-  flex: 1;
+  flex: 0 0 440px;
   position: relative;
-  min-height: 400px;
+  min-height: 420px;
 }
 
 .neo-hero-inner {
@@ -832,21 +834,21 @@ header.nav-transparent:not(.scrolled) .btn-ghost-nav:hover { color: white; backg
   transition: transform 0.6s ease;
 }
 .hero-card--front {
-  top: 40px;
-  right: 20px;
+  top: 60px;
+  left: 100px;
   z-index: 3;
   transform: rotateY(-5deg) rotateX(3deg);
 }
 .hero-card--mid {
   top: 0;
-  right: 160px;
+  left: 0;
   z-index: 2;
   transform: rotateY(-8deg) rotateX(2deg) translateZ(-30px);
   opacity: 0.9;
 }
 .hero-card--back {
-  top: 180px;
-  right: 100px;
+  top: 220px;
+  left: 50px;
   z-index: 1;
   transform: rotateY(-3deg) rotateX(5deg) translateZ(-50px);
   opacity: 0.85;
