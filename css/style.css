@@ -518,79 +518,32 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 
 /* ============================================
-   HERO SLIDER
+   NEO HERO (single, humanized)
    ============================================ */
-.hero-slider {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+.neo-hero {
+  background: linear-gradient(170deg, #06080d 0%, #0c1525 50%, #0a0a0f 100%);
+  padding: 160px 0 0;
+  text-align: center;
 }
-.hero-slide {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  pointer-events: none;
-  padding: 140px 0 80px;
+.neo-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
 }
-.hero-slide.active {
-  position: relative;
-  opacity: 1;
-  pointer-events: auto;
-}
-.hero-slide-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-.hero-slide-bg--blue  { background: linear-gradient(165deg, #06080d 0%, #0c1a3a 40%, #1e3a5f 100%); }
-.hero-slide-bg--amber { background: linear-gradient(165deg, #06080d 0%, #2a1a05 40%, #3d2506 100%); }
-.hero-slide-bg--green { background: linear-gradient(165deg, #06080d 0%, #052e1a 40%, #0a3d24 100%); }
-
-.hero-slide-split {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-.hero-slide-inner {
-  flex: 1;
-  min-width: 0;
-  max-width: 560px;
-}
-.hero-slide-visual {
-  flex: 0 0 420px;
-  max-width: 420px;
-}
-.hero-slide-visual img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.hero-slide-flag {
-  display: inline-block;
-  font-size: 0.6875rem;
-  font-weight: 700;
+.neo-hero-kicker {
+  font-size: 0.8125rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 6px 16px;
-  border-radius: 100px;
+  letter-spacing: 0.12em;
+  color: var(--blue-light);
   margin-bottom: 24px;
 }
-.hero-slide-flag--blue  { background: rgba(59,130,246,0.2); color: #93C5FD; }
-.hero-slide-flag--amber { background: rgba(217,119,6,0.2);  color: #FCD34D; }
-.hero-slide-flag--green { background: rgba(5,150,105,0.2);  color: #6EE7B7; }
-
-.hero-slide-title {
-  font-size: clamp(2.5rem, 5.5vw, 4rem);
+.neo-hero-title {
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 800;
   color: white;
-  line-height: 1.1;
+  line-height: 1.12;
   letter-spacing: -0.04em;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .text-blue  { color: var(--blue-light); }
 .text-amber { color: #FCD34D; }
@@ -601,18 +554,21 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   text-underline-offset: 6px;
   text-decoration-thickness: 3px;
 }
-
-.hero-slide-desc {
+.neo-hero-desc {
   font-size: 1.125rem;
-  color: rgba(255,255,255,0.55);
-  line-height: 1.7;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.75;
   margin-bottom: 36px;
   max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.hero-slide-actions {
+.neo-hero-actions {
   display: flex;
   gap: 16px;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 56px;
 }
 .btn-ghost-light {
   display: inline-flex;
@@ -633,30 +589,43 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .btn-primary--green { background: #059669; border-color: #059669; }
 .btn-primary--green:hover { background: #047857; border-color: #047857; }
 
-.hero-slider-dots {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+.neo-hero-stats {
   display: flex;
-  gap: 10px;
-  z-index: 10;
+  justify-content: center;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.hero-slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.3);
-  background: transparent;
-  cursor: pointer;
-  transition: all var(--transition);
-  padding: 0;
+.neo-hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
-.hero-slider-dot.active {
-  background: white;
-  border-color: white;
-  width: 32px;
-  border-radius: 5px;
+.neo-hero-stat strong {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.03em;
+}
+.neo-hero-stat span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
+  font-weight: 500;
+}
+
+/* Logos inside hero — no gap */
+.neo-hero-logos {
+  padding: 36px 0 40px;
+  text-align: center;
+}
+.neo-hero-logos-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 20px;
 }
 
 /* ============================================
@@ -2185,7 +2154,6 @@ footer {
    ============================================ */
 
 @media (max-width: 1024px) {
-  .hero-slide-visual { flex: 0 0 320px; max-width: 320px; }
   .section { padding: 72px 0; }
   .hero { padding: 160px 0 88px; }
   .hero-inner { max-width: 100%; }
@@ -2296,10 +2264,10 @@ footer {
 .svc-card-link:hover { opacity: 0.75; }
 
 @media (max-width: 768px) {
-  .hero-slide-visual { display: none; }
-  .hero-slide-split { flex-direction: column; }
-  .hero-slide { padding: 120px 0 60px; }
-  .hero-slider { min-height: auto; }
+  .neo-hero { padding: 120px 0 0; }
+  .neo-hero-stats { gap: 24px; flex-wrap: wrap; }
+  .neo-hero-stat strong { font-size: 1.375rem; }
+  .neo-hero-actions { flex-direction: column; align-items: center; }
   .row-card { flex: 0 0 240px; }
   .res-card { flex: 0 0 260px; }
   .section { padding: 48px 0; }

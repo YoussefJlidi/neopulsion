@@ -429,33 +429,6 @@
     }, 1500);
   }
 
-  // ── HERO SLIDER ──────────────────────────────────────────
-  var heroSlides = document.querySelectorAll('.hero-slide');
-  var heroDots   = document.querySelectorAll('.hero-slider-dot');
-  var currentSlide = 0;
-  var slideInterval;
-
-  function goToSlide(idx) {
-    heroSlides.forEach(function (s) { s.classList.remove('active'); });
-    heroDots.forEach(function (d)   { d.classList.remove('active'); });
-    if (heroSlides[idx]) heroSlides[idx].classList.add('active');
-    if (heroDots[idx])   heroDots[idx].classList.add('active');
-    currentSlide = idx;
-  }
-
-  function nextSlide() {
-    goToSlide((currentSlide + 1) % heroSlides.length);
-  }
-
-  if (heroSlides.length > 1) {
-    slideInterval = setInterval(nextSlide, 3000);
-    heroDots.forEach(function (dot) {
-      dot.addEventListener('click', function () {
-        clearInterval(slideInterval);
-        goToSlide(parseInt(dot.dataset.slide, 10));
-        slideInterval = setInterval(nextSlide, 3000);
-      });
-    });
-  }
+  // ── (slider removed — single hero) ──
 
 })();
