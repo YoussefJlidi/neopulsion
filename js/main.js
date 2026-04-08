@@ -448,12 +448,12 @@
   }
 
   if (heroSlides.length > 1) {
-    slideInterval = setInterval(nextSlide, 6000);
+    slideInterval = setInterval(nextSlide, 3000);
     heroDots.forEach(function (dot) {
       dot.addEventListener('click', function () {
         clearInterval(slideInterval);
         goToSlide(parseInt(dot.dataset.slide, 10));
-        slideInterval = setInterval(nextSlide, 6000);
+        slideInterval = setInterval(nextSlide, 3000);
       });
     });
   }

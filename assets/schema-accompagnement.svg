@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <!-- Background glow -->
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <circle cx="300" cy="250" r="220" fill="url(#glow1)"/>
+
+  <!-- Orbital rings -->
+  <ellipse cx="300" cy="250" rx="180" ry="70" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1" transform="rotate(-15 300 250)"/>
+  <ellipse cx="300" cy="250" rx="180" ry="70" stroke="#3b82f6" stroke-opacity="0.1" stroke-width="1" transform="rotate(25 300 250)"/>
+  <ellipse cx="300" cy="250" rx="180" ry="70" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1" transform="rotate(65 300 250)"/>
+
+  <!-- Connection lines -->
+  <line x1="300" y1="250" x2="160" y2="140" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="300" y1="250" x2="440" y2="140" stroke="#60a5fa" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="300" y1="250" x2="160" y2="360" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="300" y1="250" x2="440" y2="360" stroke="#60a5fa" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="160" y1="140" x2="440" y2="140" stroke="#3b82f6" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="160" y1="360" x2="440" y2="360" stroke="#3b82f6" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="6 4"/>
+
+  <!-- Central hub -->
+  <circle cx="300" cy="250" r="48" fill="#0c1a3a" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="300" cy="250" r="38" fill="none" stroke="#60a5fa" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="300" y="244" text-anchor="middle" fill="#93C5FD" font-family="Inter,sans-serif" font-size="11" font-weight="700" letter-spacing="0.1em">VOTRE</text>
+  <text x="300" y="262" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="13" font-weight="800">BUSINESS</text>
+
+  <!-- SEO node -->
+  <circle cx="160" cy="140" r="34" fill="#0c1a3a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="160" y="137" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">SEO</text>
+  <text x="160" y="152" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="500">Google</text>
+  <!-- Pulse -->
+  <circle cx="160" cy="140" r="34" fill="none" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1">
+    <animate attributeName="r" values="34;44;34" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- GEO node -->
+  <circle cx="440" cy="140" r="34" fill="#0c1a3a" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="440" y="137" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">GEO</text>
+  <text x="440" y="152" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="500">IA gen.</text>
+  <circle cx="440" cy="140" r="34" fill="none" stroke="#60a5fa" stroke-opacity="0.4" stroke-width="1">
+    <animate attributeName="r" values="34;44;34" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- LinkedIn node -->
+  <circle cx="160" cy="360" r="34" fill="#0c1a3a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="160" y="357" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="11" font-weight="700">LinkedIn</text>
+  <text x="160" y="372" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="500">Organique</text>
+
+  <!-- IA node -->
+  <circle cx="440" cy="360" r="34" fill="#0c1a3a" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="440" y="357" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">IA</text>
+  <text x="440" y="372" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="500">Workflow</text>
+
+  <!-- Data flow particles on lines -->
+  <circle r="3" fill="#3b82f6">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M300,250 L160,140"/>
+  </circle>
+  <circle r="3" fill="#60a5fa">
+    <animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M300,250 L440,140"/>
+  </circle>
+  <circle r="3" fill="#3b82f6">
+    <animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M300,250 L160,360"/>
+  </circle>
+  <circle r="3" fill="#60a5fa">
+    <animateMotion dur="4s" begin="3s" repeatCount="indefinite" path="M300,250 L440,360"/>
+  </circle>
+
+  <!-- Stats -->
+  <rect x="210" y="420" width="180" height="40" rx="10" fill="#0c1a3a" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="300" y="438" text-anchor="middle" fill="#93C5FD" font-family="Inter,sans-serif" font-size="10" font-weight="600">324+ entreprises accompagnées</text>
+  <text x="300" y="452" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif" font-size="8">Résultats sous 90 jours</text>
+</svg>

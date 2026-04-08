@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <defs>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="250" r="200" fill="url(#glowA)"/>
+
+  <!-- Hexagonal grid background -->
+  <path d="M200,80 L230,60 L260,80 L260,120 L230,140 L200,120Z" stroke="#D97706" stroke-opacity="0.06" stroke-width="1" fill="none"/>
+  <path d="M260,80 L290,60 L320,80 L320,120 L290,140 L260,120Z" stroke="#D97706" stroke-opacity="0.06" stroke-width="1" fill="none"/>
+  <path d="M320,80 L350,60 L380,80 L380,120 L350,140 L320,120Z" stroke="#D97706" stroke-opacity="0.06" stroke-width="1" fill="none"/>
+  <path d="M340,120 L370,100 L400,120 L400,160 L370,180 L340,160Z" stroke="#D97706" stroke-opacity="0.08" stroke-width="1" fill="none"/>
+  <path d="M160,120 L190,100 L220,120 L220,160 L190,180 L160,160Z" stroke="#D97706" stroke-opacity="0.08" stroke-width="1" fill="none"/>
+
+  <!-- Central learning path - vertical -->
+  <line x1="300" y1="90" x2="300" y2="420" stroke="#D97706" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Moving particle up -->
+  <circle r="4" fill="#FCD34D">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M300,420 L300,90"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Level 1 - Foundations -->
+  <rect x="130" y="350" width="340" height="60" rx="14" fill="#2a1a05" stroke="#D97706" stroke-opacity="0.2" stroke-width="1"/>
+  <rect x="130" y="350" width="340" height="60" rx="14" fill="none" stroke="#D97706" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="170" cy="380" r="16" fill="#3d2506" stroke="#D97706" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="170" y="385" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="14" font-weight="800">1</text>
+  <text x="210" y="373" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">Fondamentaux</text>
+  <text x="210" y="390" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="9">SEO technique, audit, architecture</text>
+  <rect x="380" y="367" width="72" height="24" rx="12" fill="#3d2506" stroke="#D97706" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="416" y="383" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="9" font-weight="700">Jour 1 AM</text>
+
+  <!-- Level 2 - Strategy -->
+  <rect x="130" y="270" width="340" height="60" rx="14" fill="#2a1a05" stroke="#FBBF24" stroke-opacity="0.25" stroke-width="1"/>
+  <circle cx="170" cy="300" r="16" fill="#3d2506" stroke="#FBBF24" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="170" y="305" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="14" font-weight="800">2</text>
+  <text x="210" y="293" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">Stratégie contenu &amp; IA</text>
+  <text x="210" y="310" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="9">GEO, ChatGPT, Perplexity, Gemini</text>
+  <rect x="380" y="287" width="72" height="24" rx="12" fill="#3d2506" stroke="#FBBF24" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="416" y="303" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="9" font-weight="700">Jour 1 PM</text>
+
+  <!-- Level 3 - Practice -->
+  <rect x="130" y="190" width="340" height="60" rx="14" fill="#2a1a05" stroke="#FCD34D" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="170" cy="220" r="16" fill="#3d2506" stroke="#FCD34D" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="170" y="225" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="14" font-weight="800">3</text>
+  <text x="210" y="213" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">Cas pratiques</text>
+  <text x="210" y="230" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="9">Vos vrais projets, résultats concrets</text>
+  <rect x="380" y="207" width="72" height="24" rx="12" fill="#3d2506" stroke="#FCD34D" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="416" y="223" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="9" font-weight="700">Jour 2 AM</text>
+
+  <!-- Level 4 - Certification -->
+  <rect x="130" y="105" width="340" height="60" rx="14" fill="#2a1a05" stroke="#FCD34D" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="170" cy="135" r="16" fill="#D97706" stroke="#FCD34D" stroke-width="1.5"/>
+  <text x="170" y="140" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="14" font-weight="800">&#9733;</text>
+  <text x="210" y="128" fill="white" font-family="Inter,sans-serif" font-size="12" font-weight="700">Certification</text>
+  <text x="210" y="145" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="9">Attestation de compétences, plan d'action</text>
+  <!-- Pulse on certification -->
+  <rect x="130" y="105" width="340" height="60" rx="14" fill="none" stroke="#FCD34D" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- OPCO Badge -->
+  <rect x="380" y="118" width="72" height="32" rx="16" fill="#D97706"/>
+  <text x="416" y="139" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="11" font-weight="800">OPCO</text>
+
+  <!-- Arrows connecting levels -->
+  <path d="M300,350 L300,335" stroke="#D97706" stroke-opacity="0.3" stroke-width="1.5" marker-end="none"/>
+  <path d="M300,270 L300,255" stroke="#FBBF24" stroke-opacity="0.3" stroke-width="1.5"/>
+  <path d="M300,190 L300,170" stroke="#FCD34D" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- Bottom badge -->
+  <rect x="210" y="440" width="180" height="36" rx="18" fill="#2a1a05" stroke="#D97706" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="300" y="455" text-anchor="middle" fill="#FCD34D" font-family="Inter,sans-serif" font-size="10" font-weight="700">230K+ personnes formées</text>
+  <text x="300" y="469" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif" font-size="8">Finançable OPCO</text>
+</svg>

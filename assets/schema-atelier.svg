@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <defs>
+    <radialGradient id="glowG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#6EE7B7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="300" cy="250" r="200" fill="url(#glowG)"/>
+
+  <!-- Timeline base -->
+  <line x1="80" y1="250" x2="520" y2="250" stroke="#059669" stroke-opacity="0.15" stroke-width="2"/>
+
+  <!-- Timeline progress glow -->
+  <line x1="80" y1="250" x2="520" y2="250" stroke="url(#lineG)" stroke-width="3">
+    <animate attributeName="x1" values="80;80;80" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Moving particle on timeline -->
+  <circle r="5" fill="#6EE7B7">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M80,250 L520,250"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Step 1: Discover -->
+  <circle cx="140" cy="250" r="6" fill="#059669"/>
+  <circle cx="140" cy="250" r="12" fill="none" stroke="#059669" stroke-opacity="0.3" stroke-width="1">
+    <animate attributeName="r" values="12;18;12" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="95" y="155" width="90" height="70" rx="12" fill="#052e1a" stroke="#059669" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="140" y1="225" x2="140" y2="244" stroke="#059669" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="140" y="180" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="20" font-weight="800">01</text>
+  <text x="140" y="198" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="10" font-weight="600">DISCOVER</text>
+  <text x="140" y="212" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="8">15 min</text>
+
+  <!-- Step 2: Learn -->
+  <circle cx="260" cy="250" r="6" fill="#10B981"/>
+  <rect x="215" y="275" width="90" height="70" rx="12" fill="#052e1a" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="260" y1="256" x2="260" y2="275" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="260" y="300" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="20" font-weight="800">02</text>
+  <text x="260" y="318" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="10" font-weight="600">LEARN</text>
+  <text x="260" y="332" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="8">45 min</text>
+
+  <!-- Step 3: Practice -->
+  <circle cx="380" cy="250" r="6" fill="#34D399"/>
+  <rect x="335" y="155" width="90" height="70" rx="12" fill="#052e1a" stroke="#34D399" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="380" y1="225" x2="380" y2="244" stroke="#34D399" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="380" y="180" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="20" font-weight="800">03</text>
+  <text x="380" y="198" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="10" font-weight="600">PRACTICE</text>
+  <text x="380" y="212" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="8">45 min</text>
+
+  <!-- Step 4: Apply -->
+  <circle cx="480" cy="250" r="6" fill="#6EE7B7"/>
+  <circle cx="480" cy="250" r="12" fill="none" stroke="#6EE7B7" stroke-opacity="0.4" stroke-width="1">
+    <animate attributeName="r" values="12;20;12" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="435" y="275" width="90" height="70" rx="12" fill="#052e1a" stroke="#6EE7B7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="480" y1="256" x2="480" y2="275" stroke="#6EE7B7" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="480" y="300" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="20" font-weight="800">04</text>
+  <text x="480" y="318" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="10" font-weight="600">APPLY</text>
+  <text x="480" y="332" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="8">15 min</text>
+
+  <!-- Duration badge -->
+  <rect x="230" y="410" width="140" height="36" rx="18" fill="#052e1a" stroke="#059669" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="300" y="425" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="11" font-weight="700">2h chrono</text>
+  <text x="300" y="439" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif" font-size="8">Pratique &amp; concret</text>
+
+  <!-- Floating icons -->
+  <circle cx="90" cy="100" r="16" fill="#052e1a" stroke="#059669" stroke-opacity="0.2" stroke-width="1">
+    <animate attributeName="cy" values="100;90;100" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="90" y="105" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="14">&#9889;</text>
+
+  <circle cx="510" cy="110" r="16" fill="#052e1a" stroke="#059669" stroke-opacity="0.2" stroke-width="1">
+    <animate attributeName="cy" values="110;100;110" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="510" y="115" text-anchor="middle" fill="#6EE7B7" font-family="Inter,sans-serif" font-size="14">&#128640;</text>
+</svg>
