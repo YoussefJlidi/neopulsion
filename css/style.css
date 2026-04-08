@@ -506,22 +506,13 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .mobile-nav-cta .btn-primary,
 .mobile-nav-cta .btn-secondary { text-align: center; justify-content: center; }
 
-/* ============================================
-   BODY DARK (Netflix/Scanderia style)
-   ============================================ */
-.body--dark {
-  background: #0a0a0f;
-  color: #e4e4e7;
-}
-.body--dark .section, .body--dark .section--subtle {
-  background: transparent;
-}
+/* (body dark removed — light theme) */
 
 /* ============================================
-   NEO HERO (single, humanized)
+   NEO HERO (light, humanized)
    ============================================ */
 .neo-hero {
-  background: linear-gradient(170deg, #06080d 0%, #0c1525 50%, #0a0a0f 100%);
+  background: var(--bg);
   padding: 160px 0 0;
   text-align: center;
 }
@@ -534,20 +525,20 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--blue-light);
+  color: var(--blue);
   margin-bottom: 24px;
 }
 .neo-hero-title {
   font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 800;
-  color: white;
+  color: var(--text);
   line-height: 1.12;
   letter-spacing: -0.04em;
   margin-bottom: 24px;
 }
-.text-blue  { color: var(--blue-light); }
-.text-amber { color: #FCD34D; }
-.text-green { color: #6EE7B7; }
+.text-blue  { color: var(--blue); }
+.text-amber { color: #D97706; }
+.text-green { color: var(--green); }
 .text-underline {
   text-decoration: underline;
   text-decoration-color: var(--blue);
@@ -556,7 +547,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 }
 .neo-hero-desc {
   font-size: 1.125rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 36px;
   max-width: 560px;
@@ -575,7 +566,7 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   align-items: center;
   gap: 6px;
   padding: 14px 28px;
-  color: rgba(255,255,255,0.7);
+  color: var(--text-muted);
   font-weight: 600;
   font-size: 0.9375rem;
   text-decoration: none;
@@ -583,18 +574,14 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   transition: color var(--transition);
   font-family: var(--font);
 }
-.btn-ghost-light:hover { color: white; }
-.btn-primary--amber { background: #D97706; border-color: #D97706; }
-.btn-primary--amber:hover { background: #B45309; border-color: #B45309; }
-.btn-primary--green { background: #059669; border-color: #059669; }
-.btn-primary--green:hover { background: #047857; border-color: #047857; }
+.btn-ghost-light:hover { color: var(--text); }
 
 .neo-hero-stats {
   display: flex;
   justify-content: center;
   gap: 48px;
   padding-bottom: 56px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid var(--border-light);
 }
 .neo-hero-stat {
   display: flex;
@@ -605,18 +592,19 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .neo-hero-stat strong {
   font-size: 1.75rem;
   font-weight: 800;
-  color: white;
+  color: var(--text);
   letter-spacing: -0.03em;
 }
 .neo-hero-stat span {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.35);
+  color: var(--text-muted);
   font-weight: 500;
 }
 
-/* Logos inside hero — no gap */
+/* Logos inside hero — dark strip for white logos */
 .neo-hero-logos {
   padding: 36px 0 40px;
+  background: var(--navy);
   text-align: center;
 }
 .neo-hero-logos-label {
@@ -624,18 +612,19 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.4);
   margin-bottom: 20px;
 }
 
 /* ============================================
-   ROW SECTIONS (Netflix-style)
+   ROW SECTIONS (horizontal scroll)
    ============================================ */
 .row-section {
   padding: 64px 0;
+  background: var(--bg);
 }
 .row-section--subtle {
-  background: rgba(255,255,255,0.02);
+  background: var(--bg-subtle);
 }
 .row-header {
   display: flex;
@@ -647,19 +636,19 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .row-title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: white;
+  color: var(--text);
   letter-spacing: -0.03em;
 }
 .row-subtitle {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.4);
+  color: var(--text-muted);
   font-weight: 400;
 }
 .row-link {
   margin-left: auto;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--blue-light);
+  color: var(--blue);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -679,8 +668,8 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .row-card {
   flex: 0 0 280px;
   scroll-snap-align: start;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 28px;
   display: flex;
@@ -690,8 +679,8 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   overflow: hidden;
 }
 .row-card:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
 
@@ -719,43 +708,41 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  background: rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.7);
 }
-.row-card[data-accent="blue"] .row-card-icon  { color: var(--blue-light); background: rgba(59,130,246,0.1); }
-.row-card[data-accent="amber"] .row-card-icon { color: #FCD34D; background: rgba(217,119,6,0.1); }
-.row-card[data-accent="green"] .row-card-icon { color: #6EE7B7; background: rgba(5,150,105,0.1); }
+.row-card[data-accent="blue"] .row-card-icon  { color: var(--blue); background: rgba(59,130,246,0.08); }
+.row-card[data-accent="amber"] .row-card-icon { color: #D97706; background: rgba(217,119,6,0.08); }
+.row-card[data-accent="green"] .row-card-icon { color: var(--green); background: rgba(5,150,105,0.08); }
 
 .row-card-title {
   font-size: 1rem;
   font-weight: 700;
-  color: white;
+  color: var(--text);
   margin-bottom: 8px;
   letter-spacing: -0.01em;
 }
 .row-card-desc {
   font-size: 0.8125rem;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-muted);
   line-height: 1.6;
   flex-grow: 1;
   margin-bottom: 16px;
 }
 .row-card-meta {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.3);
+  color: var(--text-muted);
   font-weight: 500;
   margin-bottom: 12px;
 }
 .row-card-link {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--blue-light);
+  color: var(--blue);
   text-decoration: none;
   margin-top: auto;
 }
 .row-card-link:hover { text-decoration: underline; }
-.row-card-link--amber { color: #FCD34D; }
-.row-card-link--green { color: #6EE7B7; }
+.row-card-link--amber { color: #D97706; }
+.row-card-link--green { color: var(--green); }
 
 /* ============================================
    RESOURCE CARDS
@@ -763,8 +750,8 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
 .res-card {
   flex: 0 0 300px;
   scroll-snap-align: start;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   overflow: hidden;
   text-decoration: none;
@@ -774,15 +761,15 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   flex-direction: column;
 }
 .res-card:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
 .res-card-img {
   position: relative;
   height: 160px;
   overflow: hidden;
-  background: rgba(255,255,255,0.03);
+  background: var(--bg-subtle);
 }
 .res-card-img img {
   width: 100%;
@@ -814,17 +801,17 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--blue-light);
+  color: var(--blue);
 }
 .res-card-title {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: white;
+  color: var(--text);
   line-height: 1.4;
 }
 .res-card-date {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.3);
+  color: var(--text-muted);
   margin-top: auto;
 }
 .res-card--cta {
@@ -839,29 +826,11 @@ header.nav-transparent:not(.scrolled) .burger span { background: white; }
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
 }
 .res-card-cta-inner .res-card-title { font-size: 1.125rem; }
-.res-card-cta-inner .res-card-desc { font-size: 0.8125rem; color: rgba(255,255,255,0.35); line-height: 1.5; }
-.res-card-cta-inner .res-card-link { color: var(--blue-light); font-weight: 700; font-size: 0.875rem; }
-
-/* Dark body overrides for existing components */
-.body--dark footer { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); }
-.body--dark .footer-tagline,
-.body--dark .footer-links a,
-.body--dark .footer-copyright { color: rgba(255,255,255,0.4); }
-.body--dark .footer-links a:hover { color: white; }
-.body--dark .footer-col-title { color: rgba(255,255,255,0.7); }
-.body--dark .footer-legal a { color: rgba(255,255,255,0.3); }
-.body--dark .footer-social a { color: rgba(255,255,255,0.4); }
-.body--dark .footer-bottom { border-top-color: rgba(255,255,255,0.06); }
-.body--dark .testimonial-quote { color: rgba(255,255,255,0.8); }
-.body--dark .testimonial-name { color: white; }
-.body--dark .testimonial-role { color: rgba(255,255,255,0.4); }
-.body--dark .testimonial-stars { color: #FCD34D; }
-.body--dark .testimonial-carousel { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-lg); }
-.body--dark .carousel-dot { border-color: rgba(255,255,255,0.2); }
-.body--dark .carousel-dot.active { background: white; border-color: white; }
+.res-card-cta-inner .res-card-desc { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; }
+.res-card-cta-inner .res-card-link { color: var(--blue); font-weight: 700; font-size: 0.875rem; }
 
 /* ============================================
    OLD HERO (kept for subpages)
