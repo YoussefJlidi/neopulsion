@@ -405,6 +405,14 @@ header.nav-transparent:not(.scrolled) .btn-ghost-nav { color: rgba(255,255,255,0
 header.nav-transparent:not(.scrolled) .btn-ghost-nav:hover { color: white; background: rgba(255,255,255,0.1); }
 header.nav-transparent:not(.scrolled) .burger span { background: white; }
 
+/* Light header — for white/gradient hero */
+header.nav-light:not(.scrolled) { background: transparent; }
+header.nav-light:not(.scrolled) .nav-logo { color: var(--navy); }
+header.nav-light:not(.scrolled) .nav-logo span { color: var(--blue); }
+header.nav-light:not(.scrolled) .nav-links > a { color: #475569; }
+header.nav-light:not(.scrolled) .nav-links > a:hover { color: var(--navy); background: rgba(59,130,246,0.06); }
+header.nav-light:not(.scrolled) .burger span { background: var(--navy); }
+
 .nav-inner {
   display: flex; align-items: center; gap: 8px; height: 68px;
 }
