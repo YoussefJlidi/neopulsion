@@ -3,82 +3,87 @@
   functions = "netlify/functions"
 
 [build.processing.html]
-  pretty_urls = false
+  pretty_urls = true
 
-# Redirect non-.html URLs to .html canonical versions
+# Redirect .html URLs to clean URLs (301)
 [[redirects]]
-  from = "/blog"
-  to = "/blog.html"
+  from = "/index.html"
+  to = "/"
   status = 301
   force = true
 [[redirects]]
-  from = "/contact"
-  to = "/contact.html"
+  from = "/blog.html"
+  to = "/blog"
   status = 301
   force = true
 [[redirects]]
-  from = "/formations"
-  to = "/formations.html"
+  from = "/contact.html"
+  to = "/contact"
   status = 301
   force = true
 [[redirects]]
-  from = "/ateliers"
-  to = "/ateliers.html"
+  from = "/formations.html"
+  to = "/formations"
   status = 301
   force = true
 [[redirects]]
-  from = "/glossaire"
-  to = "/glossaire.html"
+  from = "/ateliers.html"
+  to = "/ateliers"
   status = 301
   force = true
 [[redirects]]
-  from = "/a-propos"
-  to = "/a-propos.html"
+  from = "/glossaire.html"
+  to = "/glossaire"
   status = 301
   force = true
 [[redirects]]
-  from = "/equipe"
-  to = "/equipe.html"
+  from = "/a-propos.html"
+  to = "/a-propos"
   status = 301
   force = true
 [[redirects]]
-  from = "/cgv"
-  to = "/cgv.html"
+  from = "/equipe.html"
+  to = "/equipe"
   status = 301
   force = true
 [[redirects]]
-  from = "/services/seo"
-  to = "/services/seo.html"
+  from = "/cgv.html"
+  to = "/cgv"
   status = 301
   force = true
 [[redirects]]
-  from = "/services/geo"
-  to = "/services/geo.html"
+  from = "/services/seo.html"
+  to = "/services/seo"
   status = 301
   force = true
 [[redirects]]
-  from = "/services/linkedin"
-  to = "/services/linkedin.html"
+  from = "/services/geo.html"
+  to = "/services/geo"
   status = 301
   force = true
 [[redirects]]
-  from = "/services/ia"
-  to = "/services/ia.html"
+  from = "/services/linkedin.html"
+  to = "/services/linkedin"
   status = 301
   force = true
 [[redirects]]
-  from = "/blog/geo-generative-engine-optimization"
-  to = "/blog/geo-generative-engine-optimization.html"
+  from = "/services/ia.html"
+  to = "/services/ia"
   status = 301
   force = true
 [[redirects]]
-  from = "/blog/github-repos-seo-geo"
-  to = "/blog/github-repos-seo-geo.html"
+  from = "/blog/geo-generative-engine-optimization.html"
+  to = "/blog/geo-generative-engine-optimization"
   status = 301
   force = true
 [[redirects]]
-  from = "/blog/llm-futur-recherche"
-  to = "/blog/llm-futur-recherche.html"
+  from = "/blog/github-repos-seo-geo.html"
+  to = "/blog/github-repos-seo-geo"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/llm-futur-recherche.html"
+  to = "/blog/llm-futur-recherche"
   status = 301
   force = true
 
