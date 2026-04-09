@@ -1,29 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
-  <!-- Dark blue background -->
-  <rect width="800" height="400" rx="0" fill="#1a1f36"/>
-  <!-- Grid pattern -->
-  <line x1="0" y1="100" x2="800" y2="100" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <line x1="0" y1="300" x2="800" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <line x1="400" y1="0" x2="400" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <line x1="600" y1="0" x2="600" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <!-- Data flow visualization -->
-  <circle cx="200" cy="200" r="60" stroke="#4f8df9" stroke-width="2" fill="rgba(79,141,249,0.08)"/>
-  <text x="200" y="195" text-anchor="middle" fill="#4f8df9" font-family="Inter,sans-serif" font-size="14" font-weight="700">DATA</text>
-  <text x="200" y="212" text-anchor="middle" fill="#4f8df9" font-family="Inter,sans-serif" font-size="10" font-weight="500">forSEO</text>
-  <!-- Arrow -->
-  <line x1="270" y1="200" x2="370" y2="200" stroke="#4f8df9" stroke-width="2" stroke-dasharray="6 4"/>
-  <!-- API box -->
-  <rect x="380" y="160" width="120" height="80" rx="10" fill="rgba(79,141,249,0.08)" stroke="#4f8df9" stroke-width="1.5"/>
-  <text x="440" y="195" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="12" font-weight="600">API</text>
-  <text x="440" y="212" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Inter,sans-serif" font-size="9">SERP · KW · Backlinks</text>
-  <!-- Arrow -->
-  <line x1="510" y1="200" x2="560" y2="200" stroke="#4f8df9" stroke-width="2" stroke-dasharray="6 4"/>
-  <!-- Results -->
-  <rect x="570" y="140" width="40" height="80" rx="4" fill="#4f8df9" fill-opacity="0.3"/>
-  <rect x="620" y="160" width="40" height="60" rx="4" fill="#4f8df9" fill-opacity="0.5"/>
-  <rect x="670" y="120" width="40" height="100" rx="4" fill="#4f8df9" fill-opacity="0.8"/>
-  <!-- Title -->
-  <text x="400" y="50" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter,sans-serif" font-size="16" font-weight="600">DataForSEO : l'API qui alimente vos outils SEO</text>
+  <rect width="800" height="400" fill="#0d1117"/>
+  <g stroke="rgba(178,221,76,0.04)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+  <circle cx="400" cy="170" r="120" fill="rgba(178,221,76,0.06)"/>
+  <text x="400" y="155" text-anchor="middle" fill="#b2dd4c" font-family="Inter,system-ui,sans-serif" font-size="48" font-weight="800" letter-spacing="-2">DataFor</text>
+  <text x="400" y="200" text-anchor="middle" fill="#ffffff" font-family="Inter,system-ui,sans-serif" font-size="48" font-weight="800" letter-spacing="-2">SEO</text>
+  <g fill="#b2dd4c">
+    <circle cx="180" cy="120" r="3" opacity="0.4"/><circle cx="220" cy="90" r="2" opacity="0.3"/>
+    <circle cx="580" cy="100" r="3" opacity="0.4"/><circle cx="620" cy="130" r="2" opacity="0.3"/>
+  </g>
+  <g font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600">
+    <rect x="160" y="240" width="90" height="28" rx="14" fill="rgba(178,221,76,0.1)" stroke="#b2dd4c" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="205" y="258" text-anchor="middle" fill="#b2dd4c" opacity="0.7">SERP API</text>
+    <rect x="270" y="240" width="110" height="28" rx="14" fill="rgba(178,221,76,0.1)" stroke="#b2dd4c" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="325" y="258" text-anchor="middle" fill="#b2dd4c" opacity="0.7">Keywords</text>
+    <rect x="400" y="240" width="110" height="28" rx="14" fill="rgba(178,221,76,0.1)" stroke="#b2dd4c" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="455" y="258" text-anchor="middle" fill="#b2dd4c" opacity="0.7">Backlinks</text>
+    <rect x="530" y="240" width="110" height="28" rx="14" fill="rgba(178,221,76,0.1)" stroke="#b2dd4c" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="585" y="258" text-anchor="middle" fill="#b2dd4c" opacity="0.7">On-Page</text>
+  </g>
+  <text x="400" y="320" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="500">L'API qui alimente vos outils SEO</text>
 </svg>
