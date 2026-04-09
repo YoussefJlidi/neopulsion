@@ -64,29 +64,13 @@
 <!-- Mobile Nav -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <div class="mobile-nav-links">
-    <span class="mobile-nav-group-title">Services</span>
-    <div class="mobile-nav-submenu">
-      <a href='/services/seo'>Référencement SEO</a>
-      <a href='/services/geo'>GEO — Référencement Génératif</a>
-      <a href='/services/linkedin'>Visibilité LinkedIn</a>
-      <a href='/services/ia'>Accompagnement IA</a>
-    </div>
-    <span class="mobile-nav-group-title">Apprendre</span>
-    <div class="mobile-nav-submenu">
-      <a href='/ateliers'>Ateliers</a>
-      <a href='/formations'>Formations</a>
-    </div>
-    <a href='/blog'>Blog</a>
-    <a href='/glossaire'>Glossaire</a>
-    <span class="mobile-nav-group-title">À propos</span>
-    <div class="mobile-nav-submenu">
-      <a href='/a-propos'>À propos</a>
-      <a href='/equipe'>Équipe</a>
-    </div>
+    <a href="accompagnement.html">Accompagnement</a>
+    <a href="formations.html">Formations</a>
+    <a href="ateliers.html">Ateliers</a>
+    <a href="ressources.html">Ressources</a>
   </div>
   <div class="mobile-nav-cta">
-    <a class='btn-primary' href='/contact'>Audit gratuit</a>
-    <a class='btn-secondary' href='/contact'>Nous contacter</a>
+    <a class="btn-primary" href="contact.html">Audit gratuit</a>
   </div>
 </div>
 
@@ -436,67 +420,54 @@
   </div>
 </section>
 
-<!-- ========== BLOG ========== -->
+<!-- ========== RESSOURCES EXTRAIT ========== -->
 <section class="section section--subtle" aria-labelledby="blog-title">
   <div class="container">
     <div class="section-header">
-      <p class="kicker">Analyses &amp; ressources</p>
-      <h2 class="section-title" id="blog-title">Dernières analyses</h2>
-      <p class="section-subtitle">Décryptages SEO &amp; GEO, études de cas, guides pratiques — pour rester en avance sur les évolutions algorithmiques.</p>
+      <p class="kicker">Ressources</p>
+      <h2 class="section-title" id="blog-title">Derniers articles</h2>
     </div>
 
     <div class="grid-3">
-      <div class="blog-card reveal">
-        <div class="blog-card-img blog-card-img--geo" aria-hidden="true"></div>
+      <a class="blog-card reveal" href="blog/llm-futur-recherche.html" style="text-decoration:none;color:inherit">
+        <div class="blog-card-img" style="background:url(assets/blog-llm-recherche.svg) center/cover;height:180px;border-radius:var(--radius-md) var(--radius-md) 0 0" aria-hidden="true"></div>
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-cat">GEO</span>
-            <span class="blog-card-date">Mars 2026</span>
+            <span class="blog-card-cat">IA &amp; LLM</span>
+            <span class="blog-card-date">28 mars 2026</span>
           </div>
-          <h3 class="blog-card-title">Comment apparaître dans les réponses de ChatGPT sur votre marché</h3>
-          <p class="blog-card-excerpt">Le GEO n'est plus optionnel. Voici les 7 signaux que les LLM utilisent pour décider de vous citer — et comment les optimiser dès maintenant.</p>
-          <a class='blog-card-link' href='/blog'>
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h3 class="blog-card-title">Les LLMs ne sont pas prets pour la recherche</h3>
+          <p class="blog-card-excerpt">Analyse des limites actuelles des modeles de langage pour le search et ce que ca implique pour votre strategie.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card reveal reveal-delay-1">
-        <div class="blog-card-img blog-card-img--seo" aria-hidden="true"></div>
+      <a class="blog-card reveal reveal-delay-1" href="blog/claude-code-marketing.html" style="text-decoration:none;color:inherit">
+        <div class="blog-card-img" style="background:url(assets/blog-claude-code-marketing.svg) center/cover;height:180px;border-radius:var(--radius-md) var(--radius-md) 0 0" aria-hidden="true"></div>
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-cat">SEO</span>
-            <span class="blog-card-date">Février 2026</span>
+            <span class="blog-card-cat">IA &amp; Automation</span>
+            <span class="blog-card-date">30 mars 2026</span>
           </div>
-          <h3 class="blog-card-title">Google AI Overviews : ce que les données de Search Console révèlent vraiment</h3>
-          <p class="blog-card-excerpt">Après l'analyse de 50 comptes Search Console, voici ce que nous avons appris sur l'impact réel des AI Overviews sur le trafic organique.</p>
-          <a class='blog-card-link' href='/blog'>
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h3 class="blog-card-title">Claude Code pour le marketing</h3>
+          <p class="blog-card-excerpt">Automatiser sa production de contenu sans perdre en qualite : retour d'experience concret.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card reveal reveal-delay-2">
-        <div class="blog-card-img blog-card-img--ia" aria-hidden="true"></div>
+      <a class="blog-card reveal reveal-delay-2" href="blog/dataforseo-api-guide.html" style="text-decoration:none;color:inherit">
+        <div class="blog-card-img" style="background:url(assets/blog-dataforseo.svg) center/cover;height:180px;border-radius:var(--radius-md) var(--radius-md) 0 0" aria-hidden="true"></div>
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-cat">IA</span>
-            <span class="blog-card-date">Janvier 2026</span>
+            <span class="blog-card-cat">Outils SEO</span>
+            <span class="blog-card-date">9 avril 2026</span>
           </div>
-          <h3 class="blog-card-title">EEAT en 2026 : comment l'expertise perçue influence votre citabilité par les IA</h3>
-          <p class="blog-card-excerpt">Les signaux E-E-A-T de Google deviennent aussi les critères de sélection des LLM pour citer une source. Mode d'emploi pratique.</p>
-          <a class='blog-card-link' href='/blog'>
-            Lire l'article
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <h3 class="blog-card-title">DataForSEO : guide complet de l'API SEO</h3>
+          <p class="blog-card-excerpt">SERP, mots-cles, backlinks, audit on-page : tout comprendre sur DataForSEO et son modele pay-per-task.</p>
         </div>
-      </div>
+      </a>
     </div>
 
-    <div class="text-center mt-8">
-      <a class='btn-secondary' href='/blog'>Voir tous les articles</a>
+    <div class="text-center" style="margin-top:32px">
+      <a class="btn-secondary" href="ressources.html">Voir toutes les ressources</a>
     </div>
   </div>
 </section>
