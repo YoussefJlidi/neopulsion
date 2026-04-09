@@ -19,16 +19,15 @@
 <section class="page-hero"><div class="container">
   <nav aria-label="Fil d'Ariane" class="svc-breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Ressources</span></nav>
   <h1>Ressources</h1>
-  <p style="color:rgba(255,255,255,.6);max-width:560px">Articles, guides et livres blancs pour aller plus loin.</p>
+  <p style="color:rgba(255,255,255,.6);max-width:560px">Articles et analyses pour aller plus loin.</p>
 </div></section>
 
 <section style="padding:56px 0 96px;background:#fafbfc"><div class="container">
-    <div class="listing-toolbar">
+  <div class="listing-toolbar">
     <div class="listing-filters">
-    <button class="listing-filter active" data-cat="all">Tout</button>
-    <button class="listing-filter" data-cat="article">Articles</button>
-    <button class="listing-filter" data-cat="guide">Guides</button>
-    <button class="listing-filter" data-cat="livre-blanc">Livres blancs</button>
+      <button class="listing-filter active" data-cat="all">Tout</button>
+      <button class="listing-filter" data-cat="ia">IA</button>
+      <button class="listing-filter" data-cat="seo-geo">SEO & GEO</button>
     </div>
     <div class="view-toggle">
       <button class="view-btn" data-view="list" aria-label="Vue cascade">
@@ -42,121 +41,58 @@
 
   <div class="listing-grid view-grid" id="resource-grid">
 
-    <a href="ressources/guide-geo.html" class="listing-card" data-cat="guide">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#4c1d95,#8B5CF6);height:180px;border-radius:20px 20px 0 0"></div>
+    <a href="blog/llm-futur-recherche.html" class="listing-card" data-cat="ia">
+      <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-llm-recherche.svg" alt="LLMs et recherche" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#8B5CF6;background:rgba(139,92,246,.06)">Guide</span>
-        <h2 class="listing-card-title">Le guide complet du GEO</h2>
-        <p class="listing-card-desc">Comment etre cite par ChatGPT, Perplexity et Gemini : methodologie et bonnes pratiques.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="article">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#1e3a5f,#2563eb);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag">Article</span>
+        <span class="listing-card-tag">IA & LLM</span>
         <h2 class="listing-card-title">Les LLMs ne sont pas prets pour la recherche</h2>
         <p class="listing-card-desc">On nous avait prevenus. Analyse des limites actuelles des modeles de langage pour le search.</p>
+        <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">28 mars 2026</time>
       </div>
     </a>
 
-    <a href="#" class="listing-card" data-cat="article">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#0c4a6e,#0ea5e9);height:180px;border-radius:20px 20px 0 0"></div>
+    <a href="blog/claude-code-marketing.html" class="listing-card" data-cat="ia">
+      <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-claude-code-marketing.svg" alt="Claude Code marketing" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag">Article</span>
+        <span class="listing-card-tag">IA & Automation</span>
         <h2 class="listing-card-title">Claude Code pour le marketing</h2>
         <p class="listing-card-desc">Automatiser sa production de contenu sans perdre en qualite : retour d'experience concret.</p>
+        <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">30 mars 2026</time>
       </div>
     </a>
 
-    <a href="#" class="listing-card" data-cat="guide">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#064e3b,#059669);height:180px;border-radius:20px 20px 0 0"></div>
+    <a href="blog/geo-generative-engine-optimization.html" class="listing-card" data-cat="seo-geo">
+      <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-geo-cover.jpg" alt="GEO Generative Engine Optimization" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#059669;background:rgba(5,150,105,.06)">Guide</span>
-        <h2 class="listing-card-title">SEO en 2026 : ce qui a change</h2>
-        <p class="listing-card-desc">AI Overviews, zero-click, E-E-A-T renforce. Le guide pratique pour adapter sa strategie.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="article">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#7c2d12,#D97706);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#D97706;background:rgba(217,119,6,.06)">Article</span>
-        <h2 class="listing-card-title">Prompt Engineering : les 5 erreurs qui coutent cher</h2>
-        <p class="listing-card-desc">Pourquoi vos prompts ne donnent pas les resultats attendus — et comment les corriger.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="livre-blanc">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#1e1b4b,#4338ca);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#4338ca;background:rgba(67,56,202,.06)">Livre blanc</span>
-        <h2 class="listing-card-title">IA & Acquisition : le playbook 2026</h2>
-        <p class="listing-card-desc">Comment structurer une strategie d'acquisition integrant SEO, GEO et agents IA.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="article">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#172554,#3b82f6);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag">Article</span>
-        <h2 class="listing-card-title">Agents IA : au-dela du chatbot</h2>
-        <p class="listing-card-desc">La difference entre un assistant, un chatbot et un agent autonome — et pourquoi ca change tout.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="guide">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#0a3d24,#10b981);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#059669;background:rgba(5,150,105,.06)">Guide</span>
-        <h2 class="listing-card-title">LinkedIn B2B : publier sans y passer 3h</h2>
-        <p class="listing-card-desc">Algorithme 2026, formats performants et systeme IA pour generer un mois de contenu en 1h.</p>
-      </div>
-    </a>
-
-    <a href="#" class="listing-card" data-cat="livre-blanc">
-      <div class="listing-card-img" style="background:linear-gradient(135deg,#3b0764,#a855f7);height:180px;border-radius:20px 20px 0 0"></div>
-      <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#7c3aed;background:rgba(124,58,237,.06)">Livre blanc</span>
-        <h2 class="listing-card-title">Former ses equipes a l'IA : par ou commencer</h2>
-        <p class="listing-card-desc">Le framework en 4 etapes pour structurer la montee en competence IA de vos collaborateurs.</p>
+        <span class="listing-card-tag" style="color:#8B5CF6;background:rgba(139,92,246,.06)">SEO & GEO</span>
+        <h2 class="listing-card-title">GEO : Comment etre cite par ChatGPT, Perplexity et Gemini</h2>
+        <p class="listing-card-desc">Le guide complet du Generative Engine Optimization : methodologie, signaux et bonnes pratiques.</p>
+        <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">25 mars 2026</time>
       </div>
     </a>
 
   </div>
 </div></section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
 <script src="js/main.js"></script>
 <script>
-// Filtrage ressources
 document.querySelectorAll('.listing-filters .listing-filter').forEach(function(btn) {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.listing-filters .listing-filter').forEach(function(b) { b.classList.remove('active'); });
     btn.classList.add('active');
     var cat = btn.getAttribute('data-cat');
     document.querySelectorAll('#resource-grid .listing-card').forEach(function(card) {
-      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
+      card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? '' : 'none';
     });
   });
 });
-</script>
-
-<script>
 document.querySelectorAll('.view-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.view-btn').forEach(function(b) { b.classList.remove('active'); });
     btn.classList.add('active');
-    var view = btn.getAttribute('data-view');
-    var container = document.querySelector('.listing-cards') || document.querySelector('.listing-grid');
-    if (container) {
-      container.classList.remove('view-list', 'view-grid');
-      container.classList.add('view-' + view);
-    }
+    var container = document.querySelector('.listing-grid');
+    if (container) { container.classList.remove('view-list','view-grid'); container.classList.add('view-' + btn.getAttribute('data-view')); }
   });
 });
 </script>
