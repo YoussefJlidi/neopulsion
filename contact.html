@@ -686,24 +686,34 @@
   document.getElementById('msfForm').addEventListener('submit', e => {
     e.preventDefault();
     const form = e.target;
-    const data = new URLSearchParams(new FormData(form)).toString();
+    const formData = new FormData(form);
+    const json = JSON.stringify(Object.fromEntries(formData));
 
     nextBtn.innerHTML = '…';
     nextBtn.disabled = true;
 
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: data
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: json
     })
-    .then(() => {
-      nextBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Message envoyé !';
-      nextBtn.style.background = 'var(--green)';
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        nextBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Message envoyé !';
+        nextBtn.style.background = 'var(--green)';
+      } else {
+        nextBtn.innerHTML = 'Erreur — réessayez';
+        nextBtn.style.background = 'var(--red, #dc2626)';
+        nextBtn.disabled = false;
+        console.error('Web3Forms error:', data);
+      }
     })
-    .catch(() => {
+    .catch(err => {
       nextBtn.innerHTML = 'Erreur — réessayez';
       nextBtn.style.background = 'var(--red, #dc2626)';
       nextBtn.disabled = false;
+      console.error('Fetch error:', err);
     });
   });
 
