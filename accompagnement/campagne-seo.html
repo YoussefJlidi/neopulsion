@@ -4,8 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campagne SEO complete — Neopulsion</title>
-  <meta name="description" content="Accompagnement SEO sur 6 mois : audit, strategie, deploiement et resultats mesurables. Neopulsion.">
+  <meta name="description" content="Accompagnement SEO sur 6 mois : audit technique, strategie de mots-cles, contenu optimise, netlinking et reporting mensuel. ROI mesurable sous 90 jours. Neopulsion.">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .svc-problem { padding: 72px 0; background: #fff; }
+    .svc-problem h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 24px; }
+    .svc-problem p { font-size: 0.9375rem; color: #475569; line-height: 1.8; margin-bottom: 16px; max-width: 780px; }
+    .svc-problem strong { color: #0f172a; }
+    .svc-problem .stat-highlight {
+      display: inline-block;
+      background: rgba(59,130,246,0.08);
+      color: #2563eb;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 0.9375rem;
+    }
+
+    .svc-results { padding: 72px 0; background: #f8fafc; }
+    .svc-results h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
+    .svc-results .svc-results-intro { font-size: 0.9375rem; color: #64748b; margin-bottom: 32px; max-width: 640px; }
+    .svc-results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .svc-result-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 24px;
+      transition: box-shadow 0.2s;
+    }
+    .svc-result-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    .svc-result-card .result-metric {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #2563eb;
+      margin-bottom: 4px;
+    }
+    .svc-result-card .result-type {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+    .svc-result-card h3 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+    .svc-result-card p { font-size: 0.8125rem; color: #64748b; line-height: 1.6; }
+    .svc-result-card ul { font-size: 0.8125rem; color: #64748b; line-height: 1.6; padding-left: 16px; margin-top: 8px; }
+    .svc-result-card ul li { margin-bottom: 4px; }
+
+    .svc-faq { padding: 72px 0; background: #fff; }
+    .svc-faq h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 28px; }
+    .svc-faq-list { max-width: 780px; }
+    .svc-faq-list details {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+    .svc-faq-list details:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .svc-faq-list details[open] { border-color: #2563eb; }
+    .svc-faq-list summary {
+      padding: 18px 24px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #0f172a;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .svc-faq-list summary::-webkit-details-marker { display: none; }
+    .svc-faq-list summary::after {
+      content: "+";
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #94a3b8;
+      transition: transform 0.2s;
+    }
+    .svc-faq-list details[open] summary::after {
+      content: "\2212";
+      color: #2563eb;
+    }
+    .svc-faq-list details p {
+      padding: 0 24px 20px;
+      font-size: 0.875rem;
+      color: #475569;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .svc-step ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+    .svc-step ul li {
+      font-size: 0.8125rem;
+      color: #64748b;
+      line-height: 1.5;
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .svc-step ul li::before {
+      content: "\2013";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+    }
+
+    .svc-inc-detail {
+      display: block;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .svc-aud-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+    .svc-aud-card ul li {
+      font-size: 0.8125rem;
+      color: #64748b;
+      line-height: 1.5;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 3px;
+    }
+    .svc-aud-card ul li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+    }
+
+    @media (max-width: 768px) {
+      .svc-results-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -32,10 +177,10 @@
       </nav>
       <span class="svc-hero-tag svc-hero-tag--blue">Accompagnement SEO</span>
       <h1>Campagne SEO complete</h1>
-      <p class="svc-hero-sub">Audit, strategie et deploiement sur 6 mois pour dominer Google. On gere tout, vous recoltez les resultats.</p>
+      <p class="svc-hero-sub">De l'audit initial au deploiement operationnel : 6 mois d'accompagnement pour transformer votre site en machine a generer du trafic qualifie. On prend les commandes, vous recoltez les positions.</p>
       <div class="svc-hero-ctas">
         <a href="../contact.html" class="btn-primary btn-lg">Demander un devis</a>
-        <span class="svc-hero-detail">Resultats sous 90 jours</span>
+        <span class="svc-hero-detail">A partir de 2 000 EUR &mdash; ROI mesurable sous 90 jours</span>
       </div>
     </div>
     <div class="svc-hero-kpis">
@@ -59,6 +204,22 @@
   </div>
 </section>
 
+<!-- PROBLEM — Why SEO matters now -->
+<section class="svc-problem">
+  <div class="container">
+    <h2>Pourquoi le SEO est devenu indispensable en 2026</h2>
+    <p>
+      <span class="stat-highlight">53% du trafic web</span> provient de la recherche organique. C'est plus que les reseaux sociaux, l'emailing et la publicite payante reunis. Pourtant, la majorite des entreprises francaises ne travaillent pas leur referencement naturel de maniere structuree. Elles publient du contenu au fil de l'eau, sans strategie de mots-cles, sans maillage interne, sans suivi de positions. Le resultat : un site invisible sur Google, un cout d'acquisition client entierement dependant du budget publicitaire.
+    </p>
+    <p>
+      <strong>Le paysage a change.</strong> Avec les AI Overviews de Google deployes sur la majorite des requetes informationnelles en France, les 3 premiers resultats captent desormais <span class="stat-highlight">54,4% des clics</span>. Les positions 4 a 10 ne recoltent que des miettes. Et les sites qui n'apparaissent pas en premiere page ? Ils n'existent tout simplement pas aux yeux de vos prospects. Chaque mois sans strategie SEO, c'est du trafic qualifie qui va chez vos concurrents.
+    </p>
+    <p>
+      <strong>La bonne nouvelle :</strong> le SEO reste le levier d'acquisition avec le meilleur ROI sur le long terme. Un lead organique convertit <span class="stat-highlight">14,6% mieux</span> qu'un lead issu de la prospection directe. Et contrairement au paid, les resultats ne s'arretent pas quand le budget s'arrete. Notre campagne SEO complete est concue pour batir une visibilite durable : les positions acquises continuent a generer du trafic pendant des mois, voire des annees.
+    </p>
+  </div>
+</section>
+
 <!-- PROCESS — Timeline horizontal -->
 <section class="svc-process">
   <div class="container">
@@ -66,23 +227,47 @@
     <div class="svc-timeline">
       <div class="svc-step">
         <div class="svc-step-num">01</div>
-        <h3>Audit</h3>
-        <p>Analyse technique, semantique et concurrentielle de votre site.</p>
+        <h3>Audit complet</h3>
+        <p>Diagnostic 360 de votre site et de votre marche. Rien n'est laisse au hasard.</p>
+        <ul>
+          <li>Audit technique : vitesse, indexation, Core Web Vitals, erreurs de crawl</li>
+          <li>Audit semantique : couverture des requetes, gaps de contenu, cannibalisation</li>
+          <li>Analyse concurrentielle : qui se positionne, sur quoi, avec quelle autorite</li>
+          <li>Audit du profil de liens : qualite, toxicite, opportunites de netlinking</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">02</div>
-        <h3>Strategie</h3>
-        <p>Plan d'action priorise, mots-cles, roadmap 6 mois.</p>
+        <h3>Strategie sur mesure</h3>
+        <p>Un plan d'action clair, priorise par impact et faisabilite.</p>
+        <ul>
+          <li>Selection des mots-cles cibles par cluster thematique et intention de recherche</li>
+          <li>Architecture de contenu : pages piliers, articles satellites, maillage interne</li>
+          <li>Roadmap 6 mois avec jalons mensuels et KPIs definis</li>
+          <li>Priorisation des quick wins pour des resultats visibles des le mois 2</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">03</div>
-        <h3>Deploiement</h3>
-        <p>Production de contenu, corrections techniques, netlinking.</p>
+        <h3>Deploiement operationnel</h3>
+        <p>On passe a l'action. Production, corrections, construction de l'autorite.</p>
+        <ul>
+          <li>Production de contenu optimise : articles, pages de service, FAQ structurees</li>
+          <li>Corrections techniques : balisage schema, vitesse, redirections, sitemap</li>
+          <li>Campagne de netlinking qualitatif : partenariats editoriaux, guest posts</li>
+          <li>Optimisation on-page des pages existantes : titres, metas, structure Hn</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">04</div>
-        <h3>Resultats</h3>
-        <p>Reporting mensuel, ajustements, croissance durable.</p>
+        <h3>Resultats et ajustements</h3>
+        <p>Suivi mensuel rigoureux. On ajuste la strategie selon les donnees reelles.</p>
+        <ul>
+          <li>Reporting mensuel detaille : positions, trafic, conversions, ROI</li>
+          <li>Analyse des mouvements algorithmiques et adaptation</li>
+          <li>Ajustement des priorites selon les performances observees</li>
+          <li>Point stratégique mensuel de 30 min avec votre consultant dedie</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -93,12 +278,84 @@
   <div class="container">
     <h2>Ce qui est inclus</h2>
     <div class="svc-includes-grid">
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit technique complet</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Strategie de mots-cles</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Production de contenu optimise</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Netlinking qualitatif</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Reporting mensuel</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Ajustements continus</span></div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <span>Audit technique complet<small class="svc-inc-detail">Crawl, indexation, Core Web Vitals, erreurs 404, structure</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <span>Strategie de mots-cles<small class="svc-inc-detail">Recherche, clustering, intention de recherche, priorisation</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span>Production de contenu optimise<small class="svc-inc-detail">Articles, pages de service, landing pages, FAQ</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        <span>Netlinking qualitatif<small class="svc-inc-detail">Partenariats editoriaux, guest posts, mentions de marque</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg>
+        <span>Reporting mensuel<small class="svc-inc-detail">Positions, trafic, conversions, evolution et recommandations</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+        <span>Ajustements continus<small class="svc-inc-detail">Reoptimisation mensuelle selon les donnees de performance</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        <span>Optimisation on-page<small class="svc-inc-detail">Titres, metas, balisage schema.org, structure Hn, images</small></span>
+      </div>
+      <div class="svc-inc">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <span>Consultant dedie<small class="svc-inc-detail">Point mensuel, disponibilite email, accompagnement strategique</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS — Case studies -->
+<section class="svc-results">
+  <div class="container">
+    <h2>Resultats concrets de nos campagnes</h2>
+    <p class="svc-results-intro">Quelques exemples anonymises de campagnes SEO realisees par notre equipe sur les 12 derniers mois.</p>
+    <div class="svc-results-grid">
+      <div class="svc-result-card">
+        <div class="result-metric">+47%</div>
+        <div class="result-type">PME E-commerce</div>
+        <h3>Trafic organique en 6 mois</h3>
+        <p>Site e-commerce de 1 200 references dans le secteur de l'equipement professionnel. Le site stagnait en page 2-3 sur ses requetes cles depuis 2 ans.</p>
+        <ul>
+          <li>Refonte de l'architecture de categories par intention de recherche</li>
+          <li>Correction de 340 erreurs techniques bloquant l'indexation</li>
+          <li>Creation de 28 pages de contenu ciblees sur les requetes transactionnelles</li>
+          <li>Passage de 12 a 47 mots-cles en top 10</li>
+        </ul>
+      </div>
+      <div class="svc-result-card">
+        <div class="result-metric">32 mots-cles</div>
+        <div class="result-type">SaaS B2B</div>
+        <h3>En top 10 Google en 5 mois</h3>
+        <p>Editeur SaaS de gestion RH ciblant les ETI francaises. Zero presence organique au demarrage, 100% du trafic venant du paid.</p>
+        <ul>
+          <li>Strategie de contenu pilier autour de 4 clusters thematiques</li>
+          <li>Production de 16 articles longs formats (2 000+ mots)</li>
+          <li>Campagne de netlinking avec 22 backlinks depuis des sites RH de reference</li>
+          <li>Cout d'acquisition organique divise par 3 vs. Google Ads</li>
+        </ul>
+      </div>
+      <div class="svc-result-card">
+        <div class="result-metric">Top 3</div>
+        <div class="result-type">Cabinet de conseil</div>
+        <h3>Sur 68% des mots-cles cibles</h3>
+        <p>Cabinet de conseil en transformation digitale, marche national. Concurrence feroce avec des acteurs installes depuis 10 ans.</p>
+        <ul>
+          <li>Audit semantique revelant 45 opportunites de mots-cles non exploites</li>
+          <li>Strategie E-E-A-T : pages auteur, etudes de cas, citations d'experts</li>
+          <li>Optimisation de 52 pages existantes (titres, metas, structure)</li>
+          <li>Generation de 18 leads qualifies par mois via le trafic organique</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -110,16 +367,80 @@
     <div class="svc-audience-grid">
       <div class="svc-aud-card">
         <h3>PME en croissance</h3>
-        <p>Accelerer l'acquisition organique et reduire la dependance au paid.</p>
+        <p>Vous investissez massivement en publicite mais votre trafic s'effondre des que vous coupez le budget. Vous savez que le SEO est important, mais vous n'avez ni le temps ni l'expertise en interne.</p>
+        <ul>
+          <li>Reduire la dependance au paid media</li>
+          <li>Construire un flux de trafic previsible et durable</li>
+          <li>Obtenir un meilleur cout par lead que Google Ads</li>
+        </ul>
       </div>
       <div class="svc-aud-card">
         <h3>E-commerce</h3>
-        <p>Positionner vos fiches produits sur les requetes a forte intention d'achat.</p>
+        <p>Vos fiches produits sont invisibles sur Google. Vos concurrents trustent les positions sur les requetes a forte intention d'achat. Votre taux de conversion organique est en dessous du potentiel.</p>
+        <ul>
+          <li>Positionner les pages produits et categories strategiques</li>
+          <li>Corriger les problemes techniques qui bloquent l'indexation</li>
+          <li>Capter le trafic des requetes "meilleur", "comparatif", "avis"</li>
+        </ul>
       </div>
       <div class="svc-aud-card">
         <h3>SaaS B2B</h3>
-        <p>Generer des leads qualifies via le contenu et le referencement naturel.</p>
+        <p>Votre marche est niche, votre cycle de vente est long. Vous avez besoin de generer des leads qualifies en continu sans exploser le budget acquisition.</p>
+        <ul>
+          <li>Construire l'autorite thematique via le content marketing</li>
+          <li>Cibler les requetes a forte intention commerciale</li>
+          <li>Alimenter le pipeline sales avec du trafic inbound qualifie</li>
+        </ul>
       </div>
+      <div class="svc-aud-card">
+        <h3>Professions liberales et cabinets</h3>
+        <p>Vous dependez du bouche-a-oreille et des recommandations. Votre site existe mais ne genere aucun prospect. Vos concurrents locaux apparaissent avant vous.</p>
+        <ul>
+          <li>Apparaitre sur les requetes locales et de specialite</li>
+          <li>Transformer le site vitrine en generateur de rendez-vous</li>
+          <li>Batir la credibilite en ligne avec une strategie E-E-A-T</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="svc-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <div class="svc-faq-list">
+
+      <details>
+        <summary>Combien de temps avant de voir des resultats ?</summary>
+        <p>Les premiers mouvements de positions sont generalement visibles entre 4 et 8 semaines apres le debut du deploiement. Les resultats significatifs en termes de trafic et de conversions arrivent typiquement entre le 3e et le 6e mois. Le SEO est un investissement a moyen terme : contrairement au paid, les resultats s'accumulent et persistent dans le temps. C'est pourquoi notre accompagnement est structure sur 6 mois minimum — le temps necessaire pour batir une fondation solide et mesurer un ROI reel.</p>
+      </details>
+
+      <details>
+        <summary>Quelle difference avec une agence SEO classique ?</summary>
+        <p>La majorite des agences SEO fonctionnent en mode "usine" : audit standardise, recommandations generiques, reporting automatise. Chez Neopulsion, vous travaillez avec un consultant dedie qui connait votre marche, vos concurrents et vos objectifs business. Nous ne vendons pas des positions : nous construisons une strategie d'acquisition organique alignee sur votre chiffre d'affaires. Chaque action est priorisee par impact business, pas par facilite d'execution.</p>
+      </details>
+
+      <details>
+        <summary>Comment mesurez-vous les resultats ?</summary>
+        <p>Nous suivons les metriques qui comptent reellement : evolution des positions sur vos mots-cles strategiques, trafic organique par page et par cluster, taux de conversion organique, et surtout le nombre de leads ou de ventes generes par le SEO. Chaque mois, vous recevez un reporting clair avec les KPIs, les actions realisees, les resultats obtenus et les ajustements prevus pour le mois suivant. Nous utilisons Google Search Console, Google Analytics et des outils de suivi de positions professionnels.</p>
+      </details>
+
+      <details>
+        <summary>Le SEO fonctionne-t-il encore avec les AI Overviews ?</summary>
+        <p>Oui, mais les regles ont change. Les AI Overviews de Google impactent surtout les requetes informationnelles generiques, en reduisant le taux de clic de 15 a 46% sur ces requetes. En revanche, les requetes transactionnelles, comparatives et locales restent largement epargnees. Notre strategie s'adapte a cette realite : nous ciblons en priorite les requetes a forte intention commerciale, nous structurons le contenu pour etre cite dans les AI Overviews (balisage, Q&amp;A, donnees structurees), et nous integrons le GEO (Generative Engine Optimization) dans notre approche.</p>
+      </details>
+
+      <details>
+        <summary>Quel budget prevoir ?</summary>
+        <p>Notre campagne SEO complete demarre a 2 000 EUR par mois pour un engagement de 6 mois. Ce tarif couvre l'audit initial, la strategie, la production de contenu, le netlinking et le reporting mensuel. Le budget exact depend de votre secteur, de la concurrence sur vos mots-cles cibles et du volume de contenu necessaire. Nous definissons le perimetre ensemble lors de l'audit gratuit. A titre de comparaison, le cout moyen d'un lead organique est 3 a 5 fois inferieur a celui d'un lead Google Ads sur les memes requetes.</p>
+      </details>
+
+      <details>
+        <summary>Peut-on combiner SEO et GEO ?</summary>
+        <p>C'est meme fortement recommande. Le GEO (Generative Engine Optimization) consiste a optimiser votre presence dans les reponses generees par l'IA — les AI Overviews de Google, mais aussi ChatGPT, Perplexity et les autres moteurs conversationnels. Un contenu bien structure pour le SEO classique (E-E-A-T, balisage schema, sources fiables) est aussi celui qui a le plus de chances d'etre cite par les IA. Nous integrons les bonnes pratiques GEO dans chaque campagne SEO, sans surcout. C'est notre approche par defaut en 2026.</p>
+      </details>
+
     </div>
   </div>
 </section>
@@ -128,7 +449,7 @@
 <section class="cta-banner">
   <div class="container" style="text-align:center">
     <h2 style="color:#fff;margin-bottom:16px">Pret a dominer Google ?</h2>
-    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit gratuit de 30 minutes. On vous dit franchement si le SEO est le bon levier pour vous.</p>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit gratuit de 30 minutes. On analyse votre site, votre marche et vos concurrents. On vous dit franchement si le SEO est le bon levier pour vous — et quel ROI vous pouvez en attendre.</p>
     <a href="../contact.html" class="btn-primary btn-lg" style="background:#fff;color:#0f172a">Demander un audit gratuit</a>
   </div>
 </section>

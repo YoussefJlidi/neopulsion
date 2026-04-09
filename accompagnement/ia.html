@@ -4,8 +4,242 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accompagnement IA & Agents — Neopulsion</title>
-  <meta name="description" content="Deployer des agents IA dans vos workflows. Produire 3x plus sans recruter. Accompagnement IA par Neopulsion.">
+  <meta name="description" content="Deployer des agents IA dans vos workflows. Produire 3x plus sans recruter. +40% de productivite, ROI sous 90 jours. Accompagnement IA par Neopulsion.">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Context section */
+    .svc-context {
+      padding: 72px 0;
+      background: #f8fafc;
+    }
+    .svc-context-inner {
+      max-width: 780px;
+    }
+    .svc-context h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 20px;
+    }
+    .svc-context p {
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .svc-context-stat {
+      display: inline-block;
+      background: rgba(37,99,235,0.08);
+      color: #1d4ed8;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* Pillars section */
+    .svc-pillars {
+      padding: 72px 0;
+      background: #fff;
+    }
+    .svc-pillars h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 32px;
+    }
+    .svc-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .svc-pillar-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .svc-pillar-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 0.8125rem;
+      font-weight: 800;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .svc-pillar-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+    .svc-pillar-card p {
+      font-size: 0.8125rem;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .svc-pillar-examples {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .svc-pillar-examples li {
+      font-size: 0.8125rem;
+      color: #475569;
+      padding: 5px 0;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .svc-pillar-examples li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      background: #2563eb;
+      border-radius: 50%;
+    }
+
+    /* Use cases section */
+    .svc-cases {
+      padding: 72px 0;
+      background: #f8fafc;
+    }
+    .svc-cases h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 32px;
+    }
+    .svc-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .svc-case-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .svc-case-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .svc-case-card p {
+      font-size: 0.8125rem;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .svc-case-result {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #059669;
+    }
+
+    /* FAQ section */
+    .svc-faq {
+      padding: 72px 0;
+      background: #fff;
+    }
+    .svc-faq h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 32px;
+    }
+    .svc-faq-list {
+      max-width: 800px;
+    }
+    .svc-faq-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .svc-faq-question {
+      width: 100%;
+      background: #fff;
+      border: none;
+      padding: 18px 20px;
+      text-align: left;
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: #111827;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: inherit;
+    }
+    .svc-faq-question:hover {
+      background: #fafafa;
+    }
+    .svc-faq-chevron {
+      flex-shrink: 0;
+      transition: transform 0.25s;
+      color: #9ca3af;
+    }
+    .svc-faq-item.open .svc-faq-chevron {
+      transform: rotate(180deg);
+    }
+    .svc-faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .svc-faq-item.open .svc-faq-answer {
+      max-height: 400px;
+    }
+    .svc-faq-answer-inner {
+      padding: 0 20px 18px;
+      font-size: 0.87rem;
+      color: #4b5563;
+      line-height: 1.65;
+    }
+
+    /* Process bullet points */
+    .svc-step-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+    .svc-step-list li {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      padding: 2px 0;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .svc-step-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 4px;
+      height: 4px;
+      background: #2563eb;
+      border-radius: 50%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .svc-pillars-grid { grid-template-columns: 1fr; }
+      .svc-cases-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -32,7 +266,7 @@
       </nav>
       <span class="svc-hero-tag svc-hero-tag--blue">Accompagnement IA</span>
       <h1>Accompagnement IA & Agents</h1>
-      <p class="svc-hero-sub">Deployer des agents IA dans vos workflows. Produire 3x plus sans recruter.</p>
+      <p class="svc-hero-sub">Les entreprises qui deploient l'IA de facon structuree gagnent 40% de productivite. Les autres experimentent sans resultats.</p>
       <div class="svc-hero-ctas">
         <a href="../contact.html" class="btn-primary btn-lg">Planifier un echange</a>
         <span class="svc-hero-detail">Premier ROI sous 90 jours</span>
@@ -41,19 +275,73 @@
     <div class="svc-hero-kpis">
       <div class="svc-kpi">
         <span class="svc-kpi-val">x3</span>
-        <span class="svc-kpi-label">Productivite</span>
+        <span class="svc-kpi-label">Production de contenu</span>
       </div>
       <div class="svc-kpi">
         <span class="svc-kpi-val">+40%</span>
-        <span class="svc-kpi-label">Gain</span>
+        <span class="svc-kpi-label">Productivite</span>
       </div>
       <div class="svc-kpi">
-        <span class="svc-kpi-val">90j</span>
-        <span class="svc-kpi-label">Premier ROI</span>
+        <span class="svc-kpi-val">3.7x</span>
+        <span class="svc-kpi-label">ROI moyen (BCG)</span>
       </div>
       <div class="svc-kpi">
         <span class="svc-kpi-val">6%</span>
         <span class="svc-kpi-label">Captent la valeur IA (vous serez dans les 6%)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEXT — Why now -->
+<section class="svc-context">
+  <div class="container">
+    <div class="svc-context-inner">
+      <h2>Pourquoi maintenant</h2>
+      <p><span class="svc-context-stat">55% des PME</span> utilisent deja l'IA generative. Mais seulement <span class="svc-context-stat">6%</span> captent une valeur substantielle de ces outils. L'ecart ne vient pas de la technologie -- il vient de la methode.</p>
+      <p>La majorite des entreprises experimentent l'IA en surface : un prompt ici, un chatbot la. Sans architecture, sans workflow integre, sans formation reelle. Le resultat : des couts d'abonnement qui s'accumulent, des equipes desorientees et zero impact mesurable sur la productivite.</p>
+      <p>L'enjeu en 2026 n'est pas d'utiliser l'IA. C'est de la deployer strategiquement -- avec des agents configures pour vos processus, des workflows automatises dans votre stack existante, et des equipes capables de piloter le systeme en autonomie. C'est exactement ce que cet accompagnement delivre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 PILLARS -->
+<section class="svc-pillars">
+  <div class="container">
+    <h2>Les 3 piliers de l'accompagnement</h2>
+    <div class="svc-pillars-grid">
+      <div class="svc-pillar-card">
+        <div class="svc-pillar-num">01</div>
+        <h3>Agents IA sur mesure</h3>
+        <p>Des agents configures specifiquement pour vos processus metier. Pas des outils generiques : des systemes calibres sur votre ton, vos contraintes et vos objectifs.</p>
+        <ul class="svc-pillar-examples">
+          <li>Agent de redaction qui respecte votre charte editoriale</li>
+          <li>Agent d'audit qui analyse vos contenus existants</li>
+          <li>Agent de veille qui surveille vos concurrents en continu</li>
+          <li>Agent de reporting qui consolide vos KPIs automatiquement</li>
+        </ul>
+      </div>
+      <div class="svc-pillar-card">
+        <div class="svc-pillar-num">02</div>
+        <h3>Workflows automatises</h3>
+        <p>Les agents seuls ne suffisent pas. La valeur vient de leur integration dans des pipelines de production complets, connectes a vos outils existants.</p>
+        <ul class="svc-pillar-examples">
+          <li>Pipeline contenu : brief, redaction, optimisation, publication</li>
+          <li>Pipeline audit : extraction, analyse, scoring, recommandations</li>
+          <li>Connexion CRM, Google Sheets, CMS, outils internes</li>
+          <li>Declencheurs automatiques et boucles de validation</li>
+        </ul>
+      </div>
+      <div class="svc-pillar-card">
+        <div class="svc-pillar-num">03</div>
+        <h3>Formation & transfert</h3>
+        <p>L'objectif est votre autonomie, pas votre dependance. Chaque agent deploye est documente, chaque workflow est transfere a vos equipes.</p>
+        <ul class="svc-pillar-examples">
+          <li>Ateliers pratiques avec vos equipes (marketing, ops, direction)</li>
+          <li>Documentation complete de chaque agent et workflow</li>
+          <li>Prompt engineering applique a votre metier</li>
+          <li>Suivi post-deploiement et ajustements sur 3 mois</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -67,22 +355,46 @@
       <div class="svc-step">
         <div class="svc-step-num">01</div>
         <h3>Audit & cartographie</h3>
-        <p>Workflows, volumes, outils. On identifie les gisements de productivite.</p>
+        <p>On identifie les gisements de productivite dans vos processus actuels.</p>
+        <ul class="svc-step-list">
+          <li>Analyse de vos workflows existants</li>
+          <li>Identification des taches repetitives et chronophages</li>
+          <li>Evaluation de votre stack technique</li>
+          <li>Chiffrage du potentiel de gains</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">02</div>
         <h3>Architecture IA</h3>
-        <p>Conception agents, stack technique, choix des modeles.</p>
+        <p>Conception des agents et des workflows adaptes a votre contexte.</p>
+        <ul class="svc-step-list">
+          <li>Selection des modeles IA (Claude, GPT-4o, etc.)</li>
+          <li>Design des agents et de leurs instructions</li>
+          <li>Architecture des pipelines de production</li>
+          <li>Plan d'integration avec vos outils</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">03</div>
         <h3>Deploiement & tests</h3>
-        <p>Production, integration, tests iteratifs jusqu'a la validation.</p>
+        <p>Production, integration et iterations jusqu'a la validation.</p>
+        <ul class="svc-step-list">
+          <li>Configuration et test des agents</li>
+          <li>Integration dans votre environnement</li>
+          <li>Tests iteratifs avec vos equipes</li>
+          <li>Ajustements jusqu'a satisfaction</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">04</div>
         <h3>Formation & autonomie</h3>
-        <p>Ateliers, documentation, suivi KPIs. Vous devenez autonomes.</p>
+        <p>Vos equipes prennent la main. Vous devenez autonomes.</p>
+        <ul class="svc-step-list">
+          <li>Ateliers pratiques avec chaque equipe</li>
+          <li>Documentation technique et utilisateur</li>
+          <li>Mise en place du suivi KPIs</li>
+          <li>Support et ajustements pendant 3 mois</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -93,12 +405,43 @@
   <div class="container">
     <h2>Ce qui est inclus</h2>
     <div class="svc-includes-grid">
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit et cartographie processus</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit et cartographie des processus</span></div>
       <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Agents IA personnalises et deployes</span></div>
       <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Workflows de production automatises</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Formation equipe et transfert</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Dashboard KPIs productivite</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Support et ajustements 3 mois</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Integration avec votre stack existante</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Formation equipe et transfert</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Documentation complete agents et workflows</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Dashboard KPIs productivite</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Support et ajustements pendant 3 mois</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="svc-cases">
+  <div class="container">
+    <h2>Cas d'usage concrets</h2>
+    <div class="svc-cases-grid">
+      <div class="svc-case-card">
+        <h3>Agent redaction SEO</h3>
+        <p>Un agent configure avec votre charte editoriale, vos mots-cles cibles et votre ton de marque. Il produit des articles optimises SEO en respectant vos guidelines, depuis le brief jusqu'au texte final pret a publier. Votre equipe valide et publie au lieu de rediger de zero.</p>
+        <span class="svc-case-result">Resultat : x3 de contenu produit, 25h economisees par semaine</span>
+      </div>
+      <div class="svc-case-card">
+        <h3>Agent audit contenu</h3>
+        <p>Analyse automatisee de vos pages existantes : scores SEO, lisibilite, cannibalisation, opportunites de mise a jour. L'agent classe chaque page par priorite et genere un plan d'action structure avec les corrections a apporter.</p>
+        <span class="svc-case-result">Resultat : audit de 500 pages en 2h au lieu de 2 semaines</span>
+      </div>
+      <div class="svc-case-card">
+        <h3>Pipeline production end-to-end</h3>
+        <p>Un workflow complet qui enchaine : recherche de mots-cles, generation de brief, redaction, optimisation SEO, creation des metadonnees et mise en forme. Chaque etape alimente automatiquement la suivante avec des points de validation humaine.</p>
+        <span class="svc-case-result">Resultat : un article optimise en 45 minutes au lieu d'une journee</span>
+      </div>
+      <div class="svc-case-card">
+        <h3>Agent veille concurrentielle</h3>
+        <p>Surveillance automatique de vos concurrents : nouveaux contenus publies, positions SEO, strategies de mots-cles, changements de positionnement. L'agent consolide tout dans un rapport hebdomadaire actionnable.</p>
+        <span class="svc-case-result">Resultat : zero angle mort, decisions basees sur la donnee en temps reel</span>
+      </div>
     </div>
   </div>
 </section>
@@ -110,16 +453,86 @@
     <div class="svc-audience-grid">
       <div class="svc-aud-card">
         <h3>PME en croissance</h3>
-        <p>Automatiser la production et scaler sans multiplier les recrutements.</p>
+        <p>Vous devez scaler votre production sans multiplier les recrutements. L'IA vous permet de faire plus avec l'equipe actuelle : automatiser les taches repetitives, accelerer la production et concentrer vos talents sur ce qui cree de la valeur.</p>
       </div>
       <div class="svc-aud-card">
         <h3>Equipes marketing</h3>
-        <p>Produire 3x plus de contenu avec la meme equipe grace a l'IA.</p>
+        <p>Vous produisez du contenu, des campagnes, des rapports. Avec des agents IA configures pour votre marque, vous multipliez votre output par 3 sans sacrifier la qualite. Vos redacteurs deviennent des pilotes de production, pas des executants.</p>
       </div>
       <div class="svc-aud-card">
         <h3>Dirigeants</h3>
-        <p>Obtenir un ROI IA structure et mesurable, pas du gadget.</p>
+        <p>Vous savez que l'IA est un levier mais vous refusez les experimentations sans ROI. Cet accompagnement delivre des resultats mesurables sous 90 jours, avec un ROI moyen de 3.7x selon BCG. Pas du gadget -- de la productivite.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="svc-faq" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title">Questions frequentes</h2>
+    <div class="svc-faq-list" id="svc-faq">
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          C'est quoi concretement un agent IA ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Un agent IA est un systeme configure pour executer une tache specifique de facon autonome ou semi-autonome. Contrairement a un chatbot generique, un agent a des instructions precises, un perimetre defini et des connexions a vos outils. Par exemple : un agent de redaction connait votre charte editoriale, votre ton, vos mots-cles et produit des contenus conformes a vos standards sans intervention manuelle a chaque etape.</div>
+        </div>
+      </div>
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          Quels types de taches peut-on automatiser ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Toute tache repetitive, basee sur des regles ou du traitement de texte et de donnees : redaction de contenu, audits SEO, veille concurrentielle, generation de rapports, traitement d'emails, creation de briefs, mise a jour de fiches produits, consolidation de KPIs. La regle : si un collaborateur passe plus de 2h par semaine sur une tache structuree, elle est probablement automatisable.</div>
+        </div>
+      </div>
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          Faut-il des competences techniques ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Non. L'accompagnement est concu pour que vos equipes -- redacteurs, chefs de projet, marketeurs, dirigeants -- utilisent les agents comme des outils quotidiens, sans competences en code ni en IA. La formation incluse garantit que chaque utilisateur est autonome avant la fin de la mission. La partie technique (configuration, integration, maintenance) est geree par nos soins.</div>
+        </div>
+      </div>
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          Quel ROI attendre ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Selon BCG, les entreprises qui deploient l'IA de facon structuree obtiennent un ROI moyen de 3.7x. Sur nos missions, les premiers gains de productivite sont visibles des les 3 a 4 premieres semaines. Le ROI complet -- avec workflows integres et equipes formees -- se materialise sous 90 jours. On definit ensemble les KPIs de succes avant de commencer pour que le retour soit mesurable et transparent.</div>
+        </div>
+      </div>
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          Combien de temps pour le deploiement ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Le deploiement complet prend entre 4 et 8 semaines selon le perimetre : nombre de workflows, complexite des integrations, taille des equipes a former. L'audit initial (1 semaine) permet de cadrer precisement le calendrier. Les premiers agents sont operationnels des la semaine 2 ou 3, pour que vous voyiez des resultats rapidement pendant que le reste du systeme se construit.</div>
+        </div>
+      </div>
+
+      <div class="svc-faq-item">
+        <button class="svc-faq-question" aria-expanded="false">
+          Est-ce que ca remplace des emplois ?
+          <svg class="svc-faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="svc-faq-answer" role="region">
+          <div class="svc-faq-answer-inner">Non -- et c'est meme l'inverse. Les equipes qui maitrisent l'IA produisent davantage, se concentrent sur des taches a forte valeur ajoutee et deviennent plus strategiques. L'IA decharge les taches repetitives et libere le temps humain pour ce qui compte : la strategie, la creation, la relation client. Nos clients ne reduisent pas leurs equipes -- ils multiplient leur impact avec les memes effectifs.</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -138,5 +551,25 @@
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+  // FAQ Accordion
+  (function() {
+    var items = document.querySelectorAll('#svc-faq .svc-faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.svc-faq-question');
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.svc-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>

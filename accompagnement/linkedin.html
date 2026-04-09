@@ -3,9 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strategie LinkedIn B2B — Neopulsion</title>
-  <meta name="description" content="Transformez LinkedIn en machine a leads — sans pub, sans cold calls. Accompagnement LinkedIn B2B par Neopulsion.">
+  <title>Strategie LinkedIn B2B — Accompagnement | Neopulsion</title>
+  <meta name="description" content="Accompagnement LinkedIn B2B : personal branding, thought leadership, social selling. 80% des leads B2B sociaux viennent de LinkedIn. Transformez votre profil en machine a leads.">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── LINKEDIN ACCOMPAGNEMENT — custom sections ──────────────── */
+
+    /* Why LinkedIn stats cards */
+    .li-why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px;
+    }
+    .li-why-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; text-align: center;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .li-why-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .li-why-num {
+      font-size: 2.5rem; font-weight: 900; color: #0A66C2; letter-spacing: -0.04em; margin-bottom: 8px; line-height: 1;
+    }
+    .li-why-text { font-size: 0.9375rem; color: #64748b; line-height: 1.6; }
+    .li-why-source { font-size: 0.75rem; color: #94a3b8; margin-top: 8px; font-style: italic; }
+
+    /* 4 Pillars */
+    .li-pillars-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px;
+    }
+    .li-pillar {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px;
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .li-pillar:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .li-pillar-icon {
+      width: 48px; height: 48px; border-radius: 14px; background: #EBF3FB; color: #0A66C2;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .li-pillar-title { font-size: 1.0625rem; font-weight: 800; margin-bottom: 8px; color: #0f172a; }
+    .li-pillar-desc { font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-bottom: 12px; }
+    .li-pillar-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .li-pillar-tag {
+      font-size: 0.75rem; font-weight: 600; background: #EBF3FB; color: #0A66C2;
+      border-radius: 100px; padding: 2px 10px;
+    }
+
+    /* Results */
+    .li-results-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px;
+    }
+    .li-result-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px;
+      border-left: 4px solid #0A66C2;
+      transition: box-shadow 0.2s ease;
+    }
+    .li-result-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .li-result-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0A66C2; margin-bottom: 10px; }
+    .li-result-metric { font-size: 1.5rem; font-weight: 900; color: #0f172a; margin-bottom: 8px; line-height: 1.2; }
+    .li-result-desc { font-size: 0.875rem; color: #64748b; line-height: 1.6; }
+
+    /* FAQ */
+    .li-faq { margin-top: 40px; display: flex; flex-direction: column; gap: 12px; max-width: 760px; margin-left: auto; margin-right: auto; }
+    .li-faq-item { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; transition: border-color 0.2s ease; }
+    .li-faq-item.open { border-color: #0A66C2; }
+    .li-faq-trigger {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; gap: 16px; font-size: 1rem; font-weight: 600; color: #0f172a;
+      cursor: pointer; text-align: left; background: none; border: none; font-family: inherit;
+      transition: color 0.2s ease;
+    }
+    .li-faq-item.open .li-faq-trigger { color: #0A66C2; }
+    .li-faq-icon {
+      width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; border: 1.5px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .li-faq-item.open .li-faq-icon { transform: rotate(45deg); background: #0A66C2; border-color: #0A66C2; color: #fff; }
+    .li-faq-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .li-faq-item.open .li-faq-body { max-height: 400px; }
+    .li-faq-body-inner { padding: 0 24px 20px; font-size: 0.9375rem; color: #64748b; line-height: 1.7; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .li-why-grid { grid-template-columns: 1fr; }
+      .li-pillars-grid { grid-template-columns: 1fr; }
+      .li-results-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,16 +105,16 @@
   </nav>
 </header>
 
-<!-- HERO — Service style: split with KPIs -->
+<!-- ══ HERO ══════════════════════════════════════════════════════ -->
 <section class="svc-hero">
   <div class="container svc-hero-grid">
     <div class="svc-hero-text">
       <nav class="svc-breadcrumb" aria-label="Fil d'Ariane">
         <a href="../index.html">Accueil</a> <span>/</span> <a href="../accompagnement.html">Accompagnement</a> <span>/</span> <span>LinkedIn B2B</span>
       </nav>
-      <span class="svc-hero-tag svc-hero-tag--blue">Accompagnement LinkedIn</span>
+      <span class="svc-hero-tag svc-hero-tag--blue">Accompagnement LinkedIn B2B</span>
       <h1>Strategie LinkedIn B2B</h1>
-      <p class="svc-hero-sub">Transformez LinkedIn en machine a leads — sans pub, sans cold calls.</p>
+      <p class="svc-hero-sub">1% des utilisateurs LinkedIn publient et generent 9 milliards d'impressions par semaine. Vous allez en faire partie.</p>
       <div class="svc-hero-ctas">
         <a href="../contact.html" class="btn-primary btn-lg">Lancer ma strategie LinkedIn</a>
         <span class="svc-hero-detail">Premiers resultats sous 90 jours</span>
@@ -40,26 +122,148 @@
     </div>
     <div class="svc-hero-kpis">
       <div class="svc-kpi">
-        <span class="svc-kpi-val">+80%</span>
-        <span class="svc-kpi-label">Leads inbound</span>
+        <span class="svc-kpi-val">80%</span>
+        <span class="svc-kpi-label">Leads B2B sociaux via LinkedIn</span>
       </div>
       <div class="svc-kpi">
         <span class="svc-kpi-val">561%</span>
-        <span class="svc-kpi-label">Plus de reach</span>
+        <span class="svc-kpi-label">Plus de reach profil vs page</span>
+      </div>
+      <div class="svc-kpi">
+        <span class="svc-kpi-val">75%</span>
+        <span class="svc-kpi-label">Decideurs influences par le thought leadership</span>
       </div>
       <div class="svc-kpi">
         <span class="svc-kpi-val">90j</span>
-        <span class="svc-kpi-label">Premiers resultats</span>
-      </div>
-      <div class="svc-kpi">
-        <span class="svc-kpi-val">3 mois</span>
-        <span class="svc-kpi-label">Engagement</span>
+        <span class="svc-kpi-label">Premiers leads inbound</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS — Timeline horizontal -->
+<!-- ══ POURQUOI LINKEDIN — NEW ══════════════════════════════════ -->
+<section style="padding:72px 0; background:#f8fafc;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:12px;">
+      <span style="display:inline-block; font-size:0.8125rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#0A66C2; margin-bottom:0.75rem;">Pourquoi LinkedIn en B2B</span>
+    </div>
+    <h2 style="font-size:clamp(1.625rem,3.5vw,2.375rem); font-weight:700; text-align:center; color:#0f172a; margin-bottom:8px;">Le canal B2B le plus sous-exploite par les dirigeants</h2>
+    <p style="font-size:1.0625rem; color:#64748b; max-width:620px; margin:0 auto; text-align:center; line-height:1.7;">LinkedIn concentre la majorite des leads B2B sociaux. Pourtant, 99% des utilisateurs ne publient jamais. Pour ceux qui publient strategiquement, la concurrence reste faible et les resultats disproportionnes.</p>
+
+    <div class="li-why-grid">
+      <div class="li-why-card">
+        <div class="li-why-num">80%</div>
+        <div class="li-why-text">des leads B2B issus des reseaux sociaux proviennent de LinkedIn. C'est le premier canal d'acquisition organique en B2B, loin devant Twitter et Facebook.</div>
+        <div class="li-why-source">LinkedIn Marketing Solutions</div>
+      </div>
+      <div class="li-why-card">
+        <div class="li-why-num">561%</div>
+        <div class="li-why-text">de reach supplementaire pour un profil personnel par rapport a une page entreprise. Les pages ne touchent en moyenne que 1,6% de leurs abonnes.</div>
+        <div class="li-why-source">LinkedIn Internal Data</div>
+      </div>
+      <div class="li-why-card">
+        <div class="li-why-num">75%</div>
+        <div class="li-why-text">des decideurs B2B affirment que le thought leadership influence directement leur perception d'un prestataire avant meme le premier contact commercial.</div>
+        <div class="li-why-source">Edelman x LinkedIn B2B Report 2025</div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin-top:24px;">
+      <div class="li-why-card">
+        <div class="li-why-num">277%</div>
+        <div class="li-why-text">plus efficace que Facebook et Twitter pour la generation de leads B2B selon une etude comparative sur les plateformes sociales.</div>
+        <div class="li-why-source">HubSpot State of Marketing</div>
+      </div>
+      <div class="li-why-card">
+        <div class="li-why-num">9/10</div>
+        <div class="li-why-text">C-suite sont plus receptifs a une approche commerciale d'une entreprise qui produit regulierement du contenu thought leadership.</div>
+        <div class="li-why-source">Edelman x LinkedIn 2025</div>
+      </div>
+      <div class="li-why-card">
+        <div class="li-why-num">78%</div>
+        <div class="li-why-text">des entreprises utilisant le social selling surpassent celles qui ne le font pas. Les commerciaux actifs sur LinkedIn ont 45% d'opportunites supplementaires.</div>
+        <div class="li-why-source">LinkedIn Sales Solutions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4 PILIERS — NEW ══════════════════════════════════════════ -->
+<section style="padding:72px 0; background:#fff;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:12px;">
+      <span style="display:inline-block; font-size:0.8125rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#0A66C2; margin-bottom:0.75rem;">Notre approche</span>
+    </div>
+    <h2 style="font-size:clamp(1.625rem,3.5vw,2.375rem); font-weight:700; text-align:center; color:#0f172a; margin-bottom:8px;">4 piliers pour une presence LinkedIn qui genere des leads</h2>
+    <p style="font-size:1.0625rem; color:#64748b; max-width:620px; margin:0 auto; text-align:center; line-height:1.7;">Poster du contenu sans strategie, c'est crier dans le vide. Voici comment on construit une presence qui travaille pour vous, 24h/24.</p>
+
+    <div class="li-pillars-grid">
+      <div class="li-pillar">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a9.5 9.5 0 0113 0"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Profil optimise pour convertir</h3>
+          <p class="li-pillar-desc">Votre profil LinkedIn est votre page de vente organique. Titre accrocheur, resume oriente client, section "A la une" pensee pour la conversion, URL personnalisee et mots-cles optimises pour la recherche LinkedIn et Google.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Titre & Resume</span>
+            <span class="li-pillar-tag">SEO natif</span>
+            <span class="li-pillar-tag">A la une</span>
+            <span class="li-pillar-tag">CTA profil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Ligne editoriale thought leadership</h3>
+          <p class="li-pillar-desc">Un contenu qui vous ressemble et qui reflete votre vraie expertise. Pas des posts generiques — une voix reconnaissable qui construit une autorite durable aupres de vos cibles. 73% des decideurs jugent le thought leadership plus fiable que les supports marketing classiques.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Strategie editoriale</span>
+            <span class="li-pillar-tag">Ghostwriting</span>
+            <span class="li-pillar-tag">Formats varies</span>
+            <span class="li-pillar-tag">Calendrier</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Croissance reseau ciblee</h3>
+          <p class="li-pillar-desc">Developper les bons abonnes, pas juste des chiffres. Strategie de connexion ciblee sur vos prospects ideaux (ICP), engagement authentique dans les commentaires et visibilite dans les communautes de votre secteur. Un ICP bien defini augmente le taux de reponse de 300%.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Ciblage ICP</span>
+            <span class="li-pillar-tag">Engagement strategique</span>
+            <span class="li-pillar-tag">Commentaires</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="li-pillar">
+        <div class="li-pillar-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3 class="li-pillar-title">Social selling & pipeline</h3>
+          <p class="li-pillar-desc">Transformer la visibilite en opportunites business. Formation de vos equipes commerciales au social selling organique, scripts de prise de contact non intrusifs et processus de conversion des leads inbound. Les entreprises qui pratiquent le social selling sont 51% plus susceptibles d'atteindre leurs objectifs.</p>
+          <div class="li-pillar-tags">
+            <span class="li-pillar-tag">Formation equipe</span>
+            <span class="li-pillar-tag">Scripts outreach</span>
+            <span class="li-pillar-tag">Leads inbound</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESSUS — Timeline horizontal ══════════════════════════ -->
 <section class="svc-process">
   <div class="container">
     <h2>Comment ca se passe</h2>
@@ -67,68 +271,195 @@
       <div class="svc-step">
         <div class="svc-step-num">01</div>
         <h3>Audit & Benchmark</h3>
-        <p>Analyse de votre profil, page entreprise et positionnement vs concurrents.</p>
+        <p>Analyse complete de votre profil, page entreprise, engagement actuel et benchmark concurrentiel sur votre secteur. Evaluation de votre Social Selling Index (SSI) et identification des quick wins.</p>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">02</div>
         <h3>Strategie & Positionnement</h3>
-        <p>Ligne editoriale, cibles, formats et calendrier de publication.</p>
+        <p>Definition de votre ligne editoriale, voix, thematiques cles, cibles prioritaires et calendrier de publication sur 90 jours. Refonte complete de votre profil pour la conversion.</p>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">03</div>
         <h3>Production & Publication</h3>
-        <p>Ghostwriting, creation de contenu et publication optimisee.</p>
+        <p>Ghostwriting de vos posts dans votre voix, creation de contenus varies (texte, carrousels, articles) et publication optimisee. Chaque contenu est valide par vous avant mise en ligne.</p>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">04</div>
         <h3>Suivi & Optimisation</h3>
-        <p>Reporting mensuel, ajustements et suivi des opportunites.</p>
+        <p>Reporting mensuel detaille (vues, engagement, leads entrants, messages qualifies), identification des contenus performants et ajustement strategique continu.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INCLUDES — Card grid -->
+<!-- ══ CE QUI EST INCLUS — Card grid ═══════════════════════════ -->
 <section class="svc-includes">
   <div class="container">
     <h2>Ce qui est inclus</h2>
     <div class="svc-includes-grid">
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit et refonte profil/page (30+ criteres)</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Strategie editoriale et calendrier 90j</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Ghostwriting et production de contenu</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Formation social selling equipe</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Reporting mensuel</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Suivi leads et opportunites</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit profil et page entreprise (30+ criteres d'optimisation)</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a9.5 9.5 0 0113 0"/></svg><span>Refonte complete du profil (titre, resume, a la une, URL)</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Strategie editoriale personnalisee et calendrier 90 jours</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Ghostwriting et production de contenu (posts, carrousels, articles)</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg><span>Strategie de croissance reseau ciblee sur votre ICP</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Formation social selling pour les equipes commerciales</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Reporting mensuel detaille (vues, engagement, leads, SSI)</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Suivi des leads entrants et opportunites generees</span></div>
     </div>
   </div>
 </section>
 
-<!-- AUDIENCE -->
+<!-- ══ RESULTATS — NEW ══════════════════════════════════════════ -->
+<section style="padding:72px 0; background:#fff;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:12px;">
+      <span style="display:inline-block; font-size:0.8125rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#0A66C2; margin-bottom:0.75rem;">Resultats clients</span>
+    </div>
+    <h2 style="font-size:clamp(1.625rem,3.5vw,2.375rem); font-weight:700; text-align:center; color:#0f172a; margin-bottom:8px;">Ce que nos accompagnements produisent concretement</h2>
+    <p style="font-size:1.0625rem; color:#64748b; max-width:620px; margin:0 auto; text-align:center; line-height:1.7;">Donnees anonymisees issues de nos missions d'accompagnement LinkedIn B2B sur les 12 derniers mois.</p>
+
+    <div class="li-results-grid">
+      <div class="li-result-card">
+        <div class="li-result-label">Dirigeant SaaS B2B</div>
+        <div class="li-result-metric">De 200 a 2 400 abonnes en 3 mois</div>
+        <div class="li-result-desc">Publication de 3 posts/semaine avec ghostwriting. Taux d'engagement moyen passe de 0,8% a 4,2%. Premiers leads inbound des la semaine 6.</div>
+      </div>
+      <div class="li-result-card">
+        <div class="li-result-label">Consultante strategie</div>
+        <div class="li-result-metric">12 leads qualifies en 90 jours</div>
+        <div class="li-result-desc">Profil repense pour la conversion, ligne editoriale thought leadership. 3 missions signees directement via LinkedIn, sans prospection sortante.</div>
+      </div>
+      <div class="li-result-card">
+        <div class="li-result-label">Equipe commerciale (8 personnes)</div>
+        <div class="li-result-metric">+45% d'opportunites pipeline</div>
+        <div class="li-result-desc">Formation social selling + optimisation des 8 profils. Social Selling Index moyen passe de 32 a 71. Reduction de 60% du cold calling.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AUDIENCE ═════════════════════════════════════════════════ -->
 <section class="svc-audience">
   <div class="container">
     <h2>Pour qui ?</h2>
     <div class="svc-audience-grid">
       <div class="svc-aud-card">
-        <h3>Dirigeants PME</h3>
-        <p>Developper votre personal branding et generer des opportunites business.</p>
+        <h3>Dirigeants PME et ETI</h3>
+        <p>Developper votre personal branding, construire une autorite dans votre secteur et generer des opportunites business par votre seule visibilite. Les "Visible Experts" commandent des honoraires 13x plus eleves que leurs pairs.</p>
       </div>
       <div class="svc-aud-card">
         <h3>Equipes commerciales B2B</h3>
-        <p>Passer du cold calling au social selling et attirer les prospects a vous.</p>
+        <p>Passer du cold calling au social selling. Former vos commerciaux a prospecter sur LinkedIn sans paraitre intrusif. Les vendeurs avec un SSI eleve ont 45% d'opportunites supplementaires.</p>
       </div>
       <div class="svc-aud-card">
-        <h3>Consultants independants</h3>
-        <p>Construire votre autorite et remplir votre pipeline sans prospecter.</p>
+        <h3>Consultants et independants</h3>
+        <p>Construire votre autorite, remplir votre pipeline sans prospecter et attirer des missions qualifiees. 89% des marketeurs B2B utilisent LinkedIn pour la generation de leads.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ══ FAQ — NEW ════════════════════════════════════════════════ -->
+<section style="padding:72px 0; background:#f8fafc;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:12px;">
+      <span style="display:inline-block; font-size:0.8125rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#0A66C2; margin-bottom:0.75rem;">Questions frequentes</span>
+    </div>
+    <h2 style="font-size:clamp(1.625rem,3.5vw,2.375rem); font-weight:700; text-align:center; color:#0f172a; margin-bottom:8px;">Tout ce que vous voulez savoir avant de demarrer</h2>
+
+    <div class="li-faq">
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Est-ce que LinkedIn fonctionne vraiment pour le B2B ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Les chiffres parlent d'eux-memes : 80% des leads B2B issus des reseaux sociaux proviennent de LinkedIn (source : LinkedIn Marketing Solutions). La plateforme est 277% plus efficace que Facebook et Twitter pour la generation de leads B2B. 75% des acheteurs B2B utilisent les reseaux sociaux pour prendre leurs decisions, et LinkedIn est leur source de confiance numero un. Ce n'est pas un reseau social comme les autres — c'est le canal d'acquisition organique le plus puissant en B2B.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Qui redige les posts ? Est-ce vraiment ma voix ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Le ghostwriting LinkedIn est une pratique courante chez les dirigeants. On commence par un entretien approfondi pour extraire votre expertise, vos anecdotes et vos opinions. Chaque post est ecrit dans votre voix, pas a partir d'un template generique. Vous validez chaque contenu avant publication. Le resultat : des posts qui sonnent comme vous, mais structures pour maximiser l'engagement et la portee.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Combien de posts par semaine ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            La frequence optimale se situe entre 2 et 4 posts par semaine, selon votre secteur et vos objectifs. L'algorithme LinkedIn en 2026 valorise la regularite et la qualite du contenu, pas le volume. Nous privilegions le "dwell time" (temps passe sur votre contenu) et l'engagement reel plutot que la multiplication des publications. Le calendrier est adapte a votre disponibilite pour la validation.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Faut-il une page entreprise ou un profil personnel ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Le profil personnel, sans hesitation. Les donnees sont sans appel : un profil personnel genere 561% plus de reach qu'une page entreprise. Les pages ne touchent en moyenne que 1,6% de leurs abonnes. Pour les PME et ETI, la strategie la plus efficace consiste a activer le profil du dirigeant en priorite, puis a utiliser la page entreprise comme vitrine secondaire et relais des contenus.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Combien de temps avant les premiers leads ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            Les premiers signaux d'engagement (vues de profil, demandes de connexion qualifiees, commentaires de prospects) apparaissent generalement dans les 30 premiers jours de publication reguliere. Les leads qualifies (messages entrants, demandes de rendez-vous) arrivent entre 60 et 90 jours. L'impact significatif sur le chiffre d'affaires se mesure a partir de 6 mois. C'est un investissement moyen terme dont les resultats sont durables et cumulatifs, contrairement a la publicite.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item">
+        <button class="li-faq-trigger" aria-expanded="false">
+          Utilisez-vous l'IA pour la redaction ?
+          <div class="li-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="li-faq-body">
+          <div class="li-faq-body-inner">
+            L'IA est un outil dans notre processus, pas un substitut a la reflexion strategique. Nous l'utilisons pour accelerer la recherche, structurer les idees et optimiser les formats. Mais chaque post est concu a partir de votre expertise reelle, extraite en entretien, et retravaille par un humain pour garantir authenticite et pertinence. Les donnees LinkedIn montrent que 54% des posts longs en anglais sont deja generes par l'IA — notre objectif est justement que vos contenus se demarquent de cette masse generique.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════════ -->
 <section class="cta-banner">
   <div class="container" style="text-align:center">
     <h2 style="color:#fff;margin-bottom:16px">Pret a transformer LinkedIn en levier business ?</h2>
-    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit gratuit de votre presence LinkedIn. On identifie les quick wins en 30 minutes.</p>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit gratuit de votre presence LinkedIn. On identifie les quick wins et vos 3 leviers prioritaires en 30 minutes.</p>
     <a href="../contact.html" class="btn-primary btn-lg" style="background:#fff;color:#0f172a">Lancer ma strategie LinkedIn</a>
   </div>
 </section>
@@ -138,5 +469,22 @@
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.li-faq-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+      var item = this.closest('.li-faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.li-faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.li-faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
 </body>
 </html>

@@ -3,9 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Referencement Generatif (GEO) — Neopulsion</title>
-  <meta name="description" content="Apparaitre dans les reponses de ChatGPT, Gemini, Perplexity et Google AI Overviews. Accompagnement GEO par Neopulsion.">
+  <title>Referencement Generatif (GEO) — Apparaitre dans ChatGPT, Gemini, Perplexity | Neopulsion</title>
+  <meta name="description" content="Faites citer votre marque dans les reponses de ChatGPT, Gemini, Perplexity et Google AI Overviews. Audit GEO, strategie de citabilite, monitoring IA. Resultats sous 90 jours.">
+  <link rel="canonical" href="https://neopulsion.com/accompagnement/geo.html">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── GEO PAGE SPECIFIC ─────────────────────────── */
+
+    /* What is GEO */
+    .geo-what { padding: 80px 0; background: #fff; }
+    .geo-what h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 24px; }
+    .geo-what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .geo-what-text p {
+      font-size: 1rem; color: #334155; line-height: 1.8; margin-bottom: 16px;
+    }
+    .geo-what-compare {
+      background: #f8fafc; border-radius: 14px; padding: 28px;
+      border: 1px solid #e2e8f0;
+    }
+    .geo-what-compare h3 { font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; }
+    .geo-compare-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 12px;
+      font-size: 0.875rem; color: #475569;
+    }
+    .geo-compare-row:last-child { margin-bottom: 0; }
+    .geo-compare-label {
+      font-weight: 700; color: #0f172a; font-size: 0.8125rem;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;
+      margin-bottom: 8px;
+    }
+    .geo-compare-label.geo-col-geo { border-color: #8B5CF6; }
+    .geo-compare-label.geo-col-seo { border-color: #2563EB; }
+
+    /* Platforms */
+    .geo-platforms { padding: 72px 0; background: #f8fafc; }
+    .geo-platforms h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .geo-platforms > .container > p { font-size: 1rem; color: #64748b; margin-bottom: 32px; max-width: 600px; }
+    .geo-platforms-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    }
+    .geo-plat-card {
+      background: #fff; border-radius: 14px; padding: 28px;
+      border: 1px solid #e2e8f0;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .geo-plat-card:hover {
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .geo-plat-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.25rem; font-weight: 800;
+    }
+    .geo-plat-card h3 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+    .geo-plat-stat {
+      font-size: 1.375rem; font-weight: 800; color: #2563eb; margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .geo-plat-desc { font-size: 0.8125rem; color: #64748b; line-height: 1.5; }
+
+    /* Levers / How it works */
+    .geo-levers { padding: 72px 0; background: #fff; }
+    .geo-levers h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .geo-levers > .container > p { font-size: 1rem; color: #64748b; margin-bottom: 32px; max-width: 600px; }
+    .geo-levers-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    }
+    .geo-lever-card {
+      background: #f8fafc; border-radius: 14px; padding: 28px;
+      border-left: 3px solid #8B5CF6;
+    }
+    .geo-lever-card h3 { font-size: 1.0625rem; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+    .geo-lever-card p { font-size: 0.875rem; color: #64748b; line-height: 1.6; margin-bottom: 12px; }
+    .geo-lever-card ul { list-style: none; padding: 0; margin: 0; }
+    .geo-lever-card ul li {
+      font-size: 0.8125rem; color: #475569; padding: 4px 0; padding-left: 16px;
+      position: relative; line-height: 1.5;
+    }
+    .geo-lever-card ul li::before {
+      content: ''; position: absolute; left: 0; top: 10px;
+      width: 6px; height: 6px; border-radius: 50%; background: #8B5CF6;
+    }
+
+    /* FAQ */
+    .geo-faq { padding: 72px 0; background: #f8fafc; }
+    .geo-faq h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 28px; }
+    .geo-faq-list { max-width: 780px; }
+    .geo-faq-list details {
+      background: #fff; border-radius: 12px; padding: 0;
+      margin-bottom: 12px; border: 1px solid #e2e8f0;
+      overflow: hidden;
+    }
+    .geo-faq-list summary {
+      padding: 20px 24px; cursor: pointer;
+      font-size: 1rem; font-weight: 600; color: #0f172a;
+      list-style: none; display: flex; align-items: center; justify-content: space-between;
+    }
+    .geo-faq-list summary::-webkit-details-marker { display: none; }
+    .geo-faq-list summary::after {
+      content: '+'; font-size: 1.25rem; font-weight: 300; color: #94a3b8;
+      transition: transform 0.2s ease;
+    }
+    .geo-faq-list details[open] summary::after {
+      content: '-';
+    }
+    .geo-faq-list details p {
+      padding: 0 24px 20px; font-size: 0.9375rem; color: #475569; line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .geo-what-grid { grid-template-columns: 1fr; }
+      .geo-platforms-grid { grid-template-columns: 1fr 1fr; }
+      .geo-levers-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .geo-platforms-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,7 +146,7 @@
   </nav>
 </header>
 
-<!-- HERO — Service style: split with KPIs -->
+<!-- HERO -->
 <section class="svc-hero">
   <div class="container svc-hero-grid">
     <div class="svc-hero-text">
@@ -32,7 +155,7 @@
       </nav>
       <span class="svc-hero-tag" style="background:rgba(139,92,246,0.2);color:#A78BFA">Referencement generatif</span>
       <h1>Referencement generatif (GEO)</h1>
-      <p class="svc-hero-sub">Apparaitre dans les reponses de ChatGPT, Gemini, Perplexity et Google AI Overviews.</p>
+      <p class="svc-hero-sub">58% des recherches Google se terminent sans clic. Les IA repondent a la place de votre site. Le GEO vous rend citable par ChatGPT, Gemini, Perplexity et Google AI Overviews.</p>
       <div class="svc-hero-ctas">
         <a href="../contact.html" class="btn-primary btn-lg">Demander un audit GEO</a>
         <span class="svc-hero-detail">Resultats sous 90 jours</span>
@@ -40,65 +163,220 @@
     </div>
     <div class="svc-hero-kpis">
       <div class="svc-kpi">
-        <span class="svc-kpi-val">+150%</span>
-        <span class="svc-kpi-label">Citations IA</span>
-      </div>
-      <div class="svc-kpi">
-        <span class="svc-kpi-val">50+</span>
-        <span class="svc-kpi-label">Requetes auditees</span>
-      </div>
-      <div class="svc-kpi">
-        <span class="svc-kpi-val">3</span>
-        <span class="svc-kpi-label">Plateformes</span>
+        <span class="svc-kpi-val">-61%</span>
+        <span class="svc-kpi-label">CTR organique avec AI Overviews</span>
       </div>
       <div class="svc-kpi">
         <span class="svc-kpi-val">4.4x</span>
-        <span class="svc-kpi-label">Taux de conversion</span>
+        <span class="svc-kpi-label">Conversion trafic IA</span>
+      </div>
+      <div class="svc-kpi">
+        <span class="svc-kpi-val">+150%</span>
+        <span class="svc-kpi-label">Croissance trafic IA en 1 an</span>
+      </div>
+      <div class="svc-kpi">
+        <span class="svc-kpi-val">48%</span>
+        <span class="svc-kpi-label">Requetes Google avec AI Overview</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS — Timeline horizontal -->
+<!-- WHAT IS GEO -->
+<section class="geo-what">
+  <div class="container">
+    <h2>Qu'est-ce que le referencement generatif (GEO) ?</h2>
+    <div class="geo-what-grid">
+      <div class="geo-what-text">
+        <p>Le GEO (Generative Engine Optimization) est la discipline qui consiste a optimiser votre presence en ligne pour etre cite dans les reponses des intelligences artificielles generatives. Quand un utilisateur pose une question a ChatGPT, Perplexity ou Gemini, ces modeles selectionnent des sources pour construire leur reponse. Le GEO vous positionne parmi ces sources.</p>
+        <p>Contrairement au SEO classique qui vise a placer vos pages dans les 10 liens bleus de Google, le GEO travaille sur la citabilite : faire en sorte que les LLM (Large Language Models) considerent votre contenu comme une reference fiable et le mentionnent dans leurs reponses. C'est un changement de paradigme. Vous ne cherchez plus un clic, mais une recommandation.</p>
+        <p>Pourquoi c'est urgent : le trafic issu des IA generatives a ete multiplie par 9.7 entre 2024 et 2025. Les requetes avec AI Overviews affichent un taux de zero-clic de 83%. Les marques citees dans les AI Overviews obtiennent 35% de clics organiques en plus. Ne pas exister dans les reponses IA, c'est laisser ce trafic a vos concurrents.</p>
+      </div>
+      <div class="geo-what-compare">
+        <h3>GEO vs SEO : les differences cles</h3>
+        <div class="geo-compare-row">
+          <div class="geo-compare-label geo-col-seo">SEO Classique</div>
+          <div class="geo-compare-label geo-col-geo">GEO</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>Cibler les 10 liens bleus Google</div>
+          <div>Etre cite dans les reponses IA</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>Optimiser pour les robots d'indexation</div>
+          <div>Optimiser pour les modeles de langage</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>KPI : position, CTR, trafic organique</div>
+          <div>KPI : citations, mentions, parts de voix IA</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>Backlinks comme signal d'autorite</div>
+          <div>Mentions de marque et reputation en ligne</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>Mots-cles et balises</div>
+          <div>Entites, semantique et donnees structurees</div>
+        </div>
+        <div class="geo-compare-row">
+          <div>1 canal (Google)</div>
+          <div>Multi-plateformes (ChatGPT, Gemini, Perplexity, AI Overviews)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="geo-platforms">
+  <div class="container">
+    <h2>Les plateformes IA ou nous vous rendons visible</h2>
+    <p>Chaque moteur generatif a ses propres criteres de selection des sources. Nous adaptons la strategie a chacun.</p>
+    <div class="geo-platforms-grid">
+      <div class="geo-plat-card">
+        <div class="geo-plat-icon" style="background:rgba(16,163,127,0.1);color:#10A37F;">G</div>
+        <h3>ChatGPT</h3>
+        <div class="geo-plat-stat">900M utilisateurs/semaine</div>
+        <p class="geo-plat-desc">Le plus grand modele conversationnel au monde. Combine donnees d'entrainement et recherche web. L'impact se mesure sur plusieurs semaines. 50 millions d'abonnes payants qui l'utilisent comme moteur de recherche principal.</p>
+      </div>
+      <div class="geo-plat-card">
+        <div class="geo-plat-icon" style="background:rgba(37,99,235,0.1);color:#2563EB;">P</div>
+        <h3>Perplexity</h3>
+        <div class="geo-plat-stat">35M+ requetes/jour</div>
+        <p class="geo-plat-desc">Moteur de recherche IA en temps reel. Cite systematiquement ses sources avec des liens cliquables. Un contenu bien positionne peut etre cite en quelques jours. 45 millions d'utilisateurs mensuels actifs.</p>
+      </div>
+      <div class="geo-plat-card">
+        <div class="geo-plat-icon" style="background:rgba(66,133,244,0.1);color:#4285F4;">G</div>
+        <h3>Gemini</h3>
+        <div class="geo-plat-stat">750M utilisateurs/mois</div>
+        <p class="geo-plat-desc">L'IA de Google integree a l'ensemble de son ecosysteme. 120 000+ entreprises l'utilisent. Son integration dans Workspace et Android en fait un point de contact incontournable pour les professionnels.</p>
+      </div>
+      <div class="geo-plat-card">
+        <div class="geo-plat-icon" style="background:rgba(234,67,53,0.1);color:#EA4335;">A</div>
+        <h3>Google AI Overviews</h3>
+        <div class="geo-plat-stat">48% des requetes</div>
+        <p class="geo-plat-desc">Les reponses IA directement dans Google. Presentes sur pres de la moitie des recherches. Les marques citees dans les AI Overviews obtiennent 35% de clics organiques supplementaires. Le nouveau champ de bataille SEO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
 <section class="svc-process">
   <div class="container">
-    <h2>Comment ca se passe</h2>
+    <h2>Notre methode en 4 etapes</h2>
     <div class="svc-timeline">
       <div class="svc-step">
         <div class="svc-step-num">01</div>
         <h3>Audit Baseline</h3>
-        <p>50 requetes, 3 plateformes. On mesure votre presence actuelle dans les IA.</p>
+        <p>Nous mesurons votre presence actuelle dans les IA generatives :</p>
+        <ul style="margin-top:8px;list-style:none;padding:0">
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>50+ requetes testees sur 4 plateformes</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Cartographie des concurrents cites</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Analyse des entites reconnues par les LLM</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Score de citabilite initial</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">02</div>
         <h3>Strategie GEO</h3>
-        <p>Roadmap 90 jours. Priorisation des actions a fort impact.</p>
+        <p>Construction d'une roadmap personnalisee sur 90 jours :</p>
+        <ul style="margin-top:8px;list-style:none;padding:0">
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Priorisation des requetes a fort potentiel</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Strategie de contenu LLM-friendly</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Plan de renforcement d'autorite</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Calendrier d'implementation</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">03</div>
         <h3>Optimisation</h3>
-        <p>Contenu LLM-friendly, Schema.org, signaux de citabilite.</p>
+        <p>Mise en oeuvre des actions d'optimisation :</p>
+        <ul style="margin-top:8px;list-style:none;padding:0">
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Restructuration du contenu pour la citabilite</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Implementation Schema.org et donnees structurees</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Signaux d'autorite et mentions de marque</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Optimisation des formats Q&A et guides</li>
+        </ul>
       </div>
       <div class="svc-step">
         <div class="svc-step-num">04</div>
-        <h3>Monitoring</h3>
-        <p>Rapport mensuel, veille LLM, ajustements continus.</p>
+        <h3>Monitoring continu</h3>
+        <p>Suivi et ajustement permanent des performances :</p>
+        <ul style="margin-top:8px;list-style:none;padding:0">
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Rapport mensuel de citations IA</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Veille sur les mises a jour des modeles</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Ajustements strategiques trimestriels</li>
+          <li style="font-size:0.8125rem;color:#475569;padding:3px 0;padding-left:14px;position:relative"><span style="position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#2563eb"></span>Benchmark concurrentiel evolutif</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INCLUDES — Card grid -->
+<!-- INCLUDES -->
 <section class="svc-includes">
   <div class="container">
     <h2>Ce qui est inclus</h2>
     <div class="svc-includes-grid">
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Rapport audit GEO baseline</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Audit GEO baseline (50+ requetes, 4 plateformes)</span></div>
       <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Audit contenu LLM-friendly</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Cartographie entites</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Dashboard monitoring citations</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Strategie de citabilite</span></div>
-      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Veille modeles IA</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Cartographie des entites et graphe semantique</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Dashboard monitoring des citations IA</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/></svg><span>Strategie de citabilite et plan d'action</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg><span>Veille modeles IA et mises a jour</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Benchmark concurrentiel IA mensuel</span></div>
+      <div class="svc-inc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg><span>Implementation Schema.org et donnees structurees</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS — 4 LEVERS -->
+<section class="geo-levers">
+  <div class="container">
+    <h2>Les 4 leviers du referencement generatif</h2>
+    <p>Pour etre cite par les IA, il faut activer simultanement quatre axes strategiques. 65% des pages citees par les IA integrent des donnees structurees Schema.org.</p>
+    <div class="geo-levers-grid">
+      <div class="geo-lever-card">
+        <h3>Autorite et reputation</h3>
+        <p>Les mentions de marque sont le nouveau signal d'autorite pour les moteurs IA, au meme titre que les backlinks l'etaient pour Google classique.</p>
+        <ul>
+          <li>Renforcement des mentions sur les sources de reference du secteur</li>
+          <li>Strategie de relations presse et de publications tierces</li>
+          <li>Construction d'un profil d'auteur expert (E-E-A-T)</li>
+          <li>Gestion de la reputation en ligne et des avis</li>
+        </ul>
+      </div>
+      <div class="geo-lever-card">
+        <h3>Structure du contenu</h3>
+        <p>Les IA citent les contenus qui proposent des formulations claires, des exemples concrets et un raisonnement progressif. Le format compte autant que le fond.</p>
+        <ul>
+          <li>Restructuration en formats Q&A et guides pedagogiques</li>
+          <li>Redaction de passages synthetiques et citables</li>
+          <li>Hierarchisation semantique (H1-H6) optimisee pour les LLM</li>
+          <li>Integration de donnees uniques : etudes de cas, statistiques propriétaires</li>
+        </ul>
+      </div>
+      <div class="geo-lever-card">
+        <h3>Entites et semantique</h3>
+        <p>Les LLM raisonnent par entites, pas par mots-cles. Il faut que votre marque soit reconnue comme une entite fiable dans votre domaine d'expertise.</p>
+        <ul>
+          <li>Cartographie et enrichissement des entites de votre Knowledge Graph</li>
+          <li>Implementation de Schema.org (Organization, Product, FAQ, HowTo)</li>
+          <li>Liaison semantique entre vos entites et votre secteur</li>
+          <li>Optimisation des fiches Wikipedia, Wikidata et annuaires sectoriels</li>
+        </ul>
+      </div>
+      <div class="geo-lever-card">
+        <h3>Monitoring et veille</h3>
+        <p>Les modeles IA evoluent chaque semaine. Ce qui fonctionne aujourd'hui peut changer demain. Le monitoring permanent est indispensable.</p>
+        <ul>
+          <li>Suivi des citations sur ChatGPT, Perplexity, Gemini et AI Overviews</li>
+          <li>Alertes sur les changements de positionnement IA</li>
+          <li>Veille sur les mises a jour des modeles (GPT, Gemini, Claude)</li>
+          <li>Rapports mensuels avec KPI de parts de voix IA</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -109,17 +387,50 @@
     <h2>Pour qui ?</h2>
     <div class="svc-audience-grid">
       <div class="svc-aud-card">
-        <h3>Directeur Marketing</h3>
-        <p>Gagner en visibilite dans les reponses IA et anticiper le shift des usages.</p>
+        <h3>Directeur Marketing / CMO</h3>
+        <p>Votre trafic organique stagne ou baisse malgre un bon SEO. Vos concurrents apparaissent dans les reponses de ChatGPT, pas vous. Vous devez anticiper le shift des usages vers la recherche conversationnelle avant que l'ecart ne se creuse.</p>
       </div>
       <div class="svc-aud-card">
-        <h3>PME / ETI</h3>
-        <p>Exploiter de nouveaux canaux d'acquisition avant vos concurrents.</p>
+        <h3>PME / ETI en croissance</h3>
+        <p>Vous investissez en SEO mais les AI Overviews reduisent votre CTR de 61%. Le trafic IA convertit 4.4x mieux que le trafic organique classique. Vous voulez exploiter ce nouveau canal d'acquisition avant vos concurrents.</p>
       </div>
       <div class="svc-aud-card">
-        <h3>E-commerce</h3>
-        <p>Faire citer vos produits dans les recommandations des IA generatives.</p>
+        <h3>E-commerce et SaaS</h3>
+        <p>Les IA generatives recommandent des produits et des solutions a 900 millions d'utilisateurs chaque semaine. Si vos produits ne sont pas cites dans ces recommandations, c'est du chiffre d'affaires qui part chez vos concurrents.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="geo-faq">
+  <div class="container">
+    <h2>Questions frequentes sur le GEO</h2>
+    <div class="geo-faq-list">
+      <details>
+        <summary>Qu'est-ce que le GEO exactement ?</summary>
+        <p>Le GEO (Generative Engine Optimization) est l'ensemble des techniques qui visent a faire apparaitre votre marque, vos produits ou votre expertise dans les reponses generees par les intelligences artificielles. Cela inclut ChatGPT, Perplexity, Google Gemini et les AI Overviews de Google. Contrairement a la publicite, il s'agit d'une recommandation organique par l'IA, percue comme plus credible par les utilisateurs.</p>
+      </details>
+      <details>
+        <summary>En quoi c'est different du SEO ?</summary>
+        <p>Le SEO optimise votre visibilite dans les resultats de recherche classiques (les 10 liens bleus de Google). Le GEO optimise votre citabilite dans les reponses generees par les IA. Les signaux sont differents : le SEO s'appuie sur les backlinks et les mots-cles, le GEO travaille sur les entites, la reputation en ligne, la structure semantique et les donnees structurees. Les deux sont complementaires : un bon socle SEO amplifie votre visibilite GEO.</p>
+      </details>
+      <details>
+        <summary>Sur quelles plateformes IA intervenez-vous ?</summary>
+        <p>Nous couvrons les quatre plateformes majeures : ChatGPT (900 millions d'utilisateurs hebdomadaires), Perplexity (35 millions de requetes par jour), Google Gemini (750 millions d'utilisateurs mensuels) et Google AI Overviews (presents sur 48% des recherches Google). Chaque plateforme a ses propres criteres de selection des sources, et nous adaptons la strategie en consequence.</p>
+      </details>
+      <details>
+        <summary>Combien de temps pour etre cite ?</summary>
+        <p>Les delais varient selon la plateforme. Sur Perplexity, qui effectue des recherches en temps reel, un contenu bien optimise peut etre cite en quelques jours. Sur ChatGPT et Gemini, qui combinent donnees d'entrainement et recherche web, l'impact se mesure sur plusieurs semaines a quelques mois. Notre roadmap est construite sur 90 jours avec des quick wins des les premieres semaines.</p>
+      </details>
+      <details>
+        <summary>Comment mesurez-vous les citations ?</summary>
+        <p>Nous utilisons un systeme de monitoring proprietaire qui interroge regulierement les plateformes IA sur vos requetes cibles et analyse les reponses. Nous mesurons votre taux de citation (frequence de mention), votre part de voix (position par rapport aux concurrents), le sentiment des mentions et l'evolution dans le temps. Un dashboard vous donne une visibilite en temps reel sur vos performances GEO.</p>
+      </details>
+      <details>
+        <summary>Peut-on faire du GEO sans SEO ?</summary>
+        <p>Techniquement oui, mais ce n'est pas recommande. Le SEO et le GEO partagent des fondations communes : contenu de qualite, autorite du domaine, donnees structurees. Un site avec un bon socle SEO sera naturellement mieux positionne pour le GEO. En revanche, un bon SEO seul ne suffit plus : 48% des recherches Google declenchent des AI Overviews qui reduisent le CTR organique de 61%. La strategie gagnante en 2026 combine les deux.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -128,7 +439,7 @@
 <section class="cta-banner">
   <div class="container" style="text-align:center">
     <h2 style="color:#fff;margin-bottom:16px">Pret a apparaitre dans les reponses IA ?</h2>
-    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit GEO gratuit de 30 minutes. On mesure votre presence actuelle et on identifie les quick wins.</p>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:32px">Audit GEO gratuit de 30 minutes. On mesure votre presence actuelle sur ChatGPT, Gemini, Perplexity et AI Overviews, et on identifie les quick wins pour vous rendre citable.</p>
     <a href="../contact.html" class="btn-primary btn-lg" style="background:#fff;color:#0f172a">Demander un audit GEO</a>
   </div>
 </section>
