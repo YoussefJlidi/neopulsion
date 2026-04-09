@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     .article-hero { padding: 120px 0 0; background: var(--bg); }
-    .article-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
+    .article-cover { width: 100%; height: auto; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
     .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
-    .article-body { max-width: 720px; }
+    .article-body { max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
     .article-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; color: var(--text); }
     .article-body h3 { font-size: 1.125rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
     .article-body p  { font-size: 1.0625rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
@@ -61,6 +61,15 @@
       .article-layout { grid-template-columns: 1fr; }
       .article-sidebar { position: static; }
       .article-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  
+    @media(max-width:600px){
+      .article-hero { padding: 100px 0 0; }
+      .article-body h2 { font-size: 1.25rem; }
+      .article-body h3 { font-size: 1rem; }
+      .article-body p, .article-body li { font-size: 0.9375rem; }
+      .article-stat-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 16px; }
     }
   </style>
 </head>
