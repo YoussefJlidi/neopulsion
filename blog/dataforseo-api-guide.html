@@ -18,7 +18,8 @@
     .breadcrumb a { color: var(--text-muted); text-decoration: none; }
     .breadcrumb a:hover { color: var(--blue); }
     .breadcrumb-sep { margin: 0 6px; color: #cbd5e1; }
-    .article-cover { width: 100%; height: auto; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
+    .article-cover-wrap { width: 100%; max-height: 400px; border-radius: var(--radius-lg); margin: 40px 0; overflow: hidden; background: #0d1117; }
+    .article-cover { width: 100%; height: 100%; object-fit: contain; display: block; }
     .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
     .article-body { max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
     .article-body h2 { font-size: 1.5rem; font-weight: 800; margin: 48px 0 16px; color: var(--text); }
@@ -142,7 +143,9 @@
       <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:680px;">Derriere Mangools, SE Ranking, Serpstat et des centaines d'autres outils SEO, il y a souvent la meme source de donnees : DataForSEO. Voici tout ce qu'il faut savoir sur cette API, ses capacites, son modele tarifaire et ses avantages par rapport aux alternatives.</p>
     </div>
 
-    <img src="../assets/blog-dataforseo.svg" alt="DataForSEO — schema API avec flux de donnees SERP, mots-cles et backlinks" class="article-cover">
+    <div class="article-cover-wrap">
+      <img src="../assets/blog-dataforseo.svg" alt="DataForSEO — schema API avec flux de donnees SERP, mots-cles et backlinks" class="article-cover">
+    </div>
   </div>
 </section>
 
