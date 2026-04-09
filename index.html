@@ -3,102 +3,315 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neopulsion — Accompagnement, Formation & Ateliers IA | Youssef Jlidi</title>
-  <meta name="description" content="Neopulsion : accompagnement SEO & GEO, formations certifiantes OPCO et ateliers pratiques. Développez votre croissance grâce aux algorithmes et aux agents IA.">
-  <meta property="og:title" content="Neopulsion — Accompagnement, Formation & Ateliers IA">
-  <meta property="og:description" content="Accompagnement SEO & GEO, formations certifiantes, ateliers pratiques. Dirigé par Youssef Jlidi.">
+  <title>Neopulsion — Agence SEO & GEO, Formation IA | Youssef Jlidi</title>
+  <meta name="description" content="Neopulsion : agence SEO & GEO et centre de formation. Audit, accompagnement mensuel et formations finançables OPCO pour dominer Google ET les IA génératives.">
+  <meta property="og:title" content="Neopulsion — Agence SEO & GEO, Formation IA">
+  <meta property="og:description" content="Audit SEO & GEO, accompagnement mensuel, automatisation IA. Formations finançables OPCO. Dirigé par Youssef Jlidi.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neopulsion.com/">
-  <meta property="og:image" content="https://neopulsion.com/assets/og-image.jpg">
-  <link rel="canonical" href="https://neopulsion.com/">
-  <link rel="stylesheet" href="css/style.css?v=8.0">
+  <meta property="og:url" content="https://neopulsion.fr/">
+  <meta property="og:image" content="https://neopulsion.fr/assets/og-image.jpg">
+  <link rel="canonical" href="https://neopulsion.fr/">
+  <link rel="stylesheet" href="css/style.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Neopulsion",
-    "url": "https://neopulsion.com",
-    "logo": "https://neopulsion.com/assets/logo.png",
-    "description": "Accompagnement SEO & GEO, formations certifiantes et ateliers IA — dirigé par Youssef Jlidi",
-    "founder": { "@type": "Person", "name": "Youssef Jlidi" },
-    "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "email": "contact@neopulsion.com" },
-    "sameAs": ["https://www.linkedin.com/in/youssefj/"]
+    "url": "https://neopulsion.fr",
+    "logo": "https://neopulsion.fr/assets/logo.png",
+    "description": "Agence SEO & GEO et centre de formation dirigée par Youssef Jlidi",
+    "founder": {
+      "@type": "Person",
+      "name": "Youssef Jlidi"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "contact@neopulsion.fr"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/youssefj/"
+    ]
   }
   </script>
 </head>
 <body>
-<div class="scroll-progress" id="scroll-progress"></div>
 
-<!-- HEADER -->
-<header class="nav-light" id="site-header">
+<!-- ========== HEADER ========== -->
+<header class="nav-transparent" id="site-header">
   <nav class="container nav-inner">
-    <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
+    <a class='nav-logo' href='/'>neo<span>pulsion</span></a>
+
     <div class="nav-links" id="primary-nav">
-      <a href="#accompagnement">Accompagnement</a>
-      <a href="#formation">Formation</a>
-      <a href="#atelier">Atelier</a>
-      <a href="blog.html">Blog</a>
+      <a href="accompagnement.html">Accompagnement</a>
+      <a href="formations.html">Formations</a>
+      <a href="ateliers.html">Ateliers</a>
+      <a href="ressources.html">Ressources</a>
     </div>
+
     <div class="nav-cta">
-      <a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a>
+      <a class='btn-ghost-nav' href='/contact'>Contact</a>
+      <a class='btn-primary btn-sm' href='/contact'>Audit gratuit</a>
     </div>
+
     <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 </header>
 
-<!-- MOBILE NAV -->
+<!-- Mobile Nav -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <div class="mobile-nav-links">
-    <a href="#accompagnement">Accompagnement</a>
-    <a href="#formation">Formation</a>
-    <a href="#atelier">Atelier</a>
-    <a href="blog.html">Blog</a>
+    <span class="mobile-nav-group-title">Services</span>
+    <div class="mobile-nav-submenu">
+      <a href='/services/seo'>Référencement SEO</a>
+      <a href='/services/geo'>GEO — Référencement Génératif</a>
+      <a href='/services/linkedin'>Visibilité LinkedIn</a>
+      <a href='/services/ia'>Accompagnement IA</a>
+    </div>
+    <span class="mobile-nav-group-title">Apprendre</span>
+    <div class="mobile-nav-submenu">
+      <a href='/ateliers'>Ateliers</a>
+      <a href='/formations'>Formations</a>
+    </div>
+    <a href='/blog'>Blog</a>
+    <a href='/glossaire'>Glossaire</a>
+    <span class="mobile-nav-group-title">À propos</span>
+    <div class="mobile-nav-submenu">
+      <a href='/a-propos'>À propos</a>
+      <a href='/equipe'>Équipe</a>
+    </div>
   </div>
   <div class="mobile-nav-cta">
-    <a href="contact.html" class="btn-primary">Audit gratuit</a>
+    <a class='btn-primary' href='/contact'>Audit gratuit</a>
+    <a class='btn-secondary' href='/contact'>Nous contacter</a>
   </div>
 </div>
 
-<!-- ==================== HERO ==================== -->
-<section class="hero-home">
-  <div class="container">
-    <div class="hero-home-grid">
-      <!-- LEFT: Text -->
-      <div class="hero-home-text">
-        <div class="hero-pill">Accompagnement · Formation · Atelier</div>
-        <h1>On vous aide à devenir <em>visible</em>, ou on le fait pour vous.</h1>
-        <p class="hero-home-sub">Que vous ayez besoin d'un coup de main ou d'apprendre à le faire vous-même, on a ce qu'il vous faut. SEO, IA, visibilité digitale — concrètement.</p>
-        <div class="hero-home-ctas">
-          <a href="contact.html" class="btn-primary btn-lg">Boostez votre croissance</a>
-          <a href="#accompagnement" class="btn-link">Découvrir nos offres →</a>
+<!-- ========== HERO V3 — Split + Bento UI ========== -->
+<section class="hero-v3">
+  <div class="container hero-v3-grid">
+
+    <!-- LEFT -->
+    <div class="hero-v3-text">
+      <p class="hero-v3-kicker">SEO · GEO · IA — Consulting &amp; Formation</p>
+      <h1>3 fa&ccedil;ons d'activer votre <em>croissance</em> avec l'IA</h1>
+      <p class="hero-v3-sub">Peu importe votre niveau de maturit&eacute;, nous intervenons &agrave; chaque &eacute;tape de votre transformation digitale.</p>
+      <div class="hero-v3-ctas">
+        <a href="#services" class="hero-pill-btn hero-pill-btn--blue">Accompagnement</a>
+        <a href="formations.html" class="hero-pill-btn hero-pill-btn--amber">Formations</a>
+        <a href="ateliers.html" class="hero-pill-btn hero-pill-btn--green">Ateliers</a>
+      </div>
+      <div class="hero-v3-stats">
+        <div><strong>324+</strong> entreprises</div>
+        <div><strong>230K+</strong> form&eacute;s</div>
+        <div><strong>10+</strong> ans</div>
+      </div>
+    </div>
+
+    <!-- RIGHT — Bento UI Mockups -->
+    <div class="hero-bento">
+      <div class="bento-card bento-card--main">
+        <div class="bento-head">
+          <span class="bento-dot" style="background:#2563eb"></span>
+          <span class="bento-label">Accompagnement innovant</span>
+          <span class="bento-status">En cours</span>
         </div>
-        <div class="hero-home-proof">
-          <div class="hero-home-stat"><strong>324+</strong> entreprises</div>
-          <div class="hero-home-stat"><strong>230K+</strong> formés</div>
-          <div class="hero-home-stat"><strong>10+</strong> ans</div>
+        <div class="bento-pillars">
+          <div class="bento-pillar"><span class="bento-pillar-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span><span>SEO</span></div>
+          <div class="bento-pillar"><span class="bento-pillar-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><circle cx="18" cy="6" r="3" fill="currentColor" stroke="none"/></svg></span><span>GEO</span></div>
+          <div class="bento-pillar"><span class="bento-pillar-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1v3h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2v-3h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 12 2z"/></svg></span><span>Agents</span></div>
+          <div class="bento-pillar"><span class="bento-pillar-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><span>Auto.</span></div>
+        </div>
+        <div class="bento-kpis">
+          <div class="bento-kpi"><span class="bento-kpi-val">+47%</span><span class="bento-kpi-txt">Visibilit&eacute;</span></div>
+          <div class="bento-kpi"><span class="bento-kpi-val">x5</span><span class="bento-kpi-txt">Productivit&eacute;</span></div>
+          <div class="bento-kpi"><span class="bento-kpi-val">12</span><span class="bento-kpi-txt">Agents</span></div>
+        </div>
+        <div class="bento-chart"><div class="bento-bar" style="height:22%"></div><div class="bento-bar" style="height:30%"></div><div class="bento-bar" style="height:28%"></div><div class="bento-bar" style="height:45%"></div><div class="bento-bar" style="height:58%"></div><div class="bento-bar" style="height:70%"></div><div class="bento-bar bento-bar--hl" style="height:88%"></div></div>
+      </div>
+      <div class="bento-card bento-card--sm">
+        <div class="bento-head"><span class="bento-dot" style="background:#D97706"></span><span class="bento-label">Formation IA</span><span class="bento-tag">OPCO</span></div>
+        <div class="bento-modules"><div class="bento-mod done">SEO technique</div><div class="bento-mod done">Strat&eacute;gie GEO</div><div class="bento-mod active">Prompt Engineering</div><div class="bento-mod">Cas pratiques</div></div>
+        <div class="bento-prog"><div class="bento-prog-bar"><div class="bento-prog-fill" style="width:62%"></div></div><span>62%</span></div>
+      </div>
+      <div class="bento-card bento-card--sm">
+        <div class="bento-head"><span class="bento-dot" style="background:#059669"></span><span class="bento-label">Atelier 2h</span></div>
+        <div class="bento-checks"><div class="bento-check done">Audit flash</div><div class="bento-check done">3 quick wins</div><div class="bento-check done">Plan d'action</div></div>
+        <div class="bento-foot">Livr&eacute; en 2h chrono</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logos défilants — pleine largeur, dans le hero -->
+  <div class="hero-v3-logos">
+    <div class="container">
+      <p class="hero-v3-logos-label">Ils nous font confiance</p>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-inner">
+        <div class="marquee-track">
+          <img src="assets/leboncoin.png" alt="Le Bon Coin" class="logo-item" height="32">
+          <img src="assets/linkedin-white.webp" alt="LinkedIn" class="logo-item" height="32">
+          <img src="assets/laposte-white.png" alt="La Poste" class="logo-item" height="32">
+          <img src="assets/euronext-white.png" alt="Euronext" class="logo-item" height="32">
+          <img src="assets/lefigaro-white.webp" alt="Le Figaro" class="logo-item" height="32">
+          <img src="assets/universite-paris.png" alt="Universit&eacute; Paris-Est" class="logo-item" height="32">
         </div>
       </div>
-      <!-- RIGHT: Floating 3D Cards -->
-      <div class="hero-home-cards">
-        <div class="float-card float-card--1">
-          <div class="float-card-head"><span class="dot dot--blue"></span> Accompagnement SEO</div>
-          <div class="float-card-big">+47%</div>
-          <div class="float-card-label">visibilité Google</div>
-          <div class="float-card-bar"><div class="float-card-bar-fill"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANCIEN HERO CACHÉ (on garde le code pour référence) -->
+<section class="hero" aria-label="Introduction" style="display:none">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="kicker kicker--light">SEO · GEO · IA — Consulting &amp; Formation</p>
+      <h1 class="hero-title">Devenez visible et rentable grâce à <em>l'intelligence artificielle</em></h1>
+      <p class="hero-subtitle">Deux chemins, un seul objectif : être visible là où vos clients cherchent — sur Google, sur Perplexity, dans ChatGPT.</p>
+      <div class="hero-actions">
+        <a class='btn-primary btn-lg' href='/contact'>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          Confier ma visibilité
+        </a>
+        <a class='btn-outline-white btn-lg' href='/formations'>Me former</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">10+</div>
+          <div class="hero-stat-label">ans d'expertise</div>
         </div>
-        <div class="float-card float-card--2">
-          <div class="float-card-head"><span class="dot dot--amber"></span> Formation IA <span class="float-card-tag">OPCO</span></div>
-          <div class="float-card-meta">2 jours · Certifiante</div>
-          <div class="float-card-pills"><span>SEO</span><span>GEO</span><span>Prompt</span></div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">324+</div>
+          <div class="hero-stat-label">entreprises</div>
         </div>
-        <div class="float-card float-card--3">
-          <div class="float-card-head"><span class="dot dot--green"></span> Atelier 2h</div>
-          <div class="float-card-checks">
-            <div class="fcheck on">Prompt Engineering</div>
-            <div class="fcheck on">Cas pratiques</div>
-            <div class="fcheck">Certification</div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">230K+</div>
+          <div class="hero-stat-label">personnes formées</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO vs GEO Diagram -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="seo-geo-diagram">
+        <p class="diagram-title">Votre stratégie de visibilité</p>
+
+        <!-- Chart avant / après -->
+        <div class="diagram-chart-wrap">
+          <svg class="diagram-chart-svg" viewBox="0 0 400 155" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="afterGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.38"/>
+                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.02"/>
+              </linearGradient>
+              <linearGradient id="beforeGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.01"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Grid lignes horizontales -->
+            <line x1="0" y1="35" x2="400" y2="35" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="0" y1="75" x2="400" y2="75" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="0" y1="115" x2="400" y2="115" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+            <!-- Ligne verticale marqueur Neopulsion -->
+            <line x1="165" y1="8" x2="165" y2="148" stroke="rgba(255,255,255,0.18)" stroke-width="1" stroke-dasharray="3 4"/>
+
+            <!-- Zone "Avant" -->
+            <path d="M0 118 C25 115 60 121 95 117 C125 114 150 119 165 118 L165 148 L0 148 Z" fill="url(#beforeGrad)"/>
+            <path d="M0 118 C25 115 60 121 95 117 C125 114 150 119 165 118" stroke="rgba(148,163,184,0.45)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+            <!-- Zone "Après" -->
+            <path d="M165 118 C190 100 215 72 252 46 C288 22 335 9 400 5 L400 148 L165 148 Z" fill="url(#afterGrad)"/>
+            <!-- Halo glow -->
+            <path d="M165 118 C190 100 215 72 252 46 C288 22 335 9 400 5" stroke="#93C5FD" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.12"/>
+            <!-- Ligne principale -->
+            <path d="M165 118 C190 100 215 72 252 46 C288 22 335 9 400 5" stroke="#60A5FA" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+            <!-- Point de transition -->
+            <circle cx="165" cy="118" r="11" fill="#3B82F6" opacity="0.18"/>
+            <circle cx="165" cy="118" r="5" fill="#60A5FA" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+
+            <!-- Labels texte dans le SVG -->
+            <text x="75" y="135" font-size="9.5" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="500">Sans Neopulsion</text>
+            <text x="290" y="23" font-size="9.5" fill="white" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="700">Avec Neopulsion</text>
+
+            <!-- Badge +340% en fin de courbe -->
+            <rect x="352" y="0" width="46" height="17" rx="5" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+            <text x="375" y="12.5" font-size="9" fill="white" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="700">+340%</text>
+
+            <!-- Label marqueur -->
+            <text x="168" y="20" font-size="8" fill="rgba(255,255,255,0.6)" font-family="Inter,system-ui,sans-serif" font-weight="500">neopulsion</text>
+          </svg>
+        </div>
+
+        <!-- Axe X : labels Avant / Après -->
+        <div class="diagram-axis">
+          <span class="diagram-axis-label">Avant</span>
+          <span class="diagram-axis-label diagram-axis-label--after">Après</span>
+        </div>
+
+        <!-- Plateformes -->
+        <div class="diagram-platforms">
+          <span class="diagram-platforms-lbl">Visible sur</span>
+          <div class="diagram-plat-logos">
+            <!-- Google -->
+            <div class="diagram-plat" title="Google Search">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+            </div>
+            <!-- ChatGPT -->
+            <div class="diagram-plat" title="ChatGPT">
+              <img src="assets/chatgpt-logo.png" width="20" height="20" alt="ChatGPT">
+            </div>
+            <!-- Gemini -->
+            <div class="diagram-plat" title="Gemini">
+              <img src="assets/gemini-logo.png" width="20" height="20" alt="Gemini">
+            </div>
+            <!-- Perplexity -->
+            <div class="diagram-plat" title="Perplexity">
+              <img src="assets/perplexity-logo.png" width="20" height="20" alt="Perplexity">
+            </div>
+            <!-- Reddit -->
+            <div class="diagram-plat" title="Reddit">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#FF4500"/>
+                <path d="M16.67 10a1.46 1.46 0 00-2.47-1 7.12 7.12 0 00-3.85-1.23l.65-3.08 2.13.45a1 1 0 102-.1 1 1 0 00-1.9.38l-2.38-.5a.27.27 0 00-.32.2l-.73 3.44a7.14 7.14 0 00-3.82 1.23 1.46 1.46 0 10-1.61 2.39 2.87 2.87 0 000 .44c0 2.24 2.61 4.06 5.83 4.06s5.83-1.82 5.83-4.06a2.87 2.87 0 000-.44 1.46 1.46 0 00.6-1.2zM7.27 11a1 1 0 111 1 1 1 0 01-1-1zm5.6 2.71a3.58 3.58 0 01-2.85.79 3.58 3.58 0 01-2.85-.79.28.28 0 01.39-.39 3.27 3.27 0 002.46.6 3.27 3.27 0 002.46-.6.28.28 0 01.39.39zm-.18-1.71a1 1 0 111-1 1 1 0 01-1 1z" fill="white"/>
+              </svg>
+            </div>
+            <!-- LinkedIn -->
+            <div class="diagram-plat" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats rapides -->
+        <div class="diagram-stats">
+          <div class="diagram-stat">
+            <div class="diagram-stat-val">+340%</div>
+            <div class="diagram-stat-lbl">visibilité IA</div>
+          </div>
+          <div class="diagram-stat-sep"></div>
+          <div class="diagram-stat">
+            <div class="diagram-stat-val">6+</div>
+            <div class="diagram-stat-lbl">plateformes</div>
+          </div>
+          <div class="diagram-stat-sep"></div>
+          <div class="diagram-stat">
+            <div class="diagram-stat-val">90j</div>
+            <div class="diagram-stat-lbl">premiers résultats</div>
           </div>
         </div>
       </div>
@@ -106,249 +319,265 @@
   </div>
 </section>
 
-<!-- LOGOS -->
-<section class="logos-strip">
+<!-- ========== LOGOS BAR ========== -->
+<section class="logos-bar" aria-label="Clients et partenaires" style="display:none">
   <div class="container">
-    <p class="logos-strip-label">Ils nous font confiance</p>
-    <div class="logos-strip-row">
-      <img src="assets/leboncoin.png" alt="Le Bon Coin" height="24">
-      <img src="assets/linkedin-new.png" alt="LinkedIn" height="24">
-      <img src="assets/laposte-new.png" alt="La Poste" height="24">
-      <img src="assets/euronext-new.png" alt="Euronext" height="24">
-      <img src="assets/lefigaro-new.png" alt="Le Figaro" height="24">
-    </div>
-  </div>
-</section>
-
-<!-- ==================== ACCOMPAGNEMENT ==================== -->
-<section class="section-row" id="accompagnement">
-  <div class="container">
-    <div class="section-row-head">
-      <div>
-        <h2>Accompagnement</h2>
-        <p class="section-row-sub">On gère votre visibilité de A à Z</p>
-      </div>
-      <a href="contact.html" class="btn-link">Tout voir →</a>
-    </div>
-    <div class="cards-scroll">
-      <article class="scard">
-        <span class="scard-badge">Populaire</span>
-        <div class="scard-icon scard-icon--blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <h3>Visibilité Google (SEO)</h3>
-        <p>Audit, plan d'action et résultats mesurables sous 90 jours.</p>
-        <a href="services/seo.html" class="scard-link">En savoir plus →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--violet">Nouveau</span>
-        <div class="scard-icon scard-icon--violet"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><circle cx="18" cy="6" r="3" fill="currentColor" stroke="none"/></svg></div>
-        <h3>Présence dans les IA (GEO)</h3>
-        <p>Être cité par ChatGPT, Gemini, Perplexity. Suivi mensuel.</p>
-        <a href="services/geo.html" class="scard-link">En savoir plus →</a>
-      </article>
-      <article class="scard">
-        <div class="scard-icon scard-icon--blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-        <h3>Stratégie LinkedIn</h3>
-        <p>Attirer des clients sans pub. Profil optimisé, contenu engageant.</p>
-        <a href="services/linkedin.html" class="scard-link">En savoir plus →</a>
-      </article>
-      <article class="scard">
-        <div class="scard-icon scard-icon--blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/></svg></div>
-        <h3>Intégration IA</h3>
-        <p>Outils IA intégrés à vos workflows. Produisez 5x plus vite.</p>
-        <a href="services/ia.html" class="scard-link">En savoir plus →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== FORMATION ==================== -->
-<section class="section-row section-row--alt" id="formation">
-  <div class="container">
-    <div class="section-row-head">
-      <div>
-        <h2>Formation</h2>
-        <p class="section-row-sub">Certifiantes — finançables OPCO</p>
-      </div>
-      <a href="formations.html" class="btn-link">Tout voir →</a>
-    </div>
-    <div class="cards-scroll">
-      <article class="scard">
-        <span class="scard-badge scard-badge--amber">OPCO</span>
-        <div class="scard-icon scard-icon--amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <h3>SEO &amp; Visibilité IA</h3>
-        <p>Référencement Google + visibilité IA. Cas pratiques sur vos vrais projets.</p>
-        <span class="scard-meta">2 jours · Certifiante</span>
-        <a href="formations.html" class="scard-link scard-link--amber">Voir le programme →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--amber">OPCO</span>
-        <div class="scard-icon scard-icon--amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/></svg></div>
-        <h3>IA Productive</h3>
-        <p>Intégrez l'IA dans votre quotidien. Construisez votre workflow IA.</p>
-        <span class="scard-meta">1 jour · Certifiante</span>
-        <a href="formations.html" class="scard-link scard-link--amber">Voir le programme →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--amber">OPCO</span>
-        <div class="scard-icon scard-icon--amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-        <h3>Prompt Engineering Expert</h3>
-        <p>Techniques avancées de prompting, automatisation, chaînes de prompts.</p>
-        <span class="scard-meta">1 jour · Certifiante</span>
-        <a href="formations.html" class="scard-link scard-link--amber">Voir le programme →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== ATELIER ==================== -->
-<section class="section-row" id="atelier">
-  <div class="container">
-    <div class="section-row-head">
-      <div>
-        <h2>Atelier</h2>
-        <p class="section-row-sub">Sessions courtes de 2h — pratique et concret</p>
-      </div>
-      <a href="ateliers.html" class="btn-link">Tout voir →</a>
-    </div>
-    <div class="cards-scroll">
-      <article class="scard">
-        <span class="scard-badge scard-badge--green">2h</span>
-        <div class="scard-icon scard-icon--green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-        <h3>Prompt Engineering</h3>
-        <p>Maîtrisez l'art de parler aux IA. Techniques, chaînes, cas concrets.</p>
-        <a href="ateliers.html" class="scard-link scard-link--green">S'inscrire →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--green">2h</span>
-        <div class="scard-icon scard-icon--green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <h3>SEO : les fondamentaux</h3>
-        <p>Comprendre Google et poser les bases de votre visibilité organique.</p>
-        <a href="ateliers.html" class="scard-link scard-link--green">S'inscrire →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--green">2h</span>
-        <div class="scard-icon scard-icon--green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg></div>
-        <h3>IA pour le marketing</h3>
-        <p>Comment l'IA transforme votre production de contenu et vos campagnes.</p>
-        <a href="ateliers.html" class="scard-link scard-link--green">S'inscrire →</a>
-      </article>
-      <article class="scard">
-        <span class="scard-badge scard-badge--green">2h</span>
-        <div class="scard-icon scard-icon--green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><circle cx="18" cy="6" r="3" fill="currentColor" stroke="none"/></svg></div>
-        <h3>GEO : être cité par les IA</h3>
-        <p>Comprendre comment ChatGPT et Perplexity sélectionnent leurs sources.</p>
-        <a href="ateliers.html" class="scard-link scard-link--green">S'inscrire →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== RESSOURCES ==================== -->
-<section class="section-row section-row--alt" id="ressources">
-  <div class="container">
-    <div class="section-row-head">
-      <div>
-        <h2>Ressources</h2>
-        <p class="section-row-sub">Articles &amp; livres blancs</p>
-      </div>
-      <a href="blog.html" class="btn-link">Tout voir →</a>
-    </div>
-    <div class="cards-scroll">
-      <a href="blog/llm-futur-recherche.html" class="rcard">
-        <div class="rcard-img"><img src="assets/blog-llm-recherche.svg" alt="LLMs et recherche" loading="lazy"><span class="rcard-tag">Article</span></div>
-        <div class="rcard-body">
-          <span class="rcard-cat">IA &amp; LLM</span>
-          <h3>Les LLMs ne sont pas prêts pour la recherche</h3>
-          <span class="rcard-date">28 mars 2026</span>
+    <p class="logos-bar-label">Ils nous font confiance</p>
+    <div class="marquee-wrapper">
+      <div class="marquee-inner">
+        <div class="marquee-track">
+          <img src="assets/leboncoin.png" alt="Le Bon Coin" class="logo-item" height="36">
+          <img src="assets/linkedin-white.webp" alt="LinkedIn" class="logo-item" height="36">
+          <img src="assets/laposte-white.png" alt="La Poste" class="logo-item" height="36">
+          <img src="assets/euronext-white.png" alt="Euronext" class="logo-item" height="36">
+          <img src="assets/lefigaro-white.webp" alt="Le Figaro" class="logo-item" height="36">
+          <img src="assets/universite-paris.png" alt="Université Paris-Est" class="logo-item" height="36">
         </div>
-      </a>
-      <a href="blog/claude-code-marketing.html" class="rcard">
-        <div class="rcard-img"><img src="assets/blog-claude-code-marketing.svg" alt="Claude Code marketing" loading="lazy"><span class="rcard-tag">Article</span></div>
-        <div class="rcard-body">
-          <span class="rcard-cat">IA &amp; Automation</span>
-          <h3>Claude Code pour le marketing : automatiser sans perdre en qualité</h3>
-          <span class="rcard-date">30 mars 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POURQUOI AGIR ========== -->
+<section class="why-section" aria-labelledby="why-title">
+  <div class="container">
+
+    <div class="why-header">
+      <p class="why-kicker">Pourquoi agir maintenant</p>
+      <h2 id="why-title">L'IA red&eacute;finit la mani&egrave;re dont vos clients d&eacute;couvrent, comparent et ach&egrave;tent.</h2>
+      <div class="why-intro">
+        <p>Ce n'est pas une &eacute;volution. <strong>C'est un basculement.</strong></p>
+        <p>Les entreprises qui s'adaptent prennent de l'avance. Les autres disparaissent progressivement des points de contact cl&eacute;s.</p>
+      </div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Vos clients ne cherchent plus comme avant</h3>
+        <p>Ils posent des questions &agrave; des IA, comparent en quelques secondes et prennent des d&eacute;cisions plus vite. Si vous n'&ecirc;tes pas int&eacute;gr&eacute; dans ces nouveaux parcours, vous sortez du jeu.</p>
+      </div>
+      <div class="why-card">
+        <h3>Votre acquisition devient d&eacute;pendante</h3>
+        <p>Moins de clics, plus d'interm&eacute;diaires, moins de contr&ocirc;le. Sans strat&eacute;gie adapt&eacute;e, votre croissance repose sur des canaux que vous ne ma&icirc;trisez plus.</p>
+      </div>
+      <div class="why-card">
+        <h3>Vos concurrents prennent position</h3>
+        <p>Certaines entreprises structurent d&eacute;j&agrave; leur pr&eacute;sence dans ces nouveaux environnements. Elles captent l'attention, la confiance... et vos opportunit&eacute;s.</p>
+      </div>
+      <div class="why-card">
+        <h3>Vos &eacute;quipes ne sont pas pr&ecirc;tes</h3>
+        <p>Les outils &eacute;voluent vite, mais les m&eacute;thodes ne suivent pas toujours. Sans cadre clair, difficile de transformer l'IA en levier concret de croissance.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== PREUVE SOCIALE ========== -->
+<section class="section section--dark" aria-labelledby="proof-title">
+  <div class="container">
+    <div class="section-header section-header--centered">
+      <p class="kicker kicker--light">Résultats &amp; références</p>
+      <h2 class="section-title" id="proof-title" style="color:white;">Des chiffres qui parlent d'eux-mêmes</h2>
+    </div>
+
+    <div class="stats-dark-grid">
+      <div class="reveal">
+        <div class="stats-dark-number" data-counter data-target="10" data-suffix="+">10+</div>
+        <div class="stats-dark-label">ans d'expertise SEO &amp; GEO</div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="stats-dark-number" data-counter data-target="230000" data-suffix="+">230 000+</div>
+        <div class="stats-dark-label">personnes formées</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="stats-dark-number" data-counter data-target="324" data-suffix="+">324+</div>
+        <div class="stats-dark-label">entreprises accompagnées</div>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 étoiles">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
         </div>
-      </a>
-      <div class="rcard rcard--cta">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        <h3>Livres blancs</h3>
-        <p>Guides gratuits SEO, GEO et IA appliquée.</p>
-        <span class="scard-link">Télécharger →</span>
+        <blockquote class="testimonial-quote">"L'audit SEO &amp; GEO de Youssef a été une révélation. Nous ne savions même pas que les IA nous ignoraient complètement. Six mois après, nous apparaissons régulièrement dans les réponses de Perplexity sur nos mots-clés stratégiques."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">SL</div>
+          <div>
+            <div class="testimonial-name">Sophie L.</div>
+            <div class="testimonial-role">Directrice Marketing — Scale-up SaaS B2B</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars" aria-label="5 étoiles">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <blockquote class="testimonial-quote">"La formation SEO &amp; GEO de Youssef est la seule que j'ai trouvée qui traite réellement les deux sujets ensemble, avec des cas pratiques concrets. Mon équipe de 8 personnes est revenue transformée. ROI immédiat."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">TM</div>
+          <div>
+            <div class="testimonial-name">Thomas M.</div>
+            <div class="testimonial-role">Head of Digital — Groupe E-commerce</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== TEMOIGNAGES ==================== -->
-<section class="section-row">
+<!-- ========== BLOG ========== -->
+<section class="section section--subtle" aria-labelledby="blog-title">
   <div class="container">
-    <div class="section-row-head"><div><h2>Ce qu'ils en disent</h2></div></div>
-    <div class="testimonial-card" id="testimonial-carousel">
-      <div class="testimonial-slide active">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"On a confié notre visibilité digitale à Neopulsion. Six mois après, on apparaît dans les réponses de Perplexity et notre trafic Google a bondi de 47 %."</blockquote>
-        <div class="testimonial-author"><div class="testimonial-avatar">SL</div><div><strong>Sophie L.</strong><br><span>Directrice Marketing — Scale-up SaaS B2B</span></div></div>
+    <div class="section-header">
+      <p class="kicker">Analyses &amp; ressources</p>
+      <h2 class="section-title" id="blog-title">Dernières analyses</h2>
+      <p class="section-subtitle">Décryptages SEO &amp; GEO, études de cas, guides pratiques — pour rester en avance sur les évolutions algorithmiques.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="blog-card reveal">
+        <div class="blog-card-img blog-card-img--geo" aria-hidden="true"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">GEO</span>
+            <span class="blog-card-date">Mars 2026</span>
+          </div>
+          <h3 class="blog-card-title">Comment apparaître dans les réponses de ChatGPT sur votre marché</h3>
+          <p class="blog-card-excerpt">Le GEO n'est plus optionnel. Voici les 7 signaux que les LLM utilisent pour décider de vous citer — et comment les optimiser dès maintenant.</p>
+          <a class='blog-card-link' href='/blog'>
+            Lire l'article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="testimonial-slide">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"La formation SEO &amp; IA a transformé mon équipe. On est enfin autonomes sur notre stratégie de contenu. ROI immédiat."</blockquote>
-        <div class="testimonial-author"><div class="testimonial-avatar">TM</div><div><strong>Thomas M.</strong><br><span>Head of Digital — Groupe E-commerce</span></div></div>
+
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-card-img blog-card-img--seo" aria-hidden="true"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">SEO</span>
+            <span class="blog-card-date">Février 2026</span>
+          </div>
+          <h3 class="blog-card-title">Google AI Overviews : ce que les données de Search Console révèlent vraiment</h3>
+          <p class="blog-card-excerpt">Après l'analyse de 50 comptes Search Console, voici ce que nous avons appris sur l'impact réel des AI Overviews sur le trafic organique.</p>
+          <a class='blog-card-link' href='/blog'>
+            Lire l'article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="testimonial-slide">
-        <div class="testimonial-stars">★★★★★</div>
-        <blockquote>"On hésitait entre accompagnement et formation. On a fait les deux. L'accompagnement a lancé la machine, la formation l'a pérennisée."</blockquote>
-        <div class="testimonial-author"><div class="testimonial-avatar">MR</div><div><strong>Marc R.</strong><br><span>CEO — Agence digitale, Paris</span></div></div>
+
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-card-img blog-card-img--ia" aria-hidden="true"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">IA</span>
+            <span class="blog-card-date">Janvier 2026</span>
+          </div>
+          <h3 class="blog-card-title">EEAT en 2026 : comment l'expertise perçue influence votre citabilité par les IA</h3>
+          <p class="blog-card-excerpt">Les signaux E-E-A-T de Google deviennent aussi les critères de sélection des LLM pour citer une source. Mode d'emploi pratique.</p>
+          <a class='blog-card-link' href='/blog'>
+            Lire l'article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="carousel-dots">
-        <button class="carousel-dot active" data-slide="0"></button>
-        <button class="carousel-dot" data-slide="1"></button>
-        <button class="carousel-dot" data-slide="2"></button>
-      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a class='btn-secondary' href='/blog'>Voir tous les articles</a>
     </div>
   </div>
 </section>
 
-<!-- ==================== CTA ==================== -->
-<section class="cta-banner">
+<!-- ========== CTA BANNER ========== -->
+<section class="cta-banner" aria-labelledby="cta-title">
   <div class="container">
-    <div class="cta-inner">
-      <h2>Prêt à passer à l'action ?</h2>
-      <p>Audit gratuit de 30 minutes. On vous dit franchement ce dont vous avez besoin.</p>
-      <div class="cta-btns">
-        <a href="contact.html" class="btn-primary btn-lg btn-white">Demander un audit gratuit</a>
-        <a href="formations.html" class="btn-outline-white btn-lg">Explorer les formations</a>
+    <div class="cta-banner-inner reveal">
+      <p class="kicker kicker--light">Passez à l'action</p>
+      <h2 id="cta-title">Prêt à reprendre le contrôle de votre visibilité ?</h2>
+      <p>Un audit gratuit de 30 minutes pour évaluer votre situation actuelle sur Google et dans les IA génératives. Sans engagement, avec des recommandations concrètes.</p>
+      <div class="cta-banner-actions">
+        <a class='btn-primary btn-lg' href='/contact'>Demander un audit gratuit</a>
+        <a class='btn-outline-white btn-lg' href='/formations'>Explorer les formations</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ========== FOOTER ========== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
-        <p class="footer-tagline">Accompagnement &amp; Formation — Visibilité digitale, SEO, IA.</p>
+        <a class='nav-logo' href='/'>neo<span>pulsion</span></a>
+        <p class="footer-tagline">Votre visibilité, sur Google et au-delà. Agence SEO &amp; GEO &amp; centre de formation.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://substack.com" target="_blank" rel="noopener" aria-label="Substack">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          </a>
+        </div>
       </div>
-      <div><p class="footer-col-title">Accompagnement</p><ul class="footer-links"><li><a href="services/seo.html">Visibilité Google</a></li><li><a href="services/geo.html">Visibilité dans les IA</a></li><li><a href="services/linkedin.html">Présence LinkedIn</a></li><li><a href="services/ia.html">Intégration IA</a></li></ul></div>
-      <div><p class="footer-col-title">Formation &amp; Ateliers</p><ul class="footer-links"><li><a href="formations.html">SEO &amp; GEO</a></li><li><a href="formations.html">IA Productive</a></li><li><a href="formations.html">Prompt Engineering</a></li><li><a href="ateliers.html">Ateliers pratiques</a></li></ul></div>
-      <div><p class="footer-col-title">Ressources</p><ul class="footer-links"><li><a href="blog.html">Blog</a></li><li><a href="glossaire.html">Glossaire</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href='/services/seo'>Référencement SEO</a></li>
+          <li><a href='/services/geo'>GEO — Référencement Génératif</a></li>
+          <li><a href='/services/linkedin'>Visibilité LinkedIn</a></li>
+          <li><a href='/services/ia'>Accompagnement IA</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Formations</p>
+        <ul class="footer-links">
+          <li><a href='/formations'>SEO &amp; GEO — Complète</a></li>
+          <li><a href='/formations'>IA pour marketeurs</a></li>
+          <li><a href='/formations'>Prompt Engineering</a></li>
+          <li><a href='/formations'>Financement OPCO</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Ressources</p>
+        <ul class="footer-links">
+          <li><a href='/blog'>Blog SEO &amp; GEO</a></li>
+          <li><a href='/glossaire'>Glossaire GEO</a></li>
+          <li><a href='/a-propos'>À propos</a></li>
+          <li><a href='/equipe'>Équipe</a></li>
+          <li><a href="https://substack.com" target="_blank" rel="noopener">Newsletter Substack</a></li>
+          <li><a href='/contact'>Contact</a></li>
+        </ul>
+      </div>
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
-      <nav><a href="cgv.html">Mentions légales</a> <a href="cgv.html">CGV</a> <a href="cgv.html">Confidentialité</a></nav>
+      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href='/cgv'>CGV</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGV</a>
+      </nav>
     </div>
   </div>
 </footer>
 
-<button class="back-to-top" id="back-to-top" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
-
-<div class="mobile-bottom-bar" id="mobile-bottom-bar">
-  <a href="contact.html" class="mobile-bar-btn mobile-bar-btn--primary">Audit gratuit</a>
-  <a href="contact.html" class="mobile-bar-btn mobile-bar-btn--secondary">Contact</a>
-</div>
-
-<script src="js/main.js?v=8.0"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

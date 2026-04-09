@@ -3,1018 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formations SEO, GEO & Agents IA — Finançables OPCO | Neopulsion</title>
-  <meta name="description" content="Formations professionnelles SEO, GEO et IA. Finançables OPCO. De débutant à expert en 1 à 2 jours. Formateur praticien, 230 000+ personnes formées. Neopulsion — Youssef Jlidi.">
-  <meta property="og:title" content="Formations SEO, GEO & Agents IA — Finançables OPCO | Neopulsion">
-  <meta property="og:description" content="Formations courtes, intensives, 100% applicables. SEO & GEO, IA productive, Prompt Engineering, Agents IA. Financement OPCO disponible.">
-  <meta property="og:type" content="website">
-  <link rel="canonical" href="https://neopulsion.com/formations.html">
-  <link rel="stylesheet" href="css/style.css?v=8.0">
-
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org", "@type": "Course",
-      "name": "Formation SEO & GEO — Maîtrise totale",
-      "description": "2 jours pour maîtriser le référencement naturel et la visibilité dans les IA génératives. SEO technique, stratégie de contenu, audit GEO, dashboard de suivi.",
-      "url": "https://neopulsion.com/formations.html",
-      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.com" },
-      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.com/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
-      "offers": { "@type": "Offer", "price": "1400", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "category": "Finançable OPCO" },
-      "duration": "P2D", "timeRequired": "PT14H", "courseMode": ["online","blended"],
-      "educationalLevel": "intermediate", "inLanguage": "fr"
-    },
-    {
-      "@context": "https://schema.org", "@type": "Course",
-      "name": "Formation IA Productive — De débutant à utilisateur avancé",
-      "description": "1 journée pour intégrer l'IA dans son travail quotidien. Outils, prompts, workflows et cas d'usage concrets par métier.",
-      "url": "https://neopulsion.com/formations.html",
-      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.com" },
-      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.com/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
-      "offers": { "@type": "Offer", "price": "800", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "category": "Finançable OPCO" },
-      "duration": "P1D", "timeRequired": "PT7H", "courseMode": ["online","blended"],
-      "educationalLevel": "beginner", "inLanguage": "fr"
-    },
-    {
-      "@context": "https://schema.org", "@type": "Course",
-      "name": "Formation Prompt Engineering Expert",
-      "description": "1 journée pour maîtriser l'art du prompt. Structures avancées, system prompts, chain-of-thought, bibliothèque de prompts métiers.",
-      "url": "https://neopulsion.com/formations.html",
-      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.com" },
-      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.com/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
-      "offers": { "@type": "Offer", "price": "800", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "category": "Finançable OPCO" },
-      "duration": "P1D", "timeRequired": "PT7H", "courseMode": ["online","blended"],
-      "educationalLevel": "intermediate", "inLanguage": "fr"
-    },
-    {
-      "@context": "https://schema.org", "@type": "Course",
-      "name": "Formation Agents IA — Concevoir et déployer ses propres agents",
-      "description": "1 journée pour construire des agents IA autonomes. Architecture, mémoire, outils, déploiement sur son cas d'usage réel.",
-      "url": "https://neopulsion.com/formations.html",
-      "provider": { "@type": "Organization", "name": "Neopulsion", "url": "https://neopulsion.com" },
-      "instructor": { "@type": "Person", "name": "Youssef Jlidi", "url": "https://neopulsion.com/a-propos.html", "sameAs": "https://www.linkedin.com/in/youssefj/" },
-      "offers": { "@type": "Offer", "price": "900", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "category": "Finançable OPCO" },
-      "duration": "P1D", "timeRequired": "PT7H", "courseMode": ["online","blended"],
-      "educationalLevel": "advanced", "inLanguage": "fr"
-    }
-  ]
-  </script>
-
-  <style>
-    /* ========================
-       Formations page — extra styles
-    ======================== */
-
-    /* Level badge */
-    .badge-level-beginner  { display:inline-flex; align-items:center; padding:3px 10px; border-radius:100px; font-size:0.72rem; font-weight:600; background:#F0FDF4; color:#166534; border:1px solid rgba(22,101,52,0.2); }
-    .badge-level-inter     { display:inline-flex; align-items:center; padding:3px 10px; border-radius:100px; font-size:0.72rem; font-weight:600; background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(29,78,216,0.2); }
-    .badge-level-advanced  { display:inline-flex; align-items:center; padding:3px 10px; border-radius:100px; font-size:0.72rem; font-weight:600; background:#F5F3FF; color:#6D28D9; border:1px solid rgba(109,40,217,0.2); }
-
-    /* Formation includes */
-    .formation-includes {
-      background: var(--bg-subtle);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      margin-top: 14px;
-    }
-    .formation-includes-title {
-      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 10px;
-    }
-    .formation-includes ul {
-      list-style: none; padding: 0; margin: 0;
-      display: flex; flex-direction: column; gap: 6px;
-    }
-    .formation-includes ul li {
-      font-size: 0.8rem; color: var(--text);
-      display: flex; align-items: flex-start; gap: 8px;
-    }
-    .formation-includes ul li::before {
-      content: '✓';
-      color: #16A34A; font-weight: 700; flex-shrink: 0; font-size: 0.75rem; margin-top: 1px;
-    }
-
-    /* Module timeline */
-    .formation-timeline {
-      display: flex; flex-direction: column; gap: 0;
-      margin-top: 4px;
-    }
-    .formation-timeline-item {
-      display: flex; gap: 12px; padding: 10px 0;
-      border-bottom: 1px solid var(--bg-subtle);
-    }
-    .formation-timeline-item:last-child { border-bottom: none; }
-    .formation-timeline-time {
-      font-size: 0.7rem; font-weight: 700; color: var(--blue);
-      white-space: nowrap; min-width: 60px; padding-top: 2px;
-      font-family: monospace;
-    }
-    .formation-timeline-content { flex: 1; }
-    .formation-timeline-title { font-size: 0.83rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
-    .formation-timeline-desc { font-size: 0.77rem; color: var(--text-muted); line-height: 1.5; }
-
-    /* Testimonials */
-    .testimonial-card {
-      background: white;
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-    }
-    .testimonial-stars {
-      display: flex; gap: 3px; margin-bottom: 14px;
-      color: #F59E0B;
-    }
-    .testimonial-quote {
-      font-size: 0.93rem; color: var(--text);
-      line-height: 1.7; font-style: italic;
-      margin-bottom: 20px;
-    }
-    .testimonial-quote::before { content: '"'; }
-    .testimonial-quote::after  { content: '"'; }
-    .testimonial-author {
-      display: flex; align-items: center; gap: 12px;
-    }
-    .testimonial-avatar {
-      width: 40px; height: 40px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 0.9rem; flex-shrink: 0;
-    }
-    .testimonial-name { font-size: 0.88rem; font-weight: 700; color: var(--text); }
-    .testimonial-role { font-size: 0.77rem; color: var(--text-muted); margin-top: 2px; }
-    .testimonial-result {
-      display: inline-flex; align-items: center; gap: 5px;
-      background: #F0FDF4; color: #166534;
-      border: 1px solid rgba(22,101,52,0.2);
-      padding: 3px 10px; border-radius: 100px;
-      font-size: 0.72rem; font-weight: 700;
-      margin-top: 8px;
-    }
-
-    /* FAQ */
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-    }
-    .faq-item:first-child { border-top: 1px solid var(--border); }
-    .faq-question {
-      width: 100%; background: none; border: none; cursor: pointer;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 18px 0; gap: 16px;
-      font-size: 0.97rem; font-weight: 700; color: var(--text);
-      text-align: left;
-    }
-    .faq-question svg { flex-shrink: 0; transition: transform 0.2s; }
-    .faq-question[aria-expanded="true"] svg { transform: rotate(180deg); }
-    .faq-answer {
-      font-size: 0.88rem; color: var(--text-muted); line-height: 1.75;
-      padding-bottom: 18px; display: none;
-    }
-    .faq-answer.open { display: block; }
-
-    /* Logo strip */
-    .logo-strip {
-      display: flex; align-items: center; justify-content: center;
-      gap: 40px; flex-wrap: wrap;
-    }
-    .logo-strip-item {
-      font-size: 0.82rem; font-weight: 700;
-      color: var(--text-muted); letter-spacing: 0.04em;
-      opacity: 0.55;
-    }
-
-    /* Transformation section */
-    .transform-table {
-      width: 100%; border-collapse: collapse;
-    }
-    .transform-table th {
-      padding: 12px 20px; font-size: 0.8rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.06em;
-    }
-    .transform-table td {
-      padding: 14px 20px; font-size: 0.87rem; border-top: 1px solid var(--bg-subtle);
-      vertical-align: top; line-height: 1.55;
-    }
-    .transform-table td:first-child { color: var(--text-muted); }
-    .transform-table td:last-child { color: var(--text); font-weight: 500; }
-
-    @media (max-width: 768px) {
-      .transform-table th:first-child,
-      .transform-table td:first-child { display: none; }
-    }
-  </style>
+  <title>Formations — Neopulsion</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header class="nav-transparent" id="site-header">
   <nav class="container nav-inner">
     <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
-    <div class="nav-links" id="primary-nav">
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Services
-          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="dropdown-menu">
-          <a href="services/seo.html">Référencement SEO<small>Votre socle de visibilité organique</small></a>
-          <a href="services/geo.html">GEO — Référencement Génératif<small>Soyez cité par les IA génératives</small></a>
-          <a href="services/linkedin.html">Visibilité LinkedIn<small>LinkedIn comme levier d'acquisition</small></a>
-          <a href="services/ia.html">Accompagnement IA<small>L'IA au service de votre contenu</small></a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
-          Apprendre
-          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="dropdown-menu">
-          <a href="ateliers.html">Ateliers<small>Demi-journées — On construit en live</small></a>
-          <a href="formations.html" style="background:#EFF6FF; color:var(--blue);">Formations<small>Programmes finançables OPCO</small></a>
-        </div>
-      </div>
-      <a href="blog.html">Blog</a>
-      <a href="glossaire.html">Glossaire</a>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          À propos
-          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 5l4.5 4.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="dropdown-menu">
-          <a href="a-propos.html">À propos<small>Youssef Jlidi — Fondateur</small></a>
-          <a href="equipe.html">Équipe<small>Youssef &amp; ses agents IA</small></a>
-        </div>
-      </div>
-    </div>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn-ghost-nav">Contact</a>
-      <a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a>
-    </div>
-    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-links" id="primary-nav"><a href="accompagnement.html">Accompagnement</a><a href="formations.html">Formations</a><a href="ateliers.html">Ateliers</a><a href="ressources.html">Ressources</a></div>
+    <div class="nav-cta"><a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a></div>
+    <button class="burger" id="burger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 </header>
 
-<div class="mobile-nav" id="mobile-nav">
-  <div class="mobile-nav-links">
-    <span class="mobile-nav-group-title">Services</span>
-    <div class="mobile-nav-submenu">
-      <a href="services/seo.html">Référencement SEO</a>
-      <a href="services/geo.html">GEO — Référencement Génératif</a>
-      <a href="services/linkedin.html">Visibilité LinkedIn</a>
-      <a href="services/ia.html">Accompagnement IA</a>
-    </div>
-    <span class="mobile-nav-group-title">Apprendre</span>
-    <div class="mobile-nav-submenu">
-      <a href="ateliers.html">Ateliers</a>
-      <a href="formations.html">Formations</a>
-    </div>
-    <a href="blog.html">Blog</a>
-    <a href="glossaire.html">Glossaire</a>
-    <span class="mobile-nav-group-title">À propos</span>
-    <div class="mobile-nav-submenu">
-      <a href="a-propos.html">À propos</a>
-      <a href="equipe.html">Équipe</a>
-    </div>
-  </div>
-  <div class="mobile-nav-cta">
-    <a href="contact.html" class="btn-primary">Audit gratuit</a>
-    <a href="contact.html" class="btn-secondary">Nous contacter</a>
-  </div>
-</div>
+<section class="page-hero"><div class="container">
+  <nav aria-label="Fil d'Ariane" class="svc-breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Formations</span></nav>
+  <h1>Formations</h1>
+  <p style="color:rgba(255,255,255,.6);max-width:560px">Formations certifiantes de 1 a 2 jours, financables OPCO.</p>
+</div></section>
 
-<!-- PAGE HERO -->
-<section class="page-hero" aria-labelledby="page-title">
-  <div class="container">
-    <div class="hero-flex-layout">
-      <div class="hero-flex-text">
-        <nav class="breadcrumb" aria-label="Fil d'Ariane">
-          <a href="index.html">Accueil</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span aria-current="page">Formations</span>
-        </nav>
-        <p class="kicker page-hero-kicker">Centre de formation</p>
-        <h1 id="page-title">Des formations qui changent vraiment comment vous travaillez</h1>
-        <p class="page-hero-subtitle">1 à 2 jours intensifs, 100% pratiques sur vos cas réels. Pas de slides interminables — on ouvre les outils, on construit, on mesure. Vos collaborateurs repartent avec des habitudes qui durent.</p>
-        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:28px;">
-          <span class="badge-opco">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-            Finançable OPCO
-          </span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">230 000+ personnes formées</span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">4 ouvrages ENI Éditions</span>
-        </div>
-        <div style="display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="#programmes" class="btn-primary">Voir les formations</a>
-          <a href="contact.html" class="btn-outline-white">Demander un devis intra</a>
-        </div>
-      </div>
-      <!-- Carte compétences acquises -->
-      <div class="hero-flex-card" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:24px 28px; backdrop-filter:blur(8px);">
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
-          <span style="font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.45);">Compétences acquises</span>
-          <span style="font-size:0.68rem; color:rgba(255,255,255,0.3); font-style:italic;">après formation</span>
-        </div>
-        <div style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-            <span style="font-size:0.8rem; font-weight:600; color:rgba(255,255,255,0.88);">SEO Technique</span>
-            <span style="font-size:0.68rem; font-weight:700; color:#34D399; background:rgba(52,211,153,0.15); border:1px solid rgba(52,211,153,0.25); padding:2px 8px; border-radius:100px;">+72 pts</span>
-          </div>
-          <div style="height:5px; background:rgba(255,255,255,0.08); border-radius:3px; overflow:hidden; position:relative;">
-            <div style="position:absolute; left:0; top:0; height:100%; width:15%; background:rgba(255,255,255,0.2); border-radius:3px;"></div>
-            <div style="position:absolute; left:0; top:0; height:100%; width:87%; background:linear-gradient(90deg,#60A5FA,#34D399); border-radius:3px;"></div>
-          </div>
-        </div>
-        <div style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-            <span style="font-size:0.8rem; font-weight:600; color:rgba(255,255,255,0.88);">GEO &amp; IA générative</span>
-            <span style="font-size:0.68rem; font-weight:700; color:#60A5FA; background:rgba(96,165,250,0.15); border:1px solid rgba(96,165,250,0.25); padding:2px 8px; border-radius:100px;">Nouveau</span>
-          </div>
-          <div style="height:5px; background:rgba(255,255,255,0.08); border-radius:3px; overflow:hidden; position:relative;">
-            <div style="position:absolute; left:0; top:0; height:100%; width:5%; background:rgba(255,255,255,0.2); border-radius:3px;"></div>
-            <div style="position:absolute; left:0; top:0; height:100%; width:82%; background:linear-gradient(90deg,#60A5FA,#A78BFA); border-radius:3px;"></div>
-          </div>
-        </div>
-        <div style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-            <span style="font-size:0.8rem; font-weight:600; color:rgba(255,255,255,0.88);">Prompt Engineering</span>
-            <span style="font-size:0.68rem; font-weight:700; color:#34D399; background:rgba(52,211,153,0.15); border:1px solid rgba(52,211,153,0.25); padding:2px 8px; border-radius:100px;">+68 pts</span>
-          </div>
-          <div style="height:5px; background:rgba(255,255,255,0.08); border-radius:3px; overflow:hidden; position:relative;">
-            <div style="position:absolute; left:0; top:0; height:100%; width:12%; background:rgba(255,255,255,0.2); border-radius:3px;"></div>
-            <div style="position:absolute; left:0; top:0; height:100%; width:84%; background:linear-gradient(90deg,#FCD34D,#34D399); border-radius:3px;"></div>
-          </div>
-        </div>
-        <div style="margin-bottom:18px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-            <span style="font-size:0.8rem; font-weight:600; color:rgba(255,255,255,0.88);">Agents IA</span>
-            <span style="font-size:0.68rem; font-weight:700; color:#60A5FA; background:rgba(96,165,250,0.15); border:1px solid rgba(96,165,250,0.25); padding:2px 8px; border-radius:100px;">Nouveau</span>
-          </div>
-          <div style="height:5px; background:rgba(255,255,255,0.08); border-radius:3px; overflow:hidden; position:relative;">
-            <div style="position:absolute; left:0; top:0; height:100%; width:5%; background:rgba(255,255,255,0.2); border-radius:3px;"></div>
-            <div style="position:absolute; left:0; top:0; height:100%; width:79%; background:linear-gradient(90deg,#A78BFA,#60A5FA); border-radius:3px;"></div>
-          </div>
-        </div>
-        <div style="padding-top:14px; border-top:1px solid rgba(255,255,255,0.08); display:flex; gap:18px;">
-          <div style="display:flex; align-items:center; gap:6px;">
-            <div style="width:16px; height:4px; background:rgba(255,255,255,0.2); border-radius:2px;"></div>
-            <span style="font-size:0.65rem; color:rgba(255,255,255,0.35);">Niveau initial</span>
-          </div>
-          <div style="display:flex; align-items:center; gap:6px;">
-            <div style="width:16px; height:4px; background:linear-gradient(90deg,#60A5FA,#34D399); border-radius:2px;"></div>
-            <span style="font-size:0.65rem; color:rgba(255,255,255,0.35);">Après formation</span>
-          </div>
-        </div>
-      </div>
+<section style="padding:56px 0 96px;background:#fafbfc"><div class="container">
+    <div class="listing-toolbar">
+    <div class="listing-filters">
+    <button class="listing-filter active" data-cat="all">Tout</button>
+    <button class="listing-filter" data-cat="seo-geo">SEO & GEO</button>
+    <button class="listing-filter" data-cat="ia">IA</button>
+    <button class="listing-filter" data-cat="prompt">Prompt Engineering    </div>
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="list" aria-label="Vue cascade">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <button class="view-btn" data-view="grid" aria-label="Vue vignette">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </button>
     </div>
   </div>
-</section>
 
-<!-- LOGO STRIP -->
-<section style="padding:32px 0; border-bottom:1px solid var(--border);">
-  <div class="container">
-    <p style="text-align:center; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:24px;">Ils ont déjà formé leurs équipes avec Neopulsion</p>
-    <div class="logo-strip">
-      <span class="logo-strip-item">LinkedIn Learning</span>
-      <span class="logo-strip-item">ENI Éditions</span>
-      <span class="logo-strip-item">Université Paris-Est</span>
-      <span class="logo-strip-item">Le Bon Coin</span>
-      <span class="logo-strip-item">Euronext</span>
-      <span class="logo-strip-item">Agences digitales</span>
+  <div class="listing-cards view-list">
+  <a href="formations/seo-ia.html" class="lcard" data-cat="seo-geo">
+    <div class="lcard-visual lcard-visual--amber">
+      <!-- Illustration: interface formation avec modules et progression -->
+      <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ecran formation -->
+        <rect x="20" y="15" width="200" height="140" rx="10" fill="#fff" fill-opacity="0.6" stroke="#D97706" stroke-width="1" stroke-opacity="0.2"/>
+        <!-- Header -->
+        <rect x="20" y="15" width="200" height="28" rx="10" fill="#D97706" fill-opacity="0.06"/>
+        <text x="36" y="33" fill="#D97706" font-family="Inter,sans-serif" font-size="8" font-weight="600">Formation SEO & IA</text>
+        <rect x="170" y="24" width="36" height="12" rx="6" fill="#D97706" fill-opacity="0.15"/>
+        <text x="188" y="33" text-anchor="middle" fill="#D97706" font-family="Inter,sans-serif" font-size="6.5" font-weight="700">OPCO</text>
+        <!-- Module 1 done -->
+        <rect x="32" y="54" width="176" height="20" rx="6" fill="#059669" fill-opacity="0.06"/>
+        <circle cx="44" cy="64" r="5" fill="#059669"/>
+        <path d="M41.5 64L43.5 66L47 62" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="56" y="68" fill="#334155" font-family="Inter,sans-serif" font-size="7.5" font-weight="500">Jour 1 — SEO technique</text>
+        <text x="192" y="68" text-anchor="end" fill="#059669" font-family="Inter,sans-serif" font-size="7" font-weight="600">Termine</text>
+        <!-- Module 2 done -->
+        <rect x="32" y="80" width="176" height="20" rx="6" fill="#059669" fill-opacity="0.06"/>
+        <circle cx="44" cy="90" r="5" fill="#059669"/>
+        <path d="M41.5 90L43.5 92L47 88" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="56" y="94" fill="#334155" font-family="Inter,sans-serif" font-size="7.5" font-weight="500">Jour 1 — Strategie GEO</text>
+        <text x="192" y="94" text-anchor="end" fill="#059669" font-family="Inter,sans-serif" font-size="7" font-weight="600">Termine</text>
+        <!-- Module 3 active -->
+        <rect x="32" y="106" width="176" height="20" rx="6" fill="#D97706" fill-opacity="0.08" stroke="#D97706" stroke-width="1" stroke-opacity="0.2"/>
+        <circle cx="44" cy="116" r="5" fill="#D97706"/>
+        <text x="56" y="120" fill="#0f172a" font-family="Inter,sans-serif" font-size="7.5" font-weight="600">Jour 2 — Prompt Engineering</text>
+        <text x="192" y="120" text-anchor="end" fill="#D97706" font-family="Inter,sans-serif" font-size="7" font-weight="600">En cours</text>
+        <!-- Module 4 pending -->
+        <rect x="32" y="132" width="176" height="20" rx="6" fill="#f1f5f9"/>
+        <circle cx="44" cy="142" r="5" stroke="#cbd5e1" stroke-width="1.5" fill="none"/>
+        <text x="56" y="146" fill="#94a3b8" font-family="Inter,sans-serif" font-size="7.5">Jour 2 — Cas pratiques</text>
+      </svg>
+      <div class="lcard-float">
+        <span class="lcard-float-dot" style="background:#D97706"></span>
+        <strong>Progression</strong>
+        <span>62% complete</span>
+      </div>
     </div>
+    <div class="lcard-content">
+      <div class="lcard-top-row"><span class="lcard-cat" style="color:#D97706">SEO & GEO</span><span class="lcard-badge" style="background:#D97706">OPCO</span></div>
+      <h2>SEO & Visibilite IA</h2>
+      <div class="lcard-checks">
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--amber"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 2 jours intensifs — 14 heures</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--amber"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Cas pratiques sur vos vrais projets</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--amber"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Certification + financement OPCO</div>
+      </div>
+      <span class="lcard-cta lcard-cta--amber">Voir le programme</span>
+    </div>
+  </a>
+
+  <a href="formations/ia-productive.html" class="lcard" data-cat="ia">
+    <div class="lcard-visual lcard-visual--blue">
+      <!-- Illustration: personne au bureau avec icones IA -->
+      <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bureau / desk -->
+        <rect x="60" y="110" width="120" height="6" rx="3" fill="#2563eb" fill-opacity="0.15"/>
+        <!-- Ecran -->
+        <rect x="80" y="50" width="80" height="55" rx="6" fill="#fff" fill-opacity="0.6" stroke="#2563eb" stroke-width="1" stroke-opacity="0.2"/>
+        <rect x="80" y="50" width="80" height="14" rx="6" fill="#2563eb" fill-opacity="0.06"/>
+        <rect x="88" y="70" width="50" height="4" rx="2" fill="#2563eb" fill-opacity="0.1"/>
+        <rect x="88" y="78" width="38" height="4" rx="2" fill="#2563eb" fill-opacity="0.1"/>
+        <rect x="88" y="86" width="56" height="4" rx="2" fill="#2563eb" fill-opacity="0.08"/>
+        <rect x="88" y="94" width="30" height="4" rx="2" fill="#2563eb" fill-opacity="0.08"/>
+        <!-- Stand -->
+        <rect x="114" y="105" width="12" height="6" rx="1" fill="#2563eb" fill-opacity="0.1"/>
+        <!-- Personne (silhouette simple) -->
+        <circle cx="45" cy="75" r="10" fill="#2563eb" fill-opacity="0.1" stroke="#2563eb" stroke-width="1" stroke-opacity="0.2"/>
+        <circle cx="45" cy="72" r="4" fill="#2563eb" fill-opacity="0.3"/>
+        <path d="M37 82 C37 78, 53 78, 53 82" fill="#2563eb" fill-opacity="0.2"/>
+        <rect x="35" y="85" width="20" height="25" rx="5" fill="#2563eb" fill-opacity="0.08" stroke="#2563eb" stroke-width="1" stroke-opacity="0.15"/>
+        <!-- Sparkle IA icons -->
+        <g fill="#2563eb" fill-opacity="0.35">
+          <path d="M180 35 L183 40 L180 45 L177 40Z"/>
+          <path d="M180 35 L175 38 L180 41 L185 38Z"/>
+        </g>
+        <g fill="#2563eb" fill-opacity="0.25">
+          <path d="M200 55 L202 58 L200 61 L198 58Z"/>
+          <path d="M200 55 L197 57 L200 59 L203 57Z"/>
+        </g>
+        <g fill="#2563eb" fill-opacity="0.3">
+          <path d="M190 80 L193 85 L190 90 L187 85Z"/>
+          <path d="M190 80 L185 83 L190 86 L195 83Z"/>
+        </g>
+        <!-- Workflow arrows from sparkles to screen -->
+        <path d="M177 40 C170 45, 165 50, 160 55" stroke="#2563eb" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 2"/>
+        <path d="M187 85 C175 85, 168 80, 160 78" stroke="#2563eb" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 2"/>
+        <!-- Bottom label -->
+        <rect x="65" y="135" width="110" height="28" rx="8" fill="#2563eb" fill-opacity="0.04" stroke="#2563eb" stroke-width="1" stroke-opacity="0.1"/>
+        <text x="120" y="150" text-anchor="middle" fill="#2563eb" font-family="Inter,sans-serif" font-size="7.5" font-weight="600">Workflow IA personnel</text>
+        <text x="120" y="159" text-anchor="middle" fill="#2563eb" fill-opacity="0.4" font-family="Inter,sans-serif" font-size="6">en 1 journee</text>
+      </svg>
+      <div class="lcard-float">
+        <span class="lcard-float-dot" style="background:#2563eb"></span>
+        <strong>Tous niveaux</strong>
+        <span>1 jour — 7h</span>
+      </div>
+    </div>
+    <div class="lcard-content">
+      <div class="lcard-top-row"><span class="lcard-cat" style="color:#2563eb">IA</span><span class="lcard-badge" style="background:#2563eb">OPCO</span></div>
+      <h2>IA Productive</h2>
+      <div class="lcard-checks">
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--blue"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Panorama complet des outils IA 2026</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--blue"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Prompt engineering pour non-techs</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--blue"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Construisez votre workflow IA personnel</div>
+      </div>
+      <span class="lcard-cta lcard-cta--blue">Voir le programme</span>
+    </div>
+  </a>
+
+  <a href="formations/prompt-engineering.html" class="lcard" data-cat="prompt">
+    <div class="lcard-visual lcard-visual--violet">
+      <!-- Illustration: terminal avec lignes de prompt -->
+      <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Terminal window -->
+        <rect x="25" y="15" width="190" height="140" rx="10" fill="#fff" fill-opacity="0.6" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.2"/>
+        <!-- Title bar -->
+        <rect x="25" y="15" width="190" height="24" rx="10" fill="#8B5CF6" fill-opacity="0.06"/>
+        <circle cx="41" cy="27" r="3" fill="#ef4444" fill-opacity="0.5"/>
+        <circle cx="51" cy="27" r="3" fill="#eab308" fill-opacity="0.5"/>
+        <circle cx="61" cy="27" r="3" fill="#22c55e" fill-opacity="0.5"/>
+        <text x="120" y="30" text-anchor="middle" fill="#8B5CF6" fill-opacity="0.5" font-family="monospace" font-size="7">prompt-engineer.sh</text>
+        <!-- Prompt line 1 -->
+        <text x="35" y="52" fill="#8B5CF6" font-family="monospace" font-size="7" font-weight="600">&gt; system:</text>
+        <text x="82" y="52" fill="#334155" fill-opacity="0.6" font-family="monospace" font-size="7">Tu es un expert SEO...</text>
+        <!-- Prompt line 2 -->
+        <text x="35" y="66" fill="#8B5CF6" font-family="monospace" font-size="7" font-weight="600">&gt; context:</text>
+        <text x="88" y="66" fill="#334155" fill-opacity="0.6" font-family="monospace" font-size="7">{donnees_client}</text>
+        <!-- Prompt line 3 -->
+        <text x="35" y="80" fill="#8B5CF6" font-family="monospace" font-size="7" font-weight="600">&gt; chain:</text>
+        <text x="78" y="80" fill="#334155" fill-opacity="0.6" font-family="monospace" font-size="7">step1 → step2 → step3</text>
+        <!-- Prompt line 4 -->
+        <text x="35" y="94" fill="#8B5CF6" font-family="monospace" font-size="7" font-weight="600">&gt; few-shot:</text>
+        <text x="92" y="94" fill="#334155" fill-opacity="0.6" font-family="monospace" font-size="7">exemple_1, exemple_2</text>
+        <!-- Output section -->
+        <rect x="35" y="106" width="170" height="38" rx="6" fill="#8B5CF6" fill-opacity="0.04" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.1"/>
+        <text x="42" y="120" fill="#059669" font-family="monospace" font-size="7" font-weight="600">Output:</text>
+        <rect x="42" y="126" width="130" height="4" rx="2" fill="#059669" fill-opacity="0.15"/>
+        <rect x="42" y="134" width="95" height="4" rx="2" fill="#059669" fill-opacity="0.1"/>
+        <!-- Cursor blink -->
+        <rect x="35" y="150" width="6" height="2" rx="1" fill="#8B5CF6" fill-opacity="0.6"/>
+      </svg>
+      <div class="lcard-float">
+        <span class="lcard-float-dot" style="background:#8B5CF6"></span>
+        <strong>Intermediaire</strong>
+        <span>1 jour — 7h</span>
+      </div>
+    </div>
+    <div class="lcard-content">
+      <div class="lcard-top-row"><span class="lcard-cat" style="color:#8B5CF6">Prompt</span><span class="lcard-badge" style="background:#8B5CF6">OPCO</span></div>
+      <h2>Prompt Engineering Expert</h2>
+      <div class="lcard-checks">
+        <div class="lcard-check"><span class="lcard-check-icon" style="background:#8B5CF6"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Chain-of-thought, few-shot, system prompts</div>
+        <div class="lcard-check"><span class="lcard-check-icon" style="background:#8B5CF6"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Chaines de prompts et workflows complexes</div>
+        <div class="lcard-check"><span class="lcard-check-icon" style="background:#8B5CF6"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Bibliotheque 80+ prompts par secteur</div>
+      </div>
+      <span class="lcard-cta" style="background:#8B5CF6">Voir le programme</span>
+    </div>
+  </a>
+
+  <a href="formations/agents-ia.html" class="lcard" data-cat="ia">
+    <div class="lcard-visual lcard-visual--green">
+      <!-- Illustration: noeuds agents autonomes connectes -->
+      <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Central node - LLM brain -->
+        <circle cx="120" cy="75" r="28" fill="#fff" fill-opacity="0.6" stroke="#059669" stroke-width="1.5" stroke-opacity="0.3"/>
+        <text x="120" y="72" text-anchor="middle" fill="#059669" font-family="Inter,sans-serif" font-size="8" font-weight="700">LLM</text>
+        <text x="120" y="82" text-anchor="middle" fill="#059669" fill-opacity="0.5" font-family="Inter,sans-serif" font-size="6">cerveau</text>
+        <!-- Memory node (top-left) -->
+        <circle cx="40" cy="35" r="18" fill="#fff" fill-opacity="0.6" stroke="#059669" stroke-width="1" stroke-opacity="0.2"/>
+        <rect x="31" y="28" width="18" height="14" rx="2" fill="#059669" fill-opacity="0.15"/>
+        <rect x="34" y="32" width="12" height="2" rx="1" fill="#059669" fill-opacity="0.3"/>
+        <rect x="34" y="36" width="8" height="2" rx="1" fill="#059669" fill-opacity="0.2"/>
+        <text x="40" y="50" text-anchor="middle" fill="#059669" fill-opacity="0.5" font-family="Inter,sans-serif" font-size="5">Memoire</text>
+        <!-- Tools node (top-right) -->
+        <circle cx="200" cy="35" r="18" fill="#fff" fill-opacity="0.6" stroke="#059669" stroke-width="1" stroke-opacity="0.2"/>
+        <path d="M194 30 L200 26 L206 30 L206 38 L200 42 L194 38Z" fill="#059669" fill-opacity="0.15" stroke="#059669" stroke-width="0.5" stroke-opacity="0.3"/>
+        <text x="200" y="50" text-anchor="middle" fill="#059669" fill-opacity="0.5" font-family="Inter,sans-serif" font-size="5">Outils</text>
+        <!-- API node (bottom-left) -->
+        <circle cx="45" cy="135" r="18" fill="#fff" fill-opacity="0.6" stroke="#059669" stroke-width="1" stroke-opacity="0.2"/>
+        <text x="45" y="133" text-anchor="middle" fill="#059669" fill-opacity="0.4" font-family="Inter,sans-serif" font-size="7" font-weight="600">API</text>
+        <text x="45" y="143" text-anchor="middle" fill="#059669" fill-opacity="0.5" font-family="Inter,sans-serif" font-size="5">Actions</text>
+        <!-- Output node (bottom-right) -->
+        <circle cx="195" cy="135" r="18" fill="#fff" fill-opacity="0.6" stroke="#059669" stroke-width="1" stroke-opacity="0.2"/>
+        <rect x="186" y="128" width="18" height="14" rx="3" fill="#059669" fill-opacity="0.15"/>
+        <path d="M190 133 L192 136 L199 131" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+        <text x="195" y="150" text-anchor="middle" fill="#059669" fill-opacity="0.5" font-family="Inter,sans-serif" font-size="5">Output</text>
+        <!-- Connection arrows with direction -->
+        <defs><marker id="arrowGF" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto"><path d="M0 0 L6 2 L0 4Z" fill="#059669" fill-opacity="0.35"/></marker></defs>
+        <line x1="56" y1="48" x2="96" y2="60" stroke="#059669" stroke-width="1.5" stroke-opacity="0.25" marker-end="url(#arrowGF)"/>
+        <line x1="184" y1="48" x2="144" y2="60" stroke="#059669" stroke-width="1.5" stroke-opacity="0.25" marker-end="url(#arrowGF)"/>
+        <line x1="105" y1="98" x2="60" y2="122" stroke="#059669" stroke-width="1.5" stroke-opacity="0.25" marker-end="url(#arrowGF)"/>
+        <line x1="135" y1="98" x2="180" y2="122" stroke="#059669" stroke-width="1.5" stroke-opacity="0.25" marker-end="url(#arrowGF)"/>
+        <!-- Decision diamond -->
+        <path d="M120 110 L132 120 L120 130 L108 120Z" fill="#059669" fill-opacity="0.1" stroke="#059669" stroke-width="1" stroke-opacity="0.2"/>
+        <text x="120" y="123" text-anchor="middle" fill="#059669" fill-opacity="0.4" font-family="Inter,sans-serif" font-size="5">if/else</text>
+      </svg>
+      <div class="lcard-float">
+        <span class="lcard-float-dot" style="background:#059669"></span>
+        <strong>Avance</strong>
+        <span>1 jour — 7h</span>
+      </div>
+    </div>
+    <div class="lcard-content">
+      <div class="lcard-top-row"><span class="lcard-cat" style="color:#059669">Agents</span><span class="lcard-badge" style="background:#059669">NOUVEAU</span></div>
+      <h2>Agents IA — Concevoir et deployer</h2>
+      <div class="lcard-checks">
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--green"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Architecture agent : LLM + memoire + outils</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--green"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Construction pas a pas sur votre cas reel</div>
+        <div class="lcard-check"><span class="lcard-check-icon lcard-check-icon--green"><svg viewBox="0 0 16 16"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Agent en production a la fin de la journee</div>
+      </div>
+      <span class="lcard-cta lcard-cta--green">Voir le programme</span>
+    </div>
+  </a>
   </div>
-</section>
 
-<!-- FORMATIONS GRID -->
-<section class="section" id="programmes" aria-labelledby="formations-title">
-  <div class="container">
-    <div class="section-header section-header--centered">
-      <p class="kicker">4 programmes</p>
-      <h2 class="section-title" id="formations-title">Du débutant à l'expert en 1 ou 2 jours</h2>
-      <p class="section-subtitle">Chaque formation est disponible en inter-entreprises ou en intra. Programme détaillé heure par heure, adapté à votre secteur sur demande.</p>
-    </div>
+</div></section>
 
-    <div class="grid-2" style="gap:28px;">
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion</div></footer>
+<script src="js/main.js"></script>
 
-      <!-- Formation 1 — SEO & GEO -->
-      <div class="formation-card reveal" style="display:flex; flex-direction:column;">
-        <div style="height:5px; background:linear-gradient(90deg,#1E40AF,#3B82F6,#059669); border-radius:4px 4px 0 0;"></div>
-        <div class="formation-card-header">
-          <div class="formation-card-badges" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
-            <span class="badge-opco">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-              Finançable OPCO
-            </span>
-            <span class="badge-new">Bestseller</span>
-            <span class="badge-level-inter">Intermédiaire</span>
-          </div>
-          <h3 class="formation-card-title">SEO & GEO — Maîtrise totale</h3>
-          <div class="formation-card-duration">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            2 jours · 14h — Présentiel ou distanciel
-          </div>
-        </div>
-        <div class="formation-card-body" style="flex:1;">
-          <p class="formation-card-desc">La seule formation qui couvre simultanément le référencement naturel et la visibilité dans les IA génératives. SEO technique, stratégie de contenu, audit GEO — avec vos propres pages comme terrain d'entraînement.</p>
-          <div class="formation-card-program">
-            <p class="formation-card-program-title">Programme jour par jour</p>
-            <div class="formation-timeline">
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">J1 · 9h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">SEO Technique 2026</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">J1 · 14h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Stratégie de contenu & sémantique</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">J2 · 9h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">GEO — Référencement dans les IA</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">J2 · 14h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Dashboard, suivi & plan d'action</div>
-                                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="formation-card-footer">
-          <div>
-            <div class="formation-card-price">1 400 € <small>HT / pers.</small></div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Financement OPCO jusqu'à 100%</div>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
-            <a href="contact.html" class="btn-primary btn-sm">S'inscrire</a>
-            <a href="contact.html" style="font-size:0.75rem; color:var(--blue); text-decoration:none;">Demander un devis intra →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Formation 2 — IA Productive -->
-      <div class="formation-card reveal reveal-delay-1" style="display:flex; flex-direction:column;">
-        <div style="height:5px; background:linear-gradient(90deg,#065F46,#059669,#34D399); border-radius:4px 4px 0 0;"></div>
-        <div class="formation-card-header">
-          <div class="formation-card-badges" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
-            <span class="badge-opco">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-              Finançable OPCO
-            </span>
-            <span class="badge-level-beginner">Tous niveaux</span>
-          </div>
-          <h3 class="formation-card-title">IA Productive — De débutant à utilisateur avancé</h3>
-          <div class="formation-card-duration">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            1 jour · 7h — Présentiel ou distanciel
-          </div>
-        </div>
-        <div class="formation-card-body" style="flex:1;">
-          <p class="formation-card-desc">Une journée pour faire basculer votre équipe. Le matin : comprendre comment l'IA fonctionne vraiment. L'après-midi : construire son propre workflow IA adapté à son métier. Zéro prérequis technique.</p>
-          <div class="formation-card-program">
-            <p class="formation-card-program-title">Programme de la journée</p>
-            <div class="formation-timeline">
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">9h–10h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">IA générative démystifiée</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">10h30–12h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Prompt engineering pour non-techs</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">14h–16h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Cas d'usage par fonction métier</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">16h–17h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Construire son workflow IA personnel</div>
-                                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="formation-card-footer">
-          <div>
-            <div class="formation-card-price">800 € <small>HT / pers.</small></div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Financement OPCO jusqu'à 100%</div>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
-            <a href="contact.html" class="btn-primary btn-sm">S'inscrire</a>
-            <a href="contact.html" style="font-size:0.75rem; color:var(--blue); text-decoration:none;">Demander un devis intra →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Formation 3 — Prompt Engineering Expert -->
-      <div class="formation-card reveal" style="display:flex; flex-direction:column;">
-        <div style="height:5px; background:linear-gradient(90deg,#5B21B6,#8B5CF6,#60A5FA); border-radius:4px 4px 0 0;"></div>
-        <div class="formation-card-header">
-          <div class="formation-card-badges" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
-            <span class="badge-opco">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-              Finançable OPCO
-            </span>
-            <span class="badge-level-inter">Intermédiaire</span>
-          </div>
-          <h3 class="formation-card-title">Prompt Engineering Expert</h3>
-          <div class="formation-card-duration">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            1 jour · 7h — Présentiel ou distanciel
-          </div>
-        </div>
-        <div class="formation-card-body" style="flex:1;">
-          <p class="formation-card-desc">Pour ceux qui utilisent déjà l'IA mais plafonnent. On va chercher les techniques avancées : chain-of-thought, system prompts, few-shot, chaînes de prompts — et on repart avec une bibliothèque prête à déployer.</p>
-          <div class="formation-card-program">
-            <p class="formation-card-program-title">Programme de la journée</p>
-            <div class="formation-timeline">
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">9h–10h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Anatomie d'un prompt expert</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">10h30–12h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Techniques : chain-of-thought, few-shot, system prompts</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">14h–16h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Chaînes de prompts & workflows complexes</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">16h–17h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Bibliothèque de prompts métiers</div>
-                                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="formation-card-footer">
-          <div>
-            <div class="formation-card-price">800 € <small>HT / pers.</small></div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Financement OPCO jusqu'à 100%</div>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
-            <a href="contact.html" class="btn-primary btn-sm">S'inscrire</a>
-            <a href="contact.html" style="font-size:0.75rem; color:var(--blue); text-decoration:none;">Demander un devis intra →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Formation 4 — Agents IA -->
-      <div class="formation-card reveal reveal-delay-1" style="display:flex; flex-direction:column; position:relative;">
-        <div style="height:5px; background:linear-gradient(90deg,#92400E,#F59E0B,#FCD34D); border-radius:4px 4px 0 0;"></div>
-        <div style="position:absolute; top:20px; right:20px; background:#1E293B; color:#FCD34D; font-size:0.68rem; font-weight:800; padding:4px 10px; border-radius:100px; letter-spacing:0.04em;">🔥 Tendance 2026</div>
-        <div class="formation-card-header">
-          <div class="formation-card-badges" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
-            <span class="badge-opco">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-              Finançable OPCO
-            </span>
-            <span class="badge-new">Nouveau</span>
-            <span class="badge-level-advanced">Avancé</span>
-          </div>
-          <h3 class="formation-card-title">Agents IA — Concevoir et déployer ses propres agents</h3>
-          <div class="formation-card-duration">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            1 jour · 7h — Présentiel ou distanciel
-          </div>
-        </div>
-        <div class="formation-card-body" style="flex:1;">
-          <p class="formation-card-desc">La formation la plus avancée du catalogue. On sort des assistants et on entre dans les agents autonomes : des systèmes qui prennent des décisions, utilisent des outils et exécutent des tâches sans intervention humaine.</p>
-          <div class="formation-card-program">
-            <p class="formation-card-program-title">Programme de la journée</p>
-            <div class="formation-timeline">
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">9h–10h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Architecture d'un agent IA</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">10h30–12h30</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Construire son agent pas à pas</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">14h–16h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Agent sur son cas d'usage réel</div>
-                                  </div>
-              </div>
-              <div class="formation-timeline-item">
-                <div class="formation-timeline-time">16h–17h</div>
-                <div class="formation-timeline-content">
-                  <div class="formation-timeline-title">Déploiement, tests & monitoring</div>
-                                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="formation-card-footer">
-          <div>
-            <div class="formation-card-price">900 € <small>HT / pers.</small></div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Financement OPCO jusqu'à 100%</div>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
-            <a href="contact.html" class="btn-primary btn-sm">S'inscrire</a>
-            <a href="contact.html" style="font-size:0.75rem; color:var(--blue); text-decoration:none;">Demander un devis intra →</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- INCLUS DANS CHAQUE FORMATION -->
-<section class="section--sm" style="padding:48px 0;">
-  <div class="container">
-    <div style="max-width:700px; margin:0 auto; background:var(--bg-subtle); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 32px; text-align:center;">
-      <h3 style="font-size:1.125rem; margin-bottom:12px;">Inclus dans chaque formation</h3>
-      <div style="display:flex; flex-wrap:wrap; gap:12px 24px; justify-content:center; font-size:0.875rem; color:var(--text-muted);">
-        <span>Support PDF &amp; slides</span>
-        <span>Bibliothèque de prompts</span>
-        <span>Templates &amp; dashboards</span>
-        <span>Attestation de formation</span>
-        <span>Suivi post-formation 30j</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AVANT / APRÈS -->
-<section class="section section--subtle" aria-labelledby="transform-title">
-  <div class="container">
-    <div class="section-header section-header--centered">
-      <p class="kicker">La transformation</p>
-      <h2 class="section-title" id="transform-title">Ce que ça change concrètement</h2>
-      <p class="section-subtitle">Pas de promesses vagues. Voici ce que les participants font différemment après chaque formation.</p>
-    </div>
-    <div style="background:white; border:1.5px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; max-width:860px; margin:0 auto;" class="reveal">
-      <table class="transform-table">
-        <thead>
-          <tr style="background:var(--bg-subtle);">
-            <th style="color:var(--text-muted); text-align:left;">Formation</th>
-            <th style="color:#DC2626; text-align:left;">Avant</th>
-            <th style="color:#16A34A; text-align:left;">Après</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="font-weight:700; font-size:0.82rem; color:var(--blue);">SEO & GEO</td>
-            <td>Publie des articles sans savoir s'ils seront indexés, ne sait pas pourquoi les concurrents le dépassent</td>
-            <td>Conduit un audit SEO complet, identifie les quick wins, sait si son site est cité dans les IA et comment le faire progresser</td>
-          </tr>
-          <tr>
-            <td style="font-weight:700; font-size:0.82rem; color:#059669;">IA Productive</td>
-            <td>Utilise ChatGPT comme un moteur de recherche amélioré, reçoit des réponses génériques peu utiles</td>
-            <td>A un workflow IA adapté à son métier, récupère 1h à 2h par jour sur des tâches répétitives</td>
-          </tr>
-          <tr>
-            <td style="font-weight:700; font-size:0.82rem; color:#7C3AED;">Prompt Engineering</td>
-            <td>Relance ses prompts 5 fois pour obtenir un résultat passable, improvise à chaque fois</td>
-            <td>Obtient le bon résultat au premier prompt, dispose d'une bibliothèque réutilisable sur tous ses cas métier</td>
-          </tr>
-          <tr>
-            <td style="font-weight:700; font-size:0.82rem; color:#D97706;">Agents IA</td>
-            <td>Exécute manuellement des tâches répétitives (veille, rapports, emails), perd plusieurs heures par semaine</td>
-            <td>A des agents autonomes qui tournent 24h/24, récupère du temps pour ce qui compte vraiment</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- TÉMOIGNAGES -->
-<section class="section" aria-labelledby="temoignages-title">
-  <div class="container">
-    <div class="section-header section-header--centered">
-      <p class="kicker">Ce qu'ils en disent</p>
-      <h2 class="section-title" id="temoignages-title">Des résultats, pas des promesses</h2>
-    </div>
-    <div class="grid-3">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-stars" aria-label="5 étoiles">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testimonial-quote">J'avais déjà un bon niveau en SEO, mais la partie GEO m'a ouvert les yeux. En 3 semaines après la formation, mon site apparaissait dans les réponses de Perplexity sur 6 requêtes clés. Youssef va vraiment au fond des sujets.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" style="background:#EFF6FF; color:#1D4ED8;">SM</div>
-          <div>
-            <div class="testimonial-name">Sophie M.</div>
-            <div class="testimonial-role">Responsable Marketing Digital · PME Tech</div>
-            <div class="testimonial-result">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              Formation SEO & GEO
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-stars" aria-label="5 étoiles">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testimonial-quote">La formation Prompt Engineering m'a changé la vie. Avant je relançais mes prompts 10 fois. Maintenant j'obtiens ce que je veux au premier essai, sur n'importe quel sujet. La bibliothèque de prompts métiers vaut à elle seule le prix de la journée.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" style="background:#F0FDF4; color:#166534;">TD</div>
-          <div>
-            <div class="testimonial-name">Thomas D.</div>
-            <div class="testimonial-role">Consultant Digital · Freelance</div>
-            <div class="testimonial-result">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              Formation Prompt Engineering
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-stars" aria-label="5 étoiles">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-        </div>
-        <p class="testimonial-quote">On a formé toute l'équipe de 8 personnes sur la journée IA Productive. Le lendemain, des collègues qui n'avaient jamais ouvert ChatGPT rédigeaient leurs comptes-rendus de réunion en 10 minutes. Le ROI était là dès le premier jour.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" style="background:#FFF7ED; color:#C2410C;">CR</div>
-          <div>
-            <div class="testimonial-name">Camille R.</div>
-            <div class="testimonial-role">Directrice Communication · Association nationale</div>
-            <div class="testimonial-result">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              Formation IA Productive — Intra
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FORMATEUR -->
-<section class="section section--dark" aria-labelledby="trainer-title">
-  <div class="container">
-    <div class="grid-2" style="align-items:center; gap:64px;">
-      <div class="reveal">
-        <p class="kicker kicker--light">Votre formateur</p>
-        <h2 id="trainer-title" style="color:white;">Youssef Jlidi — il forme sur ce qu'il pratique chaque semaine</h2>
-        <p style="color:rgba(255,255,255,0.7); font-size:1.0625rem; line-height:1.75; margin-top:16px; margin-bottom:24px;">Pas de formateur sous-traitant. Pas de contenu acheté à un éditeur. Youssef construit lui-même ses agents, produit du contenu SEO avec YourTextGuru, monitore sa présence GEO — et enseigne exactement ce qu'il fait en production.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:12px;">
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">LinkedIn Learning</span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">ENI Éditions</span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">Université Paris-Est</span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">Le Bon Coin</span>
-          <span class="badge" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.2);">Euronext</span>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:24px;">
-          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:24px; text-align:center;">
-            <div style="font-size:2.5rem; font-weight:800; color:#fff; line-height:1;" data-counter data-target="230000" data-suffix="+">230 000+</div>
-            <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:6px;">personnes formées</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:24px; text-align:center;">
-            <div style="font-size:2.5rem; font-weight:800; color:#fff; line-height:1;">10+</div>
-            <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:6px;">ans d'expérience</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:24px; text-align:center;">
-            <div style="font-size:2.5rem; font-weight:800; color:#fff; line-height:1;">4</div>
-            <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:6px;">ouvrages publiés</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:24px; text-align:center;">
-            <div style="font-size:2.5rem; font-weight:800; color:#fff; line-height:1;">97%</div>
-            <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:6px;">de satisfaction</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FINANCEMENT OPCO -->
-<section class="section section--subtle" aria-labelledby="opco-title">
-  <div class="container">
-    <div class="grid-2" style="align-items:center; gap:64px;">
-      <div class="reveal">
-        <p class="kicker">Financement</p>
-        <h2 id="opco-title">Toutes nos formations sont finançables OPCO</h2>
-        <p style="font-size:1rem; color:var(--text-muted); line-height:1.7; margin-top:12px; margin-bottom:24px;">En tant que salarié ou dirigeant, vous pouvez financer tout ou partie via votre OPCO. On s'occupe de tout le dossier administratif.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-item-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-            Prise en charge jusqu'à 100% selon votre OPCO
-          </div>
-          <div class="feature-item">
-            <div class="feature-item-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-            Dossier administratif pris en charge par Neopulsion
-          </div>
-          <div class="feature-item">
-            <div class="feature-item-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-            Devis et convention de formation fournis sous 48h
-          </div>
-          <div class="feature-item">
-            <div class="feature-item-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
-            Formule intra disponible à partir de 5 participants
-          </div>
-        </div>
-        <div style="margin-top:28px;">
-          <a href="contact.html" class="btn-primary">Vérifier mon éligibilité</a>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div style="background:white; border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px;">
-          <h3 style="margin-bottom:20px; font-size:1.125rem;">Demander un devis intra-entreprise</h3>
-          <p style="font-size:0.9375rem; color:var(--text-muted); margin-bottom:20px; line-height:1.7;">Plusieurs collaborateurs à former ? La formule intra privatise une session et adapte le contenu à votre secteur, vos outils et votre niveau.</p>
-          <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:24px;">
-            <div style="display:flex; align-items:flex-start; gap:12px; font-size:0.875rem; color:var(--text-muted);">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" style="flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-              À partir de 5 participants
-            </div>
-            <div style="display:flex; align-items:flex-start; gap:12px; font-size:0.875rem; color:var(--text-muted);">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" style="flex-shrink:0; margin-top:2px;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              Contenu adapté à votre secteur et vos outils
-            </div>
-            <div style="display:flex; align-items:flex-start; gap:12px; font-size:0.875rem; color:var(--text-muted);">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" style="flex-shrink:0; margin-top:2px;" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Dans vos locaux (Paris & IDF) ou en distanciel
-            </div>
-          </div>
-          <a href="contact.html" class="btn-secondary" style="width:100%; justify-content:center;">Demander un devis — réponse sous 24h</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" aria-labelledby="faq-title">
-  <div class="container" style="max-width:720px;">
-    <div class="section-header section-header--centered">
-      <p class="kicker">Questions fréquentes</p>
-      <h2 class="section-title" id="faq-title">Tout ce qu'il faut savoir avant de s'inscrire</h2>
-    </div>
-    <div class="reveal">
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Comment financer ma formation via l'OPCO ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Contactez-nous avec le nom de votre OPCO (ATLAS, OPCO EP, AFDAS, Constructys, etc.). On vous envoie un devis formaté pour votre dossier de prise en charge et on gère toute la paperasse avec vous. La plupart des formations sont prises en charge à 100% — délai de traitement 1 à 3 semaines.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Quelle est la différence entre un atelier et une formation ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Les ateliers (demi-journée, 49€/pers) sont des sessions de production : vous construisez quelque chose de concret en 4h. Non finançables OPCO. Les formations (1 à 2 jours, 800–1 400€) sont des montées en compétences structurées avec programme complet, attestation de formation et éligibilité OPCO.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Faut-il des prérequis techniques ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Pour "IA Productive" : aucun prérequis, on part de zéro. Pour "Prompt Engineering Expert" : avoir déjà utilisé ChatGPT ou Claude régulièrement. Pour "Agents IA" : maîtriser les prompts avancés (ou avoir suivi Prompt Engineering). Pour "SEO & GEO" : avoir un site web à optimiser et une notion de base du SEO est un plus mais pas obligatoire.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Les formations sont-elles en présentiel ou à distance ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Les deux. Les sessions inter-entreprises se déroulent en distanciel (Zoom ou Meet). Les formations intra peuvent se tenir dans vos locaux (Paris et région parisienne) ou en distanciel selon votre préférence. Aucune différence de qualité entre les deux formats.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Obtient-on un certificat à la fin ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Toutes les formations donnent lieu à une attestation de réalisation conforme aux exigences des OPCO. Pour les formations intra, une feuille de présence est fournie. Nous ne délivrons pas de certification RS/RNCP pour le moment, mais travaillons à l'obtention de Qualiopi.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Peut-on personnaliser le contenu pour son secteur ?
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-answer">Oui, pour les formations intra. Avant chaque session, Youssef réalise un entretien de 30 min pour comprendre votre secteur, vos outils et les cas d'usage prioritaires. Les exercices sont ensuite adaptés à votre contexte réel. C'est ce qui fait la différence entre une formation générique et une formation qui donne des résultats.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-banner" aria-labelledby="formations-cta">
-  <div class="container">
-    <div class="cta-banner-inner reveal">
-      <p class="kicker kicker--light">Prochaines sessions</p>
-      <h2 id="formations-cta">Rejoignez la prochaine session ou organisez la vôtre</h2>
-      <p>Places limitées à 12 participants en inter-entreprises. Devis intra sous 24h. Financement OPCO pris en charge.</p>
-      <div class="cta-banner-actions">
-        <a href="contact.html" class="btn-primary btn-lg">Demander le calendrier</a>
-        <a href="contact.html" class="btn-outline-white btn-lg">Devis intra-entreprise</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">neo<span>pulsion</span></a>
-        <p class="footer-tagline">Votre visibilité, sur Google et au-delà.</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <p class="footer-col-title">Services</p>
-        <ul class="footer-links">
-          <li><a href="services/seo.html">Référencement SEO</a></li>
-          <li><a href="services/geo.html">GEO — Référencement Génératif</a></li>
-          <li><a href="services/linkedin.html">Visibilité LinkedIn</a></li>
-          <li><a href="services/ia.html">Accompagnement IA</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Apprendre</p>
-        <ul class="footer-links">
-          <li><a href="ateliers.html">Ateliers pratiques</a></li>
-          <li><a href="formations.html">Formation SEO &amp; GEO</a></li>
-          <li><a href="formations.html">IA Productive</a></li>
-          <li><a href="formations.html">Prompt Engineering</a></li>
-          <li><a href="formations.html">Agents IA</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Ressources</p>
-        <ul class="footer-links">
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="glossaire.html">Glossaire</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="equipe.html">Équipe</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Neopulsion — Youssef Jlidi. Tous droits réservés.</p>
-      <nav class="footer-legal" aria-label="Liens légaux">
-        <a href="cgv.html">Mentions légales</a>
-        <a href="cgv.html">CGV</a>
-        <a href="cgv.html">Politique de confidentialité</a>
-      </nav>
-    </div>
-  </div>
-</footer>
-
-<!-- Floating CTA -->
-<a href="contact.html" class="floating-cta" id="floating-cta" aria-label="Demander un audit gratuit">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-  <span>Audit gratuit</span>
-</a>
-
-<script src="js/main.js?v=8.0"></script>
 <script>
-  // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', !expanded);
-      btn.nextElementSibling.classList.toggle('open', !expanded);
+document.querySelectorAll('.listing-filters .listing-filter').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.listing-filters .listing-filter').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var cat = btn.getAttribute('data-cat');
+    document.querySelectorAll('.lcard').forEach(function(card) {
+      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
     });
   });
+});
+</script>
+
+<script>
+document.querySelectorAll('.view-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.view-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    var container = document.querySelector('.listing-cards') || document.querySelector('.listing-grid');
+    if (container) {
+      container.classList.remove('view-list', 'view-grid');
+      container.classList.add('view-' + view);
+    }
+  });
+});
 </script>
 </body>
 </html>
