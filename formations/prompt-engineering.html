@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formation Prompt Engineering Expert — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .frm-why { margin-bottom: 48px; }
+    .frm-why h2 { font-size: 1.5rem; margin-bottom: 16px; color: var(--navy); }
+    .frm-why p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; max-width: 720px; }
+    .frm-outcomes { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-outcomes h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-outcomes ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+    .frm-outcomes li { padding-left: 28px; position: relative; color: var(--text); line-height: 1.6; }
+    .frm-outcomes li::before { content: ""; position: absolute; left: 0; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+    .frm-faq { margin-top: 48px; margin-bottom: 48px; }
+    .frm-faq h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-faq details { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; }
+    .frm-faq summary { padding: 16px 20px; cursor: pointer; font-weight: 600; color: var(--navy); background: var(--bg-subtle); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .frm-faq summary::-webkit-details-marker { display: none; }
+    .frm-faq summary::after { content: "+"; font-size: 1.25rem; font-weight: 400; color: var(--text-muted); flex-shrink: 0; }
+    .frm-faq details[open] summary::after { content: "-"; }
+    .frm-faq details[open] summary { border-bottom: 1px solid var(--border); }
+    .frm-faq .faq-body { padding: 16px 20px; color: var(--text-muted); line-height: 1.7; }
+    .frm-faq .faq-body code { background: var(--bg-subtle); border: 1px solid var(--border); padding: 2px 6px; border-radius: 4px; font-size: .875rem; }
+    .frm-testimonial { background: var(--navy); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-testimonial blockquote { color: rgba(255,255,255,.85); font-style: italic; line-height: 1.75; margin-bottom: 16px; font-size: 1.05rem; }
+    .frm-testimonial cite { color: rgba(255,255,255,.5); font-style: normal; font-size: .875rem; }
+    .frm-prompt-example { background: var(--navy); color: rgba(255,255,255,.85); border-radius: var(--radius-sm); padding: 16px 20px; margin: 8px 0 4px 0; font-size: .875rem; line-height: 1.6; font-family: 'Courier New', monospace; white-space: pre-wrap; }
+  </style>
 </head>
 <body>
 
@@ -32,6 +56,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CETTE FORMATION -->
+<section class="frm-layout">
+  <div class="container">
+    <div class="frm-why">
+      <h2>Pourquoi cette formation</h2>
+      <p>La qualite d'un resultat IA depend a 80 % de la qualite du prompt. Pourtant, la plupart des utilisateurs se contentent de requetes imprecises et obtiennent des reponses generiques qu'ils doivent retoucher manuellement. La difference entre un prompt amateur et un prompt expert, c'est la difference entre une heure de corrections et un resultat exploitable au premier essai.</p>
+      <p>Cette formation intensive d'une journee vous enseigne les techniques avancees de prompting utilisees par les meilleurs praticiens : chain-of-thought, few-shot learning, system prompts, chaines de prompts et patterns reutilisables. Vous repartirez avec une bibliotheque de prompts metiers testes, une methode reproductible et la capacite de construire vos propres templates pour n'importe quel cas d'usage.</p>
+    </div>
+  </div>
+</section>
+
 <!-- FORMATION LAYOUT — 2 columns -->
 <section class="frm-layout">
   <div class="container frm-grid">
@@ -39,20 +74,90 @@
       <h2>Programme</h2>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">9h-10h30</span><h3>Anatomie d'un prompt expert</h3></div>
-        <ul class="frm-module-list"><li>Structures avancees : role, contexte, contraintes, format</li><li>Hierarchie d'instructions</li><li>Patterns de precision</li></ul>
+        <ul class="frm-module-list">
+          <li>Structures avancees : role, contexte, contraintes, format de sortie -- decomposition de chaque composant et son impact sur la qualite de la reponse</li>
+          <li>Hierarchie d'instructions : comprendre comment les LLM priorisent les consignes et utiliser cette logique pour eliminer les ambiguites</li>
+          <li>Patterns de precision : delimiteurs, balises XML, marqueurs de section pour structurer des prompts complexes sans perte d'information</li>
+          <li>Exemple avance : <div class="frm-prompt-example">Tu es un analyste financier senior. Contexte : [rapport Q1]. Tache : identifie les 3 risques majeurs, classe-les par probabilite, et propose pour chacun une action corrective en une phrase. Format : tableau markdown.</div></li>
+          <li>Exercice : chaque participant reecrit un de ses prompts habituels avec la methode experte et compare les resultats avant/apres</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">10h30-12h30</span><h3>Chain-of-thought, few-shot, system prompts</h3></div>
-        <ul class="frm-module-list"><li>Exercices pratiques sur cas reels</li><li>Debogage live de prompts</li><li>Patterns reutilisables</li></ul>
+        <ul class="frm-module-list">
+          <li>Chain-of-thought : forcer le modele a raisonner etape par etape pour des taches complexes (analyse, calcul, diagnostic) avec le pattern "Reflechis a voix haute avant de repondre"</li>
+          <li>Few-shot learning : fournir 2-3 exemples dans le prompt pour calibrer le ton, le format et le niveau de detail attendu sans fine-tuning</li>
+          <li>System prompts : configurer le comportement global d'un assistant (persona, regles, interdictions) -- exemples concrets pour ChatGPT Custom Instructions et Claude Projects</li>
+          <li>Exemple avance : <div class="frm-prompt-example">System : Tu es un redacteur B2B. Regle : jamais de superlatifs. Ton : factuel, direct.
+User : Redige un email de relance pour un prospect qui n'a pas repondu depuis 10 jours.
+Exemples de ton souhaite :
+- "Votre equipe avait mentionne un besoin sur X. Ou en etes-vous ?"
+- "Je reviens vers vous suite a notre echange du 15 mars."</div></li>
+          <li>Debogage live : les participants soumettent leurs prompts problematiques et le formateur les corrige en direct avec explication du raisonnement</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">14h-16h</span><h3>Chaines de prompts et workflows complexes</h3></div>
-        <ul class="frm-module-list"><li>Sequences de prompts enchaines</li><li>Automatisation des workflows</li><li>Evaluation iterative des resultats</li></ul>
+        <ul class="frm-module-list">
+          <li>Sequences de prompts enchaines : decomposer une tache complexe en 3-5 etapes ou la sortie de chaque prompt alimente le suivant (ex. : recherche > analyse > redaction > relecture)</li>
+          <li>Automatisation des workflows : connecter vos chaines de prompts a des outils comme Zapier, Make ou les GPT Actions pour creer des pipelines sans code</li>
+          <li>Evaluation iterative des resultats : methode de scoring pour mesurer objectivement la qualite d'une reponse et identifier les axes d'amelioration</li>
+          <li>Exemple avance : <div class="frm-prompt-example">Prompt 1 : "Analyse ce brief client et extrais les 5 points cles."
+Prompt 2 : "A partir de ces 5 points, redige un plan d'article en 4 parties."
+Prompt 3 : "Redige la partie 1 en 300 mots, ton expert, avec une statistique par paragraphe."
+Prompt 4 : "Relis et corrige : coherence, ton, chiffres verifiables."</div></li>
+          <li>Atelier : construction complete d'un workflow de 4 prompts sur un cas reel apporte par chaque participant</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">16h-17h</span><h3>Bibliotheque de prompts metiers</h3></div>
-        <ul class="frm-module-list"><li>Construction collective de templates</li><li>Tests croises entre participants</li><li>Validation et partage</li></ul>
+        <ul class="frm-module-list">
+          <li>Construction collective de templates : chaque participant cree 3 prompts metiers reutilisables (marketing, RH, commercial, technique) avec documentation</li>
+          <li>Tests croises entre participants : chaque template est teste par un autre participant sur un cas different pour valider sa robustesse et sa genericite</li>
+          <li>Standardisation : convention de nommage, versionnage et organisation d'une bibliotheque de prompts partageable en equipe</li>
+          <li>Partage et capitalisation : mise en commun de tous les templates dans un document collaboratif accessible apres la formation</li>
+          <li>Plan d'action : chaque participant identifie les 5 prompts prioritaires a deployer dans son equipe des la semaine suivante</li>
+        </ul>
       </div>
+
+      <!-- CE QUE VOUS SAUREZ FAIRE -->
+      <div class="frm-outcomes">
+        <h2>Ce que vous saurez faire</h2>
+        <ul>
+          <li>Obtenir le bon resultat au premier prompt grace a une structure experte reproductible</li>
+          <li>Construire des chaines de prompts complexes pour automatiser des taches multi-etapes</li>
+          <li>Creer et maintenir une bibliotheque de prompts metiers reutilisable par toute votre equipe</li>
+          <li>Automatiser vos taches recurrentes en connectant vos prompts a des outils no-code (Zapier, Make, GPT Actions)</li>
+        </ul>
+      </div>
+
+      <!-- FAQ -->
+      <div class="frm-faq">
+        <h2>Questions frequentes</h2>
+        <details>
+          <summary>Quelle difference avec la formation IA Productive ?</summary>
+          <div class="faq-body">La formation IA Productive est une initiation qui couvre le panorama des outils et les bases du prompting. La formation Prompt Engineering Expert va beaucoup plus loin : chain-of-thought, few-shot, system prompts, chaines de prompts, workflows automatises. Elle s'adresse a des utilisateurs qui maitrisent deja les fondamentaux et veulent passer au niveau superieur. Si vous utilisez deja ChatGPT ou Claude quotidiennement, c'est cette formation qu'il vous faut.</div>
+        </details>
+        <details>
+          <summary>Faut-il utiliser ChatGPT regulierement avant de s'inscrire ?</summary>
+          <div class="faq-body">Oui. Le prerequis est une utilisation reguliere d'au moins un LLM (ChatGPT, Claude, Gemini). Vous devez etre a l'aise avec l'interface, avoir deja redige des dizaines de prompts et ressentir les limites de votre approche actuelle. C'est exactement le moment ou cette formation devient rentable.</div>
+        </details>
+        <details>
+          <summary>Les prompts appris sont-ils reutilisables dans mon contexte metier ?</summary>
+          <div class="faq-body">Absolument. La formation enseigne des patterns generiques (chain-of-thought, few-shot, decomposition) qui fonctionnent quel que soit le secteur. Pendant la journee, chaque participant adapte ces patterns a son propre contexte metier et repart avec des templates prets a l'emploi. La bibliotheque collective construite en fin de journee couvre typiquement 15 a 20 cas d'usage differents.</div>
+        </details>
+        <details>
+          <summary>Y a-t-il des exercices pratiques pendant la formation ?</summary>
+          <div class="faq-body">La formation est composee a 60 % d'exercices pratiques. Chaque module commence par 20 minutes de theorie puis enchaine sur 40 a 60 minutes de mise en pratique sur vos propres cas d'usage. Vous travaillez en direct sur ChatGPT et Claude, avec un accompagnement individuel du formateur. Les corrections se font en live devant le groupe pour que chacun beneficie des retours.</div>
+        </details>
+      </div>
+
+      <!-- TEMOIGNAGE -->
+      <div class="frm-testimonial">
+        <blockquote>"Avant la formation, je passais 20 minutes a reformuler mes prompts pour obtenir quelque chose d'exploitable. Maintenant, j'ai un template pour chaque type de tache et le resultat est bon du premier coup. Le module sur les chaines de prompts m'a permis d'automatiser la creation de nos newsletters hebdomadaires. Mon responsable m'a demande de former le reste de l'equipe."</blockquote>
+        <cite>-- Amira K., Content Manager, editeur SaaS B2B (session janvier 2026)</cite>
+      </div>
+
     </div>
     <aside class="frm-sidebar">
       <div class="frm-sidebar-card">

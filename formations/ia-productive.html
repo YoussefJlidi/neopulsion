@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formation IA Productive — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .frm-why { margin-bottom: 48px; }
+    .frm-why h2 { font-size: 1.5rem; margin-bottom: 16px; color: var(--navy); }
+    .frm-why p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; max-width: 720px; }
+    .frm-outcomes { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-outcomes h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-outcomes ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+    .frm-outcomes li { padding-left: 28px; position: relative; color: var(--text); line-height: 1.6; }
+    .frm-outcomes li::before { content: ""; position: absolute; left: 0; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+    .frm-faq { margin-top: 48px; margin-bottom: 48px; }
+    .frm-faq h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-faq details { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; }
+    .frm-faq summary { padding: 16px 20px; cursor: pointer; font-weight: 600; color: var(--navy); background: var(--bg-subtle); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .frm-faq summary::-webkit-details-marker { display: none; }
+    .frm-faq summary::after { content: "+"; font-size: 1.25rem; font-weight: 400; color: var(--text-muted); flex-shrink: 0; }
+    .frm-faq details[open] summary::after { content: "-"; }
+    .frm-faq details[open] summary { border-bottom: 1px solid var(--border); }
+    .frm-faq .faq-body { padding: 16px 20px; color: var(--text-muted); line-height: 1.7; }
+    .frm-testimonial { background: var(--navy); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-testimonial blockquote { color: rgba(255,255,255,.85); font-style: italic; line-height: 1.75; margin-bottom: 16px; font-size: 1.05rem; }
+    .frm-testimonial cite { color: rgba(255,255,255,.5); font-style: normal; font-size: .875rem; }
+  </style>
 </head>
 <body>
 
@@ -32,6 +54,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CETTE FORMATION -->
+<section class="frm-layout">
+  <div class="container">
+    <div class="frm-why">
+      <h2>Pourquoi cette formation</h2>
+      <p>Les outils d'intelligence artificielle generative sont desormais accessibles a tous, mais la majorite des professionnels les utilisent de maniere superficielle. Une etude McKinsey estime que 60 % du temps de travail qualifie pourrait etre assiste par l'IA, a condition de savoir quel outil utiliser, quand et comment. Sans methode, on perd du temps a tester des prompts approximatifs et on finit par abandonner.</p>
+      <p>Cette formation d'une journee vous donne un cadre structure pour tirer parti de ChatGPT, Claude, Gemini, Midjourney et des outils specialises dans votre quotidien metier. Pas de jargon technique, pas de code : uniquement des methodes concretes, des exercices sur vos propres cas d'usage et un plan d'action que vous pouvez appliquer des le lendemain.</p>
+    </div>
+  </div>
+</section>
+
 <!-- FORMATION LAYOUT — 2 columns -->
 <section class="frm-layout">
   <div class="container frm-grid">
@@ -39,20 +72,82 @@
       <h2>Programme</h2>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Matin 9h-10h30</span><h3>IA generative demystifiee</h3></div>
-        <ul class="frm-module-list"><li>Fonctionnement des IA generatives</li><li>Panorama des outils 2026</li><li>Limites et garde-fous</li></ul>
+        <ul class="frm-module-list">
+          <li>Fonctionnement des IA generatives : comprendre les grands modeles de langage (GPT-4o, Claude 4, Gemini 2.5) sans entrer dans le code</li>
+          <li>Panorama des outils 2026 : ChatGPT, Claude, Gemini, Perplexity, Midjourney, DALL-E, Runway, NotebookLM -- forces et limites de chacun</li>
+          <li>Limites et garde-fous : hallucinations, biais, confidentialite des donnees, regles RGPD a respecter en contexte professionnel</li>
+          <li>Demonstration live : resolution d'un cas metier reel avec trois outils differents pour comparer les resultats</li>
+          <li>Tour de table : chaque participant identifie ses trois irritants quotidiens que l'IA pourrait resoudre</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Matin 10h30-12h30</span><h3>Prompt engineering pour non-techs</h3></div>
-        <ul class="frm-module-list"><li>Structure d'un bon prompt</li><li>Exercices pratiques</li><li>Erreurs courantes a eviter</li></ul>
+        <ul class="frm-module-list">
+          <li>Structure d'un bon prompt : role, contexte, tache, format de sortie, contraintes -- la methode RCTF applicable a tout outil</li>
+          <li>Exercices pratiques sur ChatGPT et Claude : rediger un email commercial, synthetiser un rapport de 30 pages, creer un tableau comparatif</li>
+          <li>Erreurs courantes a eviter : prompts trop vagues, absence de contexte, confiance aveugle dans la reponse, oubli de la relecture critique</li>
+          <li>Techniques d'iteration : affiner un resultat en trois echanges maximum grace au feedback structure</li>
+          <li>Chaque participant repart avec 5 prompts operationnels testes et valides pendant la session</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Apres-midi 14h-16h</span><h3>Cas d'usage par fonction metier</h3></div>
-        <ul class="frm-module-list"><li>Marketing : generation de contenu, analyse</li><li>RH : recrutement, onboarding, FAQ interne</li><li>Commercial, ops, juridique</li></ul>
+        <ul class="frm-module-list">
+          <li>Marketing : generation de posts LinkedIn avec Claude, creation de visuels avec Midjourney, analyse de campagnes avec ChatGPT Advanced Data Analysis</li>
+          <li>RH : redaction de fiches de poste, scoring de CV, creation d'un chatbot FAQ interne avec un GPT personnalise</li>
+          <li>Commercial : preparation de pitchs personnalises, synthese de comptes-rendus de reunions, suivi de pipeline avec tableaux generes par IA</li>
+          <li>Operations et juridique : extraction de clauses contractuelles, synthese de documents reglementaires, generation de procedures internes</li>
+          <li>Atelier en sous-groupes : chaque equipe travaille sur un cas d'usage reel de son entreprise et presente sa solution au groupe</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Apres-midi 16h-17h</span><h3>Construire son workflow IA personnel</h3></div>
-        <ul class="frm-module-list"><li>Identifier 3 taches a automatiser</li><li>Plan d'action individuel</li><li>Mise en pratique immediate</li></ul>
+        <ul class="frm-module-list">
+          <li>Identifier vos 3 taches repetitives les plus chronophages et definir pour chacune le bon outil IA (ChatGPT, Claude, Gemini, NotebookLM)</li>
+          <li>Construire un workflow concret : de l'entree de donnees a la sortie finale, avec les etapes intermediaires documentees</li>
+          <li>Plan d'action individuel : fiche de 5 actions a mettre en place des la semaine suivante, avec metriques de suivi</li>
+          <li>Mise en pratique immediate : chaque participant execute son workflow en direct et mesure le gain de temps obtenu</li>
+        </ul>
       </div>
+
+      <!-- CE QUE VOUS SAUREZ FAIRE -->
+      <div class="frm-outcomes">
+        <h2>Ce que vous saurez faire</h2>
+        <ul>
+          <li>Reduire de 2 heures par jour vos taches repetitives grace aux bons outils IA</li>
+          <li>Construire votre workflow IA personnel adapte a votre fonction et a vos outils existants</li>
+          <li>Generer du contenu professionnel de qualite (emails, rapports, visuels) en moins de 10 minutes</li>
+          <li>Choisir le bon outil pour chaque usage : ChatGPT pour l'analyse, Claude pour la redaction longue, Gemini pour la recherche, Midjourney pour le visuel</li>
+        </ul>
+      </div>
+
+      <!-- FAQ -->
+      <div class="frm-faq">
+        <h2>Questions frequentes</h2>
+        <details>
+          <summary>Faut-il des bases techniques pour suivre cette formation ?</summary>
+          <div class="faq-body">Aucune. La formation est concue pour des profils non-techniques : managers, equipes marketing, RH, commerciaux, dirigeants. Vous devez simplement savoir utiliser un navigateur web et un traitement de texte. Nous partons de zero et construisons les competences pas a pas.</div>
+        </details>
+        <details>
+          <summary>Quels outils seront utilises pendant la formation ?</summary>
+          <div class="faq-body">Vous travaillerez principalement avec ChatGPT (GPT-4o), Claude (Anthropic), Gemini (Google) et Perplexity. Pour la partie visuelle, nous utiliserons Midjourney et DALL-E. Des comptes temporaires sont fournis pour les participants qui n'ont pas encore d'abonnement. Un guide d'installation est envoye avant la formation.</div>
+        </details>
+        <details>
+          <summary>Mon entreprise peut-elle financer cette formation ?</summary>
+          <div class="faq-body">Oui. Neopulsion est un organisme de formation declare. La formation est eligible au financement OPCO (ATLAS, AKTO, OPCO EP, etc.). Nous preparons l'ensemble des documents administratifs : devis, convention, programme detaille et feuille de presence. Votre service RH ou votre comptable n'a qu'a transmettre le dossier a l'OPCO.</div>
+        </details>
+        <details>
+          <summary>Que se passe-t-il apres la formation ?</summary>
+          <div class="faq-body">Chaque participant repart avec son plan d'action individuel, une bibliotheque de prompts operationnels et un acces a notre communaute d'entraide. Un point de suivi de 30 minutes est programme trois semaines apres la session pour evaluer la mise en pratique et ajuster votre workflow si necessaire.</div>
+        </details>
+      </div>
+
+      <!-- TEMOIGNAGE -->
+      <div class="frm-testimonial">
+        <blockquote>"Je pensais que l'IA, c'etait pour les developpeurs. En une journee, j'ai appris a automatiser mes comptes-rendus de reunion, mes relances commerciales et la creation de mes posts LinkedIn. Mon equipe m'a demande de leur montrer. On a gagne au moins 6 heures par semaine a nous quatre."</blockquote>
+        <cite>-- Thomas D., Directeur Commercial, agence de communication (session fevrier 2026)</cite>
+      </div>
+
     </div>
     <aside class="frm-sidebar">
       <div class="frm-sidebar-card">

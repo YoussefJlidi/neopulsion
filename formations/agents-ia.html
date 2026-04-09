@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formation Agents IA — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .frm-why { margin-bottom: 48px; }
+    .frm-why h2 { font-size: 1.5rem; margin-bottom: 16px; color: var(--navy); }
+    .frm-why p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; max-width: 720px; }
+    .frm-outcomes { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-outcomes h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-outcomes ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+    .frm-outcomes li { padding-left: 28px; position: relative; color: var(--text); line-height: 1.6; }
+    .frm-outcomes li::before { content: ""; position: absolute; left: 0; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+    .frm-faq { margin-top: 48px; margin-bottom: 48px; }
+    .frm-faq h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-faq details { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; }
+    .frm-faq summary { padding: 16px 20px; cursor: pointer; font-weight: 600; color: var(--navy); background: var(--bg-subtle); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .frm-faq summary::-webkit-details-marker { display: none; }
+    .frm-faq summary::after { content: "+"; font-size: 1.25rem; font-weight: 400; color: var(--text-muted); flex-shrink: 0; }
+    .frm-faq details[open] summary::after { content: "-"; }
+    .frm-faq details[open] summary { border-bottom: 1px solid var(--border); }
+    .frm-faq .faq-body { padding: 16px 20px; color: var(--text-muted); line-height: 1.7; }
+    .frm-testimonial { background: var(--navy); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-testimonial blockquote { color: rgba(255,255,255,.85); font-style: italic; line-height: 1.75; margin-bottom: 16px; font-size: 1.05rem; }
+    .frm-testimonial cite { color: rgba(255,255,255,.5); font-style: normal; font-size: .875rem; }
+    .frm-cutting-edge { display: inline-block; background: linear-gradient(135deg, var(--green), #10b981); color: #fff; font-size: .75rem; font-weight: 600; padding: 3px 10px; border-radius: 4px; margin-left: 8px; vertical-align: middle; letter-spacing: .5px; text-transform: uppercase; }
+  </style>
 </head>
 <body>
 
@@ -32,27 +55,103 @@
   </div>
 </section>
 
+<!-- POURQUOI CETTE FORMATION -->
+<section class="frm-layout">
+  <div class="container">
+    <div class="frm-why">
+      <h2>Pourquoi cette formation</h2>
+      <p>Les chatbots repondent a des questions. Les agents IA executent des taches. C'est un changement de paradigme fondamental : un agent peut rechercher de l'information, prendre des decisions, utiliser des outils externes et iterer jusqu'a atteindre un objectif. En 2026, les frameworks comme LangChain, CrewAI, AutoGen et le Claude Agent SDK permettent a n'importe quel professionnel de concevoir des agents operationnels sans ecrire des milliers de lignes de code.</p>
+      <p>Cette formation est la plus avancee de notre catalogue. Elle s'adresse a ceux qui ont deja maitrise le prompting et veulent franchir le cap de l'automatisation autonome. En une journee, vous comprendrez l'architecture d'un agent IA, vous en construirez un sur votre propre cas d'usage, et vous repartirez avec un agent fonctionnel, deploye et monitorable. Ce n'est pas de la theorie : c'est de l'ingenierie appliquee.</p>
+    </div>
+  </div>
+</section>
+
 <!-- FORMATION LAYOUT — 2 columns -->
 <section class="frm-layout">
   <div class="container frm-grid">
     <div class="frm-main">
       <h2>Programme</h2>
       <div class="frm-module">
-        <div class="frm-module-head"><span class="frm-module-day">9h-10h30</span><h3>Architecture d'un agent IA</h3></div>
-        <ul class="frm-module-list"><li>LLM + memoire + outils + boucle de decision</li><li>Difference agent / chatbot / assistant</li><li>Panorama des frameworks 2026</li></ul>
+        <div class="frm-module-head"><span class="frm-module-day">9h-10h30</span><h3>Architecture d'un agent IA <span class="frm-cutting-edge">Cutting-edge</span></h3></div>
+        <ul class="frm-module-list">
+          <li>Les 4 composants fondamentaux : LLM (cerveau), memoire (contexte persistant), outils (actions externes), boucle de decision (raisonnement autonome)</li>
+          <li>Difference agent / chatbot / assistant : taxonomie precise avec exemples concrets -- un chatbot repond, un assistant aide, un agent agit</li>
+          <li>Panorama des frameworks 2026 : LangChain, LangGraph, CrewAI, AutoGen, Claude Agent SDK, OpenAI Assistants API -- forces, limites et cas d'usage de chacun</li>
+          <li>Patterns d'architecture : ReAct (Reasoning + Acting), Plan-and-Execute, reflexion, multi-agents -- quand utiliser quel pattern selon la complexite de la tache</li>
+          <li>Demonstration live : un agent qui recoit un brief client, recherche des informations sur le web, redige une proposition et l'envoie par email -- en temps reel devant le groupe</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">10h30-12h30</span><h3>Construire son agent pas a pas</h3></div>
-        <ul class="frm-module-list"><li>Choix des outils et instructions</li><li>Configuration de la memoire</li><li>Premiers tests et iterations</li></ul>
+        <ul class="frm-module-list">
+          <li>Definir les instructions systeme : persona, perimetre d'action, regles de securite, format de sortie -- la constitution de votre agent</li>
+          <li>Choix et configuration des outils : connecter votre agent a des API externes (recherche web, base de donnees, CRM, email, Google Sheets) via des function calls</li>
+          <li>Configuration de la memoire : memoire de conversation, memoire a long terme, memoire de travail -- choisir le bon type selon la duree de vie de l'agent</li>
+          <li>Premiers tests et iterations : boucle de feedback rapide pour affiner le comportement, detecter les cas limites et corriger les derives</li>
+          <li>Garde-fous et securite : limiter le perimetre d'action, valider les actions critiques par un humain (human-in-the-loop), gerer les erreurs et les hallucinations</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">14h-16h</span><h3>Agent sur son cas d'usage reel</h3></div>
-        <ul class="frm-module-list"><li>Chaque participant construit son agent</li><li>Accompagnement individuel</li><li>Tests croises entre participants</li></ul>
+        <ul class="frm-module-list">
+          <li>Chaque participant concoit et construit son propre agent sur un cas d'usage reel de son entreprise (prospection, support client, veille, reporting, onboarding)</li>
+          <li>Accompagnement individuel du formateur : revue d'architecture, debug des instructions systeme, optimisation des tools et de la memoire</li>
+          <li>Tests croises entre participants : chaque agent est teste par un autre stagiaire qui joue le role de l'utilisateur final pour valider la robustesse</li>
+          <li>Scenarii de stress-test : tester les cas limites (requetes ambigues, donnees manquantes, instructions contradictoires) et renforcer la resilience de l'agent</li>
+          <li>Documentation : chaque participant redige une fiche technique de son agent (architecture, outils, instructions, limites connues) pour faciliter la maintenance</li>
+        </ul>
       </div>
       <div class="frm-module">
-        <div class="frm-module-head"><span class="frm-module-day">16h-17h</span><h3>Deploiement, tests et monitoring</h3></div>
-        <ul class="frm-module-list"><li>Mise en production</li><li>Securisation et garde-fous</li><li>Iteration et amelioration continue</li></ul>
+        <div class="frm-module-head"><span class="frm-module-day">16h-17h</span><h3>Deploiement, tests et monitoring <span class="frm-cutting-edge">Production-ready</span></h3></div>
+        <ul class="frm-module-list">
+          <li>Mise en production : deployer votre agent sur une infrastructure accessible (API, interface web, integration Slack/Teams) avec les etapes pas-a-pas</li>
+          <li>Securisation : gestion des secrets (cles API), limitation du nombre de requetes, logs d'audit, conformite RGPD et politique de retention des donnees</li>
+          <li>Monitoring et observabilite : mettre en place des tableaux de bord pour suivre les performances, les erreurs, le cout et la satisfaction utilisateur</li>
+          <li>Iteration et amelioration continue : boucle de feedback structuree, analyse des logs, ajustement des instructions et des outils sur la base des donnees reelles</li>
+          <li>Feuille de route post-formation : plan d'evolution de votre agent sur 30, 60 et 90 jours avec des jalons mesurables</li>
+        </ul>
       </div>
+
+      <!-- CE QUE VOUS SAUREZ FAIRE -->
+      <div class="frm-outcomes">
+        <h2>Ce que vous saurez faire</h2>
+        <ul>
+          <li>Concevoir l'architecture complete d'un agent IA adapte a un cas d'usage professionnel precis</li>
+          <li>Configurer la memoire, les outils et les instructions systeme pour obtenir un comportement fiable et previsible</li>
+          <li>Deployer un agent en production avec les garde-fous de securite necessaires (human-in-the-loop, logs, limites d'action)</li>
+          <li>Monitorer les performances de votre agent et iterer sur son comportement a partir de donnees reelles</li>
+          <li>Evaluer et choisir le bon framework (LangChain, CrewAI, Claude Agent SDK) en fonction de la complexite du projet</li>
+          <li>Documenter et transferer votre agent a une equipe pour assurer sa maintenance a long terme</li>
+        </ul>
+      </div>
+
+      <!-- FAQ -->
+      <div class="frm-faq">
+        <h2>Questions frequentes</h2>
+        <details>
+          <summary>Quelle difference entre un agent IA et un chatbot ?</summary>
+          <div class="faq-body">Un chatbot repond a des questions dans le cadre d'une conversation. Un agent IA est capable d'agir de maniere autonome : il peut rechercher des informations, appeler des API, prendre des decisions intermediaires et enchainer plusieurs actions pour atteindre un objectif. Concretement, un chatbot vous dit comment envoyer un email ; un agent redige l'email, le personnalise et l'envoie a votre place.</div>
+        </details>
+        <details>
+          <summary>Faut-il savoir coder pour suivre cette formation ?</summary>
+          <div class="faq-body">Non, mais une familiarite avec la logique technique est recommandee. La formation utilise principalement des outils no-code et low-code (GPT Builder, Claude Projects, interfaces visuelles de LangChain). Les participants qui savent lire du code Python pourront aller plus loin sur certains exercices, mais ce n'est pas un prerequis. Le veritable prerequis est de maitriser le prompting avance (system prompts, chain-of-thought).</div>
+        </details>
+        <details>
+          <summary>Quel type d'agent peut-on creer pendant la formation ?</summary>
+          <div class="faq-body">Les cas d'usage les plus courants en formation : agent de prospection commerciale (recherche de leads, personnalisation des messages, envoi), agent de veille sectorielle (collecte quotidienne, synthese, alerte), agent de support client (reponse aux FAQ, escalade vers un humain), agent de reporting (collecte de donnees, creation de tableaux de bord). Chaque participant travaille sur son propre cas d'usage reel.</div>
+        </details>
+        <details>
+          <summary>L'agent fonctionne-t-il apres la formation ?</summary>
+          <div class="faq-body">Oui. L'objectif de la formation est de deployer un agent fonctionnel avant la fin de la journee. Vous repartez avec un agent en production, une documentation technique complete et une feuille de route d'evolution sur 90 jours. Le point de suivi individuel a J+30 permet de traiter les eventuels problemes de maintenance et d'ajuster le comportement en fonction des retours d'usage.</div>
+        </details>
+      </div>
+
+      <!-- TEMOIGNAGE -->
+      <div class="frm-testimonial">
+        <blockquote>"J'ai construit un agent de veille concurrentielle pendant la formation. Il surveille 12 sources, synthetise les informations pertinentes et m'envoie un briefing chaque matin a 8h. Avant, cette tache me prenait 45 minutes par jour. L'agent me les rend, cinq jours par semaine. Le retour sur investissement a ete immediat."</blockquote>
+        <cite>-- Karim B., Responsable Innovation, groupe de distribution (session mars 2026)</cite>
+      </div>
+
     </div>
     <aside class="frm-sidebar">
       <div class="frm-sidebar-card">

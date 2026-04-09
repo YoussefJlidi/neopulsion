@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formation SEO & Visibilite IA — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .frm-why { margin-bottom: 48px; }
+    .frm-why h2 { font-size: 1.5rem; margin-bottom: 16px; color: var(--navy); }
+    .frm-why p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; max-width: 720px; }
+    .frm-outcomes { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-outcomes h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-outcomes ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+    .frm-outcomes li { padding-left: 28px; position: relative; color: var(--text); line-height: 1.6; }
+    .frm-outcomes li::before { content: ""; position: absolute; left: 0; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+    .frm-faq { margin-top: 48px; margin-bottom: 48px; }
+    .frm-faq h2 { font-size: 1.35rem; margin-bottom: 20px; color: var(--navy); }
+    .frm-faq details { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; }
+    .frm-faq summary { padding: 16px 20px; cursor: pointer; font-weight: 600; color: var(--navy); background: var(--bg-subtle); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .frm-faq summary::-webkit-details-marker { display: none; }
+    .frm-faq summary::after { content: "+"; font-size: 1.25rem; font-weight: 400; color: var(--text-muted); flex-shrink: 0; }
+    .frm-faq details[open] summary::after { content: "-"; }
+    .frm-faq details[open] summary { border-bottom: 1px solid var(--border); }
+    .frm-faq .faq-body { padding: 16px 20px; color: var(--text-muted); line-height: 1.7; }
+    .frm-testimonial { background: var(--navy); border-radius: var(--radius-md); padding: 32px; margin-top: 40px; margin-bottom: 40px; }
+    .frm-testimonial blockquote { color: rgba(255,255,255,.85); font-style: italic; line-height: 1.75; margin-bottom: 16px; font-size: 1.05rem; }
+    .frm-testimonial cite { color: rgba(255,255,255,.5); font-style: normal; font-size: .875rem; }
+  </style>
 </head>
 <body>
 
@@ -32,6 +54,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CETTE FORMATION -->
+<section class="frm-layout">
+  <div class="container">
+    <div class="frm-why">
+      <h2>Pourquoi cette formation</h2>
+      <p>En 2026, plus de 40 % des recherches passent par une IA generative avant d'atteindre Google. Les entreprises qui n'apparaissent ni dans les resultats classiques ni dans les reponses de ChatGPT, Perplexity ou Gemini perdent chaque mois des parts de visibilite au profit de concurrents mieux positionnes. Le SEO seul ne suffit plus : il faut desormais maitriser le GEO (Generative Engine Optimization) pour exister dans ce nouvel ecosysteme.</p>
+      <p>Cette formation de deux jours a ete concue pour les professionnels qui veulent reprendre le controle de leur visibilite en ligne. Vous apprendrez a combiner les fondamentaux du referencement technique avec les nouvelles strategies de citabilite par les IA. Le programme s'appuie sur des cas concrets, des outils operationnels et un audit en direct de votre propre site pour que chaque minute investie se traduise en actions mesurables.</p>
+    </div>
+  </div>
+</section>
+
 <!-- FORMATION LAYOUT — 2 columns -->
 <section class="frm-layout">
   <div class="container frm-grid">
@@ -39,20 +72,84 @@
       <h2>Programme</h2>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Jour 1 — Matin</span><h3>SEO technique & semantique</h3></div>
-        <ul class="frm-module-list"><li>Architecture de site et crawlabilite</li><li>Optimisation on-page et balises</li><li>Strategie de mots-cles a forte intention</li></ul>
+        <ul class="frm-module-list">
+          <li>Architecture de site et crawlabilite : arborescence en silo, maillage interne strategique, gestion du crawl budget via robots.txt et sitemap XML</li>
+          <li>Optimisation on-page avancee : balises title, meta description, Hn, attributs alt, donnees structurees Schema.org (FAQ, Article, LocalBusiness)</li>
+          <li>Strategie de mots-cles a forte intention : recherche avec YourTextGuru, Semrush et Google Search Console pour identifier les requetes a fort potentiel de conversion</li>
+          <li>Audit technique rapide : detection des erreurs 404, redirections en chaine, temps de chargement, Core Web Vitals et leur impact direct sur le classement</li>
+          <li>Etude de cas : analyse d'un site participant pour illustrer chaque concept en conditions reelles</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Jour 1 — Apres-midi</span><h3>Strategie GEO & IA generatives</h3></div>
-        <ul class="frm-module-list"><li>Fonctionnement de ChatGPT, Perplexity, Gemini</li><li>Criteres de citabilite et d'autorite</li><li>Optimiser son contenu pour etre cite</li></ul>
+        <ul class="frm-module-list">
+          <li>Fonctionnement des moteurs IA : comprendre comment ChatGPT, Perplexity, Gemini et Copilot selectionnent, synthetisent et citent les sources dans leurs reponses</li>
+          <li>Criteres de citabilite : autorite du domaine, qualite editoriale, fraicheur du contenu, presence de donnees structurees et de citations externes verifiables</li>
+          <li>Optimiser son contenu pour etre cite : redaction orientee reponse, paragraphes synthetiques, listes a puces, definitions claires et formulations interrogatives</li>
+          <li>Verifier votre presence dans les IA : methode pas-a-pas pour tester si votre marque, vos produits ou vos services sont mentionnes par les principaux assistants</li>
+          <li>Benchmark concurrentiel : analyser la citabilite de trois concurrents et en tirer des actions concretes</li>
+        </ul>
       </div>
       <div class="frm-module">
-        <div class="frm-module-head"><span class="frm-module-day">Jour 2 — Matin</span><h3>Prompt Engineering applique</h3></div>
-        <ul class="frm-module-list"><li>Techniques de prompting pour le SEO</li><li>Automatisation de la production de contenu</li><li>Chaines de prompts et workflows</li></ul>
+        <div class="frm-module-head"><span class="frm-module-day">Jour 2 — Matin</span><h3>Prompt Engineering applique au SEO</h3></div>
+        <ul class="frm-module-list">
+          <li>Techniques de prompting SEO : generer des meta descriptions, des titres optimises et des briefs de contenu en quelques secondes avec ChatGPT et Claude</li>
+          <li>Automatisation de la production de contenu : chaines de prompts pour creer des articles de blog complets, des FAQ et des pages produits sans perdre en qualite editoriale</li>
+          <li>Analyse semantique par IA : utiliser les LLM pour identifier les lacunes de votre cocon semantique et prioriser les contenus a creer</li>
+          <li>Workflow SEO + IA : integration de YourTextGuru, Semrush, ChatGPT et Google Search Console dans un processus de production fluide</li>
+          <li>Atelier pratique : chaque participant cree trois contenus optimises pour son propre site pendant la session</li>
+        </ul>
       </div>
       <div class="frm-module">
         <div class="frm-module-head"><span class="frm-module-day">Jour 2 — Apres-midi</span><h3>Cas pratiques & certification</h3></div>
-        <ul class="frm-module-list"><li>Application sur vos vrais projets</li><li>Audit live de votre site</li><li>Plan d'action personnalise + attestation</li></ul>
+        <ul class="frm-module-list">
+          <li>Audit live complet de votre site : technique, on-page, backlinks, presence dans les IA, avec restitution commentee devant le groupe</li>
+          <li>Identification de vos quick wins : les 5 actions a mettre en place des la semaine suivante pour un impact mesurable en 30 jours</li>
+          <li>Construction de votre roadmap SEO + GEO 90 jours : calendrier editoria, actions techniques, jalons de mesure et KPIs de suivi</li>
+          <li>Mise en situation : presenter votre plan d'action devant les autres participants et recevoir un feedback croise du formateur</li>
+          <li>Remise de l'attestation de formation et acces a la communaute d'entraide post-formation</li>
+        </ul>
       </div>
+
+      <!-- CE QUE VOUS SAUREZ FAIRE -->
+      <div class="frm-outcomes">
+        <h2>Ce que vous saurez faire</h2>
+        <ul>
+          <li>Conduire un audit SEO complet (technique, on-page, backlinks) et en tirer un plan d'action priorise</li>
+          <li>Identifier vos quick wins en moins de 30 minutes grace a une methode reproductible</li>
+          <li>Verifier si votre marque est citee par les IA generatives et corriger les lacunes</li>
+          <li>Construire une roadmap SEO + GEO sur 90 jours avec des jalons mesurables</li>
+          <li>Utiliser YourTextGuru, Semrush, Google Search Console et les outils IA pour produire du contenu optimise a grande echelle</li>
+        </ul>
+      </div>
+
+      <!-- FAQ -->
+      <div class="frm-faq">
+        <h2>Questions frequentes</h2>
+        <details>
+          <summary>Quel niveau est requis pour suivre cette formation ?</summary>
+          <div class="faq-body">Un niveau intermediaire est recommande : vous devez comprendre les bases du SEO (balises, mots-cles, Google Search Console). Si vous gerez deja un site web ou un blog, vous avez le niveau suffisant. La formation part des fondamentaux techniques avant de monter en complexite.</div>
+        </details>
+        <details>
+          <summary>Que faire si je suis completement debutant en SEO ?</summary>
+          <div class="faq-body">Nous vous recommandons de suivre d'abord notre formation IA Productive pour vous familiariser avec les outils, puis de revenir sur cette formation SEO & Visibilite IA. Vous pouvez aussi nous contacter pour un entretien prealable : nous evaluerons votre niveau et vous conseillerons le parcours le plus adapte.</div>
+        </details>
+        <details>
+          <summary>Comment se passe le financement OPCO ?</summary>
+          <div class="faq-body">Neopulsion est un organisme de formation declare. Nous vous fournissons un devis, un programme detaille et une convention de formation que vous transmettez a votre OPCO. La plupart des OPCO (ATLAS, AKTO, OPCO EP, etc.) couvrent l'integralite des frais pedagogiques. Notre equipe vous accompagne dans les demarches administratives.</div>
+        </details>
+        <details>
+          <summary>Y a-t-il un suivi apres la formation ?</summary>
+          <div class="faq-body">Oui. Chaque participant repart avec sa roadmap personnalisee et beneficie d'un acces a notre communaute d'entraide. Un point de suivi individuel de 30 minutes est programme un mois apres la formation pour evaluer l'avancement de votre plan d'action et debloquer les eventuels points de friction.</div>
+        </details>
+      </div>
+
+      <!-- TEMOIGNAGE -->
+      <div class="frm-testimonial">
+        <blockquote>"En deux jours, j'ai compris pourquoi notre site n'apparaissait jamais dans les reponses de ChatGPT. Trois semaines apres la formation, nous avions corrige notre maillage interne, optimise nos 10 pages cles et commence a etre cites par Perplexity. Le trafic organique a progresse de 28 % sur le trimestre."</blockquote>
+        <cite>-- Sandrine L., Responsable Marketing Digital, PME industrielle (session mars 2026)</cite>
+      </div>
+
     </div>
     <aside class="frm-sidebar">
       <div class="frm-sidebar-card">

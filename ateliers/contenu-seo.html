@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier Contenu SEO — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,7 +50,7 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>Contenu SEO</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 3h</span>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 3h</span>
         <h1>Contenu SEO YourTextGuru-friendly</h1>
         <p>Generer des articles qui atteignent le score cible des la premiere iteration.</p>
       </div>
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>Produire du contenu SEO avec l'IA, tout le monde le fait. Produire du contenu qui atteint un score semantique cible sur YourTextGuru des la premiere iteration, presque personne ne sait le faire. La difference se joue dans la methode : savoir lire un rapport YTG, identifier les termes prioritaires, et construire un prompt qui integre ces contraintes semantiques de maniere naturelle.</p>
+    <p>Cet atelier de 3 heures vous transmet ce workflow complet. Vous ne repartez pas avec une vague methode : vous repartez avec 2 articles finalises qui atteignent le score cible, un prompt reutilisable calibre sur vos thematiques, et un processus industrialisable pour produire du contenu SEO performant a grande echelle.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,110 @@
         <span class="atl-step-time">0-30 min</span>
         <h3>Comment YourTextGuru calcule la richesse semantique</h3>
         <p>Comprendre le scoring, les termes attendus et ce que Google valorise vraiment.</p>
+        <ul class="atl-step-details">
+          <li>Comprendre le fonctionnement du score SOSEO et DSEO : ce qu'ils mesurent et pourquoi ils comptent</li>
+          <li>Analyser la logique de ponderation des termes : frequence, cooccurrence, proximite semantique</li>
+          <li>Identifier ce que Google valorise reellement dans un contenu : exhaustivite thematique versus bourrage de mots-cles</li>
+          <li>Comparer des articles bien classes et leurs scores YTG pour comprendre la correlation entre richesse semantique et positionnement</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">30-75 min</span>
-        <h3>Decoder un rapport YTG en 2min</h3>
+        <h3>Decoder un rapport YTG en 2 min</h3>
         <p>Lire un rapport, identifier les termes prioritaires, reperer les gaps semantiques.</p>
+        <ul class="atl-step-details">
+          <li>Ouvrir un rapport YourTextGuru et identifier immediatement les 20 termes qui comptent le plus</li>
+          <li>Distinguer les termes obligatoires, les termes de renfort et les termes secondaires</li>
+          <li>Reperer les gaps semantiques : les sujets que vos concurrents couvrent et que vous ignorez</li>
+          <li>Construire une grille de lecture rapide applicable a n'importe quel rapport en moins de 2 minutes</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">75-165 min</span>
         <h3>Construire le prompt qui integre les termes YTG</h3>
         <p>Creer un prompt qui produit du contenu semantiquement riche des le premier jet.</p>
+        <ul class="atl-step-details">
+          <li>Structurer un prompt qui injecte les termes YTG sans produire un texte artificiel ou sur-optimise</li>
+          <li>Definir le cadre editorial : ton, structure, longueur, niveau de detail, public cible</li>
+          <li>Generer un premier article en direct et le soumettre au scoring YTG pour mesurer le resultat</li>
+          <li>Iterer sur le prompt jusqu'a atteindre le score cible, puis verrouiller la formulation finale</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">165-180 min</span>
         <h3>Industrialiser la production</h3>
         <p>Automatiser le workflow pour produire du contenu SEO a grande echelle.</p>
+        <ul class="atl-step-details">
+          <li>Definir un processus reproductible : rapport YTG, extraction des termes, generation, scoring, ajustement</li>
+          <li>Organiser la production en lots pour traiter plusieurs mots-cles par session</li>
+          <li>Mettre en place des controles qualite avant publication : relecture, verification du score, test de lisibilite</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128196;</span>
         <h3>2 articles au score cible</h3>
-        <p>Deux articles optimises qui atteignent le score YTG vise.</p>
+        <p>Deux articles complets, optimises semantiquement, qui atteignent le score SOSEO vise sur YourTextGuru. Prets a etre publies sur votre site ou blog.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128221;</span>
         <h3>Le prompt SEO reutilisable</h3>
-        <p>Un prompt calibre pour produire du contenu semantiquement riche.</p>
+        <p>Un prompt calibre et teste pendant l'atelier, adapte a vos thematiques. Il integre les contraintes semantiques YTG et produit du contenu qui score des le premier jet. Modifiable pour chaque nouveau mot-cle.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#9881;</span>
-        <h3>Workflow de production</h3>
-        <p>Le processus complet pour industrialiser votre production SEO.</p>
+        <h3>Workflow de production complet</h3>
+        <p>Le processus detaille pour industrialiser votre production SEO : de l'extraction du rapport YTG a la publication, en passant par la generation, le scoring et le controle qualite.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Redacteurs web et content managers</h3>
+        <p>Vous produisez deja du contenu mais vos articles n'atteignent pas les scores semantiques cibles. Cet atelier vous donne la methode pour integrer les contraintes YTG dans votre processus de redaction assiste par IA.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Consultants SEO et agences</h3>
+        <p>Vous devez livrer du contenu SEO a vos clients avec un niveau de qualite constant. Le workflow de cet atelier vous permet d'industrialiser la production tout en garantissant le score semantique cible sur chaque livrable.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Responsables marketing digital</h3>
+        <p>Vous pilotez la strategie de contenu de votre entreprise et cherchez a augmenter la production sans sacrifier la qualite SEO. Ce processus vous permet de tripler votre volume de publication avec un controle qualite integre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Faut-il un abonnement YourTextGuru pour participer ?</summary>
+      <div class="atl-faq-body">Un acces a YourTextGuru est necessaire pour suivre les exercices en direct. Si vous n'avez pas encore de compte, un essai gratuit ou un acces temporaire sera mis a disposition pendant l'atelier. Apres la session, un abonnement est recommande pour exploiter pleinement le workflow, mais les principes appris sont applicables avec d'autres outils d'analyse semantique.</div>
+    </details>
+    <details>
+      <summary>Combien d'articles peut-on produire avec cette methode ?</summary>
+      <div class="atl-faq-body">Pendant l'atelier, chaque participant produit 2 articles complets qui atteignent le score cible. Une fois le workflow maitrise, le rythme de croisiere est de 3 a 5 articles par heure de travail, en fonction de la complexite du sujet et du niveau de personnalisation souhaite. C'est un gain de productivite considerable par rapport a la redaction manuelle.</div>
+    </details>
+    <details>
+      <summary>Le contenu produit est-il publiable tel quel ?</summary>
+      <div class="atl-faq-body">Les articles produits pendant l'atelier atteignent un niveau de qualite publiable. Neanmoins, une relecture editoriale reste recommandee avant publication. L'IA produit un contenu semantiquement riche et bien structure, mais l'oeil humain reste indispensable pour verifier l'exactitude factuelle, ajuster le ton a votre marque et ajouter des elements de preuve specifiques a votre expertise.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +198,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier LinkedIn x IA — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,8 +50,8 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>LinkedIn x IA</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 3h</span>
-        <h1>LinkedIn x IA — 3 posts par semaine sans effort</h1>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 3h</span>
+        <h1>LinkedIn x IA -- 3 posts par semaine sans effort</h1>
         <p>Maitriser l'algorithme LinkedIn 2026 et construire son systeme de contenu assiste par IA.</p>
       </div>
       <div class="atl-hero-card">
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>LinkedIn est le canal d'acquisition organique le plus puissant pour les professionnels B2B. Pourtant, la majorite des profils publient de maniere irreguliere, sans strategie editoriale, et finissent par abandonner faute de temps ou d'inspiration. Le probleme n'est pas le manque d'idees : c'est l'absence de systeme.</p>
+    <p>Cet atelier de 3 heures vous permet de construire un systeme de production de contenu LinkedIn assiste par IA. Vous repartez avec un pipeline complet qui transforme vos idees brutes en posts publies, un calendrier editorial d'un mois deja rempli, et votre premier post publie pendant la session. L'objectif : maintenir 3 publications par semaine en y consacrant moins de 30 minutes.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,111 @@
         <span class="atl-step-time">0-30 min</span>
         <h3>Algorithme LinkedIn 2026 : ce qui a change</h3>
         <p>Les nouvelles regles du jeu. Ce qui fonctionne et ce qui ne marche plus.</p>
+        <ul class="atl-step-details">
+          <li>Comprendre les evolutions de l'algorithme LinkedIn en 2026 : portee organique, dwell time, signaux d'engagement</li>
+          <li>Identifier les pratiques devenues obsoletes : hashtags massifs, pods d'engagement, contenus generiques</li>
+          <li>Analyser les profils a forte croissance dans votre secteur et decoder ce qui fait leur succes</li>
+          <li>Definir votre positionnement editorial : expertise, ton, frequence, audience cible</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">30-75 min</span>
         <h3>Les 4 formats qui generent de la portee</h3>
         <p>Carrousels, textes narratifs, sondages, video. Quand et comment utiliser chaque format.</p>
+        <ul class="atl-step-details">
+          <li>Maitriser le post texte narratif : structure hook-developpement-appel a l'action, longueur optimale, mise en forme</li>
+          <li>Creer des carrousels qui captent l'attention : nombre de slides, hierarchie visuelle, call-to-action final</li>
+          <li>Utiliser les sondages comme outil de prospection : formuler des questions qui declenchent des conversations</li>
+          <li>Comprendre quand et comment la video courte surpasse les autres formats sur LinkedIn</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">75-135 min</span>
         <h3>Construire son systeme IA de posts</h3>
         <p>Configurer son pipeline : idees, drafts, revision, publication. Le tout assiste par IA.</p>
+        <ul class="atl-step-details">
+          <li>Mettre en place un systeme de capture d'idees : transformer ses experiences quotidiennes en sujets de posts</li>
+          <li>Construire les prompts de generation pour chaque format : texte, carrousel, sondage</li>
+          <li>Configurer le workflow de revision : l'IA produit le draft, vous ajoutez votre voix et votre expertise</li>
+          <li>Organiser le calendrier editorial avec un rythme soutenable : 3 posts par semaine, 30 minutes maximum par jour</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">135-180 min</span>
         <h3>Creer un mois de contenu en 1h</h3>
         <p>Application pratique : generer 4 semaines de posts avec votre systeme. Premier post publie ensemble.</p>
+        <ul class="atl-step-details">
+          <li>Generer les drafts de 12 posts (4 semaines x 3 posts) en utilisant votre pipeline IA</li>
+          <li>Reviser et personnaliser chaque post pour y injecter votre expertise et votre personnalite</li>
+          <li>Planifier le calendrier de publication avec les horaires optimaux pour votre audience</li>
+          <li>Publier votre premier post en direct pendant l'atelier et observer les premieres reactions</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#9881;</span>
         <h3>Votre systeme de contenu LinkedIn</h3>
-        <p>Un pipeline complet pour produire du contenu regulier sans effort.</p>
+        <p>Un pipeline complet pour produire du contenu regulier : capture d'idees, prompts de generation par format, workflow de revision, et calendrier editorial. Le systeme est concu pour fonctionner en autonomie avec moins de 30 minutes par jour.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128197;</span>
         <h3>4 semaines de posts planifies</h3>
-        <p>Un mois complet de contenu pret a publier.</p>
+        <p>Un mois complet de contenu pret a publier : 12 posts rediges, revises et programmes sur votre calendrier. Chaque post est adapte a votre positionnement editorial et optimise pour l'algorithme LinkedIn 2026.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128640;</span>
         <h3>Premier post publie ensemble</h3>
-        <p>Vous publiez votre premier post avant de quitter l'atelier.</p>
+        <p>Vous publiez votre premier post avant de quitter l'atelier. C'est l'acte fondateur de votre nouvelle routine de publication. On analyse ensemble les premieres metriques d'engagement en direct.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Dirigeants et fondateurs B2B</h3>
+        <p>Votre personal branding sur LinkedIn est un levier de business direct. Cet atelier vous donne le systeme pour publier regulierement sans y consacrer des heures, tout en gardant un ton authentique et expert.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Consultants et freelances</h3>
+        <p>LinkedIn est votre vitrine commerciale. Vous savez que publier regulierement genere des opportunites, mais vous n'arrivez pas a maintenir le rythme. Le systeme IA de cet atelier resout ce probleme definitivement.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Commerciaux et business developers</h3>
+        <p>Vos prospects sont sur LinkedIn. Publier du contenu de valeur vous positionne comme expert avant meme le premier appel. Cet atelier vous donne les outils pour transformer votre presence LinkedIn en machine a leads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Faut-il un profil LinkedIn actif pour participer ?</summary>
+      <div class="atl-faq-body">Non. Que votre profil soit vierge ou que vous publiiez deja occasionnellement, l'atelier s'adapte. On part de votre situation actuelle. Si votre profil est inactif, on commence par definir votre positionnement editorial. Si vous publiez deja, on optimise votre systeme existant et on accelere votre rythme de production.</div>
+    </details>
+    <details>
+      <summary>Les posts sont-ils ecrits par l'IA ?</summary>
+      <div class="atl-faq-body">L'IA produit les drafts, mais le contenu final porte votre voix et votre expertise. Le systeme fonctionne en deux temps : l'IA genere une base structuree a partir de vos idees brutes, puis vous intervenez pour personnaliser, ajuster le ton et ajouter vos anecdotes et exemples concrets. Le resultat est un contenu qui sonne authentique parce qu'il l'est : c'est votre savoir, mis en forme plus rapidement.</div>
+    </details>
+    <details>
+      <summary>Combien de temps faut-il consacrer par semaine ensuite ?</summary>
+      <div class="atl-faq-body">Le systeme est concu pour un investissement de 20 a 30 minutes par jour, soit environ 2 heures par semaine pour 3 posts. Cela inclut la capture d'idees, la generation des drafts avec l'IA, la revision personnelle et la publication. La plupart des participants constatent que le temps le plus long est la phase de lancement : une fois le systeme rode, la production devient quasi-automatique.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +199,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier Claude Code — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,7 +50,7 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>Claude Code</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 3h</span>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 3h</span>
         <h1>Un site web en 5 min avec Claude Code</h1>
         <p>Decrire son site en langage naturel et le voir apparaitre. Zero code requis.</p>
       </div>
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>Faire creer un site web coute entre 2 000 et 10 000 euros. Utiliser un page builder demande des heures d'apprentissage et produit souvent un resultat generique. Claude Code change la donne : vous decrivez ce que vous voulez en francais, et l'IA genere le site complet. Pas de drag-and-drop, pas de templates limites, pas de code a ecrire.</p>
+    <p>Cet atelier de 3 heures vous emmene de zero a un site en ligne. Vous n'avez besoin d'aucune competence technique. On commence par une demonstration en direct, puis chaque participant construit son propre site et le deploie sur internet avant la fin de la session. Ce n'est pas une maquette : c'est un vrai site, accessible publiquement, avec votre nom de domaine si vous en avez un.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,110 @@
         <span class="atl-step-time">0-30 min</span>
         <h3>Installation et prise en main</h3>
         <p>Installer Claude Code, comprendre l'interface et les commandes de base.</p>
+        <ul class="atl-step-details">
+          <li>Installer Claude Code sur votre machine en suivant la procedure guidee pas a pas</li>
+          <li>Decouvrir l'interface en ligne de commande et les principes du dialogue avec l'IA</li>
+          <li>Comprendre la logique de fonctionnement : vous decrivez, l'IA code, vous validez</li>
+          <li>Configurer votre premier projet et preparer le brief de votre site</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">30-75 min</span>
         <h3>Demo live : site complet en 5min</h3>
         <p>Construction en direct d'un site web complet a partir d'un simple brief en langage naturel.</p>
+        <ul class="atl-step-details">
+          <li>Observer la creation d'un site professionnel de A a Z en temps reel, a partir d'un brief de 3 phrases</li>
+          <li>Voir comment l'IA genere la structure des pages, le design, les textes et les interactions</li>
+          <li>Comprendre les techniques de briefing qui produisent les meilleurs resultats du premier coup</li>
+          <li>Poser vos questions en direct et voir l'impact de chaque instruction sur le rendu final</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">75-165 min</span>
         <h3>Construire et iterer son propre site</h3>
         <p>Chaque participant cree son site. Iterations, ajustements, personnalisation avec accompagnement.</p>
+        <ul class="atl-step-details">
+          <li>Rediger le brief initial de votre site : activite, cible, pages souhaitees, ton editorial</li>
+          <li>Generer la premiere version et iterer en langage naturel pour affiner le design et le contenu</li>
+          <li>Ajouter des fonctionnalites specifiques : formulaire de contact, galerie, temoignages, carte</li>
+          <li>Beneficier d'un accompagnement individuel pour resoudre les points de blocage</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">165-180 min</span>
         <h3>Deploiement sur Netlify</h3>
         <p>Mise en ligne en un clic. Votre site est live avant de partir.</p>
+        <ul class="atl-step-details">
+          <li>Creer un compte Netlify gratuit et connecter votre projet en quelques clics</li>
+          <li>Deployer votre site et verifier qu'il est accessible publiquement sur internet</li>
+          <li>Configurer un nom de domaine personnalise si vous en possedez un</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#127760;</span>
         <h3>Votre site en ligne</h3>
-        <p>Un site fonctionnel deploye et accessible publiquement.</p>
+        <p>Un site fonctionnel, responsive et deploye sur internet avec une URL publique. Pas une maquette : un vrai site accessible par n'importe qui, immediatement.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128196;</span>
         <h3>La methode de briefing</h3>
-        <p>Comment decrire un site pour obtenir exactement ce que vous voulez.</p>
+        <p>Un guide structure pour decrire un site a Claude Code et obtenir exactement le rendu souhaite. Inclut les formulations qui fonctionnent et celles a eviter.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128221;</span>
-        <h3>Templates reutilisables</h3>
-        <p>Des prompts et structures pour creer d'autres sites en autonomie.</p>
+        <h3>Templates et prompts reutilisables</h3>
+        <p>Une collection de prompts testes pour creer d'autres sites en autonomie : landing pages, portfolios, sites vitrine, pages de vente. Chaque template est adapte a un type de projet.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Independants et artisans</h3>
+        <p>Vous avez besoin d'un site professionnel mais pas le budget pour un prestataire. En 3 heures, vous creez votre vitrine en ligne sans toucher une ligne de code et sans dependre de personne pour le mettre a jour.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Porteurs de projet et startups</h3>
+        <p>Vous lancez un nouveau produit et avez besoin d'une landing page rapidement. Cet atelier vous permet de prototyper et mettre en ligne votre site le jour meme, sans attendre un developpeur.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Equipes marketing et communication</h3>
+        <p>Vous voulez gagner en autonomie pour creer des pages de campagne, des microsites ou des pages evenementielles sans mobiliser l'equipe technique a chaque demande.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Faut-il des connaissances en code pour participer ?</summary>
+      <div class="atl-faq-body">Absolument pas. C'est le principe meme de cet atelier : Claude Code genere tout le code a votre place. Vous decrivez ce que vous voulez en francais, l'IA produit le resultat. Aucune connaissance en HTML, CSS ou JavaScript n'est necessaire. Si vous savez ecrire un email, vous savez creer un site avec Claude Code.</div>
+    </details>
+    <details>
+      <summary>Le site est-il vraiment en ligne a la fin de l'atelier ?</summary>
+      <div class="atl-faq-body">Oui. La derniere phase de l'atelier est consacree au deploiement sur Netlify. Votre site est accessible publiquement via une URL que vous pouvez partager immediatement. Si vous possedez un nom de domaine, on le connecte pendant la session. Sinon, Netlify fournit une URL gratuite en .netlify.app.</div>
+    </details>
+    <details>
+      <summary>Peut-on modifier le site apres l'atelier ?</summary>
+      <div class="atl-faq-body">Oui. Vous repartez avec le code source complet de votre site et la methode pour le modifier avec Claude Code. Changer un texte, ajouter une page, modifier une image : il suffit de decrire la modification souhaitee en langage naturel et de redeployer. Les templates fournis vous guident pour les modifications les plus courantes.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +198,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

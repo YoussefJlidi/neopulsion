@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier GEO — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,9 +50,9 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>GEO</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 3h</span>
-        <h1>GEO — Faire citer son site par les IA</h1>
-        <p>Comprendre pourquoi les IA citent certains contenus et pas d'autres.</p>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 3h</span>
+        <h1>GEO -- Faire citer son site par les IA</h1>
+        <p>Comprendre pourquoi les IA citent certains contenus et pas d'autres. Verifier votre presence en direct.</p>
       </div>
       <div class="atl-hero-card">
         <div class="atl-info-row"><span>Duree</span><strong>3 heures</strong></div>
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>De plus en plus de recherches passent par les IA generatives. Quand un utilisateur demande a ChatGPT, Perplexity ou Gemini une recommandation dans votre domaine, votre marque apparait-elle dans la reponse ? Pour la majorite des entreprises, la reponse est non. Et ce n'est pas une question de SEO classique : les criteres qui determinent la citation par une IA sont differents de ceux qui regissent le classement Google.</p>
+    <p>Cet atelier de 3 heures vous permet de verifier en temps reel votre presence dans les reponses des principales IA, de comprendre les signaux qui declenchent une citation, et de repartir avec un plan d'action concret pour rendre vos contenus citables. On effectue un audit GEO live de votre marque et on reecrit un contenu existant pour qu'il soit selectionne par les modeles de langage.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,109 @@
         <span class="atl-step-time">0-30 min</span>
         <h3>Comment les LLM selectionnent leurs sources</h3>
         <p>Les mecanismes de citation des IA generatives. Ce qui fait qu'un contenu est selectionne.</p>
+        <ul class="atl-step-details">
+          <li>Comprendre comment les modeles de langage recuperent, evaluent et citent les sources lors de la generation de reponses</li>
+          <li>Identifier les differences entre le SEO classique (Google) et le GEO (optimisation pour les IA generatives)</li>
+          <li>Analyser des exemples concrets de marques citees et non citees pour isoler les facteurs determinants</li>
+          <li>Decouvrir les criteres de confiance et d'autorite que les IA utilisent pour selectionner leurs sources</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">30-90 min</span>
         <h3>Audit live : votre presence dans les IA</h3>
         <p>On teste en direct votre marque et vos contenus dans ChatGPT, Perplexity et Gemini.</p>
+        <ul class="atl-step-details">
+          <li>Formuler les requetes strategiques de votre secteur et observer en direct si votre marque est citee</li>
+          <li>Tester vos concurrents sur les memes requetes pour comparer votre visibilite relative</li>
+          <li>Identifier les requetes ou vous etes absent malgre une expertise reconnue sur le sujet</li>
+          <li>Documenter les resultats dans une grille d'audit structuree avec les scores de presence par plateforme IA</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">90-150 min</span>
         <h3>Les 5 signaux GEO prioritaires</h3>
         <p>Les criteres qui comptent vraiment pour etre cite. Priorisation et plan d'action.</p>
+        <ul class="atl-step-details">
+          <li>Passer en revue les 5 signaux cles : autorite du domaine, structure du contenu, donnees factuelles, citations externes, fraicheur</li>
+          <li>Evaluer chaque signal pour votre site et identifier les axes d'amelioration prioritaires</li>
+          <li>Construire un plan d'action chiffre avec des actions classees par impact et effort</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">150-180 min</span>
         <h3>Reecrire un contenu pour qu'il soit citable</h3>
         <p>Application pratique : transformer un contenu existant en contenu citable par les IA.</p>
+        <ul class="atl-step-details">
+          <li>Selectionner un contenu existant de votre site et analyser pourquoi il n'est pas cite actuellement</li>
+          <li>Appliquer les techniques de restructuration : definitions claires, donnees chiffrees, structure question-reponse</li>
+          <li>Reecrire le contenu en integrant les signaux GEO identifies et verifier l'amelioration potentielle</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128196;</span>
         <h3>Votre audit GEO complet</h3>
-        <p>Etat des lieux de votre presence dans les reponses IA.</p>
+        <p>Un etat des lieux detaille de votre presence dans les reponses de ChatGPT, Perplexity et Gemini. Pour chaque requete strategique de votre secteur, vous savez si vous etes cite, par qui vous etes remplace, et pourquoi.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#9989;</span>
-        <h3>Checklist d'optimisation</h3>
-        <p>Les actions prioritaires pour ameliorer votre citabilite.</p>
+        <h3>Checklist d'optimisation GEO</h3>
+        <p>Les actions prioritaires classees par impact pour ameliorer votre citabilite. Chaque action est accompagnee d'instructions concretes et d'un calendrier de mise en oeuvre.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128221;</span>
         <h3>Un contenu remanie pret a citer</h3>
-        <p>Un de vos contenus reecrit et optimise pour les IA.</p>
+        <p>Un de vos contenus existants reecrit et optimise pour les IA generatives. Il integre les signaux GEO et sert de modele pour transformer le reste de vos pages.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Dirigeants et responsables de marque</h3>
+        <p>Votre marque est absente des reponses IA alors que vos concurrents y apparaissent. Cet atelier vous donne une vision claire de votre situation et un plan d'action pour y remedier.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Professionnels du SEO</h3>
+        <p>Vous maitrisez le referencement Google mais le GEO est un terrain nouveau. Cet atelier vous permet de completer votre expertise avec les techniques d'optimisation specifiques aux IA generatives.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Content managers et redacteurs</h3>
+        <p>Vous produisez du contenu regulierement mais il n'est jamais cite par les IA. Apprenez a structurer vos articles pour qu'ils soient selectionnes comme sources fiables par les modeles de langage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Mon site peut-il etre cite par les IA ?</summary>
+      <div class="atl-faq-body">Oui, tout site public peut potentiellement etre cite par les IA generatives. La question n'est pas de savoir si c'est possible, mais de comprendre ce qui declenche la citation. Les IA privilegient les contenus qui font autorite, qui contiennent des donnees factuelles verifiables et qui sont structures de maniere claire. Meme un site de petite taille peut etre cite s'il repond mieux a une requete que les grands acteurs du secteur.</div>
+    </details>
+    <details>
+      <summary>Combien de temps faut-il pour voir des resultats ?</summary>
+      <div class="atl-faq-body">Les premiers effets sont observables en quelques semaines apres la mise en oeuvre des optimisations. Les IA generatives mettent a jour leurs sources regulierement. Certaines actions ont un impact rapide (restructuration du contenu existant, ajout de donnees chiffrees), d'autres demandent plus de temps (construction de l'autorite du domaine, obtention de citations externes). Le plan d'action fourni pendant l'atelier est priorise en fonction de ce calendrier.</div>
+    </details>
+    <details>
+      <summary>Faut-il deja faire du SEO classique ?</summary>
+      <div class="atl-faq-body">Le SEO classique et le GEO sont complementaires mais distincts. Un bon positionnement Google aide, car les IA utilisent parfois les resultats de recherche comme source. Mais ce n'est pas une condition prealable. Certains sites bien positionnes sur Google ne sont jamais cites par les IA, et inversement. L'atelier vous enseigne les techniques specifiques au GEO, qui fonctionnent independamment de votre strategie SEO existante.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +197,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

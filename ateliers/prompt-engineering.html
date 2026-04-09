@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier Prompt Engineering — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,7 +50,7 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>Prompt Engineering</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 2h</span>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 2h</span>
         <h1>Prompt Engineering</h1>
         <p>Maitrisez l'art de parler aux IA. Repartez avec des techniques et des templates directement applicables.</p>
       </div>
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>La plupart des professionnels utilisent les IA generatives comme un moteur de recherche ameliore. Ils posent des questions vagues, obtiennent des reponses generiques et en concluent que l'outil n'est pas encore au niveau. Le probleme ne vient pas de l'IA, il vient de la maniere dont on lui parle. Un prompt bien construit peut multiplier par dix la pertinence des reponses obtenues.</p>
+    <p>Cet atelier de 2 heures vous transmet les techniques concretes pour structurer vos prompts, cadrer le comportement de l'IA et obtenir des resultats exploitables des la premiere tentative. Vous ne repartez pas avec de la theorie, mais avec des templates calibres pour vos cas metier reels.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,110 @@
         <span class="atl-step-time">0-20 min</span>
         <h3>Les fondamentaux</h3>
         <p>Comment fonctionnent les LLMs. Structure d'un bon prompt. Les erreurs classiques.</p>
+        <ul class="atl-step-details">
+          <li>Comprendre le mecanisme de prediction des tokens et pourquoi la formulation change radicalement la reponse</li>
+          <li>Identifier les 4 composantes d'un prompt efficace : contexte, role, instruction, format de sortie</li>
+          <li>Analyser des exemples de prompts faibles et les transformer en prompts performants</li>
+          <li>Decouvrir les erreurs qui sabotent systematiquement les resultats : ambiguite, absence de contraintes, instructions contradictoires</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">20-50 min</span>
         <h3>Techniques avancees</h3>
         <p>Few-shot, chain-of-thought, role-playing. Quand utiliser chaque technique.</p>
+        <ul class="atl-step-details">
+          <li>Mettre en place le few-shot prompting en fournissant des exemples de paires entree/sortie pour calibrer le ton et le format</li>
+          <li>Activer le raisonnement etape par etape (chain-of-thought) pour les taches analytiques et les prises de decision</li>
+          <li>Assigner un role expert a l'IA pour obtenir des reponses avec le bon niveau de technicite</li>
+          <li>Combiner plusieurs techniques dans un meme prompt pour des cas d'usage complexes</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">50-90 min</span>
         <h3>Cas pratiques</h3>
         <p>Application directe sur vos cas metier. Construction de templates reutilisables.</p>
+        <ul class="atl-step-details">
+          <li>Chaque participant identifie 3 taches recurrentes dans son activite et redige les prompts correspondants</li>
+          <li>Tester les prompts en direct sur ChatGPT ou Claude et observer les differences de resultats entre versions</li>
+          <li>Iterer collectivement sur les prompts : feedback du groupe, corrections, ameliorations en temps reel</li>
+          <li>Formaliser chaque prompt en template reutilisable avec des variables a personnaliser</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">90-120 min</span>
-        <h3>Chaines & automatisation</h3>
+        <h3>Chaines et automatisation</h3>
         <p>Combiner les prompts. Introduction aux workflows automatises.</p>
+        <ul class="atl-step-details">
+          <li>Decomposer une tache complexe en une sequence de prompts specialises qui s'alimentent mutuellement</li>
+          <li>Construire un workflow concret : recherche, analyse, redaction, reformatage en sortie structuree</li>
+          <li>Decouvrir les principes d'automatisation avec les Custom GPTs et les system prompts</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128196;</span>
         <h3>Cheatsheet prompting</h3>
-        <p>Toutes les techniques en une page.</p>
+        <p>Toutes les techniques en une page : few-shot, chain-of-thought, role-playing, reformulation. Un document de reference a garder sous la main au quotidien.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128221;</span>
         <h3>10 templates prets a l'emploi</h3>
-        <p>Adaptes a votre metier.</p>
+        <p>Des prompts testes et valides pendant l'atelier, adaptes a votre metier. Chaque template comporte des variables editables pour l'adapter a de nouveaux contextes en quelques secondes.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#127891;</span>
         <h3>Attestation de participation</h3>
-        <p>Valorisez votre montee en competence.</p>
+        <p>Un certificat nominatif qui atteste de votre montee en competence en ingenierie de prompts. Valorisable aupres de votre employeur ou de vos clients.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Dirigeants et managers</h3>
+        <p>Vous voulez comprendre comment l'IA peut accelerer les processus de votre equipe. Vous repartez avec une vision claire de ce qui est possible et des templates pour vos cas d'usage prioritaires.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Professionnels du marketing et de la communication</h3>
+        <p>Redaction, ideation, analyse concurrentielle : vous utilisez deja l'IA mais vos resultats sont inegaux. Cet atelier vous donne les techniques pour obtenir un rendu exploitable du premier coup.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Independants et consultants</h3>
+        <p>Votre temps est votre ressource la plus precieuse. Apprenez a deleguer les taches repetitives a l'IA avec des prompts precis qui produisent des resultats professionnels sans retouche.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Faut-il deja utiliser ChatGPT pour participer ?</summary>
+      <div class="atl-faq-body">Non. L'atelier est concu pour accueillir des participants de tous niveaux, y compris ceux qui n'ont jamais ouvert ChatGPT ou Claude. Les fondamentaux sont poses dans les 20 premieres minutes. Si vous utilisez deja ces outils, vous passerez directement aux techniques avancees qui vous permettront d'exploiter pleinement leur potentiel.</div>
+    </details>
+    <details>
+      <summary>Les templates sont-ils adaptes a mon metier ?</summary>
+      <div class="atl-faq-body">Oui. La phase de cas pratiques (50-90 min) est entierement personnalisee. Chaque participant travaille sur ses propres taches professionnelles. Les templates produits sont donc directement applicables a votre activite, que vous soyez dans le commerce, le conseil, la tech, la sante ou tout autre secteur.</div>
+    </details>
+    <details>
+      <summary>L'atelier se deroule-t-il en visio ou en presentiel ?</summary>
+      <div class="atl-faq-body">Les deux formats sont proposes. Les sessions en visio se deroulent sur Google Meet ou Zoom avec partage d'ecran et exercices en direct. Les sessions en presentiel ont lieu en region parisienne. Le contenu et les livrables sont identiques quel que soit le format choisi.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +198,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

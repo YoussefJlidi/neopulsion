@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atelier Agents IA — Neopulsion</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .atl-pourquoi{padding:64px 0;background:#fff}
+    .atl-pourquoi h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:20px}
+    .atl-pourquoi p{color:#475569;line-height:1.75;margin-bottom:16px;max-width:720px}
+    .atl-audience{padding:64px 0;background:#fff}
+    .atl-audience h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .atl-audience-card{background:#f8fafc;border-radius:12px;padding:28px;border:1px solid #e2e8f0}
+    .atl-audience-card h3{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:8px}
+    .atl-audience-card p{color:#475569;font-size:.9rem;line-height:1.6}
+    .atl-faq{padding:64px 0;background:#f8fafc}
+    .atl-faq h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px}
+    .atl-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .atl-faq summary{padding:20px 24px;font-weight:600;color:#0f172a;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .atl-faq summary::-webkit-details-marker{display:none}
+    .atl-faq summary::after{content:"+";font-size:1.25rem;color:#6366f1;font-weight:700;flex-shrink:0;margin-left:16px}
+    .atl-faq details[open] summary::after{content:"-"}
+    .atl-faq .atl-faq-body{padding:0 24px 20px;color:#475569;line-height:1.7}
+    .atl-step-details{margin-top:12px;padding-left:0;list-style:none}
+    .atl-step-details li{position:relative;padding-left:16px;color:#475569;font-size:.875rem;line-height:1.6;margin-bottom:6px}
+    .atl-step-details li::before{content:"--";position:absolute;left:0;color:#6366f1;font-weight:700}
+  </style>
 </head>
 <body>
 
@@ -28,7 +50,7 @@
     <nav class="svc-breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a> <span>/</span> <a href="../ateliers.html">Ateliers</a> <span>/</span> <span>Agents IA</span></nav>
     <div class="atl-hero-inner">
       <div class="atl-hero-text">
-        <span class="svc-hero-tag svc-hero-tag--green">Atelier — 4h</span>
+        <span class="svc-hero-tag svc-hero-tag--green">Atelier -- 4h</span>
         <h1>Creer ses agents IA</h1>
         <p>Un agent qui prend des decisions et execute des taches en autonomie. On en construit un en 4h.</p>
       </div>
@@ -43,8 +65,17 @@
   </div>
 </section>
 
+<!-- POURQUOI CET ATELIER -->
+<section class="atl-pourquoi">
+  <div class="container">
+    <h2>Pourquoi cet atelier</h2>
+    <p>Un chatbot repond a des questions. Un agent IA prend des decisions, enchaine des actions et produit des resultats concrets sans intervention humaine a chaque etape. C'est la difference entre un outil passif et un collaborateur autonome. Pourtant, la plupart des entreprises n'ont pas encore franchi ce cap : elles restent bloquees au stade du simple echange question-reponse.</p>
+    <p>Cet atelier de 4 heures est concu pour que chaque participant reparte avec un agent fonctionnel, deploye et operationnel sur son propre cas d'usage. On ne parle pas de theorie : on construit, on teste, on met en production. A la fin de la demi-journee, votre agent travaille pour vous.</p>
+  </div>
+</section>
+
 <!-- DEROULEMENT — Steps visuels -->
-<section style="padding:64px 0;background:#fff">
+<section style="padding:64px 0;background:#f8fafc">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:32px">Deroulement</h2>
     <div class="atl-steps">
@@ -52,47 +83,110 @@
         <span class="atl-step-time">0-45 min</span>
         <h3>Difference agent/chatbot/assistant</h3>
         <p>Comprendre ce qui distingue un agent autonome d'un simple chatbot. Les composants cles.</p>
+        <ul class="atl-step-details">
+          <li>Cartographier les 3 niveaux d'autonomie IA : assistant reactif, chatbot contextuel, agent decisionnaire</li>
+          <li>Identifier les composants d'un agent : memoire, outils, boucle de raisonnement, declencheurs</li>
+          <li>Analyser des cas reels d'agents en production : support client, veille concurrentielle, qualification de leads</li>
+          <li>Definir le perimetre et les limites de l'agent que chaque participant va construire</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">45-105 min</span>
         <h3>Demo live : agent SEO autonome</h3>
         <p>Construction en direct d'un agent qui analyse, decide et execute des taches SEO.</p>
+        <ul class="atl-step-details">
+          <li>Observer la construction pas a pas d'un agent qui audite un site, identifie les problemes et propose des corrections</li>
+          <li>Comprendre comment connecter l'agent a des sources de donnees externes via des appels d'API</li>
+          <li>Voir comment definir les regles de decision qui permettent a l'agent de choisir la bonne action</li>
+          <li>Tester l'agent en direct sur un site reel et observer son comportement autonome</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">105-180 min</span>
         <h3>Construire son agent sur son cas</h3>
         <p>Chaque participant definit son cas d'usage et construit son propre agent avec accompagnement.</p>
+        <ul class="atl-step-details">
+          <li>Formaliser le cahier des charges de son agent : objectif, inputs, outputs, criteres de succes</li>
+          <li>Rediger le system prompt qui definit le comportement, le ton et les limites de l'agent</li>
+          <li>Configurer les outils et les sources de donnees auxquels l'agent aura acces</li>
+          <li>Tester les premiers scenarios et ajuster le comportement grace aux retours en temps reel</li>
+        </ul>
       </div>
       <div class="atl-step-card">
         <span class="atl-step-time">180-240 min</span>
         <h3>Tester et lancer en production</h3>
         <p>Tests, ajustements et mise en production. Votre agent est operationnel a la sortie.</p>
+        <ul class="atl-step-details">
+          <li>Executer une batterie de tests sur des scenarios reels pour valider la fiabilite de l'agent</li>
+          <li>Identifier et corriger les cas limites ou l'agent produit des resultats inattendus</li>
+          <li>Deployer l'agent sur la plateforme choisie et verifier son fonctionnement en conditions reelles</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LIVRABLES -->
-<section style="padding:64px 0;background:#f8fafc">
+<section style="padding:64px 0;background:#fff">
   <div class="container">
     <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:24px">Ce que vous repartez avec</h2>
     <div class="atl-livrables">
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#9881;</span>
         <h3>Votre agent en production</h3>
-        <p>Un agent fonctionnel deploye sur votre cas d'usage.</p>
+        <p>Un agent fonctionnel deploye et operationnel sur votre cas d'usage specifique. Il execute des taches en autonomie des la fin de l'atelier.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#128196;</span>
         <h3>Documentation et instructions</h3>
-        <p>Tout pour maintenir et faire evoluer votre agent.</p>
+        <p>Le system prompt commente, la documentation technique de votre agent et les instructions pour le modifier, l'etendre ou le dupliquer sur d'autres cas d'usage.</p>
       </div>
       <div class="atl-livrable">
         <span class="atl-livrable-icon">&#9989;</span>
         <h3>Checklist maintenance</h3>
-        <p>Les bonnes pratiques pour garder votre agent performant.</p>
+        <p>Un guide de bonnes pratiques pour surveiller les performances de votre agent, detecter les derives et maintenir sa fiabilite dans le temps.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- A QUI S'ADRESSE CET ATELIER -->
+<section class="atl-audience">
+  <div class="container">
+    <h2>A qui s'adresse cet atelier</h2>
+    <div class="atl-audience-grid">
+      <div class="atl-audience-card">
+        <h3>Responsables operations et process</h3>
+        <p>Vous gerez des taches repetitives a fort volume : traitement de donnees, qualification, reporting. Un agent IA peut automatiser ces flux et liberer du temps pour les decisions strategiques.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Entrepreneurs et fondateurs</h3>
+        <p>Vous n'avez pas les ressources pour recruter sur chaque poste. Un agent IA bien configure peut assumer des fonctions de support, de veille ou de prospection en continu, sans charge salariale.</p>
+      </div>
+      <div class="atl-audience-card">
+        <h3>Marketeurs et growth hackers</h3>
+        <p>Vous cherchez a scaler vos operations sans multiplier les outils. Un agent IA peut enchainer recherche, redaction, publication et analyse en une seule boucle autonome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="atl-faq">
+  <div class="container">
+    <h2>Questions frequentes</h2>
+    <details>
+      <summary>Quelle est la difference entre un agent IA et un chatbot ?</summary>
+      <div class="atl-faq-body">Un chatbot repond a des questions dans un cadre predetermine. Un agent IA va plus loin : il raisonne, prend des decisions, enchaine des actions et utilise des outils externes pour accomplir un objectif. Concretement, un chatbot vous donne une recette de cuisine. Un agent fait les courses, adapte la recette aux ingredients disponibles et vous envoie la liste de ce qu'il manque.</div>
+    </details>
+    <details>
+      <summary>Faut-il savoir coder pour participer ?</summary>
+      <div class="atl-faq-body">Non. L'atelier utilise des plateformes no-code et low-code pour la construction des agents. Vous n'ecrirez pas une seule ligne de code. En revanche, une familiarite avec les outils IA generatifs (ChatGPT, Claude) est recommandee pour tirer le maximum de la session.</div>
+    </details>
+    <details>
+      <summary>Mon agent fonctionne-t-il apres l'atelier ?</summary>
+      <div class="atl-faq-body">Oui. L'agent est deploye en production pendant l'atelier et continue a fonctionner apres votre depart. Vous repartez avec la documentation complete pour le maintenir, le modifier et l'etendre. Si vous rencontrez un blocage dans les 7 jours suivant l'atelier, un support par email est inclus.</div>
+    </details>
   </div>
 </section>
 
@@ -104,7 +198,7 @@
   </div>
 </section>
 
-<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion — Youssef Jlidi</div></footer>
+<footer style="background:#06080d;color:rgba(255,255,255,.4);padding:40px 0;text-align:center;font-size:.8125rem"><div class="container">&copy; 2026 Neopulsion -- Youssef Jlidi</div></footer>
 <script src="../js/main.js"></script>
 </body>
 </html>
