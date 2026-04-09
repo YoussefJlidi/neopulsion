@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     .article-hero { padding: 120px 0 0; background: var(--bg); }
+    .article-cover-wrap { width: 100%; max-height: 400px; border-radius: var(--radius-lg); margin: 40px 0; overflow: hidden; background: var(--bg-subtle); }
     .article-cover { width: 100%; height: auto; border-radius: var(--radius-lg); margin: 40px 0; display: block; }
     .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
     .article-body { max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
@@ -127,17 +128,17 @@
       <span aria-current="page">Claude Code &amp; Marketing</span>
     </nav>
 
-    <div style="max-width:800px; margin-top:32px;">
+    <div style="max-width:100%; margin-top:32px;">
       <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
         <span class="blog-card-cat">IA &amp; Marketing</span>
         <time style="font-size:0.875rem; color:var(--text-muted);" datetime="2026-03-30">30 mars 2026</time>
         <span style="font-size:0.875rem; color:var(--text-muted);">· 14 min de lecture</span>
       </div>
       <h1 style="font-size:clamp(1.75rem,4vw,2.75rem); font-weight:900; line-height:1.2; color:var(--text); margin-bottom:20px;">Claude Code pour le marketing : l'IA qui execute, pas celle qui suggere</h1>
-      <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:680px;">Les outils IA de marketing se multiplient. La plupart generent du texte dans une fenetre de chat. Claude Code fait autre chose : il execute des workflows complets, directement depuis le terminal. Audits SEO, sequences email, reporting client — sans intervention manuelle.</p>
+      <p style="font-size:1.125rem; color:var(--text-muted); line-height:1.7; max-width:100%;">Les outils IA de marketing se multiplient. La plupart generent du texte dans une fenetre de chat. Claude Code fait autre chose : il execute des workflows complets, directement depuis le terminal. Audits SEO, sequences email, reporting client — sans intervention manuelle.</p>
     </div>
 
-    <img src="../assets/blog-claude-code-marketing.svg" alt="Claude Code pour le marketing — terminal avec commandes SEO et email automatisees" class="article-cover">
+    <div class="article-cover-wrap"><img src="../assets/blog-claude-code-marketing.svg" alt="Claude Code pour le marketing — terminal avec commandes SEO et email automatisees" class="article-cover"></div>
   </div>
 </section>
 
@@ -441,7 +442,7 @@
         </ul>
 
         <div class="author-block">
-          <img src="../assets/youssef-jlidi-2.png" alt="Youssef Jlidi">
+          <div class="article-cover-wrap"><img src="../assets/youssef-jlidi-2.png" alt="Youssef Jlidi">
           <div>
             <div class="author-block-name">Youssef Jlidi</div>
             <div class="author-block-bio">Fondateur de Neopulsion, expert SEO &amp; GEO depuis 10 ans. Auteur ENI Editions, formateur LinkedIn Learning (500 000+ apprenants). Pionnier du GEO en France.</div>
