@@ -2193,7 +2193,7 @@ footer {
    FORMATION CARDS — Dark premium glassmorphism
    ══════════════════════════════════════════════ */
 .fcard-visual {
-  background: #0c1222;
+  background: #0c1222 !important;
   position: relative;
   overflow: hidden;
   min-height: 280px;
@@ -2263,9 +2263,10 @@ footer {
   justify-content: center;
 }
 .fcard-icon svg {
-  width: 64px;
-  height: 64px;
-  opacity: 1;
+  width: 64px !important;
+  height: 64px !important;
+  max-width: none !important;
+  opacity: 1 !important;
   filter: drop-shadow(0 0 24px var(--fcard-glow));
 }
 
