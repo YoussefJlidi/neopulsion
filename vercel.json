@@ -1,7 +1,9 @@
 {
-  "buildCommand": "",
+  "installCommand": "echo skip",
+  "buildCommand": "echo skip",
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "ignoreCommand": "exit 0"
 }
