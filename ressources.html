@@ -10,6 +10,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ressources SEO, GEO & IA — Articles et guides — Neopulsion</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .listing-filter {
+      border: 1.5px solid var(--filter-color, #94a3b8);
+      color: var(--filter-color, #64748b);
+      background: var(--filter-bg, transparent);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: .875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .listing-filter:hover {
+      background: var(--filter-color, #3B82F6);
+      color: #fff;
+    }
+    .listing-filter.active {
+      background: var(--filter-color, #3B82F6);
+      color: #fff;
+      border-color: var(--filter-color, #3B82F6);
+    }
+  </style>
   <link rel="canonical" href="https://neopulsion.com/ressources.html">
   <meta property="og:title" content="Ressources SEO, GEO & IA — Articles et guides — Neopulsion">
   <meta property="og:description" content="Articles, guides et analyses SEO, GEO et IA par Neopulsion. Restez en avance sur les evolutions du search.">
@@ -35,10 +57,10 @@
 <section style="padding:56px 0 96px;background:#fafbfc"><div class="container">
   <div class="listing-toolbar">
     <div class="listing-filters">
-      <button class="listing-filter active" data-cat="all">Tout</button>
-      <button class="listing-filter" data-cat="ia">IA</button>
-      <button class="listing-filter" data-cat="seo-geo">SEO & GEO</button>
-      <button class="listing-filter" data-cat="recherche">Recherche academique</button>
+      <button class="listing-filter active" data-cat="all" style="--filter-color:#3B82F6;--filter-bg:rgba(59,130,246,.08)">Tout</button>
+      <button class="listing-filter" data-cat="article" style="--filter-color:#10B981;--filter-bg:rgba(16,185,129,.08)">Articles</button>
+      <button class="listing-filter" data-cat="recherche" style="--filter-color:#F59E0B;--filter-bg:rgba(245,158,11,.08)">Recherche universitaire</button>
+      <button class="listing-filter" data-cat="personnage" style="--filter-color:#8B5CF6;--filter-bg:rgba(139,92,246,.08)">Personnages</button>
     </div>
     <div class="view-toggle">
       <button class="view-btn" data-view="list" aria-label="Vue cascade">
@@ -52,40 +74,40 @@
 
   <div class="listing-grid view-grid" id="resource-grid">
 
-    <a href="blog/llm-futur-recherche.html" class="listing-card" data-cat="ia">
+    <a href="blog/llm-futur-recherche.html" class="listing-card" data-cat="article">
       <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-llm-recherche.svg" alt="LLMs et recherche" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag">IA & LLM</span>
+        <span class="listing-card-tag" style="color:#10B981;background:rgba(16,185,129,.08)">Article</span>
         <h2 class="listing-card-title">Les LLMs ne sont pas prets pour la recherche</h2>
         <p class="listing-card-desc">On nous avait prevenus. Analyse des limites actuelles des modeles de langage pour le search.</p>
         <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">28 mars 2026</time>
       </div>
     </a>
 
-    <a href="blog/claude-code-marketing.html" class="listing-card" data-cat="ia">
+    <a href="blog/claude-code-marketing.html" class="listing-card" data-cat="article">
       <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-claude-code-marketing.svg" alt="Claude Code marketing" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag">IA & Automation</span>
+        <span class="listing-card-tag" style="color:#10B981;background:rgba(16,185,129,.08)">Article</span>
         <h2 class="listing-card-title">Claude Code pour le marketing</h2>
         <p class="listing-card-desc">Automatiser sa production de contenu sans perdre en qualite : retour d'experience concret.</p>
         <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">30 mars 2026</time>
       </div>
     </a>
 
-    <a href="blog/dataforseo-api-guide.html" class="listing-card" data-cat="seo-geo">
+    <a href="blog/dataforseo-api-guide.html" class="listing-card" data-cat="article">
       <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-dataforseo.svg" alt="DataForSEO API guide" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#8B5CF6;background:rgba(139,92,246,.06)">Outils SEO</span>
+        <span class="listing-card-tag" style="color:#10B981;background:rgba(16,185,129,.08)">Article</span>
         <h2 class="listing-card-title">DataForSEO : guide complet de l'API SEO professionnelle</h2>
         <p class="listing-card-desc">SERP, mots-cles, backlinks, audit on-page : tout comprendre sur DataForSEO, son modele pay-per-task et ses avantages.</p>
         <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">9 avril 2026</time>
       </div>
     </a>
 
-    <a href="blog/geo-generative-engine-optimization.html" class="listing-card" data-cat="seo-geo">
+    <a href="blog/geo-generative-engine-optimization.html" class="listing-card" data-cat="article">
       <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-geo-cover.jpg" alt="GEO Generative Engine Optimization" style="width:100%;height:180px;object-fit:cover"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#8B5CF6;background:rgba(139,92,246,.06)">SEO & GEO</span>
+        <span class="listing-card-tag" style="color:#10B981;background:rgba(16,185,129,.08)">Article</span>
         <h2 class="listing-card-title">GEO : Comment etre cite par ChatGPT, Perplexity et Gemini</h2>
         <p class="listing-card-desc">Le guide complet du Generative Engine Optimization : methodologie, signaux et bonnes pratiques.</p>
         <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">25 mars 2026</time>
@@ -95,7 +117,7 @@
     <a href="blog/llm-information-retrieval-survey.html" class="listing-card" data-cat="recherche">
       <div class="listing-card-img" style="border-radius:20px 20px 0 0;overflow:hidden"><img src="assets/blog-llm-ir-survey.png" alt="Papier de recherche — IA et recherche d'information" style="width:100%;height:180px;object-fit:cover;object-position:top"></div>
       <div class="listing-card-body">
-        <span class="listing-card-tag" style="color:#D97706;background:rgba(217,119,6,.06)">Recherche academique</span>
+        <span class="listing-card-tag" style="color:#F59E0B;background:rgba(245,158,11,.08)">Recherche universitaire</span>
         <h2 class="listing-card-title">Comment les IA transforment la recherche en ligne</h2>
         <p class="listing-card-desc">Synthese en francais du papier de reference (500+ citations) : comment ChatGPT, Gemini et Claude changent la facon dont on cherche et trouve de l'information.</p>
         <time style="font-size:.75rem;color:#94a3b8;margin-top:auto;display:block">14 avril 2026</time>
