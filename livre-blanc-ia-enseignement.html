@@ -80,7 +80,8 @@
     .benefits{padding:72px 0;background:var(--white);}
     .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
     .benefit{display:flex;gap:16px;align-items:flex-start;}
-    .benefit-icon{width:48px;height:48px;border-radius:12px;background:var(--bg);border:1px solid #E5E7EB;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+    .benefit-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .benefit-icon svg{width:26px;height:26px;}
     .benefit h3{font-size:0.9375rem;font-weight:700;color:var(--dark);margin-bottom:4px;}
     .benefit p{font-size:0.8125rem;color:var(--g5);line-height:1.5;}
 
@@ -175,7 +176,7 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="hero-badge">&#128214; Guide gratuit — PDF 48 pages</div>
+        <div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Guide gratuit — PDF 48 pages</div>
         <h1>Vos etudiants utilisent l'IA.<br><em>Et vous ?</em></h1>
         <p class="hero-sub">10 fiches operationnelles pour integrer l'IA dans tout le cycle d'apprentissage — de la memorisation a la creation. Outils, workflows, cas concrets.</p>
         <form class="hero-form" name="livre-blanc-hero" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -199,7 +200,7 @@
           <div class="book-pages"></div>
           <div class="book-cover">
             <div class="book-num">10</div>
-            <div class="book-icon">&#127891;</div>
+            <div class="book-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg></div>
             <div class="book-title">Enseigner a l'ere de l'IA</div>
             <div class="book-subtitle">10 fiches pedagogiques<br>pour passer a l'action</div>
             <div class="book-author">Youssef Jlidi</div>
@@ -242,12 +243,12 @@
       <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--dark);">Applicable des lundi matin</h2>
     </div>
     <div class="benefits-grid">
-      <div class="benefit"><div class="benefit-icon">&#127891;</div><div><h3>Repositionner votre role</h3><p>D'enseignant-transmetteur a architecte d'effort cognitif</p></div></div>
-      <div class="benefit"><div class="benefit-icon">&#9889;</div><div><h3>30+ outils IA testes</h3><p>ChatGPT Edu, Claude, NotebookLM, Khanmigo, Anki, Gamma...</p></div></div>
-      <div class="benefit"><div class="benefit-icon">&#128295;</div><div><h3>6 workflows pas a pas</h3><p>Du cours aux flashcards, du corpus au debat structure</p></div></div>
-      <div class="benefit"><div class="benefit-icon">&#127919;</div><div><h3>6 cas concrets</h3><p>Strasbourg, Sciences Po, Ecole 42, HEC, Geneve, EPFL</p></div></div>
-      <div class="benefit"><div class="benefit-icon">&#128308;</div><div><h3>Cadrage institutionnel</h3><p>Politique feu tricolore + EU AI Act Art. 4</p></div></div>
-      <div class="benefit"><div class="benefit-icon">&#128161;</div><div><h3>Evaluer autrement</h3><p>Framework FACT + thinking records</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(37,99,235,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg></div><div><h3>Repositionner votre role</h3><p>D'enseignant-transmetteur a architecte d'effort cognitif</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(249,115,22,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 10h1m4 0h1m-3-3v6"/></svg></div><div><h3>30+ outils IA testes</h3><p>ChatGPT Edu, Claude, NotebookLM, Khanmigo, Anki, Gamma...</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(5,150,105,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 14 15 20 9"/><polyline points="14 9 20 9 20 15"/><line x1="4" y1="21" x2="20" y2="21"/></svg></div><div><h3>6 workflows pas a pas</h3><p>Du cours aux flashcards, du corpus au debat structure</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(220,38,38,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><h3>6 cas concrets</h3><p>Strasbourg, Sciences Po, Ecole 42, HEC, Geneve, EPFL</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(124,58,237,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><div><h3>Cadrage institutionnel</h3><p>Politique feu tricolore + EU AI Act Art. 4</p></div></div>
+      <div class="benefit"><div class="benefit-icon" style="background:rgba(217,119,6,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><div><h3>Evaluer autrement</h3><p>Framework FACT + thinking records</p></div></div>
     </div>
   </div>
 </section>
