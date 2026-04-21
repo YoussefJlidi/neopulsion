@@ -10,102 +10,151 @@
   <title>Livre blanc — 10 fiches pour enseigner a l'ere de l'IA | Neopulsion</title>
   <meta name="description" content="Telecharger le livre blanc gratuit : 10 fiches pedagogiques pour integrer l'IA dans tout le cycle d'apprentissage. Methodes, outils, workflows et cas concrets.">
   <link rel="canonical" href="https://neopulsion.com/livre-blanc-ia-enseignement.html">
-  <link rel="stylesheet" href="css/style.css">
   <style>
-    /* -- HERO -- */
-    .lb-hero{padding:140px 0 80px;background:linear-gradient(165deg,#0A0F1A 0%,#111827 50%,#1E293B 100%);color:#fff;position:relative;overflow:hidden;}
-    .lb-hero::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,0.12) 0%,transparent 70%);pointer-events:none;}
-    .lb-hero-grid{display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center;}
-    .lb-hero h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px;}
-    .lb-hero h1 span{color:#3B82F6;}
-    .lb-hero .sub{font-size:1.125rem;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:32px;}
-    .lb-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);border-radius:999px;padding:6px 16px;font-size:0.8125rem;font-weight:600;color:#60A5FA;margin-bottom:24px;}
-    .lb-stats{display:flex;gap:32px;margin-top:32px;}
-    .lb-stat-num{font-size:2rem;font-weight:800;color:#fff;line-height:1;}
-    .lb-stat-label{font-size:0.8125rem;color:rgba(255,255,255,0.5);margin-top:4px;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{--blue:#2563EB;--blue-d:#1D4ED8;--orange:#F97316;--orange-d:#EA580C;--dark:#0A0F1A;--g9:#111827;--g7:#374151;--g5:#6B7280;--g3:#D1D5DB;--g1:#F3F4F6;--bg:#FAFBFC;--white:#fff;--radius:12px;}
+    html{scroll-behavior:smooth;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;color:#1F2937;background:var(--white);}
+    .container{max-width:1120px;margin:0 auto;padding:0 24px;}
+    img{max-width:100%;display:block;}
 
-    /* -- FORM CARD -- */
-    .form-card{background:#fff;border-radius:16px;padding:36px;box-shadow:0 20px 60px rgba(0,0,0,0.3);}
-    .form-card h3{font-size:1.25rem;font-weight:800;color:#0A0A0A;margin-bottom:4px;}
-    .form-card .form-sub{font-size:0.875rem;color:#71717A;margin-bottom:24px;}
-    .form-group{margin-bottom:16px;}
-    .form-group label{display:block;font-size:0.8125rem;font-weight:600;color:#3F3F46;margin-bottom:6px;}
-    .form-group input,.form-group select{width:100%;padding:10px 14px;border:1.5px solid #E4E4E7;border-radius:8px;font-size:0.9375rem;font-family:inherit;transition:border-color .2s;background:#fff;color:#0A0A0A;}
-    .form-group input:focus,.form-group select:focus{outline:none;border-color:#3B82F6;box-shadow:0 0 0 3px rgba(59,130,246,0.1);}
-    .form-submit{width:100%;padding:14px;background:#2563EB;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;transition:background .2s;margin-top:8px;}
-    .form-submit:hover{background:#1D4ED8;}
-    .form-note{font-size:0.75rem;color:#A1A1AA;text-align:center;margin-top:12px;}
+    /* === TOPBAR === */
+    .topbar{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #E5E7EB;padding:0 28px;height:56px;display:flex;align-items:center;justify-content:space-between;}
+    .topbar-logo{font-size:15px;font-weight:800;color:var(--dark);text-decoration:none;}
+    .topbar-logo span{color:var(--blue);}
+    .topbar-cta{padding:8px 20px;background:var(--orange);color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;transition:background .2s;}
+    .topbar-cta:hover{background:var(--orange-d);}
 
-    /* -- SECTIONS -- */
-    .lb-section{padding:80px 0;}
-    .lb-section-alt{background:#F9FAFB;}
-    .lb-section-dark{background:#0A0F1A;color:#fff;}
-    .section-kicker{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3B82F6;margin-bottom:12px;}
-    .section-title{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;color:#0A0A0A;line-height:1.15;margin-bottom:16px;letter-spacing:-0.02em;}
-    .lb-section-dark .section-title{color:#fff;}
-    .section-desc{font-size:1.0625rem;color:#71717A;line-height:1.7;max-width:640px;margin-bottom:40px;}
-    .lb-section-dark .section-desc{color:rgba(255,255,255,0.5);}
+    /* === HERO === */
+    .hero{padding:120px 0 80px;background:linear-gradient(170deg,#0A0F1A 0%,#111827 60%,#1E293B 100%);color:#fff;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:-150px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(37,99,235,0.15) 0%,transparent 70%);pointer-events:none;}
+    .hero::after{content:'';position:absolute;bottom:-100px;left:-50px;width:400px;height:400px;background:radial-gradient(circle,rgba(249,115,22,0.08) 0%,transparent 70%);pointer-events:none;}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,115,22,0.15);border:1px solid rgba(249,115,22,0.3);border-radius:999px;padding:6px 16px;font-size:12px;font-weight:700;color:#FDBA74;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.06em;}
+    .hero h1{font-size:clamp(2rem,4vw,2.75rem);font-weight:900;line-height:1.08;letter-spacing:-0.03em;margin-bottom:18px;}
+    .hero h1 em{font-style:normal;color:#F97316;}
+    .hero-sub{font-size:1.0625rem;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:28px;}
+    .hero-form{display:flex;gap:10px;}
+    .hero-form input{flex:1;padding:14px 16px;border:2px solid rgba(255,255,255,0.15);border-radius:10px;background:rgba(255,255,255,0.08);color:#fff;font-size:15px;font-family:inherit;transition:border-color .2s;}
+    .hero-form input::placeholder{color:rgba(255,255,255,0.35);}
+    .hero-form input:focus{outline:none;border-color:var(--orange);}
+    .hero-form button{padding:14px 28px;background:var(--orange);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s,transform .15s;box-shadow:0 4px 14px rgba(249,115,22,0.35);}
+    .hero-form button:hover{background:var(--orange-d);transform:translateY(-1px);}
+    .hero-note{font-size:12px;color:rgba(255,255,255,0.3);margin-top:10px;}
+    .hero-proof{display:flex;gap:24px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);}
+    .hero-proof-item{text-align:center;}
+    .hero-proof-num{font-size:1.5rem;font-weight:800;color:#fff;}
+    .hero-proof-label{font-size:11px;color:rgba(255,255,255,0.4);margin-top:2px;}
 
-    /* -- FICHES GRID -- */
-    .fiches-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
-    .fiche{background:#fff;border:1px solid #E4E4E7;border-radius:14px;padding:28px;transition:box-shadow .25s,transform .25s;}
-    .fiche:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);transform:translateY(-3px);}
-    .fiche-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#EFF6FF;color:#2563EB;font-size:0.875rem;font-weight:800;margin-bottom:14px;}
-    .fiche-bloom{display:inline-block;padding:3px 10px;border-radius:6px;font-size:0.6875rem;font-weight:700;margin-left:8px;vertical-align:middle;}
-    .fiche h3{font-size:1.0625rem;font-weight:700;color:#0A0A0A;margin-bottom:8px;line-height:1.3;}
-    .fiche p{font-size:0.875rem;color:#71717A;line-height:1.6;}
-    .fiche-tools{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;}
-    .fiche-tool{font-size:0.6875rem;font-weight:600;padding:3px 8px;border-radius:5px;background:#F4F4F5;color:#3F3F46;}
+    /* Book mockup */
+    .book-mockup{position:relative;display:flex;justify-content:center;align-items:center;}
+    .book{width:280px;height:380px;position:relative;transform:perspective(800px) rotateY(-12deg) rotateX(3deg);transform-style:preserve-3d;}
+    .book-cover{width:100%;height:100%;background:linear-gradient(145deg,#2563EB 0%,#1E40AF 100%);border-radius:4px 16px 16px 4px;box-shadow:8px 8px 30px rgba(0,0,0,0.4),-2px 0 0 #1E3A5F;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:32px;text-align:center;position:relative;overflow:hidden;}
+    .book-cover::before{content:'';position:absolute;top:0;left:0;width:8px;height:100%;background:linear-gradient(to right,rgba(0,0,0,0.15),transparent);border-radius:4px 0 0 4px;}
+    .book-cover::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(135deg,rgba(255,255,255,0.1) 0%,transparent 50%);}
+    .book-num{font-size:64px;font-weight:900;color:rgba(255,255,255,0.12);position:absolute;top:20px;right:24px;line-height:1;}
+    .book-icon{font-size:48px;margin-bottom:16px;position:relative;z-index:1;}
+    .book-title{font-size:20px;font-weight:800;color:#fff;line-height:1.2;position:relative;z-index:1;}
+    .book-subtitle{font-size:13px;color:rgba(255,255,255,0.6);margin-top:10px;font-weight:500;position:relative;z-index:1;}
+    .book-author{position:absolute;bottom:24px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.4);letter-spacing:0.06em;text-transform:uppercase;z-index:1;}
+    .book-pages{position:absolute;left:-4px;top:8px;bottom:8px;width:18px;background:linear-gradient(to right,#E5E7EB 0%,#F9FAFB 40%,#E5E7EB 100%);border-radius:3px 0 0 3px;transform:translateZ(-4px);box-shadow:-2px 0 8px rgba(0,0,0,0.1);}
+    .book-shadow{position:absolute;bottom:-20px;left:10%;right:10%;height:30px;background:radial-gradient(ellipse,rgba(0,0,0,0.25) 0%,transparent 70%);filter:blur(8px);}
+    .book-float{animation:bookfloat 4s ease-in-out infinite;}
+    @keyframes bookfloat{0%,100%{transform:perspective(800px) rotateY(-12deg) rotateX(3deg) translateY(0);}50%{transform:perspective(800px) rotateY(-12deg) rotateX(3deg) translateY(-10px);}}
 
-    /* -- QUI SUIS-JE -- */
-    .bio-grid{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start;}
-    .bio-photo{width:100%;border-radius:12px;border:1px solid #E4E4E7;}
-    .bio-name{font-size:1.5rem;font-weight:800;color:#0A0A0A;margin-bottom:4px;}
-    .bio-role{font-size:1rem;color:#3B82F6;font-weight:600;margin-bottom:20px;}
-    .bio-text{font-size:1rem;color:#71717A;line-height:1.7;margin-bottom:24px;}
-    .bio-creds{list-style:none;padding:0;margin:0;}
-    .bio-creds li{font-size:0.9375rem;font-weight:500;color:#3F3F46;line-height:2;padding-left:24px;position:relative;}
-    .bio-creds li::before{content:"\2192";color:#3B82F6;font-weight:700;position:absolute;left:0;}
-    .logos-row{display:flex;gap:24px;align-items:center;margin-top:28px;flex-wrap:wrap;}
-    .logos-row img{height:32px;filter:grayscale(1) opacity(0.5);transition:filter .3s;}
-    .logos-row img:hover{filter:grayscale(0) opacity(1);}
+    /* === TRUST BAR === */
+    .trust{padding:40px 0;background:var(--bg);border-bottom:1px solid #E5E7EB;}
+    .trust-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;}
+    .trust img{height:28px;filter:grayscale(1) opacity(0.4);transition:filter .3s;}
+    .trust img:hover{filter:grayscale(0) opacity(1);}
 
-    /* -- CE QUE VOUS APPRENEZ -- */
-    .learn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .learn-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:28px;}
-    .learn-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px;}
-    .learn-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:8px;}
-    .learn-card p{font-size:0.875rem;color:rgba(255,255,255,0.5);line-height:1.6;}
+    /* === PROBLEM === */
+    .problem{padding:72px 0;background:var(--white);}
+    .problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+    .problem-card{text-align:center;padding:32px 20px;border-radius:var(--radius);background:var(--bg);border:1px solid #E5E7EB;}
+    .problem-num{font-size:2.5rem;font-weight:900;color:var(--blue);line-height:1;}
+    .problem-label{font-size:0.8125rem;font-weight:500;color:var(--g5);margin-top:8px;line-height:1.4;}
+    .problem-src{font-size:11px;color:var(--g3);text-align:center;margin-top:20px;}
 
-    /* -- PALMARES -- */
-    .palm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-    .palm-card{text-align:center;padding:24px 16px;background:#fff;border:1px solid #E4E4E7;border-radius:12px;}
-    .palm-num{font-size:2.5rem;font-weight:800;color:#2563EB;line-height:1;}
-    .palm-label{font-size:0.8125rem;font-weight:600;color:#3F3F46;margin-top:8px;line-height:1.4;}
+    /* === BENEFITS === */
+    .benefits{padding:72px 0;background:var(--white);}
+    .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+    .benefit{display:flex;gap:16px;align-items:flex-start;}
+    .benefit-icon{width:48px;height:48px;border-radius:12px;background:var(--bg);border:1px solid #E5E7EB;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+    .benefit h3{font-size:0.9375rem;font-weight:700;color:var(--dark);margin-bottom:4px;}
+    .benefit p{font-size:0.8125rem;color:var(--g5);line-height:1.5;}
 
-    /* -- FINAL CTA -- */
-    .final-cta{padding:80px 0;background:linear-gradient(135deg,#2563EB 0%,#1D4ED8 100%);color:#fff;text-align:center;}
-    .final-cta h2{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;margin-bottom:16px;}
-    .final-cta p{font-size:1.0625rem;color:rgba(255,255,255,0.7);margin-bottom:32px;max-width:540px;margin-left:auto;margin-right:auto;}
-    .final-form{max-width:420px;margin:0 auto;display:flex;gap:12px;}
-    .final-form input{flex:1;padding:14px 16px;border:none;border-radius:10px;font-size:1rem;font-family:inherit;}
-    .final-form button{padding:14px 28px;background:#0A0F1A;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s;}
-    .final-form button:hover{background:#1E293B;}
+    /* === TOC (Table des matieres) === */
+    .toc{padding:72px 0;background:var(--g1);}
+    .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:40px;}
+    .toc-list{list-style:none;counter-reset:toc;}
+    .toc-item{counter-increment:toc;display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid #E5E7EB;}
+    .toc-item:last-child{border-bottom:none;}
+    .toc-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;}
+    .toc-item:nth-child(-n+2) .toc-dot{background:var(--blue);}
+    .toc-item:nth-child(n+3):nth-child(-n+4) .toc-dot{background:#D97706;}
+    .toc-item:nth-child(n+5):nth-child(-n+6) .toc-dot{background:#DC2626;}
+    .toc-item:nth-child(n+7):nth-child(-n+9) .toc-dot{background:#059669;}
+    .toc-item:nth-child(10) .toc-dot{background:var(--dark);border:2px solid var(--blue);}
+    .toc-text{font-size:0.9375rem;font-weight:600;color:var(--dark);}
+    .toc-cta{background:var(--white);border:1px solid #E5E7EB;border-radius:16px;padding:36px;box-shadow:0 8px 30px rgba(0,0,0,0.06);position:sticky;top:80px;}
+    .toc-cta h3{font-size:1.25rem;font-weight:800;margin-bottom:6px;}
+    .toc-cta p{font-size:0.875rem;color:var(--g5);margin-bottom:20px;line-height:1.6;}
+    .toc-cta .form-group{margin-bottom:14px;}
+    .toc-cta label{display:block;font-size:12px;font-weight:600;color:var(--g7);margin-bottom:5px;}
+    .toc-cta input{width:100%;padding:11px 14px;border:1.5px solid #E5E7EB;border-radius:8px;font-size:14px;font-family:inherit;transition:border-color .2s;}
+    .toc-cta input:focus{outline:none;border-color:var(--orange);}
+    .toc-cta button{width:100%;padding:14px;background:var(--orange);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;box-shadow:0 4px 14px rgba(249,115,22,0.3);margin-top:4px;}
+    .toc-cta button:hover{background:var(--orange-d);}
+    .toc-cta .note{font-size:11px;color:var(--g3);text-align:center;margin-top:10px;}
+    .toc-specs{display:flex;gap:20px;justify-content:center;margin-top:20px;padding-top:16px;border-top:1px solid #E5E7EB;}
+    .toc-spec{text-align:center;font-size:12px;font-weight:600;color:var(--g5);}
+    .toc-spec strong{display:block;font-size:16px;color:var(--dark);}
 
-    /* -- RESPONSIVE -- */
+    /* === AUTHOR === */
+    .author{padding:72px 0;background:var(--white);}
+    .author-grid{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;max-width:800px;margin:0 auto;}
+    .author-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid var(--g1);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+    .author-name{font-size:1.375rem;font-weight:800;margin-bottom:2px;}
+    .author-role{font-size:0.9375rem;color:var(--blue);font-weight:600;margin-bottom:14px;}
+    .author-bio{font-size:0.9375rem;color:var(--g5);line-height:1.7;margin-bottom:16px;}
+    .author-tags{display:flex;gap:8px;flex-wrap:wrap;}
+    .author-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;background:var(--g1);color:var(--g7);}
+
+    /* === FINAL CTA === */
+    .final{padding:80px 0;background:var(--dark);color:#fff;text-align:center;}
+    .final h2{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;margin-bottom:12px;}
+    .final p{font-size:1rem;color:rgba(255,255,255,0.5);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;}
+    .final-form{max-width:400px;margin:0 auto;display:flex;gap:10px;}
+    .final-form input{flex:1;padding:14px 16px;border:2px solid rgba(255,255,255,0.12);border-radius:10px;background:rgba(255,255,255,0.06);color:#fff;font-size:15px;font-family:inherit;}
+    .final-form input::placeholder{color:rgba(255,255,255,0.3);}
+    .final-form input:focus{outline:none;border-color:var(--orange);}
+    .final-form button{padding:14px 28px;background:var(--orange);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px rgba(249,115,22,0.3);}
+    .final-form button:hover{background:var(--orange-d);}
+    .final-note{font-size:11px;color:rgba(255,255,255,0.25);margin-top:12px;}
+
+    /* === FOOTER === */
+    .foot{padding:24px 0;background:var(--dark);border-top:1px solid rgba(255,255,255,0.06);text-align:center;}
+    .foot p{font-size:12px;color:rgba(255,255,255,0.2);}
+    .foot a{color:rgba(255,255,255,0.3);text-decoration:none;}
+
+    /* === RESPONSIVE === */
     @media(max-width:900px){
-      .lb-hero-grid{grid-template-columns:1fr;gap:40px;}
-      .bio-grid{grid-template-columns:1fr;text-align:center;}
-      .bio-photo{max-width:220px;margin:0 auto;}
-      .bio-creds li{text-align:left;}
-      .learn-grid{grid-template-columns:1fr;}
-      .palm-grid{grid-template-columns:repeat(2,1fr);}
-      .final-form{flex-direction:column;}
+      .hero-grid{grid-template-columns:1fr;gap:48px;}
+      .book-mockup{order:-1;}
+      .book{width:220px;height:300px;}
+      .problem-grid{grid-template-columns:repeat(2,1fr);}
+      .benefits-grid{grid-template-columns:1fr;}
+      .toc-grid{grid-template-columns:1fr;}
+      .toc-cta{position:static;}
+      .author-grid{grid-template-columns:1fr;text-align:center;justify-items:center;}
     }
     @media(max-width:600px){
-      .lb-hero{padding:110px 0 60px;}
-      .lb-stats{flex-direction:column;gap:16px;}
-      .palm-grid{grid-template-columns:1fr 1fr;}
+      .hero{padding:100px 0 60px;}
+      .hero-form{flex-direction:column;}
+      .hero-proof{flex-wrap:wrap;gap:16px;}
+      .problem-grid{grid-template-columns:1fr 1fr;}
+      .final-form{flex-direction:column;}
     }
   </style>
   <meta property="og:title" content="Livre blanc — 10 fiches pour enseigner a l'ere de l'IA | Neopulsion">
@@ -115,64 +164,120 @@
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav-solid" id="site-header">
-  <nav class="container nav-inner">
-    <a href="./" class="nav-logo">neo<span>pulsion</span></a>
-    <div class="nav-links" id="primary-nav">
-      <a href="accompagnement.html">Accompagnement</a>
-      <a href="formations.html">Formations</a>
-      <a href="ateliers.html">Ateliers</a>
-      <a href="ressources.html">Ressources</a>
-    </div>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn-ghost-nav">Contact</a>
-      <a href="contact.html" class="btn-primary btn-sm">Audit gratuit</a>
-    </div>
-    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</header>
-
-<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-  <div class="mobile-nav-links">
-    <a href="accompagnement.html">Accompagnement</a>
-    <a href="formations.html">Formations</a>
-    <a href="ateliers.html">Ateliers</a>
-    <a href="ressources.html">Ressources</a>
-  </div>
-  <div class="mobile-nav-cta">
-    <a href="contact.html" class="btn-primary">Audit gratuit</a>
-    <a href="contact.html" class="btn-secondary">Nous contacter</a>
-  </div>
+<!-- TOPBAR (minimal, pas de nav complete) -->
+<div class="topbar">
+  <a href="./" class="topbar-logo">neo<span>pulsion</span></a>
+  <a href="#telecharger" class="topbar-cta">Recevoir mon exemplaire</a>
 </div>
 
-<!-- ===== HERO + FORM ===== -->
-<section class="lb-hero">
+<!-- ===== HERO ===== -->
+<section class="hero">
   <div class="container">
-    <div class="lb-hero-grid">
+    <div class="hero-grid">
       <div>
-        <div class="lb-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-          Livre blanc gratuit
-        </div>
-        <h1>10 fiches pour <span>enseigner a l'ere de l'IA</span></h1>
-        <p class="sub">Le guide complet pour integrer l'intelligence artificielle dans tout le cycle d'apprentissage — de la memorisation a la creation. Methodes, outils, workflows et cas concrets.</p>
-        <div class="lb-stats">
-          <div><div class="lb-stat-num">10</div><div class="lb-stat-label">Fiches pedagogiques</div></div>
-          <div><div class="lb-stat-num">30+</div><div class="lb-stat-label">Outils presentes</div></div>
-          <div><div class="lb-stat-num">6</div><div class="lb-stat-label">Cas concrets</div></div>
+        <div class="hero-badge">&#128214; Guide gratuit — PDF 48 pages</div>
+        <h1>Vos etudiants utilisent l'IA.<br><em>Et vous ?</em></h1>
+        <p class="hero-sub">10 fiches operationnelles pour integrer l'IA dans tout le cycle d'apprentissage — de la memorisation a la creation. Outils, workflows, cas concrets.</p>
+        <form class="hero-form" name="livre-blanc-hero" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="livre-blanc-hero">
+          <p style="display:none"><label><input name="bot-field"></label></p>
+          <input type="email" name="email" placeholder="Votre email professionnel" required>
+          <button type="submit">Recevoir mon exemplaire</button>
+        </form>
+        <p class="hero-note">Gratuit, sans engagement. Livraison instantanee par email.</p>
+        <div class="hero-proof">
+          <div class="hero-proof-item"><div class="hero-proof-num">10</div><div class="hero-proof-label">Fiches</div></div>
+          <div class="hero-proof-item"><div class="hero-proof-num">30+</div><div class="hero-proof-label">Outils</div></div>
+          <div class="hero-proof-item"><div class="hero-proof-num">6</div><div class="hero-proof-label">Cas concrets</div></div>
+          <div class="hero-proof-item"><div class="hero-proof-num">6</div><div class="hero-proof-label">Workflows</div></div>
         </div>
       </div>
 
-      <!-- FORM -->
-      <div class="form-card">
-        <h3>Telecharger le livre blanc</h3>
-        <p class="form-sub">Recevez les 10 fiches directement par email.</p>
-        <form name="livre-blanc" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <!-- 3D BOOK MOCKUP -->
+      <div class="book-mockup">
+        <div class="book book-float">
+          <div class="book-pages"></div>
+          <div class="book-cover">
+            <div class="book-num">10</div>
+            <div class="book-icon">&#127891;</div>
+            <div class="book-title">Enseigner a l'ere de l'IA</div>
+            <div class="book-subtitle">10 fiches pedagogiques<br>pour passer a l'action</div>
+            <div class="book-author">Youssef Jlidi</div>
+          </div>
+        </div>
+        <div class="book-shadow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust">
+  <div class="trust-inner">
+    <img src="assets/logo-leboncoin.png" alt="Leboncoin" onerror="this.style.display='none'">
+    <img src="assets/logo-pds.png" alt="Paris Digital School" onerror="this.style.display='none'">
+    <img src="assets/logo-bricodepot.png" alt="Brico Depot" onerror="this.style.display='none'">
+    <img src="assets/logo-laposte.png" alt="La Poste" onerror="this.style.display='none'">
+  </div>
+</div>
+
+<!-- ===== LE PROBLEME ===== -->
+<section class="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-card"><div class="problem-num">86%</div><div class="problem-label">des etudiants utilisent deja l'IA</div></div>
+      <div class="problem-card"><div class="problem-num">88%</div><div class="problem-label">l'utilisent pour rendre leurs evaluations</div></div>
+      <div class="problem-card"><div class="problem-num" style="color:#DC2626;">10%</div><div class="problem-label">des etablissements ont une politique IA</div></div>
+      <div class="problem-card"><div class="problem-num" style="color:#DC2626;">73%</div><div class="problem-label">des actifs : aucune formation IA</div></div>
+    </div>
+    <p class="problem-src">Sources : Digital Education Council 2024, HEPI 2025, UNESCO 2024, IPSOS</p>
+  </div>
+</section>
+
+<!-- ===== CE QUE VOUS ALLEZ APPRENDRE ===== -->
+<section class="benefits">
+  <div class="container">
+    <div style="text-align:center;">
+      <p style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--orange);margin-bottom:10px;">Dans ce livre blanc</p>
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--dark);">Applicable des lundi matin</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit"><div class="benefit-icon">&#127891;</div><div><h3>Repositionner votre role</h3><p>D'enseignant-transmetteur a architecte d'effort cognitif</p></div></div>
+      <div class="benefit"><div class="benefit-icon">&#9889;</div><div><h3>30+ outils IA testes</h3><p>ChatGPT Edu, Claude, NotebookLM, Khanmigo, Anki, Gamma...</p></div></div>
+      <div class="benefit"><div class="benefit-icon">&#128295;</div><div><h3>6 workflows pas a pas</h3><p>Du cours aux flashcards, du corpus au debat structure</p></div></div>
+      <div class="benefit"><div class="benefit-icon">&#127919;</div><div><h3>6 cas concrets</h3><p>Strasbourg, Sciences Po, Ecole 42, HEC, Geneve, EPFL</p></div></div>
+      <div class="benefit"><div class="benefit-icon">&#128308;</div><div><h3>Cadrage institutionnel</h3><p>Politique feu tricolore + EU AI Act Art. 4</p></div></div>
+      <div class="benefit"><div class="benefit-icon">&#128161;</div><div><h3>Evaluer autrement</h3><p>Framework FACT + thinking records</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TABLE DES MATIERES + FORM ===== -->
+<section class="toc" id="telecharger">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:8px;">
+      <p style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--blue);margin-bottom:10px;">Sommaire</p>
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--dark);">10 fiches, de la memorisation a l'action</h2>
+    </div>
+    <div class="toc-grid">
+      <ol class="toc-list">
+        <li class="toc-item"><span class="toc-dot">01</span><span class="toc-text">Active Recall et repetition espacee</span></li>
+        <li class="toc-item"><span class="toc-dot">02</span><span class="toc-text">Methode socratique augmentee</span></li>
+        <li class="toc-item"><span class="toc-dot">03</span><span class="toc-text">Exercices adaptatifs et simulation</span></li>
+        <li class="toc-item"><span class="toc-dot">04</span><span class="toc-text">Decomposition et comparaison multi-sources</span></li>
+        <li class="toc-item"><span class="toc-dot">05</span><span class="toc-text">L'IA comme avocat du diable</span></li>
+        <li class="toc-item"><span class="toc-dot">06</span><span class="toc-text">De 50 idees a 1 prototype</span></li>
+        <li class="toc-item"><span class="toc-dot">07</span><span class="toc-text">Architecte d'effort cognitif</span></li>
+        <li class="toc-item"><span class="toc-dot">08</span><span class="toc-text">Evaluer ce qui resiste a l'IA</span></li>
+        <li class="toc-item"><span class="toc-dot">09</span><span class="toc-text">Politique d'usage : feu tricolore</span></li>
+        <li class="toc-item"><span class="toc-dot">10</span><span class="toc-text">Passer a l'action des lundi matin</span></li>
+      </ol>
+      <div class="toc-cta">
+        <h3>Recevoir le livre blanc</h3>
+        <p>48 pages, format PDF. Livraison instantanee.</p>
+        <form name="livre-blanc" method="POST" data-netlify="true" netlify-honeypot="bot-field-2">
           <input type="hidden" name="form-name" value="livre-blanc">
-          <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+          <p style="display:none"><label><input name="bot-field-2"></label></p>
           <div class="form-group">
             <label for="lb-prenom">Prenom</label>
             <input type="text" id="lb-prenom" name="prenom" placeholder="Votre prenom" required>
@@ -181,298 +286,61 @@
             <label for="lb-email">Email professionnel</label>
             <input type="email" id="lb-email" name="email" placeholder="vous@etablissement.fr" required>
           </div>
-          <div class="form-group">
-            <label for="lb-role">Vous etes</label>
-            <select id="lb-role" name="role" required>
-              <option value="" disabled selected>Selectionnez votre profil</option>
-              <option value="enseignant">Enseignant / Professeur</option>
-              <option value="formateur">Formateur professionnel</option>
-              <option value="responsable-pedagogique">Responsable pedagogique</option>
-              <option value="directeur">Directeur d'etablissement</option>
-              <option value="etudiant">Etudiant / Doctorant</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="lb-etablissement">Etablissement</label>
-            <input type="text" id="lb-etablissement" name="etablissement" placeholder="Nom de votre etablissement">
-          </div>
-          <button type="submit" class="form-submit">Telecharger gratuitement</button>
-          <p class="form-note">Pas de spam. Vos donnees restent confidentielles.</p>
+          <button type="submit">Recevoir mon exemplaire gratuit</button>
+          <p class="note">Pas de spam. Desabonnement en un clic.</p>
         </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PALMARES ===== -->
-<section class="lb-section lb-section-alt">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:48px;">
-      <p class="section-kicker">En chiffres</p>
-      <h2 class="section-title">Le constat qui a motive ce livre blanc</h2>
-    </div>
-    <div class="palm-grid">
-      <div class="palm-card"><div class="palm-num">86%</div><div class="palm-label">des etudiants utilisent l'IA dans leurs etudes</div></div>
-      <div class="palm-card"><div class="palm-num">88%</div><div class="palm-label">l'ont utilisee pour des evaluations</div></div>
-      <div class="palm-card"><div class="palm-num">10%</div><div class="palm-label">des etablissements ont une politique formelle IA</div></div>
-      <div class="palm-card"><div class="palm-num">73%</div><div class="palm-label">des actifs n'ont recu aucune formation IA</div></div>
-    </div>
-    <p style="font-size:0.75rem;color:#A1A1AA;text-align:center;margin-top:20px;">Sources : Digital Education Council 2024, HEPI 2025, UNESCO 2024, IPSOS</p>
-  </div>
-</section>
-
-<!-- ===== 10 FICHES ===== -->
-<section class="lb-section">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
-      <div>
-        <p class="section-kicker">Contenu du livre blanc</p>
-        <h2 class="section-title">10 fiches pedagogiques operationnelles</h2>
-        <p class="section-desc" style="margin-bottom:28px;">Chaque fiche suit la meme structure : principe pedagogique, outils recommandes, workflow pas a pas, cas concret et role de l'enseignant.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
-          <span style="display:inline-flex;align-items:center;gap:6px;font-size:0.8125rem;font-weight:600;color:#2563EB;"><span style="width:10px;height:10px;border-radius:50%;background:#2563EB;"></span>Fondamentaux</span>
-          <span style="display:inline-flex;align-items:center;gap:6px;font-size:0.8125rem;font-weight:600;color:#D97706;"><span style="width:10px;height:10px;border-radius:50%;background:#D97706;"></span>Application</span>
-          <span style="display:inline-flex;align-items:center;gap:6px;font-size:0.8125rem;font-weight:600;color:#DC2626;"><span style="width:10px;height:10px;border-radius:50%;background:#DC2626;"></span>Pensee critique</span>
-          <span style="display:inline-flex;align-items:center;gap:6px;font-size:0.8125rem;font-weight:600;color:#059669;"><span style="width:10px;height:10px;border-radius:50%;background:#059669;"></span>Cadrage</span>
-        </div>
-        <p style="font-size:0.875rem;color:#A1A1AA;font-style:italic;">De la memorisation a l'action — un parcours en spirale.</p>
-      </div>
-
-      <div>
-        <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
-          <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1 L8 5 L0 9z" fill="#D4D4D8"/></marker></defs>
-          <!-- Connexions -->
-          <line x1="240" y1="220" x2="290" y2="160" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="315" y1="148" x2="358" y2="190" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="366" y1="225" x2="360" y2="290" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="348" y1="325" x2="296" y2="358" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="262" y1="365" x2="202" y2="340" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="172" y1="320" x2="142" y2="260" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="142" y1="222" x2="158" y2="155" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="182" y1="122" x2="260" y2="88" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-          <line x1="302" y1="82" x2="388" y2="105" stroke="#E4E4E7" stroke-width="2" marker-end="url(#arr)"/>
-
-          <!-- 01 -->
-          <circle cx="240" cy="228" r="36" fill="#2563EB"/>
-          <text x="240" y="221" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">01</text>
-          <text x="240" y="237" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Memoriser</text>
-          <!-- 02 -->
-          <circle cx="302" cy="142" r="36" fill="#2563EB"/>
-          <text x="302" y="135" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">02</text>
-          <text x="302" y="151" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Comprendre</text>
-          <!-- 03 -->
-          <circle cx="370" cy="210" r="36" fill="#D97706"/>
-          <text x="370" y="203" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">03</text>
-          <text x="370" y="219" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Appliquer</text>
-          <!-- 04 -->
-          <circle cx="355" cy="310" r="36" fill="#D97706"/>
-          <text x="355" y="303" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">04</text>
-          <text x="355" y="319" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Analyser</text>
-          <!-- 05 -->
-          <circle cx="272" cy="370" r="36" fill="#DC2626"/>
-          <text x="272" y="363" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">05</text>
-          <text x="272" y="379" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Juger</text>
-          <!-- 06 -->
-          <circle cx="178" cy="335" r="36" fill="#DC2626"/>
-          <text x="178" y="328" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">06</text>
-          <text x="178" y="344" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Creer</text>
-          <!-- 07 -->
-          <circle cx="138" cy="240" r="36" fill="#059669"/>
-          <text x="138" y="233" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">07</text>
-          <text x="138" y="249" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Posture</text>
-          <!-- 08 -->
-          <circle cx="168" cy="134" r="36" fill="#059669"/>
-          <text x="168" y="127" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">08</text>
-          <text x="168" y="143" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Evaluation</text>
-          <!-- 09 -->
-          <circle cx="280" cy="78" r="36" fill="#059669"/>
-          <text x="280" y="71" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" font-family="Inter,system-ui,sans-serif">09</text>
-          <text x="280" y="87" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Cadrage</text>
-          <!-- 10 -->
-          <circle cx="415" cy="115" r="40" fill="#0A0F1A" stroke="#2563EB" stroke-width="3"/>
-          <text x="415" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#60A5FA" font-family="Inter,system-ui,sans-serif">10</text>
-          <text x="415" y="124" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">Action</text>
-        </svg>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== QUI SUIS-JE ===== -->
-<section class="lb-section lb-section-alt">
-  <div class="container">
-    <div class="bio-grid">
-      <div>
-        <img src="assets/youssef-jlidi.jpg" alt="Youssef Jlidi" class="bio-photo" onerror="this.style.display='none'">
-      </div>
-      <div>
-        <p class="section-kicker">L'auteur</p>
-        <div class="bio-name">Youssef Jlidi</div>
-        <div class="bio-role">Consultant IA, SEO & Transformation — Fondateur de Neopulsion</div>
-        <p class="bio-text">Specialiste des usages concrets de l'IA, j'interviens dans des ecoles, universites et entreprises pour transformer les pratiques pedagogiques et professionnelles. Ce livre blanc condense des annees d'experience terrain au service de l'enseignement augmente par l'IA.</p>
-        <ul class="bio-creds">
-          <li>Professeur en ecoles et universites (IA, SEO, marketing digital)</li>
-          <li>Formateur entreprise (transformation IA, prompt engineering)</li>
-          <li>Fondateur de Neopulsion — cabinet conseil IA & visibilite</li>
-          <li>Conferencier sur l'integration pedagogique de l'IA</li>
-          <li>Consultant pour Leboncoin, Brico Depot, La Poste, PDS</li>
-          <li>Concepteur de workflows IA appliques a l'enseignement</li>
-          <li>Specialiste Taxonomie de Bloom x Intelligence Artificielle</li>
-        </ul>
-        <div class="logos-row">
-          <img src="assets/logo-leboncoin.png" alt="Leboncoin" onerror="this.style.display='none'">
-          <img src="assets/logo-pds.png" alt="Paris Digital School" onerror="this.style.display='none'">
-          <img src="assets/logo-bricodepot.png" alt="Brico Depot" onerror="this.style.display='none'">
-          <img src="assets/logo-laposte.png" alt="La Poste" onerror="this.style.display='none'">
+        <div class="toc-specs">
+          <div class="toc-spec"><strong>48</strong>pages</div>
+          <div class="toc-spec"><strong>PDF</strong>format</div>
+          <div class="toc-spec"><strong>0&euro;</strong>gratuit</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CE QUE VOUS APPRENEZ ===== -->
-<section class="lb-section lb-section-dark">
+<!-- ===== AUTEUR ===== -->
+<section class="author">
   <div class="container">
-    <div style="text-align:center;margin-bottom:48px;">
-      <p class="section-kicker">Ce que vous apprenez</p>
-      <h2 class="section-title">Applicable des lundi matin</h2>
-      <p class="section-desc" style="margin-left:auto;margin-right:auto;text-align:center;">Ce livre blanc ne parle pas d'IA en theorie. Il vous donne les methodes, outils et workflows pour transformer vos cours concretement.</p>
-    </div>
-    <div class="learn-grid">
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(59,130,246,0.15);">&#127891;</div>
-        <h3>Repositionner votre role</h3>
-        <p>Comprendre pourquoi l'enseignant n'est plus un transmetteur de contenu mais un architecte d'effort cognitif — et comment en faire votre force.</p>
+    <div class="author-grid">
+      <img src="assets/youssef-jlidi.jpg" alt="Youssef Jlidi" class="author-photo" onerror="this.style.background='var(--g1)'">
+      <div>
+        <p style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--blue);margin-bottom:8px;">L'auteur</p>
+        <div class="author-name">Youssef Jlidi</div>
+        <div class="author-role">Consultant IA & Transformation — Fondateur de Neopulsion</div>
+        <p class="author-bio">Professeur en ecoles et universites, formateur en entreprise, specialiste des usages concrets de l'IA appliques a l'enseignement. J'interviens pour Leboncoin, Brico Depot, La Poste et Paris Digital School.</p>
+        <div class="author-tags">
+          <span class="author-tag">500+ etudiants formes</span>
+          <span class="author-tag">15+ entreprises</span>
+          <span class="author-tag">Taxonomie de Bloom x IA</span>
+          <span class="author-tag">Conferencier</span>
+        </div>
       </div>
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(5,150,105,0.15);">&#9889;</div>
-        <h3>Maitriser 30+ outils IA</h3>
-        <p>ChatGPT Edu, Claude, NotebookLM, Khanmigo, Anki, Perplexity, Gamma, Canva Magic — chaque outil a sa fiche et son usage precis.</p>
-      </div>
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(220,38,38,0.15);">&#128295;</div>
-        <h3>Appliquer des workflows concrets</h3>
-        <p>6 workflows detailles pas a pas : du cours aux flashcards, du corpus au debat structure, du brief au prototype.</p>
-      </div>
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(217,119,6,0.15);">&#128200;</div>
-        <h3>S'inspirer de cas reels</h3>
-        <p>Strasbourg, Sciences Po, Ecole 42, HEC, Geneve, EPFL — des resultats mesures dans des etablissements francophones.</p>
-      </div>
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(124,109,156,0.15);">&#128736;</div>
-        <h3>Cadrer l'usage dans votre etablissement</h3>
-        <p>Le systeme feu tricolore, le cadre EU AI Act, la politique d'usage IA — tout pour passer de l'improvisation au cadrage institutionnel.</p>
-      </div>
-
-      <div class="learn-card">
-        <div class="learn-icon" style="background:rgba(59,130,246,0.15);">&#128161;</div>
-        <h3>Evaluer autrement</h3>
-        <p>Concevoir des evaluations que l'IA ne peut pas resoudre seule : framework FACT, thinking records, evaluation du raisonnement.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== PALMARES YOUSSEF ===== -->
-<section class="lb-section">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:48px;">
-      <p class="section-kicker">Palmares</p>
-      <h2 class="section-title">L'expertise derriere ce livre blanc</h2>
-    </div>
-    <div class="palm-grid">
-      <div class="palm-card"><div class="palm-num">500+</div><div class="palm-label">Etudiants formes a l'IA</div></div>
-      <div class="palm-card"><div class="palm-num">15+</div><div class="palm-label">Entreprises accompagnees</div></div>
-      <div class="palm-card"><div class="palm-num">4</div><div class="palm-label">Conferences IPIA</div></div>
-      <div class="palm-card"><div class="palm-num">6</div><div class="palm-label">Niveaux Bloom couverts</div></div>
-      <div class="palm-card"><div class="palm-num">30+</div><div class="palm-label">Outils IA maitrises</div></div>
-      <div class="palm-card"><div class="palm-num">10</div><div class="palm-label">Fiches operationnelles</div></div>
-      <div class="palm-card"><div class="palm-num">6</div><div class="palm-label">Cas concrets documentes</div></div>
-      <div class="palm-card"><div class="palm-num">100%</div><div class="palm-label">Applicable des lundi</div></div>
     </div>
   </div>
 </section>
 
 <!-- ===== CTA FINAL ===== -->
-<section class="final-cta">
+<section class="final">
   <div class="container">
     <h2>Pret a transformer vos cours ?</h2>
-    <p>Telecharger les 10 fiches pedagogiques et commencez a integrer l'IA dans votre enseignement des la semaine prochaine.</p>
-    <form class="final-form" name="livre-blanc-footer" method="POST" data-netlify="true" netlify-honeypot="bot-field-2">
+    <p>Recevez les 10 fiches par email et commencez des la semaine prochaine.</p>
+    <form class="final-form" name="livre-blanc-footer" method="POST" data-netlify="true" netlify-honeypot="bot-field-3">
       <input type="hidden" name="form-name" value="livre-blanc-footer">
-      <p style="display:none"><label>Ne pas remplir : <input name="bot-field-2"></label></p>
+      <p style="display:none"><label><input name="bot-field-3"></label></p>
       <input type="email" name="email" placeholder="Votre email professionnel" required>
-      <button type="submit">Telecharger</button>
+      <button type="submit">Recevoir mon exemplaire</button>
     </form>
-    <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:16px;">Gratuit, sans engagement. Pas de spam.</p>
+    <p class="final-note">Gratuit, sans engagement. Pas de spam.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
+<!-- FOOTER MINIMAL -->
+<footer class="foot">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="./" class="nav-logo">neo<span>pulsion</span></a>
-        <p class="footer-tagline">Votre visibilite, sur Google et au-dela.</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/youssefj/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <p class="footer-col-title">Services</p>
-        <ul class="footer-links">
-          <li><a href="services/seo.html">Referencement SEO</a></li>
-          <li><a href="services/geo.html">GEO — Referencement Generatif</a></li>
-          <li><a href="services/linkedin.html">Visibilite LinkedIn</a></li>
-          <li><a href="services/ia.html">Accompagnement IA</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Formations</p>
-        <ul class="footer-links">
-          <li><a href="formations.html">SEO &amp; GEO</a></li>
-          <li><a href="formations.html">IA pour marketeurs</a></li>
-          <li><a href="formations.html">Prompt Engineering</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title">Ressources</p>
-        <ul class="footer-links">
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="glossaire.html">Glossaire</a></li>
-          <li><a href="a-propos.html">A propos</a></li>
-          <li><a href="equipe.html">Equipe</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">&copy; 2026 Neopulsion — Youssef Jlidi. Tous droits reserves.</p>
-      <nav class="footer-legal" aria-label="Liens legaux">
-        <a href="cgv.html">Mentions legales</a>
-        <a href="cgv.html">CGV</a>
-        <a href="cgv.html">Politique de confidentialite</a>
-      </nav>
-    </div>
+    <p>&copy; 2026 <a href="./">Neopulsion</a> — Youssef Jlidi</p>
   </div>
 </footer>
 
-<a href="#lb-email" class="floating-cta" id="floating-cta" aria-label="Telecharger le livre blanc" onclick="document.getElementById('lb-email').focus();return false;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  <span>Livre blanc</span>
-</a>
-
-<script src="js/main.js"></script>
 </body>
 </html>
